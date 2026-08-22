@@ -178,12 +178,26 @@
   .attach .x:active{opacity:.55}
 
   /* screenshot */
-  .ocrbox{margin-top:12px;background:var(--group);border-radius:10px;padding:14px}
-  .ocrbox .ocrpt{font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
-  .ocrbox .ocrru{
+  /* исходник разбора: распознанный или вставленный текст */
+  .srcbox{position:relative;background:var(--group);border-radius:10px;padding:14px 44px 14px 14px}
+  .srcbox .pt{font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
+  .srcbox .ru{
     margin-top:10px;padding-top:10px;border-top:.5px solid var(--sep);
     font-size:15px;line-height:1.45;color:var(--label2);white-space:pre-wrap;
   }
+  .srcbox .x{
+    position:absolute;top:9px;right:9px;width:26px;height:26px;padding:0;border:none;
+    border-radius:50%;background:var(--fill);color:var(--label2);
+    font-size:13px;line-height:1;cursor:pointer;
+  }
+  .srcbox .x:active{opacity:.55}
+  .chiphead{display:flex;align-items:baseline;gap:12px;margin:18px 4px 0}
+  .chiphead .h{flex:1;min-width:0;font-size:13px;color:var(--label2)}
+  .chiphead button{
+    flex:none;border:none;background:none;padding:0;cursor:pointer;
+    color:var(--blue);font-size:14px;
+  }
+  .chiphead button:active{opacity:.55}
 
   .seg{display:flex;gap:2px;background:var(--fill);border-radius:8px;padding:2px;margin-top:10px}
   .seg button{
@@ -330,22 +344,22 @@
         <button class="x" id="attachClear" type="button" title="Убрать">&#10005;</button>
       </div>
       <div class="hint">Можно несколько через запятую. Скриншот — Ctrl+V, перетаскивание файла или значок картинки. Длинный текст вставляйте так же: разберу его на слова.</div>
-      <div id="ocrOut"></div>
       <div id="preview"></div>
     </div>
 
     <div class="sec" id="textSec" style="display:none">
-      <span class="lbl">Текст на португальском</span>
-      <textarea id="textInput" placeholder="Абзац из статьи, субтитров, сообщения…" autocapitalize="off" spellcheck="false"></textarea>
-      <div class="row" style="margin-top:10px">
-        <button class="btn" id="parseBtn">Разобрать на слова</button>
-        <button class="btn" id="clearText" style="max-width:104px">Очистить</button>
+      <div class="srcbox">
+        <button class="x" id="srcClear" type="button" title="Убрать">&#10005;</button>
+        <div class="pt" id="srcPt"></div>
+        <div class="ru" id="srcRu" style="display:none"></div>
       </div>
-      <div id="chipWrap" style="display:none">
-        <div class="hint" style="margin-top:16px">Отметьте незнакомые. Зачёркнутые уже в колоде.</div>
-        <div class="chips" id="chips"></div>
-        <button class="btn primary wide" id="addSelected" style="margin-top:14px" disabled>Создать карточки (0)</button>
+      <div class="chiphead">
+        <span class="h" id="chipHead"></span>
+        <button id="chipAll" type="button">Выбрать все</button>
       </div>
+      <div class="chips" id="chips"></div>
+      <button class="btn primary wide" id="addSelected" style="margin-top:14px;display:none">Создать карточки</button>
+      <div id="added"></div>
     </div>
 
   </section>
@@ -541,18 +555,20 @@ function commitCards(fresh){
 }
 
 /* ---------------- ADD ---------------- */
+const cardPreviewHTML=c=>
+  '<article class="card">'+
+    '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
+    '<div class="ru">'+esc(c.ru)+'</div>'+
+    (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+    (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
+  '</article>';
+
 let pending=[];
 function renderPreview(){
   const box=$('#preview');
   if(!pending.length){ box.innerHTML=''; return }
   box.innerHTML='<div class="lbl" style="margin:18px 0 7px 4px">Перевод</div>'+
-    pending.map((c,i)=>
-      '<article class="card">'+
-        '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
-        '<div class="ru">'+esc(c.ru)+'</div>'+
-        (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
-        (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
-      '</article>').join('')+
+    pending.map(cardPreviewHTML).join('')+
     '<div class="row" style="margin-top:4px">'+
       '<button class="btn primary" id="pvAdd">Добавить в колоду'+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
       '<button class="btn" id="pvSkip" style="max-width:110px">Отмена</button>'+
@@ -568,19 +584,21 @@ function renderPreview(){
 
 async function runAdd(inputs, btn){
   const items=inputs.filter(Boolean);
-  if(!items.length) return;
+  if(!items.length) return [];
   const todo=items.filter(it=>!cards.some(c=>norm(c.word)===norm(it.text)||norm(c.query)===norm(it.text)));
   const known=items.length-todo.length;
-  if(!todo.length){toast('Такие карточки уже есть');return}
+  if(!todo.length){toast('Такие карточки уже есть');return []}
   const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
+  let fresh=[];
   try{
-    const fresh=await generateCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
+    fresh=await generateCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
     commitCards(fresh);
     const skipped=todo.length-fresh.length+known;
     toast('Добавлено '+fresh.length+(skipped?', пропущено дублей: '+skipped:''));
     if(fresh.length){ $('#wordInput').value=''; renderCards(); }
-  }catch(e){ toast(esc(e.message),5000) }
+  }catch(e){ toast(esc(e.message),5000); fresh=[] }
   finally{ btn.disabled=false; btn.innerHTML=old; renderStats(); }
+  return fresh;
 }
 
 $('#addOne').onclick=async e=>{
@@ -680,9 +698,11 @@ const STOP=new Set(('o a os as um uma uns umas de do da dos das em no na nos nas
  ' ser estar ter haver ir vir é sou és somos são está estou estás estamos estão foi era tem têm tenho havia'+
  ' ao aos à às pra num numa dum duma qual quais quem cujo lhe nem sua seus suas').split(/\s+/));
 
-$('#parseBtn').onclick=()=>{
-  const text=$('#textInput').value.trim();
-  if(!text){toast('Вставьте текст');return}
+/* Разбор — это результат: текст (и перевод, если он был), слова из него и то,
+   что из них получилось. Никаких промежуточных полей и кнопок «разобрать». */
+let parsed=[];                       // [{w, ctx}] — слово и предложение, из которого оно взято
+
+function parseWords(text){
   const sentences=text.split(/(?:(?<=[.!?…])\s+)|\n+/).map(s=>s.trim()).filter(Boolean);
   const seen=new Map();
   sentences.forEach(sent=>{
@@ -693,35 +713,69 @@ $('#parseBtn').onclick=()=>{
       if(!seen.has(bare)) seen.set(bare,sent);
     });
   });
-  const list=[...seen.entries()];
-  if(!list.length){toast('Не нашёл слов');return}
-  $('#chips').innerHTML=list.map(([w,ctx])=>{
-    const have=cards.some(c=>norm(c.word)===w||norm(c.query)===w);
-    return '<span class="chip'+(have?' have':'')+'" data-w="'+esc(w)+'" data-c="'+esc(ctx)+'">'+esc(w)+'</span>';
+  return [...seen.entries()].map(([w,ctx])=>({w:w,ctx:ctx}));
+}
+
+function showParse(pt,ru){
+  const list=parseWords(pt);
+  if(!list.length){ toast('Не нашёл слов для карточек'); return }
+  parsed=list;
+  $('#srcPt').textContent=pt;
+  const r=$('#srcRu');
+  r.textContent=ru||''; r.style.display=ru?'block':'none';
+  $('#added').innerHTML='';
+  $('#textSec').style.display='block';
+  renderChips();
+  $('#textSec').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function hideParse(){
+  parsed=[]; $('#textSec').style.display='none';
+  $('#chips').innerHTML=''; $('#added').innerHTML='';
+}
+function renderChips(){
+  const on=new Set($$('#chips .chip.on').map(c=>c.dataset.w));
+  $('#chips').innerHTML=parsed.map(p=>{
+    const have=hasWord(p.w);
+    return '<span class="chip'+(have?' have':(on.has(p.w)?' on':''))+
+      '" data-w="'+esc(p.w)+'">'+esc(p.w)+'</span>';
   }).join('');
-  $('#chipWrap').style.display='block';
   updateSelCount();
-};
+}
+function updateSelCount(){
+  const n=$$('#chips .chip.on').length;
+  const free=parsed.filter(p=>!hasWord(p.w)).length;
+  $('#chipHead').textContent = free
+    ? ('Незнакомых слов: '+free+(n?' · выбрано '+n:''))
+    : 'Все слова из текста уже в колоде';
+  const all=$('#chipAll');
+  all.style.display = free>1?'':'none';
+  all.textContent = n&&n===free ? 'Снять выбор' : 'Выбрать все';
+  const b=$('#addSelected');
+  b.style.display = n?'':'none';
+  b.textContent='Создать карточки ('+n+')';
+}
 $('#chips').onclick=e=>{
   const chip=e.target.closest('.chip'); if(!chip||chip.classList.contains('have'))return;
   chip.classList.toggle('on'); updateSelCount();
 };
-function updateSelCount(){
-  const n=$$('#chips .chip.on').length;
-  const b=$('#addSelected'); b.disabled=!n; b.textContent='Создать карточки ('+n+')';
-}
-$('#addSelected').onclick=()=>{
-  const sel=$$('#chips .chip.on').map(c=>({text:c.dataset.w,context:c.dataset.c}));
-  if(!sel.length)return;
-  runAdd(sel,$('#addSelected')).then(()=>{
-    $$('#chips .chip.on').forEach(c=>{c.classList.remove('on');c.classList.add('have')});
-    updateSelCount();
-  });
+$('#chipAll').onclick=()=>{
+  const free=$$('#chips .chip:not(.have)');
+  const allOn=free.length&&free.every(c=>c.classList.contains('on'));
+  free.forEach(c=>c.classList.toggle('on',!allOn));
+  updateSelCount();
 };
-// разбор на слова — это результат распознавания, поэтому по умолчанию блок свёрнут
-function showTextSec(on){ $('#textSec').style.display=on?'block':'none' }
-$('#clearText').onclick=()=>{
-  $('#textInput').value=''; $('#chipWrap').style.display='none'; showTextSec(false);
+$('#srcClear').onclick=hideParse;
+$('#addSelected').onclick=async ()=>{
+  const ctx=new Map(parsed.map(p=>[p.w,p.ctx]));
+  const sel=$$('#chips .chip.on').map(c=>({text:c.dataset.w,context:ctx.get(c.dataset.w)}));
+  if(!sel.length)return;
+  const fresh=await runAdd(sel,$('#addSelected'));
+  renderChips();                     // добавленные слова тут же становятся зачёркнутыми
+  if(fresh.length){
+    $('#added').innerHTML='<div class="lbl" style="margin:22px 0 7px 4px">Добавлено: '+fresh.length+'</div>'+
+      fresh.map(cardPreviewHTML).join('');
+    $('#added').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
 };
 
 /* ---------------- скриншот → OCR → перевод ---------------- */
@@ -755,12 +809,11 @@ function renderAttach(){
   else{ box.style.display='none'; $('#attachThumb').removeAttribute('src') }
   $('#addOne').textContent = imgData?'Распознать':'Перевести';
 }
-function clearAttach(){ imgData=null; renderAttach(); $('#ocrOut').innerHTML='' }
+function clearAttach(){ imgData=null; renderAttach() }
 
 async function setImage(file){
   try{
     imgData=await shrink(file,1600);
-    $('#ocrOut').innerHTML='';
     renderAttach();
     $('#attach').scrollIntoView({behavior:'smooth',block:'nearest'});
   }catch(e){ toast(esc(e.message)) }
@@ -787,10 +840,7 @@ $('#wordInput').addEventListener('paste',e=>{
   const t=(e.clipboardData&&e.clipboardData.getData('text')||'').trim();
   if(!t||/[,;]/.test(t)||t.split(/\s+/).length<5) return;
   e.preventDefault();
-  $('#textInput').value=t;
-  showTextSec(true);
-  $('#parseBtn').click();
-  $('#chipWrap').scrollIntoView({behavior:'smooth',block:'nearest'});
+  showParse(t,'');
 });
 
 document.addEventListener('paste',e=>{
@@ -814,18 +864,10 @@ async function runOcr(b){
   try{
     const r=await askVision(imgData);
     const text=(r.text||'').trim();
-    if(!text){ toast('На картинке не нашлось текста',3500); $('#ocrOut').innerHTML=''; return }
+    if(!text){ toast('На картинке не нашлось текста',3500); return }
     const lang=(r.lang||'').toLowerCase();
-    $('#ocrOut').innerHTML=
-      '<div class="ocrbox">'+
-        '<div class="ocrpt">'+esc(text)+'</div>'+
-        (r.ru?'<div class="ocrru">'+esc(r.ru)+'</div>':'')+
-      '</div>';
-    $('#textInput').value=text;
-    showTextSec(true);
-    $('#parseBtn').click();
+    showParse(text,r.ru||'');
     imgData=null;                       // картинку сняли, разбор остался
-    $('#chipWrap').scrollIntoView({behavior:'smooth',block:'nearest'});
     if(lang&&lang!=='pt') toast('Похоже, текст на языке «'+esc(lang)+'», а не на португальском',4000);
   }catch(err){ toast(esc(err.message),5000) }
   finally{ b.disabled=false; b.innerHTML=old; renderAttach() }
