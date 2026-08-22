@@ -169,6 +169,7 @@
   .badge{font-size:13px;color:var(--label3)}
   .badge.due{color:var(--orange)}
   .badge.new{color:var(--blue)}
+  .badge.done{color:var(--green)}
 
   /* study */
   .progress{height:2px;background:var(--fill);border-radius:2px;overflow:hidden;margin:2px 0 16px}
@@ -316,7 +317,10 @@
   </section>
 
   <section id="v-cards" class="view">
-    <input type="text" id="search" placeholder="Поиск" autocapitalize="off" style="margin-bottom:14px">
+    <input type="text" id="search" placeholder="Поиск" autocapitalize="off" style="margin-bottom:10px">
+    <div class="seg" id="cardFilter" style="margin:0 0 14px">
+      <button data-f="all" class="on">Все</button><button data-f="learning">Изучаю</button><button data-f="done">Выучено</button>
+    </div>
     <div id="cardList"></div>
   </section>
 
@@ -757,8 +761,8 @@ $('#themeAdd').onclick=()=>{
 function cardHTML(c){
   const due=c.due<=Date.now();
   const isNew=c.reps===0;
-  const when=isNew?'новая':due?'к повтору':'через '+Math.max(1,Math.ceil((c.due-Date.now())/DAY))+' дн.';
-  const cls=isNew?' new':due?' due':'';
+  const when=c.archived?'выучено':isNew?'новая':due?'к повтору':'через '+Math.max(1,Math.ceil((c.due-Date.now())/DAY))+' дн.';
+  const cls=c.archived?' done':isNew?' new':due?' due':'';
   return '<article class="card" data-id="'+c.id+'">'+
     '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
     '<div class="ru">'+esc(c.ru)+'</div>'+
@@ -767,24 +771,46 @@ function cardHTML(c){
     '<div class="meta"><span class="badge'+cls+'">'+when+'</span>'+
       (c.reps?'<span class="badge">· повторов '+c.reps+'</span>':'')+
       '<span style="flex:1"></span>'+
+      (c.archived?'<button class="btn sm" data-act="back">Вернуть в изучение</button>':'')+
       '<button class="btn icon" data-act="regen" title="Перегенерировать">'+IC_REFRESH+'</button>'+
       '<button class="btn icon" data-act="del" title="Удалить">'+IC_TRASH+'</button>'+
     '</div></article>';
 }
+let cardFilter='all';
 function renderCards(){
   const q=norm($('#search').value);
-  const list=cards.filter(c=>!q||norm(c.word).includes(q)||norm(c.ru).includes(q)||norm(c.ex).includes(q));
+  const byFilter=cards.filter(c=>cardFilter==='all'||(cardFilter==='done'?c.archived:!c.archived));
+  const list=byFilter.filter(c=>!q||norm(c.word).includes(q)||norm(c.ru).includes(q)||norm(c.ex).includes(q));
+  const done=cards.filter(c=>c.archived).length;
+  const segs=$$('#cardFilter button');
+  if(segs.length){
+    segs[1].textContent='Изучаю '+(cards.length-done);
+    segs[2].textContent='Выучено '+done;
+  }
   $('#cardList').innerHTML = list.length
     ? list.map(cardHTML).join('')
     : '<div class="empty">'+IC_DECK+(cards.length
-        ? '<div>Ничего не найдено</div>'
+        ? (cardFilter==='done'&&!q
+            ? '<div>Пока ничего не выучено</div><div class="sub">Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь</div>'
+            : '<div>Ничего не найдено</div>')
         : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
 }
+$('#cardFilter').onclick=e=>{
+  const b=e.target.closest('button'); if(!b)return;
+  cardFilter=b.dataset.f;
+  $$('#cardFilter button').forEach(x=>x.classList.toggle('on',x===b));
+  renderCards();
+};
 $('#search').oninput=renderCards;
 $('#cardList').onclick=async e=>{
   const btn=e.target.closest('[data-act]'); if(!btn)return;
   const id=e.target.closest('.card').dataset.id;
   const c=cards.find(x=>x.id===id); if(!c)return;
+  if(btn.dataset.act==='back'){
+    c.archived=false; c.archivedAt=Date.now(); c.interval=1; c.due=Date.now();
+    persist(); renderCards(); toast('Вернул в изучение');
+    return;
+  }
   if(btn.dataset.act==='del'){
     if(!confirm('Удалить «'+c.word+'»?'))return;
     cards=cards.filter(x=>x.id!==id); persist(); renderCards(); toast('Удалено');
@@ -807,10 +833,11 @@ function newAllowance(){
   if(newLog.d!==today()){newLog={d:today(),n:0};save(LS_LOG,newLog)}
   return Math.max(0,(+settings.dailyNew||20)-newLog.n);
 }
+const active=()=>cards.filter(c=>!c.archived);
 function buildQueue(){
   const now=Date.now();
-  const due=cards.filter(c=>c.reps>0&&c.due<=now).sort((a,b)=>a.due-b.due);
-  const fresh=cards.filter(c=>c.reps===0).slice(0,newAllowance());
+  const due=active().filter(c=>c.reps>0&&c.due<=now).sort((a,b)=>a.due-b.due);
+  const fresh=active().filter(c=>c.reps===0).slice(0,newAllowance());
   queue=due.concat(fresh);
   sessionTotal=queue.length; sessionDone=0;
 }
@@ -821,13 +848,13 @@ function renderStudy(){
   if(!current){
     if(!queue.length){
       $('#prog').style.width='100%';
-      const next=cards.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
+      const next=active().filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
       w.innerHTML='<div class="empty">'+IC_DONE+
         (cards.length?'<div>На сегодня всё повторено</div>':'<div>Добавьте слова, чтобы начать</div>')+
         (next?'<div class="sub">Следующее повторение: '+new Date(next.due).toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+'</div>':'')+
         (cards.length?'<div style="margin-top:20px"><button class="btn" id="againAll">Повторить всё заново</button></div>':'')+'</div>';
       const b=$('#againAll');
-      if(b) b.onclick=()=>{queue=cards.slice().sort(()=>Math.random()-.5);sessionTotal=queue.length;sessionDone=0;nextCard()};
+      if(b) b.onclick=()=>{queue=active().sort(()=>Math.random()-.5);sessionTotal=queue.length;sessionDone=0;nextCard()};
       return;
     }
     nextCard(); return;
@@ -848,9 +875,9 @@ function renderStudy(){
     (shown?
       '<div class="grades">'+
         '<button class="btn g0" data-g="0">Не помню<small>заново</small></button>'+
-        '<button class="btn g1" data-g="1">Трудно<small>'+prev(c,1)+'</small></button>'+
-        '<button class="btn g2" data-g="2">Знаю<small>'+prev(c,2)+'</small></button>'+
-        '<button class="btn g3" data-g="3">Легко<small>'+prev(c,3)+'</small></button>'+
+        '<button class="btn g1" data-g="1">Трудно<small>1 день</small></button>'+
+        '<button class="btn g2" data-g="2">Знаю<small>30 дней</small></button>'+
+        '<button class="btn g3" data-g="3">Легко<small>выучено</small></button>'+
       '</div>'
       :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">Показать ответ</button>')+
     '<div class="tapHint">осталось '+left+'</div>';
@@ -863,28 +890,21 @@ function renderStudy(){
     $('#studyCard').onclick=reveal;
   }
 }
-function prev(c,g){
-  const i=nextInterval(c,g);
-  return i<1?'10 мин':i===1?'1 дн.':i<30?i+' дн.':Math.round(i/30)+' мес.';
-}
-function nextInterval(c,g){
-  if(g===0) return 0;
-  const e=c.ease||2.5;
-  if(c.reps===0||!c.interval) return g===1?1:g===2?2:4;
-  if(g===1) return Math.max(1,Math.round(c.interval*1.2));
-  if(g===2) return Math.max(1,Math.round(c.interval*e));
-  return Math.max(2,Math.round(c.interval*e*1.35));
-}
+const INTERVALS={0:0,1:1,2:30};     // не помню — заново, трудно — 1 день, знаю — 30 дней
+function nextInterval(c,g){ return INTERVALS[g]||0 }
 function grade(g){
   const c=current.card;
-  const iv=nextInterval(c,g);
-  c.ease=Math.max(1.3,Math.min(3.0,(c.ease||2.5)+(g===0?-0.2:g===1?-0.15:g===3?0.1:0)));
-  if(g===0){
-    c.lapses++; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
-  }else{
-    c.interval=iv; c.due=Date.now()+iv*DAY;
+  if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
+    c.archived=true; c.archivedAt=Date.now(); c.reps=(c.reps||0)+1;
+    c.due=Date.now()+3650*DAY;
+    persist(); sessionDone++; nextCard(); return;
   }
-  c.reps++;
+  if(g===0){
+    c.lapses=(c.lapses||0)+1; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
+  }else{
+    c.interval=INTERVALS[g]; c.due=Date.now()+c.interval*DAY;
+  }
+  c.reps=(c.reps||0)+1;
   persist(); sessionDone++; nextCard();
 }
 function nextCard(){
@@ -898,10 +918,10 @@ function nextCard(){
 /* ---------------- stats / nav ---------------- */
 function renderStats(){
   const now=Date.now();
-  const due=cards.filter(c=>c.due<=now).length;
+  const due=cards.filter(c=>!c.archived&&c.due<=now).length;
   $('#stTotal').textContent=cards.length;
   $('#stDue').textContent=due;
-  $('#stKnown').textContent=cards.filter(c=>c.interval>=21).length;
+  $('#stKnown').textContent=cards.filter(c=>c.archived).length;
   const dot=$('#navDue');
   dot.style.display=due?'block':'none'; dot.textContent=due>99?'99+':due;
 }
@@ -1022,6 +1042,10 @@ function mergeRemote(remote){
     if(!lc){ cards.push(rc); byId.set(rc.id,rc); byWord.set(norm(rc.word),rc); changed++; return }
     const newer=(rc.reps||0)>(lc.reps||0) || ((rc.reps||0)===(lc.reps||0)&&(rc.due||0)>(lc.due||0));
     if(newer){ Object.assign(lc,rc,{id:lc.id}); changed++ }
+    // статус «выучено» отдельно: выигрывает более позднее изменение флага
+    if((rc.archivedAt||0)>(lc.archivedAt||0)){
+      lc.archived=!!rc.archived; lc.archivedAt=rc.archivedAt; changed++;
+    }
   });
   const rs=remote.settings||{};
   if((rs.at||0)>(settings.at||0)){
