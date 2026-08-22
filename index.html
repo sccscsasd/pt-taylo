@@ -272,7 +272,7 @@
   /* tab bar */
   nav{
     position:fixed;bottom:0;left:0;right:0;z-index:30;
-    display:grid;grid-template-columns:repeat(5,1fr);
+    display:grid;grid-template-columns:repeat(4,1fr);
     background:var(--bar);border-top:.5px solid var(--sep);
     padding-bottom:env(safe-area-inset-bottom);
   }
@@ -311,7 +311,7 @@
 
 <header>
   <h1>Português</h1>
-  <div class="sub"><span id="stTotal">0</span> слов · <span id="stDue">0</span> к повтору · <span id="stKnown">0</span> выучено</div>
+  <div class="sub" id="stats"></div>
 </header>
 
 <main>
@@ -1106,12 +1106,21 @@ function nextCard(){
 }
 
 /* ---------------- stats / nav ---------------- */
+const plural=(n,one,few,many)=>{
+  const m=n%100, k=n%10;
+  return n+' '+(m>=11&&m<=14?many:k===1?one:k>=2&&k<=4?few:many);
+};
 function renderStats(){
   const now=Date.now();
-  const due=cards.filter(c=>!c.archived&&c.due<=now).length;
-  $('#stTotal').textContent=cards.length;
-  $('#stDue').textContent=due;
-  $('#stKnown').textContent=cards.filter(c=>c.archived).length;
+  const live=cards.filter(c=>!c.archived);
+  const fresh=live.filter(c=>c.reps===0).length;
+  // «к повтору» — только просроченные повторения: новые слова не горят красным
+  const due=live.filter(c=>c.reps>0&&c.due<=now).length;
+  const known=cards.length-live.length;
+  $('#stats').textContent=plural(cards.length,'слово','слова','слов')+
+    (fresh?' · '+fresh+' новых':'')+
+    (due?' · '+due+' к повтору':'')+
+    (known?' · '+known+' выучено':'');
   const dot=$('#navDue');
   dot.style.display=due?'block':'none'; dot.textContent=due>99?'99+':due;
 }
