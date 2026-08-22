@@ -19,6 +19,7 @@
 index.html                     всё приложение: разметка, стили, логика, словник A1–A2
 CNAME                          pt.taylo.co, задаёт домен для Pages
 supabase/functions/ai/index.ts исходник Edge Function (прокси к OpenAI)
+supabase/migrations/            SQL, уже применённый к базе
 vocabulario/                   словник и готовые колоды
   temas-A1-A2.json             18 тем, 1632 слова без повторов — встроен в index.html как TEMAS
   baralho-completo-A1-A2.json  1636 готовых карточек, грузится кнопкой в настройках
@@ -51,8 +52,13 @@ vocabulario/                   словник и готовые колоды
 ```js
 { id, word, query, pos, ru, ex, exru, note,
   created, due, interval, reps, lapses,
-  archived, archivedAt }        // archived — «выучено», из показа убрано, слово сохранено
+  archived, archivedAt,         // archived — «выучено», из показа убрано, слово сохранено
+  rev }                         // время последней правки, по нему решаются расхождения
 ```
+
+В таблице те же поля со змеиными именами, кроме двух: `interval` → `ivl`
+(в SQL это зарезервированное слово), `archivedAt` → `archived_at`.
+Перекладывают `toRow()` и `fromRow()`.
 
 `word` у существительных с артиклем: `o carro`, `a chave`. Сравнение слов — через `norm()`,
 он снимает артикль и пунктуацию.
@@ -79,7 +85,8 @@ vocabulario/                   словник и готовые колоды
 
 | Объект | Назначение |
 |---|---|
-| `public.pt_data` | по строке на пользователя: `user_id`, `data jsonb`, `updated_at`. RLS: только своя строка через `auth.uid()` |
+| `public.pt_cards` | **колода**: строка на карточку, ключ `(user_id, id)`. `updated_at` ставит триггер, по ней клиент докачивает изменения; `rev` — версия по часам клиента, триггер отбрасывает более старую; `deleted` — надгробие |
+| `public.pt_data` | только настройки: `data = {v:2, settings:{…}}`. Раньше здесь лежала вся колода одним jsonb |
 | `public.pt_usage` | счётчик запросов к ИИ на пользователя в сутки |
 | `public.pt_bump_usage(p_ip, p_limit)` | `security definer`, инкремент счётчика; анониму не выдан |
 
@@ -144,6 +151,9 @@ await fetch('https://api.supabase.com/v1/projects/slyksrymqggaujstbocx/database/
 
 - **localStorage привязан к origin.** `localhost`, `http://pt.taylo.co` и `https://pt.taylo.co` —
   три разных хранилища. Прогресс теперь в облаке, но при отладке об этом легко забыть.
+- **localStorage — только кеш.** Ключ `pt.cache.v2.<user_id>` хранит копию колоды, очередь
+  неотправленных правок (`dirty`, `tombs`) и метку `syncedAt`. Чистить его безопасно:
+  всё вернётся с сервера. Опасно другое — почистить его, пока очередь не отправлена.
 - **GitHub сам коммитит `CNAME`,** когда домен переустанавливают через API Pages. После этого
   `git push` отлетает с non-fast-forward — лечится `git pull --rebase`.
 - **Сертификат Pages** может не выпускаться час и дольше. Помогает снять и заново поставить

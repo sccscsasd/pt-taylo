@@ -151,18 +151,33 @@
   .sugg span{font-size:12px;color:var(--label3);margin-left:auto;padding-left:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto}
   .sugg .have{opacity:.45}
 
+  /* скриншот, прикреплённый прямо к строке ввода */
+  .composer.over input#wordInput{box-shadow:inset 0 0 0 2px var(--blue)}
+  input#wordInput{padding-right:42px}
+  .pick{
+    position:absolute;right:5px;top:50%;transform:translateY(-50%);
+    display:flex;align-items:center;justify-content:center;
+    width:32px;height:32px;padding:0;border:none;border-radius:8px;
+    background:none;color:var(--label3);cursor:pointer;
+  }
+  .pick svg{width:20px;height:20px}
+  .pick:active{opacity:.5}
+  .attach{
+    display:flex;align-items:center;gap:10px;margin-top:10px;padding:8px;
+    background:var(--group);border-radius:10px;
+  }
+  .attach img{width:44px;height:44px;object-fit:cover;border-radius:8px;flex:none;background:var(--fill)}
+  .attach .an{
+    flex:1;min-width:0;font-size:14px;color:var(--label2);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  .attach .x{
+    flex:none;width:28px;height:28px;padding:0;border:none;border-radius:50%;cursor:pointer;
+    background:var(--fill);color:var(--label2);font-size:14px;line-height:1;
+  }
+  .attach .x:active{opacity:.55}
+
   /* screenshot */
-  .drop{
-    display:flex;align-items:center;justify-content:center;gap:9px;
-    min-height:80px;padding:16px;cursor:pointer;text-align:center;
-    background:var(--group);border-radius:10px;color:var(--blue);font-size:16px;
-  }
-  .drop:active{opacity:.6}
-  .drop svg{width:20px;height:20px;flex:none}
-  .thumb{
-    display:block;width:100%;max-height:220px;object-fit:contain;
-    margin-top:10px;border-radius:10px;background:var(--fill);
-  }
   .ocrbox{margin-top:12px;background:var(--group);border-radius:10px;padding:14px}
   .ocrbox .ocrpt{font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
   .ocrbox .ocrru{
@@ -295,40 +310,32 @@
 
 <main>
   <section id="v-add" class="view on">
-    <div class="sec">
+    <div class="sec composer" id="composer">
       <span class="lbl">Слово или выражение</span>
       <div class="row">
         <div style="flex:3;position:relative">
           <input type="text" id="wordInput" placeholder="arrumar, de repente…" autocapitalize="off" autocomplete="off" spellcheck="false">
+          <button class="pick" id="pickImg" type="button" title="Прикрепить скриншот">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4.5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="M4 16.5l4.6-4.2a2 2 0 0 1 2.7 0L16 16.5"/>
+            </svg>
+          </button>
+          <input type="file" id="imgFile" accept="image/*" style="display:none">
           <div class="sugg" id="sugg" style="display:none"></div>
         </div>
         <button class="btn primary" id="addOne" style="flex:1;max-width:118px">Перевести</button>
       </div>
-      <div class="hint">Можно несколько через запятую. Сначала покажу перевод, добавите — если подойдёт.</div>
+      <div class="attach" id="attach" style="display:none">
+        <img id="attachThumb" alt="">
+        <span class="an">Скриншот прикреплён — нажмите «Распознать»</span>
+        <button class="x" id="attachClear" type="button" title="Убрать">&#10005;</button>
+      </div>
+      <div class="hint">Можно несколько через запятую. Скриншот — Ctrl+V, перетаскивание файла или значок картинки. Длинный текст вставляйте так же: разберу его на слова.</div>
+      <div id="ocrOut"></div>
       <div id="preview"></div>
     </div>
 
-    <div class="sec">
-      <span class="lbl">Скриншот</span>
-      <div class="drop" id="drop">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4.5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="M4 16.5l4.6-4.2a2 2 0 0 1 2.7 0L16 16.5"/>
-        </svg>
-        Выбрать скриншот
-      </div>
-      <input type="file" id="imgFile" accept="image/*" style="display:none">
-      <div id="imgPreview" style="display:none">
-        <img id="imgThumb" class="thumb" alt="">
-        <div class="row" style="margin-top:10px">
-          <button class="btn primary" id="ocrBtn">Распознать и перевести</button>
-          <button class="btn" id="imgClear" style="max-width:104px">Убрать</button>
-        </div>
-      </div>
-      <div id="ocrOut"></div>
-      <div class="hint">Можно вставить из буфера (Ctrl+V) или перетащить файл.</div>
-    </div>
-
-    <div class="sec">
+    <div class="sec" id="textSec" style="display:none">
       <span class="lbl">Текст на португальском</span>
       <textarea id="textInput" placeholder="Абзац из статьи, субтитров, сообщения…" autocapitalize="off" spellcheck="false"></textarea>
       <div class="row" style="margin-top:10px">
@@ -447,8 +454,13 @@
 <div class="toast" id="toast"></div>
 
 <script>
-/* ---------------- storage ---------------- */
-const LS_CARDS='pt.cards.v1', LS_SET='pt.settings.v1';
+/* ---------------- хранилище ----------------
+   Карточки и прогресс принадлежат аккаунту, а не браузеру: истина живёт в таблице
+   pt_cards в Supabase. localStorage — только копия под ключом конкретного
+   пользователя плюс очередь правок, которые ещё не доехали до сервера.        */
+const LS_AUTH='pt.auth.v1';
+const OLD_CARDS='pt.cards.v1', OLD_SET='pt.settings.v1', OLD_OWNER='pt.owner.v1';
+
 const load=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}};
 let storageWarned=false;
 const save=(k,v)=>{
@@ -456,16 +468,26 @@ const save=(k,v)=>{
   catch(e){
     if(!storageWarned){
       storageWarned=true;
-      setTimeout(()=>toast('Браузер не даёт сохранять данные — карточки пропадут при перезагрузке',6000),300);
+      setTimeout(()=>toast('Браузер не даёт хранить копию колоды — работать можно, но только онлайн',6000),300);
     }
   }
 };
 
-let cards = load(LS_CARDS,[]);
-let settings = Object.assign({key:'',model:'gpt-4o-mini',dir:'pt'}, load(LS_SET,{}));
+let cards=[];               // живые карточки текущего пользователя
+let settings={dir:'pt'};
+let dirty=new Set();        // id карточек с неотправленными правками
+let tombs=[];               // удалённые карточки, ждущие отправки
+let syncedAt='';            // метка сервера: до какого момента изменения уже получены
+let setDirty=false;         // настройки изменены и не отправлены
 
-const persist=()=>{save(LS_CARDS,cards);renderStats();schedulePush()};
-const persistSet=()=>{settings.at=Date.now();save(LS_SET,settings);schedulePush()};
+function touch(c){ c.rev=Date.now(); dirty.add(c.id) }
+function dropCard(c){
+  c.deleted=true; c.rev=Date.now();
+  dirty.delete(c.id); tombs.push(c);
+  cards=cards.filter(x=>x.id!==c.id);
+}
+const persist=()=>{ saveCache(); renderStats(); scheduleFlush() };
+const persistSet=()=>{ settings.at=Date.now(); setDirty=true; saveCache(); scheduleFlush() };
 
 /* ---------------- helpers ---------------- */
 const $=s=>document.querySelector(s);
@@ -527,7 +549,7 @@ async function generateCards(items){
         ex:String(r.example_pt||'').trim(),
         exru:String(r.example_ru||'').trim(),
         note:String(r.note||'').trim(),
-        created:Date.now(), due:Date.now(), interval:0, ease:2.5, reps:0, lapses:0
+        created:Date.now(), due:Date.now(), interval:0, reps:0, lapses:0
       });
     }
   }
@@ -536,6 +558,7 @@ async function generateCards(items){
 function commitCards(fresh){
   const add=fresh.filter(c=>!cards.some(x=>norm(x.word)===norm(c.word)));
   cards=add.concat(cards);
+  add.forEach(touch);
   persist(); renderCards(); renderTemaList();
   return add.length;
 }
@@ -584,6 +607,7 @@ async function runAdd(inputs, btn){
 }
 
 $('#addOne').onclick=async e=>{
+  if(imgData){ await runOcr($('#addOne')); return }
   const raw=$('#wordInput').value.split(/[,;\n]/).map(s=>s.trim()).filter(Boolean);
   if(!raw.length){toast('Введите слово');return}
   const todo=raw.filter(w=>!hasWord(w));
@@ -717,7 +741,11 @@ $('#addSelected').onclick=()=>{
     updateSelCount();
   });
 };
-$('#clearText').onclick=()=>{$('#textInput').value='';$('#chipWrap').style.display='none'};
+// разбор на слова — это результат распознавания, поэтому по умолчанию блок свёрнут
+function showTextSec(on){ $('#textSec').style.display=on?'block':'none' }
+$('#clearText').onclick=()=>{
+  $('#textInput').value=''; $('#chipWrap').style.display='none'; showTextSec(false);
+};
 
 /* ---------------- скриншот → OCR → перевод ---------------- */
 let imgData=null;
@@ -744,28 +772,48 @@ function shrink(file,maxSide){
   });
 }
 
+function renderAttach(){
+  const box=$('#attach');
+  if(imgData){ $('#attachThumb').src=imgData; box.style.display='flex' }
+  else{ box.style.display='none'; $('#attachThumb').removeAttribute('src') }
+  $('#addOne').textContent = imgData?'Распознать':'Перевести';
+}
+function clearAttach(){ imgData=null; renderAttach(); $('#ocrOut').innerHTML='' }
+
 async function setImage(file){
   try{
     imgData=await shrink(file,1600);
-    $('#imgThumb').src=imgData;
-    $('#imgPreview').style.display='block';
     $('#ocrOut').innerHTML='';
-    $('#imgPreview').scrollIntoView({behavior:'smooth',block:'nearest'});
+    renderAttach();
+    $('#attach').scrollIntoView({behavior:'smooth',block:'nearest'});
   }catch(e){ toast(esc(e.message)) }
 }
 
-$('#drop').onclick=()=>$('#imgFile').click();
+$('#pickImg').onclick=()=>$('#imgFile').click();
 $('#imgFile').onchange=e=>{ if(e.target.files[0]) setImage(e.target.files[0]); e.target.value='' };
-$('#imgClear').onclick=()=>{
-  imgData=null; $('#imgThumb').removeAttribute('src');
-  $('#imgPreview').style.display='none'; $('#ocrOut').innerHTML='';
-};
+$('#attachClear').onclick=clearAttach;
 
-['dragenter','dragover'].forEach(ev=>$('#drop').addEventListener(ev,e=>e.preventDefault()));
-$('#drop').addEventListener('drop',e=>{
+// файл можно бросить прямо на строку ввода
+(()=>{
+  const el=$('#composer');
+  ['dragenter','dragover'].forEach(ev=>el.addEventListener(ev,e=>{ e.preventDefault(); el.classList.add('over') }));
+  ['dragleave','dragend'].forEach(ev=>el.addEventListener(ev,()=>el.classList.remove('over')));
+  el.addEventListener('drop',e=>{
+    e.preventDefault(); el.classList.remove('over');
+    const f=e.dataTransfer&&e.dataTransfer.files[0];
+    if(f) setImage(f);
+  });
+})();
+
+// вставили в строку целый абзац — это не слово, а текст на разбор
+$('#wordInput').addEventListener('paste',e=>{
+  const t=(e.clipboardData&&e.clipboardData.getData('text')||'').trim();
+  if(!t||/[,;]/.test(t)||t.split(/\s+/).length<5) return;
   e.preventDefault();
-  const f=e.dataTransfer&&e.dataTransfer.files[0];
-  if(f) setImage(f);
+  $('#textInput').value=t;
+  showTextSec(true);
+  $('#parseBtn').click();
+  $('#chipWrap').scrollIntoView({behavior:'smooth',block:'nearest'});
 });
 
 document.addEventListener('paste',e=>{
@@ -776,17 +824,16 @@ document.addEventListener('paste',e=>{
       if(f){
         e.preventDefault();
         $$('nav button').find(b=>b.dataset.v==='add').click();
-        setImage(f);
+        setImage(f).then(()=>$('#wordInput').focus());
       }
       return;
     }
   }
 });
 
-$('#ocrBtn').onclick=async e=>{
-  if(!imgData){toast('Сначала выберите скриншот');return}
-  const b=e.target, old=b.innerHTML;
-  b.disabled=true; b.innerHTML='<span class="spin"></span> Читаю…';
+async function runOcr(b){
+  const old=b.innerHTML;
+  b.disabled=true; b.innerHTML='<span class="spin"></span>';
   try{
     const r=await askVision(imgData);
     const text=(r.text||'').trim();
@@ -798,11 +845,14 @@ $('#ocrBtn').onclick=async e=>{
         (r.ru?'<div class="ocrru">'+esc(r.ru)+'</div>':'')+
       '</div>';
     $('#textInput').value=text;
+    showTextSec(true);
     $('#parseBtn').click();
+    imgData=null;                       // картинку сняли, разбор остался
+    $('#chipWrap').scrollIntoView({behavior:'smooth',block:'nearest'});
     if(lang&&lang!=='pt') toast('Похоже, текст на языке «'+esc(lang)+'», а не на португальском',4000);
   }catch(err){ toast(esc(err.message),5000) }
-  finally{ b.disabled=false; b.innerHTML=old }
-};
+  finally{ b.disabled=false; b.innerHTML=old; renderAttach() }
+}
 
 /* ---------------- готовые темы A1–A2 (Referencial Camões PLE) ---------------- */
 const TRAD={"ser":"быть (постоянный признак)","estar":"быть, находиться (временно)","ter":"иметь, быть должным","haver":"иметься, быть в наличии","viver":"жить, проживать","sem":"без","conhecer":"знать (быть знакомым), познакомит…","dizer":"говорить, сказать","escrever":"писать","esperar":"ждать","falar":"говорить, разговаривать","pensar":"думать","perguntar":"спрашивать","pergunta":"вопрос","responder":"отвечать","resposta":"ответ","dar":"давать","então":"тогда, итак, ну и","mas":"но","porque":"потому что","porquê":"почему (в конце вопроса)","sobre":"о, про","almoçar":"обедать","almoço":"обед","pequeno-almoço":"завтрак","tomar o pequeno-almoço":"завтракать","jantar":"ужинать","lanchar":"перекусить, полдничать","lanche":"перекус, полдник","caderno":"тетрадь","caneta":"ручка","lápis":"карандаш","livro":"книга","quadro":"доска (в классе)","sala de aula":"класс, аудитория","turma":"класс, группа (учащихся)","colega":"коллега, одноклассник","disciplina":"учебный предмет","curso":"курс, обучение","semestre":"семестр","recreio":"перемена (в школе)","sair da escola":"уходить из школы (после уроков)","começar a trabalhar":"начинать работать","sair do trabalho":"уходить с работы","horário de trabalho":"рабочий график","chegar a casa":"приходить домой","lavar-se":"мыться, умываться","vestir-se":"одеваться","despir-se":"раздеваться","ir às compras":"ходить за покупками","supermercado":"супермаркет","alimentação":"питание, еда","comer":"есть, кушать","beber":"пить","cozinhar":"готовить (пищу)","preparar":"готовить, подготавливать","provar":"пробовать (на вкус)","pedir":"просить","pão":"хлеб","arroz":"рис","massa":"макароны","trigo":"пшеница","cereal":"злак","carne":"мясо","carne de vaca":"говядина","porco":"свинья","frango":"курица (мясо)","ovo":"яйцо","leite":"молоко","fruta":"фрукты","maçã":"яблоко","laranja":"апельсин","banana":"банан","tomate":"помидор","batata":"картофель","vegetal":"овощ, растение","salada":"салат","sopa":"суп","sal":"соль","pimenta":"перец (молотый)","açúcar":"сахар","chocolate":"шоколад","gelado":"мороженое","ementa":"меню","menu":"меню","empregado":"официант","nome próprio":"имя","apelido":"фамилия","nome completo":"полное имя","chamar-se":"зваться, называться","chamar":"звать, вызывать","apresentar-se":"представляться","senhor":"господин","senhora":"госпожа","assinar":"подписывать","assinatura":"подпись","bilhete de identidade":"удостоверение личности (старого о…","cartão de cidadão":"карта гражданина (осн. документ в…","passaporte":"паспорт","carta de condução":"водительские права","data de nascimento":"дата рождения","lugar de nascimento":"место рождения","morada":"адрес","rua":"улица","avenida":"проспект, авеню","praça":"площадь","número da porta":"номер дома","código postal":"почтовый индекс","casa":"дом","apartamento":"квартира","morar":"жить, проживать","telefone":"телефон","telemóvel":"мобильный телефон","número de telefone":"номер телефона","telefonar":"звонить по телефону","ligar":"звонить","email":"электронная почта, письмо","endereço de email":"адрес электронной почты","mensagem":"сообщение","sms":"смс","enviar":"отправлять","fax":"факс","mandar um fax":"отправить факс","internet":"интернет","computador":"компьютер","família":"семья","pai":"отец","mãe":"мать","filho":"сын","irmã":"сестра","avô":"дедушка","avó":"бабушка","neto":"внук","tio":"дядя","primo":"двоюродный брат","marido":"муж","mulher":"женщина","homem":"мужчина","namorado":"парень, молодой человек","companheiro":"партнёр, спутник жизни","criança":"ребёнок","menino":"мальчик","menina":"девочка","rapaz":"парень, юноша","rapariga":"девушка","jovem":"молодой человек","adulto":"взрослый","idoso":"пожилой человек","idade":"возраст","estado civil":"семейное положение","solteiro":"холостой, незамужняя","casado":"женатый, замужем","divorciado":"разведённый","separado":"живущий раздельно (не разведён)","viúvo":"вдовец, вдова","unido de facto":"в гражданском браке","sexo":"пол (в документах)","género":"пол, гендер","masculino":"мужской","feminino":"женский","escola":"школа","aula":"урок, занятие","estudar":"учиться, заниматься","aprender":"учить, усваивать","estudante":"студент, учащийся","professor":"преподаватель, учитель","exame":"экзамен","biblioteca":"библиотека","universidade":"университет","instituto":"институт","básico":"базовый (о ступени школы)","ensino secundário":"старшая школа (10–12 класс)","secundário":"средний (об образовании)","superior":"высший (об образовании)","universitário":"университетский","licenciatura":"бакалавриат, диплом о высшем","tirar":"получать (курс, права)","fazer":"делать","profissão":"профессия","trabalho":"работа","local de trabalho":"место работы","simpático":"приятный, дружелюбный","antipático":"неприятный, недружелюбный","agradável":"приятный","alegre":"весёлый, радостный","interessante":"интересный","louro":"светловолосый, блондин","moreno":"темноволосый, смуглый","ruivo":"рыжий","religião":"религия","deus":"бог","cristão":"христианин, христианский","muçulmano":"мусульманин, мусульманский","judeu":"еврей, иудейский","budista":"буддист, буддийский","hindu":"индуист, индуистский","ateu":"атеист","agnóstico":"агностик","cozinha":"кухня","quarto":"комната, спальня","sala de estar":"гостиная","sala de jantar":"столовая (комната)","casa de banho":"ванная, туалет","despensa":"кладовая","garagem":"гараж","jardim":"сад","piso":"этаж","porta":"дверь","janela":"окно","parede":"стена","chave":"ключ","fechadura":"замок (дверной)","mesa":"стол","cadeira":"стул","cama":"кровать","sofá":"диван","relógio":"часы","caixa":"коробка","televisão":"телевизор, телевидение","comando":"пульт (от телевизора)","vídeo":"видео","fogão":"плита (кухонная)","forno":"духовка","frigorífico":"холодильник","congelador":"морозильник","eletrodomésticos":"бытовая техника","placa":"варочная панель","aquecimento":"отопление","eletricidade":"электричество","gás":"газ","luz":"свет","desligar":"выключать","banheira":"ванна","chuveiro":"душ","lavatório":"раковина (в ванной)","sanita":"унитаз","torneira":"кран","toalha":"полотенце","lixo":"мусор","prato":"тарелка","chávena":"чашка","garrafa":"бутылка","faca":"нож","garfo":"вилка","colher":"ложка","arrendamento":"аренда (жилья)","arrendar":"снимать","renda":"арендная плата","comprar":"покупать","vender":"продавать","cidade":"город","campo":"деревня, сельская местность","país":"страна","capital":"столица","estrangeiro":"иностранец","mapa":"карта (географическая)","loja":"магазин","café":"кафе","restaurante":"ресторан","hotel":"отель","hospital":"больница","museu":"музей","parque":"парк","estação de comboios":"железнодорожный вокзал","paragem de autocarro":"автобусная остановка","praça de táxis":"стоянка такси","mar":"море","praia":"пляж","rio":"река","lago":"озеро","floresta":"лес","árvore":"дерево","flor":"цветок","planta":"растение","fruto":"плод","animal":"животное","cão":"собака","gato":"кот, кошка","pássaro":"птица","periquito":"попугайчик","peixe":"рыба","tempo":"погода","mau tempo":"плохая погода, непогода","sol":"солнце","vento":"ветер","chover":"идти (о дожде)","nevar":"идти (о снеге)","dia":"день","manhã":"утро","tarde":"день (после полудня), вечер до 20…","noite":"вечер, ночь","de manhã":"утром","de dia":"днём (при свете дня)","esta manhã":"сегодня утром","meio-dia":"полдень","meia-noite":"полночь","hora":"час","minuto":"минута","segundo":"секунда","horário":"расписание, график","semana":"неделя","fim de semana":"выходные","segunda":"понедельник","terça":"вторник","quarta":"среда","quinta":"четверг","sexta":"пятница","sábado":"суббота","domingo":"воскресенье","mês":"месяц","janeiro":"январь","fevereiro":"февраль","março":"март","abril":"апрель","maio":"май","junho":"июнь","julho":"июль","agosto":"август","setembro":"сентябрь","outubro":"октябрь","novembro":"ноябрь","dezembro":"декабрь","ano":"год","primavera":"весна","verão":"лето","outono":"осень","inverno":"зима","hoje":"сегодня","amanhã":"завтра","agora":"сейчас","até agora":"до сих пор, пока что","logo":"скоро, попозже","cedo":"рано","mais cedo":"раньше","mais tarde":"позже","sempre":"всегда","nunca":"никогда","vez":"раз","quando":"когда","desde":"с (какого-то момента)","até":"до","princípio":"начало","pouco tempo":"недолго, мало времени","muito":"много, очень","depressa":"быстро","devagar":"медленно","acabar":"заканчивать(ся)","costumar":"иметь обыкновение, обычно делать","seguir":"следовать, продолжать","mudar":"менять(ся)","viagem":"поездка, путешествие","viajar de carro":"путешествовать на машине","visitar":"посещать, навещать","visita":"визит, посещение, экскурсия","turismo":"туризм","turista":"турист","agência de turismo":"турагентство","férias na praia":"отпуск на море","carro":"машина, автомобиль","autocarro":"автобус","comboio":"поезд","avião":"самолёт","barco":"лодка, судно, паром","bicicleta":"велосипед","mota":"мотоцикл","táxi":"такси","taxista":"таксист","motorista":"водитель (профессия)","condutor":"водитель (за рулём)","estacionamento":"парковка, стоянка","aeroporto":"аэропорт","porto":"порт","estrada":"дорога, шоссе","caminho":"путь, дорога","partida":"отправление, отъезд","destino":"пункт назначения","data de chegada":"дата приезда","balcão de informações":"справочная стойка","ir em frente":"идти прямо","virar à esquerda":"повернуть налево","mala":"чемодан","bagagem":"багаж","saco":"сумка, пакет","carteira":"кошелёк","documento de identificação":"документ, удостоверяющий личность","reserva":"бронь, бронирование","estadia":"пребывание, проживание","quarto duplo":"двухместный номер","quarto de casal":"номер с двуспальной кроватью","cama individual":"односпальная кровать","chave do quarto":"ключ от номера","preço por noite":"цена за ночь","comodidades":"удобства (в номере)","parque de campismo":"кемпинг","tenda":"палатка","dinheiro":"деньги","em dinheiro":"наличными","pagar com cartão":"платить картой","conta":"счёт","procurar":"искать","montanha":"гора","neve":"снег","aqui":"здесь, сюда","aí":"там (у тебя), туда","ali":"вон там","daqui":"отсюда","daí":"оттуда (от тебя)","dali":"оттуда (издалека)","este":"этот","esse":"этот (у тебя), тот","aquele":"тот (вон тот)","isto":"это (рядом со мной)","isso":"это (у тебя), то","aquilo":"то (вон то)","onde":"где","de onde":"откуда","por onde":"каким путём, где (через что)","lugar":"место","dentro":"внутри","fora":"снаружи, вне","atrás":"сзади, позади","de trás":"задний, сзади","de cima":"сверху","baixo":"низкий","direita":"правая сторона","direito":"прямой, правый","em frente":"впереди, напротив","entre":"между, среди","perto":"близко","longe":"далеко","norte":"север","sul":"юг","oeste":"запад","ir":"идти, ехать","vir":"приходить, приезжать","chegar":"приходить, прибывать","entrar":"входить","sair":"выходить, уходить","andar":"ходить, ездить","parar":"останавливать(ся)","começar":"начинать(ся)","ficar":"находиться","viajar":"путешествовать, ездить","sentar-se":"садиться","levantar-se":"вставать, подниматься","deitar-se":"ложиться","antes":"раньше, до","depois":"потом, после","grande":"большой","pequeno":"маленький","alto":"высокий","comprido":"длинный","curto":"короткий","largo":"широкий","gordo":"толстый, полный","magro":"худой, стройный","quente":"горячий, тёплый","frio":"холодный","calor":"жара, тепло","número":"номер, число","metro":"метр","quilómetro":"километр","quilo":"килограмм","grama":"грамм","litro":"литр","zero":"ноль","cem":"сто","quinhentos":"пятьсот","mil":"тысяча","milhão":"миллион","primeiro":"первый","mais":"больше, более","menos":"меньше, менее","pouco":"мало, немного","todo":"весь, целый","quanto":"сколько","também":"тоже, также","gente":"люди","copo":"стакан","preço":"цена","cor":"цвет","branco":"белый","preto":"чёрный","vermelho":"красный","encarnado":"красный (алый)","azul":"синий, голубой","verde":"зелёный","amarelo":"жёлтый","castanho":"коричневый, карий","cinzento":"серый","roxo":"фиолетовый","cor de laranja":"оранжевый","cor-de-rosa":"розовый","madeira":"дерево (материал)","metal":"металл","plástico":"пластик","vidro":"стекло","papel":"бумага","pano":"ткань","água":"вода","ar":"воздух","som":"звук","bom":"хороший","mau":"плохой","bem":"хорошо","mal":"плохо","estar bem":"быть в порядке, чувствовать себя…","novo":"новый","velho":"старый","forte":"сильный","fraco":"слабый","duro":"твёрдый, жёсткий","mole":"мягкий","doce":"сладкий","doente":"больной","ver":"видеть, смотреть","olhar":"смотреть, глядеть","ouvir":"слышать, слушать","gostar":"нравиться, любить","lavar":"мыть, стирать","limpar":"чистить, убирать","sujar":"пачкать","pintar":"красить","cheirar bem":"хорошо пахнуть","saber bem":"быть вкусным","como":"как","entrada":"вход","saída":"выход","óculos":"очки","caro":"дорогой","barato":"дешёвый","custar":"стоить","pagar":"платить","bonito":"красивый","feio":"некрасивый, уродливый","fácil":"лёгкий, простой","difícil":"трудный, сложный","certo":"правильный","errado":"неправильный, ошибочный","importante":"важный","querer":"хотеть","saber":"знать (факты)","conseguir":"мочь, суметь, добиться","usar":"использовать","todos os dias":"каждый день","corpo":"тело","cabeça":"голова","cara":"лицо","cabelo":"волосы","olho":"глаз","nariz":"нос","boca":"рот","pé":"нога (ступня)","coração":"сердце","sangue":"кровь","doença":"болезнь","doer":"болеть (о части тела)","dor":"боль","gripe":"грипп","constipação":"простуда","estar constipado":"быть простуженным","ferida":"рана","queimar":"обжигать, жечь","partir":"ломать","acidente":"авария, несчастный случай","sentir-se":"чувствовать себя","cansado":"усталый","médico":"врач","enfermeiro":"медбрат, медсестра","dentista":"стоматолог","farmacêutico":"фармацевт","farmácia":"аптека","clínica":"клиника","ambulância":"скорая помощь","medicamento":"лекарство","comprimido":"таблетка","aspirina":"аспирин","paracetamol":"парацетамол","ibuprofeno":"ибупрофен","dormir":"спать","sono":"сон","adormecer":"засыпать","acordar":"просыпаться, будить","estar acordado":"бодрствовать, не спать","ter fome":"хотеть есть","estar com fome":"быть голодным","sede":"жажда","tomar banho":"принимать ванну, мыться","duche":"душ","lavar os dentes":"чистить зубы","sabonete":"мыло (туалетное)","sabão":"мыло (хозяйственное)","banco":"банк","cartão":"карта, карточка","correios":"почта (отделение)","carta":"письмо","envelope":"конверт","selo":"марка (почтовая)","postal":"открытка","fotocópia":"ксерокопия","fazer uma chamada":"позвонить, сделать звонок","polícia":"полиция","bombeiro":"пожарный","roubar":"красть, грабить","perder":"терять","ajuda":"помощь","passatempo":"хобби, увлечение","hobby":"хобби","interesse":"интерес","ter tempo":"иметь время","férias":"отпуск, каникулы","jogar":"играть (в игру)","jogar futebol":"играть в футбол","futebol":"футбол","jogo":"игра","brincar":"играть (о детях)","brincadeira":"игра, забава","desporto":"спорт","correr":"бегать","nadar":"плавать","natação":"плавание","esquiar":"кататься на лыжах","dançar":"танцевать","cantar":"петь","tocar":"играть (на инструменте)","música":"музыка","conversar":"беседовать, разговаривать","ir ao cinema":"ходить в кино","filme":"фильм","teatro":"театр","circo":"цирк","arte":"искусство","ler":"читать","jornal":"газета","revista":"журнал","página":"страница","história":"история, рассказ","poema":"стихотворение","rádio":"радио (станция)","compras":"покупки","mercado":"рынок","padaria":"булочная, пекарня","florista":"цветочный магазин","comida":"еда, пища","bebida":"напиток","euro":"евро","cêntimo":"цент","moeda":"монета","nota":"купюра","troco":"сдача","total":"итог, общая сумма","receber":"получать","tamanho":"размер (одежды)","medida":"мера, размер","camisa":"рубашка","t-shirt":"футболка","calças":"брюки, штаны","saia":"юбка","sapatos":"туфли, ботинки","acontecer":"случаться, происходить","nascer":"рождаться","morrer":"умирать","falta":"нехватка","faltar":"не хватать","presente":"присутствующий","ausente":"отсутствующий","ocupado":"занятый","livre":"свободный","ninguém":"никто","não haver nada":"ничего нет","cá":"сюда, здесь (разг.)","lá":"там, туда","sítio":"место","região":"регион, край","direção":"направление","esquerdo":"левый","por cima":"сверху, поверх","para dentro":"внутрь","distante":"далёкий, отдалённый","próximo":"следующий","seguinte":"следующий","último":"последний","passar":"проходить, проезжать","atravessar":"переходить, пересекать","caminhar":"идти пешком, шагать","passear":"гулять","dar uma volta":"пройтись, прогуляться","subir":"подниматься","descer":"спускаться","cair":"падать","saltar":"прыгать","voltar":"возвращаться","virar":"поворачивать","levar":"нести, везти (туда)","trazer":"приносить, привозить (сюда)","pôr":"класть, ставить","levantar":"поднимать","empurrar":"толкать","puxar":"тянуть","mexer":"двигать","estar parado":"стоять, не двигаться","ir-se embora":"уходить, уезжать","vir-se embora":"уходить (сюда, к говорящему)","causa":"причина","exercício":"упражнение","fazer desporto":"заниматься спортом","cheio":"полный","vazio":"пустой","apertado":"тесный, узкий","leve":"лёгкий (по весу)","pesado":"тяжёлый","peso":"вес","médio":"средний","comprimento":"длина","centímetro":"сантиметр","metro quadrado":"квадратный метр","quilómetro quadrado":"квадратный километр","grau":"градус","temperatura":"температура","ter frio":"мёрзнуть","tamanho único":"единый размер","magreza":"худоба","obesidade":"ожирение","tudo":"всё","nada":"ничего","algum":"какой-то, некоторый","nenhum":"никакой, ни один","outro":"другой","meio":"половинный, пол-","metade":"половина","dúzia":"дюжина","dezena":"десяток","pacote":"пачка, упаковка","bastante":"довольно, достаточно","quase":"почти","totalmente":"полностью, совершенно","tão":"так, настолько","entender":"понимать","acreditar":"верить","certeza":"уверенность","ter a certeza":"быть уверенным","ideia":"идея, мысль","opinião":"мнение","inteligente":"умный","contar":"рассказывать","conversa":"разговор, беседа","convidar":"приглашать","convite":"приглашение","pedido":"просьба","recado":"сообщение (устное), поручение","aviso":"предупреждение, объявление","agradecer":"благодарить","proibir":"запрещать","por isso":"поэтому","portanto":"следовательно, итак","por essa razão":"по этой причине","por que razão":"по какой причине, почему","motivo":"причина, повод","causar":"вызывать, причинять","provocar":"вызывать, провоцировать","concluir":"заключать, завершать","afinal":"в итоге, всё-таки","mesmo assim":"всё равно, тем не менее","por outro lado":"с другой стороны","em vez":"вместо","adicionalmente":"дополнительно, кроме того","nem":"ни, даже не","juntar":"соединять, собирать","juntos":"вместе","separar":"разделять, отделять","separados":"раздельно, по отдельности","dono":"владелец, хозяин","apresentar":"представлять (кого-то)","endereço":"адрес","praceta":"небольшая площадь (в адресе)","freguesia":"приход (муниципальный округ)","concelho":"муниципалитет","distrito":"округ, район (области)","rés do chão":"первый этаж (на уровне земли)","cave":"подвал, цокольный этаж","frente":"передняя часть, фасад","casa própria":"собственное жильё","arrendada":"съёмная, арендованная","alugada":"взятая напрокат, арендованная","mudar de casa":"переезжать","bebé":"младенец","miúdo":"ребёнок, пацан (разг.)","filho único":"единственный ребёнок","irmãos gémeos":"близнецы","cunhado":"шурин, деверь, зять (муж сестры)","sogro":"тесть, свёкор","genro":"зять (муж дочери)","nora":"невестка, сноха","noivo":"жених","ex":"бывший, бывшая","casar-se":"жениться, выходить замуж","divorciar-se":"разводиться","separar-se":"расставаться, разъезжаться","namorar":"встречаться (с кем-то)","viver juntos":"жить вместе","juntar-se":"сходиться, съезжаться","dia de anos":"день рождения","fazer anos":"праздновать день рождения","altura":"рост","medir":"измерять","pesar":"весить","bigode":"усы","ter barba":"носить бороду","estar careca":"быть лысым","franja":"чёлка","encaracolado":"кудрявый","ondulado":"волнистый","pentear-se":"причёсываться","calçar":"обувать(ся)","usar óculos":"носить очки","usar gorro":"носить шапку","chapéu":"шляпа","cachecol":"шарф","luvas":"перчатки","amável":"любезный, приветливый","educado":"вежливый, воспитанный","calmo":"спокойный","compreensivo":"понимающий, отзывчивый","otimista":"оптимистичный, оптимист","egoísta":"эгоистичный, эгоист","estúpido":"глупый","parecer":"казаться","trabalhar":"работать","empresa":"компания, предприятие","firma":"фирма","negócio":"бизнес, дело","organização":"организация","instituição":"учреждение, институция","departamento":"отдел, департамент","fábrica":"завод, фабрика","escritório":"офис, кабинет","secretária":"письменный стол","sala de reuniões":"переговорная","mesa de reuniões":"стол для совещаний","ter uma reunião":"иметь совещание, встречу","cliente":"клиент","marcar":"назначать, записывать(ся)","pedir férias":"просить отпуск","ter férias":"быть в отпуске, иметь отпуск","reforma":"пенсия","estar reformado":"быть на пенсии","pensão":"пенсия (выплата)","ensinar":"учить (кого-то), преподавать","colégio":"частная школа, колледж","academia":"академия","mestrado":"магистратура","doutoramento":"докторантура, защита диссертации","título académico":"учёная степень","matrícula":"зачисление, запись","cartão de estudante":"студенческий билет","passe":"проездной","suficiente":"достаточный","imprimir":"печатать (на принтере)","impressora":"принтер","fotocopiadora":"копировальный аппарат","tirar fotocópias":"делать копии","programa":"программа","site de internet":"сайт","montar":"собирать, монтировать","pedir nacionalidade":"подавать на гражданство","igreja":"церковь","mesquita":"мечеть","sinagoga":"синагога","cristianismo":"христианство","islamismo":"ислам","judaísmo":"иудаизм","budismo":"буддизм","hinduísmo":"индуизм","ateísmo":"атеизм","agnosticismo":"агностицизм","natal":"Рождество","ramadão":"Рамадан","sabat":"шаббат","heterossexual":"гетеросексуальный","homossexual":"гомосексуальный","bissexual":"бисексуальный","transexual":"трансгендерный","assoalhada":"комната (в объявлении о жилье)","corredor":"коридор","hall":"прихожая, холл","varanda":"балкон","quintal":"двор, участок за домом","escadas":"лестница","elevador":"лифт","portão":"ворота, калитка","campainha":"звонок (дверной)","teto":"потолок","esquina":"угол (улицы)","armário":"шкаф","roupeiro":"платяной шкаф","estante":"стеллаж, книжная полка","prateleira":"полка","gaveta":"ящик (выдвижной)","mesa de cabeceira":"тумбочка","cadeirão":"кресло","almofada":"подушка (диванная, спальная)","lençol":"простыня","cobertor":"одеяло, плед","mobília":"мебель (обстановка)","móvel":"предмет мебели","ar condicionado":"кондиционер","aquecedor":"обогреватель","esquentador":"газовая колонка (водонагреватель)","lareira":"камин","lâmpada":"лампочка","tomada":"розетка","ficha":"вилка (электрическая)","fio":"провод, нитка","corda":"верёвка","corrente":"ток","botão":"кнопка","acender":"зажигать, включать (свет)","apagar":"гасить, выключать","micro-ondas":"микроволновка","torradeira":"тостер","cafeteira":"кофеварка, кофейник","aspirador":"пылесос","ferro de engomar":"утюг","secador":"фен","autoclismo":"сливной бачок","bidé":"биде","lava-louça":"кухонная мойка","louça":"посуда","pano da louça":"кухонное полотенце","toalha de mãos":"полотенце для рук","panela":"кастрюля","tacho":"кастрюля (низкая), сотейник","frigideira":"сковорода","tabuleiro":"противень","caneca":"кружка","jarro":"кувшин","dvd":"диск, DVD","wifi":"вайфай","alugar":"брать/сдавать напрокат","aluguer":"аренда, прокат","senhorio":"арендодатель, хозяин квартиры","inquilino":"квартирант, арендатор","proprietário":"собственник, владелец","partilhar casa":"снимать жильё вместе","procurar casa":"искать жильё","fatura":"счёт, счёт-фактура","recibo":"квитанция, чек","multibanco":"банкомат","bairro":"квартал, район города","baixa":"центр города (нижний)","zona":"зона, район","vila":"городок, посёлок","aldeia":"деревня","habitante":"житель","câmara municipal":"мэрия, муниципалитет","centro comercial":"торговый центр","contentor de lixo":"мусорный контейнер","reciclagem":"переработка, раздельный сбор","banho":"купание, ванна","natureza":"природа","paisagem":"пейзаж, ландшафт","parque natural":"природный парк","monte":"холм, гора","costa":"побережье","margem":"берег (реки)","lagoa":"лагуна, небольшое озеро","oceano":"океан","continente":"континент","europa":"Европа","áfrica":"Африка","ásia":"Азия","américa":"Америка","oceânia":"Океания","interior":"внутренние районы страны","nordeste":"северо-восток","noroeste":"северо-запад","sudeste":"юго-восток","sudoeste":"юго-запад","céu":"небо","nuvem":"облако, туча","chuva":"дождь","tempestade":"буря, гроза","nevoeiro":"туман","humidade":"влажность, сырость","clima":"климат","fresco":"прохладный","animal doméstico":"домашнее животное","vaca":"корова","boi":"бык, вол","cavalo":"конь, лошадь","égua":"кобыла","galinha":"курица (живая)","galo":"петух","coelho":"кролик","mosca":"муха","mosquito":"комар","selvagem":"дикий","erva":"трава","folha":"лист (дерева, бумаги)","rosa":"роза","cravo":"гвоздика","ramo de flores":"букет цветов","oliveira":"оливковое дерево","pinheiro":"сосна","rosto":"лицо","ontem":"вчера","anteontem":"позавчера","depois de amanhã":"послезавтра","ano passado":"в прошлом году","mês passado":"в прошлом месяце","ano que vem":"в следующем году","ano seguinte":"на следующий год","mês anterior":"предыдущий месяц","anterior":"предыдущий, прежний","para a semana":"на следующей неделе","para o mês":"в следующем месяце","naquela manhã":"в то утро","todas as manhãs":"каждое утро","fins de semana":"выходные (по выходным)","logo à tarde":"сегодня во второй половине дня","final de tarde":"конец дня, ранний вечер","mais logo":"попозже сегодня","neste momento":"в данный момент","momento":"момент","por agora":"пока что","já":"уже","ainda":"ещё, всё ещё","durante":"в течение, во время","enquanto":"пока, в то время как","bocado":"кусочек","meia hora":"полчаса","quarto de hora":"четверть часа","umas horas":"несколько часов","há dois dias":"два дня назад","há duas horas":"два часа назад","muito tempo":"долго, много времени","data":"дата","aniversário":"день рождения","feriado":"праздничный выходной","carnaval":"карнавал","páscoa":"Пасха","século":"век, столетие","antigamente":"раньше, в прежние времена","dantes":"прежде, раньше","começo":"начало","fim":"конец","conclusão":"завершение","fechar":"закрывать(ся)","mudança":"перемена","trocar":"менять, обменивать","tornar-se":"становиться","morte":"смерть","atrasar":"задерживать(ся), опаздывать","atraso":"опоздание, задержка","adiar":"откладывать, переносить","adiado":"отложенный, перенесённый","adiantar":"переносить на более ранний срок","demora":"задержка, промедление","demorar":"занимать время","antes da hora":"раньше времени","depois da hora":"позже назначенного","antes do tempo":"преждевременно, досрочно","ficar para depois":"отложить на потом","de repente":"вдруг, внезапно","em breve":"скоро, вскоре","breve":"краткий, короткий","longo":"долгий, длинный","rápido":"быстрый","rapidamente":"быстро","lento":"медленный","lentamente":"медленно","sem parar":"без остановки, непрерывно","normalmente":"обычно","frequentemente":"часто","frequente":"частый","muitas vezes":"часто","poucas vezes":"редко","quase nunca":"почти никогда","só uma vez":"только один раз","mais uma vez":"ещё раз","outra vez":"снова, опять","novamente":"снова","juntamente":"вместе, совместно","só":"только","ter aulas":"учиться, иметь занятия","trabalhos de casa":"домашнее задание","manual":"учебник","material":"материалы, принадлежности","marcador":"маркер","apagador":"губка/тряпка для доски","ir ao quadro":"выходить к доске","teste":"тест, контрольная","prova":"экзамен, проверочная","aprovar":"сдать (экзамен)","reprovar":"провалить (экзамен), остаться на…","refeitório":"столовая (в школе, на работе)","receção":"ресепшен, приёмная","gabinete":"кабинет","chefe":"начальник, шеф","folga":"выходной (у работника)","sair mais tarde":"задержаться на работе","estar disponível":"быть свободным, доступным","atender uma chamada":"ответить на звонок","mandar":"посылать","impostos":"налоги","escovar os dentes":"чистить зубы","fazer a barba":"бриться","maquilhar-se":"краситься, наносить макияж","tomar":"принимать","tomar café":"выпить кофе","chá":"чай","ver televisão":"смотреть телевизор","ir aos correios":"идти на почту","posto dos correios":"почтовое отделение","carteiro":"почтальон","empregado dos correios":"работник почты","marco de correio":"почтовый ящик (уличный)","receber uma carta":"получить письмо","correios online":"почта онлайн (сервис)","carta digital":"электронное письмо (услуга)","caixa multibanco":"банкомат","número de conta":"номер счёта","fechar uma conta":"закрыть счёт","cheque":"чек (банковский)","saldo positivo":"положительный баланс","saldo negativo":"отрицательный баланс","meter":"класть, совать","chamar a polícia":"вызвать полицию","queixa":"жалоба, заявление","número de emergência":"номер экстренной службы","socorro":"помощь, спасение","bacalhau":"треска (солёная)","salmão":"лосось","camarão":"креветка","gamba":"крупная креветка","peru":"индейка","fiambre":"варёная ветчина","salsicha":"сосиска","queijo":"сыр","manteiga":"масло сливочное","iogurte":"йогурт","laticínio":"молочный продукт","azeite":"оливковое масло","vinagre":"уксус","farinha":"мука","milho":"кукуруза","alface":"салат (листовой)","couve":"капуста","cebola":"лук","alho":"чеснок","cenoura":"морковь","salsa":"петрушка","pêra":"груша","uva":"виноград","melancia":"арбуз","tangerina":"мандарин","amêndoa":"миндаль","noz":"орех (грецкий)","bolo":"пирог, торт","bolacha":"печенье","torrada":"тост","torrar":"поджаривать (хлеб), обжаривать","torrado":"поджаренный","pão com manteiga":"хлеб с маслом","sandes mista":"сэндвич с ветчиной и сыром","omelete":"омлет","piza":"пицца","sobremesa":"десерт","pastelaria":"кондитерская","cafetaria":"кафетерий","bica":"эспрессо (в Лиссабоне)","café cheio":"эспрессо побольше","descafeinado":"без кофеина","tomar um café":"выпить кофе","sumo":"сок","água mineral":"минеральная вода","com gás":"газированная","natural":"натуральный","vinho":"вино","copo de vinho":"бокал вина","cerveja":"пиво","refeição":"приём пищи, трапеза","prato principal":"основное блюдо","menu do dia":"меню дня, комплексный обед","dose":"порция","guardanapo":"салфетка","empregado de mesa":"официант","cozinheiro":"повар","chef":"шеф-повар","reservar mesa":"забронировать столик","servir":"подавать","escolher":"выбирать","decidir":"решать","bom apetite":"приятного аппетита","piquenique":"пикник","receita":"рецепт","ingrediente":"ингредиент","tempo de preparação":"время приготовления","ferver":"кипятить, кипеть","cozer":"варить","cozido":"варёный","assar":"запекать, жарить в духовке","assado":"запечённый","grelhar":"жарить на гриле","grelhado":"жаренный на гриле","fritar":"жарить (в масле)","frito":"жареный","batatas fritas":"картофель фри","descascar":"чистить (от кожуры)","picar":"рубить, мелко резать","misturar":"смешивать","bater":"взбивать","temperar":"приправлять","tempero":"приправа","mal passado":"с кровью (о мясе)","mal cozido":"недоваренный","colher de sopa":"столовая ложка","lata":"банка (консервная)","fazer o pequeno-almoço":"готовить завтрак","dieta":"диета","saudável":"здоровый, полезный","caloria":"калория","energia":"энергия","vitamina":"витамин","peso corporal":"вес тела","vegetariano":"вегетарианский, вегетарианец","vegetarianismo":"вегетарианство","italiano":"итальянский","indiano":"индийский","comida chinesa":"китайская еда","centilitro":"сантилитр","decilitro":"децилитр","mililitro":"миллилитр","divertir-se":"развлекаться, веселиться","dar uma festa":"устраивать вечеринку","estar livre":"быть свободным (о времени)","desocupado":"незанятый, свободный","estar de férias":"быть в отпуске","fazer um curso":"проходить курс","duração":"продолжительность","cinema":"кино","bilhete":"билет","reservar um bilhete":"забронировать билет","concerto":"концерт","ópera":"опера","ballet":"балет","bailarino":"танцор, балерина","dança":"танец","exposição":"выставка","obra de teatro":"театральная постановка","peça":"пьеса, спектакль","espetador":"зритель","público":"публика, зрители","ator":"актёр","atriz":"актриса","atuar":"выступать","declamar":"декламировать","banda":"группа (музыкальная)","cantor":"певец","canção":"песня","guitarra":"гитара","guitarrista":"гитарист","piano":"пианино, рояль","cd":"компакт-диск","hi-fi":"стереосистема","videoclipe":"клип","podcast":"подкаст","youtube":"ютуб","escritor":"писатель","autor":"автор","literatura":"литература","leitura":"чтение","conto":"рассказ","ficção":"художественная литература, вымысел","poesia":"поэзия","livraria":"книжный магазин","feira do livro":"книжная ярмарка","capa":"обложка","contracapa":"задняя обложка","título":"название, заголовок","artigo":"статья","linha":"строка","notícias":"новости","telejornal":"выпуск новостей (ТВ)","jornal diário":"ежедневная газета","semanário":"еженедельник","jornalista":"журналист","canal de televisão":"телеканал","programa de televisão":"телепередача","telespectador":"телезритель","conferência":"конференция","debate":"дебаты, обсуждение","debater":"обсуждать, спорить","fotografia":"фотография","desenhar":"рисовать (карандашом)","desenho":"рисунок","colorir":"раскрашивать","pintura":"живопись, картина","escultura":"скульптура","artista plástico":"художник (изобразительное искусст…","praticar desporto":"заниматься спортом","desportista":"спортсмен","ginásio":"спортзал","ginástica":"гимнастика, зарядка","piscina":"бассейн","andar de bicicleta":"кататься на велосипеде","surf":"сёрфинг","esqui":"лыжи (спорт)","ténis":"теннис","partida de ténis":"теннисный матч","basquetebol":"баскетбол","andebol":"гандбол","voleibol":"волейбол","jogador":"игрок","jogar contra":"играть против","empatar":"сыграть вничью","ponto":"очко","fã":"фанат, поклонник","ser fã":"быть фанатом","xadrez":"шахматы","damas":"шашки","cartas":"игральные карты","jogo do galo":"крестики-нолики","jogo de computador":"компьютерная игра","portátil":"ноутбук","brinquedo":"игрушка","boneca":"кукла","carrinho":"машинка","roupa":"одежда","loja de roupa":"магазин одежды","sapataria":"обувной магазин","papelaria":"магазин канцтоваров","secção de homem":"мужской отдел","balcão":"прилавок, стойка","provador":"примерочная","experimentar":"примерять","vestir":"надевать, носить","despir":"снимать (одежду)","mostrar":"показывать","atender":"обслуживать","saldos":"распродажа","pagamento":"оплата, платёж","quantia":"сумма (денег)","porta-moedas":"кошелёк для монет","unidade":"штука, единица","camisola":"свитер, кофта","blusa":"блузка","blusão":"куртка (короткая)","fato":"костюм","fato de banho":"купальник, плавки","biquíni":"бикини","calções de banho":"плавательные шорты","pijama":"пижама","cuecas":"трусы","bóxeres":"боксеры (трусы)","soutiã":"бюстгальтер","meias":"носки","botas":"сапоги, ботинки","gorro":"шапка (вязаная)","lenço":"платок","óculos de sol":"солнечные очки","anel":"кольцо","brincos":"серьги","colar":"ожерелье, цепочка","nylon":"нейлон","alimento":"продукт питания","atum":"тунец","esparguete":"спагетти","dúzia de ovos":"дюжина яиц","litro de leite":"литр молока","meio quilo":"полкило","quilo de batatas":"килограмм картошки","pacote de arroz":"пачка риса","lata de tomate":"банка помидоров","vendedor":"продавец","voo":"рейс, полёт","viajar de avião":"лететь самолётом","check-in":"регистрация (на рейс, в отеле)","partidas":"вылеты, отправления (табло)","chegadas":"прилёты, прибытия","passageiro":"пассажир","piloto":"пилот","assistente de bordo":"бортпроводник","bagagem de mão":"ручная кладь","porão":"багажный отсек, трюм","cabina":"кабина, салон","classe económica":"эконом-класс","classe executiva":"бизнес-класс","primeira classe":"первый класс","segunda classe":"второй класс","elétrico":"трамвай","mudar de comboio":"делать пересадку","bilheteira":"билетная касса","apanhar um táxi":"взять такси","andar de táxi":"ездить на такси","sair do táxi":"выйти из такси","andar de carro":"ездить на машине","gasolina":"бензин","meter gasóleo":"заправить дизелем","encher o depósito":"заправить полный бак","lavar o carro":"мыть машину","mecânico":"механик, автослесарь","roda":"колесо","cruzamento":"перекрёсток","quarteirão":"квартал (между улицами)","passeio":"тротуар","passagem":"проход, проезд","dar passagem":"уступить дорогу","passar a rua":"перейти улицу","dobrar à esquerda":"повернуть налево","seguir em frente":"ехать/идти прямо","voltar atrás":"вернуться назад","para trás":"назад","pedir direções":"спросить дорогу","cortar":"сворачивать","estar verde":"гореть зелёным (о светофоре)","distância":"расстояние","origem":"происхождение","alojamento":"жильё, размещение","dormida":"ночёвка","hóspede":"гость, постоялец","pousada":"поузада (гостиница в историческом…","residência":"пансион","motel":"мотель","apartamento de férias":"апартаменты для отдыха","kitchenette":"мини-кухня","cinco estrelas":"пять звёзд","meia pensão":"полупансион","pensão completa":"полный пансион","servir o pequeno-almoço":"подавать завтрак","serviço de quarto":"обслуживание в номер","piscina interior":"крытый бассейн","haver quartos disponíveis":"иметься свободные номера","exterior":"наружный, внешний","estar cheio":"быть заполненным","fazer uma reserva":"сделать бронь","reservar":"бронировать","fazer a mala":"собирать чемодан","fazer planos":"строить планы","excursão":"экскурсия, вылазка","guia turístico":"экскурсовод","miradouro":"смотровая площадка","castelo":"замок, крепость","ruínas":"руины","galeria de arte":"художественная галерея","alfândega":"таможня","fronteira":"граница","visto de turista":"туристическая виза","autorização de residência":"вид на жительство","declaração":"декларация, справка","moeda estrangeira":"иностранная валюта","cartão multibanco":"банковская карта","cartão de crédito":"кредитная карта","desconto":"скидка","promoção":"акция, спецпредложение","oferta":"предложение","especial":"особый, специальный","gorjeta":"чаевые","seguro de viagem":"страховка для поездки","pacote de férias":"турпакет","entrega":"доставка, вручение","recolha":"получение, забор (вещей)","devolução":"возврат","depósito de bagagem":"камера хранения","caixote":"ящик, коробка","embrulho":"свёрток, упаковка","mala de bebé":"сумка для малыша","braço":"рука (от плеча до кисти)","mão":"рука, кисть","dedo":"палец","perna":"нога","costas":"спина","coluna":"позвоночник","peito":"грудь, грудная клетка","pescoço":"шея","barriga":"живот","estômago":"желудок","garganta":"горло","ouvido":"ухо (внутреннее), слух","dente":"зуб","membro":"конечность","tronco":"туловище","adoecer":"заболевать","ficar doente":"заболеть","febre":"температура, жар","tosse":"кашель","ter gripe":"болеть гриппом","alergia":"аллергия","ser alérgico":"быть аллергиком","doer a cabeça":"болеть (о голове)","magoar um pé":"повредить ногу","depressão":"депрессия","ansiedade":"тревожность","stress":"стресс","estar nervoso":"нервничать","chorar":"плакать","rir":"смеяться","sentir":"чувствовать","ter vontade":"хотеть, иметь желание","centro de saúde":"поликлиника","médico de família":"семейный врач","consulta médica":"приём у врача","consultório":"кабинет врача","ir ao médico":"идти к врачу","paciente":"пациент","visitar um paciente":"навещать больного","horário de visitas":"часы посещений","segurança social":"социальное обеспечение","injeção":"укол, инъекция","levar uma injeção":"получить укол","vacina":"вакцина, прививка","analgésico":"обезболивающее","anti-inflamatório":"противовоспалительное","pastilha":"пастилка, таблетка для рассасыван…","pílula":"противозачаточная таблетка","pomada":"мазь","colocar pomada":"наносить мазь","gotas":"капли","penso":"пластырь, повязка","penso higiénico":"гигиеническая прокладка","preservativo":"презерватив","ferido":"раненый","champô":"шампунь","gel duche":"гель для душа","desodorizante":"дезодорант","pasta de dentes":"зубная паста","escova de dentes":"зубная щётка","pente":"расчёска","pentear":"причёсывать","gilete":"бритва, станок","creme de mãos":"крем для рук","papel higiénico":"туалетная бумага","água morna":"тёплая вода","lavar a roupa":"стирать бельё","comer bem":"хорошо питаться","dormir bem":"хорошо спать","ser saudável":"быть здоровым, полезным","medicamento contra a dor":"лекарство от боли","tomar um medicamento":"принимать лекарство","aberto":"открытый","abrir":"открывать(ся)","fechado":"закрытый","claro":"светлый","escuro":"тёмный","antigo":"старинный","moderno":"современный","usado":"подержанный, б/у","partido":"сломанный, разбитый","mau estado":"плохое состояние","resistente":"прочный, стойкий","suave":"мягкий, нежный","vivo":"живой","morto":"мёртвый","limpo":"чистый","sujo":"грязный","lavado":"вымытый, постиранный","seco":"сухой","secar":"сушить, высыхать","molhar":"мочить, намочить","húmido":"влажный, сырой","tapar":"закрывать, накрывать","forma":"форма","redondo":"круглый","quadrado":"квадратный","círculo":"круг","lado":"сторона","algodão":"хлопок","lã":"шерсть","tecido":"ткань","pele":"кожа","ouro":"золото","prata":"серебро","cristal":"хрусталь, кристалл","cartolina":"картон (тонкий)","tinta":"краска","pintado":"покрашенный","bege":"бежевый","lilás":"сиреневый","grená":"бордовый","vinho tinto":"красное вино","cheiro":"запах","ter cheiro":"иметь запах, пахнуть","sabor":"вкус (у еды)","gosto":"вкус","ter gosto":"иметь вкус","amargo":"горький","azedo":"кислый","barulho":"шум","silêncio":"тишина","gritar":"кричать","grito":"крик","voz":"голос","perceber":"понимать","vista":"вид","aspeto":"вид, внешность","ver-se":"быть видимым","ver-se bem":"хорошо видно","saída de emergência":"аварийный выход","melhor":"лучше, лучший","pior":"хуже, худший","correto":"правильный, корректный","correção":"исправление, коррекция","erro":"ошибка","acertar":"угадать, попасть в точку","estar certo":"быть правым, верным","diferente":"другой, отличающийся","normal":"обычный, нормальный","habitual":"привычный, обычный","habitualmente":"обычно","regular":"регулярный","regularmente":"регулярно","rotina":"распорядок, рутина","dia-a-dia":"повседневность","simples":"простой","complicado":"сложный, запутанный","estranho":"странный","esquisito":"странный, чудной","giro":"классный, симпатичный","lindo":"прекрасный, очень красивый","preparado":"готовый, подготовленный","proibido":"запрещённый","prático":"практичный, удобный","útil":"полезный","sem importância":"неважный, пустяковый","poder":"мочь, иметь возможность","tentar":"пытаться, пробовать","ganhar":"выигрывать","desejar":"желать","apetecer":"хотеться","valer":"стоить, иметь ценность","valor":"стоимость","utilizar":"использовать","uso":"использование, применение","dever ser":"должно быть, вероятно","facilmente":"легко","dificilmente":"вряд ли, с трудом"};
@@ -891,10 +941,24 @@ function cardHTML(c){
     '</div></article>';
 }
 let cardFilter='all';
+// Поиск идёт только по слову и переводу — в примерах не ищем, иначе «cham»
+// вытаскивает «fecham» из чужого предложения. Порядок: точное совпадение, начало
+// слова, начало слова внутри выражения, потом то же самое по переводу.
+const words=s=>s.split(/\s+/).filter(Boolean);
+function searchRank(c,q){
+  const w=deacc(norm(c.word)), ru=deacc(norm(c.ru));
+  if(w===q) return 0;                               // ровно это слово
+  if(words(w).some(t=>t.startsWith(q))) return 1;    // начало слова, в том числе внутри выражения
+  if(ru===q) return 2;
+  if(words(ru).some(t=>t.startsWith(q))) return 3;   // то же самое по переводу
+  return 4;                                         // середина слова совпадением не считаем
+}
 function renderCards(){
-  const q=norm($('#search').value);
+  const q=deacc(norm($('#search').value));
   const byFilter=cards.filter(c=>cardFilter==='all'||(cardFilter==='done'?c.archived:!c.archived));
-  const list=byFilter.filter(c=>!q||norm(c.word).includes(q)||norm(c.ru).includes(q)||norm(c.ex).includes(q));
+  const list=!q ? byFilter
+    : byFilter.map(c=>[c,searchRank(c,q)]).filter(p=>p[1]<4)
+              .sort((a,b)=>a[1]-b[1]).map(p=>p[0]);
   const done=cards.filter(c=>c.archived).length;
   const segs=$$('#cardFilter button');
   if(segs.length){
@@ -922,12 +986,12 @@ $('#cardList').onclick=async e=>{
   const c=cards.find(x=>x.id===id); if(!c)return;
   if(btn.dataset.act==='back'){
     c.archived=false; c.archivedAt=Date.now(); c.interval=1; c.due=Date.now();
-    persist(); renderCards(); toast('Вернул в изучение');
+    touch(c); persist(); renderCards(); toast('Вернул в изучение');
     return;
   }
   if(btn.dataset.act==='del'){
     if(!confirm('Удалить «'+c.word+'»?'))return;
-    cards=cards.filter(x=>x.id!==id); persist(); renderCards(); toast('Удалено');
+    dropCard(c); persist(); renderCards(); toast('Удалено');
   }else{
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
@@ -935,7 +999,7 @@ $('#cardList').onclick=async e=>{
       c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
       c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
       if(r.note!=null) c.note=r.note;
-      persist(); renderCards(); toast('Обновлено');
+      touch(c); persist(); renderCards(); toast('Обновлено');
     }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
   }
 };
@@ -1009,14 +1073,14 @@ function grade(g){
   if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
     c.archived=true; c.archivedAt=Date.now(); c.reps=(c.reps||0)+1;
     c.due=Date.now()+3650*DAY;
-    persist(); sessionDone++; nextCard(); return;
+    touch(c); persist(); sessionDone++; nextCard(); return;
   }
   if(g===0){
     c.lapses=(c.lapses||0)+1; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
   }else{
     c.interval=INTERVALS[g]; c.due=Date.now()+c.interval*DAY;
   }
-  c.reps=(c.reps||0)+1;
+  c.reps=(c.reps||0)+1; touch(c);
   persist(); sessionDone++; nextCard();
 }
 function nextCard(){
@@ -1047,7 +1111,6 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 });
 
 /* ---------------- settings ---------------- */
-$('#dir').value=settings.dir;
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
 
 $('#exportBtn').onclick=()=>{
@@ -1063,7 +1126,9 @@ function importCards(raw){
   let added=0;
   inc.forEach(c=>{
     if(!c.word||cards.some(x=>norm(x.word)===norm(c.word)))return;
-    cards.push(Object.assign({id:uid(),created:Date.now(),due:Date.now(),interval:0,ease:2.5,reps:0,lapses:0},c));
+    const nc=Object.assign({id:uid(),created:Date.now(),due:Date.now(),interval:0,reps:0,lapses:0},c);
+    delete nc.ease; delete nc.deleted;
+    cards.push(nc); touch(nc);
     added++;
   });
   persist(); renderCards(); renderTemaList();
@@ -1101,15 +1166,13 @@ $('#loadDeck').onclick=async e=>{
 $('#wipe').onclick=()=>{
   if(!cards.length){toast('Уже пусто');return}
   if(!confirm('Удалить все карточки ('+cards.length+')? Действие необратимо.'))return;
-  cards=[]; persist(); renderCards(); toast('Колода очищена');
+  cards.slice().forEach(dropCard); persist(); renderCards(); toast('Колода очищена');
 };
 
 /* ---------------- аккаунт ---------------- */
 const SUPA_URL='https://slyksrymqggaujstbocx.supabase.co';
 const SUPA_KEY='sb_publishable_geMZenNf4IG1zYnpptTPBA_rGIBy1g1';
-const LS_AUTH='pt.auth.v1', LS_OWNER='pt.owner.v1';
 let auth=load(LS_AUTH,null);
-let syncBusy=false, syncErr='', pushTimer=null, lastSync=0;
 const authed=()=>!!(auth&&auth.access_token&&auth.user);
 
 function setSession(d){
@@ -1130,11 +1193,15 @@ async function refreshSession(){
 async function api(path,opt){
   opt=opt||{};
   if(auth&&Date.now()>(auth.expires_at||0)-60000){
-    if(!await refreshSession()){ signOut(); throw new Error('Сессия истекла — войдите заново') }
+    if(!await refreshSession()){ signOut(true); throw new Error('Сессия истекла — войдите заново') }
   }
   const headers=Object.assign({'apikey':SUPA_KEY,'Content-Type':'application/json',
     'Authorization':'Bearer '+(auth?auth.access_token:SUPA_KEY)},opt.headers||{});
   return fetch(SUPA_URL+path,Object.assign({},opt,{headers:headers}));
+}
+async function errText(r){
+  let d={}; try{ d=await r.json() }catch(e){}
+  return d.message||d.error||d.hint||('сервер ответил '+r.status);
 }
 async function signIn(email,password){
   const r=await fetch(SUPA_URL+'/auth/v1/token?grant_type=password',{
@@ -1150,18 +1217,15 @@ async function signIn(email,password){
       :(d.msg||d.error_description||'Не удалось войти');
     throw new Error(ru);
   }
-  const prev=load(LS_OWNER,'');
   setSession(d);
-  if(prev&&prev!==d.user.id){          // на этом устройстве был другой пользователь
-    cards=[]; save(LS_CARDS,cards);
-    settings=Object.assign({model:'gpt-4o-mini',dir:'pt',at:Date.now()});
-    save(LS_SET,settings);
-  }
-  save(LS_OWNER,d.user.id);
 }
-function signOut(){
+async function signOut(quiet){
+  if(!quiet) await syncPush();          // хвост правок отдаём до выхода
   auth=null; localStorage.removeItem(LS_AUTH);
-  showGate(); renderWhoami();
+  cards=[]; dirty=new Set(); tombs=[]; syncedAt=''; setDirty=false;
+  settings={dir:'pt'}; applySettings();
+  renderStats(); renderCards(); renderTemaList();
+  showGate(); renderWhoami(); renderSyncState();
 }
 function showGate(){ $('#gate').hidden=false; $('#gateErr').textContent=''; }
 function hideGate(){ $('#gate').hidden=true; }
@@ -1174,9 +1238,7 @@ $('#gateForm').onsubmit=async e=>{
   try{
     await signIn($('#gateEmail').value.trim(),$('#gatePass').value);
     $('#gatePass').value='';
-    hideGate(); renderWhoami();
-    await pullNow();
-    renderStats(); renderCards(); renderTemaList();
+    await startSession();
     toast('С возвращением');
   }catch(err){ $('#gateErr').textContent=err.message }
   finally{ b.disabled=false; b.textContent=old }
@@ -1188,85 +1250,213 @@ function renderWhoami(){
     ? 'Вход выполнен: '+esc(auth.user.email)+'<button class="btn wide" id="signOut" style="margin-top:10px">Выйти</button>'
     : 'Вы не вошли';
   const b=$('#signOut');
-  if(b) b.onclick=()=>{ if(confirm('Выйти из аккаунта? Прогресс останется в облаке.')) signOut() };
+  if(b) b.onclick=async ()=>{
+    const pend=dirty.size+tombs.length;
+    const q=pend?('Не отправлено изменений: '+pend+'. Попробую отправить и выйти. Продолжить?')
+                :'Выйти из аккаунта? Карточки останутся в облаке.';
+    if(confirm(q)) await signOut();
+  };
 }
 
-/* ---------------- синхронизация прогресса ---------------- */
-const snapshot=()=>({cards:cards,settings:settings,updated:Date.now()});
+/* ---------------- локальная копия колоды ---------------- */
+const cacheKey=()=>'pt.cache.v2.'+auth.user.id;
 
-function mergeRemote(remote){
-  if(!remote||!Array.isArray(remote.cards)) return 0;
-  const byId=new Map(cards.map(c=>[c.id,c]));
-  const byWord=new Map(cards.map(c=>[norm(c.word),c]));
-  let changed=0;
-  remote.cards.forEach(rc=>{
-    if(!rc||!rc.word) return;
-    const lc=byId.get(rc.id)||byWord.get(norm(rc.word));
-    if(!lc){ cards.push(rc); byId.set(rc.id,rc); byWord.set(norm(rc.word),rc); changed++; return }
-    const newer=(rc.reps||0)>(lc.reps||0) || ((rc.reps||0)===(lc.reps||0)&&(rc.due||0)>(lc.due||0));
-    if(newer){ Object.assign(lc,rc,{id:lc.id}); changed++ }
-    if((rc.archivedAt||0)>(lc.archivedAt||0)){
-      lc.archived=!!rc.archived; lc.archivedAt=rc.archivedAt; changed++;
-    }
-  });
-  const rs=remote.settings||{};
-  if((rs.at||0)>(settings.at||0)){
-    Object.assign(settings,rs);
-    $('#dir').value=settings.dir;
-    save(LS_SET,settings);
-  }
-  if(changed){ save(LS_CARDS,cards); renderStats(); renderCards(); renderTemaList(); }
-  return changed;
-}
-
-function schedulePush(){
+function saveCache(){
   if(!authed()) return;
-  clearTimeout(pushTimer);
-  pushTimer=setTimeout(pushNow,2500);
+  save(cacheKey(),{cards:cards,settings:settings,dirty:[...dirty],
+                   tombs:tombs,syncedAt:syncedAt,setDirty:setDirty});
 }
-async function pushNow(){
-  if(!authed()||syncBusy) return;
-  syncBusy=true;
-  try{
-    const r=await api('/rest/v1/pt_data',{method:'POST',
+function loadCache(){
+  const c=load(cacheKey(),null)||{};
+  cards=Array.isArray(c.cards)?c.cards:[];
+  settings=Object.assign({dir:'pt'},c.settings||{});
+  dirty=new Set(Array.isArray(c.dirty)?c.dirty:[]);
+  tombs=Array.isArray(c.tombs)?c.tombs:[];
+  syncedAt=c.syncedAt||'';
+  setDirty=!!c.setDirty;
+}
+// Наследство версии, где вся колода лежала в одном общем ключе браузера.
+function adoptLegacy(){
+  const old=load(OLD_CARDS,null), owner=load(OLD_OWNER,'');
+  if(Array.isArray(old)&&old.length&&!cards.length&&(!owner||owner===auth.user.id)){
+    cards=old.filter(c=>c&&c.word);
+    cards.forEach(c=>{ if(!c.id) c.id=uid() });
+    const os=load(OLD_SET,null);
+    if(os&&os.dir){ settings.dir=os.dir; settings.at=os.at||Date.now(); setDirty=true }
+  }
+  [OLD_CARDS,OLD_SET,OLD_OWNER].forEach(k=>localStorage.removeItem(k));
+  if(!syncedAt) cards.forEach(touch);   // первая синхронизация — отдаём серверу всё, что есть
+  saveCache();
+}
+function applySettings(){ const d=$('#dir'); if(d) d.value=settings.dir||'pt' }
+
+/* ---------------- синхронизация ---------------- */
+const PAGE=1000, PUSH=300;
+let syncing=false, lastSync=0, syncErr='', flushTimer=null;
+
+function toRow(c){
+  return {user_id:auth.user.id, id:c.id, word:c.word||'', query:c.query||'', pos:c.pos||'',
+    ru:c.ru||'', ex:c.ex||'', exru:c.exru||'', note:c.note||'',
+    created:c.created||0, due:c.due||0, ivl:c.interval||0,
+    reps:c.reps||0, lapses:c.lapses||0,
+    archived:!!c.archived, archived_at:c.archivedAt||0,
+    deleted:!!c.deleted, rev:c.rev||c.created||Date.now()};
+}
+function fromRow(r){
+  return {id:r.id, word:r.word, query:r.query||'', pos:r.pos||'', ru:r.ru||'',
+    ex:r.ex||'', exru:r.exru||'', note:r.note||'',
+    created:+r.created||0, due:+r.due||0, interval:+r.ivl||0,
+    reps:+r.reps||0, lapses:+r.lapses||0,
+    archived:!!r.archived, archivedAt:+r.archived_at||0, rev:+r.rev||0};
+}
+
+async function flushCards(){
+  if(!dirty.size&&!tombs.length) return;
+  const live=cards.filter(c=>dirty.has(c.id));
+  const sent=live.map(c=>({id:c.id,rev:c.rev}));
+  const sentTombs=tombs.length;
+  const rows=live.concat(tombs).map(toRow);
+  for(let i=0;i<rows.length;i+=PUSH){
+    const r=await api('/rest/v1/pt_cards?on_conflict=user_id,id',{method:'POST',
       headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
-      body:JSON.stringify({user_id:auth.user.id,data:snapshot(),updated_at:new Date().toISOString()})});
-    if(!r.ok) throw new Error('сервер ответил '+r.status);
-    lastSync=Date.now(); syncErr='';
-  }catch(e){ syncErr=e.message }
-  finally{ syncBusy=false; renderSyncState() }
+      body:JSON.stringify(rows.slice(i,i+PUSH))});
+    if(!r.ok) throw new Error(await errText(r));
+  }
+  sent.forEach(s=>{
+    const c=cards.find(x=>x.id===s.id);
+    if(!c||c.rev===s.rev) dirty.delete(s.id);   // пока отправляли, карточку могли изменить снова
+  });
+  tombs=tombs.slice(sentTombs);
+  saveCache();
 }
-async function pullNow(){
-  if(!authed()||syncBusy) return 0;
-  syncBusy=true; let n=0;
-  try{
-    const r=await api('/rest/v1/pt_data?select=data&user_id=eq.'+auth.user.id);
-    if(!r.ok) throw new Error('сервер ответил '+r.status);
+
+function applyRow(row){
+  if(dirty.has(row.id)) return;                  // своя неотправленная правка новее серверной
+  const i=cards.findIndex(c=>c.id===row.id);
+  if(row.deleted){ if(i>=0) cards.splice(i,1); return }
+  const c=fromRow(row);
+  if(i>=0){ cards[i]=c; return }
+  const j=cards.findIndex(x=>norm(x.word)===norm(c.word));  // то же слово, заведённое под другим id
+  if(j>=0){ if(!dirty.has(cards[j].id)) cards[j]=c; return }
+  cards.push(c);
+}
+async function pullCards(){
+  let offset=0, mark=syncedAt;
+  for(;;){
+    const r=await api('/rest/v1/pt_cards?select=*'+
+      (syncedAt?'&updated_at=gt.'+encodeURIComponent(syncedAt):'')+
+      '&order=updated_at.asc,id.asc&limit='+PAGE+'&offset='+offset);
+    if(!r.ok) throw new Error(await errText(r));
     const rows=await r.json();
-    if(rows.length) n=mergeRemote(rows[0].data);
-    lastSync=Date.now(); syncErr='';
-  }catch(e){ syncErr=e.message }
-  finally{ syncBusy=false; renderSyncState() }
-  return n;
+    if(!rows.length) break;             // сервер может резать страницу меньше запрошенной, поэтому идём до пустой
+    rows.forEach(applyRow);
+    mark=rows[rows.length-1].updated_at;
+    offset+=rows.length;
+  }
+  syncedAt=mark;
+}
+
+// Настройки маленькие и меняются редко — им хватает старой таблицы pt_data.
+async function pullSettings(){
+  const r=await api('/rest/v1/pt_data?select=data&user_id=eq.'+auth.user.id);
+  if(!r.ok) throw new Error(await errText(r));
+  const rows=await r.json();
+  const blob=rows.length?rows[0].data:null;
+  const rs=blob&&blob.settings;
+  if(rs&&(rs.at||0)>(settings.at||0)){ Object.assign(settings,rs); applySettings(); setDirty=false }
+  return blob;
+}
+async function pushSettings(){
+  const r=await api('/rest/v1/pt_data',{method:'POST',
+    headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+    body:JSON.stringify({user_id:auth.user.id,data:{v:2,settings:settings},
+                         updated_at:new Date().toISOString()})});
+  if(!r.ok) throw new Error(await errText(r));
+  setDirty=false;
+}
+
+const friendlyErr=e=>/Failed to fetch|NetworkError|network/i.test(e.message||'')
+  ? 'нет связи с сервером' : (e.message||'ошибка');
+
+async function syncNow(){
+  if(!authed()||syncing) return;
+  const first=!syncedAt;
+  syncing=true; renderSyncState();
+  try{
+    await flushCards();
+    await pullCards();
+    const blob=await pullSettings();
+    if(first&&!cards.length&&blob&&Array.isArray(blob.cards)&&blob.cards.length){
+      const n=importCards(blob);          // колода из старого облачного формата — переносим разово
+      if(n){ await flushCards(); toast('Перенесено из старого хранилища: '+n) }
+    }
+    if(setDirty) await pushSettings();
+    syncErr=''; lastSync=Date.now();
+  }catch(e){ syncErr=friendlyErr(e) }
+  finally{
+    syncing=false; saveCache();
+    renderStats(); renderCards(); renderTemaList(); renderSyncState();
+  }
+}
+async function syncPush(){
+  if(!authed()||syncing) return;
+  syncing=true; renderSyncState();
+  try{
+    await flushCards();
+    if(setDirty) await pushSettings();
+    syncErr=''; lastSync=Date.now();
+  }catch(e){ syncErr=friendlyErr(e) }
+  finally{
+    syncing=false; saveCache(); renderSyncState();
+    // очередь не разошлась (сеть отвалилась или во время отправки успели поправить ещё) — пробуем снова
+    if(dirty.size||tombs.length||setDirty) scheduleFlush(syncErr?30000:1500);
+  }
+}
+function scheduleFlush(ms){
+  if(!authed()) return;
+  clearTimeout(flushTimer);
+  flushTimer=setTimeout(syncPush,ms||1500);
 }
 function renderSyncState(){
   const el=$('#syncState'); if(!el) return;
-  el.textContent=!authed()?'Вход не выполнен'
-    :syncErr?('Ошибка синхронизации: '+syncErr)
-    :lastSync?('Синхронизировано в '+new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}))
-    :'Синхронизация включена';
+  const pend=dirty.size+tombs.length;
+  const at=lastSync?new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'';
+  el.textContent = !authed() ? 'Вход не выполнен'
+    : syncing ? 'Синхронизирую…'
+    : !navigator.onLine ? (pend?'Нет сети · ждут отправки: '+pend:'Нет сети · всё отправлено')
+    : syncErr ? (syncErr[0].toUpperCase()+syncErr.slice(1)+(pend?' · ждут отправки: '+pend:''))
+    : pend ? ('Отправляю изменения: '+pend)
+    : at ? ('Синхронизировано в '+at)
+    : 'Синхронизация включена';
+}
+
+async function startSession(){
+  hideGate(); loadCache(); adoptLegacy(); applySettings();
+  renderWhoami(); renderStats(); renderCards(); renderTemaList(); renderSyncState();
+  await syncNow();
 }
 
 document.addEventListener('visibilitychange',()=>{
   if(!authed()) return;
-  if(document.visibilityState==='visible'){ if(Date.now()-lastSync>60000) pullNow() }
-  else pushNow();
+  if(document.visibilityState==='visible'){ if(Date.now()-lastSync>60000) syncNow() }
+  else syncPush();
 });
-window.addEventListener('pagehide',()=>{ if(authed()) pushNow() });
+window.addEventListener('online',()=>{ renderSyncState(); if(authed()) syncNow() });
+window.addEventListener('offline',renderSyncState);
+window.addEventListener('pagehide',()=>{
+  if(!authed()||syncing||(!dirty.size&&!tombs.length)) return;
+  const rows=cards.filter(c=>dirty.has(c.id)).concat(tombs).map(toRow);
+  if(rows.length>80) return;   // keepalive ограничен по размеру, остальное уедет при следующем открытии
+  fetch(SUPA_URL+'/rest/v1/pt_cards?on_conflict=user_id,id',{method:'POST',keepalive:true,
+    headers:{'apikey':SUPA_KEY,'Content-Type':'application/json',
+             'Authorization':'Bearer '+auth.access_token,
+             'Prefer':'resolution=merge-duplicates,return=minimal'},
+    body:JSON.stringify(rows)}).catch(()=>{});
+});
 
 /* ---------------- init ---------------- */
 renderStats(); renderCards(); renderTemaList(); renderWhoami(); renderSyncState();
-if(authed()){ hideGate(); pullNow(); } else showGate();
+if(authed()) startSession(); else showGate();
 </script>
 </body>
 </html>
