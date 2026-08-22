@@ -551,19 +551,24 @@ const cardPreviewHTML=c=>
     (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
   '</article>';
 
-let pending=[];
+let pending=[], already=[];
+const lbl=t=>'<div class="lbl" style="margin:18px 0 7px 4px">'+t+'</div>';
 function renderPreview(){
   const box=$('#preview');
-  if(!pending.length){ box.innerHTML=''; return }
-  box.innerHTML='<div class="lbl" style="margin:18px 0 7px 4px">Перевод</div>'+
-    pending.map(cardPreviewHTML).join('')+
-    '<div class="row" style="margin-top:4px">'+
-      '<button class="btn primary" id="pvAdd">Добавить в колоду'+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
-      '<button class="btn" id="pvSkip" style="max-width:110px">Отмена</button>'+
-    '</div>';
+  if(!pending.length&&!already.length){ box.innerHTML=''; return }
+  // слово, которое уже заведено, показываем целиком, а не отбиваем тостом
+  box.innerHTML=
+    (already.length?lbl(already.length>1?'Уже в колоде':'Это слово уже в колоде')+
+      already.map(cardPreviewHTML).join(''):'')+
+    (pending.length?lbl('Перевод')+pending.map(cardPreviewHTML).join('')+
+      '<div class="row" style="margin-top:4px">'+
+        '<button class="btn primary" id="pvAdd">Добавить в колоду'+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
+        '<button class="btn" id="pvSkip" style="max-width:110px">Отмена</button>'+
+      '</div>':'');
+  if(!pending.length) return;
   $('#pvAdd').onclick=()=>{
     const n=commitCards(pending);
-    pending=[]; renderPreview();
+    pending=[]; already=[]; renderPreview();
     $('#wordInput').value='';
     toast(n?('Добавлено '+n):'Такие карточки уже есть');
   };
@@ -594,10 +599,12 @@ $('#addOne').onclick=async e=>{
   const raw=$('#wordInput').value.split(/[,;\n]/).map(s=>s.trim()).filter(Boolean);
   if(!raw.length){toast('Введите слово');return}
   const todo=raw.filter(w=>!hasWord(w));
-  if(!todo.length){toast('Такие карточки уже есть');return}
+  pending=[];
+  already=raw.map(w=>cards.find(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w))).filter(Boolean);
+  renderPreview();
+  if(!todo.length){ $('#preview').scrollIntoView({behavior:'smooth',block:'nearest'}); return }
   const btn=$('#addOne'), old=btn.innerHTML;
   btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
-  pending=[]; renderPreview();
   try{
     pending=await generateCards(todo.map(w=>({word:w})));
     renderPreview();
@@ -618,6 +625,13 @@ function suggestPool(){
   });
   return SUGGEST;
 }
+// Слова, добавленные вручную, в словнике не значатся — подсказываем их отдельно,
+// иначе приложение делает вид, что не знает собственной карточки.
+function ownPool(){
+  const ix=levelIndex();
+  return cards.filter(c=>!ix.has(norm(c.word)))
+              .map(c=>({w:c.word, lvl:cardLevel(c)||'своё', tema:'своё слово', k:deacc(norm(c.word))}));
+}
 let suggList=[], suggIdx=-1;
 
 const lastFragment=v=>v.split(/[,;]/).pop().trimStart();
@@ -635,7 +649,7 @@ function renderSugg(){
   const q=deacc(frag);
   if(q.length<2){ hideSugg(); return }
   const starts=[], inside=[];
-  for(const it of suggestPool()){
+  for(const it of suggestPool().concat(ownPool())){
     if(it.k.startsWith(q)) starts.push(it);
     else if(it.k.includes(q)) inside.push(it);
   }
@@ -646,7 +660,8 @@ function renderSugg(){
   suggIdx=-1;
   $('#sugg').innerHTML=suggList.map((it,i)=>{
     const pos=deacc(it.w).indexOf(q);
-    const hl=esc(it.w.slice(0,pos))+'<mark>'+esc(it.w.slice(pos,pos+q.length))+'</mark>'+esc(it.w.slice(pos+q.length));
+    const hl=pos<0?esc(it.w)
+      :esc(it.w.slice(0,pos))+'<mark>'+esc(it.w.slice(pos,pos+q.length))+'</mark>'+esc(it.w.slice(pos+q.length));
     // перевод показываем всегда: свой — из карточки, чужой — из словника
     const mine=cards.find(c=>norm(c.word)===norm(it.w)||norm(c.query)===norm(it.w));
     const tr=(mine&&mine.ru)||TRAD[norm(it.w)]||(it.lvl+' · '+it.tema);
