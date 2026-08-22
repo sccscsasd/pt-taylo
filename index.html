@@ -395,6 +395,12 @@
     opacity:0;pointer-events:none;transition:opacity .2s;max-width:88vw;text-align:center;
   }
   .toast.on{opacity:1}
+  .toast.act{pointer-events:auto}
+  .toast button{
+    margin-left:12px;border:none;background:none;padding:0;cursor:pointer;
+    color:#6cb6ff;font:inherit;font-weight:600;
+  }
+  .toast button:active{opacity:.6}
   .spin{
     display:inline-block;width:15px;height:15px;vertical-align:-2px;
     border:2px solid currentColor;border-top-color:transparent;border-radius:50%;
@@ -603,8 +609,18 @@ const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.
 
 let toastT;
 function toast(msg,ms){
-  const t=$('#toast'); t.innerHTML=msg; t.classList.add('on');
+  const t=$('#toast'); t.innerHTML=msg;
+  t.classList.add('on'); t.classList.remove('act');
   clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),ms||2200);
+}
+// Тост с кнопкой: им заменён confirm() при удалении — браузер умеет запретить
+// диалоги, и тогда удаление молча не срабатывает.
+function toastUndo(msg,label,fn){
+  const t=$('#toast');
+  t.innerHTML=msg+'<button type="button">'+label+'</button>';
+  t.classList.add('on','act');
+  t.querySelector('button').onclick=()=>{ t.classList.remove('on','act'); fn() };
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on','act'),6000);
 }
 
 /* ---------------- OpenAI ---------------- */
@@ -1072,8 +1088,14 @@ $('#cardList').onclick=async e=>{
     return;
   }
   if(btn.dataset.act==='del'){
-    if(!confirm('Удалить «'+c.word+'»?'))return;
-    dropCard(c); persist(); renderCards(); toast('Удалено');
+    dropCard(c); persist(); renderCards();
+    toastUndo('Удалено «'+esc(c.word)+'»','Вернуть',()=>{
+      delete c.deleted;
+      tombs=tombs.filter(t=>t.id!==c.id);
+      if(!cards.some(x=>x.id===c.id)) cards.unshift(c);
+      touch(c); persist(); renderCards();
+      toast('Вернул «'+esc(c.word)+'»');
+    });
   }else{
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
