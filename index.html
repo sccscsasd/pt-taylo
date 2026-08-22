@@ -117,7 +117,15 @@
   .gatebox p{margin:0 0 10px;font-size:14px;color:var(--label2);text-align:center;line-height:1.4}
   .gatebox input{background:var(--group)}
   .gateerr{min-height:18px;font-size:13px;color:var(--red);text-align:center}
-  .whoami{font-size:13px;color:var(--label2);padding:0 4px}
+  .account{display:flex;align-items:baseline;gap:14px;padding:0 4px}
+  .account .who{flex:1;min-width:0;overflow-wrap:anywhere}
+  .account .who b{display:block;font-size:15px;font-weight:400}
+  .account .who span{display:block;margin-top:3px;font-size:12px;color:var(--label3)}
+  .linkbtn{
+    flex:none;border:none;background:none;padding:0;cursor:pointer;
+    color:var(--blue);font-size:15px;
+  }
+  .linkbtn:active{opacity:.55}
 
   /* автоподсказки */
   .sugg{
@@ -381,16 +389,14 @@
       </select>
     </div>
 
-    <div class="sec">
-      <span class="lbl">Готовая колода</span>
+    <div class="sec" id="deckSec" style="display:none">
       <button class="btn wide" id="loadDeck">Загрузить колоду A1–A2 (1636 слов)</button>
-      <div class="hint">Весь словник Camões с переводом, примерами и заметками. Без запросов к OpenAI. Уже добавленные слова пропускаются.</div>
+      <div class="hint">Словник Camões с переводом и примерами, без запросов к модели.</div>
     </div>
 
-    <div class="sec">
-      <span class="lbl">Аккаунт</span>
-      <div class="whoami" id="whoami"></div>
-      <div class="hint" id="syncState" style="margin-top:8px"></div>
+    <div class="sec account">
+      <span class="who"><b id="whoEmail"></b><span id="syncState"></span></span>
+      <button class="linkbtn" id="signOut" type="button">Выйти</button>
     </div>
 
   </section>
@@ -1130,6 +1136,7 @@ $$('nav button').forEach(b=>b.onclick=()=>{
   const v=b.dataset.v; $('#v-'+v).classList.add('on');
   window.scrollTo(0,0);
   if(v==='cards') renderCards();
+  if(v==='set') renderDeckBtn();
   if(v==='study'){ buildQueue(); current=null; renderStudy(); }
 });
 
@@ -1162,6 +1169,7 @@ $('#loadDeck').onclick=async e=>{
     const res=await fetch(DECK_URL,{cache:'no-cache'});
     if(!res.ok) throw new Error('Колода недоступна ('+res.status+')');
     const added=importCards(await res.json());
+    renderDeckBtn();
     toast(added?'Добавлено '+added+' карточек':'Все карточки уже в колоде');
   }catch(err){
     toast(/Failed to fetch|NetworkError/.test(err.message)
@@ -1247,17 +1255,23 @@ $('#gateForm').onsubmit=async e=>{
 };
 
 function renderWhoami(){
-  const el=$('#whoami'); if(!el) return;
-  el.innerHTML=authed()
-    ? 'Вход выполнен: '+esc(auth.user.email)+'<button class="btn wide" id="signOut" style="margin-top:10px">Выйти</button>'
-    : 'Вы не вошли';
+  const el=$('#whoEmail'); if(!el) return;
+  el.textContent=authed()?auth.user.email:'Вы не вошли';
   const b=$('#signOut');
-  if(b) b.onclick=async ()=>{
+  b.style.display=authed()?'':'none';
+  b.onclick=async ()=>{
     const pend=dirty.size+tombs.length;
     const q=pend?('Не отправлено изменений: '+pend+'. Попробую отправить и выйти. Продолжить?')
                 :'Выйти из аккаунта? Карточки останутся в облаке.';
     if(confirm(q)) await signOut();
   };
+}
+
+// Кнопка готовой колоды нужна, только пока в колоде не хватает слов словника.
+function renderDeckBtn(){
+  const sec=$('#deckSec'); if(!sec) return;
+  const have=new Set(cards.map(c=>norm(c.word)));
+  sec.style.display=suggestPool().some(it=>!have.has(norm(it.w)))?'block':'none';
 }
 
 /* ---------------- локальная копия колоды ---------------- */
