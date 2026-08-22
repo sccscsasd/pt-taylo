@@ -636,10 +636,11 @@ function renderSugg(){
   if(q.length<2){ hideSugg(); return }
   const starts=[], inside=[];
   for(const it of suggestPool()){
-    if(it.w.toLowerCase()===frag.toLowerCase()) continue;   // уже набрано ровно это слово
     if(it.k.startsWith(q)) starts.push(it);
     else if(it.k.includes(q)) inside.push(it);
   }
+  // короткие формы выше: «virar» должно стоять над «virar à esquerda»
+  starts.sort((a,b)=>a.w.length-b.w.length);
   suggList=starts.concat(inside).slice(0,7);
   if(!suggList.length){ hideSugg(); return }
   suggIdx=-1;
