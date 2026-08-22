@@ -47,20 +47,21 @@
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0}
-  /* Место под полосу прокрутки резервируем всегда: иначе на коротких вкладках
-     её нет, на «Карточках» есть, и нижнее меню прыгает при переключении. */
-  html{scrollbar-gutter:stable}
+  /* Каркас приложения: шапка и меню не прокручиваются вообще, прокручивается
+     только середина. Меню прижато к низу разметкой, а не position:fixed —
+     поэтому оно не ездит ни от полосы прокрутки, ни от адресной строки. */
+  html{height:100%}
   body{
+    height:100vh;height:100dvh;overflow:hidden;
+    display:flex;flex-direction:column;
     background:var(--bg);color:var(--label);
     font:400 17px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
     -webkit-font-smoothing:antialiased;
-    padding-bottom:calc(60px + env(safe-area-inset-bottom));
-    overscroll-behavior-y:contain;
   }
 
   /* nav bar */
   header{
-    position:sticky;top:0;z-index:20;background:var(--bar);
+    flex:none;z-index:20;background:var(--bar);
     border-bottom:.5px solid var(--sep);
     padding:calc(10px + env(safe-area-inset-top)) 16px 10px;
     text-align:center;
@@ -68,7 +69,12 @@
   header h1{margin:0;font-size:17px;font-weight:600;letter-spacing:-.02em}
   header .sub{margin-top:2px;font-size:12px;color:var(--label2)}
 
-  main{max-width:620px;margin:0 auto;padding:14px 16px 24px}
+  main{
+    flex:1;min-height:0;overflow-y:auto;overscroll-behavior-y:contain;
+    scrollbar-gutter:stable;
+    padding:14px 16px 24px;
+  }
+  main>.view{max-width:620px;margin:0 auto}
   .view{display:none}
   .view.on{display:block}
 
@@ -283,7 +289,7 @@
 
   /* tab bar */
   nav{
-    position:fixed;bottom:0;left:0;right:0;z-index:30;
+    flex:none;z-index:30;
     display:grid;grid-template-columns:repeat(4,1fr);
     background:var(--bar);border-top:.5px solid var(--sep);
     padding-bottom:env(safe-area-inset-bottom);
@@ -304,7 +310,7 @@
   /* misc */
   .toast{
     position:fixed;left:50%;transform:translateX(-50%);
-    bottom:calc(78px + env(safe-area-inset-bottom));
+    bottom:calc(78px + env(safe-area-inset-bottom));z-index:60;
     background:rgba(40,40,42,.96);color:#fff;
     border-radius:12px;padding:11px 16px;font-size:15px;z-index:60;
     opacity:0;pointer-events:none;transition:opacity .2s;max-width:88vw;text-align:center;
@@ -1169,7 +1175,7 @@ $$('nav button').forEach(b=>b.onclick=()=>{
   $$('nav button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
   $$('.view').forEach(v=>v.classList.remove('on'));
   const v=b.dataset.v; $('#v-'+v).classList.add('on');
-  window.scrollTo(0,0);
+  $('main').scrollTop=0;
   if(v==='cards') renderCards();
   if(v==='set') renderDeckBtn();
   if(v==='study'){ buildQueue(); current=null; renderStudy(); }
