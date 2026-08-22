@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1636 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1721 карточек",
  "cards": [
   {
    "word": "ser",
@@ -13089,6 +13089,686 @@
    "ex": "Dificilmente chegamos a horas.",
    "exru": "Вряд ли мы успеем вовремя.",
    "note": "Часто = «вряд ли»"
+  },
+  {
+   "word": "precisar",
+   "pos": "глаг.",
+   "ru": "нуждаться, быть нужным",
+   "ex": "Preciso de mais tempo para acabar este trabalho.",
+   "exru": "Мне нужно больше времени, чтобы закончить эту работу.",
+   "note": "Всегда с de: preciso de ajuda"
+  },
+  {
+   "word": "dever",
+   "pos": "глаг.",
+   "ru": "быть должным, следует",
+   "ex": "Deves falar com o médico antes de tomar isso.",
+   "exru": "Тебе стоит поговорить с врачом, прежде чем это принимать.",
+   "note": "Без предлога: deves ir. Ещё «быть должным денег»"
+  },
+  {
+   "word": "achar",
+   "pos": "глаг.",
+   "ru": "считать, полагать; находить",
+   "ex": "Acho que este restaurante é melhor do que o outro.",
+   "exru": "По-моему, этот ресторан лучше того.",
+   "note": "Acho que… — «по-моему». Также «нашёл»: achei as chaves"
+  },
+  {
+   "word": "encontrar",
+   "pos": "глаг.",
+   "ru": "находить; встречать",
+   "ex": "Encontrei a tua irmã no supermercado esta manhã.",
+   "exru": "Я встретил твою сестру в супермаркете сегодня утром.",
+   "note": "encontrar-se com alguém — встретиться с кем-то"
+  },
+  {
+   "word": "deixar",
+   "pos": "глаг.",
+   "ru": "оставлять; позволять",
+   "ex": "Deixei o guarda-chuva no comboio outra vez.",
+   "exru": "Я снова оставил зонт в поезде.",
+   "note": "deixar + инфинитив — позволять: deixa-me ver"
+  },
+  {
+   "word": "ajudar",
+   "pos": "глаг.",
+   "ru": "помогать",
+   "ex": "Podes ajudar-me a levar estes sacos até ao carro?",
+   "exru": "Можешь помочь мне донести эти сумки до машины?",
+   "note": "ajudar alguém a fazer algo"
+  },
+  {
+   "word": "desculpar",
+   "pos": "глаг.",
+   "ru": "извинять, прощать",
+   "ex": "Desculpe, pode repetir mais devagar, por favor?",
+   "exru": "Извините, можете повторить помедленнее?",
+   "note": "Desculpe — на «вы», desculpa — на «ты»"
+  },
+  {
+   "word": "continuar",
+   "pos": "глаг.",
+   "ru": "продолжать",
+   "ex": "Continuo a estudar português todas as noites.",
+   "exru": "Я продолжаю учить португальский каждый вечер.",
+   "note": "PT-PT: continuar a + инфинитив"
+  },
+  {
+   "word": "terminar",
+   "pos": "глаг.",
+   "ru": "заканчивать, заканчиваться",
+   "ex": "O filme termina por volta das onze da noite.",
+   "exru": "Фильм заканчивается около одиннадцати вечера.",
+   "note": "Синоним acabar; acabar de + инф. — «только что»"
+  },
+  {
+   "word": "explicar",
+   "pos": "глаг.",
+   "ru": "объяснять",
+   "ex": "A professora explicou a regra duas vezes à turma.",
+   "exru": "Учительница дважды объяснила правило классу.",
+   "note": "explicar algo a alguém"
+  },
+  {
+   "word": "repetir",
+   "pos": "глаг.",
+   "ru": "повторять",
+   "ex": "Pode repetir o seu nome mais devagar, por favor?",
+   "exru": "Повторите ваше имя помедленнее, пожалуйста.",
+   "note": "e→i в 1 л.: repito, repetes, repete"
+  },
+  {
+   "word": "preferir",
+   "pos": "глаг.",
+   "ru": "предпочитать",
+   "ex": "Prefiro café sem açúcar, mas com um pouco de leite.",
+   "exru": "Я предпочитаю кофе без сахара, но с молоком.",
+   "note": "e→i: prefiro. Сравнение: preferir A a B"
+  },
+  {
+   "word": "descansar",
+   "pos": "глаг.",
+   "ru": "отдыхать",
+   "ex": "Ao domingo descansamos e não fazemos nada de especial.",
+   "exru": "По воскресеньям мы отдыхаем и не делаем ничего особенного.",
+   "note": ""
+  },
+  {
+   "word": "apanhar",
+   "pos": "глаг.",
+   "ru": "ловить; садиться в транспорт",
+   "ex": "Apanho o autocarro das oito para ir trabalhar.",
+   "exru": "Я езжу на работу восьмичасовым автобусом.",
+   "note": "PT-PT: apanhar o comboio, не «pegar»"
+  },
+  {
+   "word": "arrumar",
+   "pos": "глаг.",
+   "ru": "убирать, приводить в порядок",
+   "ex": "Preciso de arrumar o quarto antes de as visitas chegarem.",
+   "exru": "Мне нужно убрать комнату до прихода гостей.",
+   "note": "Мыть и чистить — limpar, раскладывать по местам — arrumar"
+  },
+  {
+   "word": "fumar",
+   "pos": "глаг.",
+   "ru": "курить",
+   "ex": "Aqui não se pode fumar dentro do café.",
+   "exru": "Здесь нельзя курить внутри кафе.",
+   "note": "Proibido fumar — курить запрещено"
+  },
+  {
+   "word": "guardar",
+   "pos": "глаг.",
+   "ru": "хранить; убирать на место",
+   "ex": "Guarda o leite no frigorífico, por favor.",
+   "exru": "Убери молоко в холодильник, пожалуйста.",
+   "note": "Ещё «беречь»: guardar um segredo"
+  },
+  {
+   "word": "amar",
+   "pos": "глаг.",
+   "ru": "любить",
+   "ex": "Ele ama a mulher e os filhos acima de tudo.",
+   "exru": "Он любит жену и детей больше всего на свете.",
+   "note": "О людях сильнее, чем gostar de"
+  },
+  {
+   "word": "adorar",
+   "pos": "глаг.",
+   "ru": "обожать, очень любить",
+   "ex": "Adoro passear à beira-mar ao fim da tarde.",
+   "exru": "Обожаю гулять у моря под вечер.",
+   "note": "Разговорнее amar, годится и для вещей"
+  },
+  {
+   "word": "lembrar-se",
+   "pos": "глаг.",
+   "ru": "помнить, вспоминать",
+   "ex": "Não me lembro do nome dela, só da cara.",
+   "exru": "Я не помню её имени, только лицо.",
+   "note": "lembrar-se de. Без se — «напоминать»"
+  },
+  {
+   "word": "esquecer-se",
+   "pos": "глаг.",
+   "ru": "забывать",
+   "ex": "Esqueci-me das chaves em cima da mesa da cozinha.",
+   "exru": "Я забыл ключи на кухонном столе.",
+   "note": "esquecer-se de; можно и без se: esqueci as chaves"
+  },
+  {
+   "word": "traduzir",
+   "pos": "глаг.",
+   "ru": "переводить",
+   "ex": "Podes traduzir esta frase para português, por favor?",
+   "exru": "Можешь перевести эту фразу на португальский?",
+   "note": "traduzir de… para…; неправ.: traduzo, traduz"
+  },
+  {
+   "word": "conduzir",
+   "pos": "глаг.",
+   "ru": "водить машину",
+   "ex": "Não conduzo há muitos anos, prefiro o metro.",
+   "exru": "Я много лет не вожу, предпочитаю метро.",
+   "note": "Права — a carta de condução"
+  },
+  {
+   "word": "arranjar",
+   "pos": "глаг.",
+   "ru": "чинить; раздобыть",
+   "ex": "Preciso de arranjar o telemóvel, o ecrã está partido.",
+   "exru": "Мне нужно починить телефон, экран разбит.",
+   "note": "Ещё «раздобыть»: arranjei bilhetes para o concerto"
+  },
+  {
+   "word": "funcionar",
+   "pos": "глаг.",
+   "ru": "работать, действовать",
+   "ex": "O elevador não funciona desde ontem à tarde.",
+   "exru": "Лифт не работает со вчерашнего дня.",
+   "note": "О людях «работать» — trabalhar"
+  },
+  {
+   "word": "estacionar",
+   "pos": "глаг.",
+   "ru": "парковаться",
+   "ex": "É difícil estacionar no centro da cidade ao sábado.",
+   "exru": "В центре города в субботу трудно припарковаться.",
+   "note": "Парковка — o estacionamento"
+  },
+  {
+   "word": "emprestar",
+   "pos": "глаг.",
+   "ru": "одалживать кому-то",
+   "ex": "Emprestas-me o carregador até amanhã de manhã?",
+   "exru": "Одолжишь мне зарядку до завтрашнего утра?",
+   "note": "Взять взаймы — pedir emprestado"
+  },
+  {
+   "word": "devolver",
+   "pos": "глаг.",
+   "ru": "возвращать, отдавать",
+   "ex": "Tenho de devolver estes sapatos, ficam-me pequenos.",
+   "exru": "Мне нужно вернуть эти туфли, они мне малы.",
+   "note": "О вещах; вернуться самому — voltar"
+  },
+  {
+   "word": "preencher",
+   "pos": "глаг.",
+   "ru": "заполнять бланк",
+   "ex": "Preencha o formulário com letra legível, se faz favor.",
+   "exru": "Заполните бланк разборчиво, пожалуйста.",
+   "note": "preencher um impresso"
+  },
+  {
+   "word": "significar",
+   "pos": "глаг.",
+   "ru": "значить, означать",
+   "ex": "O que significa esta palavra em português?",
+   "exru": "Что значит это слово по-португальски?",
+   "note": "Разговорнее: o que quer dizer?"
+  },
+  {
+   "word": "carregar",
+   "pos": "глаг.",
+   "ru": "нажимать; заряжать; нести",
+   "ex": "Carregue no botão verde para abrir a porta.",
+   "exru": "Нажмите зелёную кнопку, чтобы открыть дверь.",
+   "note": "carregar em — нажимать на"
+  },
+  {
+   "word": "combinar",
+   "pos": "глаг.",
+   "ru": "договариваться",
+   "ex": "Combinámos encontrar-nos às sete na praça.",
+   "exru": "Мы договорились встретиться в семь на площади.",
+   "note": "combinar com alguém; ещё «сочетаться»"
+  },
+  {
+   "word": "avisar",
+   "pos": "глаг.",
+   "ru": "предупреждать, сообщать",
+   "ex": "Avisa-me quando chegares a casa, por favor.",
+   "exru": "Предупреди меня, когда доберёшься домой.",
+   "note": "avisar alguém de algo"
+  },
+  {
+   "word": "aceitar",
+   "pos": "глаг.",
+   "ru": "принимать, соглашаться",
+   "ex": "Aceitam cartão multibanco ou só dinheiro em numerário?",
+   "exru": "Вы принимаете карту или только наличные?",
+   "note": ""
+  },
+  {
+   "word": "acompanhar",
+   "pos": "глаг.",
+   "ru": "сопровождать, провожать",
+   "ex": "Acompanho-te até à paragem do autocarro.",
+   "exru": "Я провожу тебя до автобусной остановки.",
+   "note": "Ещё «следить»: acompanhar as notícias"
+  },
+  {
+   "word": "entregar",
+   "pos": "глаг.",
+   "ru": "доставлять, вручать",
+   "ex": "A encomenda foi entregue na segunda-feira de manhã.",
+   "exru": "Посылку доставили в понедельник утром.",
+   "note": "entregar algo a alguém"
+  },
+  {
+   "word": "cumprimentar",
+   "pos": "глаг.",
+   "ru": "здороваться, приветствовать",
+   "ex": "Cumprimentou toda a gente à entrada da sala.",
+   "exru": "Он поздоровался со всеми при входе в зал.",
+   "note": "Передать привет — dar cumprimentos"
+  },
+  {
+   "word": "descarregar",
+   "pos": "глаг.",
+   "ru": "скачивать; разряжаться",
+   "ex": "Descarreguei a aplicação no telemóvel ontem à noite.",
+   "exru": "Вчера вечером я скачал приложение на телефон.",
+   "note": "A bateria descarregou-se — батарея села"
+  },
+  {
+   "word": "tossir",
+   "pos": "глаг.",
+   "ru": "кашлять",
+   "ex": "O miúdo tosse muito à noite, está constipado.",
+   "exru": "Малыш сильно кашляет ночью, он простужен.",
+   "note": "Кашель — a tosse; constipado — простужен, не «запор»"
+  },
+  {
+   "word": "aparecer",
+   "pos": "глаг.",
+   "ru": "появляться, приходить",
+   "ex": "Ele apareceu na festa já depois da meia-noite.",
+   "exru": "Он появился на празднике уже после полуночи.",
+   "note": "Спрягается как parecer: apareço, aparece"
+  },
+  {
+   "word": "crescer",
+   "pos": "глаг.",
+   "ru": "расти, вырастать",
+   "ex": "As crianças crescem depressa demais nestes primeiros anos.",
+   "exru": "В эти первые годы дети растут слишком быстро.",
+   "note": "cresço, cresces, cresce"
+  },
+  {
+   "word": "melhorar",
+   "pos": "глаг.",
+   "ru": "улучшаться, поправляться",
+   "ex": "O tempo vai melhorar no fim de semana.",
+   "exru": "К выходным погода улучшится.",
+   "note": "As melhoras! — «выздоравливай»"
+  },
+  {
+   "word": "escutar",
+   "pos": "глаг.",
+   "ru": "слушать, вслушиваться",
+   "ex": "Escuta bem o que o professor está a dizer.",
+   "exru": "Слушай внимательно, что говорит преподаватель.",
+   "note": "ouvir — слышать, escutar — слушать намеренно"
+  },
+  {
+   "word": "regressar",
+   "pos": "глаг.",
+   "ru": "возвращаться",
+   "ex": "Regressámos a Lisboa no domingo à noite.",
+   "exru": "Мы вернулись в Лиссабон в воскресенье вечером.",
+   "note": "Синоним voltar, чуть официальнее"
+  },
+  {
+   "word": "gastar",
+   "pos": "глаг.",
+   "ru": "тратить",
+   "ex": "Gastámos demasiado dinheiro nas férias deste ano.",
+   "exru": "В этом году мы потратили на отпуск слишком много денег.",
+   "note": "gastar dinheiro, tempo; про износ — gastar-se"
+  },
+  {
+   "word": "poupar",
+   "pos": "глаг.",
+   "ru": "экономить, копить",
+   "ex": "Estamos a poupar para comprar um carro usado.",
+   "exru": "Мы копим на подержанную машину.",
+   "note": "poupar dinheiro; ещё «беречь»: poupa as forças"
+  },
+  {
+   "word": "detestar",
+   "pos": "глаг.",
+   "ru": "терпеть не могу, ненавидеть",
+   "ex": "Detesto acordar cedo aos fins de semana.",
+   "exru": "Терпеть не могу вставать рано по выходным.",
+   "note": "Сильнее não gostar; мягче odiar"
+  },
+  {
+   "word": "compreender",
+   "pos": "глаг.",
+   "ru": "понимать",
+   "ex": "Não compreendi bem a última pergunta.",
+   "exru": "Я не совсем понял последний вопрос.",
+   "note": "Книжнее, чем perceber — обычное слово в PT-PT"
+  },
+  {
+   "word": "sonhar",
+   "pos": "глаг.",
+   "ru": "мечтать; видеть во сне",
+   "ex": "Sonho com uma casa perto da praia.",
+   "exru": "Я мечтаю о доме у моря.",
+   "note": "sonhar com — мечтать о ком-то/чём-то"
+  },
+  {
+   "word": "sorrir",
+   "pos": "глаг.",
+   "ru": "улыбаться",
+   "ex": "Ela sorriu quando viu as fotografias antigas.",
+   "exru": "Она улыбнулась, увидев старые фотографии.",
+   "note": "Как rir: sorrio, sorris, sorri"
+  },
+  {
+   "word": "beijar",
+   "pos": "глаг.",
+   "ru": "целовать",
+   "ex": "Beijou a filha na testa antes de sair.",
+   "exru": "Он поцеловал дочь в лоб перед уходом.",
+   "note": "Поцелуй — o beijo; в письме — beijinhos"
+  },
+  {
+   "word": "abraçar",
+   "pos": "глаг.",
+   "ru": "обнимать",
+   "ex": "Abraçou os amigos à chegada ao aeroporto.",
+   "exru": "Он обнял друзей по прилёте в аэропорт.",
+   "note": "Объятие — o abraço; в письме — um abraço"
+  },
+  {
+   "word": "recusar",
+   "pos": "глаг.",
+   "ru": "отказываться, отклонять",
+   "ex": "Recusou o convite para o jantar de sexta.",
+   "exru": "Он отказался от приглашения на пятничный ужин.",
+   "note": "recusar-se a fazer algo — отказаться делать"
+  },
+  {
+   "word": "durar",
+   "pos": "глаг.",
+   "ru": "длиться, продолжаться",
+   "ex": "O filme dura quase três horas.",
+   "exru": "Фильм длится почти три часа.",
+   "note": "Только о времени, о людях не говорят"
+  },
+  {
+   "word": "desaparecer",
+   "pos": "глаг.",
+   "ru": "исчезать, пропадать",
+   "ex": "A dor desapareceu depois do comprimido.",
+   "exru": "Боль прошла после таблетки.",
+   "note": "Как parecer: desapareço, desaparece"
+  },
+  {
+   "word": "piorar",
+   "pos": "глаг.",
+   "ru": "ухудшаться",
+   "ex": "A constipação piorou durante a noite.",
+   "exru": "Простуда за ночь усилилась.",
+   "note": "Противоположное melhorar"
+  },
+  {
+   "word": "engordar",
+   "pos": "глаг.",
+   "ru": "полнеть, набирать вес",
+   "ex": "Engordei dois quilos no Natal.",
+   "exru": "На Рождество я набрал два килограмма.",
+   "note": "Противоположное emagrecer"
+  },
+  {
+   "word": "emagrecer",
+   "pos": "глаг.",
+   "ru": "худеть",
+   "ex": "Emagreceu bastante desde que começou a nadar.",
+   "exru": "Он заметно похудел с тех пор, как начал плавать.",
+   "note": "emagreço, emagreces"
+  },
+  {
+   "word": "espirrar",
+   "pos": "глаг.",
+   "ru": "чихать",
+   "ex": "Espirro sempre na primavera por causa do pólen.",
+   "exru": "Весной я всё время чихаю из-за пыльцы.",
+   "note": "Чих — o espirro; «будь здоров» — santinho"
+  },
+  {
+   "word": "respirar",
+   "pos": "глаг.",
+   "ru": "дышать",
+   "ex": "Respire fundo e devagar, por favor.",
+   "exru": "Дышите глубоко и медленно, пожалуйста.",
+   "note": "Дыхание — a respiração"
+  },
+  {
+   "word": "reparar",
+   "pos": "глаг.",
+   "ru": "замечать; чинить",
+   "ex": "Reparaste no vestido novo dela?",
+   "exru": "Ты заметил её новое платье?",
+   "note": "reparar em — замечать; без em — чинить"
+  },
+  {
+   "word": "avariar",
+   "pos": "глаг.",
+   "ru": "ломаться, выходить из строя",
+   "ex": "O carro avariou-se a meio da viagem.",
+   "exru": "Машина сломалась посреди поездки.",
+   "note": "Поломка — a avaria; está avariado — не работает"
+  },
+  {
+   "word": "copiar",
+   "pos": "глаг.",
+   "ru": "копировать, списывать",
+   "ex": "Copiei o ficheiro para a pen antes de sair.",
+   "exru": "Я скопировал файл на флешку перед уходом.",
+   "note": "Флешка — a pen; файл — o ficheiro"
+  },
+  {
+   "word": "gravar",
+   "pos": "глаг.",
+   "ru": "записывать (звук, видео)",
+   "ex": "Gravei o concerto todo com o telemóvel.",
+   "exru": "Я записал весь концерт на телефон.",
+   "note": "Ещё «сохранять файл»: gravar o documento"
+  },
+  {
+   "word": "pesquisar",
+   "pos": "глаг.",
+   "ru": "искать сведения, гуглить",
+   "ex": "Pesquisei na internet antes de comprar o bilhete.",
+   "exru": "Я поискал в интернете, прежде чем купить билет.",
+   "note": "Поиск, исследование — a pesquisa"
+  },
+  {
+   "word": "embarcar",
+   "pos": "глаг.",
+   "ru": "садиться на самолёт, корабль",
+   "ex": "Começámos a embarcar meia hora antes da partida.",
+   "exru": "Посадка началась за полчаса до вылета.",
+   "note": "Посадочный талон — o cartão de embarque"
+  },
+  {
+   "word": "aterrar",
+   "pos": "глаг.",
+   "ru": "приземляться",
+   "ex": "O avião aterrou no Porto com uma hora de atraso.",
+   "exru": "Самолёт приземлился в Порту с часовым опозданием.",
+   "note": "PT-PT aterrar; взлетать — descolar"
+  },
+  {
+   "word": "descolar",
+   "pos": "глаг.",
+   "ru": "взлетать",
+   "ex": "O avião descolou pouco depois das seis da manhã.",
+   "exru": "Самолёт взлетел вскоре после шести утра.",
+   "note": "Ещё «отклеиваться»: o autocolante descolou"
+  },
+  {
+   "word": "escovar",
+   "pos": "глаг.",
+   "ru": "чистить щёткой",
+   "ex": "Escovo os dentes três vezes por dia.",
+   "exru": "Я чищу зубы три раза в день.",
+   "note": "Щётка — a escova; зубная паста — a pasta de dentes"
+  },
+  {
+   "word": "barbear-se",
+   "pos": "глаг.",
+   "ru": "бриться",
+   "ex": "Barbeia-se todas as manhãs antes do duche.",
+   "exru": "Он бреется каждое утро перед душем.",
+   "note": "Борода — a barba; бритва — a máquina de barbear"
+  },
+  {
+   "word": "depositar",
+   "pos": "глаг.",
+   "ru": "класть на счёт, вносить",
+   "ex": "Depositei o dinheiro na conta esta manhã.",
+   "exru": "Утром я положил деньги на счёт.",
+   "note": "Снять деньги — levantar dinheiro"
+  },
+  {
+   "word": "transferir",
+   "pos": "глаг.",
+   "ru": "переводить (деньги), переносить",
+   "ex": "Transferi o valor da renda para a conta do senhorio.",
+   "exru": "Я перевёл сумму за аренду на счёт хозяина.",
+   "note": "Перевод — a transferência"
+  },
+  {
+   "word": "trancar",
+   "pos": "глаг.",
+   "ru": "запирать на ключ",
+   "ex": "Tranca bem a porta antes de sair de casa.",
+   "exru": "Запри дверь как следует, прежде чем уйти.",
+   "note": "Замок — a fechadura; ключ — a chave"
+  },
+  {
+   "word": "buscar",
+   "pos": "глаг.",
+   "ru": "забирать, заходить за",
+   "ex": "Vou buscar as crianças à escola às cinco.",
+   "exru": "В пять я забираю детей из школы.",
+   "note": "Почти всегда с ir/vir: ir buscar — сходить за"
+  },
+  {
+   "word": "segurar",
+   "pos": "глаг.",
+   "ru": "держать",
+   "ex": "Seguras no saco enquanto abro a porta?",
+   "exru": "Подержишь сумку, пока я открою дверь?",
+   "note": "segurar em algo или segurar algo"
+  },
+  {
+   "word": "esconder",
+   "pos": "глаг.",
+   "ru": "прятать",
+   "ex": "Escondeu o presente no armário do quarto.",
+   "exru": "Он спрятал подарок в шкафу в спальне.",
+   "note": "esconder-se — прятаться"
+  },
+  {
+   "word": "encher",
+   "pos": "глаг.",
+   "ru": "наполнять",
+   "ex": "Enche o copo até meio, se faz favor.",
+   "exru": "Наполни стакан до половины, пожалуйста.",
+   "note": "encher-se — наедаться; cheio — полный"
+  },
+  {
+   "word": "corrigir",
+   "pos": "глаг.",
+   "ru": "исправлять",
+   "ex": "A professora corrigiu os testes durante o fim de semana.",
+   "exru": "Учительница проверила работы за выходные.",
+   "note": "corrijo, corriges; ошибка — o erro"
+  },
+  {
+   "word": "errar",
+   "pos": "глаг.",
+   "ru": "ошибаться, промахиваться",
+   "ex": "Errei na conta e paguei a mais.",
+   "exru": "Я ошибся в расчёте и заплатил лишнего.",
+   "note": "Ошибка — o erro; errar o caminho — заблудиться"
+  },
+  {
+   "word": "treinar",
+   "pos": "глаг.",
+   "ru": "тренироваться",
+   "ex": "Treino natação duas vezes por semana.",
+   "exru": "Я тренируюсь по плаванию дважды в неделю.",
+   "note": "Тренер — o treinador; тренировка — o treino"
+  },
+  {
+   "word": "praticar",
+   "pos": "глаг.",
+   "ru": "заниматься (спортом), практиковать",
+   "ex": "Pratico ténis desde os quinze anos.",
+   "exru": "Я играю в теннис с пятнадцати лет.",
+   "note": "praticar um desporto; о языке — praticar português"
+  },
+  {
+   "word": "descobrir",
+   "pos": "глаг.",
+   "ru": "обнаруживать, узнавать",
+   "ex": "Descobri um café pequeno mesmo ao lado de casa.",
+   "exru": "Я нашёл маленькое кафе прямо рядом с домом.",
+   "note": "Как cobrir: descubro, descobres"
+  },
+  {
+   "word": "construir",
+   "pos": "глаг.",
+   "ru": "строить",
+   "ex": "Estão a construir um prédio novo na nossa rua.",
+   "exru": "На нашей улице строят новый дом.",
+   "note": "construo, constróis; стройка — a obra"
+  },
+  {
+   "word": "aumentar",
+   "pos": "глаг.",
+   "ru": "увеличиваться, повышать",
+   "ex": "Os preços aumentaram outra vez este mês.",
+   "exru": "Цены снова выросли в этом месяце.",
+   "note": "Повышение — o aumento"
+  },
+  {
+   "word": "diminuir",
+   "pos": "глаг.",
+   "ru": "уменьшаться, снижать",
+   "ex": "O barulho diminuiu depois da meia-noite.",
+   "exru": "После полуночи шум стих.",
+   "note": "diminuo, diminuis; противоположное aumentar"
   }
  ]
 }

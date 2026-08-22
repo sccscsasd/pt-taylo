@@ -26,8 +26,8 @@ supabase/migrations/           SQL, уже применённый к базе
   002_pt_cards_level.sql       колонка level (CEFR)
   003_dedupe_and_word_ids.sql  чистка задвоенных карточек и переход на id по слову
 vocabulario/                   словник и готовые колоды
-  temas-A1-A2.json             18 тем, 1632 слова без повторов — встроен в index.html как TEMAS
-  baralho-completo-A1-A2.json  1636 готовых карточек, грузится кнопкой в настройках
+  temas-A1-A2.json             18 тем, 1717 слов без повторов — встроен в index.html как TEMAS
+  baralho-completo-A1-A2.json  1721 готовая карточка, грузится кнопкой в настройках
   baralho-A1-*.json            те же карточки по темам
   camoes-A1-inventario.md      исходный инвентарь Camões, справочно
   README.md                    откуда взят словник и как он чистился
