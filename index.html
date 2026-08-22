@@ -361,6 +361,10 @@
       <div class="hint">Данные живут в localStorage этого браузера. Очистка данных сайта их сотрёт.</div>
     </div>
     <div class="sec">
+      <span class="lbl">Синхронизация</span>
+      <div id="syncBox"></div>
+    </div>
+    <div class="sec">
       <span class="lbl">Готовая колода A1–A2</span>
       <button class="btn wide" id="loadDeck">Загрузить 1636 карточек</button>
       <div class="hint">Весь словник Camões с переводом, примерами и заметками. Без запросов к OpenAI. Уже добавленные слова пропускаются.</div>
@@ -408,8 +412,8 @@ let cards = load(LS_CARDS,[]);
 let settings = Object.assign({key:'',model:'gpt-4o-mini',dailyNew:20,dir:'pt'}, load(LS_SET,{}));
 let newLog = load(LS_LOG,{d:'',n:0});
 
-const persist=()=>{save(LS_CARDS,cards);renderStats()};
-const persistSet=()=>save(LS_SET,settings);
+const persist=()=>{save(LS_CARDS,cards);renderStats();schedulePush()};
+const persistSet=()=>{settings.at=Date.now();save(LS_SET,settings);schedulePush()};
 
 /* ---------------- helpers ---------------- */
 const $=s=>document.querySelector(s);
@@ -980,8 +984,142 @@ $('#wipe').onclick=()=>{
   cards=[]; persist(); renderCards(); toast('Колода очищена');
 };
 
+/* ---------------- синхронизация с облаком ---------------- */
+const SUPA_URL='https://slyksrymqggaujstbocx.supabase.co';
+const SUPA_KEY='sb_publishable_geMZenNf4IG1zYnpptTPBA_rGIBy1g1';
+const LS_SYNC='pt.sync.v1';
+let sync=load(LS_SYNC,{code:'',last:0});
+let syncBusy=false, syncErr='', pushTimer=null;
+const syncReady=()=>!!(SUPA_URL&&SUPA_KEY);
+const syncOn=()=>syncReady()&&!!sync.code;
+
+function newCode(){
+  const a=new Uint8Array(24); crypto.getRandomValues(a);
+  let out='';
+  for(const b of a) out+='abcdefghjkmnpqrstuvwxyz23456789'[b%31];
+  return out;
+}
+async function rpc(fn,body){
+  const r=await fetch(SUPA_URL+'/rest/v1/rpc/'+fn,{
+    method:'POST',
+    headers:{'Content-Type':'application/json','apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY},
+    body:JSON.stringify(body)
+  });
+  if(!r.ok) throw new Error('сервер ответил '+r.status);
+  const t=await r.text();
+  return t?JSON.parse(t):null;
+}
+const snapshot=()=>({cards:cards,settings:settings,newLog:newLog,updated:Date.now()});
+
+function mergeRemote(remote){
+  if(!remote||!Array.isArray(remote.cards)) return 0;
+  const byId=new Map(cards.map(c=>[c.id,c]));
+  const byWord=new Map(cards.map(c=>[norm(c.word),c]));
+  let changed=0;
+  remote.cards.forEach(rc=>{
+    if(!rc||!rc.word) return;
+    const lc=byId.get(rc.id)||byWord.get(norm(rc.word));
+    if(!lc){ cards.push(rc); byId.set(rc.id,rc); byWord.set(norm(rc.word),rc); changed++; return }
+    const newer=(rc.reps||0)>(lc.reps||0) || ((rc.reps||0)===(lc.reps||0)&&(rc.due||0)>(lc.due||0));
+    if(newer){ Object.assign(lc,rc,{id:lc.id}); changed++ }
+  });
+  const rs=remote.settings||{};
+  if((rs.at||0)>(settings.at||0)){
+    Object.assign(settings,rs);
+    $('#apiKey').value=settings.key||''; $('#model').value=settings.model||'';
+    $('#dailyNew').value=settings.dailyNew; $('#dir').value=settings.dir;
+    save(LS_SET,settings);
+  }else if(!settings.key&&rs.key){
+    settings.key=rs.key; $('#apiKey').value=rs.key; save(LS_SET,settings);
+  }
+  if(remote.newLog&&remote.newLog.d===today()&&(remote.newLog.n||0)>(newLog.n||0)){
+    newLog=remote.newLog; save(LS_LOG,newLog);
+  }
+  if(changed){ save(LS_CARDS,cards); renderStats(); renderCards(); renderTemaList(); }
+  return changed;
+}
+
+function schedulePush(){
+  if(!syncOn()) return;
+  clearTimeout(pushTimer);
+  pushTimer=setTimeout(pushNow,2500);
+}
+async function pushNow(){
+  if(!syncOn()||syncBusy) return;
+  syncBusy=true; renderSync();
+  try{ await rpc('pt_push',{p_code:sync.code,p_data:snapshot()}); sync.last=Date.now(); syncErr=''; save(LS_SYNC,sync) }
+  catch(e){ syncErr=e.message }
+  finally{ syncBusy=false; renderSync() }
+}
+async function pullNow(){
+  if(!syncOn()||syncBusy) return 0;
+  syncBusy=true; renderSync();
+  let n=0;
+  try{ n=mergeRemote(await rpc('pt_pull',{p_code:sync.code})); sync.last=Date.now(); syncErr=''; save(LS_SYNC,sync) }
+  catch(e){ syncErr=e.message }
+  finally{ syncBusy=false; renderSync() }
+  return n;
+}
+
+function renderSync(){
+  const box=$('#syncBox'); if(!box) return;
+  if(!syncReady()){
+    box.innerHTML='<div class="hint" style="margin:0 4px">Облако пока не подключено.</div>';
+    return;
+  }
+  if(!syncOn()){
+    box.innerHTML='<button class="btn wide" id="syncStart">Включить синхронизацию</button>'+
+      '<button class="btn wide" id="syncJoin" style="margin-top:8px">Ввести код с другого устройства</button>'+
+      '<div class="hint">Прогресс, настройки и ключ будут храниться в облаке и подтягиваться на всех устройствах.</div>';
+    $('#syncStart').onclick=async ()=>{
+      sync.code=newCode(); save(LS_SYNC,sync);
+      await pushNow(); renderSync();
+      toast(syncErr?('Не вышло: '+syncErr):'Синхронизация включена');
+    };
+    $('#syncJoin').onclick=async ()=>{
+      const c=(prompt('Код синхронизации с другого устройства:')||'').trim().toLowerCase();
+      if(!c) return;
+      sync.code=c; save(LS_SYNC,sync);
+      const n=await pullNow(); renderSync();
+      toast(syncErr?('Не вышло: '+syncErr):('Подключено, получено карточек: '+n));
+    };
+    return;
+  }
+  const when=sync.last?new Date(sync.last).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'—';
+  const state=syncBusy?'обмен с сервером…':(syncErr?('ошибка: '+esc(syncErr)):('последний обмен: '+when));
+  box.innerHTML=
+    '<div class="card" style="margin:0">'+
+      '<div class="ru" style="margin:0">Код синхронизации</div>'+
+      '<div class="pt" id="syncCode" style="font-size:18px;letter-spacing:.06em;margin-top:4px;cursor:pointer;overflow-wrap:break-word">'+esc(sync.code)+'</div>'+
+      '<div class="hint" style="margin:6px 0 0">'+state+'</div>'+
+    '</div>'+
+    '<div class="row" style="margin-top:8px">'+
+      '<button class="btn" id="syncNow">Синхронизировать</button>'+
+      '<button class="btn" id="syncOff" style="max-width:124px">Отключить</button>'+
+    '</div>'+
+    '<div class="hint">Введите этот код на другом устройстве, чтобы открыть ту же колоду. Код работает как пароль: кто его знает, видит ваши карточки и ключ.</div>';
+  $('#syncCode').onclick=()=>{
+    if(navigator.clipboard) navigator.clipboard.writeText(sync.code).then(()=>toast('Код скопирован'),()=>{});
+  };
+  $('#syncNow').onclick=async ()=>{
+    const n=await pullNow(); await pushNow();
+    toast(syncErr?('Ошибка: '+syncErr):(n?('Получено новых: '+n):'Всё синхронизировано'));
+  };
+  $('#syncOff').onclick=()=>{
+    if(!confirm('Отключить синхронизацию на этом устройстве? Данные в облаке останутся.'))return;
+    sync={code:'',last:0}; save(LS_SYNC,sync); renderSync(); toast('Синхронизация отключена');
+  };
+}
+
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'){ if(Date.now()-(sync.last||0)>60000) pullNow() }
+  else pushNow();
+});
+window.addEventListener('pagehide',()=>{ if(syncOn()) pushNow() });
+
 /* ---------------- init ---------------- */
-renderStats(); renderCards(); renderTemaList();
+renderStats(); renderCards(); renderTemaList(); renderSync();
+if(syncOn()) pullNow();
 if(!settings.key) setTimeout(()=>toast('Задайте OpenAI-ключ в Настройках',4000),700);
 </script>
 </body>
