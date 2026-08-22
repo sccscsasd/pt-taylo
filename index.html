@@ -191,7 +191,12 @@
 
   /* screenshot */
   /* цель на день: дуга, неделя, серия */
-  .goal{text-align:center;margin-top:34px}
+  .goal{text-align:center;margin-top:38px;padding-top:26px;border-top:.5px solid var(--sep)}
+  .goal h2{margin:0;font-size:24px;font-weight:700;letter-spacing:-.02em}
+  .goal .lead{
+    max-width:330px;margin:6px auto 22px;
+    font-size:14px;line-height:1.4;color:var(--label2);
+  }
   .goal .gauge{position:relative;max-width:250px;margin:0 auto}
   .goal .arc{display:block;width:100%}
   .goal .arc path{fill:none;stroke-width:9;stroke-linecap:round}
@@ -413,6 +418,8 @@
     </div>
 
     <div class="goal" id="goalCard">
+      <h2>Цель на день</h2>
+      <p class="lead">Понемногу каждый день — так слова держатся в памяти лучше, чем после редких долгих заходов.</p>
       <div class="gauge">
         <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
           <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
