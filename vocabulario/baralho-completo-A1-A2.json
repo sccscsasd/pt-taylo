@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1830 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1829 карточек",
  "cards": [
   {
    "word": "ser",
@@ -213,10 +213,10 @@
   {
    "word": "jantar",
    "pos": "глаг.",
-   "ru": "ужинать; ужин",
+   "ru": "ужинать",
    "ex": "Hoje jantamos fora, num restaurante do bairro.",
    "exru": "Сегодня мы ужинаем вне дома, в ресторане по соседству.",
-   "note": "Слово и глагол, и существительное (o jantar)"
+   "note": "Существительное o jantar — ужин"
   },
   {
    "word": "lanchar",
@@ -1165,10 +1165,10 @@
   {
    "word": "o jovem",
    "pos": "сущ.",
-   "ru": "молодой человек; молодой",
+   "ru": "молодой человек",
    "ex": "Muitos jovens saem do país para trabalhar.",
    "exru": "Многие молодые уезжают из страны на заработки.",
-   "note": "Одна форма для м. и ж. рода"
+   "note": "Как прилагательное jovem — молодой"
   },
   {
    "word": "o adulto",
@@ -1397,10 +1397,10 @@
   {
    "word": "universitário",
    "pos": "прил.",
-   "ru": "университетский; студент вуза",
+   "ru": "университетский",
    "ex": "Vive numa residência universitária.",
    "exru": "Он живёт в студенческом общежитии.",
-   "note": "Может быть и существительным"
+   "note": "Существительное um universitário — студент вуза"
   },
   {
    "word": "a licenciatura",
@@ -2341,10 +2341,10 @@
   {
    "word": "o segundo",
    "pos": "сущ.",
-   "ru": "секунда; второй",
+   "ru": "секунда",
    "ex": "Faltam trinta segundos para o fim.",
    "exru": "До конца тридцать секунд.",
-   "note": "Также «второй»: o segundo andar"
+   "note": "Прилагательное segundo — второй"
   },
   {
    "word": "o horário",
@@ -3357,10 +3357,10 @@
   {
    "word": "direito",
    "pos": "прил.",
-   "ru": "прямой, правый; право",
+   "ru": "прямой, правый",
    "ex": "Segue sempre a direito.",
    "exru": "Иди всё время прямо.",
-   "note": "a direito — прямо; о направлении"
+   "note": "Существительное o direito — право"
   },
   {
    "word": "em frente",
@@ -3461,10 +3461,10 @@
   {
    "word": "andar",
    "pos": "глаг.",
-   "ru": "ходить, ездить; этаж",
+   "ru": "ходить, ездить",
    "ex": "Ando muito a pé nesta cidade.",
    "exru": "В этом городе я много хожу пешком.",
-   "note": "o andar — этаж"
+   "note": "Существительное o andar — этаж"
   },
   {
    "word": "parar",
@@ -3717,10 +3717,10 @@
   {
    "word": "primeiro",
    "pos": "числ.",
-   "ru": "первый; сначала",
+   "ru": "первый",
    "ex": "Moro no primeiro andar.",
    "exru": "Я живу на первом этаже (над нулевым).",
-   "note": "Сокращение: 1.º / 1.ª"
+   "note": "Как наречие primeiro — сначала"
   },
   {
    "word": "mais",
@@ -4061,10 +4061,10 @@
   {
    "word": "doce",
    "pos": "прил.",
-   "ru": "сладкий; десерт",
+   "ru": "сладкий",
    "ex": "Este vinho é demasiado doce.",
    "exru": "Это вино слишком сладкое.",
-   "note": "o doce — сладость, десерт"
+   "note": "Существительное o doce — сладость, десерт"
   },
   {
    "word": "doente",
@@ -5253,10 +5253,10 @@
   {
    "word": "presente",
    "pos": "прил.",
-   "ru": "присутствующий; подарок",
+   "ru": "присутствующий",
    "ex": "Estavam todos presentes na reunião.",
    "exru": "На собрании присутствовали все.",
-   "note": "o presente — подарок, настоящее время"
+   "note": "Существительное o presente — подарок"
   },
   {
    "word": "ausente",
@@ -6605,7 +6605,7 @@
   {
    "word": "ter uma reunião",
    "pos": "выраж.",
-   "ru": "иметь совещание, встречу",
+   "ru": "быть на совещании, встречаться",
    "ex": "Tenho uma reunião às dez.",
    "exru": "У меня совещание в десять.",
    "note": "a reunião — совещание"
@@ -7829,10 +7829,10 @@
   {
    "word": "os fins de semana",
    "pos": "выраж.",
-   "ru": "выходные (по выходным)",
+   "ru": "выходные дни",
    "ex": "Os fins de semana são para descansar.",
    "exru": "Выходные — для отдыха.",
-   "note": "aos fins de semana — по выходным"
+   "note": "Ao fim de semana — по выходным"
   },
   {
    "word": "logo à tarde",
@@ -8333,15 +8333,15 @@
   {
    "word": "só",
    "pos": "нареч.",
-   "ru": "только; один",
+   "ru": "только",
    "ex": "Só quero um copo de água.",
    "exru": "Я хочу только стакан воды.",
-   "note": "Также «одинокий»: estar só"
+   "note": "Прилагательное só — один, одинокий"
   },
   {
    "word": "ter aulas",
    "pos": "выраж.",
-   "ru": "учиться, иметь занятия",
+   "ru": "ходить на занятия, учиться",
    "ex": "Tenho aulas às segundas e quartas.",
    "exru": "У меня занятия по понедельникам и средам.",
    "note": "ter aula de + предмет"
@@ -8453,7 +8453,7 @@
   {
    "word": "sair mais tarde",
    "pos": "выраж.",
-   "ru": "задержаться на работе",
+   "ru": "выйти позже, задержаться",
    "ex": "Hoje saio mais tarde do trabalho.",
    "exru": "Сегодня я задержусь на работе.",
    "note": "fazer horas extra — работать сверхурочно"
@@ -10747,14 +10747,6 @@
    "note": ""
   },
   {
-   "word": "passar a rua",
-   "pos": "выраж.",
-   "ru": "перейти улицу",
-   "ex": "Passe a rua na passadeira.",
-   "exru": "Переходите улицу по зебре.",
-   "note": "Синоним atravessar a rua"
-  },
-  {
    "word": "seguir em frente",
    "pos": "выраж.",
    "ru": "ехать/идти прямо",
@@ -10901,10 +10893,10 @@
   {
    "word": "haver quartos disponíveis",
    "pos": "выраж.",
-   "ru": "иметься свободные номера",
+   "ru": "есть свободные номера",
    "ex": "Há quartos disponíveis para hoje?",
    "exru": "Есть свободные номера на сегодня?",
-   "note": "disponível — доступный"
+   "note": "Безлично: há quartos disponíveis"
   },
   {
    "word": "exterior",
@@ -10917,10 +10909,10 @@
   {
    "word": "estar cheio",
    "pos": "выраж.",
-   "ru": "быть заполненным",
+   "ru": "быть полным; наесться",
    "ex": "O hotel está cheio esta semana.",
    "exru": "Отель заполнен на этой неделе.",
-   "note": "Также «быть сытым»"
+   "note": "О человеке — «наелся»"
   },
   {
    "word": "fazer uma reserva",
@@ -11405,7 +11397,7 @@
   {
    "word": "ter vontade",
    "pos": "выраж.",
-   "ru": "хотеть, иметь желание",
+   "ru": "хотеть, испытывать желание",
    "ex": "Não tenho vontade de sair hoje.",
    "exru": "Сегодня мне не хочется выходить.",
    "note": "ter vontade de + инфинитив"
@@ -11741,7 +11733,7 @@
   {
    "word": "claro",
    "pos": "прил.",
-   "ru": "светлый; ясный; конечно",
+   "ru": "светлый, ясный",
    "ex": "Prefiro azul claro.",
    "exru": "Я предпочитаю светло-синий.",
    "note": "Claro! — конечно!"
@@ -11909,10 +11901,10 @@
   {
    "word": "quadrado",
    "pos": "прил.",
-   "ru": "квадратный; квадрат",
+   "ru": "квадратный",
    "ex": "O quarto é quase quadrado.",
    "exru": "Комната почти квадратная.",
-   "note": "o quadrado — квадрат"
+   "note": "Существительное o quadrado — квадрат"
   },
   {
    "word": "o círculo",
@@ -12045,10 +12037,10 @@
   {
    "word": "ter cheiro",
    "pos": "выраж.",
-   "ru": "иметь запах, пахнуть",
+   "ru": "пахнуть, издавать запах",
    "ex": "Este queijo tem um cheiro forte.",
    "exru": "У этого сыра сильный запах.",
-   "note": "cheirar a — пахнуть чем-то"
+   "note": "ter cheiro a — пахнуть чем-то"
   },
   {
    "word": "o sabor",
@@ -12069,10 +12061,10 @@
   {
    "word": "ter gosto",
    "pos": "выраж.",
-   "ru": "иметь вкус",
+   "ru": "быть на вкус",
    "ex": "A sopa não tem gosto nenhum.",
    "exru": "У супа совсем нет вкуса.",
-   "note": "Синоним ter sabor"
+   "note": "ter gosto a — иметь вкус чего-то"
   },
   {
    "word": "amargo",
@@ -13444,11 +13436,11 @@
   },
   {
    "word": "mesmo",
-   "pos": "нареч.",
-   "ru": "тот же самый; даже",
+   "pos": "мест.",
+   "ru": "тот же самый",
    "ex": "Moramos na mesma rua há muitos anos.",
    "exru": "Мы много лет живём на одной и той же улице.",
-   "note": "Ещё «даже»: mesmo assim — всё равно"
+   "note": "Ещё наречие «даже»: mesmo assim — всё равно"
   },
   {
    "word": "cada",
@@ -14229,10 +14221,10 @@
   {
    "word": "demais",
    "pos": "нареч.",
-   "ru": "слишком; остальные",
+   "ru": "слишком",
    "ex": "Comeste demais ao jantar.",
    "exru": "Ты слишком много съел за ужином.",
-   "note": "Стоит после слова: caro demais"
+   "note": "Ещё «остальные»: os demais"
   },
   {
    "word": "realmente",
@@ -14706,6 +14698,7 @@
   "obesidade",
   "oceânia",
   "oliveira",
+  "passar a rua",
   "pinheiro",
   "porão",
   "pousada",

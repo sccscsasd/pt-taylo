@@ -69,7 +69,7 @@
 
 ## Готовая колода
 
-`vocabulario/baralho-completo-A1-A2.json` — **1830 карточек**: весь словник A1–A2
+`vocabulario/baralho-completo-A1-A2.json` — **1829 карточек**: весь словник A1–A2
 с переводом, примером и заметкой, написанные вручную под европейскую норму.
 Словник Camões пришлось латать: в нём не было 85 ядровых глаголов (precisar, dever,
 achar, encontrar, deixar, ajudar…), формул вежливости (olá, obrigado, por favor,
