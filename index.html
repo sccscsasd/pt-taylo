@@ -289,9 +289,10 @@
           <input type="text" id="wordInput" placeholder="arrumar, de repente…" autocapitalize="off" autocomplete="off" spellcheck="false">
           <div class="sugg" id="sugg" style="display:none"></div>
         </div>
-        <button class="btn primary" id="addOne" style="flex:1;max-width:110px">Добавить</button>
+        <button class="btn primary" id="addOne" style="flex:1;max-width:118px">Перевести</button>
       </div>
-      <div class="hint">Можно несколько через запятую.</div>
+      <div class="hint">Можно несколько через запятую. Сначала покажу перевод, добавите — если подойдёт.</div>
+      <div id="preview"></div>
     </div>
 
     <div class="sec">
@@ -549,7 +550,7 @@ async function askVision(dataUrl){
 }
 
 const CHUNK=12;
-async function createCards(items){
+async function generateCards(items){
   const fresh=[];
   for(let i=0;i<items.length;i+=CHUNK){
     const part=items.slice(i,i+CHUNK);
@@ -571,12 +572,41 @@ async function createCards(items){
       });
     }
   }
-  cards=fresh.concat(cards);
-  persist();
   return fresh;
+}
+function commitCards(fresh){
+  const add=fresh.filter(c=>!cards.some(x=>norm(x.word)===norm(c.word)));
+  cards=add.concat(cards);
+  persist(); renderCards(); renderTemaList();
+  return add.length;
 }
 
 /* ---------------- ADD ---------------- */
+let pending=[];
+function renderPreview(){
+  const box=$('#preview');
+  if(!pending.length){ box.innerHTML=''; return }
+  box.innerHTML='<div class="lbl" style="margin:18px 0 7px 4px">Перевод</div>'+
+    pending.map((c,i)=>
+      '<article class="card">'+
+        '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
+        '<div class="ru">'+esc(c.ru)+'</div>'+
+        (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+        (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
+      '</article>').join('')+
+    '<div class="row" style="margin-top:4px">'+
+      '<button class="btn primary" id="pvAdd">Добавить в колоду'+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
+      '<button class="btn" id="pvSkip" style="max-width:110px">Отмена</button>'+
+    '</div>';
+  $('#pvAdd').onclick=()=>{
+    const n=commitCards(pending);
+    pending=[]; renderPreview();
+    $('#wordInput').value='';
+    toast(n?('Добавлено '+n):'Такие карточки уже есть');
+  };
+  $('#pvSkip').onclick=()=>{ pending=[]; renderPreview() };
+}
+
 async function runAdd(inputs, btn){
   const items=inputs.filter(Boolean);
   if(!items.length) return;
@@ -585,7 +615,8 @@ async function runAdd(inputs, btn){
   if(!todo.length){toast('Такие карточки уже есть');return}
   const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
   try{
-    const fresh=await createCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
+    const fresh=await generateCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
+    commitCards(fresh);
     const skipped=todo.length-fresh.length+known;
     toast('Добавлено '+fresh.length+(skipped?', пропущено дублей: '+skipped:''));
     if(fresh.length){ $('#wordInput').value=''; renderCards(); }
@@ -593,10 +624,21 @@ async function runAdd(inputs, btn){
   finally{ btn.disabled=false; btn.innerHTML=old; renderStats(); }
 }
 
-$('#addOne').onclick=()=>{
+$('#addOne').onclick=async e=>{
   const raw=$('#wordInput').value.split(/[,;\n]/).map(s=>s.trim()).filter(Boolean);
   if(!raw.length){toast('Введите слово');return}
-  runAdd(raw.map(text=>({text:text})),$('#addOne'));
+  const todo=raw.filter(w=>!hasWord(w));
+  if(!todo.length){toast('Такие карточки уже есть');return}
+  const btn=$('#addOne'), old=btn.innerHTML;
+  btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
+  pending=[]; renderPreview();
+  try{
+    pending=await generateCards(todo.map(w=>({word:w})));
+    renderPreview();
+    if(pending.length<todo.length) toast('Часть слов пропущена как дубли');
+    $('#preview').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }catch(err){ toast(esc(err.message),5000) }
+  finally{ btn.disabled=false; btn.innerHTML=old }
 };
 /* ---------------- автоподсказки при вводе ---------------- */
 const deacc=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
