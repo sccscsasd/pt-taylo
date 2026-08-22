@@ -462,7 +462,9 @@ const $$=s=>[...document.querySelectorAll(s)];
 const DAY=864e5;
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').toLowerCase().replace(/^(o|a|os|as|um|uma)\s+/,'').replace(/[.,;:!?"'()]/g,'').trim();
-const uid=()=>Math.random().toString(36).slice(2,10)+Date.now().toString(36);
+// id карточки выводится из слова: одно слово — одна строка у пользователя,
+// поэтому повторная загрузка колоды на другом устройстве ничего не задваивает.
+const wordId=w=>'w:'+norm(w);
 
 const SVG=p=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg>';
 const IC_REFRESH=SVG('<path d="M20 11a8 8 0 0 0-13.7-5.3L4 8"/><path d="M4 4.5V8h3.5"/><path d="M4 13a8 8 0 0 0 13.7 5.3L20 16"/><path d="M20 19.5V16h-3.5"/>');
@@ -507,7 +509,7 @@ async function generateCards(items){
       if(!r||!r.word) continue;
       if(cards.some(c=>norm(c.word)===norm(r.word))||fresh.some(c=>norm(c.word)===norm(r.word))) continue;
       fresh.push({
-        id:uid(),
+        id:wordId(r.word),
         word:String(r.word).trim(),
         query:String(r.input||'').trim(),
         pos:String(r.pos||'').trim(),
@@ -1133,8 +1135,9 @@ function importCards(raw){
   let added=0;
   inc.forEach(c=>{
     if(!c.word||cards.some(x=>norm(x.word)===norm(c.word)))return;
-    const nc=Object.assign({id:uid(),created:Date.now(),due:Date.now(),interval:0,reps:0,lapses:0},c);
+    const nc=Object.assign({created:Date.now(),due:Date.now(),interval:0,reps:0,lapses:0},c);
     delete nc.ease; delete nc.deleted;
+    nc.id=wordId(nc.word);
     cards.push(nc); touch(nc);
     added++;
   });
@@ -1264,13 +1267,34 @@ function loadCache(){
   tombs=Array.isArray(c.tombs)?c.tombs:[];
   syncedAt=c.syncedAt||'';
   setDirty=!!c.setDirty;
+  rekeyCache();
+}
+// Кеш мог остаться от версии со случайными id — перекладываем на id по слову,
+// иначе правки уедут на сервер под старым ключом и создадут вторую строку.
+function rekeyCache(){
+  let changed=false;
+  const move=c=>{
+    const id=wordId(c.word);
+    if(c.id===id) return;
+    if(dirty.has(c.id)){ dirty.delete(c.id); dirty.add(id) }
+    c.id=id; changed=true;
+  };
+  cards.forEach(move); tombs.forEach(move);
+  const seen=new Map();
+  cards=cards.filter(c=>{
+    const prev=seen.get(c.id);
+    if(!prev){ seen.set(c.id,c); return true }
+    if((c.reps||0)>(prev.reps||0)) Object.assign(prev,c);   // из двух копий оставляем ту, где больше прогресса
+    changed=true; return false;
+  });
+  if(changed) saveCache();
 }
 // Наследство версии, где вся колода лежала в одном общем ключе браузера.
 function adoptLegacy(){
   const old=load(OLD_CARDS,null), owner=load(OLD_OWNER,'');
   if(Array.isArray(old)&&old.length&&!cards.length&&(!owner||owner===auth.user.id)){
     cards=old.filter(c=>c&&c.word);
-    cards.forEach(c=>{ if(!c.id) c.id=uid() });
+
     const os=load(OLD_SET,null);
     if(os&&os.dir){ settings.dir=os.dir; settings.at=os.at||Date.now(); setDirty=true }
   }
