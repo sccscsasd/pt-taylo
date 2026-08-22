@@ -138,6 +138,31 @@
   .account .who{flex:1;min-width:0;overflow-wrap:anywhere}
   .account .who b{display:block;font-size:15px;font-weight:400}
   .account .who span{display:block;margin-top:3px;font-size:12px;color:var(--label3)}
+  /* цель на день: минус, вписываемое число, плюс */
+  .stepper{
+    display:flex;align-items:stretch;
+    background:var(--group);border-radius:10px;overflow:hidden;
+  }
+  .stepper button{
+    flex:none;width:58px;border:none;background:none;cursor:pointer;
+    color:var(--blue);font-size:24px;font-weight:300;line-height:1;
+  }
+  .stepper button:active{background:var(--fill)}
+  .stepper button:disabled{color:var(--label3);background:none;cursor:default}
+  .stepper .val{
+    flex:1;min-width:0;display:flex;align-items:baseline;justify-content:center;gap:6px;
+    padding:13px 4px;border-left:.5px solid var(--sep);border-right:.5px solid var(--sep);
+  }
+  .stepper input{
+    width:2.6ch;padding:0;border:none;background:none;border-radius:0;
+    font-size:19px;font-weight:600;color:var(--label);text-align:right;
+    -moz-appearance:textfield;
+  }
+  .stepper input:focus{outline:none;color:var(--blue)}
+  .stepper input::-webkit-outer-spin-button,
+  .stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .stepper .u{font-size:15px;color:var(--label2)}
+
   .linkbtn{
     flex:none;border:none;background:none;padding:0;cursor:pointer;
     color:var(--blue);font-size:15px;
@@ -194,7 +219,7 @@
   .goal{text-align:center;margin-top:38px;padding-top:26px;border-top:.5px solid var(--sep)}
   .goal h2{margin:0;font-size:24px;font-weight:700;letter-spacing:-.02em}
   .goal .lead{
-    max-width:330px;margin:6px auto 22px;
+    max-width:360px;min-height:2.8em;margin:6px auto 22px;
     font-size:14px;line-height:1.4;color:var(--label2);
   }
   .goal .gauge{position:relative;max-width:250px;margin:0 auto}
@@ -425,7 +450,7 @@
 
     <div class="goal" id="goalCard">
       <h2>Цель на день</h2>
-      <p class="lead">Мозг любит понемногу и каждый день: сто слов в воскресенье он вернёт обратно в понедельник.</p>
+      <p class="lead" id="goalLead"></p>
       <div class="gauge">
         <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
           <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
@@ -461,14 +486,15 @@
   <section id="v-set" class="view">
     <div class="sec">
       <span class="lbl">Цель на день</span>
-      <select id="goal">
-        <option value="5">5 слов</option>
-        <option value="10">10 слов</option>
-        <option value="15">15 слов</option>
-        <option value="20">20 слов</option>
-        <option value="30">30 слов</option>
-        <option value="50">50 слов</option>
-      </select>
+      <div class="stepper">
+        <button id="goalMinus" type="button" aria-label="Меньше">−</button>
+        <span class="val">
+          <input id="goal" type="number" min="5" max="99" step="1" inputmode="numeric" aria-label="Слов в день">
+          <span class="u" id="goalWord">слов</span>
+        </span>
+        <button id="goalPlus" type="button" aria-label="Больше">+</button>
+      </div>
+      <div class="hint">От 5 до 99. Можно вписать своё число.</div>
     </div>
 
     <div class="sec">
@@ -1244,7 +1270,8 @@ const dayKey=d=>{
   return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');
 };
 const startOfDay=()=>{ const d=new Date(); d.setHours(0,0,0,0); return d.getTime() };
-const goalOf=()=>+settings.goal||15;
+const clampGoal=n=>Math.min(99,Math.max(5,Math.round(+n)||15));
+const goalOf=()=>clampGoal(settings.goal);
 
 function bumpDay(n){
   const k=dayKey();
@@ -1279,9 +1306,46 @@ function streakInfo(){
   });
   return {cur:cur, best:Math.max(best,cur)};
 }
+/* Подпись меняется раз в день: индекс от номера дня, поэтому строка не скачет
+   при каждой перерисовке блока, а за тридцать дней проходит весь список. */
+const LEADS=[
+  'Мозг любит понемногу и каждый день: сто слов в воскресенье он вернёт обратно в понедельник.',
+  'Пятнадцать слов в день — и однажды вы поймёте, что бариста спросил, а не поздоровался.',
+  'Португальцы съедают гласные. Ловить слова на слух поздно, учите заранее.',
+  'Saudade перевести нельзя. Остальные тысяча шестьсот слов — вполне.',
+  'Мозг как сосед: заносишь понемногу — помнит. Вываливаешь всё разом — «ничего не брал».',
+  'Про bacalhau говорят: 365 рецептов, по одному на день. Слова берутся тем же методом.',
+  'Одно слово в день — это 365 в год. Пятнадцать — уже подозрительно похоже на язык.',
+  '«Obrigado» вы знаете. Осталось немного — и можно спорить о футболе.',
+  'Пропустили день — ничего. Пропустили неделю — знакомьтесь заново.',
+  'Португальский несложный. Сложно вспомнить его на кассе, когда сзади очередь.',
+  'Esquisito — это «странный», а не «изысканный». Хорошо бы выучить до заказа.',
+  'Трамвай в Лиссабоне ждать дольше, чем выучить пятнадцать слов.',
+  'Мозг запоминает то, что мелькает часто. Как реклама, только с пользой.',
+  'Fado можно не понимать. Но приятно знать, о чём человек так убивается.',
+  'Учите сегодня: завтра будет некогда, послезавтра тем более.',
+  'Каждое выученное слово — на одну неловкую паузу в разговоре меньше.',
+  'Сначала киваешь и улыбаешься. Потом понимаешь. Потом отвечаешь. Мы на втором этапе.',
+  'Пятнадцать слов — это две минуты. Ленту вы листаете дольше и совершенно бесплатно.',
+  'Знать слово и вспомнить слово — разные навыки. Здесь тренируется второй.',
+  'Мозг выбрасывает всё, чем не пользуются. Как вы — коробку от телевизора.',
+  'Забыли слово? Оно никуда не делось, просто прячется. Повторите — вылезет.',
+  'Кто учит по чуть-чуть, обгоняет того, кто собирается начать с понедельника.',
+  'Кофе тут bica, café и cimbalino. Три слова на один напиток — язык щедрый.',
+  'Месяц по пятнадцать слов — и меню читается без картинок.',
+  'Сегодняшние слова — это завтрашняя фраза, сказанная не задумываясь.',
+  'Мозг любит режим. Зануда, конечно, зато надёжный.',
+  'Три слова лучше, чем ноль. Пятнадцать лучше, чем три. Логика простая.',
+  'Начать легко, продолжить трудно, бросить проще всего. Мы за средний вариант.',
+  '«Pois pois» говорят и когда согласны, и когда не очень. Нюансы придут с практикой.',
+  'Слова, выученные в спешке перед поездкой, забываются уже в аэропорту.'
+];
+const leadLine=()=>LEADS[Math.floor(startOfDay()/DAY_MS)%LEADS.length];
+
 function renderGoal(){
   const box=$('#goalCard'); if(!box) return;
   const goal=goalOf(), days=settings.learned||{}, today=days[dayKey()]||0;
+  $('#goalLead').textContent=leadLine();
   $('#goalNum').textContent=today;
   $('#goalTarget').textContent=goal;
   $('#goalArc').style.strokeDashoffset=(276.5*(1-Math.min(1,today/goal))).toFixed(1);
@@ -1317,10 +1381,11 @@ $('#goalEdit').onclick=()=>{
   $('#goal').focus();
 };
 
-const plural=(n,one,few,many)=>{
+const pWord=(n,one,few,many)=>{
   const m=n%100, k=n%10;
-  return n+' '+(m>=11&&m<=14?many:k===1?one:k>=2&&k<=4?few:many);
+  return m>=11&&m<=14?many:k===1?one:k>=2&&k<=4?few:many;
 };
+const plural=(n,one,few,many)=>n+' '+pWord(n,one,few,many);
 function renderStats(){
   const now=Date.now();
   const live=cards.filter(c=>!c.archived);
@@ -1356,7 +1421,25 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 
 /* ---------------- settings ---------------- */
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
-$('#goal').onchange=e=>{settings.goal=+e.target.value;persistSet();renderGoal()};
+function paintGoal(){
+  const g=goalOf();
+  const inp=$('#goal'); if(!inp) return;
+  if(document.activeElement!==inp) inp.value=g;
+  $('#goalWord').textContent=pWord(g,'слово','слова','слов');
+  $('#goalMinus').disabled=g<=5;
+  $('#goalPlus').disabled=g>=99;
+}
+function setGoal(n){
+  const g=clampGoal(n);
+  if(g!==goalOf()){ settings.goal=g; persistSet() }
+  else settings.goal=g;
+  paintGoal(); renderGoal();
+}
+$('#goalMinus').onclick=()=>setGoal(goalOf()-1);
+$('#goalPlus').onclick=()=>setGoal(goalOf()+1);
+$('#goal').onchange=e=>setGoal(e.target.value);
+$('#goal').onblur=e=>{ setGoal(e.target.value); e.target.value=goalOf() };
+$('#goal').addEventListener('keydown',e=>{ if(e.key==='Enter') e.target.blur() });
 
 // импорт остался внутри: на нём держатся загрузка готовой колоды и разовый
 // перенос из старого облачного хранилища
@@ -1542,7 +1625,7 @@ function adoptLegacy(){
 }
 function applySettings(){
   const d=$('#dir'); if(d) d.value=settings.dir||'pt';
-  const g=$('#goal'); if(g) g.value=String(goalOf());
+  paintGoal();
   renderGoal();
 }
 
