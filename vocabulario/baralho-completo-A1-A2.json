@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1721 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1773 карточек",
  "cards": [
   {
    "word": "ser",
@@ -13769,6 +13769,422 @@
    "ex": "O barulho diminuiu depois da meia-noite.",
    "exru": "После полуночи шум стих.",
    "note": "diminuo, diminuis; противоположное aumentar"
+  },
+  {
+   "word": "olá",
+   "pos": "выраж.",
+   "ru": "привет",
+   "ex": "Olá, tudo bem contigo?",
+   "exru": "Привет, как ты?",
+   "note": "Нейтральное «привет» в любое время суток"
+  },
+  {
+   "word": "bom dia",
+   "pos": "выраж.",
+   "ru": "доброе утро, добрый день",
+   "ex": "Bom dia, queria um café, se faz favor.",
+   "exru": "Доброе утро, мне кофе, пожалуйста.",
+   "note": "До обеда; после — boa tarde"
+  },
+  {
+   "word": "boa tarde",
+   "pos": "выраж.",
+   "ru": "добрый день",
+   "ex": "Boa tarde, tem mesa para dois?",
+   "exru": "Добрый день, есть столик на двоих?",
+   "note": "С обеда и до темноты"
+  },
+  {
+   "word": "boa noite",
+   "pos": "выраж.",
+   "ru": "добрый вечер, спокойной ночи",
+   "ex": "Boa noite, até amanhã de manhã.",
+   "exru": "Спокойной ночи, до завтрашнего утра.",
+   "note": "И при встрече вечером, и на прощание"
+  },
+  {
+   "word": "adeus",
+   "pos": "выраж.",
+   "ru": "до свидания, прощай",
+   "ex": "Adeus, e obrigado por tudo.",
+   "exru": "До свидания, и спасибо за всё.",
+   "note": "Прощание надолго; обычное «пока» — até logo"
+  },
+  {
+   "word": "obrigado",
+   "pos": "выраж.",
+   "ru": "спасибо",
+   "ex": "Muito obrigado pela sua ajuda de ontem.",
+   "exru": "Большое спасибо за вашу вчерашнюю помощь.",
+   "note": "Мужчина говорит obrigado, женщина obrigada"
+  },
+  {
+   "word": "de nada",
+   "pos": "выраж.",
+   "ru": "не за что, пожалуйста",
+   "ex": "— Obrigada! — De nada, foi um prazer.",
+   "exru": "— Спасибо! — Не за что, было приятно.",
+   "note": "Ответ на obrigado; ещё «não tem de quê»"
+  },
+  {
+   "word": "por favor",
+   "pos": "выраж.",
+   "ru": "пожалуйста (просьба)",
+   "ex": "Pode fechar a janela, por favor?",
+   "exru": "Можете закрыть окно, пожалуйста?",
+   "note": "В Португалии чаще говорят «se faz favor»"
+  },
+  {
+   "word": "com licença",
+   "pos": "выраж.",
+   "ru": "извините, разрешите",
+   "ex": "Com licença, posso passar?",
+   "exru": "Извините, можно пройти?",
+   "note": "Когда проходишь мимо или прерываешь"
+  },
+  {
+   "word": "desculpa",
+   "pos": "выраж.",
+   "ru": "извини, прости",
+   "ex": "Desculpa, cheguei tarde outra vez.",
+   "exru": "Извини, я опять опоздал.",
+   "note": "На «вы» — desculpe; «desculpas» — оправдания"
+  },
+  {
+   "word": "sim",
+   "pos": "выраж.",
+   "ru": "да",
+   "ex": "— Ficas para o jantar? — Sim, fico.",
+   "exru": "— Останешься на ужин? — Да, останусь.",
+   "note": "Часто отвечают глаголом: «Gostas?» — «Gosto»"
+  },
+  {
+   "word": "não",
+   "pos": "выраж.",
+   "ru": "нет, не",
+   "ex": "Não sei nada sobre isso, desculpa.",
+   "exru": "Я об этом ничего не знаю, извини.",
+   "note": "Два отрицания в норме: não sei nada"
+  },
+  {
+   "word": "o amigo",
+   "pos": "сущ.",
+   "ru": "друг",
+   "ex": "Vou ao cinema com um amigo da faculdade.",
+   "exru": "Я иду в кино с другом по университету.",
+   "note": "Подруга — a amiga; парень/девушка — namorado"
+  },
+  {
+   "word": "a pessoa",
+   "pos": "сущ.",
+   "ru": "человек, лицо",
+   "ex": "É uma pessoa muito calma e simpática.",
+   "exru": "Это очень спокойный и приятный человек.",
+   "note": "Всегда ж. р., даже про мужчину"
+  },
+  {
+   "word": "a coisa",
+   "pos": "сущ.",
+   "ru": "вещь, штука",
+   "ex": "Tenho muitas coisas para fazer hoje.",
+   "exru": "У меня сегодня много дел.",
+   "note": "Разговорное «дела» — coisas para fazer"
+  },
+  {
+   "word": "o mundo",
+   "pos": "сущ.",
+   "ru": "мир, свет",
+   "ex": "É a melhor praia do mundo, sem dúvida.",
+   "exru": "Это лучший пляж в мире, без сомнений.",
+   "note": "Toda a gente — все; todo o mundo реже"
+  },
+  {
+   "word": "o problema",
+   "pos": "сущ.",
+   "ru": "проблема",
+   "ex": "Não há problema, podemos ir mais tarde.",
+   "exru": "Нет проблем, можем сходить попозже.",
+   "note": "Мужской род, хоть и на -a: um problema"
+  },
+  {
+   "word": "a parte",
+   "pos": "сущ.",
+   "ru": "часть",
+   "ex": "A maior parte dos alunos já chegou.",
+   "exru": "Большая часть учеников уже пришла.",
+   "note": "a maior parte de — большинство"
+  },
+  {
+   "word": "a vida",
+   "pos": "сущ.",
+   "ru": "жизнь",
+   "ex": "A vida na aldeia é bem mais calma.",
+   "exru": "Жизнь в деревне гораздо спокойнее.",
+   "note": "Как дела — como vai a vida?"
+  },
+  {
+   "word": "o exemplo",
+   "pos": "сущ.",
+   "ru": "пример",
+   "ex": "Dá-me um exemplo, por favor.",
+   "exru": "Приведи мне пример, пожалуйста.",
+   "note": "por exemplo — например"
+  },
+  {
+   "word": "a razão",
+   "pos": "сущ.",
+   "ru": "причина; правота",
+   "ex": "Tens razão, foi melhor assim.",
+   "exru": "Ты прав, так вышло лучше.",
+   "note": "ter razão — быть правым, не «иметь причину»"
+  },
+  {
+   "word": "a maneira",
+   "pos": "сущ.",
+   "ru": "способ, манера",
+   "ex": "Há outra maneira de chegar ao centro?",
+   "exru": "Есть другой способ добраться до центра?",
+   "note": "de qualquer maneira — в любом случае"
+  },
+  {
+   "word": "o aluno",
+   "pos": "сущ.",
+   "ru": "ученик, студент",
+   "ex": "O aluno novo senta-se ao pé da janela.",
+   "exru": "Новый ученик сидит у окна.",
+   "note": "Ученица — a aluna; школьник — o estudante"
+  },
+  {
+   "word": "os legumes",
+   "pos": "сущ.",
+   "ru": "овощи",
+   "ex": "Comemos legumes cozidos quase todos os dias.",
+   "exru": "Мы едим варёные овощи почти каждый день.",
+   "note": "Обычно во мн. ч.; зелень — os verdes"
+  },
+  {
+   "word": "o nome",
+   "pos": "сущ.",
+   "ru": "имя, название",
+   "ex": "Qual é o nome da rua onde moras?",
+   "exru": "Как называется улица, где ты живёшь?",
+   "note": "Фамилия — o apelido, не «sobrenome»"
+  },
+  {
+   "word": "triste",
+   "pos": "прил.",
+   "ru": "грустный",
+   "ex": "Ficou triste com a notícia da mudança.",
+   "exru": "Он расстроился из-за новости о переезде.",
+   "note": "ficar triste — расстроиться"
+  },
+  {
+   "word": "contente",
+   "pos": "прил.",
+   "ru": "довольный, радостный",
+   "ex": "Estou muito contente com o novo emprego.",
+   "exru": "Я очень доволен новой работой.",
+   "note": "Синоним feliz, но чаще про сейчас"
+  },
+  {
+   "word": "zangado",
+   "pos": "прил.",
+   "ru": "сердитый",
+   "ex": "Ele está zangado comigo desde ontem.",
+   "exru": "Он сердится на меня со вчерашнего дня.",
+   "note": "zangar-se com alguém — рассердиться"
+  },
+  {
+   "word": "nervoso",
+   "pos": "прил.",
+   "ru": "нервный, взволнованный",
+   "ex": "Fico nervoso antes de falar em público.",
+   "exru": "Я волнуюсь перед выступлением на людях.",
+   "note": "Не «нервный характер», а «волнуется сейчас»"
+  },
+  {
+   "word": "pronto",
+   "pos": "прил.",
+   "ru": "готовый",
+   "ex": "O jantar está pronto, venham à mesa.",
+   "exru": "Ужин готов, идите за стол.",
+   "note": "Ещё «ну всё»: pronto, acabou"
+  },
+  {
+   "word": "possível",
+   "pos": "прил.",
+   "ru": "возможный",
+   "ex": "É possível trocar o bilhete para amanhã?",
+   "exru": "Можно поменять билет на завтра?",
+   "note": "o mais depressa possível — как можно быстрее"
+  },
+  {
+   "word": "impossível",
+   "pos": "прил.",
+   "ru": "невозможный",
+   "ex": "É impossível estacionar aqui a esta hora.",
+   "exru": "В это время здесь невозможно припарковаться.",
+   "note": ""
+  },
+  {
+   "word": "necessário",
+   "pos": "прил.",
+   "ru": "нужный, необходимый",
+   "ex": "Não é necessário marcar consulta antes.",
+   "exru": "Записываться заранее не обязательно.",
+   "note": "é necessário + инфинитив"
+  },
+  {
+   "word": "verdadeiro",
+   "pos": "прил.",
+   "ru": "настоящий, правдивый",
+   "ex": "Esta história é verdadeira, aconteceu comigo.",
+   "exru": "Эта история настоящая, она случилась со мной.",
+   "note": "Правда — a verdade; é verdade — это правда"
+  },
+  {
+   "word": "falso",
+   "pos": "прил.",
+   "ru": "ложный, поддельный",
+   "ex": "O relógio era falso, mas parecia caro.",
+   "exru": "Часы были поддельные, но выглядели дорого.",
+   "note": ""
+  },
+  {
+   "word": "molhado",
+   "pos": "прил.",
+   "ru": "мокрый",
+   "ex": "Não te sentes aí, o banco está molhado.",
+   "exru": "Не садись туда, скамейка мокрая.",
+   "note": "Сухой — seco; намочить — molhar"
+  },
+  {
+   "word": "morno",
+   "pos": "прил.",
+   "ru": "тёплый, чуть тёплый",
+   "ex": "A sopa já está morna, aquece um pouco.",
+   "exru": "Суп уже еле тёплый, подогрей немного.",
+   "note": "Между frio и quente"
+  },
+  {
+   "word": "estreito",
+   "pos": "прил.",
+   "ru": "узкий",
+   "ex": "As ruas da Alfama são muito estreitas.",
+   "exru": "Улицы Алфамы очень узкие.",
+   "note": "Широкий — largo"
+  },
+  {
+   "word": "mesmo",
+   "pos": "нареч.",
+   "ru": "тот же самый; даже",
+   "ex": "Moramos na mesma rua há muitos anos.",
+   "exru": "Мы много лет живём на одной и той же улице.",
+   "note": "Ещё «даже»: mesmo assim — всё равно"
+  },
+  {
+   "word": "cada",
+   "pos": "нареч.",
+   "ru": "каждый",
+   "ex": "Cada aluno recebeu um livro diferente.",
+   "exru": "Каждый ученик получил свою книгу.",
+   "note": "Не меняется по родам: cada dia, cada semana"
+  },
+  {
+   "word": "vários",
+   "pos": "прил.",
+   "ru": "несколько, разные",
+   "ex": "Estive lá várias vezes no verão passado.",
+   "exru": "Прошлым летом я был там несколько раз.",
+   "note": "Женский род — várias"
+  },
+  {
+   "word": "demasiado",
+   "pos": "нареч.",
+   "ru": "слишком, чересчур",
+   "ex": "Este casaco é demasiado grande para mim.",
+   "exru": "Это пальто мне слишком велико.",
+   "note": "Разговорнее — demais после слова"
+  },
+  {
+   "word": "junto",
+   "pos": "нареч.",
+   "ru": "рядом, вместе",
+   "ex": "A farmácia fica junto à paragem do autocarro.",
+   "exru": "Аптека рядом с автобусной остановкой.",
+   "note": "junto a/de — рядом с; juntos — вместе"
+  },
+  {
+   "word": "alguém",
+   "pos": "нареч.",
+   "ru": "кто-то, кто-нибудь",
+   "ex": "Alguém deixou o guarda-chuva na entrada.",
+   "exru": "Кто-то оставил зонт у входа.",
+   "note": "Никто — ninguém"
+  },
+  {
+   "word": "talvez",
+   "pos": "нареч.",
+   "ru": "может быть, возможно",
+   "ex": "Talvez vamos ao cinema no sábado.",
+   "exru": "Может быть, в субботу сходим в кино.",
+   "note": "В книжной речи требует конъюнктива"
+  },
+  {
+   "word": "se",
+   "pos": "союз",
+   "ru": "если",
+   "ex": "Se chover, ficamos em casa a ver um filme.",
+   "exru": "Если пойдёт дождь, останемся дома смотреть фильм.",
+   "note": "Ещё возвратная частица: chama-se"
+  },
+  {
+   "word": "embora",
+   "pos": "союз",
+   "ru": "хотя; прочь",
+   "ex": "Vamos embora, já é tarde.",
+   "exru": "Пойдём отсюда, уже поздно.",
+   "note": "ir embora — уходить; «хотя» — книжное"
+  },
+  {
+   "word": "apesar de",
+   "pos": "союз",
+   "ru": "несмотря на",
+   "ex": "Saímos apesar do frio que fazia.",
+   "exru": "Мы вышли, несмотря на холод.",
+   "note": "apesar de + существительное или инфинитив"
+  },
+  {
+   "word": "por causa de",
+   "pos": "союз",
+   "ru": "из-за",
+   "ex": "Chegámos tarde por causa do trânsito.",
+   "exru": "Мы опоздали из-за пробок.",
+   "note": "Про причину; «благодаря» — graças a"
+  },
+  {
+   "word": "em vez de",
+   "pos": "союз",
+   "ru": "вместо",
+   "ex": "Bebo chá em vez de café à noite.",
+   "exru": "Вечером я пью чай вместо кофе.",
+   "note": "em vez de + существительное или инфинитив"
+  },
+  {
+   "word": "para",
+   "pos": "предл.",
+   "ru": "для, чтобы, в (направление)",
+   "ex": "Este comboio vai para o Porto.",
+   "exru": "Этот поезд идёт в Порту.",
+   "note": "Цель и направление; сравните с por"
+  },
+  {
+   "word": "por",
+   "pos": "предл.",
+   "ru": "через, по; за (цену)",
+   "ex": "Passámos por Coimbra a caminho do Porto.",
+   "exru": "По дороге в Порту мы проехали через Коимбру.",
+   "note": "Путь, причина, цена: por 5 euros"
   }
  ]
 }
