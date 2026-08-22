@@ -119,19 +119,6 @@
   .gateerr{min-height:18px;font-size:13px;color:var(--red);text-align:center}
   .whoami{font-size:13px;color:var(--label2);padding:0 4px}
 
-  /* служебный раздел */
-  details.tech{margin-top:6px}
-  details.tech>summary{
-    list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;
-    padding:12px 14px;background:var(--group);border-radius:10px;
-    font-size:16px;color:var(--label2);
-  }
-  details.tech>summary::-webkit-details-marker{display:none}
-  details.tech>summary::after{content:'›';margin-left:auto;color:var(--label3);font-size:19px;transition:transform .2s}
-  details.tech[open]>summary::after{transform:rotate(90deg)}
-  details.tech>summary:active{opacity:.6}
-  details.tech .sec:first-of-type{margin-top:18px}
-
   /* автоподсказки */
   .sugg{
     position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:40;
@@ -248,12 +235,19 @@
   .progress{height:2px;background:var(--fill);border-radius:2px;overflow:hidden;margin:2px 0 16px}
   .progress i{display:block;height:100%;background:var(--blue);transition:width .3s}
   #studyCard{
+    position:relative;
     background:var(--group);border-radius:12px;cursor:pointer;
     padding:32px 20px;min-height:260px;
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;
   }
   #studyCard .tag{font-size:12px;color:var(--label3);margin-bottom:18px;letter-spacing:.04em}
+  #studyCard .lvl{
+    position:absolute;top:12px;right:14px;
+    padding:2px 7px;border:.5px solid var(--sep);border-radius:6px;
+    font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--label3);
+  }
+  #studyCard .lvl.hard{color:var(--orange);border-color:var(--orange)}
   #studyCard .q{font-size:30px;font-weight:600;letter-spacing:-.02em;overflow-wrap:break-word;max-width:100%}
   #studyCard .q.ru{font-size:24px}
   #studyCard .dots{margin-top:16px;color:var(--label3);letter-spacing:.25em;font-size:14px}
@@ -311,7 +305,6 @@
   }
   @keyframes sp{to{transform:rotate(360deg)}}
   .warn{font-size:13px;line-height:1.45;color:var(--label2);padding:0 4px}
-  .danger-text{color:var(--red)}
 </style>
 </head>
 <body>
@@ -394,29 +387,12 @@
       <div class="hint">Весь словник Camões с переводом, примерами и заметками. Без запросов к OpenAI. Уже добавленные слова пропускаются.</div>
     </div>
 
-    <details class="tech">
-      <summary>Служебное</summary>
+    <div class="sec">
+      <span class="lbl">Аккаунт</span>
+      <div class="whoami" id="whoami"></div>
+      <div class="hint" id="syncState" style="margin-top:8px"></div>
+    </div>
 
-      <div class="sec">
-        <span class="lbl">Аккаунт</span>
-        <div class="whoami" id="whoami"></div>
-        <div class="hint" id="syncState" style="margin-top:8px"></div>
-      </div>
-
-      <div class="sec">
-        <span class="lbl">Резервная копия</span>
-        <div class="row">
-          <button class="btn" id="exportBtn">Экспорт</button>
-          <button class="btn" id="importBtn">Импорт</button>
-        </div>
-        <input type="file" id="importFile" accept="application/json,.json" style="display:none">
-        <div class="hint">Прогресс и так хранится в облаке под вашим аккаунтом. Экспорт — на всякий случай.</div>
-      </div>
-
-      <div class="sec">
-        <button class="btn wide danger-text" id="wipe">Удалить все карточки</button>
-      </div>
-    </details>
   </section>
 </main>
 
@@ -484,7 +460,6 @@ const persistSet=()=>{ settings.at=Date.now(); setDirty=true; saveCache(); sched
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
 const DAY=864e5;
-const today=()=>new Date().toISOString().slice(0,10);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').toLowerCase().replace(/^(o|a|os|as|um|uma)\s+/,'').replace(/[.,;:!?"'()]/g,'').trim();
 const uid=()=>Math.random().toString(36).slice(2,10)+Date.now().toString(36);
@@ -540,6 +515,7 @@ async function generateCards(items){
         ex:String(r.example_pt||'').trim(),
         exru:String(r.example_ru||'').trim(),
         note:String(r.note||'').trim(),
+        level:String(r.level||'').trim().toUpperCase(),
         created:Date.now(), due:Date.now(), interval:0, reps:0, lapses:0
       });
     }
@@ -957,6 +933,7 @@ $('#cardList').onclick=async e=>{
       c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
       c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
       if(r.note!=null) c.note=r.note;
+      if(r.level) c.level=String(r.level).trim().toUpperCase();
       touch(c); persist(); renderCards(); toast('Обновлено');
     }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
   }
@@ -981,6 +958,23 @@ function temaIndex(){
   }));
   return TEMA_IDX;
 }
+// Уровень: для словника Camões он известен точно (списки a1/a2 в темах),
+// для своих слов его присылает модель и он лежит в карточке.
+let LVL_IDX=null;
+function levelIndex(){
+  if(LVL_IDX) return LVL_IDX;
+  LVL_IDX=new Map();
+  TEMAS.forEach(t=>{
+    t.a1.forEach(w=>{ const k=norm(w); if(!LVL_IDX.has(k)) LVL_IDX.set(k,'A1') });
+    t.a2.forEach(w=>{ const k=norm(w); if(!LVL_IDX.has(k)) LVL_IDX.set(k,'A2') });
+  });
+  return LVL_IDX;
+}
+function cardLevel(c){
+  const ix=levelIndex();
+  return ix.get(norm(c.word)) || (c.query?ix.get(norm(c.query)):'') || (c.level||'').toUpperCase() || '';
+}
+
 function cardTema(c){
   const ix=temaIndex();
   let t=ix.get(norm(c.word));
@@ -1057,8 +1051,10 @@ function renderStudy(){
   const a = d==='pt' ? c.ru : c.word;
   const left=queue.length+1;
   $('#prog').style.width=(sessionDone/(sessionDone+left)*100)+'%';
+  const lvl=cardLevel(c);
   w.innerHTML=
     '<div id="studyCard">'+
+      (lvl?'<span class="lvl'+(/^[BC]/.test(lvl)?' hard':'')+'">'+esc(lvl)+'</span>':'')+
       '<div class="tag">'+(d==='pt'?'PT → RU':'RU → PT')+'</div>'+
       '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
       (shown?'<div class="a">'+esc(a)+'</div>':'<div class="dots">•••</div>')+
@@ -1129,13 +1125,8 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 /* ---------------- settings ---------------- */
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
 
-$('#exportBtn').onclick=()=>{
-  const blob=new Blob([JSON.stringify({v:1,exported:new Date().toISOString(),cards:cards},null,2)],{type:'application/json'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  a.download='portugues-cards-'+today()+'.json';
-  a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),3000);
-};
+// импорт остался внутри: на нём держатся загрузка готовой колоды и разовый
+// перенос из старого облачного хранилища
 function importCards(raw){
   const inc=Array.isArray(raw)?raw:(raw&&raw.cards);
   if(!Array.isArray(inc)) throw new Error('Неверный файл');
@@ -1150,18 +1141,6 @@ function importCards(raw){
   persist(); renderCards();
   return added;
 }
-
-$('#importBtn').onclick=()=>$('#importFile').click();
-$('#importFile').onchange=e=>{
-  const f=e.target.files[0]; if(!f)return;
-  const r=new FileReader();
-  r.onload=()=>{
-    try{ toast('Импортировано '+importCards(JSON.parse(r.result))) }
-    catch(err){ toast('Неверный файл') }
-    e.target.value='';
-  };
-  r.readAsText(f);
-};
 
 const DECK_URL='vocabulario/baralho-completo-A1-A2.json';
 $('#loadDeck').onclick=async e=>{
@@ -1178,11 +1157,6 @@ $('#loadDeck').onclick=async e=>{
       : err.message, 4500);
   }
   finally{ b.disabled=false; b.textContent=old }
-};
-$('#wipe').onclick=()=>{
-  if(!cards.length){toast('Уже пусто');return}
-  if(!confirm('Удалить все карточки ('+cards.length+')? Действие необратимо.'))return;
-  cards.slice().forEach(dropCard); persist(); renderCards(); toast('Колода очищена');
 };
 
 /* ---------------- аккаунт ---------------- */
@@ -1312,7 +1286,7 @@ let syncing=false, lastSync=0, syncErr='', flushTimer=null;
 
 function toRow(c){
   return {user_id:auth.user.id, id:c.id, word:c.word||'', query:c.query||'', pos:c.pos||'',
-    ru:c.ru||'', ex:c.ex||'', exru:c.exru||'', note:c.note||'',
+    ru:c.ru||'', ex:c.ex||'', exru:c.exru||'', note:c.note||'', level:c.level||'',
     created:c.created||0, due:c.due||0, ivl:c.interval||0,
     reps:c.reps||0, lapses:c.lapses||0,
     archived:!!c.archived, archived_at:c.archivedAt||0,
@@ -1320,13 +1294,17 @@ function toRow(c){
 }
 function fromRow(r){
   return {id:r.id, word:r.word, query:r.query||'', pos:r.pos||'', ru:r.ru||'',
-    ex:r.ex||'', exru:r.exru||'', note:r.note||'',
+    ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'',
     created:+r.created||0, due:+r.due||0, interval:+r.ivl||0,
     reps:+r.reps||0, lapses:+r.lapses||0,
     archived:!!r.archived, archivedAt:+r.archived_at||0, rev:+r.rev||0};
 }
 
 async function flushCards(){
+  if(dirty.size){                    // карточки уже нет — иначе хвост в очереди крутится вечно
+    const have=new Set(cards.map(c=>c.id));
+    [...dirty].forEach(id=>{ if(!have.has(id)) dirty.delete(id) });
+  }
   if(!dirty.size&&!tombs.length) return;
   const live=cards.filter(c=>dirty.has(c.id));
   const sent=live.map(c=>({id:c.id,rev:c.rev}));
