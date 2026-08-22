@@ -222,8 +222,14 @@
   }
   .goal .week span.done{background:var(--green);color:#fff}
   .goal .week span.today{box-shadow:inset 0 0 0 1.5px var(--blue);color:var(--blue)}
-  .goal .streak{margin-top:12px;font-size:14px;color:var(--label2)}
-  .goal .streak b{color:var(--label);font-weight:600}
+  .goal .streak{margin-top:15px}
+  .goal .streak .line{
+    border:none;background:none;padding:0;cursor:pointer;
+    font-size:15px;color:var(--label);
+  }
+  .goal .streak .line:active{opacity:.55}
+  .goal .streak .line i{font-style:normal;color:var(--label3);margin-left:4px}
+  .goal .streak .rec{margin-top:3px;font-size:14px;color:var(--label3)}
 
   /* исходник разбора: распознанный или вставленный текст */
   .srcbox{position:relative;background:var(--group);border-radius:10px;padding:14px 44px 14px 14px}
@@ -419,14 +425,14 @@
 
     <div class="goal" id="goalCard">
       <h2>Цель на день</h2>
-      <p class="lead">Понемногу каждый день — так слова держатся в памяти лучше, чем после редких долгих заходов.</p>
+      <p class="lead">Мозг любит понемногу и каждый день: сто слов в воскресенье он вернёт обратно в понедельник.</p>
       <div class="gauge">
         <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
           <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
           <path class="fill" id="goalArc" d="M12 100a88 88 0 0 1 176 0"/>
         </svg>
         <div class="mid">
-          <div class="t">Сегодня</div>
+          <div class="t">Выучено сегодня</div>
           <div class="n" id="goalNum">0</div>
           <button class="aim" id="goalEdit" type="button">из <span id="goalTarget">15</span> слов в день ›</button>
         </div>
@@ -1028,6 +1034,7 @@ $('#cardList').onclick=async e=>{
   const id=e.target.closest('.card').dataset.id;
   const c=cards.find(x=>x.id===id); if(!c)return;
   if(btn.dataset.act==='back'){
+    if((c.archivedAt||0)>=startOfDay()) bumpDay(-1);   // выучили и передумали в тот же день
     c.archived=false; c.archivedAt=Date.now(); c.interval=1; c.due=Date.now();
     touch(c); persist(); renderCards(); toast('Вернул в изучение');
     return;
@@ -1207,8 +1214,8 @@ const INTERVALS={0:0,1:1,2:30};     // не помню — заново, тру�
 function nextInterval(c,g){ return INTERVALS[g]||0 }
 function grade(g){
   const c=current.card;
-  if(!c.rev||c.rev<startOfDay()) bumpDay();   // слово открыто сегодня впервые
   if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
+    if(!c.archived) bumpDay();      // засчитываем в дневную цель
     c.archived=true; c.archivedAt=Date.now(); c.reps=(c.reps||0)+1;
     c.due=Date.now()+3650*DAY;
     touch(c); persist(); sessionDone++; nextCard(); return;
@@ -1229,8 +1236,8 @@ function nextCard(){
 }
 
 /* ---------------- stats / nav ---------------- */
-/* Цель на день. Считаем слова, впервые открытые за сегодня: повтор той же карточки
-   внутри дня счёт не двигает. История лежит в настройках и синхронизируется вместе с ними. */
+/* Цель на день. Считаем слова, переведённые в «выучено» — то есть кнопку «Легко».
+   История лежит в настройках (`learned`) и синхронизируется вместе с ними. */
 const DAY_MS=864e5;
 const dayKey=d=>{
   const x=d?new Date(d):new Date();
@@ -1239,25 +1246,26 @@ const dayKey=d=>{
 const startOfDay=()=>{ const d=new Date(); d.setHours(0,0,0,0); return d.getTime() };
 const goalOf=()=>+settings.goal||15;
 
-function bumpDay(){
+function bumpDay(n){
   const k=dayKey();
-  settings.days=settings.days||{};
-  settings.days[k]=(settings.days[k]||0)+1;
-  const keys=Object.keys(settings.days).sort();
-  if(keys.length>120) keys.slice(0,keys.length-120).forEach(x=>delete settings.days[x]);
+  settings.learned=settings.learned||{};
+  settings.learned[k]=Math.max(0,(settings.learned[k]||0)+(n||1));
+  const keys=Object.keys(settings.learned).sort();
+  if(keys.length>120) keys.slice(0,keys.length-120).forEach(x=>delete settings.learned[x]);
   persistSet();
 }
-// При первом запуске счётчика за сегодня ещё нет — восстанавливаем его из карточек
-// с сегодняшней меткой правки. Иначе после дня занятий блок показал бы ноль.
+// Счётчика за сегодня может ещё не быть — восстанавливаем его из карточек,
+// помеченных «выучено» сегодня. Иначе блок показал бы ноль после занятий.
 function seedToday(){
   const k=dayKey();
-  settings.days=settings.days||{};
-  if(settings.days[k]!=null) return;
-  const n=cards.filter(c=>c.reps>0&&(c.rev||0)>=startOfDay()).length;
-  if(n){ settings.days[k]=n; persistSet() }
+  if(settings.days){ delete settings.days; persistSet() }   // счёт по просмотрам, больше не нужен
+  settings.learned=settings.learned||{};
+  if(settings.learned[k]!=null) return;
+  const n=cards.filter(c=>c.archived&&(c.archivedAt||0)>=startOfDay()).length;
+  if(n){ settings.learned[k]=n; persistSet() }
 }
 function streakInfo(){
-  const days=settings.days||{}, goal=goalOf();
+  const days=settings.learned||{}, goal=goalOf();
   const met=k=>(days[k]||0)>=goal;
   const d=new Date();
   if(!met(dayKey(d))) d.setDate(d.getDate()-1);   // сегодня ещё не закрыт — серия считается от вчера
@@ -1273,7 +1281,7 @@ function streakInfo(){
 }
 function renderGoal(){
   const box=$('#goalCard'); if(!box) return;
-  const goal=goalOf(), days=settings.days||{}, today=days[dayKey()]||0;
+  const goal=goalOf(), days=settings.learned||{}, today=days[dayKey()]||0;
   $('#goalNum').textContent=today;
   $('#goalTarget').textContent=goal;
   $('#goalArc').style.strokeDashoffset=(276.5*(1-Math.min(1,today/goal))).toFixed(1);
@@ -1290,12 +1298,20 @@ function renderGoal(){
 
   const st=streakInfo();
   const дн=n=>plural(n,'день','дня','дней');
-  $('#goalStreak').innerHTML = st.cur
-    ? 'Серия: <b>'+дн(st.cur)+'</b>'+(st.best>st.cur?' · рекорд '+дн(st.best):'')
-    : (st.best?'Серия прервалась · рекорд <b>'+дн(st.best)+'</b>'
-              :'Начните серию: '+goal+' слов сегодня');
+  const главная = st.cur ? 'Серия — '+дн(st.cur)+'.'
+                : st.best ? 'Начните серию заново.'
+                : 'Начните серию.';
+  const вторая = st.cur&&st.cur===st.best ? 'Это ваш рекорд.'
+                : st.best ? 'Ваш рекорд — '+дн(st.best)+'.'
+                : 'Выучите '+goal+' слов сегодня.';
+  $('#goalStreak').innerHTML=
+    '<button class="line" type="button">'+esc(главная)+'<i>›</i></button>'+
+    '<div class="rec">'+esc(вторая)+'</div>';
 }
 $('#goalGo').onclick=()=>$$('nav button').find(b=>b.dataset.v==='study').click();
+$('#goalStreak').onclick=e=>{
+  if(e.target.closest('.line')) $$('nav button').find(b=>b.dataset.v==='study').click();
+};
 $('#goalEdit').onclick=()=>{
   $$('nav button').find(b=>b.dataset.v==='set').click();
   $('#goal').focus();
@@ -1609,11 +1625,11 @@ async function pullSettings(){
   const rs=blob&&blob.settings;
   if(rs){
     // счётчики дней сливаем по максимуму: два устройства не должны затирать друг друга
-    const days=Object.assign({},rs.days||{});
-    Object.entries(settings.days||{}).forEach(([k,v])=>{ if((days[k]||0)<v) days[k]=v });
+    const learned=Object.assign({},rs.learned||{});
+    Object.entries(settings.learned||{}).forEach(([k,v])=>{ if((learned[k]||0)<v) learned[k]=v });
     if((rs.at||0)>(settings.at||0)){ Object.assign(settings,rs); setDirty=false }
-    if(JSON.stringify(settings.days||{})!==JSON.stringify(days)){ settings.days=days; setDirty=true }
-    settings.days=days;
+    if(JSON.stringify(settings.learned||{})!==JSON.stringify(learned)) setDirty=true;
+    settings.learned=learned;
     applySettings();
   }
   return blob;
