@@ -50,8 +50,8 @@ const json = (body: unknown, status = 200) =>
     headers: { ...CORS, "Content-Type": "application/json" },
   });
 
-/** Счётчик запросов на IP в сутки. Если база недоступна — не блокируем работу. */
-async function withinLimit(ip: string): Promise<boolean> {
+/** Счётчик запросов на пользователя в сутки. Если база недоступна — не блокируем работу. */
+async function withinLimit(who: string): Promise<boolean> {
   if (!SB_URL || !SB_SERVICE) return true;
   try {
     const r = await fetch(`${SB_URL}/rest/v1/rpc/pt_bump_usage`, {
@@ -61,7 +61,7 @@ async function withinLimit(ip: string): Promise<boolean> {
         apikey: SB_SERVICE,
         Authorization: `Bearer ${SB_SERVICE}`,
       },
-      body: JSON.stringify({ p_ip: ip, p_limit: DAILY_LIMIT }),
+      body: JSON.stringify({ p_ip: who, p_limit: DAILY_LIMIT }),
     });
     if (!r.ok) return true;
     return (await r.json()) !== false;
@@ -103,12 +103,27 @@ async function askOpenAI(messages: unknown[]): Promise<Record<string, unknown>> 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "Только POST" }, 405);
-  if (!OPENAI_KEY) return json({ error: "На сервере не задан OPENAI_API_KEY" }, 503);
 
-  const ip = (req.headers.get("x-forwarded-for") ?? "").split(",")[0].trim() || "unknown";
-  if (!(await withinLimit(ip))) {
+  // verify_jwt пропускает и публикуемый ключ проекта, поэтому проверяем,
+  // что токен принадлежит реальному пользователю, а не анониму.
+  const jwt = (req.headers.get("authorization") ?? "").replace(/^Bearer\s+/i, "");
+  if (!jwt) return json({ error: "Нужен вход в аккаунт" }, 401);
+  let who = "";
+  try {
+    const ur = await fetch(`${SB_URL}/auth/v1/user`, {
+      headers: { apikey: SB_SERVICE, Authorization: `Bearer ${jwt}` },
+    });
+    if (!ur.ok) return json({ error: "Нужен вход в аккаунт" }, 401);
+    who = (await ur.json())?.id ?? "";
+  } catch {
+    return json({ error: "Не удалось проверить вход" }, 401);
+  }
+  if (!who) return json({ error: "Нужен вход в аккаунт" }, 401);
+
+  if (!(await withinLimit(who))) {
     return json({ error: "Дневной лимит запросов исчерпан, попробуйте завтра" }, 429);
   }
+  if (!OPENAI_KEY) return json({ error: "На сервере не задан OPENAI_API_KEY" }, 503);
 
   let body: { mode?: string; items?: unknown[]; image?: string };
   try {

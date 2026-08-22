@@ -106,6 +106,19 @@
   .row{display:flex;gap:8px}
   .row>*{flex:1}
 
+  /* экран входа */
+  .gate{
+    position:fixed;inset:0;z-index:100;background:var(--bg);
+    display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .gate[hidden]{display:none}
+  .gatebox{width:100%;max-width:340px;display:flex;flex-direction:column;gap:10px}
+  .gatebox h1{margin:0;font-size:26px;font-weight:600;letter-spacing:-.02em;text-align:center}
+  .gatebox p{margin:0 0 10px;font-size:14px;color:var(--label2);text-align:center;line-height:1.4}
+  .gatebox input{background:var(--group)}
+  .gateerr{min-height:18px;font-size:13px;color:var(--red);text-align:center}
+  .whoami{font-size:13px;color:var(--label2);padding:0 4px}
+
   /* служебный раздел */
   details.tech{margin-top:6px}
   details.tech>summary{
@@ -385,23 +398,9 @@
       <summary>Служебное</summary>
 
       <div class="sec">
-        <span class="lbl">OpenAI API key</span>
-        <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off" spellcheck="false">
-        <div class="hint"><span id="keyState"></span> Хранится в этом браузере и в облаке синхронизации, уходит напрямую в api.openai.com.</div>
-      </div>
-
-      <div class="sec">
-        <span class="lbl">Модель</span>
-        <input type="text" id="model" list="models" autocapitalize="off" spellcheck="false">
-        <datalist id="models">
-          <option value="gpt-4o-mini"></option><option value="gpt-4.1-mini"></option><option value="gpt-4o"></option><option value="gpt-4.1"></option>
-        </datalist>
-        <button class="btn wide" id="testKey" style="margin-top:10px">Проверить ключ</button>
-      </div>
-
-      <div class="sec">
-        <span class="lbl">Синхронизация</span>
-        <div id="syncBox"></div>
+        <span class="lbl">Аккаунт</span>
+        <div class="whoami" id="whoami"></div>
+        <div class="hint" id="syncState" style="margin-top:8px"></div>
       </div>
 
       <div class="sec">
@@ -411,14 +410,11 @@
           <button class="btn" id="importBtn">Импорт</button>
         </div>
         <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+        <div class="hint">Прогресс и так хранится в облаке под вашим аккаунтом. Экспорт — на всякий случай.</div>
       </div>
 
       <div class="sec">
         <button class="btn wide danger-text" id="wipe">Удалить все карточки</button>
-      </div>
-
-      <div class="sec">
-        <div class="warn">Ключ хранится в открытом виде. Заведите отдельный ключ с лимитом расходов и не открывайте приложение на чужом устройстве.</div>
       </div>
     </details>
   </section>
@@ -436,6 +432,17 @@
   <button data-v="set">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M4 8h8M17 8h3M4 16h3M12 16h8"/><circle cx="14.5" cy="8" r="2.5"/><circle cx="9.5" cy="16" r="2.5"/></svg>Настройки</button>
 </nav>
+
+<div class="gate" id="gate">
+  <form class="gatebox" id="gateForm">
+    <h1>Português</h1>
+    <p>Вход только для своих. Аккаунты заводит владелец.</p>
+    <input type="email" id="gateEmail" placeholder="Почта" autocapitalize="off" autocomplete="username" required>
+    <input type="password" id="gatePass" placeholder="Пароль" autocomplete="current-password" required>
+    <button class="btn primary wide" id="gateBtn" type="submit">Войти</button>
+    <div class="gateerr" id="gateErr"></div>
+  </form>
+</div>
 
 <div class="toast" id="toast"></div>
 
@@ -482,70 +489,22 @@ function toast(msg,ms){
 }
 
 /* ---------------- OpenAI ---------------- */
-const SYS=`Ты — лексикограф европейского португальского (PT-PT, Португалия; НЕ бразильский вариант).
-На вход даётся список слов/выражений, у некоторых есть "context" — предложение, из которого слово взято.
-Для каждого элемента верни объект:
-- "input": исходная строка "word" дословно, как пришла (для сопоставления).
-- "word": начальная форма в PT-PT. Существительные — с определённым артиклем ("o carro", "a chave"). Глаголы — инфинитив. Прилагательные — муж. род ед. ч. Выражения — как есть.
-- "pos": часть речи по-русски кратко: сущ., глаг., прил., нареч., предл., мест., выраж.
-- "ru": перевод на русский, 1–3 значения через запятую, самое частотное первым.
-- "example_pt": ОДНО естественное предложение на европейском португальском, 7–14 слов, уровень A2–B1, слово в живом контексте. Если дан "context" — строй пример вокруг той же ситуации.
-- "example_ru": перевод примера на русский, естественный, не подстрочник.
-- "note": максимум 90 символов — самое важное: род, неправильное мн. ч. или спряжение, требуемый предлог, отличие от бразильского варианта, ложный друг. Если нечего сказать — пустая строка "".
-Отвечай ТОЛЬКО валидным JSON без markdown: {"cards":[...]}`;
-
-const VSYS=`Ты распознаёшь текст на изображении (скриншот, фото страницы, субтитры, вывеска) и переводишь его на русский.
-Верни ТОЛЬКО валидный JSON без markdown:
-{"text":"<весь текст с картинки дословно, с диакритикой и пунктуацией; абзацы разделяй \\n; не добавляй ничего от себя>",
- "ru":"<естественный литературный перевод этого текста на русский>",
- "lang":"<код языка оригинала: pt, en, es, ru…>"}
-Если текста на картинке нет — {"text":"","ru":"","lang":""}.`;
-
-async function callOpenAI(messages){
-  const key=(settings.key||'').trim();
-  if(!key) throw new Error('Не задан API-ключ — откройте Настройки');
-  const model=(settings.model||'gpt-4o-mini').trim();
-  const body={
-    model:model,
-    messages:messages,
-    response_format:{type:'json_object'}
-  };
-  if(!/^(gpt-5|o\d)/.test(model)) body.temperature=0.3;
-
-  const res=await fetch('https://api.openai.com/v1/chat/completions',{
-    method:'POST',
-    headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
-    body:JSON.stringify(body)
-  });
-  if(!res.ok){
-    let d=''; try{const j=await res.json(); d=(j.error&&j.error.message)||''}catch(e){}
-    throw new Error('API '+res.status+': '+(d||res.statusText));
-  }
-  const data=await res.json();
-  const txt=(data.choices&&data.choices[0]&&data.choices[0].message.content)||'{}';
-  try{ return JSON.parse(txt) }
-  catch(e){ throw new Error('Модель вернула не-JSON. Попробуйте другую модель.') }
+async function callProxy(payload){
+  if(!authed()) throw new Error('Войдите в аккаунт');
+  const r=await api('/functions/v1/ai',{method:'POST',body:JSON.stringify(payload)});
+  let d={}; try{ d=await r.json() }catch(e){}
+  if(!r.ok) throw new Error(d.error||('сервер ответил '+r.status));
+  return d;
 }
-
 async function askAI(items){
-  const parsed=await callOpenAI([
-    {role:'system',content:SYS},
-    {role:'user',content:JSON.stringify({items:items})}
-  ]);
+  const parsed=await callProxy({mode:'cards',items:items});
   const arr=parsed.cards||parsed.items||parsed.result||[];
   if(!Array.isArray(arr)||!arr.length) throw new Error('Пустой ответ модели');
   return arr;
 }
-
 async function askVision(dataUrl){
-  const parsed=await callOpenAI([
-    {role:'system',content:VSYS},
-    {role:'user',content:[
-      {type:'text',text:'Распознай текст на этом изображении и переведи его на русский.'},
-      {type:'image_url',image_url:{url:dataUrl,detail:'high'}}
-    ]}
-  ]);
-  if(typeof parsed.text!=='string') throw new Error('Модель не вернула текст. Возможно, она не умеет читать картинки.');
+  const parsed=await callProxy({mode:'vision',image:dataUrl});
+  if(typeof parsed.text!=='string') throw new Error('Модель не вернула текст');
   return parsed;
 }
 
@@ -1088,27 +1047,9 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 });
 
 /* ---------------- settings ---------------- */
-$('#apiKey').value=settings.key; $('#model').value=settings.model; $('#dir').value=settings.dir;
-function renderKeyState(){
-  const el=$('#keyState'); if(!el) return;
-  const has=!!(settings.key||'').trim();
-  el.textContent=has?'Ключ сохранён — вводить заново не нужно.':'Ключ не задан.';
-  el.style.color=has?'var(--green)':'var(--orange)';
-}
-$('#apiKey').onchange=e=>{
-  settings.key=e.target.value.trim(); persistSet(); renderKeyState();
-  toast(settings.key?'Ключ сохранён':'Ключ удалён');
-};
-$('#model').onchange=e=>{settings.model=e.target.value.trim()||'gpt-4o-mini';persistSet()};
+$('#dir').value=settings.dir;
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
 
-$('#testKey').onclick=async e=>{
-  const b=e.target, old=b.textContent; b.disabled=true; b.innerHTML='<span class="spin"></span>';
-  settings.key=$('#apiKey').value.trim(); settings.model=$('#model').value.trim()||'gpt-4o-mini'; persistSet();
-  try{ const r=await askAI([{word:'obrigado'}]); toast('Работает: '+esc(r[0].ru)); }
-  catch(err){ toast(esc(err.message),5000) }
-  finally{ b.disabled=false; b.textContent=old }
-};
 $('#exportBtn').onclick=()=>{
   const blob=new Blob([JSON.stringify({v:1,exported:new Date().toISOString(),cards:cards},null,2)],{type:'application/json'});
   const a=document.createElement('a');
@@ -1163,31 +1104,94 @@ $('#wipe').onclick=()=>{
   cards=[]; persist(); renderCards(); toast('Колода очищена');
 };
 
-/* ---------------- синхронизация с облаком ---------------- */
+/* ---------------- аккаунт ---------------- */
 const SUPA_URL='https://slyksrymqggaujstbocx.supabase.co';
 const SUPA_KEY='sb_publishable_geMZenNf4IG1zYnpptTPBA_rGIBy1g1';
-const LS_SYNC='pt.sync.v1';
-let sync=load(LS_SYNC,{code:'',last:0});
-let syncBusy=false, syncErr='', pushTimer=null;
-const syncReady=()=>!!(SUPA_URL&&SUPA_KEY);
-const syncOn=()=>syncReady()&&!!sync.code;
+const LS_AUTH='pt.auth.v1', LS_OWNER='pt.owner.v1';
+let auth=load(LS_AUTH,null);
+let syncBusy=false, syncErr='', pushTimer=null, lastSync=0;
+const authed=()=>!!(auth&&auth.access_token&&auth.user);
 
-function newCode(){
-  const a=new Uint8Array(24); crypto.getRandomValues(a);
-  let out='';
-  for(const b of a) out+='abcdefghjkmnpqrstuvwxyz23456789'[b%31];
-  return out;
+function setSession(d){
+  auth={access_token:d.access_token,refresh_token:d.refresh_token,
+        expires_at:Date.now()+((d.expires_in||3600)*1000),
+        user:{id:d.user.id,email:d.user.email}};
+  save(LS_AUTH,auth);
 }
-async function rpc(fn,body){
-  const r=await fetch(SUPA_URL+'/rest/v1/rpc/'+fn,{
-    method:'POST',
-    headers:{'Content-Type':'application/json','apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY},
-    body:JSON.stringify(body)
-  });
-  if(!r.ok) throw new Error('сервер ответил '+r.status);
-  const t=await r.text();
-  return t?JSON.parse(t):null;
+async function refreshSession(){
+  if(!auth||!auth.refresh_token) return false;
+  const r=await fetch(SUPA_URL+'/auth/v1/token?grant_type=refresh_token',{
+    method:'POST',headers:{'apikey':SUPA_KEY,'Content-Type':'application/json'},
+    body:JSON.stringify({refresh_token:auth.refresh_token})});
+  if(!r.ok) return false;
+  setSession(await r.json());
+  return true;
 }
+async function api(path,opt){
+  opt=opt||{};
+  if(auth&&Date.now()>(auth.expires_at||0)-60000){
+    if(!await refreshSession()){ signOut(); throw new Error('Сессия истекла — войдите заново') }
+  }
+  const headers=Object.assign({'apikey':SUPA_KEY,'Content-Type':'application/json',
+    'Authorization':'Bearer '+(auth?auth.access_token:SUPA_KEY)},opt.headers||{});
+  return fetch(SUPA_URL+path,Object.assign({},opt,{headers:headers}));
+}
+async function signIn(email,password){
+  const r=await fetch(SUPA_URL+'/auth/v1/token?grant_type=password',{
+    method:'POST',headers:{'apikey':SUPA_KEY,'Content-Type':'application/json'},
+    body:JSON.stringify({email:email,password:password})});
+  const d=await r.json().catch(()=>({}));
+  if(!r.ok){
+    const raw=(d.msg||d.error_description||d.error||'').toLowerCase();
+    const ru=/invalid login/.test(raw)?'Неверная почта или пароль'
+      :/email not confirmed/.test(raw)?'Почта не подтверждена'
+      :/too many/.test(raw)?'Слишком много попыток, подождите минуту'
+      :/signup|not allowed/.test(raw)?'Регистрация закрыта — аккаунт заводит владелец'
+      :(d.msg||d.error_description||'Не удалось войти');
+    throw new Error(ru);
+  }
+  const prev=load(LS_OWNER,'');
+  setSession(d);
+  if(prev&&prev!==d.user.id){          // на этом устройстве был другой пользователь
+    cards=[]; save(LS_CARDS,cards);
+    settings=Object.assign({model:'gpt-4o-mini',dir:'pt',at:Date.now()});
+    save(LS_SET,settings);
+  }
+  save(LS_OWNER,d.user.id);
+}
+function signOut(){
+  auth=null; localStorage.removeItem(LS_AUTH);
+  showGate(); renderWhoami();
+}
+function showGate(){ $('#gate').hidden=false; $('#gateErr').textContent=''; }
+function hideGate(){ $('#gate').hidden=true; }
+
+$('#gateForm').onsubmit=async e=>{
+  e.preventDefault();
+  const b=$('#gateBtn'), old=b.textContent;
+  b.disabled=true; b.innerHTML='<span class="spin"></span>';
+  $('#gateErr').textContent='';
+  try{
+    await signIn($('#gateEmail').value.trim(),$('#gatePass').value);
+    $('#gatePass').value='';
+    hideGate(); renderWhoami();
+    await pullNow();
+    renderStats(); renderCards(); renderTemaList();
+    toast('С возвращением');
+  }catch(err){ $('#gateErr').textContent=err.message }
+  finally{ b.disabled=false; b.textContent=old }
+};
+
+function renderWhoami(){
+  const el=$('#whoami'); if(!el) return;
+  el.innerHTML=authed()
+    ? 'Вход выполнен: '+esc(auth.user.email)+'<button class="btn wide" id="signOut" style="margin-top:10px">Выйти</button>'
+    : 'Вы не вошли';
+  const b=$('#signOut');
+  if(b) b.onclick=()=>{ if(confirm('Выйти из аккаунта? Прогресс останется в облаке.')) signOut() };
+}
+
+/* ---------------- синхронизация прогресса ---------------- */
 const snapshot=()=>({cards:cards,settings:settings,updated:Date.now()});
 
 function mergeRemote(remote){
@@ -1201,109 +1205,68 @@ function mergeRemote(remote){
     if(!lc){ cards.push(rc); byId.set(rc.id,rc); byWord.set(norm(rc.word),rc); changed++; return }
     const newer=(rc.reps||0)>(lc.reps||0) || ((rc.reps||0)===(lc.reps||0)&&(rc.due||0)>(lc.due||0));
     if(newer){ Object.assign(lc,rc,{id:lc.id}); changed++ }
-    // статус «выучено» отдельно: выигрывает более позднее изменение флага
     if((rc.archivedAt||0)>(lc.archivedAt||0)){
       lc.archived=!!rc.archived; lc.archivedAt=rc.archivedAt; changed++;
     }
   });
   const rs=remote.settings||{};
-  const myKey=(settings.key||'').trim(), theirKey=(rs.key||'').trim();
   if((rs.at||0)>(settings.at||0)){
     Object.assign(settings,rs);
-    // пустой ключ с другого устройства не должен стирать сохранённый здесь
-    if(!theirKey&&myKey) settings.key=myKey;
-    $('#apiKey').value=settings.key||''; $('#model').value=settings.model||''; $('#dir').value=settings.dir;
+    $('#dir').value=settings.dir;
     save(LS_SET,settings);
-  }else if(!myKey&&theirKey){
-    settings.key=theirKey; $('#apiKey').value=theirKey; save(LS_SET,settings);
   }
-  if(myKey&&!theirKey) schedulePush();   // в облаке ключа нет — отправим свой
-  renderKeyState();
   if(changed){ save(LS_CARDS,cards); renderStats(); renderCards(); renderTemaList(); }
   return changed;
 }
 
 function schedulePush(){
-  if(!syncOn()) return;
+  if(!authed()) return;
   clearTimeout(pushTimer);
   pushTimer=setTimeout(pushNow,2500);
 }
 async function pushNow(){
-  if(!syncOn()||syncBusy) return;
-  syncBusy=true; renderSync();
-  try{ await rpc('pt_push',{p_code:sync.code,p_data:snapshot()}); sync.last=Date.now(); syncErr=''; save(LS_SYNC,sync) }
-  catch(e){ syncErr=e.message }
-  finally{ syncBusy=false; renderSync() }
+  if(!authed()||syncBusy) return;
+  syncBusy=true;
+  try{
+    const r=await api('/rest/v1/pt_data',{method:'POST',
+      headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+      body:JSON.stringify({user_id:auth.user.id,data:snapshot(),updated_at:new Date().toISOString()})});
+    if(!r.ok) throw new Error('сервер ответил '+r.status);
+    lastSync=Date.now(); syncErr='';
+  }catch(e){ syncErr=e.message }
+  finally{ syncBusy=false; renderSyncState() }
 }
 async function pullNow(){
-  if(!syncOn()||syncBusy) return 0;
-  syncBusy=true; renderSync();
-  let n=0;
-  try{ n=mergeRemote(await rpc('pt_pull',{p_code:sync.code})); sync.last=Date.now(); syncErr=''; save(LS_SYNC,sync) }
-  catch(e){ syncErr=e.message }
-  finally{ syncBusy=false; renderSync() }
+  if(!authed()||syncBusy) return 0;
+  syncBusy=true; let n=0;
+  try{
+    const r=await api('/rest/v1/pt_data?select=data&user_id=eq.'+auth.user.id);
+    if(!r.ok) throw new Error('сервер ответил '+r.status);
+    const rows=await r.json();
+    if(rows.length) n=mergeRemote(rows[0].data);
+    lastSync=Date.now(); syncErr='';
+  }catch(e){ syncErr=e.message }
+  finally{ syncBusy=false; renderSyncState() }
   return n;
 }
-
-function renderSync(){
-  const box=$('#syncBox'); if(!box) return;
-  if(!syncReady()){
-    box.innerHTML='<div class="hint" style="margin:0 4px">Облако пока не подключено.</div>';
-    return;
-  }
-  if(!syncOn()){
-    box.innerHTML='<button class="btn wide" id="syncStart">Включить синхронизацию</button>'+
-      '<button class="btn wide" id="syncJoin" style="margin-top:8px">Ввести код с другого устройства</button>'+
-      '<div class="hint">Прогресс, настройки и ключ будут храниться в облаке и подтягиваться на всех устройствах.</div>';
-    $('#syncStart').onclick=async ()=>{
-      sync.code=newCode(); save(LS_SYNC,sync);
-      await pushNow(); renderSync();
-      toast(syncErr?('Не вышло: '+syncErr):'Синхронизация включена');
-    };
-    $('#syncJoin').onclick=async ()=>{
-      const c=(prompt('Код синхронизации с другого устройства:')||'').trim().toLowerCase();
-      if(!c) return;
-      sync.code=c; save(LS_SYNC,sync);
-      const n=await pullNow(); renderSync();
-      toast(syncErr?('Не вышло: '+syncErr):('Подключено, получено карточек: '+n));
-    };
-    return;
-  }
-  const when=sync.last?new Date(sync.last).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'—';
-  const state=syncBusy?'обмен с сервером…':(syncErr?('ошибка: '+esc(syncErr)):('последний обмен: '+when));
-  box.innerHTML=
-    '<div class="card" style="margin:0">'+
-      '<div class="ru" style="margin:0">Код синхронизации</div>'+
-      '<div class="pt" id="syncCode" style="font-size:18px;letter-spacing:.06em;margin-top:4px;cursor:pointer;overflow-wrap:break-word">'+esc(sync.code)+'</div>'+
-      '<div class="hint" style="margin:6px 0 0">'+state+'</div>'+
-    '</div>'+
-    '<div class="row" style="margin-top:8px">'+
-      '<button class="btn" id="syncNow">Синхронизировать</button>'+
-      '<button class="btn" id="syncOff" style="max-width:124px">Отключить</button>'+
-    '</div>'+
-    '<div class="hint">Введите этот код на другом устройстве, чтобы открыть ту же колоду. Код работает как пароль: кто его знает, видит ваши карточки и ключ.</div>';
-  $('#syncCode').onclick=()=>{
-    if(navigator.clipboard) navigator.clipboard.writeText(sync.code).then(()=>toast('Код скопирован'),()=>{});
-  };
-  $('#syncNow').onclick=async ()=>{
-    const n=await pullNow(); await pushNow();
-    toast(syncErr?('Ошибка: '+syncErr):(n?('Получено новых: '+n):'Всё синхронизировано'));
-  };
-  $('#syncOff').onclick=()=>{
-    if(!confirm('Отключить синхронизацию на этом устройстве? Данные в облаке останутся.'))return;
-    sync={code:'',last:0}; save(LS_SYNC,sync); renderSync(); toast('Синхронизация отключена');
-  };
+function renderSyncState(){
+  const el=$('#syncState'); if(!el) return;
+  el.textContent=!authed()?'Вход не выполнен'
+    :syncErr?('Ошибка синхронизации: '+syncErr)
+    :lastSync?('Синхронизировано в '+new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}))
+    :'Синхронизация включена';
 }
 
 document.addEventListener('visibilitychange',()=>{
-  if(document.visibilityState==='visible'){ if(Date.now()-(sync.last||0)>60000) pullNow() }
+  if(!authed()) return;
+  if(document.visibilityState==='visible'){ if(Date.now()-lastSync>60000) pullNow() }
   else pushNow();
 });
-window.addEventListener('pagehide',()=>{ if(syncOn()) pushNow() });
+window.addEventListener('pagehide',()=>{ if(authed()) pushNow() });
 
 /* ---------------- init ---------------- */
-renderStats(); renderCards(); renderTemaList(); renderSync(); renderKeyState();
-if(syncOn()) pullNow();
+renderStats(); renderCards(); renderTemaList(); renderWhoami(); renderSyncState();
+if(authed()){ hideGate(); pullNow(); } else showGate();
 </script>
 </body>
 </html>
