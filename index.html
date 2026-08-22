@@ -68,6 +68,14 @@
   }
   header h1{margin:0;font-size:17px;font-weight:600;letter-spacing:-.02em}
   header .sub{margin-top:2px;font-size:12px;color:var(--label2)}
+  /* освоение колоды: выучено, в работе, остальное — новые */
+  .mastery{
+    display:flex;height:4px;max-width:420px;margin:9px auto 0;
+    border-radius:2px;overflow:hidden;background:var(--fill);
+  }
+  .mastery i{display:block;height:100%;min-width:0;transition:width .5s ease}
+  .mastery .done{background:var(--green)}
+  .mastery .work{background:var(--blue)}
 
   main{
     flex:1;min-height:0;overflow-y:auto;overscroll-behavior-y:contain;
@@ -330,6 +338,7 @@
 <header>
   <h1>Português</h1>
   <div class="sub" id="stats"></div>
+  <div class="mastery" id="mastery"><i class="done" id="mDone"></i><i class="work" id="mWork"></i></div>
 </header>
 
 <main>
@@ -1168,6 +1177,14 @@ function renderStats(){
     (fresh?' · '+fresh+' новых':'')+
     (due?' · '+due+' к повтору':'')+
     (known?' · '+known+' выучено':'');
+  const bar=$('#mastery');
+  if(cards.length){
+    const work=live.length-fresh;
+    bar.style.display='flex';
+    bar.title='Выучено '+known+' · в работе '+work+' · новых '+fresh;
+    $('#mDone').style.width=(known/cards.length*100).toFixed(2)+'%';
+    $('#mWork').style.width=(work/cards.length*100).toFixed(2)+'%';
+  } else bar.style.display='none';
   const dot=$('#navDue');
   dot.style.display=due?'block':'none'; dot.textContent=due>99?'99+':due;
 }
