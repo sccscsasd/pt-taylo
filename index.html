@@ -1126,6 +1126,7 @@ const shuffle=a=>{ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random
    карточка попадает в тему по своему слову. Свои слова — в «Разное». */
 let studyTema=null;                      // null — вся колода
 let studyLevel=null;                     // выбранный уровень; уровень и тема не совмещаются
+let studyVerbs=false;                    // фильтр «Глаголы» — по части речи из карточки
 const LEVELS=['A1','A2','B1','B2','C1','C2'];
 let TEMA_IDX=null;
 function temaIndex(){
@@ -1160,18 +1161,21 @@ function cardTema(c){
   return t==null?-1:t;
 }
 const temaKey=t=>t==null?'':String(t);
-const inTema=c=>studyLevel?cardLevel(c)===studyLevel
-                            :(studyTema==null||cardTema(c)===studyTema);
+const isVerb=c=>(c.pos||'').startsWith('глаг');
+const inTema=c=>studyVerbs?isVerb(c)
+               :studyLevel?cardLevel(c)===studyLevel
+               :(studyTema==null||cardTema(c)===studyTema);
 const ready=c=>c.reps===0||c.due<=Date.now();
 
 function renderTemaBar(){
   const bar=$('#temaBar'); if(!bar) return;
   const keep=bar.scrollLeft;
   const nt=new Map(), nl=new Map();
-  let all=0, other=0;
+  let all=0, other=0, verbs=0;
   active().forEach(c=>{
     if(!ready(c)) return;
     all++;
+    if(isVerb(c)) verbs++;
     const t=cardTema(c);
     if(t<0) other++; else nt.set(t,(nt.get(t)||0)+1);
     const l=cardLevel(c);
@@ -1181,23 +1185,27 @@ function renderTemaBar(){
     (on?'on':(cnt?'':'empty'))+'">'+esc(name)+(cnt?'<i>'+cnt+'</i>':'')+'</button>';
   // уровни показываем только те, по которым есть слова
   const lv=LEVELS.filter(l=>nl.has(l));
+  const свой=studyVerbs||studyLevel;
   bar.innerHTML=
-    btn('data-t','','Все',all,!studyLevel&&studyTema==null)+
+    btn('data-t','','Все',all,!свой&&studyTema==null)+
     lv.map(l=>btn('data-l',l,l,nl.get(l),studyLevel===l)).join('')+
-    (lv.length?'<span class="sep"></span>':'')+
-    TEMAS.map((t,i)=>btn('data-t',temaKey(i),t.ru,nt.get(i)||0,!studyLevel&&studyTema===i)).join('')+
-    (other?btn('data-t',temaKey(-1),'Разное',other,!studyLevel&&studyTema===-1):'');
+    (verbs?btn('data-p','1','Глаголы',verbs,studyVerbs):'')+
+    (lv.length||verbs?'<span class="sep"></span>':'')+
+    TEMAS.map((t,i)=>btn('data-t',temaKey(i),t.ru,nt.get(i)||0,!свой&&studyTema===i)).join('')+
+    (other?btn('data-t',temaKey(-1),'Разное',other,!свой&&studyTema===-1):'');
   bar.scrollLeft=keep;
 }
 function temaName(){
+  if(studyVerbs) return 'Глаголы';
   if(studyLevel) return studyLevel;
   if(studyTema==null) return '';
   return studyTema<0?'Разное':(TEMAS[studyTema]||{}).ru||'';
 }
 $('#temaBar').onclick=e=>{
   const b=e.target.closest('button'); if(!b) return;
-  if('l' in b.dataset){ studyLevel=b.dataset.l; studyTema=null }
-  else if('t' in b.dataset){ studyLevel=null; studyTema=b.dataset.t===''?null:+b.dataset.t }
+  if('l' in b.dataset){ studyLevel=b.dataset.l; studyTema=null; studyVerbs=false }
+  else if('p' in b.dataset){ studyVerbs=!studyVerbs; studyLevel=null; studyTema=null }
+  else if('t' in b.dataset){ studyLevel=null; studyVerbs=false; studyTema=b.dataset.t===''?null:+b.dataset.t }
   else return;
   buildQueue(); current=null; renderStudy();
   const on=$('#temaBar button.on');
@@ -1222,12 +1230,14 @@ function renderStudy(){
       $('#prog').style.width='100%';
       const pool=active().filter(inTema);
       const next=pool.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
-      const где=studyLevel?(' на уровне '+esc(studyLevel))
+      const где=studyVerbs?' среди глаголов'
+              :studyLevel?(' на уровне '+esc(studyLevel))
               :studyTema==null?'':(' в теме «'+esc(temaName())+'»');
       w.innerHTML='<div class="empty">'+IC_DONE+
         (!cards.length?'<div>Добавьте слова, чтобы начать</div>'
           :pool.length?'<div>На сегодня всё повторено'+где+'</div>'
-          :(studyLevel?'<div>Слов этого уровня пока нет</div>'
+          :(studyVerbs?'<div>Глаголов в колоде пока нет</div>'
+             :studyLevel?'<div>Слов этого уровня пока нет</div>'
                      :'<div>В этой теме пока нет карточек</div>'))+
         (next?'<div class="sub">Следующее повторение: '+new Date(next.due).toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+'</div>':'')+
         (pool.length?'<div style="margin-top:20px"><button class="btn" id="againAll">Повторить всё заново</button></div>':'')+'</div>';
