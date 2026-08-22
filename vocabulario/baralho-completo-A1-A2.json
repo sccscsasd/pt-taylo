@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1795 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1834 карточек",
  "cards": [
   {
    "word": "ser",
@@ -14361,6 +14361,318 @@
    "ex": "A piscina é demasiado profunda para as crianças.",
    "exru": "Бассейн слишком глубокий для детей.",
    "note": "Мелкий — pouco profundo"
+  },
+  {
+   "word": "a orelha",
+   "pos": "сущ.",
+   "ru": "ухо",
+   "ex": "Tenho a orelha esquerda a doer desde ontem.",
+   "exru": "У меня со вчера болит левое ухо.",
+   "note": "Слух — o ouvido; orelha — сама ушная раковина"
+  },
+  {
+   "word": "o ombro",
+   "pos": "сущ.",
+   "ru": "плечо",
+   "ex": "Dói-me o ombro depois de carregar a mala.",
+   "exru": "Плечо болит после того, как я нёс чемодан.",
+   "note": ""
+  },
+  {
+   "word": "o joelho",
+   "pos": "сущ.",
+   "ru": "колено",
+   "ex": "Caí e magoei o joelho a jogar futebol.",
+   "exru": "Я упал и ушиб колено, играя в футбол.",
+   "note": ""
+  },
+  {
+   "word": "a filha",
+   "pos": "сущ.",
+   "ru": "дочь",
+   "ex": "A minha filha começa a escola em setembro.",
+   "exru": "Моя дочь идёт в школу в сентябре.",
+   "note": "Сын — o filho; os filhos — дети"
+  },
+  {
+   "word": "os pais",
+   "pos": "сущ.",
+   "ru": "родители",
+   "ex": "Os meus pais vivem no norte do país.",
+   "exru": "Мои родители живут на севере страны.",
+   "note": "Мн. ч. от o pai; «отцы и матери»"
+  },
+  {
+   "word": "a tia",
+   "pos": "сущ.",
+   "ru": "тётя",
+   "ex": "A minha tia mora ao lado da estação.",
+   "exru": "Моя тётя живёт рядом со станцией.",
+   "note": "Дядя — o tio"
+  },
+  {
+   "word": "a prima",
+   "pos": "сущ.",
+   "ru": "двоюродная сестра",
+   "ex": "A minha prima estuda medicina no Porto.",
+   "exru": "Моя двоюродная сестра учится на врача в Порту.",
+   "note": "Двоюродный брат — o primo"
+  },
+  {
+   "word": "o sobrinho",
+   "pos": "сущ.",
+   "ru": "племянник",
+   "ex": "O meu sobrinho faz cinco anos amanhã.",
+   "exru": "Моему племяннику завтра исполняется пять.",
+   "note": "Племянница — a sobrinha"
+  },
+  {
+   "word": "a neta",
+   "pos": "сущ.",
+   "ru": "внучка",
+   "ex": "A avó vai buscar a neta à escola.",
+   "exru": "Бабушка забирает внучку из школы.",
+   "note": "Внук — o neto"
+  },
+  {
+   "word": "a namorada",
+   "pos": "сущ.",
+   "ru": "девушка (подруга)",
+   "ex": "Vou ao cinema com a minha namorada.",
+   "exru": "Я иду в кино со своей девушкой.",
+   "note": "Парень — o namorado; жена — a mulher"
+  },
+  {
+   "word": "a trovoada",
+   "pos": "сущ.",
+   "ru": "гроза",
+   "ex": "A trovoada começou a meio da tarde.",
+   "exru": "Гроза началась в середине дня.",
+   "note": "Гром — o trovão; молния — o relâmpago"
+  },
+  {
+   "word": "o morango",
+   "pos": "сущ.",
+   "ru": "клубника",
+   "ex": "Comprei morangos frescos no mercado.",
+   "exru": "Я купил свежую клубнику на рынке.",
+   "note": ""
+  },
+  {
+   "word": "o candeeiro",
+   "pos": "сущ.",
+   "ru": "лампа, светильник",
+   "ex": "Acende o candeeiro, está escuro aqui.",
+   "exru": "Включи лампу, здесь темно.",
+   "note": "Лампочка — a lâmpada"
+  },
+  {
+   "word": "o tapete",
+   "pos": "сущ.",
+   "ru": "ковёр",
+   "ex": "O gato dorme sempre em cima do tapete.",
+   "exru": "Кот всегда спит на ковре.",
+   "note": ""
+  },
+  {
+   "word": "o espelho",
+   "pos": "сущ.",
+   "ru": "зеркало",
+   "ex": "Há um espelho grande na casa de banho.",
+   "exru": "В ванной большое зеркало.",
+   "note": ""
+  },
+  {
+   "word": "a máquina de lavar",
+   "pos": "сущ.",
+   "ru": "стиральная машина",
+   "ex": "A máquina de lavar avariou-se outra vez.",
+   "exru": "Стиральная машина опять сломалась.",
+   "note": "Посудомоечная — a máquina de lavar louça"
+  },
+  {
+   "word": "o vestido",
+   "pos": "сущ.",
+   "ru": "платье",
+   "ex": "Comprei um vestido azul para o casamento.",
+   "exru": "Я купила синее платье на свадьбу.",
+   "note": ""
+  },
+  {
+   "word": "o casaco",
+   "pos": "сущ.",
+   "ru": "куртка, пальто",
+   "ex": "Leva um casaco, está frio lá fora.",
+   "exru": "Возьми куртку, на улице холодно.",
+   "note": "И куртка, и пальто, и пиджак"
+  },
+  {
+   "word": "o cinto",
+   "pos": "сущ.",
+   "ru": "ремень, пояс",
+   "ex": "Aperte o cinto de segurança, por favor.",
+   "exru": "Пристегните ремень безопасности, пожалуйста.",
+   "note": "cinto de segurança — ремень в машине"
+  },
+  {
+   "word": "a mochila",
+   "pos": "сущ.",
+   "ru": "рюкзак",
+   "ex": "O miúdo leva os livros na mochila.",
+   "exru": "Малыш носит книги в рюкзаке.",
+   "note": ""
+  },
+  {
+   "word": "a ponte",
+   "pos": "сущ.",
+   "ru": "мост",
+   "ex": "A ponte sobre o Tejo é enorme.",
+   "exru": "Мост через Тежу огромный.",
+   "note": ""
+  },
+  {
+   "word": "o prédio",
+   "pos": "сущ.",
+   "ru": "жилой дом, многоэтажка",
+   "ex": "Moramos num prédio de cinco andares.",
+   "exru": "Мы живём в пятиэтажном доме.",
+   "note": "Частный дом — a moradia"
+  },
+  {
+   "word": "o semáforo",
+   "pos": "сущ.",
+   "ru": "светофор",
+   "ex": "Vira à direita depois do semáforo.",
+   "exru": "Поверни направо после светофора.",
+   "note": ""
+  },
+  {
+   "word": "a estação",
+   "pos": "сущ.",
+   "ru": "время года; станция",
+   "ex": "O outono é a minha estação preferida.",
+   "exru": "Осень — моё любимое время года.",
+   "note": "И «станция», и «время года»"
+  },
+  {
+   "word": "o início",
+   "pos": "сущ.",
+   "ru": "начало",
+   "ex": "No início da aula fazemos sempre revisão.",
+   "exru": "В начале урока мы всегда повторяем.",
+   "note": "no início — сначала; конец — o fim"
+  },
+  {
+   "word": "o calendário",
+   "pos": "сущ.",
+   "ru": "календарь",
+   "ex": "Marquei a consulta no calendário da cozinha.",
+   "exru": "Я отметил приём в кухонном календаре.",
+   "note": ""
+  },
+  {
+   "word": "o emprego",
+   "pos": "сущ.",
+   "ru": "работа (место), должность",
+   "ex": "Encontrou emprego numa empresa de informática.",
+   "exru": "Он нашёл работу в компьютерной фирме.",
+   "note": "Работа как занятие — o trabalho"
+  },
+  {
+   "word": "o salário",
+   "pos": "сущ.",
+   "ru": "зарплата",
+   "ex": "O salário é pago no fim do mês.",
+   "exru": "Зарплату платят в конце месяца.",
+   "note": "Минимальная зарплата — o salário mínimo"
+  },
+  {
+   "word": "quem",
+   "pos": "мест.",
+   "ru": "кто",
+   "ex": "Quem é aquele senhor de casaco cinzento?",
+   "exru": "Кто тот господин в сером пальто?",
+   "note": "С предлогом: de quem, com quem"
+  },
+  {
+   "word": "qual",
+   "pos": "мест.",
+   "ru": "какой, который",
+   "ex": "Qual é o teu número de telefone?",
+   "exru": "Какой у тебя номер телефона?",
+   "note": "Мн. ч. quais; «который из» — qual deles"
+  },
+  {
+   "word": "quantos",
+   "pos": "числ.",
+   "ru": "сколько",
+   "ex": "Quantos anos tem a tua filha?",
+   "exru": "Сколько лет твоей дочери?",
+   "note": "Женский род — quantas; для неисчисляемого — quanto"
+  },
+  {
+   "word": "feliz",
+   "pos": "прил.",
+   "ru": "счастливый",
+   "ex": "Fiquei muito feliz com a tua carta.",
+   "exru": "Я был очень счастлив получить твоё письмо.",
+   "note": "Мн. ч. felizes; счастье — a felicidade"
+  },
+  {
+   "word": "terceiro",
+   "pos": "числ.",
+   "ru": "третий",
+   "ex": "Moro no terceiro andar, sem elevador.",
+   "exru": "Я живу на третьем этаже, без лифта.",
+   "note": "Женский род — terceira"
+  },
+  {
+   "word": "quinto",
+   "pos": "числ.",
+   "ru": "пятый",
+   "ex": "O escritório fica no quinto andar.",
+   "exru": "Офис на пятом этаже.",
+   "note": ""
+  },
+  {
+   "word": "sexto",
+   "pos": "числ.",
+   "ru": "шестой",
+   "ex": "É o sexto dia seguido de chuva.",
+   "exru": "Шестой день подряд идёт дождь.",
+   "note": ""
+  },
+  {
+   "word": "sétimo",
+   "pos": "числ.",
+   "ru": "седьмой",
+   "ex": "Ficámos no sétimo lugar da competição.",
+   "exru": "Мы заняли седьмое место в соревновании.",
+   "note": ""
+  },
+  {
+   "word": "oitavo",
+   "pos": "числ.",
+   "ru": "восьмой",
+   "ex": "O meu filho anda no oitavo ano.",
+   "exru": "Мой сын учится в восьмом классе.",
+   "note": ""
+  },
+  {
+   "word": "nono",
+   "pos": "числ.",
+   "ru": "девятый",
+   "ex": "Estamos no nono mês do ano.",
+   "exru": "Идёт девятый месяц года.",
+   "note": ""
+  },
+  {
+   "word": "décimo",
+   "pos": "числ.",
+   "ru": "десятый",
+   "ex": "Chegou em décimo lugar na corrida.",
+   "exru": "Он пришёл десятым в забеге.",
+   "note": ""
   }
  ],
  "retired": [
