@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1773 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1795 карточек",
  "cards": [
   {
    "word": "ser",
@@ -1531,60 +1531,12 @@
    "note": "Graças a Deus — очень частое выражение"
   },
   {
-   "word": "cristão",
-   "pos": "прил.",
-   "ru": "христианин, христианский",
-   "ex": "A maioria dos portugueses é cristã.",
-   "exru": "Большинство португальцев — христиане.",
-   "note": "Ж. р.: cristã; мн. ч.: cristãos"
-  },
-  {
-   "word": "muçulmano",
-   "pos": "прил.",
-   "ru": "мусульманин, мусульманский",
-   "ex": "Tem um colega muçulmano no trabalho.",
-   "exru": "У него на работе есть коллега-мусульманин.",
-   "note": "muçulmano / muçulmana"
-  },
-  {
    "word": "judeu",
    "pos": "прил.",
    "ru": "еврей, иудейский",
    "ex": "Visitámos o antigo bairro judeu.",
    "exru": "Мы посетили старый еврейский квартал.",
    "note": "Ж. р.: judia"
-  },
-  {
-   "word": "budista",
-   "pos": "прил.",
-   "ru": "буддист, буддийский",
-   "ex": "Ela é budista e medita todas as manhãs.",
-   "exru": "Она буддистка и медитирует каждое утро.",
-   "note": "Одна форма для обоих родов"
-  },
-  {
-   "word": "hindu",
-   "pos": "прил.",
-   "ru": "индуист, индуистский",
-   "ex": "Há um templo hindu perto de Lisboa.",
-   "exru": "Недалеко от Лиссабона есть индуистский храм.",
-   "note": "Одна форма для обоих родов"
-  },
-  {
-   "word": "ateu",
-   "pos": "прил.",
-   "ru": "атеист",
-   "ex": "Ele diz que é ateu.",
-   "exru": "Он говорит, что он атеист.",
-   "note": "Ж. р.: ateia"
-  },
-  {
-   "word": "agnóstico",
-   "pos": "прил.",
-   "ru": "агностик",
-   "ex": "Considera-se agnóstico, não ateu.",
-   "exru": "Он считает себя агностиком, а не атеистом.",
-   "note": "agnóstico / agnóstica"
   },
   {
    "word": "a cozinha",
@@ -4795,14 +4747,6 @@
    "note": "Мн. ч.: os postais"
   },
   {
-   "word": "a fotocópia",
-   "pos": "сущ.",
-   "ru": "ксерокопия",
-   "ex": "Faça uma fotocópia do passaporte.",
-   "exru": "Сделайте копию паспорта.",
-   "note": "ж. р."
-  },
-  {
    "word": "fazer uma chamada",
    "pos": "выраж.",
    "ru": "позвонить, сделать звонок",
@@ -4969,14 +4913,6 @@
    "ex": "Inscrevi-me em aulas de natação.",
    "exru": "Я записался на плавание.",
    "note": "ж. р."
-  },
-  {
-   "word": "esquiar",
-   "pos": "глаг.",
-   "ru": "кататься на лыжах",
-   "ex": "Aprendi a esquiar aos trinta anos.",
-   "exru": "Я научился кататься на лыжах в тридцать.",
-   "note": ""
   },
   {
    "word": "dançar",
@@ -5771,22 +5707,6 @@
    "note": "На ярлыках одежды"
   },
   {
-   "word": "a magreza",
-   "pos": "сущ.",
-   "ru": "худоба",
-   "ex": "A magreza excessiva preocupa o médico.",
-   "exru": "Чрезмерная худоба беспокоит врача.",
-   "note": "ж. р."
-  },
-  {
-   "word": "a obesidade",
-   "pos": "сущ.",
-   "ru": "ожирение",
-   "ex": "A obesidade infantil está a aumentar.",
-   "exru": "Детское ожирение растёт.",
-   "note": "ж. р."
-  },
-  {
    "word": "tudo",
    "pos": "мест.",
    "ru": "всё",
@@ -6123,14 +6043,6 @@
    "note": "em vez de + сущ./инф."
   },
   {
-   "word": "adicionalmente",
-   "pos": "нареч.",
-   "ru": "дополнительно, кроме того",
-   "ex": "Adicionalmente, é preciso trazer uma foto.",
-   "exru": "Кроме того, нужно принести фотографию.",
-   "note": "Формальный регистр"
-  },
-  {
    "word": "nem",
    "pos": "союз",
    "ru": "ни, даже не",
@@ -6193,14 +6105,6 @@
    "ex": "Confirme o endereço de entrega.",
    "exru": "Подтвердите адрес доставки.",
    "note": "Домашний адрес чаще — a morada"
-  },
-  {
-   "word": "a praceta",
-   "pos": "сущ.",
-   "ru": "небольшая площадь (в адресе)",
-   "ex": "Moro na Praceta das Rosas, n.º 4.",
-   "exru": "Я живу на Прасете-даш-Розаш, дом 4.",
-   "note": "Часто в адресах жилых кварталов"
   },
   {
    "word": "a freguesia",
@@ -6811,14 +6715,6 @@
    "note": "После licenciatura"
   },
   {
-   "word": "o doutoramento",
-   "pos": "сущ.",
-   "ru": "докторантура, защита диссертации",
-   "ex": "Acabou o doutoramento em Coimbra.",
-   "exru": "Он защитил диссертацию в Коимбре.",
-   "note": "м. р."
-  },
-  {
    "word": "o título académico",
    "pos": "сущ.",
    "ru": "учёная степень",
@@ -6875,14 +6771,6 @@
    "note": "ж. р."
   },
   {
-   "word": "a fotocopiadora",
-   "pos": "сущ.",
-   "ru": "копировальный аппарат",
-   "ex": "A fotocopiadora está avariada.",
-   "exru": "Копир сломан.",
-   "note": "ж. р."
-  },
-  {
    "word": "tirar fotocópias",
    "pos": "выраж.",
    "ru": "делать копии",
@@ -6931,140 +6819,12 @@
    "note": "ж. р."
   },
   {
-   "word": "a mesquita",
-   "pos": "сущ.",
-   "ru": "мечеть",
-   "ex": "Há uma mesquita perto do Martim Moniz.",
-   "exru": "Рядом с Мартин-Монижем есть мечеть.",
-   "note": "ж. р."
-  },
-  {
-   "word": "a sinagoga",
-   "pos": "сущ.",
-   "ru": "синагога",
-   "ex": "Visitámos a sinagoga de Tomar.",
-   "exru": "Мы посетили синагогу в Томаре.",
-   "note": "ж. р."
-  },
-  {
-   "word": "o cristianismo",
-   "pos": "сущ.",
-   "ru": "христианство",
-   "ex": "O cristianismo chegou muito cedo à Península.",
-   "exru": "Христианство пришло на полуостров очень рано.",
-   "note": "м. р."
-  },
-  {
-   "word": "o islamismo",
-   "pos": "сущ.",
-   "ru": "ислам",
-   "ex": "Estuda a história do islamismo.",
-   "exru": "Он изучает историю ислама.",
-   "note": "м. р."
-  },
-  {
-   "word": "o judaísmo",
-   "pos": "сущ.",
-   "ru": "иудаизм",
-   "ex": "O judaísmo tem uma longa história em Portugal.",
-   "exru": "У иудаизма в Португалии долгая история.",
-   "note": "м. р."
-  },
-  {
-   "word": "o budismo",
-   "pos": "сущ.",
-   "ru": "буддизм",
-   "ex": "Interessa-se por budismo.",
-   "exru": "Он интересуется буддизмом.",
-   "note": "м. р."
-  },
-  {
-   "word": "o hinduísmo",
-   "pos": "сущ.",
-   "ru": "индуизм",
-   "ex": "O hinduísmo tem muitos rituais.",
-   "exru": "В индуизме много ритуалов.",
-   "note": "м. р."
-  },
-  {
-   "word": "o ateísmo",
-   "pos": "сущ.",
-   "ru": "атеизм",
-   "ex": "O ateísmo cresceu nas últimas décadas.",
-   "exru": "Атеизм вырос за последние десятилетия.",
-   "note": "м. р."
-  },
-  {
-   "word": "o agnosticismo",
-   "pos": "сущ.",
-   "ru": "агностицизм",
-   "ex": "Defende o agnosticismo como posição.",
-   "exru": "Он отстаивает агностицизм как позицию.",
-   "note": "м. р."
-  },
-  {
    "word": "o natal",
    "pos": "сущ.",
    "ru": "Рождество",
    "ex": "Passamos o Natal em família.",
    "exru": "Рождество мы проводим в кругу семьи.",
    "note": "Пишется с большой: o Natal"
-  },
-  {
-   "word": "o ramadão",
-   "pos": "сущ.",
-   "ru": "Рамадан",
-   "ex": "Durante o Ramadão jejua de dia.",
-   "exru": "В Рамадан он постится днём.",
-   "note": "м. р."
-  },
-  {
-   "word": "o sabat",
-   "pos": "сущ.",
-   "ru": "шаббат",
-   "ex": "O sabat começa na sexta ao pôr do sol.",
-   "exru": "Шаббат начинается в пятницу на закате.",
-   "note": "м. р."
-  },
-  {
-   "word": "heterossexual",
-   "pos": "прил.",
-   "ru": "гетеросексуальный",
-   "ex": "O inquérito pergunta se é heterossexual.",
-   "exru": "В анкете спрашивают, гетеросексуален ли человек.",
-   "note": "Пишется с двумя s"
-  },
-  {
-   "word": "homossexual",
-   "pos": "прил.",
-   "ru": "гомосексуальный",
-   "ex": "Portugal permite o casamento homossexual desde 2010.",
-   "exru": "Португалия разрешает однополые браки с 2010 года.",
-   "note": "Пишется с двумя s"
-  },
-  {
-   "word": "bissexual",
-   "pos": "прил.",
-   "ru": "бисексуальный",
-   "ex": "Identifica-se como bissexual.",
-   "exru": "Он идентифицирует себя как бисексуала.",
-   "note": "Пишется с двумя s"
-  },
-  {
-   "word": "transexual",
-   "pos": "прил.",
-   "ru": "трансгендерный",
-   "ex": "A associação apoia pessoas transexuais.",
-   "exru": "Ассоциация помогает трансгендерным людям.",
-   "note": "Одна форма для обоих родов"
-  },
-  {
-   "word": "a assoalhada",
-   "pos": "сущ.",
-   "ru": "комната (в объявлении о жилье)",
-   "ex": "Procuro um apartamento de três assoalhadas.",
-   "exru": "Ищу квартиру с тремя комнатами.",
-   "note": "T3 = три комнаты без кухни"
   },
   {
    "word": "o corredor",
@@ -7395,22 +7155,6 @@
    "note": "м. р."
   },
   {
-   "word": "o autoclismo",
-   "pos": "сущ.",
-   "ru": "сливной бачок",
-   "ex": "O autoclismo está a perder água.",
-   "exru": "Сливной бачок подтекает.",
-   "note": "puxar o autoclismo — смыть"
-  },
-  {
-   "word": "o bidé",
-   "pos": "сущ.",
-   "ru": "биде",
-   "ex": "A casa de banho tem bidé.",
-   "exru": "В ванной есть биде.",
-   "note": "м. р."
-  },
-  {
    "word": "o lava-louça",
    "pos": "сущ.",
    "ru": "кухонная мойка",
@@ -7489,14 +7233,6 @@
    "ex": "Traz um jarro de água para a mesa.",
    "exru": "Принеси кувшин воды на стол.",
    "note": "м. р."
-  },
-  {
-   "word": "o dvd",
-   "pos": "сущ.",
-   "ru": "диск, DVD",
-   "ex": "Ainda tenho os DVD antigos.",
-   "exru": "У меня ещё остались старые диски.",
-   "note": "Читается «дэ-вэ-дэ»"
   },
   {
    "word": "o wifi",
@@ -7723,14 +7459,6 @@
    "note": "Мн. ч.: as margens"
   },
   {
-   "word": "a lagoa",
-   "pos": "сущ.",
-   "ru": "лагуна, небольшое озеро",
-   "ex": "A lagoa fica perto da praia.",
-   "exru": "Лагуна находится рядом с пляжем.",
-   "note": "ж. р."
-  },
-  {
    "word": "o oceano",
    "pos": "сущ.",
    "ru": "океан",
@@ -7777,14 +7505,6 @@
    "ex": "Tem família na América do Sul.",
    "exru": "У него родня в Южной Америке.",
    "note": "América do Norte/do Sul"
-  },
-  {
-   "word": "a oceânia",
-   "pos": "сущ.",
-   "ru": "Океания",
-   "ex": "A Oceânia é o continente mais pequeno.",
-   "exru": "Океания — самый маленький континент.",
-   "note": "Пишется с большой: a Oceânia"
   },
   {
    "word": "o interior",
@@ -8003,35 +7723,11 @@
    "note": "ж. р."
   },
   {
-   "word": "o cravo",
-   "pos": "сущ.",
-   "ru": "гвоздика",
-   "ex": "O cravo é o símbolo do 25 de Abril.",
-   "exru": "Гвоздика — символ 25 апреля.",
-   "note": "Revolução dos Cravos"
-  },
-  {
    "word": "o ramo de flores",
    "pos": "сущ.",
    "ru": "букет цветов",
    "ex": "Levei um ramo de flores à anfitriã.",
    "exru": "Я принёс букет хозяйке дома.",
-   "note": "м. р."
-  },
-  {
-   "word": "a oliveira",
-   "pos": "сущ.",
-   "ru": "оливковое дерево",
-   "ex": "Há oliveiras por todo o Alentejo.",
-   "exru": "По всему Алентежу растут оливы.",
-   "note": "Оливка — a azeitona"
-  },
-  {
-   "word": "o pinheiro",
-   "pos": "сущ.",
-   "ru": "сосна",
-   "ex": "O pinheiro cresce junto à costa.",
-   "exru": "Сосна растёт вдоль побережья.",
    "note": "м. р."
   },
   {
@@ -8347,14 +8043,6 @@
    "note": "Синоним dantes"
   },
   {
-   "word": "dantes",
-   "pos": "нареч.",
-   "ru": "прежде, раньше",
-   "ex": "Dantes fumava, agora já não.",
-   "exru": "Раньше он курил, теперь нет.",
-   "note": "Разговорное"
-  },
-  {
    "word": "o começo",
    "pos": "сущ.",
    "ru": "начало",
@@ -8659,14 +8347,6 @@
    "note": "Формальнее outra vez"
   },
   {
-   "word": "juntamente",
-   "pos": "нареч.",
-   "ru": "вместе, совместно",
-   "ex": "Envie o formulário juntamente com a fotografia.",
-   "exru": "Отправьте бланк вместе с фотографией.",
-   "note": "juntamente com — вместе с"
-  },
-  {
    "word": "só",
    "pos": "нареч.",
    "ru": "только; один",
@@ -8715,14 +8395,6 @@
    "note": "м. р."
   },
   {
-   "word": "o apagador",
-   "pos": "сущ.",
-   "ru": "губка/тряпка для доски",
-   "ex": "Passa o apagador no quadro.",
-   "exru": "Протри доску губкой.",
-   "note": "м. р."
-  },
-  {
    "word": "ir ao quadro",
    "pos": "выраж.",
    "ru": "выходить к доске",
@@ -8761,14 +8433,6 @@
    "ex": "Reprovou a matemática.",
    "exru": "Он завалил математику.",
    "note": "Противоположно aprovar"
-  },
-  {
-   "word": "o refeitório",
-   "pos": "сущ.",
-   "ru": "столовая (в школе, на работе)",
-   "ex": "Almoço no refeitório da escola.",
-   "exru": "Я обедаю в школьной столовой.",
-   "note": "м. р."
   },
   {
    "word": "a receção",
@@ -9129,14 +8793,6 @@
    "ex": "Como iogurte natural ao pequeno-almoço.",
    "exru": "На завтрак я ем натуральный йогурт.",
    "note": "м. р."
-  },
-  {
-   "word": "o laticínio",
-   "pos": "сущ.",
-   "ru": "молочный продукт",
-   "ex": "Evito laticínios à noite.",
-   "exru": "Вечером я избегаю молочных продуктов.",
-   "note": "Обычно мн. ч.: laticínios"
   },
   {
    "word": "o azeite",
@@ -9811,14 +9467,6 @@
    "note": "vegetariano / vegetariana"
   },
   {
-   "word": "o vegetarianismo",
-   "pos": "сущ.",
-   "ru": "вегетарианство",
-   "ex": "O vegetarianismo tem crescido nas cidades.",
-   "exru": "Вегетарианство в городах растёт.",
-   "note": "м. р."
-  },
-  {
    "word": "italiano",
    "pos": "прил.",
    "ru": "итальянский",
@@ -9841,22 +9489,6 @@
    "ex": "Pedimos comida chinesa ao domingo.",
    "exru": "По воскресеньям мы заказываем китайскую еду.",
    "note": "ж. р."
-  },
-  {
-   "word": "o centilitro",
-   "pos": "сущ.",
-   "ru": "сантилитр",
-   "ex": "O copo leva vinte centilitros.",
-   "exru": "В стакан входит двадцать сантилитров.",
-   "note": "Сокращение: cl"
-  },
-  {
-   "word": "o decilitro",
-   "pos": "сущ.",
-   "ru": "децилитр",
-   "ex": "A receita pede dois decilitros de leite.",
-   "exru": "По рецепту нужно два децилитра молока.",
-   "note": "Сокращение: dl"
   },
   {
    "word": "o mililitro",
@@ -9955,22 +9587,6 @@
    "note": "м. р."
   },
   {
-   "word": "a ópera",
-   "pos": "сущ.",
-   "ru": "опера",
-   "ex": "Fomos à ópera pela primeira vez.",
-   "exru": "Мы впервые сходили в оперу.",
-   "note": "ж. р."
-  },
-  {
-   "word": "o ballet",
-   "pos": "сущ.",
-   "ru": "балет",
-   "ex": "A filha dela anda no ballet.",
-   "exru": "Её дочь занимается балетом.",
-   "note": "Читается «балé»"
-  },
-  {
    "word": "o bailarino",
    "pos": "сущ.",
    "ru": "танцор, балерина",
@@ -10011,14 +9627,6 @@
    "note": "Также «деталь, предмет»"
   },
   {
-   "word": "o espetador",
-   "pos": "сущ.",
-   "ru": "зритель",
-   "ex": "Os espetadores aplaudiram de pé.",
-   "exru": "Зрители аплодировали стоя.",
-   "note": "Пишется без c: espetador"
-  },
-  {
    "word": "o público",
    "pos": "сущ.",
    "ru": "публика, зрители",
@@ -10049,14 +9657,6 @@
    "ex": "A banda atua às dez da noite.",
    "exru": "Группа выступает в десять вечера.",
    "note": "Пишется без c: atuar"
-  },
-  {
-   "word": "declamar",
-   "pos": "глаг.",
-   "ru": "декламировать",
-   "ex": "Declamou um poema de cor.",
-   "exru": "Он продекламировал стихотворение наизусть.",
-   "note": "de cor — наизусть"
   },
   {
    "word": "a banda",
@@ -10105,30 +9705,6 @@
    "ex": "Aprendi piano em criança.",
    "exru": "Я учился играть на пианино в детстве.",
    "note": "tocar piano"
-  },
-  {
-   "word": "o cd",
-   "pos": "сущ.",
-   "ru": "компакт-диск",
-   "ex": "Ainda tenho CD de música antiga.",
-   "exru": "У меня ещё есть диски со старой музыкой.",
-   "note": "Читается «сэ-дэ»"
-  },
-  {
-   "word": "o hi-fi",
-   "pos": "сущ.",
-   "ru": "стереосистема",
-   "ex": "Liguei o hi-fi para ouvir música.",
-   "exru": "Я включил стереосистему послушать музыку.",
-   "note": "Читается «ай-фай»"
-  },
-  {
-   "word": "o videoclipe",
-   "pos": "сущ.",
-   "ru": "клип",
-   "ex": "O videoclipe foi gravado no Porto.",
-   "exru": "Клип снимали в Порту.",
-   "note": "м. р."
   },
   {
    "word": "o podcast",
@@ -10227,14 +9803,6 @@
    "note": "Также плащ"
   },
   {
-   "word": "a contracapa",
-   "pos": "сущ.",
-   "ru": "задняя обложка",
-   "ex": "O resumo está na contracapa.",
-   "exru": "Аннотация на задней обложке.",
-   "note": "ж. р."
-  },
-  {
    "word": "o título",
    "pos": "сущ.",
    "ru": "название, заголовок",
@@ -10283,14 +9851,6 @@
    "note": "м. р."
   },
   {
-   "word": "o semanário",
-   "pos": "сущ.",
-   "ru": "еженедельник",
-   "ex": "O semanário sai à sexta-feira.",
-   "exru": "Еженедельник выходит по пятницам.",
-   "note": "м. р."
-  },
-  {
    "word": "o jornalista",
    "pos": "сущ.",
    "ru": "журналист",
@@ -10313,14 +9873,6 @@
    "ex": "É o meu programa de televisão preferido.",
    "exru": "Это моя любимая телепередача.",
    "note": "м. р."
-  },
-  {
-   "word": "o telespectador",
-   "pos": "сущ.",
-   "ru": "телезритель",
-   "ex": "O programa tem milhões de telespectadores.",
-   "exru": "У передачи миллионы телезрителей.",
-   "note": "Ж. р.: a telespectadora"
   },
   {
    "word": "a conferência",
@@ -10384,14 +9936,6 @@
    "ru": "живопись, картина",
    "ex": "A pintura é do século dezoito.",
    "exru": "Картина восемнадцатого века.",
-   "note": "ж. р."
-  },
-  {
-   "word": "a escultura",
-   "pos": "сущ.",
-   "ru": "скульптура",
-   "ex": "A escultura fica no jardim do museu.",
-   "exru": "Скульптура стоит в саду музея.",
    "note": "ж. р."
   },
   {
@@ -10459,14 +10003,6 @@
    "note": "fazer surf — сёрфить"
   },
   {
-   "word": "o esqui",
-   "pos": "сущ.",
-   "ru": "лыжи (спорт)",
-   "ex": "O esqui é caro em Portugal.",
-   "exru": "Лыжи в Португалии — дорогое удовольствие.",
-   "note": "м. р."
-  },
-  {
    "word": "o ténis",
    "pos": "сущ.",
    "ru": "теннис; кроссовки",
@@ -10489,14 +10025,6 @@
    "ex": "Joga basquetebol na equipa da escola.",
    "exru": "Он играет в баскетбол за школьную команду.",
    "note": "Разг.: basquete"
-  },
-  {
-   "word": "o andebol",
-   "pos": "сущ.",
-   "ru": "гандбол",
-   "ex": "O andebol é popular no norte.",
-   "exru": "Гандбол популярен на севере.",
-   "note": "м. р."
   },
   {
    "word": "o voleibol",
@@ -10561,14 +10089,6 @@
    "ex": "Aprendi a jogar xadrez com o meu avô.",
    "exru": "Играть в шахматы меня научил дед.",
    "note": "jogar xadrez"
-  },
-  {
-   "word": "as damas",
-   "pos": "сущ.",
-   "ru": "шашки",
-   "ex": "Jogamos às damas no café.",
-   "exru": "Мы играем в шашки в кафе.",
-   "note": "jogar às damas"
   },
   {
    "word": "as cartas",
@@ -11075,22 +10595,6 @@
    "note": "ж. р."
   },
   {
-   "word": "o porão",
-   "pos": "сущ.",
-   "ru": "багажный отсек, трюм",
-   "ex": "A mala grande vai no porão.",
-   "exru": "Большой чемодан идёт в багажный отсек.",
-   "note": "Мн. ч.: os porões"
-  },
-  {
-   "word": "a cabina",
-   "pos": "сущ.",
-   "ru": "кабина, салон",
-   "ex": "A cabina estava cheia.",
-   "exru": "Салон был полон.",
-   "note": "ж. р."
-  },
-  {
    "word": "a classe económica",
    "pos": "сущ.",
    "ru": "эконом-класс",
@@ -11355,28 +10859,12 @@
    "note": "м. р."
   },
   {
-   "word": "a dormida",
-   "pos": "сущ.",
-   "ru": "ночёвка",
-   "ex": "São vinte euros por dormida.",
-   "exru": "Двадцать евро за ночь.",
-   "note": "dormida e pequeno-almoço"
-  },
-  {
    "word": "o hóspede",
    "pos": "сущ.",
    "ru": "гость, постоялец",
    "ex": "O hotel tem cinquenta hóspedes.",
    "exru": "В отеле пятьдесят постояльцев.",
    "note": "Ж. р.: a hóspede"
-  },
-  {
-   "word": "a pousada",
-   "pos": "сущ.",
-   "ru": "поузада (гостиница в историческом здании)",
-   "ex": "Ficámos numa pousada num castelo.",
-   "exru": "Мы остановились в поузаде в замке.",
-   "note": "Сеть исторических отелей Португалии"
   },
   {
    "word": "a residência",
@@ -11387,28 +10875,12 @@
    "note": "ж. р."
   },
   {
-   "word": "o motel",
-   "pos": "сущ.",
-   "ru": "мотель",
-   "ex": "Dormimos num motel na estrada.",
-   "exru": "Мы переночевали в мотеле у трассы.",
-   "note": "Мн. ч.: os motéis"
-  },
-  {
    "word": "o apartamento de férias",
    "pos": "сущ.",
    "ru": "апартаменты для отдыха",
    "ex": "Alugámos um apartamento de férias no Algarve.",
    "exru": "Мы сняли апартаменты в Алгарви.",
    "note": "м. р."
-  },
-  {
-   "word": "a kitchenette",
-   "pos": "сущ.",
-   "ru": "мини-кухня",
-   "ex": "O estúdio tem kitchenette.",
-   "exru": "В студии есть мини-кухня.",
-   "note": "Читается «китченет»"
   },
   {
    "word": "cinco estrelas",
@@ -11531,28 +11003,12 @@
    "note": "И человек, и книга"
   },
   {
-   "word": "o miradouro",
-   "pos": "сущ.",
-   "ru": "смотровая площадка",
-   "ex": "O miradouro tem a melhor vista da cidade.",
-   "exru": "Со смотровой площадки лучший вид на город.",
-   "note": "Очень частое слово в Лиссабоне"
-  },
-  {
    "word": "o castelo",
    "pos": "сущ.",
    "ru": "замок, крепость",
    "ex": "O castelo fica no ponto mais alto.",
    "exru": "Замок стоит на самой высокой точке.",
    "note": "м. р."
-  },
-  {
-   "word": "as ruínas",
-   "pos": "сущ.",
-   "ru": "руины",
-   "ex": "Visitámos as ruínas romanas.",
-   "exru": "Мы осмотрели римские руины.",
-   "note": "Обычно мн. ч."
   },
   {
    "word": "a galeria de arte",
@@ -11688,14 +11144,6 @@
    "ru": "доставка, вручение",
    "ex": "A entrega é ao domicílio.",
    "exru": "Доставка на дом.",
-   "note": "ж. р."
-  },
-  {
-   "word": "a recolha",
-   "pos": "сущ.",
-   "ru": "получение, забор (вещей)",
-   "ex": "A recolha da bagagem é no piso zero.",
-   "exru": "Выдача багажа на нулевом этаже.",
    "note": "ж. р."
   },
   {
@@ -12089,22 +11537,6 @@
    "ex": "Já tomei a vacina da gripe.",
    "exru": "Я уже сделал прививку от гриппа.",
    "note": "tomar a vacina — привиться"
-  },
-  {
-   "word": "o analgésico",
-   "pos": "сущ.",
-   "ru": "обезболивающее",
-   "ex": "Tomei um analgésico e melhorei.",
-   "exru": "Я принял обезболивающее и мне стало лучше.",
-   "note": "м. р."
-  },
-  {
-   "word": "o anti-inflamatório",
-   "pos": "сущ.",
-   "ru": "противовоспалительное",
-   "ex": "O médico receitou um anti-inflamatório.",
-   "exru": "Врач выписал противовоспалительное.",
-   "note": "м. р."
   },
   {
    "word": "a pastilha",
@@ -12587,14 +12019,6 @@
    "note": "Мн. ч.: os cristais"
   },
   {
-   "word": "a cartolina",
-   "pos": "сущ.",
-   "ru": "картон (тонкий)",
-   "ex": "Fizemos o cartaz em cartolina.",
-   "exru": "Мы сделали плакат из картона.",
-   "note": "ж. р."
-  },
-  {
    "word": "a tinta",
    "pos": "сущ.",
    "ru": "краска; чернила",
@@ -12811,14 +12235,6 @@
    "note": "Пишется без c: correto"
   },
   {
-   "word": "a correção",
-   "pos": "сущ.",
-   "ru": "исправление, коррекция",
-   "ex": "Fiz duas correções no texto.",
-   "exru": "Я внёс два исправления в текст.",
-   "note": "Мн. ч.: as correções"
-  },
-  {
    "word": "o erro",
    "pos": "сущ.",
    "ru": "ошибка",
@@ -12865,14 +12281,6 @@
    "ex": "Sentámo-nos à mesa habitual.",
    "exru": "Мы сели за привычный столик.",
    "note": "Мн. ч.: habituais"
-  },
-  {
-   "word": "habitualmente",
-   "pos": "нареч.",
-   "ru": "обычно",
-   "ex": "Habitualmente saio às seis.",
-   "exru": "Обычно я ухожу в шесть.",
-   "note": "Синоним normalmente"
   },
   {
    "word": "regular",
@@ -13081,14 +12489,6 @@
    "ex": "Encontrei o sítio facilmente.",
    "exru": "Я легко нашёл это место.",
    "note": ""
-  },
-  {
-   "word": "dificilmente",
-   "pos": "нареч.",
-   "ru": "вряд ли, с трудом",
-   "ex": "Dificilmente chegamos a horas.",
-   "exru": "Вряд ли мы успеем вовремя.",
-   "note": "Часто = «вряд ли»"
   },
   {
    "word": "precisar",
@@ -14185,6 +13585,859 @@
    "ex": "Passámos por Coimbra a caminho do Porto.",
    "exru": "По дороге в Порту мы проехали через Коимбру.",
    "note": "Путь, причина, цена: por 5 euros"
+  },
+  {
+   "word": "um",
+   "pos": "числ.",
+   "ru": "один",
+   "ex": "Só quero um café, obrigado.",
+   "exru": "Мне только один кофе, спасибо.",
+   "note": "Женский род — uma; ещё артикль «какой-то»"
+  },
+  {
+   "word": "dois",
+   "pos": "числ.",
+   "ru": "два",
+   "ex": "Tenho dois irmãos mais velhos.",
+   "exru": "У меня два старших брата.",
+   "note": "Женский род — duas: duas irmãs"
+  },
+  {
+   "word": "três",
+   "pos": "числ.",
+   "ru": "три",
+   "ex": "O apartamento tem três assoalhadas.",
+   "exru": "В квартире три комнаты.",
+   "note": "Не меняется по родам"
+  },
+  {
+   "word": "quatro",
+   "pos": "числ.",
+   "ru": "четыре",
+   "ex": "Somos quatro em casa.",
+   "exru": "Нас дома четверо.",
+   "note": ""
+  },
+  {
+   "word": "cinco",
+   "pos": "числ.",
+   "ru": "пять",
+   "ex": "O comboio parte às cinco em ponto.",
+   "exru": "Поезд отправляется ровно в пять.",
+   "note": ""
+  },
+  {
+   "word": "seis",
+   "pos": "числ.",
+   "ru": "шесть",
+   "ex": "Trabalho seis horas por dia.",
+   "exru": "Я работаю шесть часов в день.",
+   "note": ""
+  },
+  {
+   "word": "sete",
+   "pos": "числ.",
+   "ru": "семь",
+   "ex": "A semana tem sete dias.",
+   "exru": "В неделе семь дней.",
+   "note": ""
+  },
+  {
+   "word": "oito",
+   "pos": "числ.",
+   "ru": "восемь",
+   "ex": "Levanto-me às oito da manhã.",
+   "exru": "Я встаю в восемь утра.",
+   "note": ""
+  },
+  {
+   "word": "nove",
+   "pos": "числ.",
+   "ru": "девять",
+   "ex": "A loja abre às nove e fecha às sete.",
+   "exru": "Магазин открывается в девять и закрывается в семь.",
+   "note": ""
+  },
+  {
+   "word": "dez",
+   "pos": "числ.",
+   "ru": "десять",
+   "ex": "Dez euros chegam para o almoço.",
+   "exru": "Десяти евро хватит на обед.",
+   "note": ""
+  },
+  {
+   "word": "onze",
+   "pos": "числ.",
+   "ru": "одиннадцать",
+   "ex": "O filme começa às onze da noite.",
+   "exru": "Фильм начинается в одиннадцать вечера.",
+   "note": ""
+  },
+  {
+   "word": "doze",
+   "pos": "числ.",
+   "ru": "двенадцать",
+   "ex": "Comprei uma dúzia, doze ovos.",
+   "exru": "Я купил дюжину, двенадцать яиц.",
+   "note": "Дюжина — a dúzia"
+  },
+  {
+   "word": "treze",
+   "pos": "числ.",
+   "ru": "тринадцать",
+   "ex": "A minha filha faz treze anos em maio.",
+   "exru": "Дочери в мае исполняется тринадцать.",
+   "note": ""
+  },
+  {
+   "word": "catorze",
+   "pos": "числ.",
+   "ru": "четырнадцать",
+   "ex": "Esperámos catorze minutos pelo autocarro.",
+   "exru": "Мы ждали автобус четырнадцать минут.",
+   "note": "PT-PT catorze, не «quatorze»"
+  },
+  {
+   "word": "quinze",
+   "pos": "числ.",
+   "ru": "пятнадцать",
+   "ex": "Volto dentro de quinze minutos.",
+   "exru": "Вернусь через пятнадцать минут.",
+   "note": "Ещё «две недели»: quinze dias"
+  },
+  {
+   "word": "dezasseis",
+   "pos": "числ.",
+   "ru": "шестнадцать",
+   "ex": "Ele tem dezasseis anos e já conduz mota.",
+   "exru": "Ему шестнадцать, и он уже водит мопед.",
+   "note": "PT-PT dezasseis, в Бразилии dezesseis"
+  },
+  {
+   "word": "dezassete",
+   "pos": "числ.",
+   "ru": "семнадцать",
+   "ex": "O quarto dezassete fica no primeiro andar.",
+   "exru": "Семнадцатый номер на втором этаже.",
+   "note": "PT-PT dezassete"
+  },
+  {
+   "word": "dezoito",
+   "pos": "числ.",
+   "ru": "восемнадцать",
+   "ex": "A maioridade é aos dezoito anos.",
+   "exru": "Совершеннолетие наступает в восемнадцать.",
+   "note": ""
+  },
+  {
+   "word": "dezanove",
+   "pos": "числ.",
+   "ru": "девятнадцать",
+   "ex": "Faltam dezanove dias para as férias.",
+   "exru": "До отпуска девятнадцать дней.",
+   "note": "PT-PT dezanove"
+  },
+  {
+   "word": "vinte",
+   "pos": "числ.",
+   "ru": "двадцать",
+   "ex": "O bilhete custou vinte euros.",
+   "exru": "Билет стоил двадцать евро.",
+   "note": ""
+  },
+  {
+   "word": "trinta",
+   "pos": "числ.",
+   "ru": "тридцать",
+   "ex": "O mês de abril tem trinta dias.",
+   "exru": "В апреле тридцать дней.",
+   "note": ""
+  },
+  {
+   "word": "quarenta",
+   "pos": "числ.",
+   "ru": "сорок",
+   "ex": "A viagem demora quarenta minutos de comboio.",
+   "exru": "Дорога на поезде занимает сорок минут.",
+   "note": ""
+  },
+  {
+   "word": "cinquenta",
+   "pos": "числ.",
+   "ru": "пятьдесят",
+   "ex": "Este casaco custou cinquenta euros nos saldos.",
+   "exru": "Это пальто стоило пятьдесят евро на распродаже.",
+   "note": ""
+  },
+  {
+   "word": "sessenta",
+   "pos": "числ.",
+   "ru": "шестьдесят",
+   "ex": "Uma hora tem sessenta minutos.",
+   "exru": "В часе шестьдесят минут.",
+   "note": ""
+  },
+  {
+   "word": "setenta",
+   "pos": "числ.",
+   "ru": "семьдесят",
+   "ex": "O meu avô tem setenta e dois anos.",
+   "exru": "Дедушке семьдесят два года.",
+   "note": ""
+  },
+  {
+   "word": "oitenta",
+   "pos": "числ.",
+   "ru": "восемьдесят",
+   "ex": "A biblioteca tem mais de oitenta lugares.",
+   "exru": "В библиотеке больше восьмидесяти мест.",
+   "note": ""
+  },
+  {
+   "word": "noventa",
+   "pos": "числ.",
+   "ru": "девяносто",
+   "ex": "O exame dura noventa minutos.",
+   "exru": "Экзамен длится девяносто минут.",
+   "note": ""
+  },
+  {
+   "word": "o irmão",
+   "pos": "сущ.",
+   "ru": "брат",
+   "ex": "O meu irmão mais novo estuda em Coimbra.",
+   "exru": "Мой младший брат учится в Коимбре.",
+   "note": "Мн. ч. os irmãos — и «братья», и «братья и сёстры»"
+  },
+  {
+   "word": "o vizinho",
+   "pos": "сущ.",
+   "ru": "сосед",
+   "ex": "O vizinho de cima faz barulho à noite.",
+   "exru": "Сосед сверху шумит по ночам.",
+   "note": "Соседка — a vizinha"
+  },
+  {
+   "word": "a palavra",
+   "pos": "сущ.",
+   "ru": "слово",
+   "ex": "Não percebi a última palavra da frase.",
+   "exru": "Я не понял последнее слово во фразе.",
+   "note": "Дать слово — dar a palavra"
+  },
+  {
+   "word": "a língua",
+   "pos": "сущ.",
+   "ru": "язык (речь); язык (орган)",
+   "ex": "A língua portuguesa não é tão difícil.",
+   "exru": "Португальский язык не такой уж трудный.",
+   "note": "И «язык во рту», и «язык народа»"
+  },
+  {
+   "word": "a saúde",
+   "pos": "сущ.",
+   "ru": "здоровье",
+   "ex": "A saúde vem primeiro, o resto espera.",
+   "exru": "Здоровье прежде всего, остальное подождёт.",
+   "note": "Тост «за здоровье» — à sua saúde"
+  },
+  {
+   "word": "a terra",
+   "pos": "сущ.",
+   "ru": "земля, суша; родина",
+   "ex": "Depois de duas semanas no mar, avistámos terra.",
+   "exru": "После двух недель в море мы увидели землю.",
+   "note": "Terra с большой буквы — планета"
+  },
+  {
+   "word": "a lua",
+   "pos": "сущ.",
+   "ru": "луна",
+   "ex": "Hoje a lua está cheia e muito clara.",
+   "exru": "Сегодня полная луна, очень яркая.",
+   "note": "Полнолуние — a lua cheia"
+  },
+  {
+   "word": "a bola",
+   "pos": "сущ.",
+   "ru": "мяч",
+   "ex": "Os miúdos jogam à bola no parque.",
+   "exru": "Дети играют в мяч в парке.",
+   "note": "jogar à bola — играть в футбол"
+  },
+  {
+   "word": "a lista",
+   "pos": "сущ.",
+   "ru": "список; меню",
+   "ex": "Fiz uma lista das compras antes de sair.",
+   "exru": "Перед выходом я составил список покупок.",
+   "note": "Меню в ресторане — a lista"
+  },
+  {
+   "word": "a regra",
+   "pos": "сущ.",
+   "ru": "правило",
+   "ex": "A regra é simples: fala-se sempre português.",
+   "exru": "Правило простое: говорим только по-португальски.",
+   "note": "Как правило — por regra"
+  },
+  {
+   "word": "a dúvida",
+   "pos": "сущ.",
+   "ru": "сомнение, вопрос",
+   "ex": "Se tiveres dúvidas, pergunta ao professor.",
+   "exru": "Если будут вопросы, спроси у преподавателя.",
+   "note": "sem dúvida — без сомнения"
+  },
+  {
+   "word": "a foto",
+   "pos": "сущ.",
+   "ru": "фотография",
+   "ex": "Tirei uma foto ao pôr do sol.",
+   "exru": "Я сфотографировал закат.",
+   "note": "Полная форма — a fotografia; tirar uma foto"
+  },
+  {
+   "word": "o edifício",
+   "pos": "сущ.",
+   "ru": "здание",
+   "ex": "O escritório fica naquele edifício alto.",
+   "exru": "Офис в том высоком здании.",
+   "note": "Жилой дом чаще — o prédio"
+  },
+  {
+   "word": "a estrela",
+   "pos": "сущ.",
+   "ru": "звезда",
+   "ex": "À noite vêem-se muitas estrelas na aldeia.",
+   "exru": "Ночью в деревне видно много звёзд.",
+   "note": "Отель «пять звёзд» — de cinco estrelas"
+  },
+  {
+   "word": "a areia",
+   "pos": "сущ.",
+   "ru": "песок",
+   "ex": "A areia da praia estava demasiado quente.",
+   "exru": "Песок на пляже был слишком горячий.",
+   "note": ""
+  },
+  {
+   "word": "o correio",
+   "pos": "сущ.",
+   "ru": "почта (служба)",
+   "ex": "Enviei a carta pelo correio na terça.",
+   "exru": "Я отправил письмо почтой во вторник.",
+   "note": "Отделение — os correios; e-mail — o correio eletrónico"
+  },
+  {
+   "word": "o bar",
+   "pos": "сущ.",
+   "ru": "бар",
+   "ex": "Vamos beber um copo ao bar da esquina?",
+   "exru": "Сходим выпить в бар на углу?",
+   "note": ""
+  },
+  {
+   "word": "a cultura",
+   "pos": "сущ.",
+   "ru": "культура",
+   "ex": "A cultura portuguesa tem muita influência do mar.",
+   "exru": "В португальской культуре многое от моря.",
+   "note": ""
+  },
+  {
+   "word": "a tradição",
+   "pos": "сущ.",
+   "ru": "традиция",
+   "ex": "Comer bacalhau no Natal é uma tradição.",
+   "exru": "Есть треску на Рождество — традиция.",
+   "note": ""
+  },
+  {
+   "word": "a memória",
+   "pos": "сущ.",
+   "ru": "память; воспоминание",
+   "ex": "Tenho boa memória para caras, má para nomes.",
+   "exru": "У меня хорошая память на лица и плохая на имена.",
+   "note": "Наизусть — de memória"
+  },
+  {
+   "word": "o sentimento",
+   "pos": "сущ.",
+   "ru": "чувство",
+   "ex": "É um sentimento difícil de explicar.",
+   "exru": "Это чувство трудно объяснить.",
+   "note": ""
+  },
+  {
+   "word": "a ordem",
+   "pos": "сущ.",
+   "ru": "порядок; приказ",
+   "ex": "Os livros estão por ordem alfabética.",
+   "exru": "Книги стоят в алфавитном порядке.",
+   "note": "Ещё «приказ»: dar uma ordem"
+  },
+  {
+   "word": "a força",
+   "pos": "сущ.",
+   "ru": "сила",
+   "ex": "Não tenho força para carregar esta mala.",
+   "exru": "У меня нет сил тащить этот чемодан.",
+   "note": "à força — силой; força! — держись!"
+  },
+  {
+   "word": "a informação",
+   "pos": "сущ.",
+   "ru": "сведения, информация",
+   "ex": "Pedi informações no posto de turismo.",
+   "exru": "Я спросил информацию в туристическом бюро.",
+   "note": "Справочная — as informações"
+  },
+  {
+   "word": "a notícia",
+   "pos": "сущ.",
+   "ru": "новость",
+   "ex": "A notícia apareceu em todos os jornais.",
+   "exru": "Новость появилась во всех газетах.",
+   "note": "Новости по телевизору — as notícias"
+  },
+  {
+   "word": "o passado",
+   "pos": "сущ.",
+   "ru": "прошлое",
+   "ex": "No passado, esta rua era muito mais calma.",
+   "exru": "Раньше эта улица была гораздо тише.",
+   "note": "Прошлый год — o ano passado"
+  },
+  {
+   "word": "o futuro",
+   "pos": "сущ.",
+   "ru": "будущее",
+   "ex": "No futuro, quero viver perto do mar.",
+   "exru": "В будущем хочу жить у моря.",
+   "note": ""
+  },
+  {
+   "word": "a verdade",
+   "pos": "сущ.",
+   "ru": "правда",
+   "ex": "Diz-me a verdade, não faz mal.",
+   "exru": "Скажи мне правду, ничего страшного.",
+   "note": "É verdade — это правда"
+  },
+  {
+   "word": "a experiência",
+   "pos": "сущ.",
+   "ru": "опыт",
+   "ex": "Não tenho experiência nesse tipo de trabalho.",
+   "exru": "У меня нет опыта в такой работе.",
+   "note": "Ещё «опыт, эксперимент»"
+  },
+  {
+   "word": "a situação",
+   "pos": "сущ.",
+   "ru": "ситуация, положение",
+   "ex": "A situação melhorou depois da conversa.",
+   "exru": "После разговора ситуация улучшилась.",
+   "note": ""
+  },
+  {
+   "word": "resolver",
+   "pos": "глаг.",
+   "ru": "решать (проблему)",
+   "ex": "Resolvemos o problema em dez minutos.",
+   "exru": "Мы решили проблему за десять минут.",
+   "note": "О задаче и о проблеме; «принять решение» — decidir"
+  },
+  {
+   "word": "oferecer",
+   "pos": "глаг.",
+   "ru": "дарить; предлагать",
+   "ex": "Ofereci-lhe um livro pelos anos.",
+   "exru": "Я подарил ему книгу на день рождения.",
+   "note": "В PT-PT «дарить» — именно oferecer"
+  },
+  {
+   "word": "colocar",
+   "pos": "глаг.",
+   "ru": "класть, помещать",
+   "ex": "Coloca as chaves em cima da mesa.",
+   "exru": "Положи ключи на стол.",
+   "note": "Разговорнее — pôr"
+  },
+  {
+   "word": "tratar",
+   "pos": "глаг.",
+   "ru": "обращаться; лечить",
+   "ex": "O médico tratou-me com muita atenção.",
+   "exru": "Врач отнёсся ко мне очень внимательно.",
+   "note": "tratar de — заниматься чем-то"
+  },
+  {
+   "word": "manter",
+   "pos": "глаг.",
+   "ru": "сохранять, поддерживать",
+   "ex": "Mantém a porta aberta, por favor.",
+   "exru": "Держи дверь открытой, пожалуйста.",
+   "note": "Как ter: mantenho, mantém"
+  },
+  {
+   "word": "criar",
+   "pos": "глаг.",
+   "ru": "создавать; растить",
+   "ex": "Criaram três filhos naquela casa pequena.",
+   "exru": "Они вырастили троих детей в том домике.",
+   "note": "Ещё «создать»: criar uma conta"
+  },
+  {
+   "word": "existir",
+   "pos": "глаг.",
+   "ru": "существовать, быть",
+   "ex": "Existem muitas praias assim no Algarve.",
+   "exru": "В Алгарве много таких пляжей.",
+   "note": "Книжнее, чем haver"
+  },
+  {
+   "word": "permitir",
+   "pos": "глаг.",
+   "ru": "позволять, разрешать",
+   "ex": "Não é permitido fumar nesta zona.",
+   "exru": "В этой зоне курить не разрешается.",
+   "note": "é permitido — разрешено"
+  },
+  {
+   "word": "concordar",
+   "pos": "глаг.",
+   "ru": "соглашаться",
+   "ex": "Concordo contigo, foi melhor assim.",
+   "exru": "Согласен с тобой, так вышло лучше.",
+   "note": "concordar com alguém"
+  },
+  {
+   "word": "observar",
+   "pos": "глаг.",
+   "ru": "наблюдать, замечать",
+   "ex": "Gosto de observar as pessoas na esplanada.",
+   "exru": "Люблю наблюдать за людьми на террасе кафе.",
+   "note": ""
+  },
+  {
+   "word": "verificar",
+   "pos": "глаг.",
+   "ru": "проверять",
+   "ex": "Verifica se a janela ficou fechada.",
+   "exru": "Проверь, закрыто ли окно.",
+   "note": ""
+  },
+  {
+   "word": "negar",
+   "pos": "глаг.",
+   "ru": "отрицать, отказывать",
+   "ex": "Ele nega tudo, mas ninguém acredita.",
+   "exru": "Он всё отрицает, но никто не верит.",
+   "note": ""
+  },
+  {
+   "word": "discutir",
+   "pos": "глаг.",
+   "ru": "обсуждать; спорить",
+   "ex": "Discutimos o assunto durante o jantar.",
+   "exru": "Мы обсуждали вопрос за ужином.",
+   "note": "И «обсуждать», и «ссориться»"
+  },
+  {
+   "word": "aproveitar",
+   "pos": "глаг.",
+   "ru": "пользоваться, использовать случай",
+   "ex": "Aproveitei o bom tempo para ir à praia.",
+   "exru": "Я воспользовался хорошей погодой и сходил на пляж.",
+   "note": "Aproveita! — приятного отдыха"
+  },
+  {
+   "word": "preocupar-se",
+   "pos": "глаг.",
+   "ru": "беспокоиться",
+   "ex": "Não te preocupes, ainda há tempo.",
+   "exru": "Не переживай, время ещё есть.",
+   "note": "preocupar-se com — беспокоиться о"
+  },
+  {
+   "word": "agarrar",
+   "pos": "глаг.",
+   "ru": "хватать, держать",
+   "ex": "Agarrei o miúdo antes de ele cair.",
+   "exru": "Я поймал малыша, прежде чем он упал.",
+   "note": ""
+  },
+  {
+   "word": "salvar",
+   "pos": "глаг.",
+   "ru": "спасать",
+   "ex": "Os bombeiros salvaram toda a família.",
+   "exru": "Пожарные спасли всю семью.",
+   "note": "Ещё «сохранить файл» — guardar"
+  },
+  {
+   "word": "considerar",
+   "pos": "глаг.",
+   "ru": "считать, рассматривать",
+   "ex": "Considero-o um bom amigo.",
+   "exru": "Я считаю его хорошим другом.",
+   "note": ""
+  },
+  {
+   "word": "realizar",
+   "pos": "глаг.",
+   "ru": "осуществлять, проводить",
+   "ex": "A escola realiza uma festa em junho.",
+   "exru": "Школа проводит праздник в июне.",
+   "note": "realizar-se — состояться"
+  },
+  {
+   "word": "imaginar",
+   "pos": "глаг.",
+   "ru": "представлять, воображать",
+   "ex": "Imagina que ganhavas a lotaria!",
+   "exru": "Представь, что ты выиграл в лотерею!",
+   "note": "Imagina! — надо же!"
+  },
+  {
+   "word": "qualquer",
+   "pos": "мест.",
+   "ru": "любой, какой-нибудь",
+   "ex": "Qualquer autocarro serve para o centro.",
+   "exru": "До центра подойдёт любой автобус.",
+   "note": "Мн. ч. quaisquer"
+  },
+  {
+   "word": "algo",
+   "pos": "нареч.",
+   "ru": "что-то, нечто",
+   "ex": "Há algo estranho nesta história.",
+   "exru": "В этой истории есть что-то странное.",
+   "note": "Разговорнее — alguma coisa"
+  },
+  {
+   "word": "ambos",
+   "pos": "мест.",
+   "ru": "оба",
+   "ex": "Ambos os irmãos vivem no Porto.",
+   "exru": "Оба брата живут в Порту.",
+   "note": "Женский род — ambas"
+  },
+  {
+   "word": "assim",
+   "pos": "нареч.",
+   "ru": "так, таким образом",
+   "ex": "Faz assim: primeiro liga, depois pergunta.",
+   "exru": "Сделай так: сначала позвони, потом спроси.",
+   "note": "mesmo assim — всё равно"
+  },
+  {
+   "word": "apenas",
+   "pos": "нареч.",
+   "ru": "только, всего лишь",
+   "ex": "Ficámos apenas dois dias em Lisboa.",
+   "exru": "Мы пробыли в Лиссабоне всего два дня.",
+   "note": "Синоним só, чуть книжнее"
+  },
+  {
+   "word": "além de",
+   "pos": "предл.",
+   "ru": "кроме, помимо",
+   "ex": "Além do café, trouxe também um bolo.",
+   "exru": "Кроме кофе, он принёс ещё и пирожное.",
+   "note": "além disso — кроме того"
+  },
+  {
+   "word": "tal",
+   "pos": "мест.",
+   "ru": "такой",
+   "ex": "Nunca ouvi tal coisa na vida.",
+   "exru": "Никогда в жизни такого не слышал.",
+   "note": "tal como — так же как"
+  },
+  {
+   "word": "demais",
+   "pos": "нареч.",
+   "ru": "слишком; остальные",
+   "ex": "Comeste demais ao jantar.",
+   "exru": "Ты слишком много съел за ужином.",
+   "note": "Стоит после слова: caro demais"
+  },
+  {
+   "word": "realmente",
+   "pos": "нареч.",
+   "ru": "действительно, на самом деле",
+   "ex": "O filme é realmente muito bom.",
+   "exru": "Фильм действительно очень хороший.",
+   "note": ""
+  },
+  {
+   "word": "simplesmente",
+   "pos": "нареч.",
+   "ru": "просто, попросту",
+   "ex": "Simplesmente esqueci-me da hora.",
+   "exru": "Я просто забыл о времени.",
+   "note": ""
+  },
+  {
+   "word": "imediatamente",
+   "pos": "нареч.",
+   "ru": "немедленно, сразу",
+   "ex": "Liga-me imediatamente quando chegares.",
+   "exru": "Позвони мне сразу, как приедешь.",
+   "note": ""
+  },
+  {
+   "word": "especialmente",
+   "pos": "нареч.",
+   "ru": "особенно",
+   "ex": "Gosto de peixe, especialmente grelhado.",
+   "exru": "Люблю рыбу, особенно на гриле.",
+   "note": ""
+  },
+  {
+   "word": "absolutamente",
+   "pos": "нареч.",
+   "ru": "совершенно, абсолютно",
+   "ex": "Estás absolutamente certo neste ponto.",
+   "exru": "В этом ты совершенно прав.",
+   "note": ""
+  },
+  {
+   "word": "sobretudo",
+   "pos": "нареч.",
+   "ru": "прежде всего, главным образом",
+   "ex": "Vim sobretudo para te ver.",
+   "exru": "Я приехал прежде всего чтобы тебя увидеть.",
+   "note": ""
+  },
+  {
+   "word": "curioso",
+   "pos": "прил.",
+   "ru": "любопытный; любознательный",
+   "ex": "É curioso que ninguém tenha reparado.",
+   "exru": "Любопытно, что никто не заметил.",
+   "note": ""
+  },
+  {
+   "word": "familiar",
+   "pos": "прил.",
+   "ru": "знакомый; семейный",
+   "ex": "A cara dele é-me familiar.",
+   "exru": "Его лицо мне знакомо.",
+   "note": "Ещё «семейный»: um jantar familiar"
+  },
+  {
+   "word": "disponível",
+   "pos": "прил.",
+   "ru": "доступный, свободный",
+   "ex": "Ainda há quartos disponíveis para sábado?",
+   "exru": "На субботу ещё есть свободные номера?",
+   "note": ""
+  },
+  {
+   "word": "conhecido",
+   "pos": "прил.",
+   "ru": "известный; знакомый",
+   "ex": "Este restaurante é conhecido pelo bacalhau.",
+   "exru": "Этот ресторан известен своей треской.",
+   "note": "Как существительное — знакомый"
+  },
+  {
+   "word": "justo",
+   "pos": "прил.",
+   "ru": "справедливый; точный",
+   "ex": "Não é justo pagar duas vezes.",
+   "exru": "Несправедливо платить дважды.",
+   "note": "Ещё «в самый раз»: mesmo justo"
+  },
+  {
+   "word": "profundo",
+   "pos": "прил.",
+   "ru": "глубокий",
+   "ex": "A piscina é demasiado profunda para as crianças.",
+   "exru": "Бассейн слишком глубокий для детей.",
+   "note": "Мелкий — pouco profundo"
   }
+ ],
+ "retired": [
+  "adicionalmente",
+  "agnosticismo",
+  "agnóstico",
+  "analgésico",
+  "andebol",
+  "anti-inflamatório",
+  "apagador",
+  "assoalhada",
+  "ateu",
+  "ateísmo",
+  "autoclismo",
+  "ballet",
+  "bidé",
+  "bissexual",
+  "budismo",
+  "budista",
+  "cabina",
+  "cartolina",
+  "cd",
+  "centilitro",
+  "contracapa",
+  "correção",
+  "cravo",
+  "cristianismo",
+  "cristão",
+  "damas",
+  "dantes",
+  "decilitro",
+  "declamar",
+  "dificilmente",
+  "dormida",
+  "doutoramento",
+  "dvd",
+  "escultura",
+  "espetador",
+  "esqui",
+  "esquiar",
+  "fotocopiadora",
+  "fotocópia",
+  "habitualmente",
+  "heterossexual",
+  "hi-fi",
+  "hindu",
+  "hinduísmo",
+  "homossexual",
+  "islamismo",
+  "judaísmo",
+  "juntamente",
+  "kitchenette",
+  "lagoa",
+  "laticínio",
+  "magreza",
+  "mesquita",
+  "miradouro",
+  "motel",
+  "muçulmano",
+  "obesidade",
+  "oceânia",
+  "oliveira",
+  "pinheiro",
+  "porão",
+  "pousada",
+  "praceta",
+  "ramadão",
+  "recolha",
+  "refeitório",
+  "ruínas",
+  "sabat",
+  "semanário",
+  "sinagoga",
+  "telespectador",
+  "transexual",
+  "vegetarianismo",
+  "videoclipe",
+  "ópera"
  ]
 }
