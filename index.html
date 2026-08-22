@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Português</title>
+<link rel="manifest" href='data:application/manifest+json,{"name":"Portugu%C3%AAs","short_name":"PT","start_url":".","display":"standalone","background_color":"%23000000","theme_color":"%23000000"}'>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a84ff'/%3E%3Ctext x='32' y='44' font-size='30' font-family='-apple-system,Segoe UI,sans-serif' font-weight='600' fill='%23fff' text-anchor='middle'%3EPT%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f2f2f7;
+    --group:#ffffff;
+    --sep:rgba(60,60,67,.16);
+    --label:#000;
+    --label2:rgba(60,60,67,.6);
+    --label3:rgba(60,60,67,.32);
+    --fill:rgba(118,118,128,.12);
+    --blue:#007aff;
+    --green:#34c759;
+    --red:#ff3b30;
+    --orange:#ff9500;
+    --bar:rgba(249,249,249,.94);
+    --tab:#8e8e93;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#000;
+      --group:#1c1c1e;
+      --sep:rgba(84,84,88,.55);
+      --label:#fff;
+      --label2:rgba(235,235,245,.6);
+      --label3:rgba(235,235,245,.3);
+      --fill:rgba(118,118,128,.24);
+      --blue:#0a84ff;
+      --green:#30d158;
+      --red:#ff453a;
+      --orange:#ff9f0a;
+      --bar:rgba(22,22,24,.94);
+      --tab:#98989f;
+    }
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--label);
+    font:400 17px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:calc(60px + env(safe-area-inset-bottom));
+    overscroll-behavior-y:contain;
+  }
+
+  /* nav bar */
+  header{
+    position:sticky;top:0;z-index:20;background:var(--bar);
+    border-bottom:.5px solid var(--sep);
+    padding:calc(10px + env(safe-area-inset-top)) 16px 10px;
+    text-align:center;
+  }
+  header h1{margin:0;font-size:17px;font-weight:600;letter-spacing:-.02em}
+  header .sub{margin-top:2px;font-size:12px;color:var(--label2)}
+
+  main{max-width:620px;margin:0 auto;padding:14px 16px 24px}
+  .view{display:none}
+  .view.on{display:block}
+
+  /* grouped sections */
+  .sec{margin-bottom:26px}
+  .lbl{
+    display:block;margin:0 0 7px 4px;
+    font-size:13px;color:var(--label2);
+  }
+  .hint{margin:8px 4px 0;font-size:13px;line-height:1.4;color:var(--label2)}
+
+  /* controls */
+  input,textarea,select,button{font-family:inherit;font-size:17px;color:inherit}
+  input[type=text],input[type=password],textarea,select{
+    width:100%;background:var(--group);color:var(--label);
+    border:none;border-radius:10px;padding:12px 14px;outline:none;
+  }
+  input::placeholder,textarea::placeholder{color:var(--label3)}
+  textarea{resize:vertical;min-height:110px;line-height:1.45;font-size:16px}
+  select{
+    appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:36px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8'%3E%3Cpath d='M1 1l5.5 5.5L12 1' fill='none' stroke='%23888' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;
+  }
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:7px;
+    min-height:46px;padding:0 16px;border:none;border-radius:10px;cursor:pointer;
+    background:var(--fill);color:var(--blue);font-size:16px;font-weight:500;
+    transition:opacity .15s;
+  }
+  .btn:active{opacity:.55}
+  .btn.primary{background:var(--blue);color:#fff;font-weight:600}
+  .btn.wide{width:100%}
+  .btn:disabled{opacity:.4;pointer-events:none}
+  .btn.icon{width:32px;min-height:32px;padding:0;background:none;color:var(--label2)}
+  .btn.icon svg{width:17px;height:17px}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+
+  /* screenshot */
+  .drop{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    min-height:80px;padding:16px;cursor:pointer;text-align:center;
+    background:var(--group);border-radius:10px;color:var(--blue);font-size:16px;
+  }
+  .drop:active{opacity:.6}
+  .drop svg{width:20px;height:20px;flex:none}
+  .thumb{
+    display:block;width:100%;max-height:220px;object-fit:contain;
+    margin-top:10px;border-radius:10px;background:var(--fill);
+  }
+  .ocrbox{margin-top:12px;background:var(--group);border-radius:10px;padding:14px}
+  .ocrbox .ocrpt{font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
+  .ocrbox .ocrru{
+    margin-top:10px;padding-top:10px;border-top:.5px solid var(--sep);
+    font-size:15px;line-height:1.45;color:var(--label2);white-space:pre-wrap;
+  }
+
+  /* списки тем */
+  .list{background:var(--group);border-radius:10px;overflow:hidden}
+  .list button{
+    display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+    background:none;border:none;cursor:pointer;padding:11px 14px;color:inherit;
+    border-bottom:.5px solid var(--sep);
+  }
+  .list button:last-child{border-bottom:none}
+  .list button:active{background:var(--fill)}
+  .list .t{flex:1;min-width:0}
+  .list .t b{display:block;font-size:16px;font-weight:400}
+  .list .t span{display:block;font-size:12px;color:var(--label2);margin-top:1px}
+  .list .n{font-size:14px;color:var(--label3);white-space:nowrap}
+  .list .chev{color:var(--label3);font-size:17px;line-height:1}
+  .back{background:none;color:var(--blue);padding:0;min-height:32px;justify-content:flex-start;font-size:16px}
+  .seg{display:flex;gap:2px;background:var(--fill);border-radius:8px;padding:2px;margin-top:10px}
+  .seg button{
+    flex:1;border:none;background:none;cursor:pointer;color:var(--label);
+    font-size:14px;padding:6px 0;border-radius:6px;
+  }
+  .seg button.on{background:var(--group);font-weight:500}
+
+  /* chips */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{
+    padding:7px 13px;border-radius:16px;cursor:pointer;user-select:none;
+    background:var(--group);font-size:16px;line-height:1.2;
+  }
+  .chip:active{opacity:.6}
+  .chip.on{background:var(--blue);color:#fff}
+  .chip.have{opacity:.3;text-decoration:line-through;cursor:default}
+
+  /* word cards */
+  .card{background:var(--group);border-radius:10px;padding:14px;margin-bottom:10px}
+  .card .pt{font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .card .pos{font-size:13px;font-weight:400;color:var(--label3);margin-left:7px}
+  .card .ru{font-size:15px;color:var(--label2);margin-top:2px}
+  .card .ex{margin-top:10px;padding-top:10px;border-top:.5px solid var(--sep);font-size:15px;line-height:1.45}
+  .card .exru{font-size:14px;color:var(--label2);margin-top:3px}
+  .card .note{margin-top:8px;font-size:13px;line-height:1.4;color:var(--orange)}
+  .card .meta{margin-top:12px;display:flex;align-items:center;gap:8px}
+  .badge{font-size:13px;color:var(--label3)}
+  .badge.due{color:var(--orange)}
+  .badge.new{color:var(--blue)}
+
+  /* study */
+  .progress{height:2px;background:var(--fill);border-radius:2px;overflow:hidden;margin:2px 0 16px}
+  .progress i{display:block;height:100%;background:var(--blue);transition:width .3s}
+  #studyCard{
+    background:var(--group);border-radius:12px;cursor:pointer;
+    padding:32px 20px;min-height:260px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+  }
+  #studyCard .tag{font-size:12px;color:var(--label3);margin-bottom:18px;letter-spacing:.04em}
+  #studyCard .q{font-size:30px;font-weight:600;letter-spacing:-.02em;overflow-wrap:break-word;max-width:100%}
+  #studyCard .q.ru{font-size:24px}
+  #studyCard .dots{margin-top:16px;color:var(--label3);letter-spacing:.25em;font-size:14px}
+  #studyCard .a{margin-top:10px;font-size:21px;color:var(--blue)}
+  #studyCard .ex{
+    margin-top:20px;padding-top:16px;border-top:.5px solid var(--sep);
+    font-size:16px;line-height:1.45;width:100%;
+  }
+  #studyCard .exru{margin-top:5px;font-size:14px;color:var(--label2)}
+  #studyCard .nt{margin-top:14px;font-size:13px;color:var(--orange)}
+  .tapHint{text-align:center;font-size:13px;color:var(--label3);margin-top:12px}
+  .grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+  .grades .btn{flex-direction:column;gap:2px;min-height:56px;padding:0 3px;font-size:14px}
+  .grades .btn small{font-size:11px;font-weight:400;opacity:.65}
+  .g0{color:var(--red)}.g1{color:var(--orange)}.g2{color:var(--green)}.g3{color:var(--blue)}
+
+  /* empty */
+  .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
+  .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
+  .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
+
+  /* tab bar */
+  nav{
+    position:fixed;bottom:0;left:0;right:0;z-index:30;
+    display:grid;grid-template-columns:repeat(5,1fr);
+    background:var(--bar);border-top:.5px solid var(--sep);
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  nav button{
+    position:relative;background:none;border:none;cursor:pointer;
+    display:flex;flex-direction:column;align-items:center;gap:3px;
+    padding:7px 0 6px;color:var(--tab);font-size:10px;font-weight:500;
+  }
+  nav button svg{width:24px;height:24px;stroke-width:1.8}
+  nav button.on{color:var(--blue)}
+  nav .dot{
+    position:absolute;top:2px;right:calc(50% - 20px);
+    background:var(--red);color:#fff;font-size:10px;font-weight:600;
+    border-radius:10px;min-width:17px;padding:1px 4px;line-height:15px;
+  }
+
+  /* misc */
+  .toast{
+    position:fixed;left:50%;transform:translateX(-50%);
+    bottom:calc(78px + env(safe-area-inset-bottom));
+    background:rgba(40,40,42,.96);color:#fff;
+    border-radius:12px;padding:11px 16px;font-size:15px;z-index:60;
+    opacity:0;pointer-events:none;transition:opacity .2s;max-width:88vw;text-align:center;
+  }
+  .toast.on{opacity:1}
+  .spin{
+    display:inline-block;width:15px;height:15px;vertical-align:-2px;
+    border:2px solid currentColor;border-top-color:transparent;border-radius:50%;
+    opacity:.8;animation:sp .7s linear infinite;
+  }
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .warn{font-size:13px;line-height:1.45;color:var(--label2);padding:0 4px}
+  .danger-text{color:var(--red)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Português</h1>
+  <div class="sub"><span id="stTotal">0</span> слов · <span id="stDue">0</span> к повтору · <span id="stKnown">0</span> выучено</div>
+</header>
+
+<main>
+  <section id="v-add" class="view on">
+    <div class="sec">
+      <span class="lbl">Слово или выражение</span>
+      <div class="row">
+        <input type="text" id="wordInput" placeholder="arrumar, de repente…" autocapitalize="off" autocomplete="off" spellcheck="false" style="flex:3">
+        <button class="btn primary" id="addOne" style="flex:1;max-width:110px">Добавить</button>
+      </div>
+      <div class="hint">Можно несколько через запятую.</div>
+    </div>
+
+    <div class="sec">
+      <span class="lbl">Скриншот</span>
+      <div class="drop" id="drop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4.5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="M4 16.5l4.6-4.2a2 2 0 0 1 2.7 0L16 16.5"/>
+        </svg>
+        Выбрать скриншот
+      </div>
+      <input type="file" id="imgFile" accept="image/*" style="display:none">
+      <div id="imgPreview" style="display:none">
+        <img id="imgThumb" class="thumb" alt="">
+        <div class="row" style="margin-top:10px">
+          <button class="btn primary" id="ocrBtn">Распознать и перевести</button>
+          <button class="btn" id="imgClear" style="max-width:104px">Убрать</button>
+        </div>
+      </div>
+      <div id="ocrOut"></div>
+      <div class="hint">Можно вставить из буфера (Ctrl+V) или перетащить файл.</div>
+    </div>
+
+    <div class="sec">
+      <span class="lbl">Текст на португальском</span>
+      <textarea id="textInput" placeholder="Абзац из статьи, субтитров, сообщения…" autocapitalize="off" spellcheck="false"></textarea>
+      <div class="row" style="margin-top:10px">
+        <button class="btn" id="parseBtn">Разобрать на слова</button>
+        <button class="btn" id="clearText" style="max-width:104px">Очистить</button>
+      </div>
+      <div id="chipWrap" style="display:none">
+        <div class="hint" style="margin-top:16px">Отметьте незнакомые. Зачёркнутые уже в колоде.</div>
+        <div class="chips" id="chips"></div>
+        <button class="btn primary wide" id="addSelected" style="margin-top:14px" disabled>Создать карточки (0)</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="v-temas" class="view">
+    <div class="sec" id="themesSec">
+      <span class="lbl">Готовые темы A1–A2</span>
+      <div class="list" id="themeList"></div>
+      <div class="hint">Словник Referencial Camões PLE: 1632 слова, 18 тем, без повторов.</div>
+    </div>
+
+    <div class="sec" id="themePanel" style="display:none">
+      <button class="btn back" id="themeBack">‹ Все темы</button>
+      <span class="lbl" id="themeTitle" style="margin-top:10px"></span>
+      <div class="seg" id="themeLevel">
+        <button data-l="all" class="on">Все</button><button data-l="a1">A1</button><button data-l="a2">A2</button>
+      </div>
+      <div class="chips" id="themeChips"></div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn" id="themeAll">Выбрать новые</button>
+        <button class="btn primary" id="themeAdd" disabled>Создать (0)</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="v-cards" class="view">
+    <input type="text" id="search" placeholder="Поиск" autocapitalize="off" style="margin-bottom:14px">
+    <div id="cardList"></div>
+  </section>
+
+  <section id="v-study" class="view">
+    <div class="progress"><i id="prog" style="width:0%"></i></div>
+    <div id="studyWrap"></div>
+  </section>
+
+  <section id="v-set" class="view">
+    <div class="sec">
+      <span class="lbl">OpenAI API key</span>
+      <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off" spellcheck="false">
+      <div class="hint">Хранится в этом браузере, уходит напрямую в api.openai.com.</div>
+    </div>
+    <div class="sec">
+      <span class="lbl">Модель</span>
+      <input type="text" id="model" list="models" autocapitalize="off" spellcheck="false">
+      <datalist id="models">
+        <option value="gpt-4o-mini"></option><option value="gpt-4.1-mini"></option><option value="gpt-4o"></option><option value="gpt-4.1"></option>
+      </datalist>
+      <button class="btn wide" id="testKey" style="margin-top:10px">Проверить ключ</button>
+    </div>
+    <div class="sec">
+      <span class="lbl">Новых карточек в день</span>
+      <input type="text" id="dailyNew" inputmode="numeric">
+    </div>
+    <div class="sec">
+      <span class="lbl">Направление тренировки</span>
+      <select id="dir">
+        <option value="pt">PT → RU</option>
+        <option value="ru">RU → PT</option>
+        <option value="mix">Вперемешку</option>
+      </select>
+    </div>
+    <div class="sec">
+      <span class="lbl">Резервная копия</span>
+      <div class="row">
+        <button class="btn" id="exportBtn">Экспорт</button>
+        <button class="btn" id="importBtn">Импорт</button>
+      </div>
+      <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+      <div class="hint">Данные живут в localStorage этого браузера. Очистка данных сайта их сотрёт.</div>
+    </div>
+    <div class="sec">
+      <span class="lbl">Готовая колода A1–A2</span>
+      <button class="btn wide" id="loadDeck">Загрузить 1636 карточек</button>
+      <div class="hint">Весь словник Camões с переводом, примерами и заметками. Без запросов к OpenAI. Уже добавленные слова пропускаются.</div>
+    </div>
+    <div class="sec">
+      <button class="btn wide danger-text" id="wipe">Удалить все карточки</button>
+    </div>
+    <div class="sec">
+      <div class="warn">Ключ хранится в открытом виде. Заведите отдельный ключ с лимитом расходов и не открывайте приложение на чужом устройстве.</div>
+    </div>
+  </section>
+</main>
+
+<nav>
+  <button data-v="add" class="on">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Добавить</button>
+  <button data-v="temas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Темы</button>
+  <button data-v="cards">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="M8 10h8M8 14h5"/></svg>Карточки</button>
+  <button data-v="study">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/></svg>Учить<span class="dot" id="navDue" style="display:none">0</span></button>
+  <button data-v="set">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M4 8h8M17 8h3M4 16h3M12 16h8"/><circle cx="14.5" cy="8" r="2.5"/><circle cx="9.5" cy="16" r="2.5"/></svg>Настройки</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------------- storage ---------------- */
+const LS_CARDS='pt.cards.v1', LS_SET='pt.settings.v1', LS_LOG='pt.newlog.v1';
+const load=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}};
+let storageWarned=false;
+const save=(k,v)=>{
+  try{ localStorage.setItem(k,JSON.stringify(v)) }
+  catch(e){
+    if(!storageWarned){
+      storageWarned=true;
+      setTimeout(()=>toast('Браузер не даёт сохранять данные — карточки пропадут при перезагрузке',6000),300);
+    }
+  }
+};
+
+let cards = load(LS_CARDS,[]);
+let settings = Object.assign({key:'',model:'gpt-4o-mini',dailyNew:20,dir:'pt'}, load(LS_SET,{}));
+let newLog = load(LS_LOG,{d:'',n:0});
+
+const persist=()=>{save(LS_CARDS,cards);renderStats()};
+const persistSet=()=>save(LS_SET,settings);
+
+/* ---------------- helpers ---------------- */
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+const DAY=864e5;
+const today=()=>new Date().toISOString().slice(0,10);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s||'').toLowerCase().replace(/^(o|a|os|as|um|uma)\s+/,'').replace(/[.,;:!?"'()]/g,'').trim();
+const uid=()=>Math.random().toString(36).slice(2,10)+Date.now().toString(36);
+
+const SVG=p=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg>';
+const IC_REFRESH=SVG('<path d="M20 11a8 8 0 0 0-13.7-5.3L4 8"/><path d="M4 4.5V8h3.5"/><path d="M4 13a8 8 0 0 0 13.7 5.3L20 16"/><path d="M20 19.5V16h-3.5"/>');
+const IC_TRASH=SVG('<path d="M4 7h16M9.5 7V5h5v2M6.5 7l.9 13h9.2l.9-13"/>');
+const IC_DECK=SVG('<rect x="3.5" y="6.5" width="17" height="13" rx="2.5"/><path d="M7 3.5h10M8 11h8M8 15h5"/>');
+const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/>');
+
+let toastT;
+function toast(msg,ms){
+  const t=$('#toast'); t.innerHTML=msg; t.classList.add('on');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),ms||2200);
+}
+
+/* ---------------- OpenAI ---------------- */
+const SYS=`Ты — лексикограф европейского португальского (PT-PT, Португалия; НЕ бразильский вариант).
+На вход даётся список слов/выражений, у некоторых есть "context" — предложение, из которого слово взято.
+Для каждого элемента верни объект:
+- "input": исходная строка "word" дословно, как пришла (для сопоставления).
+- "word": начальная форма в PT-PT. Существительные — с определённым артиклем ("o carro", "a chave"). Глаголы — инфинитив. Прилагательные — муж. род ед. ч. Выражения — как есть.
+- "pos": часть речи по-русски кратко: сущ., глаг., прил., нареч., предл., мест., выраж.
+- "ru": перевод на русский, 1–3 значения через запятую, самое частотное первым.
+- "example_pt": ОДНО естественное предложение на европейском португальском, 7–14 слов, уровень A2–B1, слово в живом контексте. Если дан "context" — строй пример вокруг той же ситуации.
+- "example_ru": перевод примера на русский, естественный, не подстрочник.
+- "note": максимум 90 символов — самое важное: род, неправильное мн. ч. или спряжение, требуемый предлог, отличие от бразильского варианта, ложный друг. Если нечего сказать — пустая строка "".
+Отвечай ТОЛЬКО валидным JSON без markdown: {"cards":[...]}`;
+
+const VSYS=`Ты распознаёшь текст на изображении (скриншот, фото страницы, субтитры, вывеска) и переводишь его на русский.
+Верни ТОЛЬКО валидный JSON без markdown:
+{"text":"<весь текст с картинки дословно, с диакритикой и пунктуацией; абзацы разделяй \\n; не добавляй ничего от себя>",
+ "ru":"<естественный литературный перевод этого текста на русский>",
+ "lang":"<код языка оригинала: pt, en, es, ru…>"}
+Если текста на картинке нет — {"text":"","ru":"","lang":""}.`;
+
+async function callOpenAI(messages){
+  const key=(settings.key||'').trim();
+  if(!key) throw new Error('Не задан API-ключ — откройте Настройки');
+  const model=(settings.model||'gpt-4o-mini').trim();
+  const body={
+    model:model,
+    messages:messages,
+    response_format:{type:'json_object'}
+  };
+  if(!/^(gpt-5|o\d)/.test(model)) body.temperature=0.3;
+
+  const res=await fetch('https://api.openai.com/v1/chat/completions',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+    body:JSON.stringify(body)
+  });
+  if(!res.ok){
+    let d=''; try{const j=await res.json(); d=(j.error&&j.error.message)||''}catch(e){}
+    throw new Error('API '+res.status+': '+(d||res.statusText));
+  }
+  const data=await res.json();
+  const txt=(data.choices&&data.choices[0]&&data.choices[0].message.content)||'{}';
+  try{ return JSON.parse(txt) }
+  catch(e){ throw new Error('Модель вернула не-JSON. Попробуйте другую модель.') }
+}
+
+async function askAI(items){
+  const parsed=await callOpenAI([
+    {role:'system',content:SYS},
+    {role:'user',content:JSON.stringify({items:items})}
+  ]);
+  const arr=parsed.cards||parsed.items||parsed.result||[];
+  if(!Array.isArray(arr)||!arr.length) throw new Error('Пустой ответ модели');
+  return arr;
+}
+
+async function askVision(dataUrl){
+  const parsed=await callOpenAI([
+    {role:'system',content:VSYS},
+    {role:'user',content:[
+      {type:'text',text:'Распознай текст на этом изображении и переведи его на русский.'},
+      {type:'image_url',image_url:{url:dataUrl,detail:'high'}}
+    ]}
+  ]);
+  if(typeof parsed.text!=='string') throw new Error('Модель не вернула текст. Возможно, она не умеет читать картинки.');
+  return parsed;
+}
+
+const CHUNK=12;
+async function createCards(items){
+  const fresh=[];
+  for(let i=0;i<items.length;i+=CHUNK){
+    const part=items.slice(i,i+CHUNK);
+    if(items.length>CHUNK) toast('<span class="spin"></span> Генерирую '+(i+1)+'–'+Math.min(i+CHUNK,items.length)+' из '+items.length+'…',60000);
+    const res=await askAI(part);
+    for(const r of res){
+      if(!r||!r.word) continue;
+      if(cards.some(c=>norm(c.word)===norm(r.word))||fresh.some(c=>norm(c.word)===norm(r.word))) continue;
+      fresh.push({
+        id:uid(),
+        word:String(r.word).trim(),
+        query:String(r.input||'').trim(),
+        pos:String(r.pos||'').trim(),
+        ru:String(r.ru||'').trim(),
+        ex:String(r.example_pt||'').trim(),
+        exru:String(r.example_ru||'').trim(),
+        note:String(r.note||'').trim(),
+        created:Date.now(), due:Date.now(), interval:0, ease:2.5, reps:0, lapses:0
+      });
+    }
+  }
+  cards=fresh.concat(cards);
+  persist();
+  return fresh;
+}
+
+/* ---------------- ADD ---------------- */
+async function runAdd(inputs, btn){
+  const items=inputs.filter(Boolean);
+  if(!items.length) return;
+  const todo=items.filter(it=>!cards.some(c=>norm(c.word)===norm(it.text)||norm(c.query)===norm(it.text)));
+  const known=items.length-todo.length;
+  if(!todo.length){toast('Такие карточки уже есть');return}
+  const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
+  try{
+    const fresh=await createCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
+    const skipped=todo.length-fresh.length+known;
+    toast('Добавлено '+fresh.length+(skipped?', пропущено дублей: '+skipped:''));
+    if(fresh.length){ $('#wordInput').value=''; renderCards(); }
+  }catch(e){ toast(esc(e.message),5000) }
+  finally{ btn.disabled=false; btn.innerHTML=old; renderStats(); }
+}
+
+$('#addOne').onclick=()=>{
+  const raw=$('#wordInput').value.split(/[,;\n]/).map(s=>s.trim()).filter(Boolean);
+  if(!raw.length){toast('Введите слово');return}
+  runAdd(raw.map(text=>({text:text})),$('#addOne'));
+};
+$('#wordInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('#addOne').click()});
+
+const STOP=new Set(('o a os as um uma uns umas de do da dos das em no na nos nas por para pelo pela com sem sob sobre entre até'+
+ ' e ou mas que se como quando onde porque já não sim muito mais menos também só tudo todo toda todos todas isto isso aquilo este esta'+
+ ' esse essa aquele aquela eu tu ele ela nós vós eles elas me te lhe lhes meu minha teu tua seu sua nosso nossa dele dela'+
+ ' ser estar ter haver ir vir é sou és somos são está estou estás estamos estão foi era tem têm tenho havia'+
+ ' ao aos à às pra num numa dum duma qual quais quem cujo lhe nem sua seus suas').split(/\s+/));
+
+$('#parseBtn').onclick=()=>{
+  const text=$('#textInput').value.trim();
+  if(!text){toast('Вставьте текст');return}
+  const sentences=text.split(/(?:(?<=[.!?…])\s+)|\n+/).map(s=>s.trim()).filter(Boolean);
+  const seen=new Map();
+  sentences.forEach(sent=>{
+    const ws=sent.toLowerCase().match(/[a-zà-öø-ÿ][a-zà-öø-ÿ'’-]*/gi)||[];
+    ws.forEach(w=>{
+      const bare=w.replace(/[’'-]+$/,'');
+      if(bare.length<3||STOP.has(bare)) return;
+      if(!seen.has(bare)) seen.set(bare,sent);
+    });
+  });
+  const list=[...seen.entries()];
+  if(!list.length){toast('Не нашёл слов');return}
+  $('#chips').innerHTML=list.map(([w,ctx])=>{
+    const have=cards.some(c=>norm(c.word)===w||norm(c.query)===w);
+    return '<span class="chip'+(have?' have':'')+'" data-w="'+esc(w)+'" data-c="'+esc(ctx)+'">'+esc(w)+'</span>';
+  }).join('');
+  $('#chipWrap').style.display='block';
+  updateSelCount();
+};
+$('#chips').onclick=e=>{
+  const chip=e.target.closest('.chip'); if(!chip||chip.classList.contains('have'))return;
+  chip.classList.toggle('on'); updateSelCount();
+};
+function updateSelCount(){
+  const n=$$('#chips .chip.on').length;
+  const b=$('#addSelected'); b.disabled=!n; b.textContent='Создать карточки ('+n+')';
+}
+$('#addSelected').onclick=()=>{
+  const sel=$$('#chips .chip.on').map(c=>({text:c.dataset.w,context:c.dataset.c}));
+  if(!sel.length)return;
+  runAdd(sel,$('#addSelected')).then(()=>{
+    $$('#chips .chip.on').forEach(c=>{c.classList.remove('on');c.classList.add('have')});
+    updateSelCount();
+  });
+};
+$('#clearText').onclick=()=>{$('#textInput').value='';$('#chipWrap').style.display='none'};
+
+/* ---------------- скриншот → OCR → перевод ---------------- */
+let imgData=null;
+
+function shrink(file,maxSide){
+  return new Promise((res,rej)=>{
+    if(!file||!/^image\//.test(file.type)) return rej(new Error('Это не изображение'));
+    const fr=new FileReader();
+    fr.onerror=()=>rej(new Error('Не удалось прочитать файл'));
+    fr.onload=()=>{
+      const img=new Image();
+      img.onerror=()=>rej(new Error('Не удалось открыть изображение'));
+      img.onload=()=>{
+        const k=Math.min(1,(maxSide||1600)/Math.max(img.width,img.height));
+        const cv=document.createElement('canvas');
+        cv.width=Math.max(1,Math.round(img.width*k));
+        cv.height=Math.max(1,Math.round(img.height*k));
+        cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);
+        res(cv.toDataURL('image/jpeg',0.85));
+      };
+      img.src=fr.result;
+    };
+    fr.readAsDataURL(file);
+  });
+}
+
+async function setImage(file){
+  try{
+    imgData=await shrink(file,1600);
+    $('#imgThumb').src=imgData;
+    $('#imgPreview').style.display='block';
+    $('#ocrOut').innerHTML='';
+    $('#imgPreview').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }catch(e){ toast(esc(e.message)) }
+}
+
+$('#drop').onclick=()=>$('#imgFile').click();
+$('#imgFile').onchange=e=>{ if(e.target.files[0]) setImage(e.target.files[0]); e.target.value='' };
+$('#imgClear').onclick=()=>{
+  imgData=null; $('#imgThumb').removeAttribute('src');
+  $('#imgPreview').style.display='none'; $('#ocrOut').innerHTML='';
+};
+
+['dragenter','dragover'].forEach(ev=>$('#drop').addEventListener(ev,e=>e.preventDefault()));
+$('#drop').addEventListener('drop',e=>{
+  e.preventDefault();
+  const f=e.dataTransfer&&e.dataTransfer.files[0];
+  if(f) setImage(f);
+});
+
+document.addEventListener('paste',e=>{
+  const items=(e.clipboardData&&e.clipboardData.items)||[];
+  for(const it of items){
+    if(it.type&&it.type.indexOf('image/')===0){
+      const f=it.getAsFile();
+      if(f){
+        e.preventDefault();
+        $$('nav button').find(b=>b.dataset.v==='add').click();
+        setImage(f);
+      }
+      return;
+    }
+  }
+});
+
+$('#ocrBtn').onclick=async e=>{
+  if(!imgData){toast('Сначала выберите скриншот');return}
+  const b=e.target, old=b.innerHTML;
+  b.disabled=true; b.innerHTML='<span class="spin"></span> Читаю…';
+  try{
+    const r=await askVision(imgData);
+    const text=(r.text||'').trim();
+    if(!text){ toast('На картинке не нашлось текста',3500); $('#ocrOut').innerHTML=''; return }
+    const lang=(r.lang||'').toLowerCase();
+    $('#ocrOut').innerHTML=
+      '<div class="ocrbox">'+
+        '<div class="ocrpt">'+esc(text)+'</div>'+
+        (r.ru?'<div class="ocrru">'+esc(r.ru)+'</div>':'')+
+      '</div>';
+    $('#textInput').value=text;
+    $('#parseBtn').click();
+    if(lang&&lang!=='pt') toast('Похоже, текст на языке «'+esc(lang)+'», а не на португальском',4000);
+  }catch(err){ toast(esc(err.message),5000) }
+  finally{ b.disabled=false; b.innerHTML=old }
+};
+
+/* ---------------- готовые темы A1–A2 (Referencial Camões PLE) ---------------- */
+const TEMAS=[{"id":"A1","ru":"Бытие","pt":"Existenciais","a1":["estar","haver","sem","ser","ter","viver"],"a2":["acontecer","ausente","falta","faltar","livre","morrer","nascer","ninguém","não haver nada","ocupado","presente"]},{"id":"A2","ru":"Пространство","pt":"Espaciais","a1":["ali","andar","antes","aquele","aqui","aquilo","atrás","aí","baixo","chegar","começar","dali","daqui","daí","de cima","de onde","de trás","deitar-se","dentro","depois","direita","direito","em frente","entrar","entre","esse","este","ficar","fora","ir","isso","isto","levantar-se","longe","lugar","norte","oeste","onde","parar","perto","por onde","sair","sentar-se","sul","viajar","vir"],"a2":["atravessar","cair","caminhar","causa","cá","dar uma volta","descer","direção","distante","empurrar","esquerdo","estar parado","exercício","fazer desporto","ir-se embora","levantar","levar","lá","mexer","para dentro","passar","passear","por cima","próximo","puxar","pôr","região","saltar","seguinte","subir","sítio","trazer","vir-se embora","virar","voltar","último"]},{"id":"A3","ru":"Размер и форма","pt":"Dimensionais","a1":["alto","calor","comprido","curto","frio","gordo","grama","grande","largo","litro","magro","metro","número","pequeno","quente","quilo","quilómetro"],"a2":["apertado","centímetro","cheio","comprimento","grau","leve","magreza","metro quadrado","médio","obesidade","pesado","peso","quilómetro quadrado","tamanho único","temperatura","ter frio","vazio"]},{"id":"A4","ru":"Время","pt":"Temporais","a1":["abril","acabar","agora","agosto","amanhã","ano","até","até agora","cedo","costumar","de dia","de manhã","depressa","desde","devagar","dezembro","dia","domingo","esta manhã","fevereiro","fim de semana","hoje","hora","horário","inverno","janeiro","julho","junho","logo","maio","mais cedo","mais tarde","manhã","março","meia-noite","meio-dia","minuto","mudar","muito","mês","noite","novembro","nunca","outono","outubro","pouco tempo","primavera","princípio","quando","quarta","quinta","seguir","segunda","segundo","semana","sempre","setembro","sexta","sábado","tarde","terça","verão","vez"],"a2":["adiado","adiantar","adiar","ainda","aniversário","ano passado","ano que vem","ano seguinte","anteontem","anterior","antes da hora","antes do tempo","antigamente","atrasar","atraso","bocado","breve","carnaval","começo","conclusão","dantes","data","de repente","demora","demorar","depois da hora","depois de amanhã","durante","em breve","enquanto","fechar","feriado","ficar para depois","fim","final de tarde","fins de semana","frequente","frequentemente","há dois dias","há duas horas","juntamente","já","lentamente","lento","logo à tarde","longo","mais logo","mais uma vez","meia hora","momento","morte","mudança","muitas vezes","muito tempo","mês anterior","mês passado","naquela manhã","neste momento","normalmente","novamente","ontem","outra vez","para a semana","para o mês","por agora","poucas vezes","páscoa","quarto de hora","quase nunca","rapidamente","rápido","sem parar","século","só","só uma vez","todas as manhãs","tornar-se","trocar","umas horas"]},{"id":"A5","ru":"Количество","pt":"Quantitativas","a1":["cem","copo","gente","mais","menos","mil","milhão","pouco","preço","primeiro","quanto","quinhentos","também","todo","zero"],"a2":["algum","bastante","dezena","dúzia","meio","metade","nada","nenhum","outro","pacote","quase","totalmente","tudo","tão"]},{"id":"A6","ru":"Качества","pt":"Qualitativas","a1":["amarelo","ar","azul","bom","branco","castanho","cheirar bem","cinzento","como","cor","cor de laranja","cor-de-rosa","doce","doente","duro","encarnado","entrada","forte","fraco","gostar","lavar","limpar","madeira","mal","metal","mole","novo","olhar","ouvir","pano","papel","pintar","plástico","preto","roxo","saber bem","saída","som","sujar","velho","ver","verde","vermelho","vidro","água","óculos"],"a2":["aberto","abrir","algodão","amargo","antigo","aspeto","azedo","barulho","bege","cartolina","cheiro","claro","cristal","círculo","escuro","fechado","ferido","forma","gosto","grená","gritar","grito","húmido","lado","lavado","lilás","limpo","lã","mau estado","moderno","molhar","morto","ouro","partido","pele","perceber","pintado","prata","quadrado","redondo","resistente","sabor","saída de emergência","secar","seco","sentir","silêncio","suave","sujo","tapar","tecido","ter cheiro","ter gosto","tinta","usado","ver-se","ver-se bem","vinho tinto","vista","vivo","voz"]},{"id":"A7","ru":"Оценка","pt":"Avaliativas","a1":["barato","bem","bonito","caro","certo","conseguir","custar","difícil","errado","estar bem","feio","fácil","importante","mau","pagar","querer","saber","todos os dias","usar"],"a2":["acertar","apetecer","complicado","correto","correção","desejar","dever ser","dia-a-dia","diferente","dificilmente","erro","esquisito","estar certo","estranho","facilmente","ganhar","giro","habitual","habitualmente","lindo","melhor","normal","pior","poder","preparado","proibido","prático","regular","regularmente","rotina","sem importância","simples","tentar","uso","utilizar","valer","valor","útil"]},{"id":"A8","ru":"Мышление и речь","pt":"Mentais","a1":["conhecer","dizer","escrever","esperar","falar","pensar","pergunta","perguntar","responder","resposta"],"a2":["acreditar","agradecer","aviso","certeza","contar","conversa","convidar","convite","entender","ideia","inteligente","opinião","pedido","proibir","recado","ter a certeza"]},{"id":"A9","ru":"Связки и отношения","pt":"Relacionais","a1":["dar","então","mas","porque","porquê","sobre"],"a2":["adicionalmente","afinal","causar","concluir","dono","em vez","juntar","juntos","mesmo assim","motivo","nem","por essa razão","por isso","por outro lado","por que razão","portanto","provocar","separados","separar"]},{"id":"B1","ru":"Личные данные","pt":"Identificação pessoal","a1":["adulto","agnóstico","agradável","alegre","antipático","apartamento","apelido","aprender","apresentar-se","assinar","assinatura","ateu","aula","avenida","avó","avô","biblioteca","bilhete de identidade","budista","básico","carta de condução","cartão de cidadão","casa","casado","chamar","chamar-se","companheiro","computador","criança","cristão","código postal","data de nascimento","deus","divorciado","email","endereço de email","ensino secundário","enviar","escola","estado civil","estudante","estudar","exame","família","fax","fazer","feminino","filho","género","hindu","homem","idade","idoso","instituto","interessante","internet","irmã","jovem","judeu","licenciatura","ligar","local de trabalho","louro","lugar de nascimento","mandar um fax","marido","masculino","menina","menino","mensagem","morada","morar","moreno","mulher","muçulmano","mãe","namorado","neto","nome completo","nome próprio","número da porta","número de telefone","pai","passaporte","praça","primo","professor","profissão","rapariga","rapaz","religião","rua","ruivo","secundário","senhor","senhora","separado","sexo","simpático","sms","solteiro","superior","telefonar","telefone","telemóvel","tio","tirar","trabalho","unido de facto","universidade","universitário","viúvo"],"a2":["academia","agnosticismo","altura","alugada","amável","apresentar","arrendada","ateísmo","bebé","bigode","bissexual","budismo","cachecol","calmo","calçar","cartão de estudante","casa própria","casar-se","cave","chapéu","cliente","colégio","compreensivo","concelho","cristianismo","cunhado","departamento","dia de anos","distrito","divorciar-se","doutoramento","educado","egoísta","empresa","encaracolado","endereço","ensinar","escritório","estar careca","estar reformado","estúpido","ex","fazer anos","filho único","firma","fotocopiadora","franja","freguesia","frente","fábrica","genro","heterossexual","hinduísmo","homossexual","igreja","impressora","imprimir","instituição","irmãos gémeos","islamismo","judaísmo","juntar-se","luvas","marcar","matrícula","medir","mesa de reuniões","mesquita","mestrado","miúdo","montar","mudar de casa","namorar","natal","negócio","noivo","nora","ondulado","organização","otimista","parecer","passe","pedir férias","pedir nacionalidade","pensão","pentear-se","pesar","praceta","programa","ramadão","reforma","rés do chão","sabat","sala de reuniões","secretária","separar-se","sinagoga","site de internet","sogro","suficiente","ter barba","ter férias","ter uma reunião","tirar fotocópias","trabalhar","transexual","título académico","usar gorro","usar óculos","viver juntos"]},{"id":"B2","ru":"Дом и окружение","pt":"Casa e meio-ambiente","a1":["animal","aquecimento","arrendamento","arrendar","banheira","cadeira","café","caixa","cama","campo","capital","casa de banho","chave","chover","chuveiro","chávena","cidade","colher","comando","comprar","congelador","cozinha","cão","desligar","despensa","eletricidade","eletrodomésticos","estação de comboios","estrangeiro","faca","fechadura","flor","floresta","fogão","forno","frigorífico","fruto","garagem","garfo","garrafa","gato","gás","hospital","hotel","janela","jardim","lago","lavatório","lixo","loja","luz","mapa","mar","mau tempo","mesa","museu","nevar","paragem de autocarro","parede","parque","país","peixe","periquito","piso","placa","planta","porta","praia","prato","praça de táxis","pássaro","quarto","relógio","renda","restaurante","rio","sala de estar","sala de jantar","sanita","sofá","sol","televisão","tempo","toalha","torneira","vender","vento","vídeo","árvore"],"a2":["acender","aldeia","almofada","alugar","aluguer","américa","animal doméstico","apagar","aquecedor","ar condicionado","armário","aspirador","assoalhada","autoclismo","bairro","baixa","banho","bidé","boi","botão","cadeirão","cafeteira","campainha","caneca","cavalo","centro comercial","chuva","clima","cobertor","coelho","contentor de lixo","continente","corda","corredor","corrente","costa","cravo","câmara municipal","céu","dvd","elevador","erva","escadas","esquentador","esquina","estante","europa","fatura","ferro de engomar","ficha","fio","folha","fresco","frigideira","galinha","galo","gaveta","habitante","hall","humidade","inquilino","interior","jarro","lagoa","lareira","lava-louça","lençol","louça","lâmpada","margem","mesa de cabeceira","micro-ondas","mobília","monte","mosca","mosquito","multibanco","móvel","natureza","nevoeiro","nordeste","noroeste","nuvem","oceano","oceânia","oliveira","paisagem","panela","pano da louça","parque natural","partilhar casa","pinheiro","portão","prateleira","procurar casa","proprietário","quintal","ramo de flores","recibo","reciclagem","rosa","rosto","roupeiro","secador","selvagem","senhorio","sudeste","sudoeste","tabuleiro","tacho","tempestade","teto","toalha de mãos","tomada","torradeira","vaca","varanda","vila","wifi","zona","áfrica","ásia","égua"]},{"id":"B3","ru":"Повседневная жизнь","pt":"Vida diária","a1":["almoçar","almoço","caderno","caneta","chegar a casa","colega","começar a trabalhar","curso","despir-se","disciplina","horário de trabalho","ir às compras","jantar","lanchar","lanche","lavar-se","livro","lápis","pequeno-almoço","quadro","recreio","sair da escola","sair do trabalho","sala de aula","semestre","supermercado","turma","vestir-se"],"a2":["apagador","aprovar","atender uma chamada","chefe","chá","escovar os dentes","estar disponível","fazer a barba","folga","gabinete","impostos","ir ao quadro","mandar","manual","maquilhar-se","marcador","material","prova","receção","refeitório","reprovar","sair mais tarde","ter aulas","teste","tomar","tomar café","trabalhos de casa","ver televisão"]},{"id":"B4","ru":"Досуг","pt":"Tempos livres","a1":["arte","brincadeira","brincar","cantar","circo","conversar","correr","dançar","desporto","esquiar","filme","futebol","férias","história","hobby","interesse","ir ao cinema","jogar","jogar futebol","jogo","jornal","ler","música","nadar","natação","passatempo","poema","página","revista","rádio","teatro","ter tempo","tocar"],"a2":["andar de bicicleta","andebol","artigo","artista plástico","ator","atriz","atuar","autor","bailarino","ballet","banda","basquetebol","bilhete","boneca","brinquedo","canal de televisão","cantor","canção","capa","carrinho","cartas","cd","cinema","colorir","concerto","conferência","conto","contracapa","damas","dança","dar uma festa","debate","debater","declamar","desenhar","desenho","desocupado","desportista","divertir-se","duração","empatar","escritor","escultura","espetador","esqui","estar de férias","estar livre","exposição","fazer um curso","feira do livro","ficção","fotografia","fã","ginásio","ginástica","guitarra","guitarrista","hi-fi","jogador","jogar contra","jogo de computador","jogo do galo","jornal diário","jornalista","leitura","linha","literatura","livraria","notícias","obra de teatro","partida de ténis","peça","piano","pintura","piscina","podcast","poesia","portátil","praticar desporto","programa de televisão","público","reservar um bilhete","semanário","ser fã","surf","telejornal","telespectador","ténis","título","videoclipe","voleibol","xadrez","youtube","ópera"]},{"id":"B5","ru":"Поездки и транспорт","pt":"Viagens e deslocações","a1":["aeroporto","agência de turismo","autocarro","avião","bagagem","balcão de informações","barco","bicicleta","cama individual","caminho","carro","carteira","chave do quarto","comboio","comodidades","condutor","conta","data de chegada","destino","dinheiro","documento de identificação","em dinheiro","estacionamento","estadia","estrada","férias na praia","ir em frente","mala","montanha","mota","motorista","neve","pagar com cartão","parque de campismo","partida","porto","preço por noite","procurar","quarto de casal","quarto duplo","reserva","saco","taxista","tenda","turismo","turista","táxi","viagem","viajar de carro","virar à esquerda","visita","visitar"],"a2":["alfândega","alojamento","andar de carro","andar de táxi","apanhar um táxi","apartamento de férias","assistente de bordo","autorização de residência","bagagem de mão","bilheteira","cabina","caixote","cartão de crédito","cartão multibanco","castelo","check-in","chegadas","cinco estrelas","classe económica","classe executiva","cortar","cruzamento","dar passagem","declaração","depósito de bagagem","desconto","devolução","distância","dobrar à esquerda","dormida","elétrico","embrulho","encher o depósito","entrega","especial","estar cheio","estar verde","excursão","exterior","fazer a mala","fazer planos","fazer uma reserva","fronteira","galeria de arte","gasolina","gorjeta","guia turístico","haver quartos disponíveis","hóspede","kitchenette","lavar o carro","mala de bebé","mecânico","meia pensão","meter gasóleo","miradouro","moeda estrangeira","motel","mudar de comboio","oferta","origem","pacote de férias","para trás","partidas","passageiro","passagem","passar a rua","passeio","pedir direções","pensão completa","piloto","piscina interior","porão","pousada","primeira classe","promoção","quarteirão","recolha","reservar","residência","roda","ruínas","sair do táxi","seguir em frente","segunda classe","seguro de viagem","servir o pequeno-almoço","serviço de quarto","viajar de avião","visto de turista","voltar atrás","voo"]},{"id":"B6","ru":"Здоровье и гигиена","pt":"Saúde e higiene","a1":["acidente","acordar","adormecer","ambulância","aspirina","boca","cabelo","cabeça","cansado","cara","clínica","comprimido","constipação","coração","corpo","dentista","doença","doer","dor","dormir","duche","enfermeiro","estar acordado","estar com fome","estar constipado","farmacêutico","farmácia","ferida","gripe","ibuprofeno","lavar os dentes","medicamento","médico","nariz","olho","paracetamol","partir","queimar","sabonete","sabão","sangue","sede","sentir-se","sono","ter fome","tomar banho"],"a2":["adoecer","alergia","analgésico","ansiedade","anti-inflamatório","barriga","braço","centro de saúde","champô","chorar","colocar pomada","coluna","comer bem","consulta médica","consultório","costas","creme de mãos","dedo","dente","depressão","desodorizante","doer a cabeça","dormir bem","escova de dentes","estar nervoso","estômago","febre","ficar doente","garganta","gel duche","gilete","gotas","horário de visitas","injeção","ir ao médico","lavar a roupa","levar uma injeção","magoar um pé","membro","mão","médico de família","ouvido","paciente","papel higiénico","pasta de dentes","pastilha","peito","penso","penso higiénico","pente","pentear","perna","pescoço","pomada","preservativo","pílula","rir","segurança social","ser alérgico","ser saudável","stress","ter gripe","ter vontade","tomar um medicamento","tosse","tronco","vacina","visitar um paciente","água morna"]},{"id":"B7","ru":"Покупки","pt":"Compras","a1":["bebida","calças","camisa","comida","cêntimo","euro","florista","medida","mercado","moeda","nota","padaria","receber","saia","sapatos","t-shirt","tamanho","total","troco"],"a2":["alimento","anel","atender","atum","balcão","biquíni","blusa","blusão","botas","brincos","bóxeres","calções de banho","camisola","colar","cuecas","despir","dúzia de ovos","esparguete","experimentar","fato","fato de banho","gorro","lata de tomate","lenço","litro de leite","loja de roupa","meias","meio quilo","mostrar","nylon","pacote de arroz","pagamento","papelaria","pijama","porta-moedas","provador","quantia","quilo de batatas","roupa","saldos","sapataria","secção de homem","soutiã","unidade","vendedor","vestir","óculos de sol"]},{"id":"B8","ru":"Еда","pt":"Alimentação","a1":["alimentação","arroz","açúcar","banana","batata","beber","carne","carne de vaca","cereal","chocolate","comer","cozinhar","ementa","empregado","frango","fruta","gelado","laranja","leite","massa","maçã","menu","ovo","pedir","pimenta","porco","preparar","provar","pão","sal","salada","sopa","tomar o pequeno-almoço","tomate","trigo","vegetal"],"a2":["alface","alho","amêndoa","assado","assar","azeite","bacalhau","batatas fritas","bater","bica","bolacha","bolo","bom apetite","cafetaria","café cheio","caloria","camarão","cebola","cenoura","centilitro","cerveja","chef","colher de sopa","com gás","comida chinesa","copo de vinho","couve","cozer","cozido","cozinheiro","decidir","decilitro","descafeinado","descascar","dieta","dose","empregado de mesa","energia","escolher","farinha","fazer o pequeno-almoço","ferver","fiambre","fritar","frito","gamba","grelhado","grelhar","guardanapo","indiano","ingrediente","iogurte","italiano","lata","laticínio","mal cozido","mal passado","manteiga","melancia","menu do dia","milho","mililitro","misturar","natural","noz","omelete","pastelaria","peru","peso corporal","picar","piquenique","piza","prato principal","pão com manteiga","pêra","queijo","receita","refeição","reservar mesa","salmão","salsa","salsicha","sandes mista","saudável","servir","sobremesa","sumo","tangerina","temperar","tempero","tempo de preparação","tomar um café","torrada","torrado","torrar","uva","vegetarianismo","vegetariano","vinagre","vinho","vitamina","água mineral"]},{"id":"B9","ru":"Услуги","pt":"Serviços","a1":["ajuda","banco","bombeiro","carta","cartão","correios","envelope","fazer uma chamada","fotocópia","perder","polícia","postal","roubar","selo"],"a2":["caixa multibanco","carta digital","carteiro","chamar a polícia","cheque","correios online","empregado dos correios","fechar uma conta","ir aos correios","marco de correio","meter","número de conta","número de emergência","posto dos correios","queixa","receber uma carta","saldo negativo","saldo positivo","socorro"]}];
+
+let openTema=null, temaLevel='all';
+const hasWord=w=>cards.some(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w));
+const temaWords=t=>temaLevel==='all'?t.a1.concat(t.a2):t[temaLevel];
+
+function renderTemaList(){
+  $('#themeList').innerHTML=TEMAS.map((t,i)=>{
+    const all=t.a1.concat(t.a2);
+    const left=all.filter(w=>!hasWord(w)).length;
+    return '<button data-i="'+i+'">'+
+      '<span class="t"><b>'+esc(t.ru)+'</b><span>'+esc(t.pt)+' · A1 '+t.a1.length+' · A2 '+t.a2.length+'</span></span>'+
+      '<span class="n">'+(left?'осталось '+left:'всё есть')+'</span>'+
+      '<span class="chev">›</span></button>';
+  }).join('');
+}
+function renderTemaChips(){
+  const t=TEMAS[openTema]; if(!t)return;
+  const list=temaWords(t);
+  $('#themeTitle').textContent=t.ru+' · '+list.length;
+  $('#themeChips').innerHTML=list.map(w=>{
+    const have=hasWord(w);
+    return '<span class="chip'+(have?' have':'')+'" data-w="'+esc(w)+'">'+esc(w)+'</span>';
+  }).join('');
+  updateTemaCount();
+}
+function updateTemaCount(){
+  const n=$$('#themeChips .chip.on').length;
+  const b=$('#themeAdd'); b.disabled=!n; b.textContent='Создать ('+n+')';
+}
+$('#themeList').onclick=e=>{
+  const b=e.target.closest('button[data-i]'); if(!b)return;
+  openTema=+b.dataset.i; temaLevel='all';
+  $$('#themeLevel button').forEach(x=>x.classList.toggle('on',x.dataset.l==='all'));
+  $('#themesSec').style.display='none';
+  $('#themePanel').style.display='block';
+  renderTemaChips();
+};
+$('#themeBack').onclick=()=>{
+  $('#themePanel').style.display='none';
+  $('#themesSec').style.display='block';
+  openTema=null; renderTemaList();
+};
+$('#themeLevel').onclick=e=>{
+  const b=e.target.closest('button'); if(!b)return;
+  temaLevel=b.dataset.l;
+  $$('#themeLevel button').forEach(x=>x.classList.toggle('on',x===b));
+  renderTemaChips();
+};
+$('#themeChips').onclick=e=>{
+  const chip=e.target.closest('.chip'); if(!chip||chip.classList.contains('have'))return;
+  chip.classList.toggle('on'); updateTemaCount();
+};
+$('#themeAll').onclick=()=>{
+  const off=$$('#themeChips .chip:not(.have)');
+  const allOn=off.length&&off.every(c=>c.classList.contains('on'));
+  off.forEach(c=>c.classList.toggle('on',!allOn));
+  updateTemaCount();
+};
+$('#themeAdd').onclick=()=>{
+  const sel=$$('#themeChips .chip.on').map(c=>({text:c.dataset.w}));
+  if(!sel.length)return;
+  runAdd(sel,$('#themeAdd')).then(()=>{ renderTemaChips(); renderTemaList(); });
+};
+
+/* ---------------- CARDS ---------------- */
+function cardHTML(c){
+  const due=c.due<=Date.now();
+  const isNew=c.reps===0;
+  const when=isNew?'новая':due?'к повтору':'через '+Math.max(1,Math.ceil((c.due-Date.now())/DAY))+' дн.';
+  const cls=isNew?' new':due?' due':'';
+  return '<article class="card" data-id="'+c.id+'">'+
+    '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
+    '<div class="ru">'+esc(c.ru)+'</div>'+
+    (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+    (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
+    '<div class="meta"><span class="badge'+cls+'">'+when+'</span>'+
+      (c.reps?'<span class="badge">· повторов '+c.reps+'</span>':'')+
+      '<span style="flex:1"></span>'+
+      '<button class="btn icon" data-act="regen" title="Перегенерировать">'+IC_REFRESH+'</button>'+
+      '<button class="btn icon" data-act="del" title="Удалить">'+IC_TRASH+'</button>'+
+    '</div></article>';
+}
+function renderCards(){
+  const q=norm($('#search').value);
+  const list=cards.filter(c=>!q||norm(c.word).includes(q)||norm(c.ru).includes(q)||norm(c.ex).includes(q));
+  $('#cardList').innerHTML = list.length
+    ? list.map(cardHTML).join('')
+    : '<div class="empty">'+IC_DECK+(cards.length
+        ? '<div>Ничего не найдено</div>'
+        : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
+}
+$('#search').oninput=renderCards;
+$('#cardList').onclick=async e=>{
+  const btn=e.target.closest('[data-act]'); if(!btn)return;
+  const id=e.target.closest('.card').dataset.id;
+  const c=cards.find(x=>x.id===id); if(!c)return;
+  if(btn.dataset.act==='del'){
+    if(!confirm('Удалить «'+c.word+'»?'))return;
+    cards=cards.filter(x=>x.id!==id); persist(); renderCards(); toast('Удалено');
+  }else{
+    const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
+    try{
+      const r=(await askAI([{word:c.word}]))[0];
+      c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
+      c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
+      if(r.note!=null) c.note=r.note;
+      persist(); renderCards(); toast('Обновлено');
+    }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
+  }
+};
+
+/* ---------------- STUDY ---------------- */
+let queue=[], current=null, shown=false, sessionTotal=0, sessionDone=0;
+
+function newAllowance(){
+  if(newLog.d!==today()){newLog={d:today(),n:0};save(LS_LOG,newLog)}
+  return Math.max(0,(+settings.dailyNew||20)-newLog.n);
+}
+function buildQueue(){
+  const now=Date.now();
+  const due=cards.filter(c=>c.reps>0&&c.due<=now).sort((a,b)=>a.due-b.due);
+  const fresh=cards.filter(c=>c.reps===0).slice(0,newAllowance());
+  queue=due.concat(fresh);
+  sessionTotal=queue.length; sessionDone=0;
+}
+const dirFor=()=> settings.dir==='mix' ? (Math.random()<.5?'pt':'ru') : settings.dir;
+
+function renderStudy(){
+  const w=$('#studyWrap');
+  if(!current){
+    if(!queue.length){
+      $('#prog').style.width='100%';
+      const next=cards.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
+      w.innerHTML='<div class="empty">'+IC_DONE+
+        (cards.length?'<div>На сегодня всё повторено</div>':'<div>Добавьте слова, чтобы начать</div>')+
+        (next?'<div class="sub">Следующее повторение: '+new Date(next.due).toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+'</div>':'')+
+        (cards.length?'<div style="margin-top:20px"><button class="btn" id="againAll">Повторить всё заново</button></div>':'')+'</div>';
+      const b=$('#againAll');
+      if(b) b.onclick=()=>{queue=cards.slice().sort(()=>Math.random()-.5);sessionTotal=queue.length;sessionDone=0;nextCard()};
+      return;
+    }
+    nextCard(); return;
+  }
+  const c=current.card, d=current.dir;
+  const q = d==='pt' ? c.word : c.ru;
+  const a = d==='pt' ? c.ru : c.word;
+  const left=queue.length+1;
+  $('#prog').style.width=(sessionDone/(sessionDone+left)*100)+'%';
+  w.innerHTML=
+    '<div id="studyCard">'+
+      '<div class="tag">'+(d==='pt'?'PT → RU':'RU → PT')+'</div>'+
+      '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
+      (shown?'<div class="a">'+esc(a)+'</div>':'<div class="dots">•••</div>')+
+      (shown&&c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+      (shown&&c.note?'<div class="nt">'+esc(c.note)+'</div>':'')+
+    '</div>'+
+    (shown?
+      '<div class="grades">'+
+        '<button class="btn g0" data-g="0">Не помню<small>заново</small></button>'+
+        '<button class="btn g1" data-g="1">Трудно<small>'+prev(c,1)+'</small></button>'+
+        '<button class="btn g2" data-g="2">Знаю<small>'+prev(c,2)+'</small></button>'+
+        '<button class="btn g3" data-g="3">Легко<small>'+prev(c,3)+'</small></button>'+
+      '</div>'
+      :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">Показать ответ</button>')+
+    '<div class="tapHint">осталось '+left+'</div>';
+
+  if(shown){
+    $$('.grades .btn').forEach(b=>b.onclick=()=>grade(+b.dataset.g));
+  }else{
+    const reveal=()=>{shown=true;renderStudy()};
+    $('#reveal').onclick=reveal;
+    $('#studyCard').onclick=reveal;
+  }
+}
+function prev(c,g){
+  const i=nextInterval(c,g);
+  return i<1?'10 мин':i===1?'1 дн.':i<30?i+' дн.':Math.round(i/30)+' мес.';
+}
+function nextInterval(c,g){
+  if(g===0) return 0;
+  const e=c.ease||2.5;
+  if(c.reps===0||!c.interval) return g===1?1:g===2?2:4;
+  if(g===1) return Math.max(1,Math.round(c.interval*1.2));
+  if(g===2) return Math.max(1,Math.round(c.interval*e));
+  return Math.max(2,Math.round(c.interval*e*1.35));
+}
+function grade(g){
+  const c=current.card;
+  const iv=nextInterval(c,g);
+  c.ease=Math.max(1.3,Math.min(3.0,(c.ease||2.5)+(g===0?-0.2:g===1?-0.15:g===3?0.1:0)));
+  if(g===0){
+    c.lapses++; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
+  }else{
+    c.interval=iv; c.due=Date.now()+iv*DAY;
+  }
+  c.reps++;
+  persist(); sessionDone++; nextCard();
+}
+function nextCard(){
+  const c=queue.shift();
+  if(c&&c.reps===0){ newLog.n++; save(LS_LOG,newLog); }   // первая показанная карточка — в дневную норму
+  current = c?{card:c,dir:dirFor()}:null;
+  shown=false;
+  renderStudy();
+}
+
+/* ---------------- stats / nav ---------------- */
+function renderStats(){
+  const now=Date.now();
+  const due=cards.filter(c=>c.due<=now).length;
+  $('#stTotal').textContent=cards.length;
+  $('#stDue').textContent=due;
+  $('#stKnown').textContent=cards.filter(c=>c.interval>=21).length;
+  const dot=$('#navDue');
+  dot.style.display=due?'block':'none'; dot.textContent=due>99?'99+':due;
+}
+$$('nav button').forEach(b=>b.onclick=()=>{
+  $$('nav button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  $$('.view').forEach(v=>v.classList.remove('on'));
+  const v=b.dataset.v; $('#v-'+v).classList.add('on');
+  window.scrollTo(0,0);
+  if(v==='temas'){ $('#themePanel').style.display='none'; $('#themesSec').style.display='block'; renderTemaList(); }
+  if(v==='cards') renderCards();
+  if(v==='study'){ buildQueue(); current=null; renderStudy(); }
+});
+
+/* ---------------- settings ---------------- */
+$('#apiKey').value=settings.key; $('#model').value=settings.model;
+$('#dailyNew').value=settings.dailyNew; $('#dir').value=settings.dir;
+$('#apiKey').onchange=e=>{settings.key=e.target.value.trim();persistSet();toast('Ключ сохранён')};
+$('#model').onchange=e=>{settings.model=e.target.value.trim()||'gpt-4o-mini';persistSet()};
+$('#dailyNew').onchange=e=>{settings.dailyNew=Math.max(1,parseInt(e.target.value)||20);e.target.value=settings.dailyNew;persistSet()};
+$('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
+
+$('#testKey').onclick=async e=>{
+  const b=e.target, old=b.textContent; b.disabled=true; b.innerHTML='<span class="spin"></span>';
+  settings.key=$('#apiKey').value.trim(); settings.model=$('#model').value.trim()||'gpt-4o-mini'; persistSet();
+  try{ const r=await askAI([{word:'obrigado'}]); toast('Работает: '+esc(r[0].ru)); }
+  catch(err){ toast(esc(err.message),5000) }
+  finally{ b.disabled=false; b.textContent=old }
+};
+$('#exportBtn').onclick=()=>{
+  const blob=new Blob([JSON.stringify({v:1,exported:new Date().toISOString(),cards:cards},null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='portugues-cards-'+today()+'.json';
+  a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),3000);
+};
+function importCards(raw){
+  const inc=Array.isArray(raw)?raw:(raw&&raw.cards);
+  if(!Array.isArray(inc)) throw new Error('Неверный файл');
+  let added=0;
+  inc.forEach(c=>{
+    if(!c.word||cards.some(x=>norm(x.word)===norm(c.word)))return;
+    cards.push(Object.assign({id:uid(),created:Date.now(),due:Date.now(),interval:0,ease:2.5,reps:0,lapses:0},c));
+    added++;
+  });
+  persist(); renderCards(); renderTemaList();
+  return added;
+}
+
+$('#importBtn').onclick=()=>$('#importFile').click();
+$('#importFile').onchange=e=>{
+  const f=e.target.files[0]; if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    try{ toast('Импортировано '+importCards(JSON.parse(r.result))) }
+    catch(err){ toast('Неверный файл') }
+    e.target.value='';
+  };
+  r.readAsText(f);
+};
+
+const DECK_URL='vocabulario/baralho-completo-A1-A2.json';
+$('#loadDeck').onclick=async e=>{
+  const b=e.target, old=b.textContent;
+  b.disabled=true; b.innerHTML='<span class="spin"></span> Загружаю…';
+  try{
+    const res=await fetch(DECK_URL,{cache:'no-cache'});
+    if(!res.ok) throw new Error('Колода недоступна ('+res.status+')');
+    const added=importCards(await res.json());
+    toast(added?'Добавлено '+added+' карточек':'Все карточки уже в колоде');
+  }catch(err){
+    toast(/Failed to fetch|NetworkError/.test(err.message)
+      ? 'Колода доступна только на сайте, не из локального файла'
+      : err.message, 4500);
+  }
+  finally{ b.disabled=false; b.textContent=old }
+};
+$('#wipe').onclick=()=>{
+  if(!cards.length){toast('Уже пусто');return}
+  if(!confirm('Удалить все карточки ('+cards.length+')? Действие необратимо.'))return;
+  cards=[]; persist(); renderCards(); toast('Колода очищена');
+};
+
+/* ---------------- init ---------------- */
+renderStats(); renderCards(); renderTemaList();
+if(!settings.key) setTimeout(()=>toast('Задайте OpenAI-ключ в Настройках',4000),700);
+</script>
+</body>
+</html>

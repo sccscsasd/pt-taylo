@@ -1,0 +1,718 @@
+{
+ "v": 1,
+ "deck": "A1 — Дом и окружение (Casa e meio-ambiente)",
+ "cards": [
+  {
+   "word": "a cozinha",
+   "pos": "сущ.",
+   "ru": "кухня; кухня (кулинария)",
+   "ex": "A cozinha é pequena, mas tem tudo.",
+   "exru": "Кухня маленькая, но в ней есть всё.",
+   "note": "Также «кухня» как кулинария"
+  },
+  {
+   "word": "o quarto",
+   "pos": "сущ.",
+   "ru": "комната, спальня; номер",
+   "ex": "O apartamento tem dois quartos e uma sala.",
+   "exru": "В квартире две спальни и гостиная.",
+   "note": "Также четверть: um quarto de hora"
+  },
+  {
+   "word": "a sala de estar",
+   "pos": "сущ.",
+   "ru": "гостиная",
+   "ex": "Vemos televisão na sala de estar.",
+   "exru": "Мы смотрим телевизор в гостиной.",
+   "note": "Часто просто a sala"
+  },
+  {
+   "word": "a sala de jantar",
+   "pos": "сущ.",
+   "ru": "столовая (комната)",
+   "ex": "A mesa grande está na sala de jantar.",
+   "exru": "Большой стол стоит в столовой.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a casa de banho",
+   "pos": "сущ.",
+   "ru": "ванная, туалет",
+   "ex": "A casa de banho fica ao fundo do corredor.",
+   "exru": "Ванная в конце коридора.",
+   "note": "ж. р.; casa de banho pública — общественный туалет"
+  },
+  {
+   "word": "a despensa",
+   "pos": "сущ.",
+   "ru": "кладовая",
+   "ex": "Guardo o arroz e a massa na despensa.",
+   "exru": "Рис и макароны я держу в кладовой.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a garagem",
+   "pos": "сущ.",
+   "ru": "гараж",
+   "ex": "O carro está na garagem do prédio.",
+   "exru": "Машина в гараже дома.",
+   "note": "ж. р.; мн. ч.: as garagens"
+  },
+  {
+   "word": "o jardim",
+   "pos": "сущ.",
+   "ru": "сад",
+   "ex": "Tomamos o café no jardim ao domingo.",
+   "exru": "По воскресеньям мы пьём кофе в саду.",
+   "note": "Мн. ч.: os jardins"
+  },
+  {
+   "word": "o piso",
+   "pos": "сущ.",
+   "ru": "этаж; пол",
+   "ex": "Moro no terceiro piso, sem elevador.",
+   "exru": "Я живу на четвёртом этаже, без лифта.",
+   "note": "Синоним andar; piso 0 = наш 1-й этаж"
+  },
+  {
+   "word": "a porta",
+   "pos": "сущ.",
+   "ru": "дверь",
+   "ex": "Fecha a porta, está frio.",
+   "exru": "Закрой дверь, холодно.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a janela",
+   "pos": "сущ.",
+   "ru": "окно",
+   "ex": "Abre a janela para arejar o quarto.",
+   "exru": "Открой окно, чтобы проветрить комнату.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a parede",
+   "pos": "сущ.",
+   "ru": "стена",
+   "ex": "Pendurei um quadro na parede da sala.",
+   "exru": "Я повесил картину на стену в гостиной.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a chave",
+   "pos": "сущ.",
+   "ru": "ключ",
+   "ex": "Perdi as chaves de casa outra vez.",
+   "exru": "Я снова потерял ключи от дома.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a fechadura",
+   "pos": "сущ.",
+   "ru": "замок (дверной)",
+   "ex": "A fechadura está avariada.",
+   "exru": "Замок сломан.",
+   "note": "ж. р.; не путать с cadeado (навесной)"
+  },
+  {
+   "word": "a mesa",
+   "pos": "сущ.",
+   "ru": "стол",
+   "ex": "Põe a mesa, o jantar está pronto.",
+   "exru": "Накрой на стол, ужин готов.",
+   "note": "pôr a mesa — накрывать на стол"
+  },
+  {
+   "word": "a cadeira",
+   "pos": "сущ.",
+   "ru": "стул",
+   "ex": "Faltam duas cadeiras para todos se sentarem.",
+   "exru": "Не хватает двух стульев, чтобы все сели.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a cama",
+   "pos": "сущ.",
+   "ru": "кровать",
+   "ex": "Vou para a cama, estou cansado.",
+   "exru": "Я иду спать, я устал.",
+   "note": "ir para a cama — ложиться спать"
+  },
+  {
+   "word": "o sofá",
+   "pos": "сущ.",
+   "ru": "диван",
+   "ex": "Adormeci no sofá a ver um filme.",
+   "exru": "Я заснул на диване за фильмом.",
+   "note": "м. р., несмотря на -á; мн. ч.: sofás"
+  },
+  {
+   "word": "o relógio",
+   "pos": "сущ.",
+   "ru": "часы",
+   "ex": "O relógio da cozinha está adiantado.",
+   "exru": "Кухонные часы спешат.",
+   "note": "м. р., ед. ч."
+  },
+  {
+   "word": "a caixa",
+   "pos": "сущ.",
+   "ru": "коробка; касса",
+   "ex": "Guardei as fotografias numa caixa.",
+   "exru": "Я сложил фотографии в коробку.",
+   "note": "Также «касса» в магазине"
+  },
+  {
+   "word": "a televisão",
+   "pos": "сущ.",
+   "ru": "телевизор, телевидение",
+   "ex": "Desliga a televisão, por favor.",
+   "exru": "Выключи телевизор, пожалуйста.",
+   "note": "Разговорно — a TV; мн. ч.: televisões"
+  },
+  {
+   "word": "o comando",
+   "pos": "сущ.",
+   "ru": "пульт (от телевизора)",
+   "ex": "Onde está o comando da televisão?",
+   "exru": "Где пульт от телевизора?",
+   "note": "м. р.; comando da TV, comando do portão"
+  },
+  {
+   "word": "o vídeo",
+   "pos": "сущ.",
+   "ru": "видео",
+   "ex": "Gravei um vídeo da festa.",
+   "exru": "Я снял видео с праздника.",
+   "note": "м. р."
+  },
+  {
+   "word": "o fogão",
+   "pos": "сущ.",
+   "ru": "плита (кухонная)",
+   "ex": "O fogão é a gás e tem quatro bicos.",
+   "exru": "Плита газовая, с четырьмя конфорками.",
+   "note": "Мн. ч.: os fogões"
+  },
+  {
+   "word": "o forno",
+   "pos": "сущ.",
+   "ru": "духовка",
+   "ex": "O frango está no forno há uma hora.",
+   "exru": "Курица в духовке уже час.",
+   "note": "no forno — запечённый"
+  },
+  {
+   "word": "o frigorífico",
+   "pos": "сущ.",
+   "ru": "холодильник",
+   "ex": "Põe o leite no frigorífico.",
+   "exru": "Поставь молоко в холодильник.",
+   "note": "м. р.; разг. сокращают до «frigo»"
+  },
+  {
+   "word": "o congelador",
+   "pos": "сущ.",
+   "ru": "морозильник",
+   "ex": "Tenho pão no congelador.",
+   "exru": "У меня в морозилке есть хлеб.",
+   "note": "м. р."
+  },
+  {
+   "word": "os eletrodomésticos",
+   "pos": "сущ.",
+   "ru": "бытовая техника",
+   "ex": "O apartamento já vem com eletrodomésticos.",
+   "exru": "Квартира сдаётся с бытовой техникой.",
+   "note": "Обычно во мн. ч."
+  },
+  {
+   "word": "a placa",
+   "pos": "сущ.",
+   "ru": "варочная панель; табличка",
+   "ex": "Não toques na placa, ainda está quente.",
+   "exru": "Не трогай панель, она ещё горячая.",
+   "note": "Также дорожный знак/табличка"
+  },
+  {
+   "word": "o aquecimento",
+   "pos": "сущ.",
+   "ru": "отопление",
+   "ex": "O aquecimento não funciona no inverno.",
+   "exru": "Зимой отопление не работает.",
+   "note": "м. р."
+  },
+  {
+   "word": "a eletricidade",
+   "pos": "сущ.",
+   "ru": "электричество",
+   "ex": "A eletricidade está muito cara este ano.",
+   "exru": "Электричество в этом году очень дорогое.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o gás",
+   "pos": "сущ.",
+   "ru": "газ",
+   "ex": "A conta do gás chega no fim do mês.",
+   "exru": "Счёт за газ приходит в конце месяца.",
+   "note": "м. р.; мн. ч.: os gases"
+  },
+  {
+   "word": "a luz",
+   "pos": "сущ.",
+   "ru": "свет; электричество",
+   "ex": "Apaga a luz quando saíres.",
+   "exru": "Выключи свет, когда будешь уходить.",
+   "note": "a conta da luz — счёт за электричество"
+  },
+  {
+   "word": "desligar",
+   "pos": "глаг.",
+   "ru": "выключать; вешать трубку",
+   "ex": "Desliga o computador antes de sair.",
+   "exru": "Выключи компьютер перед уходом.",
+   "note": "Противоположно ligar"
+  },
+  {
+   "word": "a banheira",
+   "pos": "сущ.",
+   "ru": "ванна",
+   "ex": "O apartamento tem banheira e chuveiro.",
+   "exru": "В квартире есть ванна и душ.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o chuveiro",
+   "pos": "сущ.",
+   "ru": "душ",
+   "ex": "Tomo um duche rápido no chuveiro.",
+   "exru": "Я быстро принимаю душ.",
+   "note": "Принять душ — tomar um duche"
+  },
+  {
+   "word": "o lavatório",
+   "pos": "сущ.",
+   "ru": "раковина (в ванной)",
+   "ex": "A torneira do lavatório está a pingar.",
+   "exru": "Кран в раковине капает.",
+   "note": "Кухонная мойка — lava-loiça"
+  },
+  {
+   "word": "a sanita",
+   "pos": "сущ.",
+   "ru": "унитаз",
+   "ex": "A sanita está entupida.",
+   "exru": "Унитаз засорился.",
+   "note": "ж. р.; крышка — o tampo da sanita"
+  },
+  {
+   "word": "a torneira",
+   "pos": "сущ.",
+   "ru": "кран",
+   "ex": "Fecha bem a torneira.",
+   "exru": "Закрой кран как следует.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a toalha",
+   "pos": "сущ.",
+   "ru": "полотенце; скатерть",
+   "ex": "Preciso de uma toalha limpa.",
+   "exru": "Мне нужно чистое полотенце.",
+   "note": "toalha de mesa — скатерть"
+  },
+  {
+   "word": "o lixo",
+   "pos": "сущ.",
+   "ru": "мусор",
+   "ex": "Podes levar o lixo, por favor?",
+   "exru": "Вынесешь мусор, пожалуйста?",
+   "note": "deitar o lixo fora — выбрасывать"
+  },
+  {
+   "word": "o prato",
+   "pos": "сущ.",
+   "ru": "тарелка; блюдо",
+   "ex": "O prato do dia é bacalhau assado.",
+   "exru": "Блюдо дня — запечённая треска.",
+   "note": "Оба значения частотны"
+  },
+  {
+   "word": "a chávena",
+   "pos": "сущ.",
+   "ru": "чашка",
+   "ex": "Bebe uma chávena de chá antes de dormir.",
+   "exru": "Выпей чашку чая перед сном.",
+   "note": "ж. р.; uma chávena de café — чашка кофе"
+  },
+  {
+   "word": "a garrafa",
+   "pos": "сущ.",
+   "ru": "бутылка",
+   "ex": "Trouxe uma garrafa de vinho tinto.",
+   "exru": "Я принёс бутылку красного вина.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a faca",
+   "pos": "сущ.",
+   "ru": "нож",
+   "ex": "Esta faca não corta nada.",
+   "exru": "Этот нож совсем не режет.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o garfo",
+   "pos": "сущ.",
+   "ru": "вилка",
+   "ex": "Falta um garfo na mesa.",
+   "exru": "На столе не хватает вилки.",
+   "note": "м. р."
+  },
+  {
+   "word": "a colher",
+   "pos": "сущ.",
+   "ru": "ложка",
+   "ex": "Mexe o café com a colher.",
+   "exru": "Помешай кофе ложкой.",
+   "note": "ж. р., хотя оканчивается на -r"
+  },
+  {
+   "word": "o arrendamento",
+   "pos": "сущ.",
+   "ru": "аренда (жилья)",
+   "ex": "Assinei o contrato de arrendamento por um ano.",
+   "exru": "Я подписал договор аренды на год.",
+   "note": "м. р."
+  },
+  {
+   "word": "arrendar",
+   "pos": "глаг.",
+   "ru": "снимать; сдавать (жильё)",
+   "ex": "Arrendei um apartamento no centro.",
+   "exru": "Я снял квартиру в центре.",
+   "note": "arrendar a alguém — сдавать; arrendar de — снимать"
+  },
+  {
+   "word": "a renda",
+   "pos": "сущ.",
+   "ru": "арендная плата",
+   "ex": "A renda sobe todos os anos.",
+   "exru": "Аренда дорожает каждый год.",
+   "note": "ж. р."
+  },
+  {
+   "word": "comprar",
+   "pos": "глаг.",
+   "ru": "покупать",
+   "ex": "Queremos comprar casa fora da cidade.",
+   "exru": "Мы хотим купить дом за городом.",
+   "note": ""
+  },
+  {
+   "word": "vender",
+   "pos": "глаг.",
+   "ru": "продавать",
+   "ex": "Vendem a casa ao lado.",
+   "exru": "Соседний дом продают.",
+   "note": "vende-se — продаётся"
+  },
+  {
+   "word": "a cidade",
+   "pos": "сущ.",
+   "ru": "город",
+   "ex": "Lisboa é a cidade onde vivo.",
+   "exru": "Лиссабон — город, где я живу.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o campo",
+   "pos": "сущ.",
+   "ru": "деревня, сельская местность; поле",
+   "ex": "Ao fim de semana vamos para o campo.",
+   "exru": "На выходные мы уезжаем за город.",
+   "note": "Противопоставляется cidade"
+  },
+  {
+   "word": "o país",
+   "pos": "сущ.",
+   "ru": "страна",
+   "ex": "Portugal é um país pequeno mas variado.",
+   "exru": "Португалия — небольшая, но разнообразная страна.",
+   "note": "Мн. ч.: os países"
+  },
+  {
+   "word": "a capital",
+   "pos": "сущ.",
+   "ru": "столица",
+   "ex": "A capital fica no centro do país.",
+   "exru": "Столица находится в центре страны.",
+   "note": "ж. р.; o capital — капитал"
+  },
+  {
+   "word": "o estrangeiro",
+   "pos": "сущ.",
+   "ru": "иностранец; заграница",
+   "ex": "Trabalhou no estrangeiro durante dez anos.",
+   "exru": "Он десять лет работал за границей.",
+   "note": "no estrangeiro — за границей"
+  },
+  {
+   "word": "o mapa",
+   "pos": "сущ.",
+   "ru": "карта (географическая)",
+   "ex": "Vê no mapa onde fica a estação.",
+   "exru": "Посмотри на карте, где вокзал.",
+   "note": "м. р., несмотря на -a"
+  },
+  {
+   "word": "a loja",
+   "pos": "сущ.",
+   "ru": "магазин",
+   "ex": "A loja abre às dez da manhã.",
+   "exru": "Магазин открывается в десять утра.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o café",
+   "pos": "сущ.",
+   "ru": "кафе; кофе",
+   "ex": "Encontramo-nos no café da esquina.",
+   "exru": "Встретимся в кафе на углу.",
+   "note": "И напиток, и заведение"
+  },
+  {
+   "word": "o restaurante",
+   "pos": "сущ.",
+   "ru": "ресторан",
+   "ex": "Reservei mesa num restaurante típico.",
+   "exru": "Я забронировал столик в традиционном ресторане.",
+   "note": "м. р."
+  },
+  {
+   "word": "o hotel",
+   "pos": "сущ.",
+   "ru": "отель",
+   "ex": "O hotel fica ao lado da praia.",
+   "exru": "Отель находится рядом с пляжем.",
+   "note": "Мн. ч.: os hotéis"
+  },
+  {
+   "word": "o hospital",
+   "pos": "сущ.",
+   "ru": "больница",
+   "ex": "Levaram-no ao hospital de urgência.",
+   "exru": "Его срочно отвезли в больницу.",
+   "note": "Мн. ч.: os hospitais"
+  },
+  {
+   "word": "o museu",
+   "pos": "сущ.",
+   "ru": "музей",
+   "ex": "O museu é gratuito ao domingo de manhã.",
+   "exru": "По воскресеньям утром музей бесплатный.",
+   "note": "м. р."
+  },
+  {
+   "word": "o parque",
+   "pos": "сущ.",
+   "ru": "парк; стоянка",
+   "ex": "Corro no parque todas as manhãs.",
+   "exru": "Я бегаю в парке каждое утро.",
+   "note": "parque de estacionamento — парковка"
+  },
+  {
+   "word": "a estação de comboios",
+   "pos": "сущ.",
+   "ru": "железнодорожный вокзал",
+   "ex": "A estação de comboios fica a dez minutos.",
+   "exru": "Вокзал в десяти минутах отсюда.",
+   "note": "ж. р.; estação de metro — станция метро"
+  },
+  {
+   "word": "a paragem de autocarro",
+   "pos": "сущ.",
+   "ru": "автобусная остановка",
+   "ex": "Espero na paragem de autocarro em frente.",
+   "exru": "Я жду на автобусной остановке напротив.",
+   "note": "ж. р.; paragem — от parar (останавливаться)"
+  },
+  {
+   "word": "a praça de táxis",
+   "pos": "сущ.",
+   "ru": "стоянка такси",
+   "ex": "Há uma praça de táxis junto ao hotel.",
+   "exru": "Рядом с отелем есть стоянка такси.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o mar",
+   "pos": "сущ.",
+   "ru": "море",
+   "ex": "O mar está frio, mas vou nadar.",
+   "exru": "Море холодное, но я всё равно поплаваю.",
+   "note": "м. р."
+  },
+  {
+   "word": "a praia",
+   "pos": "сущ.",
+   "ru": "пляж",
+   "ex": "No verão vamos à praia quase todos os dias.",
+   "exru": "Летом мы ходим на пляж почти каждый день.",
+   "note": "ir à praia — идти на пляж"
+  },
+  {
+   "word": "o rio",
+   "pos": "сущ.",
+   "ru": "река",
+   "ex": "O rio Tejo passa por Lisboa.",
+   "exru": "Река Тежу протекает через Лиссабон.",
+   "note": "м. р."
+  },
+  {
+   "word": "o lago",
+   "pos": "сущ.",
+   "ru": "озеро",
+   "ex": "Há um lago pequeno no meio do parque.",
+   "exru": "Посреди парка есть небольшое озеро.",
+   "note": "м. р."
+  },
+  {
+   "word": "a floresta",
+   "pos": "сущ.",
+   "ru": "лес",
+   "ex": "A floresta ardeu no verão passado.",
+   "exru": "Прошлым летом лес горел.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a árvore",
+   "pos": "сущ.",
+   "ru": "дерево",
+   "ex": "Sentámo-nos à sombra de uma árvore.",
+   "exru": "Мы сели в тени дерева.",
+   "note": "ж. р.; мн. ч.: as árvores"
+  },
+  {
+   "word": "a flor",
+   "pos": "сущ.",
+   "ru": "цветок",
+   "ex": "Comprei flores para a minha mãe.",
+   "exru": "Я купил цветы маме.",
+   "note": "ж. р.; мн. ч.: as flores"
+  },
+  {
+   "word": "a planta",
+   "pos": "сущ.",
+   "ru": "растение; план (помещения)",
+   "ex": "Rego as plantas duas vezes por semana.",
+   "exru": "Я поливаю растения два раза в неделю.",
+   "note": "Также «план квартиры»"
+  },
+  {
+   "word": "o fruto",
+   "pos": "сущ.",
+   "ru": "плод",
+   "ex": "Esta árvore dá frutos no outono.",
+   "exru": "Это дерево плодоносит осенью.",
+   "note": "Фрукт как еда — a fruta"
+  },
+  {
+   "word": "o animal",
+   "pos": "сущ.",
+   "ru": "животное",
+   "ex": "Não são permitidos animais no prédio.",
+   "exru": "В доме нельзя держать животных.",
+   "note": "Мн. ч.: os animais"
+  },
+  {
+   "word": "o cão",
+   "pos": "сущ.",
+   "ru": "собака",
+   "ex": "O cão dorme sempre à porta do quarto.",
+   "exru": "Собака всегда спит у двери спальни.",
+   "note": "Мн. ч.: os cães; ж. р.: a cadela"
+  },
+  {
+   "word": "o gato",
+   "pos": "сущ.",
+   "ru": "кот, кошка",
+   "ex": "O gato subiu para o telhado.",
+   "exru": "Кот забрался на крышу.",
+   "note": "м. р.; ж. р.: a gata"
+  },
+  {
+   "word": "o pássaro",
+   "pos": "сущ.",
+   "ru": "птица",
+   "ex": "Os pássaros cantam de manhã cedo.",
+   "exru": "Птицы поют рано утром.",
+   "note": "м. р."
+  },
+  {
+   "word": "o periquito",
+   "pos": "сущ.",
+   "ru": "попугайчик",
+   "ex": "Ela tem um periquito verde numa gaiola.",
+   "exru": "У неё зелёный попугайчик в клетке.",
+   "note": "м. р."
+  },
+  {
+   "word": "o peixe",
+   "pos": "сущ.",
+   "ru": "рыба",
+   "ex": "Comprei peixe fresco no mercado.",
+   "exru": "Я купил свежую рыбу на рынке.",
+   "note": "м. р., хотя по-русски женский"
+  },
+  {
+   "word": "o tempo",
+   "pos": "сущ.",
+   "ru": "погода; время",
+   "ex": "Como está o tempo hoje?",
+   "exru": "Какая сегодня погода?",
+   "note": "Оба значения — по контексту"
+  },
+  {
+   "word": "o mau tempo",
+   "pos": "сущ.",
+   "ru": "плохая погода, непогода",
+   "ex": "O voo atrasou por causa do mau tempo.",
+   "exru": "Рейс задержали из-за непогоды.",
+   "note": "Хорошая погода — bom tempo"
+  },
+  {
+   "word": "o sol",
+   "pos": "сущ.",
+   "ru": "солнце",
+   "ex": "Está sol, vamos dar uma volta.",
+   "exru": "Солнечно, пойдём прогуляемся.",
+   "note": "está sol — солнечно"
+  },
+  {
+   "word": "o vento",
+   "pos": "сущ.",
+   "ru": "ветер",
+   "ex": "Hoje está muito vento na praia.",
+   "exru": "Сегодня на пляже сильный ветер.",
+   "note": "está vento — ветрено"
+  },
+  {
+   "word": "chover",
+   "pos": "глаг.",
+   "ru": "идти (о дожде)",
+   "ex": "Chove muito em novembro.",
+   "exru": "В ноябре много дождей.",
+   "note": "Безличный: только chove, choveu"
+  },
+  {
+   "word": "nevar",
+   "pos": "глаг.",
+   "ru": "идти (о снеге)",
+   "ex": "Em Lisboa quase nunca neva.",
+   "exru": "В Лиссабоне почти никогда не идёт снег.",
+   "note": "Безличный: только neva, nevou"
+  }
+ ]
+}

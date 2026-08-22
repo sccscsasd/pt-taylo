@@ -1,0 +1,1318 @@
+{
+ "v": 1,
+ "deck": "A2 — Поездки, транспорт, отель и здоровье",
+ "cards": [
+  {
+   "word": "o voo",
+   "pos": "сущ.",
+   "ru": "рейс, полёт",
+   "ex": "O voo para Lisboa está atrasado.",
+   "exru": "Рейс в Лиссабон задерживается.",
+   "note": "м. р."
+  },
+  {
+   "word": "viajar de avião",
+   "pos": "выраж.",
+   "ru": "лететь самолётом",
+   "ex": "Prefiro viajar de avião a de comboio.",
+   "exru": "Я предпочитаю самолёт поезду.",
+   "note": ""
+  },
+  {
+   "word": "o check-in",
+   "pos": "сущ.",
+   "ru": "регистрация (на рейс, в отеле)",
+   "ex": "O check-in abre duas horas antes.",
+   "exru": "Регистрация открывается за два часа.",
+   "note": "Читается «чек-ин»"
+  },
+  {
+   "word": "as partidas",
+   "pos": "сущ.",
+   "ru": "вылеты, отправления (табло)",
+   "ex": "Vê o painel das partidas.",
+   "exru": "Посмотри на табло вылетов.",
+   "note": "Обычно мн. ч."
+  },
+  {
+   "word": "as chegadas",
+   "pos": "сущ.",
+   "ru": "прилёты, прибытия",
+   "ex": "Espero-te na zona das chegadas.",
+   "exru": "Жду тебя в зоне прилёта.",
+   "note": "Обычно мн. ч."
+  },
+  {
+   "word": "o passageiro",
+   "pos": "сущ.",
+   "ru": "пассажир",
+   "ex": "Os passageiros devem apertar o cinto.",
+   "exru": "Пассажирам следует пристегнуть ремни.",
+   "note": "Ж. р.: a passageira"
+  },
+  {
+   "word": "o piloto",
+   "pos": "сущ.",
+   "ru": "пилот",
+   "ex": "O piloto avisou de turbulência.",
+   "exru": "Пилот предупредил о турбулентности.",
+   "note": "м. р."
+  },
+  {
+   "word": "o assistente de bordo",
+   "pos": "сущ.",
+   "ru": "бортпроводник",
+   "ex": "O assistente de bordo trouxe água.",
+   "exru": "Бортпроводник принёс воды.",
+   "note": "Ж. р.: a assistente de bordo"
+  },
+  {
+   "word": "a bagagem de mão",
+   "pos": "сущ.",
+   "ru": "ручная кладь",
+   "ex": "A bagagem de mão vai comigo.",
+   "exru": "Ручную кладь я беру с собой.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o porão",
+   "pos": "сущ.",
+   "ru": "багажный отсек, трюм",
+   "ex": "A mala grande vai no porão.",
+   "exru": "Большой чемодан идёт в багажный отсек.",
+   "note": "Мн. ч.: os porões"
+  },
+  {
+   "word": "a cabina",
+   "pos": "сущ.",
+   "ru": "кабина, салон",
+   "ex": "A cabina estava cheia.",
+   "exru": "Салон был полон.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a classe económica",
+   "pos": "сущ.",
+   "ru": "эконом-класс",
+   "ex": "Viajei em classe económica.",
+   "exru": "Я летел эконом-классом.",
+   "note": "Пишется с ó: económica"
+  },
+  {
+   "word": "a classe executiva",
+   "pos": "сущ.",
+   "ru": "бизнес-класс",
+   "ex": "A classe executiva custa o dobro.",
+   "exru": "Бизнес-класс стоит вдвое дороже.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a primeira classe",
+   "pos": "сущ.",
+   "ru": "первый класс",
+   "ex": "Nunca viajei em primeira classe.",
+   "exru": "Я никогда не летал первым классом.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a segunda classe",
+   "pos": "сущ.",
+   "ru": "второй класс",
+   "ex": "O bilhete de segunda classe é mais barato.",
+   "exru": "Билет второго класса дешевле.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o elétrico",
+   "pos": "сущ.",
+   "ru": "трамвай",
+   "ex": "O elétrico 28 passa pela Alfama.",
+   "exru": "Трамвай 28 идёт через Алфаму.",
+   "note": "Пишется без c: elétrico"
+  },
+  {
+   "word": "mudar de comboio",
+   "pos": "выраж.",
+   "ru": "делать пересадку",
+   "ex": "Tenho de mudar de comboio no Entroncamento.",
+   "exru": "Мне нужно пересесть в Энтронкаменту.",
+   "note": "a mudança — пересадка"
+  },
+  {
+   "word": "a bilheteira",
+   "pos": "сущ.",
+   "ru": "билетная касса",
+   "ex": "Compra o passe na bilheteira.",
+   "exru": "Купи проездной в кассе.",
+   "note": "ж. р."
+  },
+  {
+   "word": "apanhar um táxi",
+   "pos": "выраж.",
+   "ru": "взять такси",
+   "ex": "Apanhámos um táxi para o hotel.",
+   "exru": "Мы взяли такси до отеля.",
+   "note": "apanhar — ловить, садиться"
+  },
+  {
+   "word": "andar de táxi",
+   "pos": "выраж.",
+   "ru": "ездить на такси",
+   "ex": "Ando de táxi quando chove.",
+   "exru": "Когда идёт дождь, я езжу на такси.",
+   "note": ""
+  },
+  {
+   "word": "sair do táxi",
+   "pos": "выраж.",
+   "ru": "выйти из такси",
+   "ex": "Saí do táxi à porta do hotel.",
+   "exru": "Я вышел из такси у входа в отель.",
+   "note": ""
+  },
+  {
+   "word": "andar de carro",
+   "pos": "выраж.",
+   "ru": "ездить на машине",
+   "ex": "Ando de carro todos os dias.",
+   "exru": "Я езжу на машине каждый день.",
+   "note": ""
+  },
+  {
+   "word": "a gasolina",
+   "pos": "сущ.",
+   "ru": "бензин",
+   "ex": "A gasolina subiu de preço.",
+   "exru": "Бензин подорожал.",
+   "note": "ж. р."
+  },
+  {
+   "word": "meter gasóleo",
+   "pos": "выраж.",
+   "ru": "заправить дизелем",
+   "ex": "Vou meter gasóleo antes de sair.",
+   "exru": "Заправлюсь дизелем перед выездом.",
+   "note": "o gasóleo — дизель"
+  },
+  {
+   "word": "encher o depósito",
+   "pos": "выраж.",
+   "ru": "заправить полный бак",
+   "ex": "Encha o depósito, por favor.",
+   "exru": "Полный бак, пожалуйста.",
+   "note": "o depósito — бак"
+  },
+  {
+   "word": "lavar o carro",
+   "pos": "выраж.",
+   "ru": "мыть машину",
+   "ex": "Lavo o carro ao sábado.",
+   "exru": "Я мою машину по субботам.",
+   "note": ""
+  },
+  {
+   "word": "o mecânico",
+   "pos": "сущ.",
+   "ru": "механик, автослесарь",
+   "ex": "O mecânico disse que é o travão.",
+   "exru": "Механик сказал, что дело в тормозах.",
+   "note": "a oficina — автосервис"
+  },
+  {
+   "word": "a roda",
+   "pos": "сущ.",
+   "ru": "колесо",
+   "ex": "Furei uma roda na estrada.",
+   "exru": "Я пробил колесо на трассе.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o cruzamento",
+   "pos": "сущ.",
+   "ru": "перекрёсток",
+   "ex": "Vire à direita no cruzamento.",
+   "exru": "Поверните направо на перекрёстке.",
+   "note": "м. р."
+  },
+  {
+   "word": "o quarteirão",
+   "pos": "сущ.",
+   "ru": "квартал (между улицами)",
+   "ex": "Fica a dois quarteirões daqui.",
+   "exru": "Это в двух кварталах отсюда.",
+   "note": "Мн. ч.: os quarteirões"
+  },
+  {
+   "word": "o passeio",
+   "pos": "сущ.",
+   "ru": "тротуар; прогулка",
+   "ex": "Ande pelo passeio, não pela estrada.",
+   "exru": "Идите по тротуару, а не по проезжей части.",
+   "note": "Оба значения частотны"
+  },
+  {
+   "word": "a passagem",
+   "pos": "сущ.",
+   "ru": "проход, проезд",
+   "ex": "A passagem está bloqueada.",
+   "exru": "Проход перекрыт.",
+   "note": "passagem de peões — переход"
+  },
+  {
+   "word": "dar passagem",
+   "pos": "выраж.",
+   "ru": "уступить дорогу",
+   "ex": "Dê passagem aos peões.",
+   "exru": "Уступайте дорогу пешеходам.",
+   "note": ""
+  },
+  {
+   "word": "passar a rua",
+   "pos": "выраж.",
+   "ru": "перейти улицу",
+   "ex": "Passe a rua na passadeira.",
+   "exru": "Переходите улицу по зебре.",
+   "note": "Синоним atravessar a rua"
+  },
+  {
+   "word": "dobrar à esquerda",
+   "pos": "выраж.",
+   "ru": "повернуть налево",
+   "ex": "Dobre à esquerda depois do banco.",
+   "exru": "Поверните налево после банка.",
+   "note": "Синоним virar à esquerda"
+  },
+  {
+   "word": "seguir em frente",
+   "pos": "выраж.",
+   "ru": "ехать/идти прямо",
+   "ex": "Siga em frente por duzentos metros.",
+   "exru": "Двигайтесь прямо двести метров.",
+   "note": ""
+  },
+  {
+   "word": "voltar atrás",
+   "pos": "выраж.",
+   "ru": "вернуться назад",
+   "ex": "Enganei-me, tive de voltar atrás.",
+   "exru": "Я ошибся, пришлось вернуться.",
+   "note": ""
+  },
+  {
+   "word": "para trás",
+   "pos": "выраж.",
+   "ru": "назад",
+   "ex": "Dê dois passos para trás.",
+   "exru": "Сделайте два шага назад.",
+   "note": "Вперёд — para a frente"
+  },
+  {
+   "word": "pedir direções",
+   "pos": "выраж.",
+   "ru": "спросить дорогу",
+   "ex": "Tive de pedir direções a um polícia.",
+   "exru": "Мне пришлось спросить дорогу у полицейского.",
+   "note": "as direções — указания пути"
+  },
+  {
+   "word": "cortar",
+   "pos": "глаг.",
+   "ru": "сворачивать; резать",
+   "ex": "Corte à direita no fim da rua.",
+   "exru": "Сверните направо в конце улицы.",
+   "note": "Оба значения частотны"
+  },
+  {
+   "word": "estar verde",
+   "pos": "выраж.",
+   "ru": "гореть зелёным (о светофоре)",
+   "ex": "Só atravesse quando estiver verde.",
+   "exru": "Переходите только на зелёный.",
+   "note": "o semáforo — светофор"
+  },
+  {
+   "word": "a distância",
+   "pos": "сущ.",
+   "ru": "расстояние",
+   "ex": "Qual é a distância até ao Porto?",
+   "exru": "Какое расстояние до Порту?",
+   "note": "ж. р."
+  },
+  {
+   "word": "a origem",
+   "pos": "сущ.",
+   "ru": "происхождение; пункт отправления",
+   "ex": "Qual é a origem do voo?",
+   "exru": "Откуда прилетает рейс?",
+   "note": "Мн. ч.: as origens"
+  },
+  {
+   "word": "o alojamento",
+   "pos": "сущ.",
+   "ru": "жильё, размещение",
+   "ex": "O alojamento está incluído no preço.",
+   "exru": "Проживание включено в цену.",
+   "note": "м. р."
+  },
+  {
+   "word": "a dormida",
+   "pos": "сущ.",
+   "ru": "ночёвка",
+   "ex": "São vinte euros por dormida.",
+   "exru": "Двадцать евро за ночь.",
+   "note": "dormida e pequeno-almoço"
+  },
+  {
+   "word": "o hóspede",
+   "pos": "сущ.",
+   "ru": "гость, постоялец",
+   "ex": "O hotel tem cinquenta hóspedes.",
+   "exru": "В отеле пятьдесят постояльцев.",
+   "note": "Ж. р.: a hóspede"
+  },
+  {
+   "word": "a pousada",
+   "pos": "сущ.",
+   "ru": "поузада (гостиница в историческом здании)",
+   "ex": "Ficámos numa pousada num castelo.",
+   "exru": "Мы остановились в поузаде в замке.",
+   "note": "Сеть исторических отелей Португалии"
+  },
+  {
+   "word": "a residência",
+   "pos": "сущ.",
+   "ru": "пансион; резиденция",
+   "ex": "É uma residência simples mas limpa.",
+   "exru": "Это простой, но чистый пансион.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o motel",
+   "pos": "сущ.",
+   "ru": "мотель",
+   "ex": "Dormimos num motel na estrada.",
+   "exru": "Мы переночевали в мотеле у трассы.",
+   "note": "Мн. ч.: os motéis"
+  },
+  {
+   "word": "o apartamento de férias",
+   "pos": "сущ.",
+   "ru": "апартаменты для отдыха",
+   "ex": "Alugámos um apartamento de férias no Algarve.",
+   "exru": "Мы сняли апартаменты в Алгарви.",
+   "note": "м. р."
+  },
+  {
+   "word": "a kitchenette",
+   "pos": "сущ.",
+   "ru": "мини-кухня",
+   "ex": "O estúdio tem kitchenette.",
+   "exru": "В студии есть мини-кухня.",
+   "note": "Читается «китченет»"
+  },
+  {
+   "word": "cinco estrelas",
+   "pos": "выраж.",
+   "ru": "пять звёзд",
+   "ex": "É um hotel de cinco estrelas.",
+   "exru": "Это пятизвёздочный отель.",
+   "note": "de + число + estrelas"
+  },
+  {
+   "word": "a meia pensão",
+   "pos": "сущ.",
+   "ru": "полупансион",
+   "ex": "Reservámos com meia pensão.",
+   "exru": "Мы забронировали с полупансионом.",
+   "note": "Завтрак и ужин"
+  },
+  {
+   "word": "a pensão completa",
+   "pos": "сущ.",
+   "ru": "полный пансион",
+   "ex": "A pensão completa sai mais cara.",
+   "exru": "Полный пансион выходит дороже.",
+   "note": "Трёхразовое питание"
+  },
+  {
+   "word": "servir o pequeno-almoço",
+   "pos": "выраж.",
+   "ru": "подавать завтрак",
+   "ex": "Servem o pequeno-almoço até às dez.",
+   "exru": "Завтрак подают до десяти.",
+   "note": ""
+  },
+  {
+   "word": "o serviço de quarto",
+   "pos": "сущ.",
+   "ru": "обслуживание в номер",
+   "ex": "Pedi o jantar pelo serviço de quarto.",
+   "exru": "Я заказал ужин в номер.",
+   "note": "м. р."
+  },
+  {
+   "word": "a piscina interior",
+   "pos": "сущ.",
+   "ru": "крытый бассейн",
+   "ex": "O hotel tem piscina interior aquecida.",
+   "exru": "В отеле есть крытый бассейн с подогревом.",
+   "note": "exterior — открытый"
+  },
+  {
+   "word": "haver quartos disponíveis",
+   "pos": "выраж.",
+   "ru": "иметься свободные номера",
+   "ex": "Há quartos disponíveis para hoje?",
+   "exru": "Есть свободные номера на сегодня?",
+   "note": "disponível — доступный"
+  },
+  {
+   "word": "exterior",
+   "pos": "прил.",
+   "ru": "наружный, внешний",
+   "ex": "O quarto exterior tem mais luz.",
+   "exru": "Номер с окнами на улицу светлее.",
+   "note": "Мн. ч.: exteriores"
+  },
+  {
+   "word": "estar cheio",
+   "pos": "выраж.",
+   "ru": "быть заполненным",
+   "ex": "O hotel está cheio esta semana.",
+   "exru": "Отель заполнен на этой неделе.",
+   "note": "Также «быть сытым»"
+  },
+  {
+   "word": "fazer uma reserva",
+   "pos": "выраж.",
+   "ru": "сделать бронь",
+   "ex": "Fiz uma reserva para duas noites.",
+   "exru": "Я забронировал на две ночи.",
+   "note": ""
+  },
+  {
+   "word": "reservar",
+   "pos": "глаг.",
+   "ru": "бронировать",
+   "ex": "Reservei online e paguei já.",
+   "exru": "Я забронировал онлайн и сразу оплатил.",
+   "note": ""
+  },
+  {
+   "word": "fazer a mala",
+   "pos": "выраж.",
+   "ru": "собирать чемодан",
+   "ex": "Faço a mala na véspera.",
+   "exru": "Я собираю чемодан накануне.",
+   "note": "a véspera — канун"
+  },
+  {
+   "word": "fazer planos",
+   "pos": "выраж.",
+   "ru": "строить планы",
+   "ex": "Estamos a fazer planos para o verão.",
+   "exru": "Мы строим планы на лето.",
+   "note": "o plano — план"
+  },
+  {
+   "word": "a excursão",
+   "pos": "сущ.",
+   "ru": "экскурсия, вылазка",
+   "ex": "A excursão inclui almoço.",
+   "exru": "Экскурсия включает обед.",
+   "note": "Мн. ч.: as excursões"
+  },
+  {
+   "word": "o guia turístico",
+   "pos": "сущ.",
+   "ru": "экскурсовод; путеводитель",
+   "ex": "O guia turístico explicou a história.",
+   "exru": "Экскурсовод рассказал историю.",
+   "note": "И человек, и книга"
+  },
+  {
+   "word": "o miradouro",
+   "pos": "сущ.",
+   "ru": "смотровая площадка",
+   "ex": "O miradouro tem a melhor vista da cidade.",
+   "exru": "Со смотровой площадки лучший вид на город.",
+   "note": "Очень частое слово в Лиссабоне"
+  },
+  {
+   "word": "o castelo",
+   "pos": "сущ.",
+   "ru": "замок, крепость",
+   "ex": "O castelo fica no ponto mais alto.",
+   "exru": "Замок стоит на самой высокой точке.",
+   "note": "м. р."
+  },
+  {
+   "word": "as ruínas",
+   "pos": "сущ.",
+   "ru": "руины",
+   "ex": "Visitámos as ruínas romanas.",
+   "exru": "Мы осмотрели римские руины.",
+   "note": "Обычно мн. ч."
+  },
+  {
+   "word": "a galeria de arte",
+   "pos": "сущ.",
+   "ru": "художественная галерея",
+   "ex": "A galeria de arte é gratuita ao domingo.",
+   "exru": "Галерея бесплатна по воскресеньям.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a alfândega",
+   "pos": "сущ.",
+   "ru": "таможня",
+   "ex": "Passámos a alfândega sem problemas.",
+   "exru": "Мы прошли таможню без проблем.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a fronteira",
+   "pos": "сущ.",
+   "ru": "граница",
+   "ex": "A fronteira com Espanha é aberta.",
+   "exru": "Граница с Испанией открыта.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o visto de turista",
+   "pos": "сущ.",
+   "ru": "туристическая виза",
+   "ex": "Preciso de visto de turista?",
+   "exru": "Мне нужна туристическая виза?",
+   "note": "м. р."
+  },
+  {
+   "word": "a autorização de residência",
+   "pos": "сущ.",
+   "ru": "вид на жительство",
+   "ex": "A autorização de residência é válida por dois anos.",
+   "exru": "Вид на жительство действителен два года.",
+   "note": "Оформляет AIMA"
+  },
+  {
+   "word": "a declaração",
+   "pos": "сущ.",
+   "ru": "декларация, справка",
+   "ex": "Assine a declaração na alfândega.",
+   "exru": "Подпишите декларацию на таможне.",
+   "note": "Мн. ч.: as declarações"
+  },
+  {
+   "word": "a moeda estrangeira",
+   "pos": "сущ.",
+   "ru": "иностранная валюта",
+   "ex": "Troquei moeda estrangeira no banco.",
+   "exru": "Я обменял валюту в банке.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o cartão multibanco",
+   "pos": "сущ.",
+   "ru": "банковская карта",
+   "ex": "Paguei com cartão multibanco.",
+   "exru": "Я заплатил банковской картой.",
+   "note": "Дебетовая карта в Португалии"
+  },
+  {
+   "word": "o cartão de crédito",
+   "pos": "сущ.",
+   "ru": "кредитная карта",
+   "ex": "Aceitam cartão de crédito?",
+   "exru": "Вы принимаете кредитные карты?",
+   "note": "м. р."
+  },
+  {
+   "word": "o desconto",
+   "pos": "сущ.",
+   "ru": "скидка",
+   "ex": "Há desconto para estudantes.",
+   "exru": "Есть скидка для студентов.",
+   "note": "м. р."
+  },
+  {
+   "word": "a promoção",
+   "pos": "сущ.",
+   "ru": "акция, спецпредложение",
+   "ex": "Este voo está em promoção.",
+   "exru": "На этот рейс действует акция.",
+   "note": "Мн. ч.: as promoções"
+  },
+  {
+   "word": "a oferta",
+   "pos": "сущ.",
+   "ru": "предложение; подарок",
+   "ex": "É uma oferta da casa.",
+   "exru": "Это подарок от заведения.",
+   "note": "oferecer — дарить"
+  },
+  {
+   "word": "especial",
+   "pos": "прил.",
+   "ru": "особый, специальный",
+   "ex": "Há um preço especial para grupos.",
+   "exru": "Для групп действует особая цена.",
+   "note": "Мн. ч.: especiais"
+  },
+  {
+   "word": "a gorjeta",
+   "pos": "сущ.",
+   "ru": "чаевые",
+   "ex": "Deixei dois euros de gorjeta.",
+   "exru": "Я оставил два евро чаевых.",
+   "note": "Не обязательны, но принято"
+  },
+  {
+   "word": "o seguro de viagem",
+   "pos": "сущ.",
+   "ru": "страховка для поездки",
+   "ex": "Fiz um seguro de viagem para a Europa.",
+   "exru": "Я оформил страховку для поездки по Европе.",
+   "note": "м. р."
+  },
+  {
+   "word": "o pacote de férias",
+   "pos": "сущ.",
+   "ru": "турпакет",
+   "ex": "Comprámos um pacote de férias com voo e hotel.",
+   "exru": "Мы купили турпакет с перелётом и отелем.",
+   "note": "м. р."
+  },
+  {
+   "word": "a entrega",
+   "pos": "сущ.",
+   "ru": "доставка, вручение",
+   "ex": "A entrega é ao domicílio.",
+   "exru": "Доставка на дом.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a recolha",
+   "pos": "сущ.",
+   "ru": "получение, забор (вещей)",
+   "ex": "A recolha da bagagem é no piso zero.",
+   "exru": "Выдача багажа на нулевом этаже.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a devolução",
+   "pos": "сущ.",
+   "ru": "возврат",
+   "ex": "A devolução do carro é às nove.",
+   "exru": "Возврат машины в девять.",
+   "note": "Мн. ч.: as devoluções"
+  },
+  {
+   "word": "o depósito de bagagem",
+   "pos": "сущ.",
+   "ru": "камера хранения",
+   "ex": "Deixei as malas no depósito de bagagem.",
+   "exru": "Я оставил чемоданы в камере хранения.",
+   "note": "м. р."
+  },
+  {
+   "word": "o caixote",
+   "pos": "сущ.",
+   "ru": "ящик, коробка",
+   "ex": "Pus os livros num caixote.",
+   "exru": "Я сложил книги в ящик.",
+   "note": "caixote do lixo — мусорное ведро"
+  },
+  {
+   "word": "o embrulho",
+   "pos": "сущ.",
+   "ru": "свёрток, упаковка",
+   "ex": "Quer o embrulho para oferta?",
+   "exru": "Вам упаковать как подарок?",
+   "note": "embrulhar — заворачивать"
+  },
+  {
+   "word": "a mala de bebé",
+   "pos": "сущ.",
+   "ru": "сумка для малыша",
+   "ex": "Levo sempre a mala de bebé no carro.",
+   "exru": "Я всегда вожу сумку для малыша в машине.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o braço",
+   "pos": "сущ.",
+   "ru": "рука (от плеча до кисти)",
+   "ex": "Parti o braço a esquiar.",
+   "exru": "Я сломал руку на лыжах.",
+   "note": "Кисть — a mão"
+  },
+  {
+   "word": "a mão",
+   "pos": "сущ.",
+   "ru": "рука, кисть",
+   "ex": "Lava as mãos antes de comer.",
+   "exru": "Помой руки перед едой.",
+   "note": "Мн. ч.: as mãos"
+  },
+  {
+   "word": "o dedo",
+   "pos": "сущ.",
+   "ru": "палец",
+   "ex": "Cortei o dedo a fazer o jantar.",
+   "exru": "Я порезал палец, готовя ужин.",
+   "note": "м. р."
+  },
+  {
+   "word": "a perna",
+   "pos": "сущ.",
+   "ru": "нога",
+   "ex": "Dói-me a perna direita.",
+   "exru": "У меня болит правая нога.",
+   "note": "Ступня — o pé"
+  },
+  {
+   "word": "as costas",
+   "pos": "сущ.",
+   "ru": "спина",
+   "ex": "Tenho dores nas costas.",
+   "exru": "У меня болит спина.",
+   "note": "Всегда мн. ч."
+  },
+  {
+   "word": "a coluna",
+   "pos": "сущ.",
+   "ru": "позвоночник; колонка",
+   "ex": "Tenho um problema na coluna.",
+   "exru": "У меня проблема с позвоночником.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o peito",
+   "pos": "сущ.",
+   "ru": "грудь, грудная клетка",
+   "ex": "Sinto uma dor no peito.",
+   "exru": "Я чувствую боль в груди.",
+   "note": "м. р."
+  },
+  {
+   "word": "o pescoço",
+   "pos": "сущ.",
+   "ru": "шея",
+   "ex": "Acordei com o pescoço rígido.",
+   "exru": "Я проснулся с затёкшей шеей.",
+   "note": "м. р."
+  },
+  {
+   "word": "a barriga",
+   "pos": "сущ.",
+   "ru": "живот",
+   "ex": "Dói-me a barriga desde ontem.",
+   "exru": "У меня со вчера болит живот.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o estômago",
+   "pos": "сущ.",
+   "ru": "желудок",
+   "ex": "Tenho o estômago vazio.",
+   "exru": "У меня пустой желудок.",
+   "note": "м. р."
+  },
+  {
+   "word": "a garganta",
+   "pos": "сущ.",
+   "ru": "горло",
+   "ex": "Tenho a garganta inflamada.",
+   "exru": "У меня воспалено горло.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o ouvido",
+   "pos": "сущ.",
+   "ru": "ухо (внутреннее), слух",
+   "ex": "Tenho uma dor de ouvidos.",
+   "exru": "У меня болит ухо.",
+   "note": "Ушная раковина — a orelha"
+  },
+  {
+   "word": "o dente",
+   "pos": "сущ.",
+   "ru": "зуб",
+   "ex": "Parti um dente a comer.",
+   "exru": "Я сломал зуб во время еды.",
+   "note": "м. р."
+  },
+  {
+   "word": "o membro",
+   "pos": "сущ.",
+   "ru": "конечность; член (организации)",
+   "ex": "Perdeu força nos membros inferiores.",
+   "exru": "У него ослабли нижние конечности.",
+   "note": "м. р."
+  },
+  {
+   "word": "o tronco",
+   "pos": "сущ.",
+   "ru": "туловище; ствол",
+   "ex": "O exercício trabalha o tronco.",
+   "exru": "Упражнение задействует туловище.",
+   "note": "м. р."
+  },
+  {
+   "word": "adoecer",
+   "pos": "глаг.",
+   "ru": "заболевать",
+   "ex": "Adoeci na semana passada.",
+   "exru": "Я заболел на прошлой неделе.",
+   "note": "Синоним ficar doente"
+  },
+  {
+   "word": "ficar doente",
+   "pos": "выраж.",
+   "ru": "заболеть",
+   "ex": "Fiquei doente depois da viagem.",
+   "exru": "Я заболел после поездки.",
+   "note": ""
+  },
+  {
+   "word": "a febre",
+   "pos": "сущ.",
+   "ru": "температура, жар",
+   "ex": "Tem febre, trinta e oito e meio.",
+   "exru": "У него температура тридцать восемь с половиной.",
+   "note": "ter febre — иметь температуру"
+  },
+  {
+   "word": "a tosse",
+   "pos": "сущ.",
+   "ru": "кашель",
+   "ex": "A tosse não me deixa dormir.",
+   "exru": "Кашель не даёт мне спать.",
+   "note": "ж. р.; tossir — кашлять"
+  },
+  {
+   "word": "ter gripe",
+   "pos": "выраж.",
+   "ru": "болеть гриппом",
+   "ex": "Tenho gripe, fico em casa.",
+   "exru": "У меня грипп, останусь дома.",
+   "note": ""
+  },
+  {
+   "word": "a alergia",
+   "pos": "сущ.",
+   "ru": "аллергия",
+   "ex": "Tenho alergia ao pólen.",
+   "exru": "У меня аллергия на пыльцу.",
+   "note": "alergia a — аллергия на"
+  },
+  {
+   "word": "ser alérgico",
+   "pos": "выраж.",
+   "ru": "быть аллергиком",
+   "ex": "Sou alérgico a frutos secos.",
+   "exru": "У меня аллергия на орехи.",
+   "note": "alérgico a — аллергия на"
+  },
+  {
+   "word": "doer a cabeça",
+   "pos": "выраж.",
+   "ru": "болеть (о голове)",
+   "ex": "Dói-me a cabeça desde manhã.",
+   "exru": "У меня с утра болит голова.",
+   "note": "dor de cabeça — головная боль"
+  },
+  {
+   "word": "magoar um pé",
+   "pos": "выраж.",
+   "ru": "повредить ногу",
+   "ex": "Magoei um pé a correr.",
+   "exru": "Я повредил ногу на пробежке.",
+   "note": "magoar-se — ушибиться"
+  },
+  {
+   "word": "a depressão",
+   "pos": "сущ.",
+   "ru": "депрессия",
+   "ex": "Está a ser tratado por depressão.",
+   "exru": "Он лечится от депрессии.",
+   "note": "Мн. ч.: as depressões"
+  },
+  {
+   "word": "a ansiedade",
+   "pos": "сущ.",
+   "ru": "тревожность",
+   "ex": "A ansiedade aumenta antes dos exames.",
+   "exru": "Тревожность растёт перед экзаменами.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o stress",
+   "pos": "сущ.",
+   "ru": "стресс",
+   "ex": "O stress do trabalho afeta o sono.",
+   "exru": "Рабочий стресс влияет на сон.",
+   "note": "Читается «штресс»"
+  },
+  {
+   "word": "estar nervoso",
+   "pos": "выраж.",
+   "ru": "нервничать",
+   "ex": "Estou nervoso por causa da entrevista.",
+   "exru": "Я нервничаю из-за собеседования.",
+   "note": "nervoso / nervosa"
+  },
+  {
+   "word": "chorar",
+   "pos": "глаг.",
+   "ru": "плакать",
+   "ex": "O bebé chorou a noite toda.",
+   "exru": "Малыш плакал всю ночь.",
+   "note": ""
+  },
+  {
+   "word": "rir",
+   "pos": "глаг.",
+   "ru": "смеяться",
+   "ex": "Rimos muito com a história dele.",
+   "exru": "Мы много смеялись над его историей.",
+   "note": "Неправильный: rio, ris, ri, rimos, riem"
+  },
+  {
+   "word": "sentir",
+   "pos": "глаг.",
+   "ru": "чувствовать",
+   "ex": "Sinto um cansaço estranho.",
+   "exru": "Я чувствую странную усталость.",
+   "note": "sinto, sentes, sente"
+  },
+  {
+   "word": "ter vontade",
+   "pos": "выраж.",
+   "ru": "хотеть, иметь желание",
+   "ex": "Não tenho vontade de sair hoje.",
+   "exru": "Сегодня мне не хочется выходить.",
+   "note": "ter vontade de + инфинитив"
+  },
+  {
+   "word": "o centro de saúde",
+   "pos": "сущ.",
+   "ru": "поликлиника",
+   "ex": "Marquei consulta no centro de saúde.",
+   "exru": "Я записался на приём в поликлинику.",
+   "note": "Государственная медицина"
+  },
+  {
+   "word": "o médico de família",
+   "pos": "сущ.",
+   "ru": "семейный врач",
+   "ex": "O meu médico de família reformou-se.",
+   "exru": "Мой семейный врач вышел на пенсию.",
+   "note": "Первичное звено в Португалии"
+  },
+  {
+   "word": "a consulta médica",
+   "pos": "сущ.",
+   "ru": "приём у врача",
+   "ex": "A consulta médica é às quinze e trinta.",
+   "exru": "Приём у врача в пятнадцать тридцать.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o consultório",
+   "pos": "сущ.",
+   "ru": "кабинет врача",
+   "ex": "Espere no consultório, por favor.",
+   "exru": "Подождите в кабинете, пожалуйста.",
+   "note": "м. р."
+  },
+  {
+   "word": "ir ao médico",
+   "pos": "выраж.",
+   "ru": "идти к врачу",
+   "ex": "Vou ao médico amanhã de manhã.",
+   "exru": "Завтра утром я иду к врачу.",
+   "note": ""
+  },
+  {
+   "word": "o paciente",
+   "pos": "сущ.",
+   "ru": "пациент",
+   "ex": "O paciente está no quarto doze.",
+   "exru": "Пациент в двенадцатой палате.",
+   "note": "Ж. р.: a paciente"
+  },
+  {
+   "word": "visitar um paciente",
+   "pos": "выраж.",
+   "ru": "навещать больного",
+   "ex": "Fui visitar um paciente ao hospital.",
+   "exru": "Я ходил навестить больного в больницу.",
+   "note": ""
+  },
+  {
+   "word": "o horário de visitas",
+   "pos": "сущ.",
+   "ru": "часы посещений",
+   "ex": "O horário de visitas é das duas às seis.",
+   "exru": "Часы посещений — с двух до шести.",
+   "note": "м. р."
+  },
+  {
+   "word": "a segurança social",
+   "pos": "сущ.",
+   "ru": "социальное обеспечение",
+   "ex": "Descontamos para a segurança social.",
+   "exru": "Мы отчисляем в социальный фонд.",
+   "note": "Аналог соцстраха"
+  },
+  {
+   "word": "a injeção",
+   "pos": "сущ.",
+   "ru": "укол, инъекция",
+   "ex": "A injeção não doeu nada.",
+   "exru": "Укол совсем не болел.",
+   "note": "Мн. ч.: as injeções"
+  },
+  {
+   "word": "levar uma injeção",
+   "pos": "выраж.",
+   "ru": "получить укол",
+   "ex": "Levei uma injeção para as dores.",
+   "exru": "Мне сделали укол от боли.",
+   "note": "levar — получать (укол, штраф)"
+  },
+  {
+   "word": "a vacina",
+   "pos": "сущ.",
+   "ru": "вакцина, прививка",
+   "ex": "Já tomei a vacina da gripe.",
+   "exru": "Я уже сделал прививку от гриппа.",
+   "note": "tomar a vacina — привиться"
+  },
+  {
+   "word": "o analgésico",
+   "pos": "сущ.",
+   "ru": "обезболивающее",
+   "ex": "Tomei um analgésico e melhorei.",
+   "exru": "Я принял обезболивающее и мне стало лучше.",
+   "note": "м. р."
+  },
+  {
+   "word": "o anti-inflamatório",
+   "pos": "сущ.",
+   "ru": "противовоспалительное",
+   "ex": "O médico receitou um anti-inflamatório.",
+   "exru": "Врач выписал противовоспалительное.",
+   "note": "м. р."
+  },
+  {
+   "word": "a pastilha",
+   "pos": "сущ.",
+   "ru": "пастилка, таблетка для рассасывания",
+   "ex": "Chupa uma pastilha para a garganta.",
+   "exru": "Рассоси пастилку от горла.",
+   "note": "pastilha elástica — жвачка"
+  },
+  {
+   "word": "a pílula",
+   "pos": "сущ.",
+   "ru": "противозачаточная таблетка",
+   "ex": "Toma a pílula à mesma hora.",
+   "exru": "Она принимает таблетку в одно и то же время.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a pomada",
+   "pos": "сущ.",
+   "ru": "мазь",
+   "ex": "Passe a pomada duas vezes por dia.",
+   "exru": "Наносите мазь дважды в день.",
+   "note": "ж. р."
+  },
+  {
+   "word": "colocar pomada",
+   "pos": "выраж.",
+   "ru": "наносить мазь",
+   "ex": "Coloque pomada na zona ferida.",
+   "exru": "Нанесите мазь на повреждённое место.",
+   "note": ""
+  },
+  {
+   "word": "as gotas",
+   "pos": "сущ.",
+   "ru": "капли",
+   "ex": "Duas gotas em cada olho.",
+   "exru": "По две капли в каждый глаз.",
+   "note": "a gota — капля"
+  },
+  {
+   "word": "o penso",
+   "pos": "сущ.",
+   "ru": "пластырь, повязка",
+   "ex": "Põe um penso no dedo.",
+   "exru": "Наклей пластырь на палец.",
+   "note": "м. р."
+  },
+  {
+   "word": "o penso higiénico",
+   "pos": "сущ.",
+   "ru": "гигиеническая прокладка",
+   "ex": "Comprei pensos higiénicos na farmácia.",
+   "exru": "Я купила прокладки в аптеке.",
+   "note": "м. р."
+  },
+  {
+   "word": "o preservativo",
+   "pos": "сущ.",
+   "ru": "презерватив",
+   "ex": "Vendem preservativos na farmácia.",
+   "exru": "Презервативы продают в аптеке.",
+   "note": "Ложный друг: не «консервант»"
+  },
+  {
+   "word": "ferido",
+   "pos": "прил.",
+   "ru": "раненый",
+   "ex": "Houve dois feridos no acidente.",
+   "exru": "В аварии двое пострадавших.",
+   "note": "ferido / ferida"
+  },
+  {
+   "word": "o champô",
+   "pos": "сущ.",
+   "ru": "шампунь",
+   "ex": "Acabou o champô.",
+   "exru": "Шампунь закончился.",
+   "note": "Мн. ч.: os champôs"
+  },
+  {
+   "word": "o gel duche",
+   "pos": "сущ.",
+   "ru": "гель для душа",
+   "ex": "Este gel duche cheira a coco.",
+   "exru": "Этот гель для душа пахнет кокосом.",
+   "note": "м. р."
+  },
+  {
+   "word": "o desodorizante",
+   "pos": "сущ.",
+   "ru": "дезодорант",
+   "ex": "Uso desodorizante sem perfume.",
+   "exru": "Я пользуюсь дезодорантом без запаха.",
+   "note": "м. р."
+  },
+  {
+   "word": "a pasta de dentes",
+   "pos": "сущ.",
+   "ru": "зубная паста",
+   "ex": "A pasta de dentes está no armário.",
+   "exru": "Зубная паста в шкафчике.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a escova de dentes",
+   "pos": "сущ.",
+   "ru": "зубная щётка",
+   "ex": "Troco a escova de dentes de três em três meses.",
+   "exru": "Я меняю зубную щётку раз в три месяца.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o pente",
+   "pos": "сущ.",
+   "ru": "расчёска",
+   "ex": "Perdi o pente na viagem.",
+   "exru": "Я потерял расчёску в поездке.",
+   "note": "м. р."
+  },
+  {
+   "word": "pentear",
+   "pos": "глаг.",
+   "ru": "причёсывать",
+   "ex": "Penteia o cabelo antes de sair.",
+   "exru": "Причеши волосы перед выходом.",
+   "note": "pentear-se — причёсываться"
+  },
+  {
+   "word": "a gilete",
+   "pos": "сущ.",
+   "ru": "бритва, станок",
+   "ex": "Comprei giletes descartáveis.",
+   "exru": "Я купил одноразовые бритвы.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o creme de mãos",
+   "pos": "сущ.",
+   "ru": "крем для рук",
+   "ex": "No inverno uso creme de mãos.",
+   "exru": "Зимой я пользуюсь кремом для рук.",
+   "note": "м. р."
+  },
+  {
+   "word": "o papel higiénico",
+   "pos": "сущ.",
+   "ru": "туалетная бумага",
+   "ex": "Acabou o papel higiénico.",
+   "exru": "Туалетная бумага закончилась.",
+   "note": "м. р."
+  },
+  {
+   "word": "a água morna",
+   "pos": "сущ.",
+   "ru": "тёплая вода",
+   "ex": "Lava com água morna e sabão.",
+   "exru": "Промой тёплой водой с мылом.",
+   "note": "morno — тёплый, чуть тёплый"
+  },
+  {
+   "word": "lavar a roupa",
+   "pos": "выраж.",
+   "ru": "стирать бельё",
+   "ex": "Lavo a roupa duas vezes por semana.",
+   "exru": "Я стираю два раза в неделю.",
+   "note": "a máquina de lavar — стиралка"
+  },
+  {
+   "word": "comer bem",
+   "pos": "выраж.",
+   "ru": "хорошо питаться",
+   "ex": "É importante comer bem e dormir bem.",
+   "exru": "Важно хорошо питаться и высыпаться.",
+   "note": ""
+  },
+  {
+   "word": "dormir bem",
+   "pos": "выраж.",
+   "ru": "хорошо спать",
+   "ex": "Não durmo bem há uma semana.",
+   "exru": "Я неделю плохо сплю.",
+   "note": ""
+  },
+  {
+   "word": "ser saudável",
+   "pos": "выраж.",
+   "ru": "быть здоровым, полезным",
+   "ex": "Andar a pé é saudável.",
+   "exru": "Ходить пешком полезно.",
+   "note": "saudável — здоровый образ"
+  },
+  {
+   "word": "o medicamento contra a dor",
+   "pos": "выраж.",
+   "ru": "лекарство от боли",
+   "ex": "Preciso de um medicamento contra a dor.",
+   "exru": "Мне нужно лекарство от боли.",
+   "note": "contra — против"
+  },
+  {
+   "word": "tomar um medicamento",
+   "pos": "выраж.",
+   "ru": "принимать лекарство",
+   "ex": "Tome o medicamento depois das refeições.",
+   "exru": "Принимайте лекарство после еды.",
+   "note": "tomar — принимать лекарства"
+  }
+ ]
+}

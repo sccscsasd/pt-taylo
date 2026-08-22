@@ -1,0 +1,694 @@
+{
+ "v": 1,
+ "deck": "A1 — базовые темы: бытие, мышление и речь, связки, повседневная жизнь, еда",
+ "cards": [
+  {
+   "word": "ser",
+   "pos": "глаг.",
+   "ru": "быть (постоянный признак)",
+   "ex": "O João é professor numa escola de Lisboa.",
+   "exru": "Жуан — учитель в лиссабонской школе.",
+   "note": "Постоянное свойство; временное состояние — estar"
+  },
+  {
+   "word": "estar",
+   "pos": "глаг.",
+   "ru": "быть, находиться (временно)",
+   "ex": "Hoje estou muito cansado, trabalhei o dia todo.",
+   "exru": "Сегодня я очень устал, работал весь день.",
+   "note": "Временное состояние и местонахождение"
+  },
+  {
+   "word": "ter",
+   "pos": "глаг.",
+   "ru": "иметь, быть должным",
+   "ex": "Tenho dois irmãos e uma irmã mais nova.",
+   "exru": "У меня два брата и младшая сестра.",
+   "note": "ter de + инфинитив = быть должным"
+  },
+  {
+   "word": "haver",
+   "pos": "глаг.",
+   "ru": "иметься, быть в наличии",
+   "ex": "Há um supermercado aqui perto?",
+   "exru": "Здесь рядом есть супермаркет?",
+   "note": "Безлично только «há», без мн. ч."
+  },
+  {
+   "word": "viver",
+   "pos": "глаг.",
+   "ru": "жить, проживать",
+   "ex": "Vivo em Portugal desde o ano passado.",
+   "exru": "Я живу в Португалии с прошлого года.",
+   "note": "О месте жительства чаще, чем morar"
+  },
+  {
+   "word": "sem",
+   "pos": "предл.",
+   "ru": "без",
+   "ex": "Bebo o café sem açúcar, por favor.",
+   "exru": "Я пью кофе без сахара, пожалуйста.",
+   "note": "Противоположно com"
+  },
+  {
+   "word": "conhecer",
+   "pos": "глаг.",
+   "ru": "знать (быть знакомым), познакомиться",
+   "ex": "Conheço bem esta zona da cidade.",
+   "exru": "Я хорошо знаю этот район города.",
+   "note": "Знакомство; знание фактов — saber"
+  },
+  {
+   "word": "dizer",
+   "pos": "глаг.",
+   "ru": "говорить, сказать",
+   "ex": "O que é que disseste? Não ouvi bem.",
+   "exru": "Что ты сказал? Я не расслышал.",
+   "note": "Неправильный: digo, disse, dito"
+  },
+  {
+   "word": "escrever",
+   "pos": "глаг.",
+   "ru": "писать",
+   "ex": "Escrevi um email ao senhorio esta manhã.",
+   "exru": "Я написал письмо хозяину квартиры сегодня утром.",
+   "note": "Причастие неправильное: escrito"
+  },
+  {
+   "word": "esperar",
+   "pos": "глаг.",
+   "ru": "ждать; надеяться",
+   "ex": "Espero pelo autocarro há vinte minutos.",
+   "exru": "Я жду автобус уже двадцать минут.",
+   "note": "esperar por alguém — ждать кого-то"
+  },
+  {
+   "word": "falar",
+   "pos": "глаг.",
+   "ru": "говорить, разговаривать",
+   "ex": "Falo um pouco de português, mas ainda erro muito.",
+   "exru": "Я немного говорю по-португальски, но пока много ошибаюсь.",
+   "note": "falar com alguém, falar de algo"
+  },
+  {
+   "word": "pensar",
+   "pos": "глаг.",
+   "ru": "думать",
+   "ex": "Penso que ela tem razão neste assunto.",
+   "exru": "Я думаю, что она права в этом вопросе.",
+   "note": "pensar em — думать о чём-то"
+  },
+  {
+   "word": "perguntar",
+   "pos": "глаг.",
+   "ru": "спрашивать",
+   "ex": "Vou perguntar ao empregado onde fica a saída.",
+   "exru": "Спрошу у официанта, где выход.",
+   "note": "perguntar a alguém — спросить у кого-то"
+  },
+  {
+   "word": "a pergunta",
+   "pos": "сущ.",
+   "ru": "вопрос",
+   "ex": "Posso fazer-lhe uma pergunta rápida?",
+   "exru": "Можно задать вам быстрый вопрос?",
+   "note": "fazer uma pergunta — задать вопрос"
+  },
+  {
+   "word": "responder",
+   "pos": "глаг.",
+   "ru": "отвечать",
+   "ex": "Ela ainda não respondeu à minha mensagem.",
+   "exru": "Она ещё не ответила на моё сообщение.",
+   "note": "responder a — отвечать на"
+  },
+  {
+   "word": "a resposta",
+   "pos": "сущ.",
+   "ru": "ответ",
+   "ex": "A resposta dele foi curta e clara.",
+   "exru": "Его ответ был коротким и ясным.",
+   "note": "ж. р."
+  },
+  {
+   "word": "dar",
+   "pos": "глаг.",
+   "ru": "давать",
+   "ex": "Dá-me o teu número de telefone, por favor.",
+   "exru": "Дай мне свой номер телефона, пожалуйста.",
+   "note": "Неправильный: dou, dás, dá, damos, dão"
+  },
+  {
+   "word": "então",
+   "pos": "нареч.",
+   "ru": "тогда, итак, ну и",
+   "ex": "Então, o que é que fazemos amanhã?",
+   "exru": "Ну и что мы будем делать завтра?",
+   "note": "Очень частое разговорное слово-связка"
+  },
+  {
+   "word": "mas",
+   "pos": "союз",
+   "ru": "но",
+   "ex": "Gosto de peixe, mas hoje prefiro carne.",
+   "exru": "Я люблю рыбу, но сегодня предпочитаю мясо.",
+   "note": ""
+  },
+  {
+   "word": "porque",
+   "pos": "союз",
+   "ru": "потому что",
+   "ex": "Cheguei tarde porque perdi o comboio.",
+   "exru": "Я пришёл поздно, потому что опоздал на поезд.",
+   "note": "Слитно — ответ; porquê — в вопросе на конце"
+  },
+  {
+   "word": "porquê",
+   "pos": "нареч.",
+   "ru": "почему (в конце вопроса)",
+   "ex": "Não vens connosco? Porquê?",
+   "exru": "Ты не пойдёшь с нами? Почему?",
+   "note": "В начале вопроса — por que razão / porque"
+  },
+  {
+   "word": "sobre",
+   "pos": "предл.",
+   "ru": "о, про; над",
+   "ex": "Falámos sobre o trabalho durante o almoço.",
+   "exru": "Мы говорили о работе за обедом.",
+   "note": "«о теме» — sobre, реже acerca de"
+  },
+  {
+   "word": "almoçar",
+   "pos": "глаг.",
+   "ru": "обедать",
+   "ex": "Almoço quase sempre no refeitório da empresa.",
+   "exru": "Я почти всегда обедаю в столовой на работе.",
+   "note": ""
+  },
+  {
+   "word": "o almoço",
+   "pos": "сущ.",
+   "ru": "обед",
+   "ex": "O almoço é servido a partir do meio-dia.",
+   "exru": "Обед подают с полудня.",
+   "note": "м. р."
+  },
+  {
+   "word": "o pequeno-almoço",
+   "pos": "сущ.",
+   "ru": "завтрак",
+   "ex": "Ao pequeno-almoço como pão com queijo.",
+   "exru": "На завтрак я ем хлеб с сыром.",
+   "note": "м. р.; пишется через дефис, мн. ч.: pequenos-almoços"
+  },
+  {
+   "word": "tomar o pequeno-almoço",
+   "pos": "выраж.",
+   "ru": "завтракать",
+   "ex": "Tomo o pequeno-almoço às sete e meia.",
+   "exru": "Я завтракаю в половине восьмого.",
+   "note": "Говорят и comer o pequeno-almoço"
+  },
+  {
+   "word": "jantar",
+   "pos": "глаг.",
+   "ru": "ужинать; ужин",
+   "ex": "Hoje jantamos fora, num restaurante do bairro.",
+   "exru": "Сегодня мы ужинаем вне дома, в ресторане по соседству.",
+   "note": "Слово и глагол, и существительное (o jantar)"
+  },
+  {
+   "word": "lanchar",
+   "pos": "глаг.",
+   "ru": "перекусить, полдничать",
+   "ex": "As crianças lancham depois da escola.",
+   "exru": "Дети перекусывают после школы.",
+   "note": ""
+  },
+  {
+   "word": "o lanche",
+   "pos": "сущ.",
+   "ru": "перекус, полдник",
+   "ex": "Levo sempre um lanche na mochila.",
+   "exru": "Я всегда беру перекус в рюкзаке.",
+   "note": "м. р."
+  },
+  {
+   "word": "o caderno",
+   "pos": "сущ.",
+   "ru": "тетрадь",
+   "ex": "Escrevi os verbos novos no caderno.",
+   "exru": "Я записал новые глаголы в тетрадь.",
+   "note": "м. р."
+  },
+  {
+   "word": "a caneta",
+   "pos": "сущ.",
+   "ru": "ручка",
+   "ex": "Emprestas-me uma caneta azul?",
+   "exru": "Одолжишь мне синюю ручку?",
+   "note": "ж. р."
+  },
+  {
+   "word": "o lápis",
+   "pos": "сущ.",
+   "ru": "карандаш",
+   "ex": "Prefiro escrever a lápis para poder apagar.",
+   "exru": "Я предпочитаю писать карандашом, чтобы можно было стереть.",
+   "note": "Мн. ч. не меняется: os lápis"
+  },
+  {
+   "word": "o livro",
+   "pos": "сущ.",
+   "ru": "книга",
+   "ex": "Estou a ler um livro em português muito simples.",
+   "exru": "Я читаю очень простую книгу на португальском.",
+   "note": "м. р., несмотря на «книга»"
+  },
+  {
+   "word": "o quadro",
+   "pos": "сущ.",
+   "ru": "доска (в классе); картина",
+   "ex": "A professora escreveu a data no quadro.",
+   "exru": "Учительница написала дату на доске.",
+   "note": "м. р."
+  },
+  {
+   "word": "a sala de aula",
+   "pos": "сущ.",
+   "ru": "класс, аудитория",
+   "ex": "A sala de aula fica no primeiro andar.",
+   "exru": "Класс находится на втором этаже.",
+   "note": "1.º andar в Португалии = 2-й этаж"
+  },
+  {
+   "word": "a turma",
+   "pos": "сущ.",
+   "ru": "класс, группа (учащихся)",
+   "ex": "Na minha turma há alunos de cinco países.",
+   "exru": "В моей группе учатся ребята из пяти стран.",
+   "note": "ж. р.; о людях, не о помещении"
+  },
+  {
+   "word": "o colega",
+   "pos": "сущ.",
+   "ru": "коллега, одноклассник",
+   "ex": "Vou almoçar com um colega do trabalho.",
+   "exru": "Я иду обедать с коллегой по работе.",
+   "note": "Форма одна: o colega / a colega"
+  },
+  {
+   "word": "a disciplina",
+   "pos": "сущ.",
+   "ru": "учебный предмет; дисциплина",
+   "ex": "A minha disciplina preferida é história.",
+   "exru": "Мой любимый предмет — история.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o curso",
+   "pos": "сущ.",
+   "ru": "курс, обучение",
+   "ex": "Fiz um curso de português de três meses.",
+   "exru": "Я прошёл трёхмесячный курс португальского.",
+   "note": "м. р."
+  },
+  {
+   "word": "o semestre",
+   "pos": "сущ.",
+   "ru": "семестр",
+   "ex": "O segundo semestre começa em fevereiro.",
+   "exru": "Второй семестр начинается в феврале.",
+   "note": "м. р."
+  },
+  {
+   "word": "o recreio",
+   "pos": "сущ.",
+   "ru": "перемена (в школе)",
+   "ex": "Os alunos jogam à bola no recreio.",
+   "exru": "Ученики играют в мяч на перемене.",
+   "note": "м. р."
+  },
+  {
+   "word": "sair da escola",
+   "pos": "выраж.",
+   "ru": "уходить из школы (после уроков)",
+   "ex": "Saio da escola às três e meia da tarde.",
+   "exru": "Я ухожу из школы в половине четвёртого.",
+   "note": "sair de + место"
+  },
+  {
+   "word": "começar a trabalhar",
+   "pos": "выраж.",
+   "ru": "начинать работать",
+   "ex": "Começo a trabalhar às nove da manhã.",
+   "exru": "Я начинаю работать в девять утра.",
+   "note": "começar a + инфинитив"
+  },
+  {
+   "word": "sair do trabalho",
+   "pos": "выраж.",
+   "ru": "уходить с работы",
+   "ex": "Saio do trabalho por volta das seis.",
+   "exru": "Я ухожу с работы около шести.",
+   "note": ""
+  },
+  {
+   "word": "o horário de trabalho",
+   "pos": "сущ.",
+   "ru": "рабочий график",
+   "ex": "O meu horário de trabalho é das nove às cinco.",
+   "exru": "Мой рабочий график — с девяти до пяти.",
+   "note": "м. р."
+  },
+  {
+   "word": "chegar a casa",
+   "pos": "выраж.",
+   "ru": "приходить домой",
+   "ex": "Chego a casa cansado, mas ainda cozinho.",
+   "exru": "Я прихожу домой уставшим, но всё равно готовлю.",
+   "note": "Без артикля: a casa, не «à casa»"
+  },
+  {
+   "word": "lavar-se",
+   "pos": "глаг.",
+   "ru": "мыться, умываться",
+   "ex": "Lavo-me e visto-me em dez minutos.",
+   "exru": "Я умываюсь и одеваюсь за десять минут.",
+   "note": "Возвратный: lavo-me, lavas-te"
+  },
+  {
+   "word": "vestir-se",
+   "pos": "глаг.",
+   "ru": "одеваться",
+   "ex": "Veste-se sempre de preto no inverno.",
+   "exru": "Зимой он всегда одевается в чёрное.",
+   "note": "e → i: visto-me, vestes-te"
+  },
+  {
+   "word": "despir-se",
+   "pos": "глаг.",
+   "ru": "раздеваться",
+   "ex": "Despe-se e deita-se logo a seguir ao jantar.",
+   "exru": "Он раздевается и ложится сразу после ужина.",
+   "note": "Противоположно vestir-se"
+  },
+  {
+   "word": "ir às compras",
+   "pos": "выраж.",
+   "ru": "ходить за покупками",
+   "ex": "Ao sábado de manhã vou às compras ao mercado.",
+   "exru": "В субботу утром я хожу за покупками на рынок.",
+   "note": "Именно às compras, мн. ч."
+  },
+  {
+   "word": "o supermercado",
+   "pos": "сущ.",
+   "ru": "супермаркет",
+   "ex": "O supermercado fecha às oito da noite.",
+   "exru": "Супермаркет закрывается в восемь вечера.",
+   "note": "м. р."
+  },
+  {
+   "word": "a alimentação",
+   "pos": "сущ.",
+   "ru": "питание, еда",
+   "ex": "Uma boa alimentação é importante para a saúde.",
+   "exru": "Хорошее питание важно для здоровья.",
+   "note": "ж. р.; о рационе в целом"
+  },
+  {
+   "word": "comer",
+   "pos": "глаг.",
+   "ru": "есть, кушать",
+   "ex": "Não como carne, sou vegetariano.",
+   "exru": "Я не ем мясо, я вегетарианец.",
+   "note": ""
+  },
+  {
+   "word": "beber",
+   "pos": "глаг.",
+   "ru": "пить",
+   "ex": "Bebo sempre um copo de água antes do café.",
+   "exru": "Я всегда пью стакан воды перед кофе.",
+   "note": ""
+  },
+  {
+   "word": "cozinhar",
+   "pos": "глаг.",
+   "ru": "готовить (пищу)",
+   "ex": "Ao domingo cozinho para toda a família.",
+   "exru": "По воскресеньям я готовлю на всю семью.",
+   "note": ""
+  },
+  {
+   "word": "preparar",
+   "pos": "глаг.",
+   "ru": "готовить, подготавливать",
+   "ex": "Vou preparar o jantar enquanto tu pões a mesa.",
+   "exru": "Я приготовлю ужин, пока ты накрываешь на стол.",
+   "note": "Шире, чем cozinhar"
+  },
+  {
+   "word": "provar",
+   "pos": "глаг.",
+   "ru": "пробовать (на вкус); примерять",
+   "ex": "Prova esta sopa, está deliciosa.",
+   "exru": "Попробуй этот суп, он превосходный.",
+   "note": "Также «примерить одежду»"
+  },
+  {
+   "word": "pedir",
+   "pos": "глаг.",
+   "ru": "просить; заказывать",
+   "ex": "Pedi um café e uma torrada ao balcão.",
+   "exru": "Я заказал кофе и тост у стойки.",
+   "note": "Неправильный: peço, pedes, pede"
+  },
+  {
+   "word": "o pão",
+   "pos": "сущ.",
+   "ru": "хлеб",
+   "ex": "Compro pão fresco na padaria todos os dias.",
+   "exru": "Я каждый день покупаю свежий хлеб в булочной.",
+   "note": "Мн. ч.: os pães"
+  },
+  {
+   "word": "o arroz",
+   "pos": "сущ.",
+   "ru": "рис",
+   "ex": "O arroz de marisco é um prato típico português.",
+   "exru": "Рис с морепродуктами — типичное португальское блюдо.",
+   "note": "м. р."
+  },
+  {
+   "word": "a massa",
+   "pos": "сущ.",
+   "ru": "макароны; тесто",
+   "ex": "À noite faço massa com legumes.",
+   "exru": "Вечером я делаю макароны с овощами.",
+   "note": "ж. р.; о макаронах — ед. ч."
+  },
+  {
+   "word": "o trigo",
+   "pos": "сущ.",
+   "ru": "пшеница",
+   "ex": "Este pão é feito com farinha de trigo integral.",
+   "exru": "Этот хлеб сделан из цельнозерновой пшеничной муки.",
+   "note": "м. р."
+  },
+  {
+   "word": "o cereal",
+   "pos": "сущ.",
+   "ru": "злак; хлопья",
+   "ex": "Ao pequeno-almoço como cereais com leite.",
+   "exru": "На завтрак я ем хлопья с молоком.",
+   "note": "Мн. ч.: os cereais"
+  },
+  {
+   "word": "a carne",
+   "pos": "сущ.",
+   "ru": "мясо",
+   "ex": "Prefiro carne grelhada a carne frita.",
+   "exru": "Я предпочитаю мясо на гриле жареному.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a carne de vaca",
+   "pos": "сущ.",
+   "ru": "говядина",
+   "ex": "Este bife é de carne de vaca, não de porco.",
+   "exru": "Этот стейк из говядины, а не из свинины.",
+   "note": "ж. р.; телятина — vitela"
+  },
+  {
+   "word": "o porco",
+   "pos": "сущ.",
+   "ru": "свинья; свинина",
+   "ex": "A carne de porco é muito usada na cozinha portuguesa.",
+   "exru": "Свинина широко используется в португальской кухне.",
+   "note": "м. р."
+  },
+  {
+   "word": "o frango",
+   "pos": "сущ.",
+   "ru": "курица (мясо)",
+   "ex": "Frango assado com batatas é o prato de domingo.",
+   "exru": "Запечённая курица с картошкой — воскресное блюдо.",
+   "note": "м. р.; живая птица — a galinha"
+  },
+  {
+   "word": "o ovo",
+   "pos": "сущ.",
+   "ru": "яйцо",
+   "ex": "Quer os ovos mexidos ou estrelados?",
+   "exru": "Вам яйца болтунью или глазунью?",
+   "note": "Мн. ч. читается с открытым o: ovos"
+  },
+  {
+   "word": "o leite",
+   "pos": "сущ.",
+   "ru": "молоко",
+   "ex": "Um café com leite, se faz favor.",
+   "exru": "Кофе с молоком, пожалуйста.",
+   "note": "м. р., хотя по-русски средний"
+  },
+  {
+   "word": "a fruta",
+   "pos": "сущ.",
+   "ru": "фрукты",
+   "ex": "Como fruta a seguir ao almoço.",
+   "exru": "Я ем фрукты после обеда.",
+   "note": "ж. р., собирательное — обычно ед. ч."
+  },
+  {
+   "word": "a maçã",
+   "pos": "сущ.",
+   "ru": "яблоко",
+   "ex": "Levo uma maçã para comer no trabalho.",
+   "exru": "Я беру яблоко, чтобы съесть на работе.",
+   "note": "Мн. ч.: as maçãs"
+  },
+  {
+   "word": "a laranja",
+   "pos": "сущ.",
+   "ru": "апельсин",
+   "ex": "De manhã bebo um sumo de laranja natural.",
+   "exru": "Утром я пью свежевыжатый апельсиновый сок.",
+   "note": "Сок — o sumo de laranja"
+  },
+  {
+   "word": "a banana",
+   "pos": "сущ.",
+   "ru": "банан",
+   "ex": "Compra bananas maduras para o batido.",
+   "exru": "Купи спелых бананов для смузи.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o tomate",
+   "pos": "сущ.",
+   "ru": "помидор",
+   "ex": "A salada leva tomate, alface e cebola.",
+   "exru": "В салат идут помидор, салат и лук.",
+   "note": "м. р."
+  },
+  {
+   "word": "a batata",
+   "pos": "сущ.",
+   "ru": "картофель",
+   "ex": "Quer batatas fritas ou arroz?",
+   "exru": "Вам картошку фри или рис?",
+   "note": "ж. р."
+  },
+  {
+   "word": "o vegetal",
+   "pos": "сущ.",
+   "ru": "овощ, растение",
+   "ex": "Uma dieta com muitos vegetais faz bem.",
+   "exru": "Диета с большим количеством овощей полезна.",
+   "note": "Чаще говорят os legumes"
+  },
+  {
+   "word": "a salada",
+   "pos": "сущ.",
+   "ru": "салат",
+   "ex": "Como salada todos os dias ao almoço.",
+   "exru": "Я ем салат каждый день в обед.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a sopa",
+   "pos": "сущ.",
+   "ru": "суп",
+   "ex": "Em Portugal, a refeição começa com sopa.",
+   "exru": "В Португалии приём пищи начинается с супа.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o sal",
+   "pos": "сущ.",
+   "ru": "соль",
+   "ex": "Falta sal nesta sopa.",
+   "exru": "В этом супе не хватает соли.",
+   "note": "м. р.; мн. ч.: os sais"
+  },
+  {
+   "word": "a pimenta",
+   "pos": "сущ.",
+   "ru": "перец (молотый)",
+   "ex": "Põe um pouco de pimenta preta no bife.",
+   "exru": "Поперчи стейк чёрным перцем.",
+   "note": "Овощ-перец — o pimento"
+  },
+  {
+   "word": "o açúcar",
+   "pos": "сущ.",
+   "ru": "сахар",
+   "ex": "Tomo o chá sem açúcar.",
+   "exru": "Я пью чай без сахара.",
+   "note": "м. р."
+  },
+  {
+   "word": "o chocolate",
+   "pos": "сущ.",
+   "ru": "шоколад",
+   "ex": "Ofereceram-me uma caixa de chocolates.",
+   "exru": "Мне подарили коробку шоколадных конфет.",
+   "note": "м. р."
+  },
+  {
+   "word": "o gelado",
+   "pos": "сущ.",
+   "ru": "мороженое",
+   "ex": "No verão comemos gelado quase todos os dias.",
+   "exru": "Летом мы едим мороженое почти каждый день.",
+   "note": "м. р.; gelado de baunilha — ванильное мороженое"
+  },
+  {
+   "word": "a ementa",
+   "pos": "сущ.",
+   "ru": "меню",
+   "ex": "Pode trazer-nos a ementa, por favor?",
+   "exru": "Принесите нам, пожалуйста, меню.",
+   "note": "ж. р.; ementa do dia — меню дня"
+  },
+  {
+   "word": "o menu",
+   "pos": "сущ.",
+   "ru": "меню; комплексный обед",
+   "ex": "Ao almoço há menu do dia por dez euros.",
+   "exru": "В обед есть комплексный обед дня за десять евро.",
+   "note": "Часто = набор блюд, а ementa — список"
+  },
+  {
+   "word": "o empregado",
+   "pos": "сущ.",
+   "ru": "официант; работник",
+   "ex": "O empregado de mesa trouxe a conta.",
+   "exru": "Официант принёс счёт.",
+   "note": "Официант — empregado de mesa; ж. р.: empregada"
+  }
+ ]
+}

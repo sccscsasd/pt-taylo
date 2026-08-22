@@ -1,0 +1,510 @@
+{
+ "v": 1,
+ "deck": "A1 — Время (Noções temporais)",
+ "cards": [
+  {
+   "word": "o dia",
+   "pos": "сущ.",
+   "ru": "день",
+   "ex": "Passei o dia todo a arrumar a casa.",
+   "exru": "Я весь день убирался дома.",
+   "note": "м. р.; bom dia — доброе утро"
+  },
+  {
+   "word": "a manhã",
+   "pos": "сущ.",
+   "ru": "утро",
+   "ex": "A manhã passou a correr.",
+   "exru": "Утро пролетело незаметно.",
+   "note": "Мн. ч.: as manhãs"
+  },
+  {
+   "word": "a tarde",
+   "pos": "сущ.",
+   "ru": "день (после полудня), вечер до 20:00",
+   "ex": "Boa tarde! Posso ajudar?",
+   "exru": "Добрый день! Могу помочь?",
+   "note": "С 12:00 примерно до 20:00"
+  },
+  {
+   "word": "a noite",
+   "pos": "сущ.",
+   "ru": "вечер, ночь",
+   "ex": "À noite fico em casa a ler.",
+   "exru": "Вечером я сижу дома и читаю.",
+   "note": "Boa noite — и «добрый вечер», и «спокойной ночи»"
+  },
+  {
+   "word": "de manhã",
+   "pos": "выраж.",
+   "ru": "утром",
+   "ex": "De manhã bebo sempre um café.",
+   "exru": "Утром я всегда пью кофе.",
+   "note": "Без артикля; ср. à tarde, à noite"
+  },
+  {
+   "word": "de dia",
+   "pos": "выраж.",
+   "ru": "днём (при свете дня)",
+   "ex": "Prefiro conduzir de dia.",
+   "exru": "Я предпочитаю водить машину днём.",
+   "note": "Противоположно de noite"
+  },
+  {
+   "word": "esta manhã",
+   "pos": "выраж.",
+   "ru": "сегодня утром",
+   "ex": "Esta manhã acordei às seis.",
+   "exru": "Сегодня утром я проснулся в шесть.",
+   "note": "Так же: esta tarde, esta noite"
+  },
+  {
+   "word": "o meio-dia",
+   "pos": "сущ.",
+   "ru": "полдень",
+   "ex": "Almoçamos ao meio-dia em ponto.",
+   "exru": "Мы обедаем ровно в полдень.",
+   "note": "ao meio-dia — в полдень"
+  },
+  {
+   "word": "a meia-noite",
+   "pos": "сущ.",
+   "ru": "полночь",
+   "ex": "O comboio chega à meia-noite.",
+   "exru": "Поезд приходит в полночь.",
+   "note": "ж. р.: à meia-noite"
+  },
+  {
+   "word": "a hora",
+   "pos": "сущ.",
+   "ru": "час; время",
+   "ex": "Que horas são? São três e meia.",
+   "exru": "Который час? Половина четвёртого.",
+   "note": "Que horas são? — который час"
+  },
+  {
+   "word": "o minuto",
+   "pos": "сущ.",
+   "ru": "минута",
+   "ex": "Espera cinco minutos, por favor.",
+   "exru": "Подожди пять минут, пожалуйста.",
+   "note": "м. р."
+  },
+  {
+   "word": "o segundo",
+   "pos": "сущ.",
+   "ru": "секунда; второй",
+   "ex": "Faltam trinta segundos para o fim.",
+   "exru": "До конца тридцать секунд.",
+   "note": "Также «второй»: o segundo andar"
+  },
+  {
+   "word": "o horário",
+   "pos": "сущ.",
+   "ru": "расписание, график",
+   "ex": "O horário dos comboios mudou em setembro.",
+   "exru": "Расписание поездов изменилось в сентябре.",
+   "note": "м. р."
+  },
+  {
+   "word": "a semana",
+   "pos": "сущ.",
+   "ru": "неделя",
+   "ex": "Esta semana tenho muito trabalho.",
+   "exru": "На этой неделе у меня много работы.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o fim de semana",
+   "pos": "сущ.",
+   "ru": "выходные",
+   "ex": "Ao fim de semana vou sempre ao mercado.",
+   "exru": "По выходным я всегда хожу на рынок.",
+   "note": "м. р.; ao fim de semana — по выходным"
+  },
+  {
+   "word": "a segunda",
+   "pos": "сущ.",
+   "ru": "понедельник",
+   "ex": "Na segunda começo o curso novo.",
+   "exru": "В понедельник я начинаю новый курс.",
+   "note": "Полностью: segunda-feira"
+  },
+  {
+   "word": "a terça",
+   "pos": "сущ.",
+   "ru": "вторник",
+   "ex": "Tenho consulta na terça de manhã.",
+   "exru": "У меня приём во вторник утром.",
+   "note": "Полностью: terça-feira"
+  },
+  {
+   "word": "a quarta",
+   "pos": "сущ.",
+   "ru": "среда",
+   "ex": "À quarta há mercado na praça.",
+   "exru": "По средам на площади рынок.",
+   "note": "Полностью: quarta-feira"
+  },
+  {
+   "word": "a quinta",
+   "pos": "сущ.",
+   "ru": "четверг",
+   "ex": "Vemo-nos na quinta à tarde?",
+   "exru": "Увидимся в четверг днём?",
+   "note": "quinta-feira; a quinta — ещё и усадьба"
+  },
+  {
+   "word": "a sexta",
+   "pos": "сущ.",
+   "ru": "пятница",
+   "ex": "Na sexta saio mais cedo do trabalho.",
+   "exru": "В пятницу я ухожу с работы пораньше.",
+   "note": "Полностью: sexta-feira"
+  },
+  {
+   "word": "o sábado",
+   "pos": "сущ.",
+   "ru": "суббота",
+   "ex": "No sábado dormimos até tarde.",
+   "exru": "В субботу мы спим допоздна.",
+   "note": "м. р.; без -feira"
+  },
+  {
+   "word": "o domingo",
+   "pos": "сущ.",
+   "ru": "воскресенье",
+   "ex": "Ao domingo as lojas fecham cedo.",
+   "exru": "По воскресеньям магазины закрываются рано.",
+   "note": "м. р.; неделя начинается с domingo"
+  },
+  {
+   "word": "o mês",
+   "pos": "сущ.",
+   "ru": "месяц",
+   "ex": "Este mês gastei menos dinheiro.",
+   "exru": "В этом месяце я потратил меньше денег.",
+   "note": "Мн. ч.: os meses"
+  },
+  {
+   "word": "janeiro",
+   "pos": "сущ.",
+   "ru": "январь",
+   "ex": "Em janeiro faz muito frio no norte.",
+   "exru": "В январе на севере очень холодно.",
+   "note": "Месяцы пишутся со строчной буквы"
+  },
+  {
+   "word": "fevereiro",
+   "pos": "сущ.",
+   "ru": "февраль",
+   "ex": "O Carnaval é em fevereiro.",
+   "exru": "Карнавал — в феврале.",
+   "note": ""
+  },
+  {
+   "word": "março",
+   "pos": "сущ.",
+   "ru": "март",
+   "ex": "Em março os dias começam a crescer.",
+   "exru": "В марте дни начинают прибавляться.",
+   "note": ""
+  },
+  {
+   "word": "abril",
+   "pos": "сущ.",
+   "ru": "апрель",
+   "ex": "O 25 de Abril é feriado em Portugal.",
+   "exru": "25 апреля — праздник в Португалии.",
+   "note": "День революции гвоздик"
+  },
+  {
+   "word": "maio",
+   "pos": "сущ.",
+   "ru": "май",
+   "ex": "Em maio já se pode ir à praia.",
+   "exru": "В мае уже можно ходить на пляж.",
+   "note": ""
+  },
+  {
+   "word": "junho",
+   "pos": "сущ.",
+   "ru": "июнь",
+   "ex": "Em junho há festas populares em Lisboa.",
+   "exru": "В июне в Лиссабоне народные гулянья.",
+   "note": "Santos Populares, 12–13 июня"
+  },
+  {
+   "word": "julho",
+   "pos": "сущ.",
+   "ru": "июль",
+   "ex": "Julho é o mês mais cheio de turistas.",
+   "exru": "Июль — самый туристический месяц.",
+   "note": ""
+  },
+  {
+   "word": "agosto",
+   "pos": "сущ.",
+   "ru": "август",
+   "ex": "Em agosto quase toda a gente está de férias.",
+   "exru": "В августе почти все в отпуске.",
+   "note": ""
+  },
+  {
+   "word": "setembro",
+   "pos": "сущ.",
+   "ru": "сентябрь",
+   "ex": "As aulas recomeçam em setembro.",
+   "exru": "Занятия возобновляются в сентябре.",
+   "note": ""
+  },
+  {
+   "word": "outubro",
+   "pos": "сущ.",
+   "ru": "октябрь",
+   "ex": "Em outubro começa a chover.",
+   "exru": "В октябре начинаются дожди.",
+   "note": ""
+  },
+  {
+   "word": "novembro",
+   "pos": "сущ.",
+   "ru": "ноябрь",
+   "ex": "Novembro é um mês cinzento.",
+   "exru": "Ноябрь — серый месяц.",
+   "note": ""
+  },
+  {
+   "word": "dezembro",
+   "pos": "сущ.",
+   "ru": "декабрь",
+   "ex": "Em dezembro as ruas estão iluminadas.",
+   "exru": "В декабре улицы украшены огнями.",
+   "note": ""
+  },
+  {
+   "word": "o ano",
+   "pos": "сущ.",
+   "ru": "год",
+   "ex": "Vivo aqui há dois anos.",
+   "exru": "Я живу здесь два года.",
+   "note": "м. р.; fazer anos — праздновать день рождения"
+  },
+  {
+   "word": "a primavera",
+   "pos": "сущ.",
+   "ru": "весна",
+   "ex": "Na primavera tudo fica verde.",
+   "exru": "Весной всё зеленеет.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o verão",
+   "pos": "сущ.",
+   "ru": "лето",
+   "ex": "O verão aqui é muito seco.",
+   "exru": "Лето здесь очень сухое.",
+   "note": "Мн. ч.: os verões"
+  },
+  {
+   "word": "o outono",
+   "pos": "сущ.",
+   "ru": "осень",
+   "ex": "No outono os dias ficam mais curtos.",
+   "exru": "Осенью дни становятся короче.",
+   "note": "м. р."
+  },
+  {
+   "word": "o inverno",
+   "pos": "сущ.",
+   "ru": "зима",
+   "ex": "O inverno em Portugal é chuvoso.",
+   "exru": "Зима в Португалии дождливая.",
+   "note": "м. р."
+  },
+  {
+   "word": "hoje",
+   "pos": "нареч.",
+   "ru": "сегодня",
+   "ex": "Hoje não vou trabalhar.",
+   "exru": "Сегодня я не иду на работу.",
+   "note": "hoje em dia — в наши дни"
+  },
+  {
+   "word": "amanhã",
+   "pos": "нареч.",
+   "ru": "завтра",
+   "ex": "Amanhã ligo-te de manhã.",
+   "exru": "Завтра я позвоню тебе утром.",
+   "note": "Вчера — ontem"
+  },
+  {
+   "word": "agora",
+   "pos": "нареч.",
+   "ru": "сейчас",
+   "ex": "Agora não posso falar, estou numa reunião.",
+   "exru": "Сейчас я не могу говорить, я на встрече.",
+   "note": ""
+  },
+  {
+   "word": "até agora",
+   "pos": "выраж.",
+   "ru": "до сих пор, пока что",
+   "ex": "Até agora ninguém respondeu.",
+   "exru": "До сих пор никто не ответил.",
+   "note": ""
+  },
+  {
+   "word": "logo",
+   "pos": "нареч.",
+   "ru": "скоро, попозже; сразу",
+   "ex": "Falamos logo à noite.",
+   "exru": "Поговорим попозже вечером.",
+   "note": "Até logo! — до скорого"
+  },
+  {
+   "word": "cedo",
+   "pos": "нареч.",
+   "ru": "рано",
+   "ex": "Levanto-me cedo todos os dias.",
+   "exru": "Я встаю рано каждый день.",
+   "note": "Противоположно tarde"
+  },
+  {
+   "word": "mais cedo",
+   "pos": "выраж.",
+   "ru": "раньше",
+   "ex": "Podemos jantar mais cedo hoje?",
+   "exru": "Можем поужинать сегодня пораньше?",
+   "note": ""
+  },
+  {
+   "word": "mais tarde",
+   "pos": "выраж.",
+   "ru": "позже",
+   "ex": "Vejo isso mais tarde, agora não dá.",
+   "exru": "Посмотрю это позже, сейчас не получается.",
+   "note": ""
+  },
+  {
+   "word": "sempre",
+   "pos": "нареч.",
+   "ru": "всегда",
+   "ex": "Ela chega sempre a horas.",
+   "exru": "Она всегда приходит вовремя.",
+   "note": "a horas — вовремя"
+  },
+  {
+   "word": "nunca",
+   "pos": "нареч.",
+   "ru": "никогда",
+   "ex": "Nunca provei bacalhau assim.",
+   "exru": "Я никогда не пробовал такую треску.",
+   "note": "Двойное отрицание нормально: não… nunca"
+  },
+  {
+   "word": "a vez",
+   "pos": "сущ.",
+   "ru": "раз",
+   "ex": "É a primeira vez que venho ao Porto.",
+   "exru": "Я первый раз в Порту.",
+   "note": "Мн. ч.: as vezes; às vezes — иногда"
+  },
+  {
+   "word": "quando",
+   "pos": "нареч.",
+   "ru": "когда",
+   "ex": "Quando é que chegas?",
+   "exru": "Когда ты приедешь?",
+   "note": "В вопросе часто с é que"
+  },
+  {
+   "word": "desde",
+   "pos": "предл.",
+   "ru": "с (какого-то момента)",
+   "ex": "Trabalho aqui desde 2020.",
+   "exru": "Я работаю здесь с 2020 года.",
+   "note": "desde… até — с… по"
+  },
+  {
+   "word": "até",
+   "pos": "предл.",
+   "ru": "до; даже",
+   "ex": "A loja está aberta até às oito.",
+   "exru": "Магазин открыт до восьми.",
+   "note": "Также «даже»: até eu sei isso"
+  },
+  {
+   "word": "o princípio",
+   "pos": "сущ.",
+   "ru": "начало",
+   "ex": "No princípio do mês pago as contas.",
+   "exru": "В начале месяца я оплачиваю счета.",
+   "note": "Конец — o fim"
+  },
+  {
+   "word": "pouco tempo",
+   "pos": "выраж.",
+   "ru": "недолго, мало времени",
+   "ex": "Fico pouco tempo, tenho de ir embora.",
+   "exru": "Я ненадолго, мне нужно уходить.",
+   "note": "há pouco tempo — недавно"
+  },
+  {
+   "word": "muito",
+   "pos": "нареч.",
+   "ru": "много, очень",
+   "ex": "Hoje trabalhei muito.",
+   "exru": "Сегодня я много работал.",
+   "note": "Перед прилаг. — «очень»"
+  },
+  {
+   "word": "depressa",
+   "pos": "нареч.",
+   "ru": "быстро",
+   "ex": "Come mais devagar, não comas tão depressa.",
+   "exru": "Ешь медленнее, не ешь так быстро.",
+   "note": "Противоположно devagar"
+  },
+  {
+   "word": "devagar",
+   "pos": "нареч.",
+   "ru": "медленно",
+   "ex": "Fala devagar, por favor, ainda estou a aprender.",
+   "exru": "Говорите медленно, пожалуйста, я ещё учусь.",
+   "note": "Очень полезная фраза новичку"
+  },
+  {
+   "word": "acabar",
+   "pos": "глаг.",
+   "ru": "заканчивать(ся)",
+   "ex": "O filme acaba à meia-noite.",
+   "exru": "Фильм заканчивается в полночь.",
+   "note": "acabar de + инф. — только что сделать"
+  },
+  {
+   "word": "costumar",
+   "pos": "глаг.",
+   "ru": "иметь обыкновение, обычно делать",
+   "ex": "Costumo almoçar por volta da uma.",
+   "exru": "Обычно я обедаю около часа.",
+   "note": "costumar + инфинитив"
+  },
+  {
+   "word": "seguir",
+   "pos": "глаг.",
+   "ru": "следовать, продолжать",
+   "ex": "A seguir ao jantar vamos passear.",
+   "exru": "После ужина мы идём гулять.",
+   "note": "a seguir a — после, следом за"
+  },
+  {
+   "word": "mudar",
+   "pos": "глаг.",
+   "ru": "менять(ся); переезжать",
+   "ex": "O tempo mudou de repente.",
+   "exru": "Погода внезапно изменилась.",
+   "note": "mudar de casa — переехать"
+  }
+ ]
+}

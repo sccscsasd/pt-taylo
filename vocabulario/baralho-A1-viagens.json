@@ -1,0 +1,422 @@
+{
+ "v": 1,
+ "deck": "A1 — Поездки и транспорт (Viagens e deslocações)",
+ "cards": [
+  {
+   "word": "a viagem",
+   "pos": "сущ.",
+   "ru": "поездка, путешествие",
+   "ex": "A viagem de comboio demora três horas.",
+   "exru": "Поездка на поезде занимает три часа.",
+   "note": "Мн. ч.: as viagens; boa viagem!"
+  },
+  {
+   "word": "viajar de carro",
+   "pos": "выраж.",
+   "ru": "путешествовать на машине",
+   "ex": "Preferimos viajar de carro para parar onde queremos.",
+   "exru": "Мы предпочитаем ездить на машине, чтобы останавливаться где хотим.",
+   "note": "Транспорт через de: de comboio, de avião"
+  },
+  {
+   "word": "visitar",
+   "pos": "глаг.",
+   "ru": "посещать, навещать",
+   "ex": "Vou visitar os meus pais no domingo.",
+   "exru": "В воскресенье я навещу родителей.",
+   "note": ""
+  },
+  {
+   "word": "a visita",
+   "pos": "сущ.",
+   "ru": "визит, посещение, экскурсия",
+   "ex": "A visita ao museu dura uma hora.",
+   "exru": "Экскурсия по музею длится час.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o turismo",
+   "pos": "сущ.",
+   "ru": "туризм",
+   "ex": "O turismo cresceu muito nos últimos anos.",
+   "exru": "Туризм сильно вырос за последние годы.",
+   "note": "м. р."
+  },
+  {
+   "word": "o turista",
+   "pos": "сущ.",
+   "ru": "турист",
+   "ex": "No verão há turistas por todo o lado.",
+   "exru": "Летом туристы повсюду.",
+   "note": "Одна форма: o/a turista"
+  },
+  {
+   "word": "a agência de turismo",
+   "pos": "сущ.",
+   "ru": "турагентство",
+   "ex": "Comprei a excursão numa agência de turismo.",
+   "exru": "Я купил экскурсию в турагентстве.",
+   "note": "Инфоцентр — posto de turismo"
+  },
+  {
+   "word": "as férias na praia",
+   "pos": "выраж.",
+   "ru": "отпуск на море",
+   "ex": "Este ano vamos ter férias na praia.",
+   "exru": "В этом году у нас будет отпуск на море.",
+   "note": "férias всегда мн. ч."
+  },
+  {
+   "word": "o carro",
+   "pos": "сущ.",
+   "ru": "машина, автомобиль",
+   "ex": "Deixei o carro no parque de estacionamento.",
+   "exru": "Я оставил машину на парковке.",
+   "note": "м. р.; синоним automóvel"
+  },
+  {
+   "word": "o autocarro",
+   "pos": "сущ.",
+   "ru": "автобус",
+   "ex": "Apanho o autocarro das oito.",
+   "exru": "Я езжу на восьмичасовом автобусе.",
+   "note": "м. р.; apanhar o autocarro — сесть на автобус"
+  },
+  {
+   "word": "o comboio",
+   "pos": "сущ.",
+   "ru": "поезд",
+   "ex": "O comboio para o Porto parte da estação de Santa Apolónia.",
+   "exru": "Поезд до Порту отправляется с вокзала Санта-Аполония.",
+   "note": "м. р.; comboio rápido — скорый поезд"
+  },
+  {
+   "word": "o avião",
+   "pos": "сущ.",
+   "ru": "самолёт",
+   "ex": "O avião aterra às onze da noite.",
+   "exru": "Самолёт садится в одиннадцать вечера.",
+   "note": "Мн. ч.: os aviões"
+  },
+  {
+   "word": "o barco",
+   "pos": "сущ.",
+   "ru": "лодка, судно, паром",
+   "ex": "Atravessámos o rio de barco.",
+   "exru": "Мы переправились через реку на лодке.",
+   "note": "м. р."
+  },
+  {
+   "word": "a bicicleta",
+   "pos": "сущ.",
+   "ru": "велосипед",
+   "ex": "Ando de bicicleta para o trabalho.",
+   "exru": "Я езжу на работу на велосипеде.",
+   "note": "andar de bicicleta — ездить на велосипеде"
+  },
+  {
+   "word": "a mota",
+   "pos": "сущ.",
+   "ru": "мотоцикл",
+   "ex": "Ele vai de mota para todo o lado.",
+   "exru": "Он везде ездит на мотоцикле.",
+   "note": "ж. р.; andar de mota — ездить на мотоцикле"
+  },
+  {
+   "word": "o táxi",
+   "pos": "сущ.",
+   "ru": "такси",
+   "ex": "Vamos de táxi, já é tarde.",
+   "exru": "Поедем на такси, уже поздно.",
+   "note": "м. р.; мн. ч.: os táxis"
+  },
+  {
+   "word": "o taxista",
+   "pos": "сущ.",
+   "ru": "таксист",
+   "ex": "O taxista ajudou-me com a mala.",
+   "exru": "Таксист помог мне с чемоданом.",
+   "note": "Одна форма: o/a taxista"
+  },
+  {
+   "word": "o motorista",
+   "pos": "сущ.",
+   "ru": "водитель (профессия)",
+   "ex": "O motorista do autocarro foi muito simpático.",
+   "exru": "Водитель автобуса был очень любезен.",
+   "note": "Одна форма: o/a motorista"
+  },
+  {
+   "word": "o condutor",
+   "pos": "сущ.",
+   "ru": "водитель (за рулём)",
+   "ex": "O condutor do outro carro não parou.",
+   "exru": "Водитель другой машины не остановился.",
+   "note": "Ж. р.: a condutora"
+  },
+  {
+   "word": "o estacionamento",
+   "pos": "сущ.",
+   "ru": "парковка, стоянка",
+   "ex": "O estacionamento no centro é caro.",
+   "exru": "Парковка в центре дорогая.",
+   "note": "м. р."
+  },
+  {
+   "word": "o aeroporto",
+   "pos": "сущ.",
+   "ru": "аэропорт",
+   "ex": "Chego ao aeroporto duas horas antes.",
+   "exru": "Я приезжаю в аэропорт за два часа.",
+   "note": "м. р."
+  },
+  {
+   "word": "o porto",
+   "pos": "сущ.",
+   "ru": "порт",
+   "ex": "O barco chega ao porto de manhã.",
+   "exru": "Судно приходит в порт утром.",
+   "note": "o Porto с большой буквы — город"
+  },
+  {
+   "word": "a estrada",
+   "pos": "сущ.",
+   "ru": "дорога, шоссе",
+   "ex": "A estrada para o sul estava cortada.",
+   "exru": "Дорога на юг была перекрыта.",
+   "note": "Автомагистраль — a autoestrada"
+  },
+  {
+   "word": "o caminho",
+   "pos": "сущ.",
+   "ru": "путь, дорога",
+   "ex": "Este é o caminho mais curto para a praia.",
+   "exru": "Это самая короткая дорога до пляжа.",
+   "note": "a caminho de — по дороге в"
+  },
+  {
+   "word": "a partida",
+   "pos": "сущ.",
+   "ru": "отправление, отъезд",
+   "ex": "A partida do comboio está atrasada.",
+   "exru": "Отправление поезда задерживается.",
+   "note": "Прибытие — a chegada"
+  },
+  {
+   "word": "o destino",
+   "pos": "сущ.",
+   "ru": "пункт назначения; судьба",
+   "ex": "Qual é o destino do próximo voo?",
+   "exru": "Какой пункт назначения у следующего рейса?",
+   "note": "м. р."
+  },
+  {
+   "word": "a data de chegada",
+   "pos": "сущ.",
+   "ru": "дата приезда",
+   "ex": "Indique a data de chegada na reserva.",
+   "exru": "Укажите дату приезда в брони.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o balcão de informações",
+   "pos": "сущ.",
+   "ru": "справочная стойка",
+   "ex": "Pergunte no balcão de informações.",
+   "exru": "Спросите в справочной.",
+   "note": "м. р.; balcão — стойка, прилавок"
+  },
+  {
+   "word": "ir em frente",
+   "pos": "выраж.",
+   "ru": "идти прямо",
+   "ex": "Vá sempre em frente até ao semáforo.",
+   "exru": "Идите прямо до светофора.",
+   "note": "Указание дороги"
+  },
+  {
+   "word": "virar à esquerda",
+   "pos": "выраж.",
+   "ru": "повернуть налево",
+   "ex": "Vire à esquerda na segunda rua.",
+   "exru": "Поверните налево на второй улице.",
+   "note": "Направо — virar à direita"
+  },
+  {
+   "word": "a mala",
+   "pos": "сущ.",
+   "ru": "чемодан; сумка; багажник",
+   "ex": "A minha mala não apareceu no aeroporto.",
+   "exru": "Мой чемодан не приехал в аэропорту.",
+   "note": "Также багажник машины"
+  },
+  {
+   "word": "a bagagem",
+   "pos": "сущ.",
+   "ru": "багаж",
+   "ex": "A bagagem de mão não pode passar dos dez quilos.",
+   "exru": "Ручная кладь не должна превышать десять килограммов.",
+   "note": "ж. р., обычно ед. ч."
+  },
+  {
+   "word": "o saco",
+   "pos": "сущ.",
+   "ru": "сумка, пакет",
+   "ex": "Precisa de um saco para as compras?",
+   "exru": "Вам нужен пакет для покупок?",
+   "note": "м. р."
+  },
+  {
+   "word": "a carteira",
+   "pos": "сущ.",
+   "ru": "кошелёк; дамская сумка",
+   "ex": "Roubaram-me a carteira no metro.",
+   "exru": "У меня украли кошелёк в метро.",
+   "note": "Оба значения употребительны"
+  },
+  {
+   "word": "o documento de identificação",
+   "pos": "сущ.",
+   "ru": "документ, удостоверяющий личность",
+   "ex": "Traga um documento de identificação válido.",
+   "exru": "Принесите действующий документ, удостоверяющий личность.",
+   "note": "м. р."
+  },
+  {
+   "word": "a reserva",
+   "pos": "сущ.",
+   "ru": "бронь, бронирование",
+   "ex": "Tenho uma reserva em nome de Silva.",
+   "exru": "У меня бронь на имя Силва.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a estadia",
+   "pos": "сущ.",
+   "ru": "пребывание, проживание",
+   "ex": "Desejamos-lhe uma boa estadia.",
+   "exru": "Желаем вам приятного пребывания.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o quarto duplo",
+   "pos": "сущ.",
+   "ru": "двухместный номер",
+   "ex": "Queria um quarto duplo por duas noites.",
+   "exru": "Я хотел бы двухместный номер на две ночи.",
+   "note": "Две отдельные кровати"
+  },
+  {
+   "word": "o quarto de casal",
+   "pos": "сущ.",
+   "ru": "номер с двуспальной кроватью",
+   "ex": "Reservei um quarto de casal com vista para o mar.",
+   "exru": "Я забронировал номер с двуспальной кроватью и видом на море.",
+   "note": "cama de casal — двуспальная кровать"
+  },
+  {
+   "word": "a cama individual",
+   "pos": "сущ.",
+   "ru": "односпальная кровать",
+   "ex": "O quarto tem duas camas individuais.",
+   "exru": "В номере две односпальные кровати.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a chave do quarto",
+   "pos": "сущ.",
+   "ru": "ключ от номера",
+   "ex": "Deixei a chave do quarto na receção.",
+   "exru": "Я оставил ключ от номера на ресепшене.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o preço por noite",
+   "pos": "сущ.",
+   "ru": "цена за ночь",
+   "ex": "Qual é o preço por noite com pequeno-almoço?",
+   "exru": "Какая цена за ночь с завтраком?",
+   "note": "м. р."
+  },
+  {
+   "word": "as comodidades",
+   "pos": "сущ.",
+   "ru": "удобства (в номере)",
+   "ex": "O quarto tem todas as comodidades.",
+   "exru": "В номере есть все удобства.",
+   "note": "Обычно во мн. ч."
+  },
+  {
+   "word": "o parque de campismo",
+   "pos": "сущ.",
+   "ru": "кемпинг",
+   "ex": "Ficámos num parque de campismo junto à praia.",
+   "exru": "Мы остановились в кемпинге у пляжа.",
+   "note": "м. р.; fazer campismo — ходить в поход с палаткой"
+  },
+  {
+   "word": "a tenda",
+   "pos": "сущ.",
+   "ru": "палатка",
+   "ex": "Montámos a tenda ao lado do rio.",
+   "exru": "Мы поставили палатку у реки.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o dinheiro",
+   "pos": "сущ.",
+   "ru": "деньги",
+   "ex": "Não trago dinheiro, só cartão.",
+   "exru": "У меня нет наличных, только карта.",
+   "note": "м. р., ед. ч."
+  },
+  {
+   "word": "em dinheiro",
+   "pos": "выраж.",
+   "ru": "наличными",
+   "ex": "Posso pagar em dinheiro?",
+   "exru": "Можно заплатить наличными?",
+   "note": "Также: em numerário"
+  },
+  {
+   "word": "pagar com cartão",
+   "pos": "выраж.",
+   "ru": "платить картой",
+   "ex": "Prefiro pagar com cartão.",
+   "exru": "Я предпочитаю платить картой.",
+   "note": "Мультибанк — Multibanco (MB)"
+  },
+  {
+   "word": "a conta",
+   "pos": "сущ.",
+   "ru": "счёт",
+   "ex": "A conta, por favor.",
+   "exru": "Счёт, пожалуйста.",
+   "note": "Также банковский счёт"
+  },
+  {
+   "word": "procurar",
+   "pos": "глаг.",
+   "ru": "искать",
+   "ex": "Procuro a estação de comboios.",
+   "exru": "Я ищу железнодорожный вокзал.",
+   "note": "Без предлога: procurar algo"
+  },
+  {
+   "word": "a montanha",
+   "pos": "сущ.",
+   "ru": "гора",
+   "ex": "No inverno vamos à montanha.",
+   "exru": "Зимой мы ездим в горы.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a neve",
+   "pos": "сущ.",
+   "ru": "снег",
+   "ex": "Há neve na Serra da Estrela.",
+   "exru": "В Серра-да-Эштрела лежит снег.",
+   "note": "ж. р.; nevar — идти (о снеге)"
+  }
+ ]
+}

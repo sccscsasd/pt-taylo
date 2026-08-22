@@ -1,0 +1,902 @@
+{
+ "v": 1,
+ "deck": "A1 — Личные данные (Identificação pessoal)",
+ "cards": [
+  {
+   "word": "o nome próprio",
+   "pos": "сущ.",
+   "ru": "имя",
+   "ex": "O meu nome próprio é Artem e o apelido é russo.",
+   "exru": "Моё имя — Артём, а фамилия русская.",
+   "note": "м. р.; не путать с apelido"
+  },
+  {
+   "word": "o apelido",
+   "pos": "сущ.",
+   "ru": "фамилия",
+   "ex": "Como se escreve o seu apelido, por favor?",
+   "exru": "Как пишется ваша фамилия?",
+   "note": "м. р.; в анкете идёт после nome próprio"
+  },
+  {
+   "word": "o nome completo",
+   "pos": "сущ.",
+   "ru": "полное имя",
+   "ex": "Escreva o nome completo no formulário.",
+   "exru": "Напишите полное имя в бланке.",
+   "note": "м. р."
+  },
+  {
+   "word": "chamar-se",
+   "pos": "глаг.",
+   "ru": "зваться, называться",
+   "ex": "Chamo-me Ana, e você como se chama?",
+   "exru": "Меня зовут Ана, а вас как зовут?",
+   "note": "chamo-me, chamas-te, chama-se"
+  },
+  {
+   "word": "chamar",
+   "pos": "глаг.",
+   "ru": "звать, вызывать",
+   "ex": "Chame um táxi, por favor.",
+   "exru": "Вызовите такси, пожалуйста.",
+   "note": "Без -se — звать кого-то"
+  },
+  {
+   "word": "apresentar-se",
+   "pos": "глаг.",
+   "ru": "представляться",
+   "ex": "Deixe-me apresentar-me: sou o novo colega.",
+   "exru": "Позвольте представиться: я новый коллега.",
+   "note": "apresentar alguém — представить кого-то"
+  },
+  {
+   "word": "o senhor",
+   "pos": "сущ.",
+   "ru": "господин; вы (вежливо)",
+   "ex": "O senhor precisa de ajuda?",
+   "exru": "Вам нужна помощь?",
+   "note": "Сокращение Sr.; заменяет «вы»"
+  },
+  {
+   "word": "a senhora",
+   "pos": "сущ.",
+   "ru": "госпожа; вы (вежливо, к женщине)",
+   "ex": "A senhora já foi atendida?",
+   "exru": "Вас уже обслужили?",
+   "note": "Сокращение Sra.; уважит. форма — D. (Dona)"
+  },
+  {
+   "word": "assinar",
+   "pos": "глаг.",
+   "ru": "подписывать",
+   "ex": "Assine aqui, por favor.",
+   "exru": "Подпишите здесь, пожалуйста.",
+   "note": ""
+  },
+  {
+   "word": "a assinatura",
+   "pos": "сущ.",
+   "ru": "подпись; подписка",
+   "ex": "A assinatura tem de ser igual à do documento.",
+   "exru": "Подпись должна совпадать с той, что в документе.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o bilhete de identidade",
+   "pos": "сущ.",
+   "ru": "удостоверение личности (старого образца)",
+   "ex": "O bilhete de identidade foi substituído pelo cartão de cidadão.",
+   "exru": "Удостоверение личности заменили картой гражданина.",
+   "note": "Сокращённо BI; сейчас не выдают"
+  },
+  {
+   "word": "o cartão de cidadão",
+   "pos": "сущ.",
+   "ru": "карта гражданина (осн. документ в Португалии)",
+   "ex": "Preciso de renovar o cartão de cidadão este mês.",
+   "exru": "Мне нужно продлить карту гражданина в этом месяце.",
+   "note": "Заменяет BI, налоговый и мед. номера"
+  },
+  {
+   "word": "o passaporte",
+   "pos": "сущ.",
+   "ru": "паспорт",
+   "ex": "O passaporte é válido por mais dois anos.",
+   "exru": "Паспорт действителен ещё два года.",
+   "note": "м. р."
+  },
+  {
+   "word": "a carta de condução",
+   "pos": "сущ.",
+   "ru": "водительские права",
+   "ex": "Tirei a carta de condução aos vinte anos.",
+   "exru": "Я получил права в двадцать лет.",
+   "note": "tirar a carta — получить права"
+  },
+  {
+   "word": "a data de nascimento",
+   "pos": "сущ.",
+   "ru": "дата рождения",
+   "ex": "A data de nascimento vem no verso do cartão.",
+   "exru": "Дата рождения указана на обороте карты.",
+   "note": "Формат: dia/mês/ano"
+  },
+  {
+   "word": "o lugar de nascimento",
+   "pos": "сущ.",
+   "ru": "место рождения",
+   "ex": "Lugar de nascimento: Lisboa, Portugal.",
+   "exru": "Место рождения: Лиссабон, Португалия.",
+   "note": "Также naturalidade в анкетах"
+  },
+  {
+   "word": "a morada",
+   "pos": "сущ.",
+   "ru": "адрес",
+   "ex": "Qual é a sua morada atual?",
+   "exru": "Какой у вас сейчас адрес?",
+   "note": "ж. р.; morada completa — полный адрес"
+  },
+  {
+   "word": "a rua",
+   "pos": "сущ.",
+   "ru": "улица",
+   "ex": "Moro na Rua das Flores, número doze.",
+   "exru": "Я живу на улице Флореш, дом двенадцать.",
+   "note": "ж. р.; в адресе — na Rua…"
+  },
+  {
+   "word": "a avenida",
+   "pos": "сущ.",
+   "ru": "проспект, авеню",
+   "ex": "O hotel fica na Avenida da Liberdade.",
+   "exru": "Отель находится на проспекте Свободы.",
+   "note": "Сокращение: Av."
+  },
+  {
+   "word": "a praça",
+   "pos": "сущ.",
+   "ru": "площадь",
+   "ex": "Encontramo-nos na praça em frente à igreja.",
+   "exru": "Встретимся на площади перед церковью.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o número da porta",
+   "pos": "сущ.",
+   "ru": "номер дома",
+   "ex": "O número da porta é o vinte e sete.",
+   "exru": "Номер дома — двадцать семь.",
+   "note": "Этаж пишут после: n.º 27, 3.º esq."
+  },
+  {
+   "word": "o código postal",
+   "pos": "сущ.",
+   "ru": "почтовый индекс",
+   "ex": "O código postal de Lisboa começa por mil.",
+   "exru": "Почтовый индекс Лиссабона начинается с тысячи.",
+   "note": "Формат 1000-001"
+  },
+  {
+   "word": "a casa",
+   "pos": "сущ.",
+   "ru": "дом; жильё",
+   "ex": "A minha casa fica perto do metro.",
+   "exru": "Мой дом находится рядом с метро.",
+   "note": "em casa — дома, без артикля"
+  },
+  {
+   "word": "o apartamento",
+   "pos": "сущ.",
+   "ru": "квартира",
+   "ex": "Aluguei um apartamento com dois quartos.",
+   "exru": "Я снял квартиру с двумя спальнями.",
+   "note": "Разговорно чаще apartamento T2"
+  },
+  {
+   "word": "morar",
+   "pos": "глаг.",
+   "ru": "жить, проживать",
+   "ex": "Moro em Lisboa há três anos.",
+   "exru": "Я живу в Лиссабоне три года.",
+   "note": "morar em; синоним viver"
+  },
+  {
+   "word": "o telefone",
+   "pos": "сущ.",
+   "ru": "телефон",
+   "ex": "Deixe o seu telefone para eu ligar depois.",
+   "exru": "Оставьте телефон, я перезвоню.",
+   "note": "м. р."
+  },
+  {
+   "word": "o telemóvel",
+   "pos": "сущ.",
+   "ru": "мобильный телефон",
+   "ex": "Esqueci-me do telemóvel em casa.",
+   "exru": "Я забыл мобильный дома.",
+   "note": "м. р.; número de telemóvel — номер мобильного"
+  },
+  {
+   "word": "o número de telefone",
+   "pos": "сущ.",
+   "ru": "номер телефона",
+   "ex": "Dá-me o teu número de telefone?",
+   "exru": "Дашь мне свой номер телефона?",
+   "note": "м. р."
+  },
+  {
+   "word": "telefonar",
+   "pos": "глаг.",
+   "ru": "звонить по телефону",
+   "ex": "Telefono-te logo à noite.",
+   "exru": "Я позвоню тебе вечером.",
+   "note": "telefonar a alguém"
+  },
+  {
+   "word": "ligar",
+   "pos": "глаг.",
+   "ru": "звонить; включать",
+   "ex": "Liga-me quando chegares a casa.",
+   "exru": "Позвони мне, когда придёшь домой.",
+   "note": "Также «включить»: ligar a luz"
+  },
+  {
+   "word": "o email",
+   "pos": "сущ.",
+   "ru": "электронная почта, письмо",
+   "ex": "Mandei-lhe um email ontem à tarde.",
+   "exru": "Я отправил ему письмо вчера днём.",
+   "note": "Пишут и e-mail; м. р."
+  },
+  {
+   "word": "o endereço de email",
+   "pos": "сущ.",
+   "ru": "адрес электронной почты",
+   "ex": "Escreva o endereço de email em letras maiúsculas.",
+   "exru": "Напишите адрес почты заглавными буквами.",
+   "note": "@ читается «arroba»"
+  },
+  {
+   "word": "a mensagem",
+   "pos": "сущ.",
+   "ru": "сообщение",
+   "ex": "Recebi a tua mensagem, obrigado.",
+   "exru": "Я получил твоё сообщение, спасибо.",
+   "note": "ж. р.; мн. ч.: as mensagens"
+  },
+  {
+   "word": "o sms",
+   "pos": "сущ.",
+   "ru": "смс",
+   "ex": "Mando-te um sms com a morada.",
+   "exru": "Пришлю тебе смс с адресом.",
+   "note": "Читается «esse-eme-esse»"
+  },
+  {
+   "word": "enviar",
+   "pos": "глаг.",
+   "ru": "отправлять",
+   "ex": "Vou enviar os documentos por email.",
+   "exru": "Я отправлю документы по почте.",
+   "note": "Синоним mandar"
+  },
+  {
+   "word": "o fax",
+   "pos": "сущ.",
+   "ru": "факс",
+   "ex": "O escritório ainda tem fax.",
+   "exru": "В офисе ещё есть факс.",
+   "note": "м. р."
+  },
+  {
+   "word": "mandar um fax",
+   "pos": "выраж.",
+   "ru": "отправить факс",
+   "ex": "Tem de mandar um fax para as finanças.",
+   "exru": "Нужно отправить факс в налоговую.",
+   "note": "mandar = enviar"
+  },
+  {
+   "word": "a internet",
+   "pos": "сущ.",
+   "ru": "интернет",
+   "ex": "Não há internet no quarto do hotel.",
+   "exru": "В номере отеля нет интернета.",
+   "note": "ж. р.: a internet"
+  },
+  {
+   "word": "o computador",
+   "pos": "сущ.",
+   "ru": "компьютер",
+   "ex": "Trabalho o dia todo ao computador.",
+   "exru": "Я весь день работаю за компьютером.",
+   "note": "Ноутбук — portátil"
+  },
+  {
+   "word": "a família",
+   "pos": "сущ.",
+   "ru": "семья",
+   "ex": "A minha família vive toda no estrangeiro.",
+   "exru": "Вся моя семья живёт за границей.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o pai",
+   "pos": "сущ.",
+   "ru": "отец",
+   "ex": "O meu pai trabalha numa fábrica.",
+   "exru": "Мой отец работает на заводе.",
+   "note": "os pais = родители"
+  },
+  {
+   "word": "a mãe",
+   "pos": "сущ.",
+   "ru": "мать",
+   "ex": "A mãe dela é professora de música.",
+   "exru": "Её мать — учительница музыки.",
+   "note": "Мн. ч.: as mães"
+  },
+  {
+   "word": "o filho",
+   "pos": "сущ.",
+   "ru": "сын; ребёнок (в семье)",
+   "ex": "Eles têm dois filhos e uma filha.",
+   "exru": "У них два сына и дочь.",
+   "note": "os filhos = дети вообще"
+  },
+  {
+   "word": "a irmã",
+   "pos": "сущ.",
+   "ru": "сестра",
+   "ex": "A minha irmã mais velha vive no Porto.",
+   "exru": "Моя старшая сестра живёт в Порту.",
+   "note": "Брат — o irmão; мн. ч.: as irmãs"
+  },
+  {
+   "word": "o avô",
+   "pos": "сущ.",
+   "ru": "дедушка",
+   "ex": "O meu avô tem oitenta e dois anos.",
+   "exru": "Моему дедушке восемьдесят два года.",
+   "note": "os avós = бабушка с дедушкой"
+  },
+  {
+   "word": "a avó",
+   "pos": "сущ.",
+   "ru": "бабушка",
+   "ex": "A avó faz o melhor bolo da família.",
+   "exru": "Бабушка печёт лучший пирог в семье.",
+   "note": "avô (ô) и avó (ó) различаются звуком"
+  },
+  {
+   "word": "o neto",
+   "pos": "сущ.",
+   "ru": "внук",
+   "ex": "Ela tem cinco netos e um bisneto.",
+   "exru": "У неё пять внуков и один правнук.",
+   "note": "Внучка — a neta"
+  },
+  {
+   "word": "o tio",
+   "pos": "сущ.",
+   "ru": "дядя",
+   "ex": "Vou passar o Natal em casa dos meus tios.",
+   "exru": "Рождество я проведу у дяди с тётей.",
+   "note": "Тётя — a tia; os tios — дядя и тётя"
+  },
+  {
+   "word": "o primo",
+   "pos": "сущ.",
+   "ru": "двоюродный брат",
+   "ex": "O meu primo mora em Espanha.",
+   "exru": "Мой двоюродный брат живёт в Испании.",
+   "note": "Кузина — a prima"
+  },
+  {
+   "word": "o marido",
+   "pos": "сущ.",
+   "ru": "муж",
+   "ex": "O marido dela é engenheiro.",
+   "exru": "Её муж — инженер.",
+   "note": "Жена — a mulher / a esposa"
+  },
+  {
+   "word": "a mulher",
+   "pos": "сущ.",
+   "ru": "женщина; жена",
+   "ex": "Aquela mulher é a minha professora.",
+   "exru": "Та женщина — моя учительница.",
+   "note": "По контексту «жена»: a minha mulher"
+  },
+  {
+   "word": "o homem",
+   "pos": "сущ.",
+   "ru": "мужчина; человек",
+   "ex": "O homem da loja foi muito simpático.",
+   "exru": "Мужчина в магазине был очень любезен.",
+   "note": "Мн. ч.: os homens"
+  },
+  {
+   "word": "o namorado",
+   "pos": "сущ.",
+   "ru": "парень, молодой человек",
+   "ex": "Ela veio à festa com o namorado.",
+   "exru": "Она пришла на вечеринку со своим парнем.",
+   "note": "Девушка — a namorada"
+  },
+  {
+   "word": "o companheiro",
+   "pos": "сущ.",
+   "ru": "партнёр, спутник жизни",
+   "ex": "Vive com o companheiro há dez anos.",
+   "exru": "Она живёт с партнёром уже десять лет.",
+   "note": "Нейтрально о незарегистрированном браке"
+  },
+  {
+   "word": "a criança",
+   "pos": "сущ.",
+   "ru": "ребёнок",
+   "ex": "As crianças brincam no parque.",
+   "exru": "Дети играют в парке.",
+   "note": "Всегда ж. р., даже о мальчике"
+  },
+  {
+   "word": "o menino",
+   "pos": "сущ.",
+   "ru": "мальчик",
+   "ex": "O menino perdeu-se no supermercado.",
+   "exru": "Мальчик потерялся в супермаркете.",
+   "note": "Девочка — a menina"
+  },
+  {
+   "word": "a menina",
+   "pos": "сущ.",
+   "ru": "девочка; барышня",
+   "ex": "A menina quer alguma coisa?",
+   "exru": "Девушка, вам что-нибудь нужно?",
+   "note": "Вежливое обращение к молодой женщине"
+  },
+  {
+   "word": "o rapaz",
+   "pos": "сущ.",
+   "ru": "парень, юноша",
+   "ex": "Aquele rapaz estuda na minha turma.",
+   "exru": "Тот парень учится в моей группе.",
+   "note": "Мн. ч.: os rapazes"
+  },
+  {
+   "word": "a rapariga",
+   "pos": "сущ.",
+   "ru": "девушка",
+   "ex": "A rapariga do café já sabe o meu pedido.",
+   "exru": "Девушка в кафе уже знает мой заказ.",
+   "note": "ж. р.; о взрослой женщине — mulher, senhora"
+  },
+  {
+   "word": "o jovem",
+   "pos": "сущ.",
+   "ru": "молодой человек; молодой",
+   "ex": "Muitos jovens saem do país para trabalhar.",
+   "exru": "Многие молодые уезжают из страны на заработки.",
+   "note": "Одна форма для м. и ж. рода"
+  },
+  {
+   "word": "o adulto",
+   "pos": "сущ.",
+   "ru": "взрослый",
+   "ex": "O bilhete de adulto custa dez euros.",
+   "exru": "Взрослый билет стоит десять евро.",
+   "note": "Также прилагательное: adulto/adulta"
+  },
+  {
+   "word": "o idoso",
+   "pos": "сущ.",
+   "ru": "пожилой человек",
+   "ex": "Os idosos têm desconto nos transportes.",
+   "exru": "У пожилых есть скидка на транспорт.",
+   "note": "Вежливее, чем velho"
+  },
+  {
+   "word": "a idade",
+   "pos": "сущ.",
+   "ru": "возраст",
+   "ex": "Que idade tem o seu filho?",
+   "exru": "Сколько лет вашему сыну?",
+   "note": "Возраст через ter: tenho 30 anos"
+  },
+  {
+   "word": "o estado civil",
+   "pos": "сущ.",
+   "ru": "семейное положение",
+   "ex": "Estado civil: solteiro.",
+   "exru": "Семейное положение: холост.",
+   "note": "м. р."
+  },
+  {
+   "word": "solteiro",
+   "pos": "прил.",
+   "ru": "холостой, незамужняя",
+   "ex": "Ela é solteira e vive sozinha.",
+   "exru": "Она не замужем и живёт одна.",
+   "note": "solteiro / solteira"
+  },
+  {
+   "word": "casado",
+   "pos": "прил.",
+   "ru": "женатый, замужем",
+   "ex": "São casados há quinze anos.",
+   "exru": "Они женаты пятнадцать лет.",
+   "note": "casado com alguém"
+  },
+  {
+   "word": "divorciado",
+   "pos": "прил.",
+   "ru": "разведённый",
+   "ex": "O meu vizinho é divorciado.",
+   "exru": "Мой сосед разведён.",
+   "note": "divorciado / divorciada"
+  },
+  {
+   "word": "separado",
+   "pos": "прил.",
+   "ru": "живущий раздельно (не разведён)",
+   "ex": "Estão separados, mas ainda não se divorciaram.",
+   "exru": "Они разъехались, но ещё не развелись.",
+   "note": "Отдельная графа в анкетах"
+  },
+  {
+   "word": "viúvo",
+   "pos": "прил.",
+   "ru": "вдовец, вдова",
+   "ex": "A minha avó é viúva desde 2010.",
+   "exru": "Моя бабушка вдова с 2010 года.",
+   "note": "viúvo / viúva"
+  },
+  {
+   "word": "unido de facto",
+   "pos": "выраж.",
+   "ru": "в гражданском браке",
+   "ex": "Vivem em união de facto há cinco anos.",
+   "exru": "Они живут в гражданском браке пять лет.",
+   "note": "Юридический термин: união de facto"
+  },
+  {
+   "word": "o sexo",
+   "pos": "сущ.",
+   "ru": "пол (в документах)",
+   "ex": "Sexo: masculino.",
+   "exru": "Пол: мужской.",
+   "note": "В анкетах рядом с género"
+  },
+  {
+   "word": "o género",
+   "pos": "сущ.",
+   "ru": "пол, гендер; род",
+   "ex": "O formulário pergunta o género.",
+   "exru": "В анкете спрашивают пол.",
+   "note": "Также грамматический род"
+  },
+  {
+   "word": "masculino",
+   "pos": "прил.",
+   "ru": "мужской",
+   "ex": "Casa de banho masculina fica à direita.",
+   "exru": "Мужской туалет справа.",
+   "note": ""
+  },
+  {
+   "word": "feminino",
+   "pos": "прил.",
+   "ru": "женский",
+   "ex": "A palavra «casa» é feminina.",
+   "exru": "Слово «casa» женского рода.",
+   "note": ""
+  },
+  {
+   "word": "a escola",
+   "pos": "сущ.",
+   "ru": "школа",
+   "ex": "Os meus filhos andam na escola do bairro.",
+   "exru": "Мои дети ходят в районную школу.",
+   "note": "andar na escola — учиться в школе"
+  },
+  {
+   "word": "a aula",
+   "pos": "сущ.",
+   "ru": "урок, занятие",
+   "ex": "A aula de português começa às seis.",
+   "exru": "Урок португальского начинается в шесть.",
+   "note": "ж. р.; ter aulas — учиться"
+  },
+  {
+   "word": "estudar",
+   "pos": "глаг.",
+   "ru": "учиться, заниматься",
+   "ex": "Estudo português duas vezes por semana.",
+   "exru": "Я занимаюсь португальским два раза в неделю.",
+   "note": ""
+  },
+  {
+   "word": "aprender",
+   "pos": "глаг.",
+   "ru": "учить, усваивать",
+   "ex": "Aprendi mais em três meses do que num ano.",
+   "exru": "За три месяца я выучил больше, чем за год.",
+   "note": "aprender a + инфинитив"
+  },
+  {
+   "word": "o estudante",
+   "pos": "сущ.",
+   "ru": "студент, учащийся",
+   "ex": "Os estudantes têm desconto no museu.",
+   "exru": "У студентов скидка в музей.",
+   "note": "Одна форма: o/a estudante"
+  },
+  {
+   "word": "o professor",
+   "pos": "сущ.",
+   "ru": "преподаватель, учитель",
+   "ex": "O professor explicou tudo outra vez.",
+   "exru": "Преподаватель объяснил всё ещё раз.",
+   "note": "Ж. р.: a professora"
+  },
+  {
+   "word": "o exame",
+   "pos": "сущ.",
+   "ru": "экзамен",
+   "ex": "Tenho exame de português na sexta-feira.",
+   "exru": "В пятницу у меня экзамен по португальскому.",
+   "note": "м. р.; fazer um exame — сдавать"
+  },
+  {
+   "word": "a biblioteca",
+   "pos": "сущ.",
+   "ru": "библиотека",
+   "ex": "Estudo na biblioteca porque é silenciosa.",
+   "exru": "Я занимаюсь в библиотеке, потому что там тихо.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a universidade",
+   "pos": "сущ.",
+   "ru": "университет",
+   "ex": "Entrou na Universidade de Coimbra.",
+   "exru": "Он поступил в Коимбрский университет.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o instituto",
+   "pos": "сущ.",
+   "ru": "институт",
+   "ex": "Estuda num instituto politécnico.",
+   "exru": "Он учится в политехническом институте.",
+   "note": "м. р."
+  },
+  {
+   "word": "básico",
+   "pos": "прил.",
+   "ru": "базовый (о ступени школы)",
+   "ex": "O ensino básico dura nove anos em Portugal.",
+   "exru": "Базовое образование в Португалии длится девять лет.",
+   "note": "ensino básico = 1–9 класс"
+  },
+  {
+   "word": "o ensino secundário",
+   "pos": "сущ.",
+   "ru": "старшая школа (10–12 класс)",
+   "ex": "Acabou o ensino secundário no ano passado.",
+   "exru": "Он окончил старшую школу в прошлом году.",
+   "note": "После него — ensino superior"
+  },
+  {
+   "word": "secundário",
+   "pos": "прил.",
+   "ru": "средний (об образовании); второстепенный",
+   "ex": "É um pormenor secundário, não te preocupes.",
+   "exru": "Это второстепенная деталь, не переживай.",
+   "note": "Оба значения употребительны"
+  },
+  {
+   "word": "superior",
+   "pos": "прил.",
+   "ru": "высший (об образовании); верхний",
+   "ex": "Tem o ensino superior completo.",
+   "exru": "У него законченное высшее образование.",
+   "note": "ensino superior — вуз"
+  },
+  {
+   "word": "universitário",
+   "pos": "прил.",
+   "ru": "университетский; студент вуза",
+   "ex": "Vive numa residência universitária.",
+   "exru": "Он живёт в студенческом общежитии.",
+   "note": "Может быть и существительным"
+  },
+  {
+   "word": "a licenciatura",
+   "pos": "сущ.",
+   "ru": "бакалавриат, диплом о высшем",
+   "ex": "Fiz a licenciatura em economia.",
+   "exru": "Я окончил бакалавриат по экономике.",
+   "note": "Дальше: mestrado, doutoramento"
+  },
+  {
+   "word": "tirar",
+   "pos": "глаг.",
+   "ru": "получать (курс, права); вынимать",
+   "ex": "Vou tirar um curso de cozinha.",
+   "exru": "Я пойду на кулинарные курсы.",
+   "note": "tirar um curso/a carta — пройти обучение"
+  },
+  {
+   "word": "fazer",
+   "pos": "глаг.",
+   "ru": "делать",
+   "ex": "O que é que fazes ao fim de semana?",
+   "exru": "Что ты делаешь по выходным?",
+   "note": "Неправильный: faço, fiz, feito"
+  },
+  {
+   "word": "a profissão",
+   "pos": "сущ.",
+   "ru": "профессия",
+   "ex": "Qual é a sua profissão?",
+   "exru": "Кто вы по профессии?",
+   "note": "Мн. ч.: as profissões"
+  },
+  {
+   "word": "o trabalho",
+   "pos": "сущ.",
+   "ru": "работа",
+   "ex": "Encontrei trabalho numa empresa pequena.",
+   "exru": "Я нашёл работу в маленькой фирме.",
+   "note": "м. р."
+  },
+  {
+   "word": "o local de trabalho",
+   "pos": "сущ.",
+   "ru": "место работы",
+   "ex": "O local de trabalho fica no centro.",
+   "exru": "Место работы находится в центре.",
+   "note": "м. р."
+  },
+  {
+   "word": "simpático",
+   "pos": "прил.",
+   "ru": "приятный, дружелюбный",
+   "ex": "A rececionista foi muito simpática comigo.",
+   "exru": "Администратор была очень любезна со мной.",
+   "note": "Ложный друг: не «симпатичный внешне»"
+  },
+  {
+   "word": "antipático",
+   "pos": "прил.",
+   "ru": "неприятный, недружелюбный",
+   "ex": "O empregado de hoje estava antipático.",
+   "exru": "Сегодняшний официант был неприветлив.",
+   "note": "Противоположно simpático"
+  },
+  {
+   "word": "agradável",
+   "pos": "прил.",
+   "ru": "приятный",
+   "ex": "Foi uma conversa muito agradável.",
+   "exru": "Это был очень приятный разговор.",
+   "note": "Одна форма для обоих родов"
+  },
+  {
+   "word": "alegre",
+   "pos": "прил.",
+   "ru": "весёлый, радостный",
+   "ex": "É uma pessoa alegre e faz amigos depressa.",
+   "exru": "Он весёлый человек и быстро заводит друзей.",
+   "note": "Одна форма для обоих родов"
+  },
+  {
+   "word": "interessante",
+   "pos": "прил.",
+   "ru": "интересный",
+   "ex": "Conheci uma pessoa muito interessante na festa.",
+   "exru": "Я познакомился с очень интересным человеком на вечеринке.",
+   "note": "Одна форма для обоих родов"
+  },
+  {
+   "word": "louro",
+   "pos": "прил.",
+   "ru": "светловолосый, блондин",
+   "ex": "O filho dela é louro e tem olhos azuis.",
+   "exru": "Её сын светловолосый и с голубыми глазами.",
+   "note": "louro / loura; тёмный — moreno"
+  },
+  {
+   "word": "moreno",
+   "pos": "прил.",
+   "ru": "темноволосый, смуглый",
+   "ex": "É moreno, alto e usa óculos.",
+   "exru": "Он темноволосый, высокий и носит очки.",
+   "note": "morena для женщины"
+  },
+  {
+   "word": "ruivo",
+   "pos": "прил.",
+   "ru": "рыжий",
+   "ex": "A irmã dela é ruiva.",
+   "exru": "Её сестра рыжая.",
+   "note": "ruivo / ruiva"
+  },
+  {
+   "word": "a religião",
+   "pos": "сущ.",
+   "ru": "религия",
+   "ex": "Não falamos de religião ao jantar.",
+   "exru": "Мы не говорим о религии за ужином.",
+   "note": "Мн. ч.: as religiões"
+  },
+  {
+   "word": "deus",
+   "pos": "сущ.",
+   "ru": "бог",
+   "ex": "Graças a Deus, correu tudo bem.",
+   "exru": "Слава богу, всё прошло хорошо.",
+   "note": "Graças a Deus — очень частое выражение"
+  },
+  {
+   "word": "cristão",
+   "pos": "прил.",
+   "ru": "христианин, христианский",
+   "ex": "A maioria dos portugueses é cristã.",
+   "exru": "Большинство португальцев — христиане.",
+   "note": "Ж. р.: cristã; мн. ч.: cristãos"
+  },
+  {
+   "word": "muçulmano",
+   "pos": "прил.",
+   "ru": "мусульманин, мусульманский",
+   "ex": "Tem um colega muçulmano no trabalho.",
+   "exru": "У него на работе есть коллега-мусульманин.",
+   "note": "muçulmano / muçulmana"
+  },
+  {
+   "word": "judeu",
+   "pos": "прил.",
+   "ru": "еврей, иудейский",
+   "ex": "Visitámos o antigo bairro judeu.",
+   "exru": "Мы посетили старый еврейский квартал.",
+   "note": "Ж. р.: judia"
+  },
+  {
+   "word": "budista",
+   "pos": "прил.",
+   "ru": "буддист, буддийский",
+   "ex": "Ela é budista e medita todas as manhãs.",
+   "exru": "Она буддистка и медитирует каждое утро.",
+   "note": "Одна форма для обоих родов"
+  },
+  {
+   "word": "hindu",
+   "pos": "прил.",
+   "ru": "индуист, индуистский",
+   "ex": "Há um templo hindu perto de Lisboa.",
+   "exru": "Недалеко от Лиссабона есть индуистский храм.",
+   "note": "Одна форма для обоих родов"
+  },
+  {
+   "word": "ateu",
+   "pos": "прил.",
+   "ru": "атеист",
+   "ex": "Ele diz que é ateu.",
+   "exru": "Он говорит, что он атеист.",
+   "note": "Ж. р.: ateia"
+  },
+  {
+   "word": "agnóstico",
+   "pos": "прил.",
+   "ru": "агностик",
+   "ex": "Considera-se agnóstico, não ateu.",
+   "exru": "Он считает себя агностиком, а не атеистом.",
+   "note": "agnóstico / agnóstica"
+  }
+ ]
+}

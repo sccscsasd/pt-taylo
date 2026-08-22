@@ -1,0 +1,822 @@
+{
+ "v": 1,
+ "deck": "A2 — Еда: продукты, готовка, ресторан",
+ "cards": [
+  {
+   "word": "o bacalhau",
+   "pos": "сущ.",
+   "ru": "треска (солёная)",
+   "ex": "O bacalhau com natas é o meu prato preferido.",
+   "exru": "Треска со сливками — моё любимое блюдо.",
+   "note": "Национальный продукт Португалии"
+  },
+  {
+   "word": "o salmão",
+   "pos": "сущ.",
+   "ru": "лосось",
+   "ex": "O salmão grelhado fica pronto em dez minutos.",
+   "exru": "Лосось на гриле готовится за десять минут.",
+   "note": "Мн. ч.: os salmões"
+  },
+  {
+   "word": "o camarão",
+   "pos": "сущ.",
+   "ru": "креветка",
+   "ex": "Comemos camarão cozido com sal.",
+   "exru": "Мы ели варёные креветки с солью.",
+   "note": "Мн. ч.: os camarões"
+  },
+  {
+   "word": "a gamba",
+   "pos": "сущ.",
+   "ru": "крупная креветка",
+   "ex": "As gambas grelhadas são caras.",
+   "exru": "Крупные креветки на гриле дорогие.",
+   "note": "Больше, чем camarão"
+  },
+  {
+   "word": "o peru",
+   "pos": "сущ.",
+   "ru": "индейка",
+   "ex": "O peru é típico no Natal.",
+   "exru": "Индейка — типичное рождественское блюдо.",
+   "note": "o Peru — страна Перу"
+  },
+  {
+   "word": "o fiambre",
+   "pos": "сущ.",
+   "ru": "варёная ветчина",
+   "ex": "Uma sandes de fiambre, por favor.",
+   "exru": "Сэндвич с ветчиной, пожалуйста.",
+   "note": "Сыровяленая — o presunto"
+  },
+  {
+   "word": "a salsicha",
+   "pos": "сущ.",
+   "ru": "сосиска",
+   "ex": "As crianças adoram salsichas.",
+   "exru": "Дети обожают сосиски.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o queijo",
+   "pos": "сущ.",
+   "ru": "сыр",
+   "ex": "Este queijo da serra é curado.",
+   "exru": "Этот горный сыр выдержанный.",
+   "note": "м. р."
+  },
+  {
+   "word": "a manteiga",
+   "pos": "сущ.",
+   "ru": "масло сливочное",
+   "ex": "Passa manteiga na torrada.",
+   "exru": "Намажь масло на тост.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o iogurte",
+   "pos": "сущ.",
+   "ru": "йогурт",
+   "ex": "Como iogurte natural ao pequeno-almoço.",
+   "exru": "На завтрак я ем натуральный йогурт.",
+   "note": "м. р."
+  },
+  {
+   "word": "o laticínio",
+   "pos": "сущ.",
+   "ru": "молочный продукт",
+   "ex": "Evito laticínios à noite.",
+   "exru": "Вечером я избегаю молочных продуктов.",
+   "note": "Обычно мн. ч.: laticínios"
+  },
+  {
+   "word": "o azeite",
+   "pos": "сущ.",
+   "ru": "оливковое масло",
+   "ex": "Põe azeite na salada.",
+   "exru": "Полей салат оливковым маслом.",
+   "note": "Другое масло — o óleo"
+  },
+  {
+   "word": "o vinagre",
+   "pos": "сущ.",
+   "ru": "уксус",
+   "ex": "Tempera com azeite e vinagre.",
+   "exru": "Заправь маслом и уксусом.",
+   "note": "м. р."
+  },
+  {
+   "word": "a farinha",
+   "pos": "сущ.",
+   "ru": "мука",
+   "ex": "Falta farinha para o bolo.",
+   "exru": "Не хватает муки для пирога.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o milho",
+   "pos": "сущ.",
+   "ru": "кукуруза",
+   "ex": "O pão de milho é típico do norte.",
+   "exru": "Кукурузный хлеб типичен для севера.",
+   "note": "м. р."
+  },
+  {
+   "word": "a alface",
+   "pos": "сущ.",
+   "ru": "салат (листовой)",
+   "ex": "A salada leva alface e tomate.",
+   "exru": "В салат идёт листовой салат и помидор.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a couve",
+   "pos": "сущ.",
+   "ru": "капуста",
+   "ex": "O caldo verde leva couve muito fina.",
+   "exru": "В калду-верде кладут очень мелко нарезанную капусту.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a cebola",
+   "pos": "сущ.",
+   "ru": "лук",
+   "ex": "Corta a cebola em rodelas.",
+   "exru": "Нарежь лук кольцами.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o alho",
+   "pos": "сущ.",
+   "ru": "чеснок",
+   "ex": "Junta dois dentes de alho.",
+   "exru": "Добавь два зубчика чеснока.",
+   "note": "dente de alho — зубчик"
+  },
+  {
+   "word": "a cenoura",
+   "pos": "сущ.",
+   "ru": "морковь",
+   "ex": "A sopa leva cenoura e batata.",
+   "exru": "В суп идёт морковь и картошка.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a salsa",
+   "pos": "сущ.",
+   "ru": "петрушка",
+   "ex": "Salpica com salsa picada.",
+   "exru": "Посыпь рубленой петрушкой.",
+   "note": "Ложный друг: не соус"
+  },
+  {
+   "word": "a pêra",
+   "pos": "сущ.",
+   "ru": "груша",
+   "ex": "Comi uma pêra depois do almoço.",
+   "exru": "После обеда я съел грушу.",
+   "note": "Мн. ч.: as peras"
+  },
+  {
+   "word": "a uva",
+   "pos": "сущ.",
+   "ru": "виноград",
+   "ex": "As uvas do Douro fazem bom vinho.",
+   "exru": "Из винограда Дору делают хорошее вино.",
+   "note": "Обычно мн. ч.: as uvas"
+  },
+  {
+   "word": "a melancia",
+   "pos": "сущ.",
+   "ru": "арбуз",
+   "ex": "No verão como melancia todos os dias.",
+   "exru": "Летом я каждый день ем арбуз.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a tangerina",
+   "pos": "сущ.",
+   "ru": "мандарин",
+   "ex": "As tangerinas são doces nesta época.",
+   "exru": "В это время мандарины сладкие.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a amêndoa",
+   "pos": "сущ.",
+   "ru": "миндаль",
+   "ex": "O bolo leva amêndoa moída.",
+   "exru": "В пирог идёт молотый миндаль.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a noz",
+   "pos": "сущ.",
+   "ru": "орех (грецкий)",
+   "ex": "Junta nozes à salada.",
+   "exru": "Добавь орехи в салат.",
+   "note": "Мн. ч.: as nozes"
+  },
+  {
+   "word": "o bolo",
+   "pos": "сущ.",
+   "ru": "пирог, торт",
+   "ex": "Fiz um bolo de chocolate.",
+   "exru": "Я испёк шоколадный торт.",
+   "note": "м. р."
+  },
+  {
+   "word": "a bolacha",
+   "pos": "сущ.",
+   "ru": "печенье",
+   "ex": "Come uma bolacha com o chá.",
+   "exru": "Съешь печенье с чаем.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a torrada",
+   "pos": "сущ.",
+   "ru": "тост",
+   "ex": "Uma torrada com manteiga, por favor.",
+   "exru": "Тост с маслом, пожалуйста.",
+   "note": "ж. р."
+  },
+  {
+   "word": "torrar",
+   "pos": "глаг.",
+   "ru": "поджаривать (хлеб), обжаривать",
+   "ex": "Vou torrar o pão.",
+   "exru": "Я поджарю хлеб.",
+   "note": ""
+  },
+  {
+   "word": "torrado",
+   "pos": "прил.",
+   "ru": "поджаренный",
+   "ex": "Prefiro o pão bem torrado.",
+   "exru": "Я люблю хорошо поджаренный хлеб.",
+   "note": "torrado / torrada"
+  },
+  {
+   "word": "o pão com manteiga",
+   "pos": "выраж.",
+   "ru": "хлеб с маслом",
+   "ex": "Ao pequeno-almoço como pão com manteiga.",
+   "exru": "На завтрак я ем хлеб с маслом.",
+   "note": "Классический завтрак"
+  },
+  {
+   "word": "a sandes mista",
+   "pos": "сущ.",
+   "ru": "сэндвич с ветчиной и сыром",
+   "ex": "Uma sandes mista e um sumo.",
+   "exru": "Сэндвич с ветчиной и сыром и сок.",
+   "note": "a sandes — не изменяется во мн. ч."
+  },
+  {
+   "word": "a omelete",
+   "pos": "сущ.",
+   "ru": "омлет",
+   "ex": "Faço uma omelete de queijo.",
+   "exru": "Я делаю омлет с сыром.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a piza",
+   "pos": "сущ.",
+   "ru": "пицца",
+   "ex": "Pedimos uma piza grande.",
+   "exru": "Мы заказали большую пиццу.",
+   "note": "Португальское написание: piza"
+  },
+  {
+   "word": "a sobremesa",
+   "pos": "сущ.",
+   "ru": "десерт",
+   "ex": "Que sobremesas têm hoje?",
+   "exru": "Какие у вас сегодня десерты?",
+   "note": "ж. р."
+  },
+  {
+   "word": "a pastelaria",
+   "pos": "сущ.",
+   "ru": "кондитерская",
+   "ex": "Tomo o café na pastelaria da esquina.",
+   "exru": "Я пью кофе в кондитерской на углу.",
+   "note": "Тут же завтракают"
+  },
+  {
+   "word": "a cafetaria",
+   "pos": "сущ.",
+   "ru": "кафетерий",
+   "ex": "A cafetaria do hospital está aberta toda a noite.",
+   "exru": "Кафетерий в больнице открыт всю ночь.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a bica",
+   "pos": "сущ.",
+   "ru": "эспрессо (в Лиссабоне)",
+   "ex": "Uma bica e um pastel de nata, por favor.",
+   "exru": "Эспрессо и пирожное с кремом, пожалуйста.",
+   "note": "В Порту говорят «um cimbalino»"
+  },
+  {
+   "word": "o café cheio",
+   "pos": "выраж.",
+   "ru": "эспрессо побольше",
+   "ex": "Prefiro um café cheio de manhã.",
+   "exru": "Утром я предпочитаю кофе побольше.",
+   "note": "Меньше воды — café curto"
+  },
+  {
+   "word": "descafeinado",
+   "pos": "прил.",
+   "ru": "без кофеина",
+   "ex": "Um descafeinado, se faz favor.",
+   "exru": "Кофе без кофеина, пожалуйста.",
+   "note": "Разг.: um deca"
+  },
+  {
+   "word": "tomar um café",
+   "pos": "выраж.",
+   "ru": "выпить кофе",
+   "ex": "Vamos tomar um café depois do trabalho?",
+   "exru": "Выпьем кофе после работы?",
+   "note": "Социальный ритуал"
+  },
+  {
+   "word": "o sumo",
+   "pos": "сущ.",
+   "ru": "сок",
+   "ex": "Um sumo de laranja natural.",
+   "exru": "Свежевыжатый апельсиновый сок.",
+   "note": "м. р."
+  },
+  {
+   "word": "a água mineral",
+   "pos": "сущ.",
+   "ru": "минеральная вода",
+   "ex": "Uma água mineral fresca, por favor.",
+   "exru": "Холодную минеральную воду, пожалуйста.",
+   "note": "ж. р."
+  },
+  {
+   "word": "com gás",
+   "pos": "выраж.",
+   "ru": "газированная",
+   "ex": "Água com gás ou sem gás?",
+   "exru": "Вода с газом или без?",
+   "note": "Частый вопрос в ресторане"
+  },
+  {
+   "word": "natural",
+   "pos": "прил.",
+   "ru": "натуральный; комнатной температуры",
+   "ex": "Quer a água fresca ou natural?",
+   "exru": "Вам воду холодную или комнатной температуры?",
+   "note": "Мн. ч.: naturais"
+  },
+  {
+   "word": "o vinho",
+   "pos": "сущ.",
+   "ru": "вино",
+   "ex": "Um copo de vinho tinto da casa.",
+   "exru": "Бокал домашнего красного вина.",
+   "note": "tinto — красное, branco — белое"
+  },
+  {
+   "word": "o copo de vinho",
+   "pos": "сущ.",
+   "ru": "бокал вина",
+   "ex": "Bebo um copo de vinho ao jantar.",
+   "exru": "За ужином я выпиваю бокал вина.",
+   "note": "м. р."
+  },
+  {
+   "word": "a cerveja",
+   "pos": "сущ.",
+   "ru": "пиво",
+   "ex": "Uma imperial é uma cerveja pequena.",
+   "exru": "«Империал» — это маленькое пиво.",
+   "note": "imperial — разливное 0,2 л"
+  },
+  {
+   "word": "a refeição",
+   "pos": "сущ.",
+   "ru": "приём пищи, трапеза",
+   "ex": "Faço três refeições por dia.",
+   "exru": "Я ем три раза в день.",
+   "note": "Мн. ч.: as refeições"
+  },
+  {
+   "word": "o prato principal",
+   "pos": "сущ.",
+   "ru": "основное блюдо",
+   "ex": "Como prato principal escolhi peixe.",
+   "exru": "На основное я выбрал рыбу.",
+   "note": "м. р."
+  },
+  {
+   "word": "o menu do dia",
+   "pos": "сущ.",
+   "ru": "меню дня, комплексный обед",
+   "ex": "O menu do dia inclui sopa e bebida.",
+   "exru": "В комплексный обед входят суп и напиток.",
+   "note": "м. р."
+  },
+  {
+   "word": "a dose",
+   "pos": "сущ.",
+   "ru": "порция",
+   "ex": "Uma meia dose chega para mim.",
+   "exru": "Мне хватит половины порции.",
+   "note": "meia dose — полпорции"
+  },
+  {
+   "word": "o guardanapo",
+   "pos": "сущ.",
+   "ru": "салфетка",
+   "ex": "Pode trazer mais guardanapos?",
+   "exru": "Можно ещё салфеток?",
+   "note": "м. р."
+  },
+  {
+   "word": "o empregado de mesa",
+   "pos": "сущ.",
+   "ru": "официант",
+   "ex": "O empregado de mesa trouxe a ementa.",
+   "exru": "Официант принёс меню.",
+   "note": "Ж. р.: a empregada de mesa"
+  },
+  {
+   "word": "o cozinheiro",
+   "pos": "сущ.",
+   "ru": "повар",
+   "ex": "O cozinheiro trabalhou em Espanha.",
+   "exru": "Повар работал в Испании.",
+   "note": "Ж. р.: a cozinheira"
+  },
+  {
+   "word": "o chef",
+   "pos": "сущ.",
+   "ru": "шеф-повар",
+   "ex": "O chef veio à mesa cumprimentar-nos.",
+   "exru": "Шеф-повар подошёл поздороваться.",
+   "note": "Читается «шеф»"
+  },
+  {
+   "word": "reservar mesa",
+   "pos": "выраж.",
+   "ru": "забронировать столик",
+   "ex": "Reservei mesa para as oito.",
+   "exru": "Я забронировал столик на восемь.",
+   "note": "a reserva — бронь"
+  },
+  {
+   "word": "servir",
+   "pos": "глаг.",
+   "ru": "подавать; годиться",
+   "ex": "O jantar é servido às sete.",
+   "exru": "Ужин подают в семь.",
+   "note": "Неправильный: sirvo, serves, serve"
+  },
+  {
+   "word": "escolher",
+   "pos": "глаг.",
+   "ru": "выбирать",
+   "ex": "Já escolheu o prato?",
+   "exru": "Вы уже выбрали блюдо?",
+   "note": ""
+  },
+  {
+   "word": "decidir",
+   "pos": "глаг.",
+   "ru": "решать",
+   "ex": "Ainda não decidi o que vou comer.",
+   "exru": "Я ещё не решил, что буду есть.",
+   "note": ""
+  },
+  {
+   "word": "bom apetite",
+   "pos": "выраж.",
+   "ru": "приятного аппетита",
+   "ex": "Bom apetite! — Obrigado, igualmente.",
+   "exru": "Приятного аппетита! — Спасибо, взаимно.",
+   "note": "Ответ: igualmente"
+  },
+  {
+   "word": "o piquenique",
+   "pos": "сущ.",
+   "ru": "пикник",
+   "ex": "Vamos fazer um piquenique no parque.",
+   "exru": "Устроим пикник в парке.",
+   "note": "м. р."
+  },
+  {
+   "word": "a receita",
+   "pos": "сущ.",
+   "ru": "рецепт",
+   "ex": "Manda-me a receita do bolo.",
+   "exru": "Пришли мне рецепт пирога.",
+   "note": "Также рецепт от врача"
+  },
+  {
+   "word": "o ingrediente",
+   "pos": "сущ.",
+   "ru": "ингредиент",
+   "ex": "Faltam dois ingredientes.",
+   "exru": "Не хватает двух ингредиентов.",
+   "note": "м. р."
+  },
+  {
+   "word": "o tempo de preparação",
+   "pos": "сущ.",
+   "ru": "время приготовления",
+   "ex": "O tempo de preparação é de vinte minutos.",
+   "exru": "Время приготовления — двадцать минут.",
+   "note": "м. р."
+  },
+  {
+   "word": "ferver",
+   "pos": "глаг.",
+   "ru": "кипятить, кипеть",
+   "ex": "Deixa a água ferver antes de juntar a massa.",
+   "exru": "Дай воде закипеть, прежде чем класть макароны.",
+   "note": ""
+  },
+  {
+   "word": "cozer",
+   "pos": "глаг.",
+   "ru": "варить",
+   "ex": "Coze as batatas durante vinte minutos.",
+   "exru": "Вари картошку двадцать минут.",
+   "note": "Не путать с coser — шить"
+  },
+  {
+   "word": "cozido",
+   "pos": "прил.",
+   "ru": "варёный",
+   "ex": "Prefiro legumes cozidos.",
+   "exru": "Я предпочитаю варёные овощи.",
+   "note": "cozido à portuguesa — рагу"
+  },
+  {
+   "word": "assar",
+   "pos": "глаг.",
+   "ru": "запекать, жарить в духовке",
+   "ex": "Vou assar o frango no forno.",
+   "exru": "Я запеку курицу в духовке.",
+   "note": ""
+  },
+  {
+   "word": "assado",
+   "pos": "прил.",
+   "ru": "запечённый",
+   "ex": "Frango assado com batatas.",
+   "exru": "Запечённая курица с картошкой.",
+   "note": "assado / assada"
+  },
+  {
+   "word": "grelhar",
+   "pos": "глаг.",
+   "ru": "жарить на гриле",
+   "ex": "Grelhei sardinhas no jardim.",
+   "exru": "Я пожарил сардины на гриле в саду.",
+   "note": ""
+  },
+  {
+   "word": "grelhado",
+   "pos": "прил.",
+   "ru": "жаренный на гриле",
+   "ex": "Um bife grelhado, por favor.",
+   "exru": "Стейк на гриле, пожалуйста.",
+   "note": "grelhado / grelhada"
+  },
+  {
+   "word": "fritar",
+   "pos": "глаг.",
+   "ru": "жарить (в масле)",
+   "ex": "Não gosto de fritar em casa.",
+   "exru": "Я не люблю жарить дома.",
+   "note": ""
+  },
+  {
+   "word": "frito",
+   "pos": "прил.",
+   "ru": "жареный",
+   "ex": "Peixe frito com arroz.",
+   "exru": "Жареная рыба с рисом.",
+   "note": "frito / frita"
+  },
+  {
+   "word": "as batatas fritas",
+   "pos": "сущ.",
+   "ru": "картофель фри; чипсы",
+   "ex": "Quer batatas fritas com o hambúrguer?",
+   "exru": "Хотите картошку фри к бургеру?",
+   "note": "Всегда мн. ч."
+  },
+  {
+   "word": "descascar",
+   "pos": "глаг.",
+   "ru": "чистить (от кожуры)",
+   "ex": "Descasca as batatas, por favor.",
+   "exru": "Почисти картошку, пожалуйста.",
+   "note": "a casca — кожура"
+  },
+  {
+   "word": "picar",
+   "pos": "глаг.",
+   "ru": "рубить, мелко резать; жалить",
+   "ex": "Pica a cebola bem fininha.",
+   "exru": "Мелко-мелко наруби лук.",
+   "note": "carne picada — фарш"
+  },
+  {
+   "word": "misturar",
+   "pos": "глаг.",
+   "ru": "смешивать",
+   "ex": "Mistura tudo muito bem.",
+   "exru": "Хорошенько всё перемешай.",
+   "note": ""
+  },
+  {
+   "word": "bater",
+   "pos": "глаг.",
+   "ru": "взбивать; стучать",
+   "ex": "Bata os ovos com o açúcar.",
+   "exru": "Взбейте яйца с сахаром.",
+   "note": "bater à porta — стучать в дверь"
+  },
+  {
+   "word": "temperar",
+   "pos": "глаг.",
+   "ru": "приправлять",
+   "ex": "Tempera a carne com sal e alho.",
+   "exru": "Приправь мясо солью и чесноком.",
+   "note": ""
+  },
+  {
+   "word": "o tempero",
+   "pos": "сущ.",
+   "ru": "приправа",
+   "ex": "Falta tempero nesta sopa.",
+   "exru": "В этом супе не хватает приправ.",
+   "note": "м. р."
+  },
+  {
+   "word": "mal passado",
+   "pos": "выраж.",
+   "ru": "с кровью (о мясе)",
+   "ex": "Quero o bife mal passado.",
+   "exru": "Я хочу стейк с кровью.",
+   "note": "bem passado — прожаренный"
+  },
+  {
+   "word": "mal cozido",
+   "pos": "выраж.",
+   "ru": "недоваренный",
+   "ex": "O arroz está mal cozido.",
+   "exru": "Рис недоварен.",
+   "note": ""
+  },
+  {
+   "word": "a colher de sopa",
+   "pos": "сущ.",
+   "ru": "столовая ложка",
+   "ex": "Junta duas colheres de sopa de azeite.",
+   "exru": "Добавь две столовые ложки оливкового масла.",
+   "note": "colher de chá — чайная ложка"
+  },
+  {
+   "word": "a lata",
+   "pos": "сущ.",
+   "ru": "банка (консервная)",
+   "ex": "Comprei uma lata de atum.",
+   "exru": "Я купил банку тунца.",
+   "note": "ж. р."
+  },
+  {
+   "word": "fazer o pequeno-almoço",
+   "pos": "выраж.",
+   "ru": "готовить завтрак",
+   "ex": "Faço o pequeno-almoço para todos.",
+   "exru": "Я готовлю завтрак на всех.",
+   "note": ""
+  },
+  {
+   "word": "a dieta",
+   "pos": "сущ.",
+   "ru": "диета",
+   "ex": "Estou de dieta este mês.",
+   "exru": "В этом месяце я на диете.",
+   "note": "estar de dieta — быть на диете"
+  },
+  {
+   "word": "saudável",
+   "pos": "прил.",
+   "ru": "здоровый, полезный",
+   "ex": "Uma alimentação saudável é importante.",
+   "exru": "Здоровое питание важно.",
+   "note": "Мн. ч.: saudáveis"
+  },
+  {
+   "word": "a caloria",
+   "pos": "сущ.",
+   "ru": "калория",
+   "ex": "Este bolo tem muitas calorias.",
+   "exru": "В этом торте много калорий.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a energia",
+   "pos": "сущ.",
+   "ru": "энергия",
+   "ex": "Preciso de energia para o dia todo.",
+   "exru": "Мне нужна энергия на весь день.",
+   "note": "ж. р."
+  },
+  {
+   "word": "a vitamina",
+   "pos": "сущ.",
+   "ru": "витамин",
+   "ex": "A laranja tem vitamina C.",
+   "exru": "В апельсине есть витамин C.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o peso corporal",
+   "pos": "сущ.",
+   "ru": "вес тела",
+   "ex": "Controlo o peso corporal todas as semanas.",
+   "exru": "Я слежу за весом каждую неделю.",
+   "note": "м. р."
+  },
+  {
+   "word": "vegetariano",
+   "pos": "прил.",
+   "ru": "вегетарианский, вегетарианец",
+   "ex": "Há opções vegetarianas na ementa?",
+   "exru": "В меню есть вегетарианские варианты?",
+   "note": "vegetariano / vegetariana"
+  },
+  {
+   "word": "o vegetarianismo",
+   "pos": "сущ.",
+   "ru": "вегетарианство",
+   "ex": "O vegetarianismo tem crescido nas cidades.",
+   "exru": "Вегетарианство в городах растёт.",
+   "note": "м. р."
+  },
+  {
+   "word": "italiano",
+   "pos": "прил.",
+   "ru": "итальянский",
+   "ex": "Fomos a um restaurante italiano.",
+   "exru": "Мы ходили в итальянский ресторан.",
+   "note": "italiano / italiana"
+  },
+  {
+   "word": "indiano",
+   "pos": "прил.",
+   "ru": "индийский",
+   "ex": "A comida indiana é picante.",
+   "exru": "Индийская еда острая.",
+   "note": "indiano / indiana"
+  },
+  {
+   "word": "a comida chinesa",
+   "pos": "выраж.",
+   "ru": "китайская еда",
+   "ex": "Pedimos comida chinesa ao domingo.",
+   "exru": "По воскресеньям мы заказываем китайскую еду.",
+   "note": "ж. р."
+  },
+  {
+   "word": "o centilitro",
+   "pos": "сущ.",
+   "ru": "сантилитр",
+   "ex": "O copo leva vinte centilitros.",
+   "exru": "В стакан входит двадцать сантилитров.",
+   "note": "Сокращение: cl"
+  },
+  {
+   "word": "o decilitro",
+   "pos": "сущ.",
+   "ru": "децилитр",
+   "ex": "A receita pede dois decilitros de leite.",
+   "exru": "По рецепту нужно два децилитра молока.",
+   "note": "Сокращение: dl"
+  },
+  {
+   "word": "o mililitro",
+   "pos": "сущ.",
+   "ru": "миллилитр",
+   "ex": "Junta cem mililitros de água.",
+   "exru": "Добавь сто миллилитров воды.",
+   "note": "Сокращение: ml"
+  }
+ ]
+}
