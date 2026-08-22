@@ -190,6 +190,36 @@
   .attach .x:active{opacity:.55}
 
   /* screenshot */
+  /* цель на день: дуга, неделя, серия */
+  .goal{text-align:center;margin-top:34px}
+  .goal .gauge{position:relative;max-width:250px;margin:0 auto}
+  .goal .arc{display:block;width:100%}
+  .goal .arc path{fill:none;stroke-width:9;stroke-linecap:round}
+  .goal .arc .track{stroke:var(--fill)}
+  .goal .arc .fill{
+    stroke:var(--green);stroke-dasharray:276.5;stroke-dashoffset:276.5;
+    transition:stroke-dashoffset .6s ease;
+  }
+  .goal .mid{position:absolute;left:0;right:0;bottom:2px}
+  .goal .mid .t{font-size:13px;color:var(--label2)}
+  .goal .mid .n{font-size:44px;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+  .goal .mid .aim{
+    border:none;background:none;padding:2px 0 0;cursor:pointer;
+    font-size:13px;color:var(--label2);
+  }
+  .goal .mid .aim:active{opacity:.55}
+  .goal .go{margin-top:16px}
+  .goal .week{display:flex;justify-content:center;gap:7px;margin-top:20px}
+  .goal .week span{
+    width:32px;height:32px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;color:var(--label3);background:var(--fill);
+  }
+  .goal .week span.done{background:var(--green);color:#fff}
+  .goal .week span.today{box-shadow:inset 0 0 0 1.5px var(--blue);color:var(--blue)}
+  .goal .streak{margin-top:12px;font-size:14px;color:var(--label2)}
+  .goal .streak b{color:var(--label);font-weight:600}
+
   /* исходник разбора: распознанный или вставленный текст */
   .srcbox{position:relative;background:var(--group);border-radius:10px;padding:14px 44px 14px 14px}
   .srcbox .pt{font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
@@ -382,6 +412,23 @@
       <div id="added"></div>
     </div>
 
+    <div class="goal" id="goalCard">
+      <div class="gauge">
+        <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
+          <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
+          <path class="fill" id="goalArc" d="M12 100a88 88 0 0 1 176 0"/>
+        </svg>
+        <div class="mid">
+          <div class="t">Сегодня</div>
+          <div class="n" id="goalNum">0</div>
+          <button class="aim" id="goalEdit" type="button">из <span id="goalTarget">15</span> слов в день ›</button>
+        </div>
+      </div>
+      <button class="btn primary wide go" id="goalGo">Продолжить учить</button>
+      <div class="week" id="goalWeek"></div>
+      <div class="streak" id="goalStreak"></div>
+    </div>
+
   </section>
 
   <section id="v-cards" class="view">
@@ -399,6 +446,18 @@
   </section>
 
   <section id="v-set" class="view">
+    <div class="sec">
+      <span class="lbl">Цель на день</span>
+      <select id="goal">
+        <option value="5">5 слов</option>
+        <option value="10">10 слов</option>
+        <option value="15">15 слов</option>
+        <option value="20">20 слов</option>
+        <option value="30">30 слов</option>
+        <option value="50">50 слов</option>
+      </select>
+    </div>
+
     <div class="sec">
       <span class="lbl">Направление тренировки</span>
       <select id="dir">
@@ -1141,6 +1200,7 @@ const INTERVALS={0:0,1:1,2:30};     // не помню — заново, тру�
 function nextInterval(c,g){ return INTERVALS[g]||0 }
 function grade(g){
   const c=current.card;
+  if(!c.rev||c.rev<startOfDay()) bumpDay();   // слово открыто сегодня впервые
   if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
     c.archived=true; c.archivedAt=Date.now(); c.reps=(c.reps||0)+1;
     c.due=Date.now()+3650*DAY;
@@ -1162,6 +1222,78 @@ function nextCard(){
 }
 
 /* ---------------- stats / nav ---------------- */
+/* Цель на день. Считаем слова, впервые открытые за сегодня: повтор той же карточки
+   внутри дня счёт не двигает. История лежит в настройках и синхронизируется вместе с ними. */
+const DAY_MS=864e5;
+const dayKey=d=>{
+  const x=d?new Date(d):new Date();
+  return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');
+};
+const startOfDay=()=>{ const d=new Date(); d.setHours(0,0,0,0); return d.getTime() };
+const goalOf=()=>+settings.goal||15;
+
+function bumpDay(){
+  const k=dayKey();
+  settings.days=settings.days||{};
+  settings.days[k]=(settings.days[k]||0)+1;
+  const keys=Object.keys(settings.days).sort();
+  if(keys.length>120) keys.slice(0,keys.length-120).forEach(x=>delete settings.days[x]);
+  persistSet();
+}
+// При первом запуске счётчика за сегодня ещё нет — восстанавливаем его из карточек
+// с сегодняшней меткой правки. Иначе после дня занятий блок показал бы ноль.
+function seedToday(){
+  const k=dayKey();
+  settings.days=settings.days||{};
+  if(settings.days[k]!=null) return;
+  const n=cards.filter(c=>c.reps>0&&(c.rev||0)>=startOfDay()).length;
+  if(n){ settings.days[k]=n; persistSet() }
+}
+function streakInfo(){
+  const days=settings.days||{}, goal=goalOf();
+  const met=k=>(days[k]||0)>=goal;
+  const d=new Date();
+  if(!met(dayKey(d))) d.setDate(d.getDate()-1);   // сегодня ещё не закрыт — серия считается от вчера
+  let cur=0;
+  while(met(dayKey(d))){ cur++; d.setDate(d.getDate()-1) }
+  let best=0, run=0, prev=null;
+  Object.keys(days).filter(met).sort().forEach(k=>{
+    const t=new Date(k+'T00:00:00').getTime();
+    run=(prev!==null&&t-prev===DAY_MS)?run+1:1;
+    prev=t; if(run>best) best=run;
+  });
+  return {cur:cur, best:Math.max(best,cur)};
+}
+function renderGoal(){
+  const box=$('#goalCard'); if(!box) return;
+  const goal=goalOf(), days=settings.days||{}, today=days[dayKey()]||0;
+  $('#goalNum').textContent=today;
+  $('#goalTarget').textContent=goal;
+  $('#goalArc').style.strokeDashoffset=(276.5*(1-Math.min(1,today/goal))).toFixed(1);
+
+  const names=['П','В','С','Ч','П','С','В'];          // неделя с понедельника
+  const now=new Date(), shift=(now.getDay()+6)%7;
+  let html='';
+  for(let i=0;i<7;i++){
+    const d=new Date(now); d.setDate(now.getDate()-shift+i);
+    const k=dayKey(d), n=days[k]||0, done=n>=goal, isToday=k===dayKey();
+    html+='<span class="'+(done?'done':'')+(isToday&&!done?' today':'')+'" title="'+k+': '+n+'">'+names[i]+'</span>';
+  }
+  $('#goalWeek').innerHTML=html;
+
+  const st=streakInfo();
+  const дн=n=>plural(n,'день','дня','дней');
+  $('#goalStreak').innerHTML = st.cur
+    ? 'Серия: <b>'+дн(st.cur)+'</b>'+(st.best>st.cur?' · рекорд '+дн(st.best):'')
+    : (st.best?'Серия прервалась · рекорд <b>'+дн(st.best)+'</b>'
+              :'Начните серию: '+goal+' слов сегодня');
+}
+$('#goalGo').onclick=()=>$$('nav button').find(b=>b.dataset.v==='study').click();
+$('#goalEdit').onclick=()=>{
+  $$('nav button').find(b=>b.dataset.v==='set').click();
+  $('#goal').focus();
+};
+
 const plural=(n,one,few,many)=>{
   const m=n%100, k=n%10;
   return n+' '+(m>=11&&m<=14?many:k===1?one:k>=2&&k<=4?few:many);
@@ -1177,6 +1309,7 @@ function renderStats(){
     (fresh?' · '+fresh+' новых':'')+
     (due?' · '+due+' к повтору':'')+
     (known?' · '+known+' выучено':'');
+  renderGoal();
   const bar=$('#mastery');
   if(cards.length){
     const work=live.length-fresh;
@@ -1200,6 +1333,7 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 
 /* ---------------- settings ---------------- */
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
+$('#goal').onchange=e=>{settings.goal=+e.target.value;persistSet();renderGoal()};
 
 // импорт остался внутри: на нём держатся загрузка готовой колоды и разовый
 // перенос из старого облачного хранилища
@@ -1383,7 +1517,11 @@ function adoptLegacy(){
   if(!syncedAt) cards.forEach(touch);   // первая синхронизация — отдаём серверу всё, что есть
   saveCache();
 }
-function applySettings(){ const d=$('#dir'); if(d) d.value=settings.dir||'pt' }
+function applySettings(){
+  const d=$('#dir'); if(d) d.value=settings.dir||'pt';
+  const g=$('#goal'); if(g) g.value=String(goalOf());
+  renderGoal();
+}
 
 /* ---------------- синхронизация ---------------- */
 const PAGE=1000, PUSH=300;
@@ -1462,7 +1600,15 @@ async function pullSettings(){
   const rows=await r.json();
   const blob=rows.length?rows[0].data:null;
   const rs=blob&&blob.settings;
-  if(rs&&(rs.at||0)>(settings.at||0)){ Object.assign(settings,rs); applySettings(); setDirty=false }
+  if(rs){
+    // счётчики дней сливаем по максимуму: два устройства не должны затирать друг друга
+    const days=Object.assign({},rs.days||{});
+    Object.entries(settings.days||{}).forEach(([k,v])=>{ if((days[k]||0)<v) days[k]=v });
+    if((rs.at||0)>(settings.at||0)){ Object.assign(settings,rs); setDirty=false }
+    if(JSON.stringify(settings.days||{})!==JSON.stringify(days)){ settings.days=days; setDirty=true }
+    settings.days=days;
+    applySettings();
+  }
   return blob;
 }
 async function pushSettings(){
@@ -1533,6 +1679,7 @@ async function startSession(){
   hideGate(); loadCache(); adoptLegacy(); applySettings();
   renderWhoami(); renderStats(); renderCards(); renderSyncState();
   await syncNow();
+  seedToday(); renderGoal();
 }
 
 document.addEventListener('visibilitychange',()=>{
