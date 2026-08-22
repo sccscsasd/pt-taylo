@@ -95,18 +95,13 @@
   .hint{margin:8px 4px 0;font-size:13px;line-height:1.4;color:var(--label2)}
 
   /* controls */
-  input,textarea,select,button{font-family:inherit;font-size:17px;color:inherit}
-  input[type=text],input[type=password],textarea,select{
+  input,textarea,button{font-family:inherit;font-size:17px;color:inherit}
+  input[type=text],input[type=password],textarea{
     width:100%;background:var(--group);color:var(--label);
     border:none;border-radius:10px;padding:12px 14px;outline:none;
   }
   input::placeholder,textarea::placeholder{color:var(--label3)}
   textarea{resize:vertical;min-height:110px;line-height:1.45;font-size:16px}
-  select{
-    appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:36px;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8'%3E%3Cpath d='M1 1l5.5 5.5L12 1' fill='none' stroke='%23888' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat:no-repeat;background-position:right 14px center;
-  }
 
   .btn{
     display:inline-flex;align-items:center;justify-content:center;gap:7px;
@@ -283,6 +278,11 @@
     font-size:14px;padding:6px 0;border-radius:6px;
   }
   .seg button.on{background:var(--group);font-weight:500}
+  .seg.big{gap:3px;padding:3px;margin-top:0}
+  .seg.big button{font-size:15px;padding:11px 0;border-radius:8px;transition:background .15s}
+  .seg.big button.on{box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  @media (prefers-color-scheme:dark){ .seg.big button.on{box-shadow:none} }
+  .seg.big button:active{opacity:.6}
 
   /* chips */
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
@@ -499,11 +499,12 @@
 
     <div class="sec">
       <span class="lbl">Направление тренировки</span>
-      <select id="dir">
-        <option value="pt">PT → RU</option>
-        <option value="ru">RU → PT</option>
-        <option value="mix">Вперемешку</option>
-      </select>
+      <div class="seg big" id="dir">
+        <button data-d="pt" type="button">PT → RU</button>
+        <button data-d="ru" type="button">RU → PT</button>
+        <button data-d="mix" type="button">Вперемешку</button>
+      </div>
+      <div class="hint">Что показывать на карточке первым: португальское слово или перевод.</div>
     </div>
 
     <div class="sec" id="deckSec" style="display:none">
@@ -1420,7 +1421,13 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 });
 
 /* ---------------- settings ---------------- */
-$('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
+$('#dir').onclick=e=>{
+  const b=e.target.closest('button[data-d]'); if(!b) return;
+  settings.dir=b.dataset.d; persistSet(); paintDir();
+};
+function paintDir(){
+  $$('#dir button').forEach(b=>b.classList.toggle('on',b.dataset.d===(settings.dir||'pt')));
+}
 function paintGoal(){
   const g=goalOf();
   const inp=$('#goal'); if(!inp) return;
@@ -1624,7 +1631,7 @@ function adoptLegacy(){
   saveCache();
 }
 function applySettings(){
-  const d=$('#dir'); if(d) d.value=settings.dir||'pt';
+  paintDir();
   paintGoal();
   renderGoal();
 }
