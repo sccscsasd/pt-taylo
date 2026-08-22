@@ -149,7 +149,6 @@
   .sugg b{font-weight:500;min-width:0;overflow-wrap:anywhere}
   .sugg b mark{background:none;color:var(--blue);font-weight:600;padding:0}
   .sugg span{font-size:13px;color:var(--label2);margin-left:auto;padding-left:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto}
-  .sugg b em{font-style:normal;color:var(--green);font-size:13px;margin-left:6px}
   .sugg .have b{color:var(--label2)}
 
   /* скриншот, прикреплённый прямо к строке ввода */
@@ -645,8 +644,7 @@ function renderSugg(){
     const mine=cards.find(c=>norm(c.word)===norm(it.w)||norm(c.query)===norm(it.w));
     const tr=(mine&&mine.ru)||TRAD[norm(it.w)]||(it.lvl+' · '+it.tema);
     return '<button data-i="'+i+'"'+(mine?' class="have"':'')+'>'+
-      '<b>'+hl+(mine?'<em title="уже в колоде">✓</em>':'')+'</b>'+
-      '<span>'+esc(tr)+'</span></button>';
+      '<b>'+hl+'</b><span>'+esc(tr)+'</span></button>';
   }).join('');
   $('#sugg').style.display='block';
 }
