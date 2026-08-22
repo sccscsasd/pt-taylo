@@ -1511,6 +1511,20 @@ function importCards(raw){
 }
 
 const DECK_URL='vocabulario/baralho-completo-A1-A2.json';
+const DECK_V=2;   // растёт, когда в готовую колоду добавляют слова
+
+// Новые слова приезжают сами: нажимать кнопку не нужно ни при первом входе,
+// ни когда колода пополнилась. Уже добавленные слова не трогаются.
+async function autoDeck(){
+  if((settings.deckV||0)>=DECK_V) return;
+  try{
+    const res=await fetch(DECK_URL,{cache:'no-cache'});
+    if(!res.ok) return;
+    const added=importCards(await res.json());
+    settings.deckV=DECK_V; persistSet(); renderDeckBtn();
+    if(added) toast('Колода пополнилась: +'+added+' '+pWord(added,'слово','слова','слов'));
+  }catch(e){ /* без сети попробуем в следующий раз */ }
+}
 $('#loadDeck').onclick=async e=>{
   const b=e.target, old=b.textContent;
   b.disabled=true; b.innerHTML='<span class="spin"></span> Загружаю…';
@@ -1836,6 +1850,7 @@ async function startSession(){
   hideGate(); loadCache(); adoptLegacy(); applySettings();
   renderWhoami(); renderStats(); renderCards(); renderSyncState();
   await syncNow();
+  await autoDeck();
   seedToday(); renderGoal();
 }
 
