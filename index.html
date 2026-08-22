@@ -355,7 +355,7 @@
     <div class="sec">
       <span class="lbl">OpenAI API key</span>
       <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off" spellcheck="false">
-      <div class="hint">Хранится в этом браузере, уходит напрямую в api.openai.com.</div>
+      <div class="hint"><span id="keyState"></span> Хранится в этом браузере и в облаке синхронизации, уходит напрямую в api.openai.com.</div>
     </div>
     <div class="sec">
       <span class="lbl">Модель</span>
@@ -1031,7 +1031,16 @@ $$('nav button').forEach(b=>b.onclick=()=>{
 /* ---------------- settings ---------------- */
 $('#apiKey').value=settings.key; $('#model').value=settings.model;
 $('#dailyNew').value=settings.dailyNew; $('#dir').value=settings.dir;
-$('#apiKey').onchange=e=>{settings.key=e.target.value.trim();persistSet();toast('Ключ сохранён')};
+function renderKeyState(){
+  const el=$('#keyState'); if(!el) return;
+  const has=!!(settings.key||'').trim();
+  el.textContent=has?'Ключ сохранён — вводить заново не нужно.':'Ключ не задан.';
+  el.style.color=has?'var(--green)':'var(--orange)';
+}
+$('#apiKey').onchange=e=>{
+  settings.key=e.target.value.trim(); persistSet(); renderKeyState();
+  toast(settings.key?'Ключ сохранён':'Ключ удалён');
+};
 $('#model').onchange=e=>{settings.model=e.target.value.trim()||'gpt-4o-mini';persistSet()};
 $('#dailyNew').onchange=e=>{settings.dailyNew=Math.max(1,parseInt(e.target.value)||20);e.target.value=settings.dailyNew;persistSet()};
 $('#dir').onchange=e=>{settings.dir=e.target.value;persistSet()};
@@ -1141,14 +1150,19 @@ function mergeRemote(remote){
     }
   });
   const rs=remote.settings||{};
+  const myKey=(settings.key||'').trim(), theirKey=(rs.key||'').trim();
   if((rs.at||0)>(settings.at||0)){
     Object.assign(settings,rs);
+    // пустой ключ с другого устройства не должен стирать сохранённый здесь
+    if(!theirKey&&myKey) settings.key=myKey;
     $('#apiKey').value=settings.key||''; $('#model').value=settings.model||'';
     $('#dailyNew').value=settings.dailyNew; $('#dir').value=settings.dir;
     save(LS_SET,settings);
-  }else if(!settings.key&&rs.key){
-    settings.key=rs.key; $('#apiKey').value=rs.key; save(LS_SET,settings);
+  }else if(!myKey&&theirKey){
+    settings.key=theirKey; $('#apiKey').value=theirKey; save(LS_SET,settings);
   }
+  if(myKey&&!theirKey) schedulePush();   // в облаке ключа нет — отправим свой
+  renderKeyState();
   if(remote.newLog&&remote.newLog.d===today()&&(remote.newLog.n||0)>(newLog.n||0)){
     newLog=remote.newLog; save(LS_LOG,newLog);
   }
@@ -1235,9 +1249,8 @@ document.addEventListener('visibilitychange',()=>{
 window.addEventListener('pagehide',()=>{ if(syncOn()) pushNow() });
 
 /* ---------------- init ---------------- */
-renderStats(); renderCards(); renderTemaList(); renderSync();
+renderStats(); renderCards(); renderTemaList(); renderSync(); renderKeyState();
 if(syncOn()) pullNow();
-if(!settings.key) setTimeout(()=>toast('Задайте OpenAI-ключ в Настройках',4000),700);
 </script>
 </body>
 </html>
