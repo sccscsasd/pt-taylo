@@ -1,6 +1,6 @@
 {
  "v": 1,
- "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1834 карточек",
+ "deck": "Полный словник A1–A2 (Referencial Camões PLE) — 1830 карточек",
  "cards": [
   {
    "word": "ser",
@@ -37,10 +37,10 @@
   {
    "word": "viver",
    "pos": "глаг.",
-   "ru": "жить, проживать",
+   "ru": "жить, быть живым",
    "ex": "Vivo em Portugal desde o ano passado.",
    "exru": "Я живу в Португалии с прошлого года.",
-   "note": "О месте жительства чаще, чем morar"
+   "note": "Где именно живёшь — morar em"
   },
   {
    "word": "sem",
@@ -821,10 +821,10 @@
   {
    "word": "a morada",
    "pos": "сущ.",
-   "ru": "адрес",
+   "ru": "адрес (место жительства)",
    "ex": "Qual é a sua morada atual?",
    "exru": "Какой у вас сейчас адрес?",
-   "note": "ж. р.; morada completa — полный адрес"
+   "note": "PT-PT говорит morada, не «endereço»"
   },
   {
    "word": "a rua",
@@ -885,10 +885,10 @@
   {
    "word": "morar",
    "pos": "глаг.",
-   "ru": "жить, проживать",
+   "ru": "жить, проживать (по адресу)",
    "ex": "Moro em Lisboa há três anos.",
    "exru": "Я живу в Лиссабоне три года.",
-   "note": "morar em; синоним viver"
+   "note": "morar em Lisboa; viver — жить вообще"
   },
   {
    "word": "o telefone",
@@ -1821,7 +1821,7 @@
   {
    "word": "o chuveiro",
    "pos": "сущ.",
-   "ru": "душ",
+   "ru": "душ (лейка, кабина)",
    "ex": "Tomo um duche rápido no chuveiro.",
    "exru": "Я быстро принимаю душ.",
    "note": "Принять душ — tomar um duche"
@@ -2685,10 +2685,10 @@
   {
    "word": "o princípio",
    "pos": "сущ.",
-   "ru": "начало",
+   "ru": "начало; принцип",
    "ex": "No princípio do mês pago as contas.",
    "exru": "В начале месяца я оплачиваю счета.",
-   "note": "Конец — o fim"
+   "note": "no princípio — сначала; ещё «принцип»"
   },
   {
    "word": "pouco tempo",
@@ -2709,18 +2709,18 @@
   {
    "word": "depressa",
    "pos": "нареч.",
-   "ru": "быстро",
+   "ru": "быстро, скоро",
    "ex": "Come mais devagar, não comas tão depressa.",
    "exru": "Ешь медленнее, не ешь так быстро.",
-   "note": "Противоположно devagar"
+   "note": "Разговорное; книжное — rapidamente"
   },
   {
    "word": "devagar",
    "pos": "нареч.",
-   "ru": "медленно",
+   "ru": "медленно, не спеша",
    "ex": "Fala devagar, por favor, ainda estou a aprender.",
    "exru": "Говорите медленно, пожалуйста, я ещё учусь.",
-   "note": "Очень полезная фраза новичку"
+   "note": "Разговорное; книжное — lentamente"
   },
   {
    "word": "acabar",
@@ -3293,10 +3293,10 @@
   {
    "word": "o lugar",
    "pos": "сущ.",
-   "ru": "место",
+   "ru": "место (вообще)",
    "ex": "Este lugar está ocupado?",
    "exru": "Это место занято?",
-   "note": "м. р.; em lugar de — вместо"
+   "note": "Ещё «место в транспорте»"
   },
   {
    "word": "dentro",
@@ -3757,10 +3757,10 @@
   {
    "word": "quanto",
    "pos": "мест.",
-   "ru": "сколько",
+   "ru": "сколько (о неисчисляемом)",
    "ex": "Quanto custa este bilhete?",
    "exru": "Сколько стоит этот билет?",
-   "note": "Quantos/quantas — с исчисляемыми"
+   "note": "quanto custa? quanto tempo?"
   },
   {
    "word": "também",
@@ -4333,10 +4333,10 @@
   {
    "word": "a cara",
    "pos": "сущ.",
-   "ru": "лицо",
+   "ru": "лицо (разговорное)",
    "ex": "Lavo a cara com água fria.",
    "exru": "Я умываю лицо холодной водой.",
-   "note": "ж. р.; синоним o rosto"
+   "note": "Ещё «наглость»: que cara!"
   },
   {
    "word": "o cabelo",
@@ -4661,10 +4661,10 @@
   {
    "word": "o duche",
    "pos": "сущ.",
-   "ru": "душ",
+   "ru": "душ (как процедура)",
    "ex": "Um duche rápido e estou pronto.",
    "exru": "Быстрый душ — и я готов.",
-   "note": "м. р.; tomar um duche"
+   "note": "tomar um duche — принять душ"
   },
   {
    "word": "lavar os dentes",
@@ -4672,7 +4672,7 @@
    "ru": "чистить зубы",
    "ex": "Lavo os dentes três vezes por dia.",
    "exru": "Я чищу зубы три раза в день.",
-   "note": "Букв. «мыть зубы»"
+   "note": "PT-PT чаще lavar, чем escovar"
   },
   {
    "word": "o sabonete",
@@ -5317,10 +5317,10 @@
   {
    "word": "o sítio",
    "pos": "сущ.",
-   "ru": "место",
+   "ru": "место, местечко (разг.)",
    "ex": "Conheço um sítio ótimo para jantar.",
    "exru": "Я знаю отличное место для ужина.",
-   "note": "м. р.; синоним lugar"
+   "note": "Разговорнее lugar; ещё «сайт»"
   },
   {
    "word": "a região",
@@ -5469,7 +5469,7 @@
   {
    "word": "voltar",
    "pos": "глаг.",
-   "ru": "возвращаться",
+   "ru": "возвращаться, вернуться",
    "ex": "Volto para casa às sete.",
    "exru": "Я возвращаюсь домой в семь.",
    "note": "voltar a + инф. — снова сделать"
@@ -5577,14 +5577,6 @@
    "ex": "Fiz todos os exercícios do livro.",
    "exru": "Я сделал все упражнения из учебника.",
    "note": "м. р."
-  },
-  {
-   "word": "fazer desporto",
-   "pos": "выраж.",
-   "ru": "заниматься спортом",
-   "ex": "Faço desporto para descontrair.",
-   "exru": "Я занимаюсь спортом, чтобы расслабиться.",
-   "note": "Не «jogar desporto»"
   },
   {
    "word": "cheio",
@@ -5824,7 +5816,7 @@
    "ru": "понимать",
    "ex": "Não entendi a última parte.",
    "exru": "Я не понял последнюю часть.",
-   "note": "Синоним perceber (частотнее в PT)"
+   "note": "Разговорное; в PT-PT ещё чаще perceber"
   },
   {
    "word": "acreditar",
@@ -6035,14 +6027,6 @@
    "note": "por um lado… por outro lado"
   },
   {
-   "word": "em vez",
-   "pos": "выраж.",
-   "ru": "вместо",
-   "ex": "Bebi chá em vez de café.",
-   "exru": "Я выпил чай вместо кофе.",
-   "note": "em vez de + сущ./инф."
-  },
-  {
    "word": "nem",
    "pos": "союз",
    "ru": "ни, даже не",
@@ -6101,10 +6085,10 @@
   {
    "word": "o endereço",
    "pos": "сущ.",
-   "ru": "адрес",
+   "ru": "адрес (почтовый, электронный)",
    "ex": "Confirme o endereço de entrega.",
    "exru": "Подтвердите адрес доставки.",
-   "note": "Домашний адрес чаще — a morada"
+   "note": "Чаще про e-mail: endereço eletrónico"
   },
   {
    "word": "a freguesia",
@@ -7733,7 +7717,7 @@
   {
    "word": "o rosto",
    "pos": "сущ.",
-   "ru": "лицо",
+   "ru": "лицо (книжное)",
    "ex": "Tinha um rosto sério.",
    "exru": "У него было серьёзное лицо.",
    "note": "Чуть книжнее, чем cara"
@@ -8045,7 +8029,7 @@
   {
    "word": "o começo",
    "pos": "сущ.",
-   "ru": "начало",
+   "ru": "начало, старт",
    "ex": "No começo foi difícil.",
    "exru": "Вначале было трудно.",
    "note": "м. р.; синоним princípio"
@@ -8237,7 +8221,7 @@
   {
    "word": "rapidamente",
    "pos": "нареч.",
-   "ru": "быстро",
+   "ru": "быстро (книжное)",
    "ex": "Resolveram o problema rapidamente.",
    "exru": "Проблему решили быстро.",
    "note": "Наречия на -mente от ж. р."
@@ -8253,7 +8237,7 @@
   {
    "word": "lentamente",
    "pos": "нареч.",
-   "ru": "медленно",
+   "ru": "медленно (книжное)",
    "ex": "Fale lentamente, por favor.",
    "exru": "Говорите медленно, пожалуйста.",
    "note": "Синоним devagar"
@@ -8277,7 +8261,7 @@
   {
    "word": "frequentemente",
    "pos": "нареч.",
-   "ru": "часто",
+   "ru": "часто (книжное)",
    "ex": "Vou frequentemente a Espanha.",
    "exru": "Я часто езжу в Испанию.",
    "note": "Разговорно чаще muitas vezes"
@@ -8293,7 +8277,7 @@
   {
    "word": "muitas vezes",
    "pos": "выраж.",
-   "ru": "часто",
+   "ru": "часто, много раз",
    "ex": "Muitas vezes almoço fora.",
    "exru": "Я часто обедаю вне дома.",
    "note": "às vezes — иногда"
@@ -8509,7 +8493,7 @@
   {
    "word": "escovar os dentes",
    "pos": "выраж.",
-   "ru": "чистить зубы",
+   "ru": "чистить зубы щёткой",
    "ex": "Escovo os dentes depois das refeições.",
    "exru": "Я чищу зубы после еды.",
    "note": "Синоним lavar os dentes"
@@ -8517,7 +8501,7 @@
   {
    "word": "fazer a barba",
    "pos": "выраж.",
-   "ru": "бриться",
+   "ru": "побриться",
    "ex": "Faço a barba de dois em dois dias.",
    "exru": "Я бреюсь через день.",
    "note": "barbear-se — бриться"
@@ -9041,14 +9025,6 @@
    "ex": "Um descafeinado, se faz favor.",
    "exru": "Кофе без кофеина, пожалуйста.",
    "note": "Разг.: um deca"
-  },
-  {
-   "word": "tomar um café",
-   "pos": "выраж.",
-   "ru": "выпить кофе",
-   "ex": "Vamos tomar um café depois do trabalho?",
-   "exru": "Выпьем кофе после работы?",
-   "note": "Социальный ритуал"
   },
   {
    "word": "o sumo",
@@ -10777,14 +10753,6 @@
    "ex": "Passe a rua na passadeira.",
    "exru": "Переходите улицу по зебре.",
    "note": "Синоним atravessar a rua"
-  },
-  {
-   "word": "dobrar à esquerda",
-   "pos": "выраж.",
-   "ru": "повернуть налево",
-   "ex": "Dobre à esquerda depois do banco.",
-   "exru": "Поверните налево после банка.",
-   "note": "Синоним virar à esquerda"
   },
   {
    "word": "seguir em frente",
@@ -12837,7 +12805,7 @@
   {
    "word": "regressar",
    "pos": "глаг.",
-   "ru": "возвращаться",
+   "ru": "возвращаться (официальнее)",
    "ex": "Regressámos a Lisboa no domingo à noite.",
    "exru": "Мы вернулись в Лиссабон в воскресенье вечером.",
    "note": "Синоним voltar, чуть официальнее"
@@ -12869,7 +12837,7 @@
   {
    "word": "compreender",
    "pos": "глаг.",
-   "ru": "понимать",
+   "ru": "понимать (книжное)",
    "ex": "Não compreendi bem a última pergunta.",
    "exru": "Я не совсем понял последний вопрос.",
    "note": "Книжнее, чем perceber — обычное слово в PT-PT"
@@ -14557,7 +14525,7 @@
   {
    "word": "o início",
    "pos": "сущ.",
-   "ru": "начало",
+   "ru": "начало (периода, события)",
    "ex": "No início da aula fazemos sempre revisão.",
    "exru": "В начале урока мы всегда повторяем.",
    "note": "no início — сначала; конец — o fim"
@@ -14605,10 +14573,10 @@
   {
    "word": "quantos",
    "pos": "числ.",
-   "ru": "сколько",
+   "ru": "сколько (о штуках)",
    "ex": "Quantos anos tem a tua filha?",
    "exru": "Сколько лет твоей дочери?",
-   "note": "Женский род — quantas; для неисчисляемого — quanto"
+   "note": "Женский род — quantas; quantos anos tens?"
   },
   {
    "word": "feliz",
@@ -14706,13 +14674,16 @@
   "decilitro",
   "declamar",
   "dificilmente",
+  "dobrar à esquerda",
   "dormida",
   "doutoramento",
   "dvd",
+  "em vez",
   "escultura",
   "espetador",
   "esqui",
   "esquiar",
+  "fazer desporto",
   "fotocopiadora",
   "fotocópia",
   "habitualmente",
@@ -14747,6 +14718,7 @@
   "semanário",
   "sinagoga",
   "telespectador",
+  "tomar um café",
   "transexual",
   "vegetarianismo",
   "videoclipe",
