@@ -221,10 +221,13 @@
   .goal .arc{display:block;width:100%}
   .goal .arc path{fill:none;stroke-width:9;stroke-linecap:round}
   .goal .arc .track{stroke:var(--fill)}
+  /* синий — идёт, зелёный — цель взята */
   .goal .arc .fill{
-    stroke:var(--green);stroke-dasharray:276.5;stroke-dashoffset:276.5;
-    transition:stroke-dashoffset .6s ease;
+    stroke:var(--blue);stroke-dasharray:276.5;stroke-dashoffset:276.5;
+    transition:stroke-dashoffset .6s ease, stroke .3s ease;
   }
+  .goal.done .arc .fill{stroke:var(--green)}
+  .goal.done .mid .n{color:var(--green)}
   .goal .mid{position:absolute;left:0;right:0;bottom:2px}
   .goal .mid .t{font-size:13px;color:var(--label2)}
   .goal .mid .n{font-size:44px;font-weight:600;line-height:1.1;letter-spacing:-.03em}
@@ -1350,6 +1353,7 @@ function renderGoal(){
   $('#goalNum').textContent=today;
   $('#goalTarget').textContent=goal;
   $('#goalArc').style.strokeDashoffset=(276.5*(1-Math.min(1,today/goal))).toFixed(1);
+  box.classList.toggle('done',today>=goal);
 
   const names=['П','В','С','Ч','П','С','В'];          // неделя с понедельника
   const now=new Date(), shift=(now.getDay()+6)%7;
