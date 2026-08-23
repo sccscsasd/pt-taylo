@@ -1224,6 +1224,25 @@ $('#cardFilter').onclick=e=>{
   renderCards();
 };
 $('#search').oninput=renderCards;
+/* Слово от модели может отличаться от того, что на карточке: «sai» → «sair».
+   id выводится из слова, значит карточку надо переложить на новый id, а не оставить
+   под старым — иначе в колоде окажутся два одинаковых слова под разными ключами,
+   ровно то задвоение, ради которого делалась миграция 003. */
+function renameCard(c,word){
+  const id=wordId(word);
+  if(id===c.id){ c.word=word; return c }
+  const twin=cards.find(x=>x!==c&&x.id===id);
+  const keep=twin||Object.assign({},c);
+  // из двух копий одного слова оставляем ту, где больше прогресса
+  if(twin&&(c.reps||0)>(twin.reps||0))
+    Object.assign(twin,{reps:c.reps||0, lapses:c.lapses||0, interval:c.interval||0,
+                        due:c.due||Date.now(), archived:!!c.archived, archivedAt:c.archivedAt||0});
+  dropCard(c);                       // старая строка уезжает надгробием, иначе воскреснет с другого устройства
+  keep.id=id; keep.word=word;
+  if(!twin) cards.unshift(keep);
+  touch(keep);
+  return keep;
+}
 $('#cardList').onclick=async e=>{
   const btn=e.target.closest('[data-act]'); if(!btn)return;
   const id=e.target.closest('.card').dataset.id;
@@ -1247,11 +1266,17 @@ $('#cardList').onclick=async e=>{
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
       const r=(await askAI([{word:c.word}]))[0];
-      c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
-      c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
-      if(r.note!=null) c.note=r.note;
-      if(r.level) c.level=String(r.level).trim().toUpperCase();
-      touch(c); persist(); renderCards(); toast('Обновлено');
+      const word=String(r.word||c.word).trim();
+      const nid=wordId(word), twin=nid!==c.id&&cards.some(x=>x!==c&&x.id===nid);
+      const t=renameCard(c,word);    // слово уточнилось — id едет следом за ним
+      t.pos=r.pos||t.pos; t.ru=r.ru||t.ru;
+      t.ex=r.example_pt||t.ex; t.exru=r.example_ru||t.exru;
+      if(r.note!=null) t.note=r.note;
+      if(r.level) t.level=String(r.level).trim().toUpperCase();
+      touch(t); persist(); renderCards();
+      toast(nid===c.id?'Обновлено'
+           :twin?'Такое слово уже было — карточки объединены в «'+esc(word)+'»'
+           :'Обновлено: теперь «'+esc(word)+'»');
     }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
   }
 };
