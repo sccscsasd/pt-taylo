@@ -1354,7 +1354,7 @@ function renderStudy(){
       '<div class="grades">'+
         '<button class="btn g0" data-g="0">Не помню<small>заново</small></button>'+
         '<button class="btn g1" data-g="1">Трудно<small>1 день</small></button>'+
-        '<button class="btn g2" data-g="2">Знаю<small>30 дней</small></button>'+
+        '<button class="btn g2" data-g="2">Знаю<small>14 дней</small></button>'+
         '<button class="btn g3" data-g="3">Легко<small>выучено</small></button>'+
       '</div>'
       :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">Показать ответ</button>')+
@@ -1368,7 +1368,7 @@ function renderStudy(){
     $('#studyCard').onclick=reveal;
   }
 }
-const INTERVALS={0:0,1:1,2:30};     // не помню — заново, трудно — 1 день, знаю — 30 дней
+const INTERVALS={0:0,1:1,2:14};     // не помню — заново, трудно — 1 день, знаю — 14 дней
 function nextInterval(c,g){ return INTERVALS[g]||0 }
 function grade(g){
   const c=current.card;
