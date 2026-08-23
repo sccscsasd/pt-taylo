@@ -1121,10 +1121,20 @@ $('#attachClear').onclick=clearAttach;
   });
 })();
 
-// вставили в строку целый абзац — это не слово, а текст на разбор
+// Вставили в строку целый абзац — это не слово, а текст на разбор. Список от текста
+// отличает не запятая (в живом португальском абзаце она почти всегда есть), а длина
+// кусков между запятыми и точка в конце: «o banco, a chave» — список, «Ontem fui ao
+// mercado, comprei pão e queijo.» — текст.
+const looksLikeText=t=>{
+  if(/[.!?…]\s+\S/.test(t)) return true;              // несколько предложений — точно текст
+  if(t.split(/\s+/).filter(Boolean).length<5) return false;
+  const parts=t.split(/[,;]/).map(x=>x.trim()).filter(Boolean);
+  return parts.some(x=>x.split(/\s+/).length>3)   // кусок длиннее выражения — это фраза
+      || /[.!?…]$/.test(t);                       // законченное предложение
+};
 $('#wordInput').addEventListener('paste',e=>{
   const t=(e.clipboardData&&e.clipboardData.getData('text')||'').trim();
-  if(!t||/[,;]/.test(t)||t.split(/\s+/).length<5) return;
+  if(!t||!looksLikeText(t)) return;
   e.preventDefault();
   showParse(t,'');
 });
