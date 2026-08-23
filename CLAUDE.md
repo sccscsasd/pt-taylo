@@ -352,6 +352,10 @@ importCards(await (await fetch('vocabulario/baralho-completo-A1-A2.json')).json(
 
 После прогона — `localStorage.clear()`. Клавиши через автоматизацию до обработчиков не доходят
 (Enter в строке ввода молчит), поэтому проверять их надо `dispatchEvent(new KeyboardEvent(...))`.
+Если панель браузера не отображается, страница не рисует кадры: **не приходят ни события
+прокрутки, ни `IntersectionObserver`**, даже когда `scrollTop` меняется. Догрузку списка
+поэтому проверяю так: выставить `main.scrollTop` и послать `main.dispatchEvent(new Event('scroll'))`.
+Скриншот в таком режиме отваливается по таймауту — это не поломка приложения.
 И помнить про переходы: `getComputedStyle` сразу после смены класса вернёт старый цвет,
 `.goal.done` зеленеет за 0,3 с.
 
