@@ -719,7 +719,6 @@
    pt_cards в Supabase. localStorage — только копия под ключом конкретного
    пользователя плюс очередь правок, которые ещё не доехали до сервера.        */
 const LS_AUTH='pt.auth.v1';
-const OLD_CARDS='pt.cards.v1', OLD_SET='pt.settings.v1', OLD_OWNER='pt.owner.v1';
 
 const load=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}};
 let storageWarned=false;
@@ -750,9 +749,9 @@ let dirty=new Set();        // id строк с неотправленными �
 let syncedAt='';            // метка сервера: до какого момента изменения уже получены
 let setDirty=false;         // настройки изменены и не отправлены
 
-const ЧИСТАЯ={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,rev:0};
+const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,rev:0};
 // Карточка — это слово колоды плюс личный прогресс, если он уже есть.
-const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,ЧИСТАЯ,p||{});
+const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,BLANK,p||{});
 
 function rebuild(){
   const out=[];
@@ -762,7 +761,7 @@ function rebuild(){
     if(p&&p.deleted) return;                  // человек убрал это слово у себя
     out.push(join(w,p));
   });
-  prog.forEach(p=>{ if(p.own&&!p.deleted) out.push(Object.assign({},ЧИСТАЯ,p,{own:true})) });
+  prog.forEach(p=>{ if(p.own&&!p.deleted) out.push(Object.assign({},BLANK,p,{own:true})) });
   cards=out;
 }
 
@@ -878,13 +877,14 @@ function commitCards(fresh){
 }
 
 /* ---------------- ADD ---------------- */
-const cardPreviewHTML=c=>
-  '<article class="card">'+
-    '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
-    '<div class="ru">'+esc(c.ru)+'</div>'+
-    (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
-    (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
-  '</article>';
+/* Карточка рисуется в двух местах — предпросмотром при добавлении и списком
+   на «Карточках». Отличается только подвал, поэтому тело общее. */
+const cardBody=c=>
+  '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
+  '<div class="ru">'+esc(c.ru)+'</div>'+
+  (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+  (c.note?'<div class="note">'+esc(c.note)+'</div>':'');
+const cardPreviewHTML=c=>'<article class="card">'+cardBody(c)+'</article>';
 
 let pending=[], already=[];
 const lbl=t=>'<div class="lbl" style="margin:18px 0 7px 4px">'+t+'</div>';
@@ -1226,11 +1226,7 @@ function cardHTML(c){
   const isNew=c.reps===0;
   const when=c.archived?'выучено':isNew?'новая':due?'к повтору':'через '+Math.max(1,Math.ceil((c.due-Date.now())/DAY))+' дн.';
   const cls=c.archived?' done':isNew?' new':due?' due':'';
-  return '<article class="card" data-id="'+c.id+'">'+
-    '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
-    '<div class="ru">'+esc(c.ru)+'</div>'+
-    (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
-    (c.note?'<div class="note">'+esc(c.note)+'</div>':'')+
+  return '<article class="card" data-id="'+c.id+'">'+cardBody(c)+
     '<div class="meta"><span class="badge'+cls+'">'+when+'</span>'+
       (c.reps?'<span class="badge">· повторов '+c.reps+'</span>':'')+
       '<span style="flex:1"></span>'+
@@ -1449,7 +1445,6 @@ function renderStudy(){
   }
 }
 const INTERVALS={0:0,1:1,2:14};     // не помню — заново, трудно — 1 день, знаю — 14 дней
-function nextInterval(c,g){ return INTERVALS[g]||0 }
 function grade(g){
   const c=current.card;
   if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
@@ -1932,15 +1927,11 @@ $('#deckList').onclick=async e=>{
   b.disabled=true;
   try{
     if(было){
-      const r=await api('/rest/v1/pt_user_decks?user_id=eq.'+auth.user.id+'&deck_id=eq.'+encodeURIComponent(id),
-                        {method:'DELETE'});
-      if(!r.ok) throw new Error(await errText(r));
+      await ask('/rest/v1/pt_user_decks?user_id=eq.'+auth.user.id+
+                '&deck_id=eq.'+encodeURIComponent(id),{method:'DELETE'});
       myDecks.delete(id);
     }else{
-      const r=await api('/rest/v1/pt_user_decks',{method:'POST',
-        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
-        body:JSON.stringify({user_id:auth.user.id,deck_id:id})});
-      if(!r.ok) throw new Error(await errText(r));
+      await send('/rest/v1/pt_user_decks',{user_id:auth.user.id,deck_id:id});
       myDecks.add(id);
     }
     saveDeckCache(); rebuild(); renderDecks(); renderStats(); renderCards();
@@ -2103,18 +2094,41 @@ const wordRow=r=>({id:r.id, deck:r.deck_id, word:r.word, pos:r.pos||'', ru:r.ru|
   ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'', tema:r.tema||'',
   sort:+r.sort||0});
 
+/* Проверка ответа была написана в каждом запросе подряд — вынесена сюда. ask() отдаёт
+   сам ответ (нужен там, где читаются заголовки), askJSON() — уже разобранное тело. */
+async function ask(path,opt){
+  const r=await api(path,opt);
+  if(!r.ok) throw new Error(await errText(r));
+  return r;
+}
+const askJSON=async(path,opt)=>(await ask(path,opt)).json();
+const send=(path,body,extra)=>ask(path,Object.assign({method:'POST',
+  headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+  body:JSON.stringify(body)},extra||{}));
+
+/* Докачка страницами: идём до пустой, потому что сервер может отдать меньше
+   запрошенного. Возвращаем новую метку и сколько строк приехало. */
+async function pullPages(table,since,apply){
+  let offset=0, mark=since, n=0;
+  for(;;){
+    const rows=await askJSON('/rest/v1/'+table+'?select=*'+
+      (since?'&updated_at=gt.'+encodeURIComponent(since):'')+
+      '&order=updated_at.asc,id.asc&limit='+PAGE+'&offset='+offset);
+    if(!rows.length) break;
+    rows.forEach(apply);
+    mark=rows[rows.length-1].updated_at; offset+=rows.length; n+=rows.length;
+  }
+  return {mark:mark, n:n};
+}
+
 async function flushCards(){
   [...dirty].forEach(id=>{ if(!prog.has(id)) dirty.delete(id) });   // хвост от исчезнувшей строки
   if(!dirty.size) return;
   const live=[...dirty].map(id=>prog.get(id));
   const sent=live.map(p=>({id:p.id,rev:p.rev}));
   const rows=live.map(toRow);
-  for(let i=0;i<rows.length;i+=PUSH){
-    const r=await api('/rest/v1/pt_cards?on_conflict=user_id,id',{method:'POST',
-      headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
-      body:JSON.stringify(rows.slice(i,i+PUSH))});
-    if(!r.ok) throw new Error(await errText(r));
-  }
+  for(let i=0;i<rows.length;i+=PUSH)
+    await send('/rest/v1/pt_cards?on_conflict=user_id,id',rows.slice(i,i+PUSH));
   sent.forEach(x=>{
     const p=prog.get(x.id);
     if(!p||p.rev===x.rev) dirty.delete(x.id);   // пока отправляли, строку могли изменить снова
@@ -2124,74 +2138,44 @@ async function flushCards(){
 
 function applyRow(row){
   if(dirty.has(row.id)) return;                  // своя неотправленная правка новее серверной
-  const было=prog.get(row.id);
-  if(было&&(+row.rev||0)<(было.rev||0)) return;  // пришла устаревшая версия
+  const mine=prog.get(row.id);
+  if(mine&&(+row.rev||0)<(mine.rev||0)) return;  // пришла устаревшая версия
   prog.set(row.id,fromRow(row));
 }
 async function pullCards(){
-  let offset=0, mark=syncedAt;
-  for(;;){
-    const r=await api('/rest/v1/pt_cards?select=*'+
-      (syncedAt?'&updated_at=gt.'+encodeURIComponent(syncedAt):'')+
-      '&order=updated_at.asc,id.asc&limit='+PAGE+'&offset='+offset);
-    if(!r.ok) throw new Error(await errText(r));
-    const rows=await r.json();
-    if(!rows.length) break;             // сервер может резать страницу меньше запрошенной, поэтому идём до пустой
-    rows.forEach(applyRow);
-    mark=rows[rows.length-1].updated_at;
-    offset+=rows.length;
-  }
-  syncedAt=mark;
+  syncedAt=(await pullPages('pt_cards',syncedAt,applyRow)).mark;
 }
 
 /* Каталог колод маленький — тянем целиком. Человек без подписок — это новый человек:
    подписываем на всё опубликованное, иначе он войдёт и увидит пустой экран. */
 async function pullDecks(){
-  const r=await api('/rest/v1/pt_decks?select=*&order=sort.asc');
-  if(!r.ok) throw new Error(await errText(r));
-  decks=(await r.json()).filter(d=>d.published);
-  const u=await api('/rest/v1/pt_user_decks?select=deck_id&user_id=eq.'+auth.user.id);
-  if(!u.ok) throw new Error(await errText(u));
-  myDecks=new Set((await u.json()).map(x=>x.deck_id));
+  decks=(await askJSON('/rest/v1/pt_decks?select=*&order=sort.asc')).filter(d=>d.published);
+  const мои=await askJSON('/rest/v1/pt_user_decks?select=deck_id&user_id=eq.'+auth.user.id);
+  myDecks=new Set(мои.map(x=>x.deck_id));
   if(!myDecks.size&&decks.length){
-    const ins=await api('/rest/v1/pt_user_decks',{method:'POST',
-      headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
-      body:JSON.stringify(decks.map(d=>({user_id:auth.user.id,deck_id:d.id})))});
-    if(ins.ok) decks.forEach(d=>myDecks.add(d.id));
+    await send('/rest/v1/pt_user_decks',decks.map(d=>({user_id:auth.user.id,deck_id:d.id})));
+    decks.forEach(d=>myDecks.add(d.id));
   }
   saveDeckCache();
 }
 // Слово, выпавшее из колоды, удаляется на сервере без надгробия — по метке о нём
 // не узнать. Поэтому сверяем число строк: разошлось — перечитываем колоду целиком.
 async function checkDeck(){
-  const r=await api('/rest/v1/pt_words?select=id&limit=1',{headers:{'Prefer':'count=exact'}});
-  if(!r.ok) return;
+  const r=await ask('/rest/v1/pt_words?select=id&limit=1',{headers:{'Prefer':'count=exact'}});
   const n=+((r.headers.get('content-range')||'').split('/')[1]||0);
   if(n&&n<deck.size){ deck=new Map(); deckAt='' }
 }
 // Докачка по метке: во второй раз не приезжает ничего.
 async function pullWords(){
-  let offset=0, mark=deckAt, got=0;
-  for(;;){
-    const r=await api('/rest/v1/pt_words?select=*'+
-      (deckAt?'&updated_at=gt.'+encodeURIComponent(deckAt):'')+
-      '&order=updated_at.asc,id.asc&limit='+PAGE+'&offset='+offset);
-    if(!r.ok) throw new Error(await errText(r));
-    const rows=await r.json();
-    if(!rows.length) break;
-    rows.forEach(x=>deck.set(x.id,wordRow(x)));
-    mark=rows[rows.length-1].updated_at; offset+=rows.length; got+=rows.length;
-  }
-  deckAt=mark;
-  if(got) saveDeckCache();
-  return got;
+  const r=await pullPages('pt_words',deckAt,x=>deck.set(x.id,wordRow(x)));
+  deckAt=r.mark;
+  if(r.n) saveDeckCache();
+  return r.n;
 }
 
 // Настройки маленькие и меняются редко — им хватает старой таблицы pt_data.
 async function pullSettings(){
-  const r=await api('/rest/v1/pt_data?select=data&user_id=eq.'+auth.user.id);
-  if(!r.ok) throw new Error(await errText(r));
-  const rows=await r.json();
+  const rows=await askJSON('/rest/v1/pt_data?select=data&user_id=eq.'+auth.user.id);
   const blob=rows.length?rows[0].data:null;
   const rs=blob&&blob.settings;
   if(rs){
@@ -2206,11 +2190,8 @@ async function pullSettings(){
   return blob;
 }
 async function pushSettings(){
-  const r=await api('/rest/v1/pt_data',{method:'POST',
-    headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
-    body:JSON.stringify({user_id:auth.user.id,data:{v:2,settings:settings},
-                         updated_at:new Date().toISOString()})});
-  if(!r.ok) throw new Error(await errText(r));
+  await send('/rest/v1/pt_data',{user_id:auth.user.id,data:{v:2,settings:settings},
+                                 updated_at:new Date().toISOString()});
   setDirty=false;
 }
 
