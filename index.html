@@ -492,6 +492,16 @@
 
   /* empty */
   .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
+  /* выбор колод: строка на колоду, галка справа — то же, что в списке настроек iOS */
+  .deck{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;margin-bottom:8px;
+        border:1px solid var(--sep);border-radius:12px;background:var(--group);cursor:pointer;
+        font:inherit;color:var(--label);text-align:left}
+  .deck:last-child{margin-bottom:0}
+  .deck.on{border-color:var(--green);background:color-mix(in srgb, var(--green) 8%, transparent)}
+  .deck .t{flex:1;font-size:15px}
+  .deck .t i{display:block;font-style:normal;font-size:13px;color:var(--label2);margin-top:2px}
+  .deck .mark{width:22px;height:22px;color:var(--green)}
+  .deck .mark svg{width:22px;height:22px}
   .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
   .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
 
@@ -648,9 +658,10 @@
       <div class="hint">Что показывать на карточке первым: португальское слово или перевод.</div>
     </div>
 
-    <div class="sec" id="deckSec" style="display:none">
-      <button class="btn wide" id="loadDeck">Загрузить колоду A1–A2 (1829 карточек)</button>
-      <div class="hint">Словник Camões с переводом и примерами, без запросов к модели.</div>
+    <div class="sec">
+      <span class="lbl">Колоды</span>
+      <div id="deckList"></div>
+      <div class="hint">Слова колод общие для всех, у вас хранится только прогресс.</div>
     </div>
 
     <div class="sec account">
@@ -722,17 +733,58 @@ const save=(k,v)=>{
   }
 };
 
-let cards=[];               // живые карточки текущего пользователя
+/* Колода общая и ничья лично: pt_words — одна строка на слово для всех,
+   pt_cards — только личное. Отсюда три величины вместо одной:
+     deck  — слова колод, приезжают с сервера и лежат в общем кеше браузера;
+     prog  — личные строки: прогресс по словам колоды и свои слова целиком;
+     cards — сборка первого со вторым, её читает весь остальной код без изменений.
+   Строка в prog заводится, когда человек первый раз тронул карточку, а не при раздаче. */
+let deck=new Map();         // id слова -> строка общей колоды
+let decks=[];               // каталог колод
+let myDecks=new Set();      // какие колоды человек учит
+let deckAt='';              // метка докачки pt_words
+let prog=new Map();         // id -> личная строка
+let cards=[];               // колода, собранная с прогрессом
 let settings={dir:'pt'};
-let dirty=new Set();        // id карточек с неотправленными правками
-let tombs=[];               // удалённые карточки, ждущие отправки
+let dirty=new Set();        // id строк с неотправленными правками
 let syncedAt='';            // метка сервера: до какого момента изменения уже получены
 let setDirty=false;         // настройки изменены и не отправлены
 
-function touch(c){ c.rev=Date.now(); dirty.add(c.id) }
+const ЧИСТАЯ={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,rev:0};
+// Карточка — это слово колоды плюс личный прогресс, если он уже есть.
+const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,ЧИСТАЯ,p||{});
+
+function rebuild(){
+  const out=[];
+  deck.forEach(w=>{
+    if(!myDecks.has(w.deck)) return;
+    const p=prog.get(w.id);
+    if(p&&p.deleted) return;                  // человек убрал это слово у себя
+    out.push(join(w,p));
+  });
+  prog.forEach(p=>{ if(p.own&&!p.deleted) out.push(Object.assign({},ЧИСТАЯ,p,{own:true})) });
+  cards=out;
+}
+
+/* Правка карточки — это правка личной строки. Содержимое колоды принадлежит не человеку,
+   поэтому у слова колоды на сервер уезжает только прогресс; своё слово едет целиком. */
+function touch(c){
+  c.rev=Date.now();
+  const p=prog.get(c.id)||{id:c.id,created:c.created||Date.now()};
+  p.own=!!c.own; p.word=c.word; p.deleted=false; p.rev=c.rev;
+  p.due=c.due||0; p.interval=c.interval||0; p.reps=c.reps||0; p.lapses=c.lapses||0;
+  p.archived=!!c.archived; p.archivedAt=c.archivedAt||0;
+  if(c.own){ p.query=c.query||''; p.pos=c.pos||''; p.ru=c.ru||''; p.ex=c.ex||'';
+             p.exru=c.exru||''; p.note=c.note||''; p.level=c.level||'' }
+  prog.set(c.id,p);
+  dirty.add(c.id);
+}
+// Удаление — надгробие в личной строке: слово колоды просто перестаёт показываться,
+// в самой колоде оно остаётся и у других никуда не девается.
 function dropCard(c){
-  c.deleted=true; c.rev=Date.now();
-  dirty.delete(c.id); tombs.push(c);
+  touch(c);
+  const p=prog.get(c.id);
+  p.deleted=true; p.rev=Date.now();
   cards=cards.filter(x=>x.id!==c.id);
 }
 const persist=()=>{ saveCache(); renderStats(); scheduleFlush() };
@@ -816,11 +868,12 @@ async function generateCards(items){
   }
   return fresh;
 }
+// Слово, которого нет в общей колоде, — своё: содержимое хранится в личной строке.
+// Если слово в колоде уже есть, второй карточки не заводим: колода одна для всех.
 function commitCards(fresh){
   const add=fresh.filter(c=>!cards.some(x=>norm(x.word)===norm(c.word)));
-  cards=add.concat(cards);
-  add.forEach(touch);
-  persist(); renderCards();
+  add.forEach(c=>{ c.own=!deck.has(c.id); touch(c) });
+  rebuild(); persist(); renderCards();
   return add.length;
 }
 
@@ -897,22 +950,22 @@ $('#addOne').onclick=async e=>{
 };
 /* ---------------- автоподсказки при вводе ---------------- */
 const deacc=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-let SUGGEST=null;                       // словник объявлен ниже по файлу, собираем при первом вводе
+let SUGGEST=null, SUGGEST_N=-1;         // пересобираем, когда колода доехала или доросла
 function suggestPool(){
-  if(SUGGEST) return SUGGEST;
-  SUGGEST=[];
-  TEMAS.forEach(t=>{
-    t.a1.forEach(w=>SUGGEST.push({w:w,lvl:'A1',tema:t.ru,k:deacc(w)}));
-    t.a2.forEach(w=>SUGGEST.push({w:w,lvl:'A2',tema:t.ru,k:deacc(w)}));
+  if(SUGGEST&&SUGGEST_N===deck.size) return SUGGEST;
+  SUGGEST=[]; SUGGEST_N=deck.size;
+  deck.forEach(w=>{
+    if(!myDecks.has(w.deck)) return;
+    SUGGEST.push({w:w.word, lvl:w.level||'', tema:temaRu(w.tema), ru:w.ru, k:deacc(norm(w.word))});
   });
   return SUGGEST;
 }
-// Слова, добавленные вручную, в словнике не значатся — подсказываем их отдельно,
-// иначе приложение делает вид, что не знает собственной карточки.
+// Свои слова в колоде не значатся — подсказываем их отдельно, иначе приложение
+// делает вид, что не знает собственной карточки.
 function ownPool(){
-  const ix=levelIndex();
-  return cards.filter(c=>!ix.has(norm(c.word)))
-              .map(c=>({w:c.word, lvl:cardLevel(c)||'своё', tema:'своё слово', k:deacc(norm(c.word))}));
+  return cards.filter(c=>c.own)
+              .map(c=>({w:c.word, lvl:c.level||'своё', tema:'своё слово', ru:c.ru,
+                        k:deacc(norm(c.word))}));
 }
 let suggList=[], suggIdx=-1;
 
@@ -946,7 +999,7 @@ function renderSugg(){
       :esc(it.w.slice(0,pos))+'<mark>'+esc(it.w.slice(pos,pos+q.length))+'</mark>'+esc(it.w.slice(pos+q.length));
     // перевод показываем всегда: свой — из карточки, чужой — из словника
     const mine=cards.find(c=>norm(c.word)===norm(it.w)||norm(c.query)===norm(it.w));
-    const tr=(mine&&mine.ru)||TRAD[norm(it.w)]||(it.lvl+' · '+it.tema);
+    const tr=(mine&&mine.ru)||it.ru||((it.lvl?it.lvl+' · ':'')+it.tema);
     return '<button data-i="'+i+'"'+(mine?' class="have"':'')+'>'+
       '<b>'+hl+'</b><span>'+esc(tr)+'</span></button>';
   }).join('');
@@ -1159,9 +1212,11 @@ async function runOcr(b){
   finally{ b.disabled=false; b.innerHTML=old; renderAttach() }
 }
 
-/* ---------------- готовые темы A1–A2 (Referencial Camões PLE) ---------------- */
-const TRAD={"ser":"быть (постоянный признак)","estar":"быть, находиться (временно)","ter":"иметь, быть должным","haver":"иметься, быть в наличии","viver":"жить, быть живым","sem":"без","conhecer":"знать (быть знакомым), познакомиться","dizer":"говорить, сказать","escrever":"писать","esperar":"ждать; надеяться","falar":"говорить, разговаривать","pensar":"думать","perguntar":"спрашивать","pergunta":"вопрос","responder":"отвечать","resposta":"ответ","dar":"давать","então":"тогда, итак, ну и","mas":"но","porque":"потому что","porquê":"почему (в конце вопроса)","sobre":"о, про; над","almoçar":"обедать","almoço":"обед","pequeno-almoço":"завтрак","tomar o pequeno-almoço":"завтракать","jantar":"ужинать","lanchar":"перекусить, полдничать","lanche":"перекус, полдник","caderno":"тетрадь","caneta":"ручка","lápis":"карандаш","livro":"книга","quadro":"доска (в классе); картина","sala de aula":"класс, аудитория","turma":"класс, группа (учащихся)","colega":"коллега, одноклассник","disciplina":"учебный предмет; дисциплина","curso":"курс, обучение","semestre":"семестр","recreio":"перемена (в школе)","sair da escola":"уходить из школы (после уроков)","começar a trabalhar":"начинать работать","sair do trabalho":"уходить с работы","horário de trabalho":"рабочий график","chegar a casa":"приходить домой","lavar-se":"мыться, умываться","vestir-se":"одеваться","despir-se":"раздеваться","ir às compras":"ходить за покупками","supermercado":"супермаркет","alimentação":"питание, еда","comer":"есть, кушать","beber":"пить","cozinhar":"готовить (пищу)","preparar":"готовить, подготавливать","provar":"пробовать (на вкус); примерять","pedir":"просить; заказывать","pão":"хлеб","arroz":"рис","massa":"макароны; тесто","trigo":"пшеница","cereal":"злак; хлопья","carne":"мясо","carne de vaca":"говядина","porco":"свинья; свинина","frango":"курица (мясо)","ovo":"яйцо","leite":"молоко","fruta":"фрукты","maçã":"яблоко","laranja":"апельсин","banana":"банан","tomate":"помидор","batata":"картофель","vegetal":"овощ, растение","salada":"салат","sopa":"суп","sal":"соль","pimenta":"перец (молотый)","açúcar":"сахар","chocolate":"шоколад","gelado":"мороженое","ementa":"меню","menu":"меню; комплексный обед","empregado":"официант; работник","nome próprio":"имя","apelido":"фамилия","nome completo":"полное имя","chamar-se":"зваться, называться","chamar":"звать, вызывать","apresentar-se":"представляться","senhor":"господин; вы (вежливо)","senhora":"госпожа; вы (вежливо, к женщине)","assinar":"подписывать","assinatura":"подпись; подписка","bilhete de identidade":"удостоверение личности (старого образца)","cartão de cidadão":"карта гражданина (осн. документ в Португалии)","passaporte":"паспорт","carta de condução":"водительские права","data de nascimento":"дата рождения","lugar de nascimento":"место рождения","morada":"адрес (место жительства)","rua":"улица","avenida":"проспект, авеню","praça":"площадь","número da porta":"номер дома","código postal":"почтовый индекс","casa":"дом; жильё","apartamento":"квартира","morar":"жить, проживать (по адресу)","telefone":"телефон","telemóvel":"мобильный телефон","número de telefone":"номер телефона","telefonar":"звонить по телефону","ligar":"звонить; включать","email":"электронная почта, письмо","endereço de email":"адрес электронной почты","mensagem":"сообщение","sms":"смс","enviar":"отправлять","fax":"факс","mandar um fax":"отправить факс","internet":"интернет","computador":"компьютер","família":"семья","pai":"отец","mãe":"мать","filho":"сын; ребёнок (в семье)","irmã":"сестра","avô":"дедушка","avó":"бабушка","neto":"внук","tio":"дядя","primo":"двоюродный брат","marido":"муж","mulher":"женщина; жена","homem":"мужчина; человек","namorado":"парень, молодой человек","companheiro":"партнёр, спутник жизни","criança":"ребёнок","menino":"мальчик","menina":"девочка; барышня","rapaz":"парень, юноша","rapariga":"девушка","jovem":"молодой человек","adulto":"взрослый","idoso":"пожилой человек","idade":"возраст","estado civil":"семейное положение","solteiro":"холостой, незамужняя","casado":"женатый, замужем","divorciado":"разведённый","separado":"живущий раздельно (не разведён)","viúvo":"вдовец, вдова","unido de facto":"в гражданском браке","sexo":"пол (в документах)","género":"пол, гендер; род","masculino":"мужской","feminino":"женский","escola":"школа","aula":"урок, занятие","estudar":"учиться, заниматься","aprender":"учить, усваивать","estudante":"студент, учащийся","professor":"преподаватель, учитель","exame":"экзамен","biblioteca":"библиотека","universidade":"университет","instituto":"институт","básico":"базовый (о ступени школы)","ensino secundário":"старшая школа (10–12 класс)","secundário":"средний (об образовании); второстепенный","superior":"высший (об образовании); верхний","universitário":"университетский","licenciatura":"бакалавриат, диплом о высшем","tirar":"получать (курс, права); вынимать","fazer":"делать","profissão":"профессия","trabalho":"работа","local de trabalho":"место работы","simpático":"приятный, дружелюбный","antipático":"неприятный, недружелюбный","agradável":"приятный","alegre":"весёлый, радостный","interessante":"интересный","louro":"светловолосый, блондин","moreno":"темноволосый, смуглый","ruivo":"рыжий","religião":"религия","deus":"бог","judeu":"еврей, иудейский","cozinha":"кухня; кухня (кулинария)","quarto":"комната, спальня; номер","sala de estar":"гостиная","sala de jantar":"столовая (комната)","casa de banho":"ванная, туалет","despensa":"кладовая","garagem":"гараж","jardim":"сад","piso":"этаж; пол","porta":"дверь","janela":"окно","parede":"стена","chave":"ключ","fechadura":"замок (дверной)","mesa":"стол","cadeira":"стул","cama":"кровать","sofá":"диван","relógio":"часы","caixa":"коробка; касса","televisão":"телевизор, телевидение","comando":"пульт (от телевизора)","vídeo":"видео","fogão":"плита (кухонная)","forno":"духовка","frigorífico":"холодильник","congelador":"морозильник","eletrodomésticos":"бытовая техника","placa":"варочная панель; табличка","aquecimento":"отопление","eletricidade":"электричество","gás":"газ","luz":"свет; электричество","desligar":"выключать; вешать трубку","banheira":"ванна","chuveiro":"душ (лейка, кабина)","lavatório":"раковина (в ванной)","sanita":"унитаз","torneira":"кран","toalha":"полотенце; скатерть","lixo":"мусор","prato":"тарелка; блюдо","chávena":"чашка","garrafa":"бутылка","faca":"нож","garfo":"вилка","colher":"ложка","arrendamento":"аренда (жилья)","arrendar":"снимать; сдавать (жильё)","renda":"арендная плата","comprar":"покупать","vender":"продавать","cidade":"город","campo":"деревня, сельская местность; поле","país":"страна","capital":"столица","estrangeiro":"иностранец; заграница","mapa":"карта (географическая)","loja":"магазин","café":"кафе; кофе","restaurante":"ресторан","hotel":"отель","hospital":"больница","museu":"музей","parque":"парк; стоянка","estação de comboios":"железнодорожный вокзал","paragem de autocarro":"автобусная остановка","praça de táxis":"стоянка такси","mar":"море","praia":"пляж","rio":"река","lago":"озеро","floresta":"лес","árvore":"дерево","flor":"цветок","planta":"растение; план (помещения)","fruto":"плод","animal":"животное","cão":"собака","gato":"кот, кошка","pássaro":"птица","periquito":"попугайчик","peixe":"рыба","tempo":"погода; время","mau tempo":"плохая погода, непогода","sol":"солнце","vento":"ветер","chover":"идти (о дожде)","nevar":"идти (о снеге)","dia":"день","manhã":"утро","tarde":"день (после полудня), вечер до 20:00","noite":"вечер, ночь","de manhã":"утром","de dia":"днём (при свете дня)","esta manhã":"сегодня утром","meio-dia":"полдень","meia-noite":"полночь","hora":"час; время","minuto":"минута","segundo":"секунда","horário":"расписание, график","semana":"неделя","fim de semana":"выходные","segunda":"понедельник","terça":"вторник","quarta":"среда","quinta":"четверг","sexta":"пятница","sábado":"суббота","domingo":"воскресенье","mês":"месяц","janeiro":"январь","fevereiro":"февраль","março":"март","abril":"апрель","maio":"май","junho":"июнь","julho":"июль","agosto":"август","setembro":"сентябрь","outubro":"октябрь","novembro":"ноябрь","dezembro":"декабрь","ano":"год","primavera":"весна","verão":"лето","outono":"осень","inverno":"зима","hoje":"сегодня","amanhã":"завтра","agora":"сейчас","até agora":"до сих пор, пока что","logo":"скоро, попозже; сразу","cedo":"рано","mais cedo":"раньше","mais tarde":"позже","sempre":"всегда","nunca":"никогда","vez":"раз","quando":"когда","desde":"с (какого-то момента)","até":"до; даже","princípio":"начало; принцип","pouco tempo":"недолго, мало времени","muito":"много, очень","depressa":"быстро, скоро","devagar":"медленно, не спеша","acabar":"заканчивать(ся)","costumar":"иметь обыкновение, обычно делать","seguir":"следовать, продолжать","mudar":"менять(ся); переезжать","viagem":"поездка, путешествие","viajar de carro":"путешествовать на машине","visitar":"посещать, навещать","visita":"визит, посещение, экскурсия","turismo":"туризм","turista":"турист","agência de turismo":"турагентство","férias na praia":"отпуск на море","carro":"машина, автомобиль","autocarro":"автобус","comboio":"поезд","avião":"самолёт","barco":"лодка, судно, паром","bicicleta":"велосипед","mota":"мотоцикл","táxi":"такси","taxista":"таксист","motorista":"водитель (профессия)","condutor":"водитель (за рулём)","estacionamento":"парковка, стоянка","aeroporto":"аэропорт","porto":"порт","estrada":"дорога, шоссе","caminho":"путь, дорога","partida":"отправление, отъезд","destino":"пункт назначения; судьба","data de chegada":"дата приезда","balcão de informações":"справочная стойка","ir em frente":"идти прямо","virar à esquerda":"повернуть налево","mala":"чемодан; сумка; багажник","bagagem":"багаж","saco":"сумка, пакет","carteira":"кошелёк; дамская сумка","documento de identificação":"документ, удостоверяющий личность","reserva":"бронь, бронирование","estadia":"пребывание, проживание","quarto duplo":"двухместный номер","quarto de casal":"номер с двуспальной кроватью","cama individual":"односпальная кровать","chave do quarto":"ключ от номера","preço por noite":"цена за ночь","comodidades":"удобства (в номере)","parque de campismo":"кемпинг","tenda":"палатка","dinheiro":"деньги","em dinheiro":"наличными","pagar com cartão":"платить картой","conta":"счёт","procurar":"искать","montanha":"гора","neve":"снег","aqui":"здесь, сюда","aí":"там (у тебя), туда","ali":"вон там","daqui":"отсюда","daí":"оттуда (от тебя)","dali":"оттуда (издалека)","este":"этот","esse":"этот (у тебя), тот","aquele":"тот (вон тот)","isto":"это (рядом со мной)","isso":"это (у тебя), то","aquilo":"то (вон то)","onde":"где","de onde":"откуда","por onde":"каким путём, где (через что)","lugar":"место (вообще)","dentro":"внутри","fora":"снаружи, вне","atrás":"сзади, позади","de trás":"задний, сзади","de cima":"сверху","baixo":"низкий; тихий","direita":"правая сторона","direito":"прямой, правый","em frente":"впереди, напротив","entre":"между, среди","perto":"близко","longe":"далеко","norte":"север","sul":"юг","oeste":"запад","ir":"идти, ехать","vir":"приходить, приезжать","chegar":"приходить, прибывать","entrar":"входить","sair":"выходить, уходить","andar":"ходить, ездить","parar":"останавливать(ся)","começar":"начинать(ся)","ficar":"находиться; оставаться; становиться","viajar":"путешествовать, ездить","sentar-se":"садиться","levantar-se":"вставать, подниматься","deitar-se":"ложиться","antes":"раньше, до","depois":"потом, после","grande":"большой","pequeno":"маленький","alto":"высокий; громкий","comprido":"длинный","curto":"короткий","largo":"широкий; просторный","gordo":"толстый, полный","magro":"худой, стройный","quente":"горячий, тёплый","frio":"холодный","calor":"жара, тепло","número":"номер, число; размер","metro":"метр; метро","quilómetro":"километр","quilo":"килограмм","grama":"грамм","litro":"литр","zero":"ноль","cem":"сто","quinhentos":"пятьсот","mil":"тысяча","milhão":"миллион","primeiro":"первый","mais":"больше, более","menos":"меньше, менее","pouco":"мало, немного","todo":"весь, целый","quanto":"сколько (о неисчисляемом)","também":"тоже, также","gente":"люди; мы (разг.)","copo":"стакан","preço":"цена","cor":"цвет","branco":"белый","preto":"чёрный","vermelho":"красный","encarnado":"красный (алый)","azul":"синий, голубой","verde":"зелёный; незрелый","amarelo":"жёлтый","castanho":"коричневый, карий","cinzento":"серый","roxo":"фиолетовый","cor de laranja":"оранжевый","cor-de-rosa":"розовый","madeira":"дерево (материал)","metal":"металл","plástico":"пластик","vidro":"стекло","papel":"бумага; роль","pano":"ткань; тряпка","água":"вода","ar":"воздух","som":"звук","bom":"хороший","mau":"плохой","bem":"хорошо","mal":"плохо; едва","estar bem":"быть в порядке, чувствовать себя хорошо","novo":"новый; молодой","velho":"старый","forte":"сильный; крепкий","fraco":"слабый","duro":"твёрдый, жёсткий","mole":"мягкий","doce":"сладкий","doente":"больной","ver":"видеть, смотреть","olhar":"смотреть, глядеть","ouvir":"слышать, слушать","gostar":"нравиться, любить","lavar":"мыть, стирать","limpar":"чистить, убирать","sujar":"пачкать","pintar":"красить; рисовать","cheirar bem":"хорошо пахнуть","saber bem":"быть вкусным; приносить удовольствие","como":"как","entrada":"вход; закуска","saída":"выход","óculos":"очки","caro":"дорогой","barato":"дешёвый","custar":"стоить","pagar":"платить","bonito":"красивый","feio":"некрасивый, уродливый","fácil":"лёгкий, простой","difícil":"трудный, сложный","certo":"правильный; определённый","errado":"неправильный, ошибочный","importante":"важный","querer":"хотеть","saber":"знать (факты); уметь","conseguir":"мочь, суметь, добиться","usar":"использовать; носить","todos os dias":"каждый день","corpo":"тело","cabeça":"голова","cara":"лицо (разговорное)","cabelo":"волосы","olho":"глаз","nariz":"нос","boca":"рот","pé":"нога (ступня)","coração":"сердце","sangue":"кровь","doença":"болезнь","doer":"болеть (о части тела)","dor":"боль","gripe":"грипп","constipação":"простуда","estar constipado":"быть простуженным","ferida":"рана","queimar":"обжигать, жечь","partir":"ломать; отправляться","acidente":"авария, несчастный случай","sentir-se":"чувствовать себя","cansado":"усталый","médico":"врач","enfermeiro":"медбрат, медсестра","dentista":"стоматолог","farmacêutico":"фармацевт","farmácia":"аптека","clínica":"клиника","ambulância":"скорая помощь","medicamento":"лекарство","comprimido":"таблетка","aspirina":"аспирин","paracetamol":"парацетамол","ibuprofeno":"ибупрофен","dormir":"спать","sono":"сон; сонливость","adormecer":"засыпать","acordar":"просыпаться, будить","estar acordado":"бодрствовать, не спать","ter fome":"хотеть есть","estar com fome":"быть голодным","sede":"жажда","tomar banho":"принимать ванну, мыться","duche":"душ (как процедура)","lavar os dentes":"чистить зубы","sabonete":"мыло (туалетное)","sabão":"мыло (хозяйственное)","banco":"банк; скамейка","cartão":"карта, карточка","correios":"почта (отделение)","carta":"письмо","envelope":"конверт","selo":"марка (почтовая)","postal":"открытка","fazer uma chamada":"позвонить, сделать звонок","polícia":"полиция; полицейский","bombeiro":"пожарный","roubar":"красть, грабить","perder":"терять; опаздывать на","ajuda":"помощь","passatempo":"хобби, увлечение","hobby":"хобби","interesse":"интерес","ter tempo":"иметь время","férias":"отпуск, каникулы","jogar":"играть (в игру)","jogar futebol":"играть в футбол","futebol":"футбол","jogo":"игра; матч","brincar":"играть (о детях); шутить","brincadeira":"игра, забава; шутка","desporto":"спорт","correr":"бегать; идти (о деле)","nadar":"плавать","natação":"плавание","dançar":"танцевать","cantar":"петь","tocar":"играть (на инструменте); трогать; звонить","música":"музыка; песня","conversar":"беседовать, разговаривать","ir ao cinema":"ходить в кино","filme":"фильм","teatro":"театр","circo":"цирк","arte":"искусство","ler":"читать","jornal":"газета; новости","revista":"журнал","página":"страница","história":"история, рассказ","poema":"стихотворение","rádio":"радио (станция)","compras":"покупки","mercado":"рынок","padaria":"булочная, пекарня","florista":"цветочный магазин; флорист","comida":"еда, пища","bebida":"напиток","euro":"евро","cêntimo":"цент","moeda":"монета; валюта","nota":"купюра; оценка; записка","troco":"сдача","total":"итог, общая сумма","receber":"получать; принимать (гостей)","tamanho":"размер (одежды)","medida":"мера, размер","camisa":"рубашка","t-shirt":"футболка","calças":"брюки, штаны","saia":"юбка","sapatos":"туфли, ботинки","acontecer":"случаться, происходить","nascer":"рождаться; всходить (о солнце)","morrer":"умирать","falta":"нехватка; отсутствие; прогул","faltar":"не хватать; отсутствовать","presente":"присутствующий","ausente":"отсутствующий","ocupado":"занятый","livre":"свободный","ninguém":"никто","não haver nada":"ничего нет","cá":"сюда, здесь (разг.)","lá":"там, туда","sítio":"место, местечко (разг.)","região":"регион, край","direção":"направление; руководство","esquerdo":"левый","por cima":"сверху, поверх","para dentro":"внутрь","distante":"далёкий, отдалённый","próximo":"следующий; близкий","seguinte":"следующий","último":"последний","passar":"проходить, проезжать; проводить","atravessar":"переходить, пересекать","caminhar":"идти пешком, шагать","passear":"гулять","dar uma volta":"пройтись, прогуляться","subir":"подниматься; повышаться","descer":"спускаться; выходить (из транспорта)","cair":"падать","saltar":"прыгать; пропускать","voltar":"возвращаться, вернуться","virar":"поворачивать; переворачивать","levar":"нести, везти (туда); занимать (время)","trazer":"приносить, привозить (сюда)","pôr":"класть, ставить","levantar":"поднимать; снимать (деньги)","empurrar":"толкать","puxar":"тянуть","mexer":"двигать; мешать (размешивать)","estar parado":"стоять, не двигаться","ir-se embora":"уходить, уезжать","vir-se embora":"уходить (сюда, к говорящему)","causa":"причина","exercício":"упражнение","cheio":"полный","vazio":"пустой","apertado":"тесный, узкий","leve":"лёгкий (по весу)","pesado":"тяжёлый","peso":"вес","médio":"средний","comprimento":"длина","centímetro":"сантиметр","metro quadrado":"квадратный метр","quilómetro quadrado":"квадратный километр","grau":"градус; степень","temperatura":"температура","ter frio":"мёрзнуть","tamanho único":"единый размер","tudo":"всё","nada":"ничего","algum":"какой-то, некоторый","nenhum":"никакой, ни один","outro":"другой","meio":"половинный, пол-","metade":"половина","dúzia":"дюжина","dezena":"десяток","pacote":"пачка, упаковка","bastante":"довольно, достаточно","quase":"почти","totalmente":"полностью, совершенно","tão":"так, настолько","entender":"понимать","acreditar":"верить","certeza":"уверенность","ter a certeza":"быть уверенным","ideia":"идея, мысль","opinião":"мнение","inteligente":"умный","contar":"рассказывать; считать","conversa":"разговор, беседа","convidar":"приглашать","convite":"приглашение","pedido":"просьба; заказ","recado":"сообщение (устное), поручение","aviso":"предупреждение, объявление","agradecer":"благодарить","proibir":"запрещать","por isso":"поэтому","portanto":"следовательно, итак","por essa razão":"по этой причине","por que razão":"по какой причине, почему","motivo":"причина, повод","causar":"вызывать, причинять","provocar":"вызывать, провоцировать","concluir":"заключать, завершать","afinal":"в итоге, всё-таки","mesmo assim":"всё равно, тем не менее","por outro lado":"с другой стороны","nem":"ни, даже не","juntar":"соединять, собирать","juntos":"вместе","separar":"разделять, отделять","separados":"раздельно, по отдельности","dono":"владелец, хозяин","apresentar":"представлять (кого-то); предъявлять","endereço":"адрес (почтовый, электронный)","freguesia":"приход (муниципальный округ)","concelho":"муниципалитет","distrito":"округ, район (области)","rés do chão":"первый этаж (на уровне земли)","cave":"подвал, цокольный этаж","frente":"передняя часть, фасад","casa própria":"собственное жильё","arrendada":"съёмная, арендованная","alugada":"взятая напрокат, арендованная","mudar de casa":"переезжать","bebé":"младенец","miúdo":"ребёнок, пацан (разг.)","filho único":"единственный ребёнок","irmãos gémeos":"близнецы","cunhado":"шурин, деверь, зять (муж сестры)","sogro":"тесть, свёкор","genro":"зять (муж дочери)","nora":"невестка, сноха","noivo":"жених","ex":"бывший, бывшая","casar-se":"жениться, выходить замуж","divorciar-se":"разводиться","separar-se":"расставаться, разъезжаться","namorar":"встречаться (с кем-то)","viver juntos":"жить вместе","juntar-se":"сходиться, съезжаться; присоединяться","dia de anos":"день рождения","fazer anos":"праздновать день рождения","altura":"рост; высота; момент","medir":"измерять; иметь рост","pesar":"весить; взвешивать","bigode":"усы","ter barba":"носить бороду","estar careca":"быть лысым","franja":"чёлка","encaracolado":"кудрявый","ondulado":"волнистый","pentear-se":"причёсываться","calçar":"обувать(ся); носить (обувь)","usar óculos":"носить очки","usar gorro":"носить шапку","chapéu":"шляпа","cachecol":"шарф","luvas":"перчатки","amável":"любезный, приветливый","educado":"вежливый, воспитанный","calmo":"спокойный","compreensivo":"понимающий, отзывчивый","otimista":"оптимистичный, оптимист","egoísta":"эгоистичный, эгоист","estúpido":"глупый; грубый","parecer":"казаться; выглядеть","trabalhar":"работать","empresa":"компания, предприятие","firma":"фирма","negócio":"бизнес, дело; сделка","organização":"организация","instituição":"учреждение, институция","departamento":"отдел, департамент","fábrica":"завод, фабрика","escritório":"офис, кабинет","secretária":"письменный стол; секретарь","sala de reuniões":"переговорная","mesa de reuniões":"стол для совещаний","ter uma reunião":"быть на совещании, встречаться","cliente":"клиент","marcar":"назначать, записывать(ся); набирать номер","pedir férias":"просить отпуск","ter férias":"быть в отпуске, иметь отпуск","reforma":"пенсия; реформа","estar reformado":"быть на пенсии","pensão":"пенсия (выплата); пансион","ensinar":"учить (кого-то), преподавать","colégio":"частная школа, колледж","academia":"академия","mestrado":"магистратура","título académico":"учёная степень","matrícula":"зачисление, запись; номерной знак","cartão de estudante":"студенческий билет","passe":"проездной","suficiente":"достаточный","imprimir":"печатать (на принтере)","impressora":"принтер","tirar fotocópias":"делать копии","programa":"программа","site de internet":"сайт","montar":"собирать, монтировать; садиться верхом","pedir nacionalidade":"подавать на гражданство","igreja":"церковь","natal":"Рождество","corredor":"коридор","hall":"прихожая, холл","varanda":"балкон","quintal":"двор, участок за домом","escadas":"лестница","elevador":"лифт","portão":"ворота, калитка","campainha":"звонок (дверной)","teto":"потолок","esquina":"угол (улицы)","armário":"шкаф","roupeiro":"платяной шкаф","estante":"стеллаж, книжная полка","prateleira":"полка","gaveta":"ящик (выдвижной)","mesa de cabeceira":"тумбочка","cadeirão":"кресло","almofada":"подушка (диванная, спальная)","lençol":"простыня","cobertor":"одеяло, плед","mobília":"мебель (обстановка)","móvel":"предмет мебели","ar condicionado":"кондиционер","aquecedor":"обогреватель","esquentador":"газовая колонка (водонагреватель)","lareira":"камин","lâmpada":"лампочка","tomada":"розетка","ficha":"вилка (электрическая); карточка","fio":"провод, нитка","corda":"верёвка","corrente":"ток; цепь; течение","botão":"кнопка; пуговица","acender":"зажигать, включать (свет)","apagar":"гасить, выключать; стирать","micro-ondas":"микроволновка","torradeira":"тостер","cafeteira":"кофеварка, кофейник","aspirador":"пылесос","ferro de engomar":"утюг","secador":"фен","lava-louça":"кухонная мойка","louça":"посуда","pano da louça":"кухонное полотенце","toalha de mãos":"полотенце для рук","panela":"кастрюля","tacho":"кастрюля (низкая), сотейник","frigideira":"сковорода","tabuleiro":"противень; поднос","caneca":"кружка","jarro":"кувшин","wifi":"вайфай","alugar":"брать/сдавать напрокат","aluguer":"аренда, прокат","senhorio":"арендодатель, хозяин квартиры","inquilino":"квартирант, арендатор","proprietário":"собственник, владелец","partilhar casa":"снимать жильё вместе","procurar casa":"искать жильё","fatura":"счёт, счёт-фактура","recibo":"квитанция, чек","multibanco":"банкомат; терминал оплаты","bairro":"квартал, район города","baixa":"центр города (нижний)","zona":"зона, район","vila":"городок, посёлок","aldeia":"деревня","habitante":"житель","câmara municipal":"мэрия, муниципалитет","centro comercial":"торговый центр","contentor de lixo":"мусорный контейнер","reciclagem":"переработка, раздельный сбор","banho":"купание, ванна","natureza":"природа","paisagem":"пейзаж, ландшафт","parque natural":"природный парк","monte":"холм, гора","costa":"побережье","margem":"берег (реки)","oceano":"океан","continente":"континент; материковая часть","europa":"Европа","áfrica":"Африка","ásia":"Азия","américa":"Америка","interior":"внутренние районы страны; внутренняя часть","nordeste":"северо-восток","noroeste":"северо-запад","sudeste":"юго-восток","sudoeste":"юго-запад","céu":"небо","nuvem":"облако, туча","chuva":"дождь","tempestade":"буря, гроза","nevoeiro":"туман","humidade":"влажность, сырость","clima":"климат","fresco":"прохладный; свежий","animal doméstico":"домашнее животное","vaca":"корова","boi":"бык, вол","cavalo":"конь, лошадь","égua":"кобыла","galinha":"курица (живая)","galo":"петух","coelho":"кролик","mosca":"муха","mosquito":"комар","selvagem":"дикий","erva":"трава","folha":"лист (дерева, бумаги)","rosa":"роза","ramo de flores":"букет цветов","rosto":"лицо (книжное)","ontem":"вчера","anteontem":"позавчера","depois de amanhã":"послезавтра","ano passado":"в прошлом году","mês passado":"в прошлом месяце","ano que vem":"в следующем году","ano seguinte":"на следующий год","mês anterior":"предыдущий месяц","anterior":"предыдущий, прежний","para a semana":"на следующей неделе","para o mês":"в следующем месяце","naquela manhã":"в то утро","todas as manhãs":"каждое утро","fins de semana":"выходные дни","logo à tarde":"сегодня во второй половине дня","final de tarde":"конец дня, ранний вечер","mais logo":"попозже сегодня","neste momento":"в данный момент","momento":"момент","por agora":"пока что","já":"уже; сейчас же","ainda":"ещё, всё ещё","durante":"в течение, во время","enquanto":"пока, в то время как","bocado":"кусочек; недолго","meia hora":"полчаса","quarto de hora":"четверть часа","umas horas":"несколько часов","há dois dias":"два дня назад","há duas horas":"два часа назад; уже два часа","muito tempo":"долго, много времени","data":"дата","aniversário":"день рождения; годовщина","feriado":"праздничный выходной","carnaval":"карнавал","páscoa":"Пасха","século":"век, столетие","antigamente":"раньше, в прежние времена","começo":"начало, старт","fim":"конец","conclusão":"завершение; вывод","fechar":"закрывать(ся)","mudança":"перемена; переезд","trocar":"менять, обменивать","tornar-se":"становиться","morte":"смерть","atrasar":"задерживать(ся), опаздывать","atraso":"опоздание, задержка","adiar":"откладывать, переносить","adiado":"отложенный, перенесённый","adiantar":"переносить на более ранний срок; спешить (о часах)","demora":"задержка, промедление","demorar":"занимать время; задерживаться","antes da hora":"раньше времени","depois da hora":"позже назначенного","antes do tempo":"преждевременно, досрочно","ficar para depois":"отложить на потом","de repente":"вдруг, внезапно","em breve":"скоро, вскоре","breve":"краткий, короткий","longo":"долгий, длинный","rápido":"быстрый","rapidamente":"быстро (книжное)","lento":"медленный","lentamente":"медленно (книжное)","sem parar":"без остановки, непрерывно","normalmente":"обычно","frequentemente":"часто (книжное)","frequente":"частый","muitas vezes":"часто, много раз","poucas vezes":"редко","quase nunca":"почти никогда","só uma vez":"только один раз","mais uma vez":"ещё раз","outra vez":"снова, опять","novamente":"снова","só":"только","ter aulas":"ходить на занятия, учиться","trabalhos de casa":"домашнее задание","manual":"учебник","material":"материалы, принадлежности","marcador":"маркер; закладка","ir ao quadro":"выходить к доске","teste":"тест, контрольная","prova":"экзамен, проверочная; доказательство","aprovar":"сдать (экзамен); одобрять","reprovar":"провалить (экзамен), остаться на второй год","receção":"ресепшен, приёмная","gabinete":"кабинет","chefe":"начальник, шеф","folga":"выходной (у работника)","sair mais tarde":"выйти позже, задержаться","estar disponível":"быть свободным, доступным","atender uma chamada":"ответить на звонок","mandar":"посылать; приказывать","impostos":"налоги","escovar os dentes":"чистить зубы щёткой","fazer a barba":"побриться","maquilhar-se":"краситься, наносить макияж","tomar":"принимать; пить","tomar café":"выпить кофе","chá":"чай","ver televisão":"смотреть телевизор","ir aos correios":"идти на почту","posto dos correios":"почтовое отделение","carteiro":"почтальон","empregado dos correios":"работник почты","marco de correio":"почтовый ящик (уличный)","receber uma carta":"получить письмо","correios online":"почта онлайн (сервис)","carta digital":"электронное письмо (услуга)","caixa multibanco":"банкомат","número de conta":"номер счёта","fechar uma conta":"закрыть счёт","cheque":"чек (банковский)","saldo positivo":"положительный баланс","saldo negativo":"отрицательный баланс","meter":"класть, совать; вносить","chamar a polícia":"вызвать полицию","queixa":"жалоба, заявление","número de emergência":"номер экстренной службы","socorro":"помощь, спасение","bacalhau":"треска (солёная)","salmão":"лосось","camarão":"креветка","gamba":"крупная креветка","peru":"индейка","fiambre":"варёная ветчина","salsicha":"сосиска","queijo":"сыр","manteiga":"масло сливочное","iogurte":"йогурт","azeite":"оливковое масло","vinagre":"уксус","farinha":"мука","milho":"кукуруза","alface":"салат (листовой)","couve":"капуста","cebola":"лук","alho":"чеснок","cenoura":"морковь","salsa":"петрушка","pêra":"груша","uva":"виноград","melancia":"арбуз","tangerina":"мандарин","amêndoa":"миндаль","noz":"орех (грецкий)","bolo":"пирог, торт","bolacha":"печенье","torrada":"тост","torrar":"поджаривать (хлеб), обжаривать","torrado":"поджаренный","pão com manteiga":"хлеб с маслом","sandes mista":"сэндвич с ветчиной и сыром","omelete":"омлет","piza":"пицца","sobremesa":"десерт","pastelaria":"кондитерская","cafetaria":"кафетерий","bica":"эспрессо (в Лиссабоне)","café cheio":"эспрессо побольше","descafeinado":"без кофеина","sumo":"сок","água mineral":"минеральная вода","com gás":"газированная","natural":"натуральный; комнатной температуры","vinho":"вино","copo de vinho":"бокал вина","cerveja":"пиво","refeição":"приём пищи, трапеза","prato principal":"основное блюдо","menu do dia":"меню дня, комплексный обед","dose":"порция","guardanapo":"салфетка","empregado de mesa":"официант","cozinheiro":"повар","chef":"шеф-повар","reservar mesa":"забронировать столик","servir":"подавать; годиться","escolher":"выбирать","decidir":"решать","bom apetite":"приятного аппетита","piquenique":"пикник","receita":"рецепт","ingrediente":"ингредиент","tempo de preparação":"время приготовления","ferver":"кипятить, кипеть","cozer":"варить","cozido":"варёный","assar":"запекать, жарить в духовке","assado":"запечённый","grelhar":"жарить на гриле","grelhado":"жаренный на гриле","fritar":"жарить (в масле)","frito":"жареный","batatas fritas":"картофель фри; чипсы","descascar":"чистить (от кожуры)","picar":"рубить, мелко резать; жалить","misturar":"смешивать","bater":"взбивать; стучать","temperar":"приправлять","tempero":"приправа","mal passado":"с кровью (о мясе)","mal cozido":"недоваренный","colher de sopa":"столовая ложка","lata":"банка (консервная)","fazer o pequeno-almoço":"готовить завтрак","dieta":"диета","saudável":"здоровый, полезный","caloria":"калория","energia":"энергия","vitamina":"витамин","peso corporal":"вес тела","vegetariano":"вегетарианский, вегетарианец","italiano":"итальянский","indiano":"индийский","comida chinesa":"китайская еда","mililitro":"миллилитр","divertir-se":"развлекаться, веселиться","dar uma festa":"устраивать вечеринку","estar livre":"быть свободным (о времени)","desocupado":"незанятый, свободный","estar de férias":"быть в отпуске","fazer um curso":"проходить курс","duração":"продолжительность","cinema":"кино; кинотеатр","bilhete":"билет","reservar um bilhete":"забронировать билет","concerto":"концерт","bailarino":"танцор, балерина","dança":"танец","exposição":"выставка","obra de teatro":"театральная постановка","peça":"пьеса, спектакль; деталь","público":"публика, зрители","ator":"актёр","atriz":"актриса","atuar":"выступать; действовать","banda":"группа (музыкальная)","cantor":"певец","canção":"песня","guitarra":"гитара","guitarrista":"гитарист","piano":"пианино, рояль","podcast":"подкаст","youtube":"ютуб","escritor":"писатель","autor":"автор","literatura":"литература","leitura":"чтение","conto":"рассказ","ficção":"художественная литература, вымысел","poesia":"поэзия","livraria":"книжный магазин","feira do livro":"книжная ярмарка","capa":"обложка","título":"название, заголовок","artigo":"статья; артикль; товар","linha":"строка; линия; нитка","notícias":"новости","telejornal":"выпуск новостей (ТВ)","jornal diário":"ежедневная газета","jornalista":"журналист","canal de televisão":"телеканал","programa de televisão":"телепередача","conferência":"конференция; лекция","debate":"дебаты, обсуждение","debater":"обсуждать, спорить","fotografia":"фотография; фотодело","desenhar":"рисовать (карандашом)","desenho":"рисунок","colorir":"раскрашивать","pintura":"живопись, картина","artista plástico":"художник (изобразительное искусство)","praticar desporto":"заниматься спортом","desportista":"спортсмен","ginásio":"спортзал","ginástica":"гимнастика, зарядка","piscina":"бассейн","andar de bicicleta":"кататься на велосипеде","surf":"сёрфинг","ténis":"теннис; кроссовки","partida de ténis":"теннисный матч","basquetebol":"баскетбол","voleibol":"волейбол","jogador":"игрок","jogar contra":"играть против","empatar":"сыграть вничью","ponto":"очко; точка","fã":"фанат, поклонник","ser fã":"быть фанатом","xadrez":"шахматы","cartas":"игральные карты","jogo do galo":"крестики-нолики","jogo de computador":"компьютерная игра","portátil":"ноутбук","brinquedo":"игрушка","boneca":"кукла","carrinho":"машинка; тележка","roupa":"одежда","loja de roupa":"магазин одежды","sapataria":"обувной магазин","papelaria":"магазин канцтоваров","secção de homem":"мужской отдел","balcão":"прилавок, стойка","provador":"примерочная","experimentar":"примерять; пробовать","vestir":"надевать, носить","despir":"снимать (одежду)","mostrar":"показывать","atender":"обслуживать; отвечать (на звонок)","saldos":"распродажа","pagamento":"оплата, платёж","quantia":"сумма (денег)","porta-moedas":"кошелёк для монет","unidade":"штука, единица","camisola":"свитер, кофта","blusa":"блузка","blusão":"куртка (короткая)","fato":"костюм","fato de banho":"купальник, плавки","biquíni":"бикини","calções de banho":"плавательные шорты","pijama":"пижама","cuecas":"трусы","bóxeres":"боксеры (трусы)","soutiã":"бюстгальтер","meias":"носки; чулки","botas":"сапоги, ботинки","gorro":"шапка (вязаная)","lenço":"платок; салфетка бумажная","óculos de sol":"солнечные очки","anel":"кольцо","brincos":"серьги","colar":"ожерелье, цепочка","nylon":"нейлон","alimento":"продукт питания","atum":"тунец","esparguete":"спагетти","dúzia de ovos":"дюжина яиц","litro de leite":"литр молока","meio quilo":"полкило","quilo de batatas":"килограмм картошки","pacote de arroz":"пачка риса","lata de tomate":"банка помидоров","vendedor":"продавец","voo":"рейс, полёт","viajar de avião":"лететь самолётом","check-in":"регистрация (на рейс, в отеле)","partidas":"вылеты, отправления (табло)","chegadas":"прилёты, прибытия","passageiro":"пассажир","piloto":"пилот","assistente de bordo":"бортпроводник","bagagem de mão":"ручная кладь","classe económica":"эконом-класс","classe executiva":"бизнес-класс","primeira classe":"первый класс","segunda classe":"второй класс","elétrico":"трамвай","mudar de comboio":"делать пересадку","bilheteira":"билетная касса","apanhar um táxi":"взять такси","andar de táxi":"ездить на такси","sair do táxi":"выйти из такси","andar de carro":"ездить на машине","gasolina":"бензин","meter gasóleo":"заправить дизелем","encher o depósito":"заправить полный бак","lavar o carro":"мыть машину","mecânico":"механик, автослесарь","roda":"колесо","cruzamento":"перекрёсток","quarteirão":"квартал (между улицами)","passeio":"тротуар; прогулка","passagem":"проход, проезд","dar passagem":"уступить дорогу","seguir em frente":"ехать/идти прямо","voltar atrás":"вернуться назад","para trás":"назад","pedir direções":"спросить дорогу","cortar":"сворачивать; резать","estar verde":"гореть зелёным (о светофоре)","distância":"расстояние","origem":"происхождение; пункт отправления","alojamento":"жильё, размещение","hóspede":"гость, постоялец","residência":"пансион; резиденция","apartamento de férias":"апартаменты для отдыха","cinco estrelas":"пять звёзд","meia pensão":"полупансион","pensão completa":"полный пансион","servir o pequeno-almoço":"подавать завтрак","serviço de quarto":"обслуживание в номер","piscina interior":"крытый бассейн","haver quartos disponíveis":"есть свободные номера","exterior":"наружный, внешний","estar cheio":"быть полным; наесться","fazer uma reserva":"сделать бронь","reservar":"бронировать","fazer a mala":"собирать чемодан","fazer planos":"строить планы","excursão":"экскурсия, вылазка","guia turístico":"экскурсовод; путеводитель","castelo":"замок, крепость","galeria de arte":"художественная галерея","alfândega":"таможня","fronteira":"граница","visto de turista":"туристическая виза","autorização de residência":"вид на жительство","declaração":"декларация, справка","moeda estrangeira":"иностранная валюта","cartão multibanco":"банковская карта","cartão de crédito":"кредитная карта","desconto":"скидка","promoção":"акция, спецпредложение","oferta":"предложение; подарок","especial":"особый, специальный","gorjeta":"чаевые","seguro de viagem":"страховка для поездки","pacote de férias":"турпакет","entrega":"доставка, вручение","devolução":"возврат","depósito de bagagem":"камера хранения","caixote":"ящик, коробка","embrulho":"свёрток, упаковка","mala de bebé":"сумка для малыша","braço":"рука (от плеча до кисти)","mão":"рука, кисть","dedo":"палец","perna":"нога","costas":"спина","coluna":"позвоночник; колонка","peito":"грудь, грудная клетка","pescoço":"шея","barriga":"живот","estômago":"желудок","garganta":"горло","ouvido":"ухо (внутреннее), слух","dente":"зуб","membro":"конечность; член (организации)","tronco":"туловище; ствол","adoecer":"заболевать","ficar doente":"заболеть","febre":"температура, жар","tosse":"кашель","ter gripe":"болеть гриппом","alergia":"аллергия","ser alérgico":"быть аллергиком","doer a cabeça":"болеть (о голове)","magoar um pé":"повредить ногу","depressão":"депрессия","ansiedade":"тревожность","stress":"стресс","estar nervoso":"нервничать","chorar":"плакать","rir":"смеяться","sentir":"чувствовать","ter vontade":"хотеть, испытывать желание","centro de saúde":"поликлиника","médico de família":"семейный врач","consulta médica":"приём у врача","consultório":"кабинет врача","ir ao médico":"идти к врачу","paciente":"пациент","visitar um paciente":"навещать больного","horário de visitas":"часы посещений","segurança social":"социальное обеспечение","injeção":"укол, инъекция","levar uma injeção":"получить укол","vacina":"вакцина, прививка","pastilha":"пастилка, таблетка для рассасывания","pílula":"противозачаточная таблетка","pomada":"мазь","colocar pomada":"наносить мазь","gotas":"капли","penso":"пластырь, повязка","penso higiénico":"гигиеническая прокладка","preservativo":"презерватив","ferido":"раненый","champô":"шампунь","gel duche":"гель для душа","desodorizante":"дезодорант","pasta de dentes":"зубная паста","escova de dentes":"зубная щётка","pente":"расчёска","pentear":"причёсывать","gilete":"бритва, станок","creme de mãos":"крем для рук","papel higiénico":"туалетная бумага","água morna":"тёплая вода","lavar a roupa":"стирать бельё","comer bem":"хорошо питаться","dormir bem":"хорошо спать","ser saudável":"быть здоровым, полезным","medicamento contra a dor":"лекарство от боли","tomar um medicamento":"принимать лекарство","aberto":"открытый","abrir":"открывать(ся)","fechado":"закрытый","claro":"светлый, ясный","escuro":"тёмный","antigo":"старинный; бывший","moderno":"современный","usado":"подержанный, б/у","partido":"сломанный, разбитый","mau estado":"плохое состояние","resistente":"прочный, стойкий","suave":"мягкий, нежный","vivo":"живой; яркий","morto":"мёртвый","limpo":"чистый","sujo":"грязный","lavado":"вымытый, постиранный","seco":"сухой","secar":"сушить, высыхать","molhar":"мочить, намочить","húmido":"влажный, сырой","tapar":"закрывать, накрывать","forma":"форма; способ","redondo":"круглый","quadrado":"квадратный","círculo":"круг","lado":"сторона","algodão":"хлопок","lã":"шерсть","tecido":"ткань","pele":"кожа","ouro":"золото","prata":"серебро","cristal":"хрусталь, кристалл","tinta":"краска; чернила","pintado":"покрашенный","bege":"бежевый","lilás":"сиреневый","grená":"бордовый","vinho tinto":"красное вино","cheiro":"запах","ter cheiro":"пахнуть, издавать запах","sabor":"вкус (у еды)","gosto":"вкус; предпочтение","ter gosto":"быть на вкус","amargo":"горький","azedo":"кислый","barulho":"шум","silêncio":"тишина","gritar":"кричать","grito":"крик","voz":"голос","perceber":"понимать; замечать","vista":"вид; зрение","aspeto":"вид, внешность; аспект","ver-se":"быть видимым; видеться","ver-se bem":"хорошо видно","saída de emergência":"аварийный выход","melhor":"лучше, лучший","pior":"хуже, худший","correto":"правильный, корректный","erro":"ошибка","acertar":"угадать, попасть в точку","estar certo":"быть правым, верным","diferente":"другой, отличающийся","normal":"обычный, нормальный","habitual":"привычный, обычный","regular":"регулярный; средний","regularmente":"регулярно","rotina":"распорядок, рутина","dia-a-dia":"повседневность","simples":"простой","complicado":"сложный, запутанный","estranho":"странный","esquisito":"странный, чудной","giro":"классный, симпатичный","lindo":"прекрасный, очень красивый","preparado":"готовый, подготовленный","proibido":"запрещённый","prático":"практичный, удобный","útil":"полезный","sem importância":"неважный, пустяковый","poder":"мочь, иметь возможность","tentar":"пытаться, пробовать","ganhar":"выигрывать; зарабатывать","desejar":"желать","apetecer":"хотеться","valer":"стоить, иметь ценность","valor":"стоимость; ценность","utilizar":"использовать","uso":"использование, применение","dever ser":"должно быть, вероятно","facilmente":"легко","precisar":"нуждаться, быть нужным","dever":"быть должным, следует","achar":"считать, полагать; находить","encontrar":"находить; встречать","deixar":"оставлять; позволять","ajudar":"помогать","desculpar":"извинять, прощать","continuar":"продолжать","terminar":"заканчивать, заканчиваться","explicar":"объяснять","repetir":"повторять","preferir":"предпочитать","descansar":"отдыхать","apanhar":"ловить; садиться в транспорт","arrumar":"убирать, приводить в порядок","fumar":"курить","guardar":"хранить; убирать на место","amar":"любить","adorar":"обожать, очень любить","lembrar-se":"помнить, вспоминать","esquecer-se":"забывать","traduzir":"переводить","conduzir":"водить машину","arranjar":"чинить; раздобыть","funcionar":"работать, действовать","estacionar":"парковаться","emprestar":"одалживать кому-то","devolver":"возвращать, отдавать","preencher":"заполнять бланк","significar":"значить, означать","carregar":"нажимать; заряжать; нести","combinar":"договариваться","avisar":"предупреждать, сообщать","aceitar":"принимать, соглашаться","acompanhar":"сопровождать, провожать","entregar":"доставлять, вручать","cumprimentar":"здороваться, приветствовать","descarregar":"скачивать; разряжаться","tossir":"кашлять","aparecer":"появляться, приходить","crescer":"расти, вырастать","melhorar":"улучшаться, поправляться","escutar":"слушать, вслушиваться","regressar":"возвращаться (официальнее)","gastar":"тратить","poupar":"экономить, копить","detestar":"терпеть не могу, ненавидеть","compreender":"понимать (книжное)","sonhar":"мечтать; видеть во сне","sorrir":"улыбаться","beijar":"целовать","abraçar":"обнимать","recusar":"отказываться, отклонять","durar":"длиться, продолжаться","desaparecer":"исчезать, пропадать","piorar":"ухудшаться","engordar":"полнеть, набирать вес","emagrecer":"худеть","espirrar":"чихать","respirar":"дышать","reparar":"замечать; чинить","avariar":"ломаться, выходить из строя","copiar":"копировать, списывать","gravar":"записывать (звук, видео)","pesquisar":"искать сведения, гуглить","embarcar":"садиться на самолёт, корабль","aterrar":"приземляться","descolar":"взлетать","escovar":"чистить щёткой","barbear-se":"бриться","depositar":"класть на счёт, вносить","transferir":"переводить (деньги), переносить","trancar":"запирать на ключ","buscar":"забирать, заходить за","segurar":"держать","esconder":"прятать","encher":"наполнять","corrigir":"исправлять","errar":"ошибаться, промахиваться","treinar":"тренироваться","praticar":"заниматься (спортом), практиковать","descobrir":"обнаруживать, узнавать","construir":"строить","aumentar":"увеличиваться, повышать","diminuir":"уменьшаться, снижать","olá":"привет","bom dia":"доброе утро, добрый день","boa tarde":"добрый день","boa noite":"добрый вечер, спокойной ночи","adeus":"до свидания, прощай","obrigado":"спасибо","de nada":"не за что, пожалуйста","por favor":"пожалуйста (просьба)","com licença":"извините, разрешите","desculpa":"извини, прости","sim":"да","não":"нет, не","amigo":"друг","pessoa":"человек, лицо","coisa":"вещь, штука","mundo":"мир, свет","problema":"проблема","parte":"часть","vida":"жизнь","exemplo":"пример","razão":"причина; правота","maneira":"способ, манера","aluno":"ученик, студент","legumes":"овощи","nome":"имя, название","triste":"грустный","contente":"довольный, радостный","zangado":"сердитый","nervoso":"нервный, взволнованный","pronto":"готовый","possível":"возможный","impossível":"невозможный","necessário":"нужный, необходимый","verdadeiro":"настоящий, правдивый","falso":"ложный, поддельный","molhado":"мокрый","morno":"тёплый, чуть тёплый","estreito":"узкий","mesmo":"тот же самый","cada":"каждый","vários":"несколько, разные","demasiado":"слишком, чересчур","junto":"рядом, вместе","alguém":"кто-то, кто-нибудь","talvez":"может быть, возможно","se":"если","embora":"хотя; прочь","apesar de":"несмотря на","por causa de":"из-за","em vez de":"вместо","para":"для, чтобы, в (направление)","por":"через, по; за (цену)","um":"один","dois":"два","três":"три","quatro":"четыре","cinco":"пять","seis":"шесть","sete":"семь","oito":"восемь","nove":"девять","dez":"десять","onze":"одиннадцать","doze":"двенадцать","treze":"тринадцать","catorze":"четырнадцать","quinze":"пятнадцать","dezasseis":"шестнадцать","dezassete":"семнадцать","dezoito":"восемнадцать","dezanove":"девятнадцать","vinte":"двадцать","trinta":"тридцать","quarenta":"сорок","cinquenta":"пятьдесят","sessenta":"шестьдесят","setenta":"семьдесят","oitenta":"восемьдесят","noventa":"девяносто","irmão":"брат","vizinho":"сосед","palavra":"слово","língua":"язык (речь); язык (орган)","saúde":"здоровье","terra":"земля, суша; родина","lua":"луна","bola":"мяч","lista":"список; меню","regra":"правило","dúvida":"сомнение, вопрос","foto":"фотография","edifício":"здание","estrela":"звезда","areia":"песок","correio":"почта (служба)","bar":"бар","cultura":"культура","tradição":"традиция","memória":"память; воспоминание","sentimento":"чувство","ordem":"порядок; приказ","força":"сила","informação":"сведения, информация","notícia":"новость","passado":"прошлое","futuro":"будущее","verdade":"правда","experiência":"опыт","situação":"ситуация, положение","resolver":"решать (проблему)","oferecer":"дарить; предлагать","colocar":"класть, помещать","tratar":"обращаться; лечить","manter":"сохранять, поддерживать","criar":"создавать; растить","existir":"существовать, быть","permitir":"позволять, разрешать","concordar":"соглашаться","observar":"наблюдать, замечать","verificar":"проверять","negar":"отрицать, отказывать","discutir":"обсуждать; спорить","aproveitar":"пользоваться, использовать случай","preocupar-se":"беспокоиться","agarrar":"хватать, держать","salvar":"спасать","considerar":"считать, рассматривать","realizar":"осуществлять, проводить","imaginar":"представлять, воображать","qualquer":"любой, какой-нибудь","algo":"что-то, нечто","ambos":"оба","assim":"так, таким образом","apenas":"только, всего лишь","além de":"кроме, помимо","tal":"такой","demais":"слишком","realmente":"действительно, на самом деле","simplesmente":"просто, попросту","imediatamente":"немедленно, сразу","especialmente":"особенно","absolutamente":"совершенно, абсолютно","sobretudo":"прежде всего, главным образом","curioso":"любопытный; любознательный","familiar":"знакомый; семейный","disponível":"доступный, свободный","conhecido":"известный; знакомый","justo":"справедливый; точный","profundo":"глубокий","orelha":"ухо","ombro":"плечо","joelho":"колено","filha":"дочь","pais":"родители","tia":"тётя","prima":"двоюродная сестра","sobrinho":"племянник","neta":"внучка","namorada":"девушка (подруга)","trovoada":"гроза","morango":"клубника","candeeiro":"лампа, светильник","tapete":"ковёр","espelho":"зеркало","máquina de lavar":"стиральная машина","vestido":"платье","casaco":"куртка, пальто","cinto":"ремень, пояс","mochila":"рюкзак","ponte":"мост","prédio":"жилой дом, многоэтажка","semáforo":"светофор","estação":"время года; станция","início":"начало (периода, события)","calendário":"календарь","emprego":"работа (место), должность","salário":"зарплата","quem":"кто","qual":"какой, который","quantos":"сколько (о штуках)","feliz":"счастливый","terceiro":"третий","quinto":"пятый","sexto":"шестой","sétimo":"седьмой","oitavo":"восьмой","nono":"девятый","décimo":"десятый"};
-const TEMAS=[{"id":"A1","ru":"Бытие","pt":"Existenciais","a1":["a coisa","a vida","alguém","estar","haver","precisar","sem","ser","ter","viver"],"a2":["acontecer","algo","aparecer","ausente","crescer","desaparecer","existir","falta","faltar","livre","morrer","nascer","ninguém","não haver nada","ocupado","presente"]},{"id":"A2","ru":"Пространство","pt":"Espaciais","a1":["ali","andar","antes","aquele","aqui","aquilo","atrás","aí","baixo","chegar","começar","dali","daqui","daí","de cima","de onde","de trás","deitar-se","dentro","depois","direita","direito","em frente","encontrar","entrar","entre","esse","este","ficar","fora","ir","isso","isto","levantar-se","longe","lugar","norte","o mundo","oeste","onde","parar","perto","por onde","sair","sentar-se","sul","viajar","vir"],"a2":["a estrela","a lua","a terra","atravessar","cair","caminhar","causa","cá","dar uma volta","descer","direção","distante","empurrar","esquerdo","estar parado","exercício","ir-se embora","junto","levantar","levar","lá","mexer","para dentro","passar","passear","por cima","próximo","puxar","pôr","região","regressar","saltar","seguinte","subir","sítio","trazer","vir-se embora","virar","voltar","último"]},{"id":"A3","ru":"Размер и форма","pt":"Dimensionais","a1":["alto","calor","comprido","curto","frio","gordo","grama","grande","largo","litro","magro","metro","número","pequeno","quente","quilo","quilómetro"],"a2":["apertado","centímetro","cheio","comprimento","estreito","grau","leve","metro quadrado","médio","pesado","peso","profundo","quilómetro quadrado","tamanho único","temperatura","ter frio","vazio"]},{"id":"A4","ru":"Время","pt":"Temporais","a1":["abril","acabar","agora","agosto","amanhã","ano","até","até agora","cedo","continuar","costumar","de dia","de manhã","depressa","desde","devagar","dezembro","dia","domingo","esta manhã","fevereiro","fim de semana","hoje","hora","horário","inverno","janeiro","julho","junho","logo","maio","mais cedo","mais tarde","manhã","março","meia-noite","meio-dia","minuto","mudar","muito","mês","noite","novembro","nunca","outono","outubro","pouco tempo","primavera","princípio","quando","quarta","quinta","seguir","segunda","segundo","semana","sempre","setembro","sexta","sábado","tarde","terminar","terça","verão","vez"],"a2":["a estação","a trovoada","adiado","adiantar","adiar","ainda","aniversário","ano passado","ano que vem","ano seguinte","anteontem","anterior","antes da hora","antes do tempo","antigamente","atrasar","atraso","bocado","breve","carnaval","começo","conclusão","data","de repente","demora","demorar","depois da hora","depois de amanhã","durante","durar","em breve","enquanto","fechar","feriado","ficar para depois","fim","final de tarde","fins de semana","frequente","frequentemente","há dois dias","há duas horas","imediatamente","já","lentamente","lento","logo à tarde","longo","mais logo","mais uma vez","meia hora","momento","morte","mudança","muitas vezes","muito tempo","mês anterior","mês passado","naquela manhã","neste momento","normalmente","novamente","o calendário","o futuro","o início","o passado","ontem","outra vez","para a semana","para o mês","por agora","poucas vezes","páscoa","quarto de hora","quase nunca","rapidamente","rápido","sem parar","século","só","só uma vez","todas as manhãs","tornar-se","trocar","umas horas"]},{"id":"A5","ru":"Количество","pt":"Quantitativas","a1":["apenas","catorze","cem","cinco","copo","dez","dezanove","dezasseis","dezassete","dezoito","dois","doze","gente","mais","menos","mil","milhão","nove","oito","onze","pouco","preço","primeiro","quanto","quantos","quatro","quinhentos","quinze","seis","sete","também","terceiro","todo","treze","trinta","três","um","vinte","zero"],"a2":["a parte","algum","ambos","aumentar","bastante","cada","cinquenta","demais","demasiado","dezena","diminuir","décimo","dúzia","meio","metade","nada","nenhum","nono","noventa","oitavo","oitenta","outro","pacote","quarenta","quase","quinto","sessenta","setenta","sexto","sétimo","totalmente","tudo","tão","vários"]},{"id":"A6","ru":"Качества","pt":"Qualitativas","a1":["amarelo","ar","azul","bom","branco","castanho","cheirar bem","cinzento","como","contente","cor","cor de laranja","cor-de-rosa","doce","doente","duro","encarnado","entrada","feliz","forte","fraco","gostar","lavar","limpar","madeira","mal","metal","mole","novo","olhar","ouvir","pano","papel","pintar","plástico","preto","pronto","roxo","saber bem","saída","som","sujar","triste","velho","ver","verde","vermelho","vidro","água","óculos"],"a2":["a força","aberto","abrir","algodão","amargo","antigo","aspeto","azedo","barulho","bege","cheiro","claro","cristal","curioso","círculo","escuro","familiar","fechado","ferido","forma","gosto","grená","gritar","grito","húmido","lado","lavado","lilás","limpo","lã","mau estado","moderno","molhado","molhar","morno","morto","nervoso","o sentimento","ouro","partido","pele","perceber","pintado","prata","quadrado","redondo","resistente","sabor","saída de emergência","secar","seco","sentir","silêncio","suave","sujo","tapar","tecido","ter cheiro","ter gosto","tinta","usado","ver-se","ver-se bem","vinho tinto","vista","vivo","voz","zangado"]},{"id":"A7","ru":"Оценка","pt":"Avaliativas","a1":["adorar","barato","bem","bonito","caro","certo","conseguir","custar","difícil","errado","estar bem","feio","fácil","importante","mau","pagar","preferir","querer","saber","talvez","todos os dias","usar"],"a2":["absolutamente","aceitar","acertar","apetecer","complicado","conhecido","correto","desejar","detestar","dever ser","dia-a-dia","diferente","disponível","erro","especialmente","esquisito","estar certo","estranho","facilmente","falso","ganhar","giro","habitual","impossível","justo","lindo","melhor","necessário","normal","pior","poder","possível","preparado","proibido","prático","realmente","recusar","regular","regularmente","rotina","sem importância","simples","simplesmente","sobretudo","tentar","uso","utilizar","valer","valor","verdadeiro","útil"]},{"id":"A8","ru":"Мышление и речь","pt":"Mentais","a1":["a língua","a palavra","achar","adeus","boa noite","boa tarde","bom dia","com licença","conhecer","de nada","desculpa","desculpar","dever","dizer","escrever","esperar","explicar","falar","não","o problema","obrigado","olá","pensar","pergunta","perguntar","por favor","qual","quem","repetir","responder","resposta","sim"],"a2":["a dúvida","a experiência","a informação","a lista","a maneira","a memória","a razão","a regra","a situação","a verdade","acreditar","agradecer","avisar","aviso","certeza","compreender","concordar","considerar","contar","conversa","convidar","convite","corrigir","descobrir","discutir","entender","errar","escutar","esquecer-se","ideia","imaginar","inteligente","lembrar-se","negar","o exemplo","observar","opinião","pedido","proibir","recado","reparar","resolver","significar","ter a certeza","traduzir","verificar"]},{"id":"A9","ru":"Связки и отношения","pt":"Relacionais","a1":["assim","dar","então","mas","para","por","porque","porquê","sobre"],"a2":["a ordem","afinal","além de","apesar de","causar","concluir","dono","em vez de","embora","juntar","juntos","mesmo","mesmo assim","motivo","nem","permitir","por causa de","por essa razão","por isso","por outro lado","por que razão","portanto","provocar","qualquer","se","separados","separar","tal"]},{"id":"B1","ru":"Личные данные","pt":"Identificação pessoal","a1":["a filha","a pessoa","a tia","adulto","agradável","alegre","amar","antipático","apartamento","apelido","aprender","apresentar-se","assinar","assinatura","aula","avenida","avó","avô","biblioteca","bilhete de identidade","básico","carta de condução","cartão de cidadão","casa","casado","chamar","chamar-se","companheiro","computador","criança","código postal","data de nascimento","deus","divorciado","email","endereço de email","ensino secundário","enviar","escola","estado civil","estudante","estudar","exame","família","fax","fazer","feminino","filho","género","homem","idade","idoso","instituto","interessante","internet","irmã","jovem","judeu","licenciatura","ligar","local de trabalho","louro","lugar de nascimento","mandar um fax","marido","masculino","menina","menino","mensagem","morada","morar","moreno","mulher","mãe","namorado","neto","nome completo","nome próprio","número da porta","número de telefone","o amigo","o irmão","o nome","os pais","pai","passaporte","praça","primo","professor","profissão","rapariga","rapaz","religião","rua","ruivo","secundário","senhor","senhora","separado","sexo","simpático","sms","solteiro","superior","telefonar","telefone","telemóvel","tio","tirar","trabalho","unido de facto","universidade","universitário","viúvo"],"a2":["a namorada","a neta","a prima","abraçar","academia","altura","alugada","amável","apresentar","arrendada","bebé","beijar","bigode","cachecol","calmo","calçar","cartão de estudante","casa própria","casar-se","cave","chapéu","cliente","colégio","compreensivo","concelho","cumprimentar","cunhado","departamento","dia de anos","distrito","divorciar-se","educado","egoísta","empresa","encaracolado","endereço","ensinar","escritório","estar careca","estar reformado","estúpido","ex","fazer anos","filho único","firma","franja","freguesia","frente","fábrica","genro","igreja","impressora","imprimir","instituição","irmãos gémeos","juntar-se","luvas","marcar","matrícula","medir","mesa de reuniões","mestrado","miúdo","montar","mudar de casa","namorar","natal","negócio","noivo","nora","o aluno","o sobrinho","ondulado","organização","otimista","parecer","passe","pedir férias","pedir nacionalidade","pensão","pentear-se","pesar","programa","reforma","rés do chão","sala de reuniões","secretária","separar-se","site de internet","sogro","sorrir","suficiente","ter barba","ter férias","ter uma reunião","tirar fotocópias","trabalhar","título académico","usar gorro","usar óculos","viver juntos"]},{"id":"B2","ru":"Дом и окружение","pt":"Casa e meio-ambiente","a1":["a máquina de lavar","animal","aquecimento","arrendamento","arrendar","arrumar","banheira","cadeira","café","caixa","cama","campo","capital","casa de banho","chave","chover","chuveiro","chávena","cidade","colher","comando","comprar","congelador","cozinha","cão","desligar","despensa","eletricidade","eletrodomésticos","estação de comboios","estrangeiro","faca","fechadura","flor","floresta","fogão","forno","frigorífico","fruto","garagem","garfo","garrafa","gato","guardar","gás","hospital","hotel","janela","jardim","lago","lavatório","lixo","loja","luz","mapa","mar","mau tempo","mesa","museu","nevar","o espelho","o prédio","o vizinho","paragem de autocarro","parede","parque","país","peixe","periquito","piso","placa","planta","porta","praia","prato","praça de táxis","pássaro","quarto","relógio","renda","restaurante","rio","sala de estar","sala de jantar","sanita","sofá","sol","televisão","tempo","toalha","torneira","vender","vento","vídeo","árvore"],"a2":["acender","aldeia","almofada","alugar","aluguer","américa","animal doméstico","apagar","aquecedor","ar condicionado","armário","aspirador","bairro","baixa","banho","boi","botão","cadeirão","cafeteira","campainha","caneca","carregar","cavalo","centro comercial","chuva","clima","cobertor","coelho","colocar","construir","contentor de lixo","continente","corda","corredor","corrente","costa","câmara municipal","céu","elevador","erva","escadas","esquentador","esquina","estante","europa","fatura","ferro de engomar","ficha","fio","folha","fresco","frigideira","galinha","galo","gaveta","habitante","hall","humidade","inquilino","interior","jarro","lareira","lava-louça","lençol","louça","lâmpada","margem","mesa de cabeceira","micro-ondas","mobília","monte","mosca","mosquito","multibanco","móvel","natureza","nevoeiro","nordeste","noroeste","nuvem","o candeeiro","o edifício","o tapete","oceano","paisagem","panela","pano da louça","parque natural","partilhar casa","portão","prateleira","procurar casa","proprietário","quintal","ramo de flores","recibo","reciclagem","rosa","rosto","roupeiro","secador","selvagem","senhorio","sudeste","sudoeste","tabuleiro","tacho","tempestade","teto","toalha de mãos","tomada","torradeira","trancar","vaca","varanda","vila","wifi","zona","áfrica","ásia","égua"]},{"id":"B3","ru":"Повседневная жизнь","pt":"Vida diária","a1":["ajudar","almoçar","almoço","buscar","caderno","caneta","chegar a casa","colega","começar a trabalhar","curso","deixar","descansar","despir-se","disciplina","horário de trabalho","ir às compras","jantar","lanchar","lanche","lavar-se","livro","lápis","pequeno-almoço","quadro","recreio","sair da escola","sair do trabalho","sala de aula","semestre","supermercado","turma","vestir-se"],"a2":["acompanhar","agarrar","aprovar","atender uma chamada","chefe","chá","combinar","criar","esconder","escovar os dentes","estar disponível","fazer a barba","folga","gabinete","impostos","ir ao quadro","mandar","manter","manual","maquilhar-se","marcador","material","o emprego","o salário","oferecer","prova","realizar","receção","reprovar","sair mais tarde","segurar","sonhar","ter aulas","teste","tomar","tomar café","trabalhos de casa","tratar","ver televisão"]},{"id":"B4","ru":"Досуг","pt":"Tempos livres","a1":["a bola","a foto","arte","brincadeira","brincar","cantar","circo","conversar","correr","dançar","desporto","filme","futebol","férias","história","hobby","interesse","ir ao cinema","jogar","jogar futebol","jogo","jornal","ler","música","nadar","natação","passatempo","poema","página","revista","rádio","teatro","ter tempo","tocar"],"a2":["a cultura","a notícia","a tradição","andar de bicicleta","aproveitar","artigo","artista plástico","ator","atriz","atuar","autor","bailarino","banda","basquetebol","bilhete","boneca","brinquedo","canal de televisão","cantor","canção","capa","carrinho","cartas","cinema","colorir","concerto","conferência","conto","copiar","dança","dar uma festa","debate","debater","descarregar","desenhar","desenho","desocupado","desportista","divertir-se","duração","empatar","escritor","estar de férias","estar livre","exposição","fazer um curso","feira do livro","ficção","fotografia","fã","ginásio","ginástica","gravar","guitarra","guitarrista","jogador","jogar contra","jogo de computador","jogo do galo","jornal diário","jornalista","leitura","linha","literatura","livraria","notícias","o bar","obra de teatro","partida de ténis","pesquisar","peça","piano","pintura","piscina","podcast","poesia","portátil","praticar","praticar desporto","programa de televisão","público","reservar um bilhete","ser fã","surf","telejornal","treinar","ténis","título","voleibol","xadrez","youtube"]},{"id":"B5","ru":"Поездки и транспорт","pt":"Viagens e deslocações","a1":["a ponte","aeroporto","agência de turismo","apanhar","autocarro","avião","bagagem","balcão de informações","barco","bicicleta","cama individual","caminho","carro","carteira","chave do quarto","comboio","comodidades","condutor","conta","data de chegada","destino","dinheiro","documento de identificação","em dinheiro","estacionamento","estadia","estrada","férias na praia","ir em frente","mala","montanha","mota","motorista","neve","pagar com cartão","parque de campismo","partida","porto","preço por noite","procurar","quarto de casal","quarto duplo","reserva","saco","taxista","tenda","turismo","turista","táxi","viagem","viajar de carro","virar à esquerda","visita","visitar"],"a2":["a areia","alfândega","alojamento","andar de carro","andar de táxi","apanhar um táxi","apartamento de férias","assistente de bordo","aterrar","autorização de residência","bagagem de mão","bilheteira","caixote","cartão de crédito","cartão multibanco","castelo","check-in","chegadas","cinco estrelas","classe económica","classe executiva","conduzir","cortar","cruzamento","dar passagem","declaração","depósito de bagagem","descolar","desconto","devolução","distância","elétrico","embarcar","embrulho","encher o depósito","entrega","especial","estacionar","estar cheio","estar verde","excursão","exterior","fazer a mala","fazer planos","fazer uma reserva","fronteira","galeria de arte","gasolina","gorjeta","guia turístico","haver quartos disponíveis","hóspede","lavar o carro","mala de bebé","mecânico","meia pensão","meter gasóleo","moeda estrangeira","mudar de comboio","o semáforo","oferta","origem","pacote de férias","para trás","partidas","passageiro","passagem","passeio","pedir direções","pensão completa","piloto","piscina interior","primeira classe","promoção","quarteirão","reservar","residência","roda","sair do táxi","seguir em frente","segunda classe","seguro de viagem","servir o pequeno-almoço","serviço de quarto","viajar de avião","visto de turista","voltar atrás","voo"]},{"id":"B6","ru":"Здоровье и гигиена","pt":"Saúde e higiene","a1":["a orelha","a saúde","acidente","acordar","adormecer","ambulância","aspirina","boca","cabelo","cabeça","cansado","cara","clínica","comprimido","constipação","coração","corpo","dentista","doença","doer","dor","dormir","duche","enfermeiro","escovar","estar acordado","estar com fome","estar constipado","farmacêutico","farmácia","ferida","fumar","gripe","ibuprofeno","lavar os dentes","medicamento","médico","nariz","o joelho","o ombro","olho","paracetamol","partir","queimar","sabonete","sabão","sangue","sede","sentir-se","sono","ter fome","tomar banho"],"a2":["adoecer","alergia","ansiedade","barbear-se","barriga","braço","centro de saúde","champô","chorar","colocar pomada","coluna","comer bem","consulta médica","consultório","costas","creme de mãos","dedo","dente","depressão","desodorizante","doer a cabeça","dormir bem","emagrecer","engordar","escova de dentes","espirrar","estar nervoso","estômago","febre","ficar doente","garganta","gel duche","gilete","gotas","horário de visitas","injeção","ir ao médico","lavar a roupa","levar uma injeção","magoar um pé","melhorar","membro","mão","médico de família","ouvido","paciente","papel higiénico","pasta de dentes","pastilha","peito","penso","penso higiénico","pente","pentear","perna","pescoço","piorar","pomada","preocupar-se","preservativo","pílula","respirar","rir","salvar","segurança social","ser alérgico","ser saudável","stress","ter gripe","ter vontade","tomar um medicamento","tosse","tossir","tronco","vacina","visitar um paciente","água morna"]},{"id":"B7","ru":"Покупки","pt":"Compras","a1":["bebida","calças","camisa","comida","cêntimo","euro","florista","medida","mercado","moeda","nota","o casaco","o vestido","padaria","receber","saia","sapatos","t-shirt","tamanho","total","troco"],"a2":["a mochila","alimento","anel","atender","atum","balcão","biquíni","blusa","blusão","botas","brincos","bóxeres","calções de banho","camisola","colar","cuecas","despir","devolver","dúzia de ovos","emprestar","esparguete","experimentar","fato","fato de banho","gastar","gorro","lata de tomate","lenço","litro de leite","loja de roupa","meias","meio quilo","mostrar","nylon","o cinto","pacote de arroz","pagamento","papelaria","pijama","porta-moedas","poupar","provador","quantia","quilo de batatas","roupa","saldos","sapataria","secção de homem","soutiã","unidade","vendedor","vestir","óculos de sol"]},{"id":"B8","ru":"Еда","pt":"Alimentação","a1":["alimentação","arroz","açúcar","banana","batata","beber","carne","carne de vaca","cereal","chocolate","comer","cozinhar","ementa","empregado","frango","fruta","gelado","laranja","leite","massa","maçã","menu","o morango","os legumes","ovo","pedir","pimenta","porco","preparar","provar","pão","sal","salada","sopa","tomar o pequeno-almoço","tomate","trigo","vegetal"],"a2":["alface","alho","amêndoa","assado","assar","azeite","bacalhau","batatas fritas","bater","bica","bolacha","bolo","bom apetite","cafetaria","café cheio","caloria","camarão","cebola","cenoura","cerveja","chef","colher de sopa","com gás","comida chinesa","copo de vinho","couve","cozer","cozido","cozinheiro","decidir","descafeinado","descascar","dieta","dose","empregado de mesa","encher","energia","escolher","farinha","fazer o pequeno-almoço","ferver","fiambre","fritar","frito","gamba","grelhado","grelhar","guardanapo","indiano","ingrediente","iogurte","italiano","lata","mal cozido","mal passado","manteiga","melancia","menu do dia","milho","mililitro","misturar","natural","noz","omelete","pastelaria","peru","peso corporal","picar","piquenique","piza","prato principal","pão com manteiga","pêra","queijo","receita","refeição","reservar mesa","salmão","salsa","salsicha","sandes mista","saudável","servir","sobremesa","sumo","tangerina","temperar","tempero","tempo de preparação","torrada","torrado","torrar","uva","vegetariano","vinagre","vinho","vitamina","água mineral"]},{"id":"B9","ru":"Услуги","pt":"Serviços","a1":["ajuda","banco","bombeiro","carta","cartão","correios","envelope","fazer uma chamada","perder","polícia","postal","roubar","selo"],"a2":["arranjar","avariar","caixa multibanco","carta digital","carteiro","chamar a polícia","cheque","correios online","depositar","empregado dos correios","entregar","fechar uma conta","funcionar","ir aos correios","marco de correio","meter","número de conta","número de emergência","o correio","posto dos correios","preencher","queixa","receber uma carta","saldo negativo","saldo positivo","socorro","transferir"]}];
+/* Темы словника: теперь нужны только имена и порядок — сами слова, их уровень
+   и тема лежат в общей колоде на сервере. Раньше здесь было 90 КБ словника. */
+const TEMAS=[{id:"A1",ru:"Бытие"},{id:"A2",ru:"Пространство"},{id:"A3",ru:"Размер и форма"},{id:"A4",ru:"Время"},{id:"A5",ru:"Количество"},{id:"A6",ru:"Качества"},{id:"A7",ru:"Оценка"},{id:"A8",ru:"Мышление и речь"},{id:"A9",ru:"Связки и отношения"},{id:"B1",ru:"Личные данные"},{id:"B2",ru:"Дом и окружение"},{id:"B3",ru:"Повседневная жизнь"},{id:"B4",ru:"Досуг"},{id:"B5",ru:"Поездки и транспорт"},{id:"B6",ru:"Здоровье и гигиена"},{id:"B7",ru:"Покупки"},{id:"B8",ru:"Еда"},{id:"B9",ru:"Услуги"}];
+const temaRu=id=>{ const t=TEMAS.find(x=>x.id===id); return t?t.ru:"" };
+const temaIdx=id=>TEMAS.findIndex(x=>x.id===id);
 
 const hasWord=w=>cards.some(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w));
 
@@ -1237,17 +1292,17 @@ $('#cardList').onclick=async e=>{
   if(btn.dataset.act==='del'){
     dropCard(c); persist(); renderCards();
     toastUndo('Удалено «'+esc(c.word)+'»','Вернуть',()=>{
-      delete c.deleted;
-      tombs=tombs.filter(t=>t.id!==c.id);
+      touch(c);                       // надгробие снимается той же правкой: deleted=false
       if(!cards.some(x=>x.id===c.id)) cards.unshift(c);
-      touch(c); persist(); renderCards();
+      persist(); renderCards();
       toast('Вернул «'+esc(c.word)+'»');
     });
   }else{
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
+      if(!c.own){ toast('Это слово из общей колоды — его текст один для всех',4000); return }
       const r=(await askAI([{word:c.word}]))[0];
-      c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
+      c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
       c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
       if(r.note!=null) c.note=r.note;
       if(r.level) c.level=String(r.level).trim().toUpperCase();
@@ -1269,38 +1324,10 @@ let studyTema=null;                      // null — вся колода
 let studyLevel=null;                     // выбранный уровень; уровень и тема не совмещаются
 let studyVerbs=false;                    // фильтр «Глаголы» — по части речи из карточки
 const LEVELS=['A1','A2','B1','B2','C1','C2'];
-let TEMA_IDX=null;
-function temaIndex(){
-  if(TEMA_IDX) return TEMA_IDX;
-  TEMA_IDX=new Map();
-  TEMAS.forEach((t,i)=>t.a1.concat(t.a2).forEach(w=>{
-    const k=norm(w); if(!TEMA_IDX.has(k)) TEMA_IDX.set(k,i);
-  }));
-  return TEMA_IDX;
-}
-// Уровень: для словника Camões он известен точно (списки a1/a2 в темах),
-// для своих слов его присылает модель и он лежит в карточке.
-let LVL_IDX=null;
-function levelIndex(){
-  if(LVL_IDX) return LVL_IDX;
-  LVL_IDX=new Map();
-  TEMAS.forEach(t=>{
-    t.a1.forEach(w=>{ const k=norm(w); if(!LVL_IDX.has(k)) LVL_IDX.set(k,'A1') });
-    t.a2.forEach(w=>{ const k=norm(w); if(!LVL_IDX.has(k)) LVL_IDX.set(k,'A2') });
-  });
-  return LVL_IDX;
-}
-function cardLevel(c){
-  const ix=levelIndex();
-  return ix.get(norm(c.word)) || (c.query?ix.get(norm(c.query)):'') || (c.level||'').toUpperCase() || '';
-}
-
-function cardTema(c){
-  const ix=temaIndex();
-  let t=ix.get(norm(c.word));
-  if(t==null&&c.query) t=ix.get(norm(c.query));
-  return t==null?-1:t;
-}
+// Уровень и тема приезжают вместе со словом из общей колоды; у своих слов
+// уровень присылает модель, а темы нет — они падают в «Разное».
+const cardLevel=c=>(c.level||'').toUpperCase();
+const cardTema=c=>c.tema?temaIdx(c.tema):-1;
 const temaKey=t=>t==null?'':String(t);
 const isVerb=c=>(c.pos||'').startsWith('глаг');
 const inTema=c=>studyVerbs?isVerb(c)
@@ -1600,7 +1627,7 @@ $$('nav button').forEach(b=>b.onclick=()=>{
   const v=b.dataset.v; $('#v-'+v).classList.add('on');
   $('main').scrollTop=0;
   if(v==='cards') renderCards();
-  if(v==='set') renderDeckBtn();
+  if(v==='set') renderDecks();
   if(v==='study'){ buildQueue(); current=null; renderStudy(); }
 });
 
@@ -1883,79 +1910,42 @@ $('#goal').onchange=e=>setGoal(e.target.value);
 $('#goal').onblur=e=>{ setGoal(e.target.value); e.target.value=goalOf() };
 $('#goal').addEventListener('keydown',e=>{ if(e.key==='Enter') e.target.blur() });
 
-// импорт остался внутри: на нём держатся загрузка готовой колоды и разовый
-// перенос из старого облачного хранилища
-function importCards(raw){
-  const inc=Array.isArray(raw)?raw:(raw&&raw.cards);
-  if(!Array.isArray(inc)) throw new Error('Неверный файл');
-  let added=0;
-  inc.forEach(c=>{
-    if(!c.word||cards.some(x=>norm(x.word)===norm(c.word)))return;
-    const nc=Object.assign({created:Date.now(),due:Date.now(),interval:0,reps:0,lapses:0},c);
-    delete nc.ease; delete nc.deleted;
-    nc.id=wordId(nc.word);
-    cards.push(nc); touch(nc);
-    added++;
-  });
-  persist(); renderCards();
-  return added;
+/* Колоду больше не раздают и не копируют: слова приезжают из общей базы, а человек
+   выбирает, какие колоды учить. Отсюда исчезли importCards, DECK_V, autoDeck и список
+   retired — слово убрали из колоды, и оно пропало у всех, потому что копий нет. */
+function renderDecks(){
+  const box=$('#deckList'); if(!box) return;
+  const свои=cards.filter(c=>c.own).length;
+  box.innerHTML=decks.map(d=>{
+    const n=[...deck.values()].filter(w=>w.deck===d.id).length;
+    const on=myDecks.has(d.id);
+    return '<button class="deck'+(on?' on':'')+'" data-d="'+esc(d.id)+'" type="button">'+
+      '<span class="t">'+esc(d.name)+'<i>'+plural(n,'слово','слова','слов')+'</i></span>'+
+      '<span class="mark">'+(on?IC_DONE:'')+'</span></button>';
+  }).join('')+(свои?'<div class="hint" style="margin:10px 0 0">И '+
+      plural(свои,'своё слово','своих слова','своих слов')+' — они всегда в тренировке.</div>':'');
 }
-
-const DECK_URL='vocabulario/baralho-completo-A1-A2.json';
-const DECK_V=10;   // растёт, когда в готовую колоду добавляют слова
-
-// Новые слова приезжают сами: нажимать кнопку не нужно ни при первом входе,
-// ни когда колода пополнилась. Уже добавленные слова не трогаются.
-async function autoDeck(){
-  if((settings.deckV||0)>=DECK_V) return;
+$('#deckList').onclick=async e=>{
+  const b=e.target.closest('[data-d]'); if(!b) return;
+  const id=b.dataset.d, было=myDecks.has(id);
+  if(было&&myDecks.size<2){ toast('Хотя бы одна колода нужна'); return }
+  b.disabled=true;
   try{
-    const res=await fetch(DECK_URL,{cache:'no-cache'});
-    if(!res.ok) return;
-    const data=await res.json();
-    const added=importCards(data);
-    // Содержимое карточек колоды обновляем по свежему файлу: правки перевода,
-    // примера или заметки иначе никогда не дойдут до тех, у кого слово уже есть.
-    // Прогресс при этом не трогаем — он принадлежит человеку, а не колоде.
-    let upd=0;
-    const byId=new Map(cards.map(c=>[c.id,c]));
-    (data.cards||[]).forEach(d=>{
-      const c=byId.get(wordId(d.word)); if(!c) return;
-      const было=[c.ru||'',c.ex||'',c.exru||'',c.note||'',c.pos||''].join('');
-      const стало=[d.ru||'',d.ex||'',d.exru||'',d.note||'',d.pos||''].join('');
-      if(было!==стало){
-        c.ru=d.ru||''; c.ex=d.ex||''; c.exru=d.exru||''; c.note=d.note||''; c.pos=d.pos||'';
-        touch(c); upd++;
-      }
-    });
-    // Слова, выведенные из колоды, убираем у всех, кроме тех, кто успел их выучить
-    // или отработать хотя бы трижды: одно случайное повторение — не повод держать
-    // в колоде ненужное слово.
-    let gone=0;
-    if(Array.isArray(data.retired)){
-      const dead=new Set(data.retired);
-      cards.filter(c=>dead.has(norm(c.word))&&!c.archived&&(c.reps||0)<3)
-           .forEach(c=>{ dropCard(c); gone++ });
-      if(gone){ persist(); renderCards() }
+    if(было){
+      const r=await api('/rest/v1/pt_user_decks?user_id=eq.'+auth.user.id+'&deck_id=eq.'+encodeURIComponent(id),
+                        {method:'DELETE'});
+      if(!r.ok) throw new Error(await errText(r));
+      myDecks.delete(id);
+    }else{
+      const r=await api('/rest/v1/pt_user_decks',{method:'POST',
+        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+        body:JSON.stringify({user_id:auth.user.id,deck_id:id})});
+      if(!r.ok) throw new Error(await errText(r));
+      myDecks.add(id);
     }
-    settings.deckV=DECK_V; persistSet(); renderDeckBtn();
-    if(added||gone||upd) toast('Колода обновилась: +'+added+(gone?', убрано '+gone:'')+(upd?', поправлено '+upd:''));
-  }catch(e){ /* без сети попробуем в следующий раз */ }
-}
-$('#loadDeck').onclick=async e=>{
-  const b=e.target, old=b.textContent;
-  b.disabled=true; b.innerHTML='<span class="spin"></span> Загружаю…';
-  try{
-    const res=await fetch(DECK_URL,{cache:'no-cache'});
-    if(!res.ok) throw new Error('Колода недоступна ('+res.status+')');
-    const added=importCards(await res.json());
-    renderDeckBtn();
-    toast(added?'Добавлено '+added+' карточек':'Все карточки уже в колоде');
-  }catch(err){
-    toast(/Failed to fetch|NetworkError/.test(err.message)
-      ? 'Колода доступна только на сайте, не из локального файла'
-      : err.message, 4500);
-  }
-  finally{ b.disabled=false; b.textContent=old }
+    saveDeckCache(); rebuild(); renderDecks(); renderStats(); renderCards();
+  }catch(err){ toast(esc(err.message),4000) }
+  finally{ b.disabled=false }
 };
 
 /* ---------------- аккаунт ---------------- */
@@ -2011,7 +2001,7 @@ async function signIn(email,password){
 async function signOut(quiet){
   if(!quiet) await syncPush();          // хвост правок отдаём до выхода
   auth=null; localStorage.removeItem(LS_AUTH);
-  cards=[]; dirty=new Set(); tombs=[]; syncedAt=''; setDirty=false;
+  cards=[]; prog=new Map(); dirty=new Set(); syncedAt=''; setDirty=false; myDecks=new Set();
   settings={dir:'pt'}; applySettings();
   renderStats(); renderCards();
   showGate(); renderWhoami(); renderSyncState();
@@ -2039,70 +2029,43 @@ function renderWhoami(){
   const b=$('#signOut');
   b.style.display=authed()?'':'none';
   b.onclick=async ()=>{
-    const pend=dirty.size+tombs.length;
+    const pend=dirty.size;
     const q=pend?('Не отправлено изменений: '+pend+'. Попробую отправить и выйти. Продолжить?')
                 :'Выйти из аккаунта? Карточки останутся в облаке.';
     if(confirm(q)) await signOut();
   };
 }
 
-// Кнопка готовой колоды нужна, только пока в колоде не хватает слов словника.
-function renderDeckBtn(){
-  const sec=$('#deckSec'); if(!sec) return;
-  const have=new Set(cards.map(c=>norm(c.word)));
-  sec.style.display=suggestPool().some(it=>!have.has(norm(it.w)))?'block':'none';
-}
-
-/* ---------------- локальная копия колоды ---------------- */
-const cacheKey=()=>'pt.cache.v2.'+auth.user.id;
+/* ---------------- локальные копии ----------------
+   Их две и они разной природы. Колода общая: её кеш не привязан к человеку и
+   переживает смену аккаунта. Прогресс личный: он лежит под ключом пользователя. */
+const cacheKey=()=>'pt.cache.v3.'+auth.user.id;
+const DECK_CACHE='pt.deck.v1';
 
 function saveCache(){
   if(!authed()) return;
-  save(cacheKey(),{cards:cards,settings:settings,dirty:[...dirty],
-                   tombs:tombs,syncedAt:syncedAt,setDirty:setDirty});
+  save(cacheKey(),{prog:[...prog.values()],settings:settings,dirty:[...dirty],
+                   syncedAt:syncedAt,setDirty:setDirty,myDecks:[...myDecks]});
 }
 function loadCache(){
   const c=load(cacheKey(),null)||{};
-  cards=Array.isArray(c.cards)?c.cards:[];
+  prog=new Map((Array.isArray(c.prog)?c.prog:[]).map(x=>[x.id,x]));
   settings=Object.assign({dir:'pt'},c.settings||{});
   dirty=new Set(Array.isArray(c.dirty)?c.dirty:[]);
-  tombs=Array.isArray(c.tombs)?c.tombs:[];
   syncedAt=c.syncedAt||'';
   setDirty=!!c.setDirty;
-  rekeyCache();
+  myDecks=new Set(Array.isArray(c.myDecks)?c.myDecks:[]);
+  loadDeckCache();
+  rebuild();
 }
-// Кеш мог остаться от версии со случайными id — перекладываем на id по слову,
-// иначе правки уедут на сервер под старым ключом и создадут вторую строку.
-function rekeyCache(){
-  let changed=false;
-  const move=c=>{
-    const id=wordId(c.word);
-    if(c.id===id) return;
-    if(dirty.has(c.id)){ dirty.delete(c.id); dirty.add(id) }
-    c.id=id; changed=true;
-  };
-  cards.forEach(move); tombs.forEach(move);
-  const seen=new Map();
-  cards=cards.filter(c=>{
-    const prev=seen.get(c.id);
-    if(!prev){ seen.set(c.id,c); return true }
-    if((c.reps||0)>(prev.reps||0)) Object.assign(prev,c);   // из двух копий оставляем ту, где больше прогресса
-    changed=true; return false;
-  });
-  if(changed) saveCache();
+function saveDeckCache(){
+  save(DECK_CACHE,{words:[...deck.values()],decks:decks,at:deckAt});
 }
-// Наследство версии, где вся колода лежала в одном общем ключе браузера.
-function adoptLegacy(){
-  const old=load(OLD_CARDS,null), owner=load(OLD_OWNER,'');
-  if(Array.isArray(old)&&old.length&&!cards.length&&(!owner||owner===auth.user.id)){
-    cards=old.filter(c=>c&&c.word);
-
-    const os=load(OLD_SET,null);
-    if(os&&os.dir){ settings.dir=os.dir; settings.at=os.at||Date.now(); setDirty=true }
-  }
-  [OLD_CARDS,OLD_SET,OLD_OWNER].forEach(k=>localStorage.removeItem(k));
-  if(!syncedAt) cards.forEach(touch);   // первая синхронизация — отдаём серверу всё, что есть
-  saveCache();
+function loadDeckCache(){
+  const d=load(DECK_CACHE,null)||{};
+  deck=new Map((Array.isArray(d.words)?d.words:[]).map(w=>[w.id,w]));
+  decks=Array.isArray(d.decks)?d.decks:[];
+  deckAt=d.at||'';
 }
 function applySettings(){
   paintDir();
@@ -2114,55 +2077,56 @@ function applySettings(){
 const PAGE=1000, PUSH=300;
 let syncing=false, lastSync=0, syncErr='', flushTimer=null;
 
-function toRow(c){
-  return {user_id:auth.user.id, id:c.id, word:c.word||'', query:c.query||'', pos:c.pos||'',
-    ru:c.ru||'', ex:c.ex||'', exru:c.exru||'', note:c.note||'', level:c.level||'',
-    created:c.created||0, due:c.due||0, ivl:c.interval||0,
-    reps:c.reps||0, lapses:c.lapses||0,
-    archived:!!c.archived, archived_at:c.archivedAt||0,
-    deleted:!!c.deleted, rev:c.rev||c.created||Date.now()};
+/* На сервер уезжает только личное. У слова колоды это прогресс: содержимое лежит
+   в pt_words и человеку не принадлежит. Своё слово едет целиком. */
+function toRow(p){
+  const row={user_id:auth.user.id, id:p.id, word:p.word||'', own:!!p.own,
+    created:p.created||0, due:p.due||0, ivl:p.interval||0,
+    reps:p.reps||0, lapses:p.lapses||0,
+    archived:!!p.archived, archived_at:p.archivedAt||0,
+    deleted:!!p.deleted, rev:p.rev||p.created||Date.now()};
+  if(p.own) Object.assign(row,{query:p.query||'', pos:p.pos||'', ru:p.ru||'',
+    ex:p.ex||'', exru:p.exru||'', note:p.note||'', level:p.level||''});
+  return row;
 }
 function fromRow(r){
-  return {id:r.id, word:r.word, query:r.query||'', pos:r.pos||'', ru:r.ru||'',
-    ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'',
+  const p={id:r.id, own:!!r.own, word:r.word||'',
     created:+r.created||0, due:+r.due||0, interval:+r.ivl||0,
     reps:+r.reps||0, lapses:+r.lapses||0,
-    archived:!!r.archived, archivedAt:+r.archived_at||0, rev:+r.rev||0};
+    archived:!!r.archived, archivedAt:+r.archived_at||0,
+    deleted:!!r.deleted, rev:+r.rev||0};
+  if(p.own) Object.assign(p,{query:r.query||'', pos:r.pos||'', ru:r.ru||'',
+    ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||''});
+  return p;
 }
+const wordRow=r=>({id:r.id, deck:r.deck_id, word:r.word, pos:r.pos||'', ru:r.ru||'',
+  ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'', tema:r.tema||'',
+  sort:+r.sort||0});
 
 async function flushCards(){
-  if(dirty.size){                    // карточки уже нет — иначе хвост в очереди крутится вечно
-    const have=new Set(cards.map(c=>c.id));
-    [...dirty].forEach(id=>{ if(!have.has(id)) dirty.delete(id) });
-  }
-  if(!dirty.size&&!tombs.length) return;
-  const live=cards.filter(c=>dirty.has(c.id));
-  const sent=live.map(c=>({id:c.id,rev:c.rev}));
-  const sentTombs=tombs.length;
-  const rows=live.concat(tombs).map(toRow);
+  [...dirty].forEach(id=>{ if(!prog.has(id)) dirty.delete(id) });   // хвост от исчезнувшей строки
+  if(!dirty.size) return;
+  const live=[...dirty].map(id=>prog.get(id));
+  const sent=live.map(p=>({id:p.id,rev:p.rev}));
+  const rows=live.map(toRow);
   for(let i=0;i<rows.length;i+=PUSH){
     const r=await api('/rest/v1/pt_cards?on_conflict=user_id,id',{method:'POST',
       headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
       body:JSON.stringify(rows.slice(i,i+PUSH))});
     if(!r.ok) throw new Error(await errText(r));
   }
-  sent.forEach(s=>{
-    const c=cards.find(x=>x.id===s.id);
-    if(!c||c.rev===s.rev) dirty.delete(s.id);   // пока отправляли, карточку могли изменить снова
+  sent.forEach(x=>{
+    const p=prog.get(x.id);
+    if(!p||p.rev===x.rev) dirty.delete(x.id);   // пока отправляли, строку могли изменить снова
   });
-  tombs=tombs.slice(sentTombs);
   saveCache();
 }
 
 function applyRow(row){
   if(dirty.has(row.id)) return;                  // своя неотправленная правка новее серверной
-  const i=cards.findIndex(c=>c.id===row.id);
-  if(row.deleted){ if(i>=0) cards.splice(i,1); return }
-  const c=fromRow(row);
-  if(i>=0){ cards[i]=c; return }
-  const j=cards.findIndex(x=>norm(x.word)===norm(c.word));  // то же слово, заведённое под другим id
-  if(j>=0){ if(!dirty.has(cards[j].id)) cards[j]=c; return }
-  cards.push(c);
+  const было=prog.get(row.id);
+  if(было&&(+row.rev||0)<(было.rev||0)) return;  // пришла устаревшая версия
+  prog.set(row.id,fromRow(row));
 }
 async function pullCards(){
   let offset=0, mark=syncedAt;
@@ -2178,6 +2142,49 @@ async function pullCards(){
     offset+=rows.length;
   }
   syncedAt=mark;
+}
+
+/* Каталог колод маленький — тянем целиком. Человек без подписок — это новый человек:
+   подписываем на всё опубликованное, иначе он войдёт и увидит пустой экран. */
+async function pullDecks(){
+  const r=await api('/rest/v1/pt_decks?select=*&order=sort.asc');
+  if(!r.ok) throw new Error(await errText(r));
+  decks=(await r.json()).filter(d=>d.published);
+  const u=await api('/rest/v1/pt_user_decks?select=deck_id&user_id=eq.'+auth.user.id);
+  if(!u.ok) throw new Error(await errText(u));
+  myDecks=new Set((await u.json()).map(x=>x.deck_id));
+  if(!myDecks.size&&decks.length){
+    const ins=await api('/rest/v1/pt_user_decks',{method:'POST',
+      headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+      body:JSON.stringify(decks.map(d=>({user_id:auth.user.id,deck_id:d.id})))});
+    if(ins.ok) decks.forEach(d=>myDecks.add(d.id));
+  }
+  saveDeckCache();
+}
+// Слово, выпавшее из колоды, удаляется на сервере без надгробия — по метке о нём
+// не узнать. Поэтому сверяем число строк: разошлось — перечитываем колоду целиком.
+async function checkDeck(){
+  const r=await api('/rest/v1/pt_words?select=id&limit=1',{headers:{'Prefer':'count=exact'}});
+  if(!r.ok) return;
+  const n=+((r.headers.get('content-range')||'').split('/')[1]||0);
+  if(n&&n<deck.size){ deck=new Map(); deckAt='' }
+}
+// Докачка по метке: во второй раз не приезжает ничего.
+async function pullWords(){
+  let offset=0, mark=deckAt, got=0;
+  for(;;){
+    const r=await api('/rest/v1/pt_words?select=*'+
+      (deckAt?'&updated_at=gt.'+encodeURIComponent(deckAt):'')+
+      '&order=updated_at.asc,id.asc&limit='+PAGE+'&offset='+offset);
+    if(!r.ok) throw new Error(await errText(r));
+    const rows=await r.json();
+    if(!rows.length) break;
+    rows.forEach(x=>deck.set(x.id,wordRow(x)));
+    mark=rows[rows.length-1].updated_at; offset+=rows.length; got+=rows.length;
+  }
+  deckAt=mark;
+  if(got) saveDeckCache();
+  return got;
 }
 
 // Настройки маленькие и меняются редко — им хватает старой таблицы pt_data.
@@ -2212,22 +2219,20 @@ const friendlyErr=e=>/Failed to fetch|NetworkError|network/i.test(e.message||'')
 
 async function syncNow(){
   if(!authed()||syncing) return;
-  const first=!syncedAt;
   syncing=true; renderSyncState();
   try{
     await flushCards();
+    await pullDecks();
+    await checkDeck();
+    await pullWords();
     await pullCards();
-    const blob=await pullSettings();
-    if(first&&!cards.length&&blob&&Array.isArray(blob.cards)&&blob.cards.length){
-      const n=importCards(blob);          // колода из старого облачного формата — переносим разово
-      if(n){ await flushCards(); toast('Перенесено из старого хранилища: '+n) }
-    }
+    await pullSettings();
     if(setDirty) await pushSettings();
     syncErr=''; lastSync=Date.now();
   }catch(e){ syncErr=friendlyErr(e) }
   finally{
-    syncing=false; saveCache();
-    renderStats(); renderCards(); renderSyncState();
+    syncing=false; rebuild(); saveCache();
+    renderStats(); renderCards(); renderDecks(); renderSyncState();
   }
 }
 async function syncPush(){
@@ -2241,7 +2246,7 @@ async function syncPush(){
   finally{
     syncing=false; saveCache(); renderSyncState();
     // очередь не разошлась (сеть отвалилась или во время отправки успели поправить ещё) — пробуем снова
-    if(dirty.size||tombs.length||setDirty) scheduleFlush(syncErr?30000:1500);
+    if(dirty.size||setDirty) scheduleFlush(syncErr?30000:1500);
   }
 }
 function scheduleFlush(ms){
@@ -2251,7 +2256,7 @@ function scheduleFlush(ms){
 }
 function renderSyncState(){
   const el=$('#syncState'); if(!el) return;
-  const pend=dirty.size+tombs.length;
+  const pend=dirty.size;
   const at=lastSync?new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'';
   el.textContent = !authed() ? 'Вход не выполнен'
     : syncing ? 'Синхронизирую…'
@@ -2263,10 +2268,9 @@ function renderSyncState(){
 }
 
 async function startSession(){
-  hideGate(); loadCache(); adoptLegacy(); applySettings();
-  renderWhoami(); renderStats(); renderCards(); renderSyncState();
+  hideGate(); loadCache(); applySettings();
+  renderWhoami(); renderStats(); renderCards(); renderDecks(); renderSyncState();
   await syncNow();
-  await autoDeck();
   seedToday(); renderGoal();
 }
 
@@ -2278,8 +2282,8 @@ document.addEventListener('visibilitychange',()=>{
 window.addEventListener('online',()=>{ renderSyncState(); if(authed()) syncNow() });
 window.addEventListener('offline',renderSyncState);
 window.addEventListener('pagehide',()=>{
-  if(!authed()||syncing||(!dirty.size&&!tombs.length)) return;
-  const rows=cards.filter(c=>dirty.has(c.id)).concat(tombs).map(toRow);
+  if(!authed()||syncing||!dirty.size) return;
+  const rows=[...dirty].map(id=>prog.get(id)).filter(Boolean).map(toRow);
   if(rows.length>80) return;   // keepalive ограничен по размеру, остальное уедет при следующем открытии
   fetch(SUPA_URL+'/rest/v1/pt_cards?on_conflict=user_id,id',{method:'POST',keepalive:true,
     headers:{'apikey':SUPA_KEY,'Content-Type':'application/json',
