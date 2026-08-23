@@ -492,7 +492,6 @@
 
   /* empty */
   .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
-  .more{text-align:center;color:var(--label2);font-size:13px;padding:14px 0 4px}
   .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
   .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
 
@@ -1122,20 +1121,10 @@ $('#attachClear').onclick=clearAttach;
   });
 })();
 
-// Вставили в строку целый абзац — это не слово, а текст на разбор. Список от текста
-// отличает не запятая (в живом португальском абзаце она почти всегда есть), а длина
-// кусков между запятыми и точка в конце: «o banco, a chave» — список, «Ontem fui ao
-// mercado, comprei pão e queijo.» — текст.
-const looksLikeText=t=>{
-  if(/[.!?…]\s+\S/.test(t)) return true;              // несколько предложений — точно текст
-  if(t.split(/\s+/).filter(Boolean).length<5) return false;
-  const parts=t.split(/[,;]/).map(x=>x.trim()).filter(Boolean);
-  return parts.some(x=>x.split(/\s+/).length>3)   // кусок длиннее выражения — это фраза
-      || /[.!?…]$/.test(t);                       // законченное предложение
-};
+// вставили в строку целый абзац — это не слово, а текст на разбор
 $('#wordInput').addEventListener('paste',e=>{
   const t=(e.clipboardData&&e.clipboardData.getData('text')||'').trim();
-  if(!t||!looksLikeText(t)) return;
+  if(!t||/[,;]/.test(t)||t.split(/\s+/).length<5) return;
   e.preventDefault();
   showParse(t,'');
 });
@@ -1208,28 +1197,6 @@ function searchRank(c,q){
   if(words(ru).some(t=>t.startsWith(q))) return 3;   // то же самое по переводу
   return 4;                                         // середина слова совпадением не считаем
 }
-/* Список рисуется порциями. Целиком это 1829 карточек, 34 тысячи узлов и треть секунды,
-   и цена не разовая: renderCards() зовётся в конце каждой синхронизации, то есть при
-   каждом возврате в приложение. В DOM держим только то, что человек долистал; следующая
-   порция дорисовывается, когда до конца списка остаётся экран с небольшим запасом.     */
-const CARD_PAGE=60, CARD_TAIL=800;   // порция и запас до конца списка, при котором рисуем следующую
-let cardList=[], cardShown=0, cardKey='';
-
-function growCards(n){
-  const tail=$('#cardMore'); if(!tail) return;
-  const part=cardList.slice(cardShown,cardShown+(n||CARD_PAGE));
-  cardShown+=part.length;
-  if(part.length) tail.insertAdjacentHTML('beforebegin',part.map(cardHTML).join(''));
-  if(cardShown>=cardList.length) tail.remove();
-  else tail.textContent='Ещё '+plural(cardList.length-cardShown,'карточка','карточки','карточек');
-}
-// Прокручивается только main — по нему и смотрим, не пора ли дорисовать следующую порцию.
-$('main').addEventListener('scroll',()=>{
-  if(cardShown>=cardList.length||!$('#v-cards').classList.contains('on')) return;
-  const m=$('main');
-  if(m.scrollHeight-m.scrollTop-m.clientHeight<CARD_TAIL) growCards();
-},{passive:true});
-
 function renderCards(){
   const q=deacc(norm($('#search').value));
   const byFilter=cards.filter(c=>cardFilter==='all'||(cardFilter==='done'?c.archived:!c.archived));
@@ -1242,21 +1209,13 @@ function renderCards(){
     segs[1].textContent='Изучаю '+(cards.length-done);
     segs[2].textContent='Выучено '+done;
   }
-  // тот же список, что и был (пришла синхронизация) — возвращаем и долистанное, и прокрутку
-  const key=cardFilter+'|'+q;
-  const keep=key===cardKey?cardShown:0;
-  const top=$('main').scrollTop, здесь=$('#v-cards').classList.contains('on');
-  cardKey=key; cardList=list; cardShown=0;
   $('#cardList').innerHTML = list.length
-    ? '<div class="more" id="cardMore"></div>'
+    ? list.map(cardHTML).join('')
     : '<div class="empty">'+IC_DECK+(cards.length
         ? (cardFilter==='done'&&!q
             ? '<div>Пока ничего не выучено</div><div class="sub">Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь</div>'
             : '<div>Ничего не найдено</div>')
         : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
-  if(!list.length) return;
-  growCards(Math.max(CARD_PAGE,keep));
-  if(keep&&здесь) $('main').scrollTop=top;
 }
 $('#cardFilter').onclick=e=>{
   const b=e.target.closest('button'); if(!b)return;
@@ -1265,30 +1224,6 @@ $('#cardFilter').onclick=e=>{
   renderCards();
 };
 $('#search').oninput=renderCards;
-/* Слово от модели может отличаться от того, что на карточке: «sai» → «sair».
-   id выводится из слова, значит карточку надо переложить на новый id, а не оставить
-   под старым — иначе в колоде окажутся два одинаковых слова под разными ключами,
-   ровно то задвоение, ради которого делалась миграция 003. */
-function renameCard(c,word){
-  const id=wordId(word);
-  if(id===c.id){ c.word=word; return c }
-  const twin=cards.find(x=>x!==c&&x.id===id);
-  const keep=twin||Object.assign({},c);
-  if(twin){
-    // Прогресс принадлежит человеку: из двух копий берём лучшее по каждому полю.
-    // «Выучено» не теряется никогда — иначе слово молча вернулось бы в тренировку,
-    // а в счётчике дня оно уже засчитано, и число выученных разошлось бы с целью.
-    twin.reps=Math.max(twin.reps||0,c.reps||0);
-    twin.lapses=Math.max(twin.lapses||0,c.lapses||0);
-    if(c.archived&&!twin.archived){ twin.archived=true; twin.archivedAt=c.archivedAt||Date.now() }
-    if(!twin.archived&&(c.due||0)>(twin.due||0)){ twin.interval=c.interval||0; twin.due=c.due }
-  }
-  dropCard(c);                       // старая строка уезжает надгробием, иначе воскреснет с другого устройства
-  keep.id=id; keep.word=word;
-  if(!twin) cards.unshift(keep);
-  touch(keep);
-  return keep;
-}
 $('#cardList').onclick=async e=>{
   const btn=e.target.closest('[data-act]'); if(!btn)return;
   const id=e.target.closest('.card').dataset.id;
@@ -1312,17 +1247,11 @@ $('#cardList').onclick=async e=>{
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
       const r=(await askAI([{word:c.word}]))[0];
-      const word=String(r.word||c.word).trim();
-      const nid=wordId(word), twin=nid!==c.id&&cards.some(x=>x!==c&&x.id===nid);
-      const t=renameCard(c,word);    // слово уточнилось — id едет следом за ним
-      t.pos=r.pos||t.pos; t.ru=r.ru||t.ru;
-      t.ex=r.example_pt||t.ex; t.exru=r.example_ru||t.exru;
-      if(r.note!=null) t.note=r.note;
-      if(r.level) t.level=String(r.level).trim().toUpperCase();
-      touch(t); persist(); renderCards();
-      toast(nid===c.id?'Обновлено'
-           :twin?'Такое слово уже было — карточки объединены в «'+esc(word)+'»'
-           :'Обновлено: теперь «'+esc(word)+'»');
+      c.word=r.word||c.word; c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
+      c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
+      if(r.note!=null) c.note=r.note;
+      if(r.level) c.level=String(r.level).trim().toUpperCase();
+      touch(c); persist(); renderCards(); toast('Обновлено');
     }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
   }
 };
