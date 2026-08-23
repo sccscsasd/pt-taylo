@@ -1335,18 +1335,54 @@ $('#cardList').onclick=async e=>{
       toast('Вернул «'+esc(c.word)+'»');
     });
   }else{
+    // Слово колоды перегенерировать нечего: его текст один для всех и правится колодой.
+    if(!c.own){ toast('Это слово из общей колоды — его текст один для всех',4000); return }
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
-      if(!c.own){ toast('Это слово из общей колоды — его текст один для всех',4000); return }
       const r=(await askAI([{word:c.word}]))[0];
-      c.pos=r.pos||c.pos; c.ru=r.ru||c.ru;
-      c.ex=r.example_pt||c.ex; c.exru=r.example_ru||c.exru;
-      if(r.note!=null) c.note=r.note;
-      if(r.level) c.level=String(r.level).trim().toUpperCase();
-      touch(c); persist(); renderCards(); toast('Обновлено');
-    }catch(err){toast(esc(err.message),4500); btn.disabled=false; btn.innerHTML=old}
+      const word=String(r.word||c.word).trim();
+      const nid=wordId(word);
+      const вКолоде=nid!==c.id&&deck.has(nid);
+      const двойник=nid!==c.id&&!вКолоде&&cards.some(x=>x!==c&&x.id===nid);
+      const t=renameCard(c,word);      // слово уточнилось — ключ едет следом за ним
+      if(t.own){
+        t.pos=r.pos||t.pos; t.ru=r.ru||t.ru;
+        t.ex=r.example_pt||t.ex; t.exru=r.example_ru||t.exru;
+        if(r.note!=null) t.note=r.note;
+        if(r.level) t.level=String(r.level).trim().toUpperCase();
+        touch(t);
+      }
+      persist(); renderCards();
+      toast(nid===c.id ? 'Обновлено'
+           :вКолоде   ? 'Такое слово есть в общей колоде — карточка привязана к нему'
+           :двойник   ? 'Такое слово уже было — карточки объединены в «'+esc(word)+'»'
+                      : 'Обновлено: теперь «'+esc(word)+'»');
+    }catch(err){toast(esc(err.message),4500)}
+    finally{ btn.disabled=false; btn.innerHTML=old }
   }
 };
+
+/* Слово могло уточниться: «sai» → «sair». Ключ выводится из слова, значит карточку надо
+   переложить на новый — иначе она живёт под чужим. Прогресс переносится, «выучено»
+   не теряется ни в одну сторону, а если такое слово уже есть (своё или в колоде),
+   карточки сливаются: две строки на одно слово завести всё равно нельзя. */
+function renameCard(c,word){
+  const id=wordId(word);
+  if(id===c.id){ c.word=word; touch(c); return c }
+  const двойник=cards.find(x=>x!==c&&x.id===id);
+  const цель=двойник||Object.assign({},c,{id:id,own:!deck.has(id)});
+  цель.word=двойник?цель.word:word;
+  if(двойник){
+    цель.reps=Math.max(цель.reps||0,c.reps||0);
+    цель.lapses=Math.max(цель.lapses||0,c.lapses||0);
+    if(c.archived&&!цель.archived){ цель.archived=true; цель.archivedAt=c.archivedAt||Date.now() }
+    if(!цель.archived&&(c.due||0)>(цель.due||0)){ цель.due=c.due; цель.interval=c.interval||0 }
+  }
+  touch(цель);
+  dropCard(c);                       // старая строка уезжает надгробием, иначе воскреснет
+  rebuild();
+  return cards.find(x=>x.id===id)||цель;
+}
 
 /* ---------------- STUDY ---------------- */
 let queue=[], current=null, shown=false, sessionTotal=0, sessionDone=0;
