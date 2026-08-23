@@ -1274,10 +1274,15 @@ function renameCard(c,word){
   if(id===c.id){ c.word=word; return c }
   const twin=cards.find(x=>x!==c&&x.id===id);
   const keep=twin||Object.assign({},c);
-  // из двух копий одного слова оставляем ту, где больше прогресса
-  if(twin&&(c.reps||0)>(twin.reps||0))
-    Object.assign(twin,{reps:c.reps||0, lapses:c.lapses||0, interval:c.interval||0,
-                        due:c.due||Date.now(), archived:!!c.archived, archivedAt:c.archivedAt||0});
+  if(twin){
+    // Прогресс принадлежит человеку: из двух копий берём лучшее по каждому полю.
+    // «Выучено» не теряется никогда — иначе слово молча вернулось бы в тренировку,
+    // а в счётчике дня оно уже засчитано, и число выученных разошлось бы с целью.
+    twin.reps=Math.max(twin.reps||0,c.reps||0);
+    twin.lapses=Math.max(twin.lapses||0,c.lapses||0);
+    if(c.archived&&!twin.archived){ twin.archived=true; twin.archivedAt=c.archivedAt||Date.now() }
+    if(!twin.archived&&(c.due||0)>(twin.due||0)){ twin.interval=c.interval||0; twin.due=c.due }
+  }
   dropCard(c);                       // старая строка уезжает надгробием, иначе воскреснет с другого устройства
   keep.id=id; keep.word=word;
   if(!twin) cards.unshift(keep);
