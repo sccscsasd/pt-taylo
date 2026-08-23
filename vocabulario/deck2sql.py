@@ -1,0 +1,160 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Печатает миграцию, заливающую колоду из JSON в общую таблицу pt_words.
+
+Колоды пишутся руками в vocabulario/*.json — это формат авторства, с историей
+и разбором правок в git. В базу они попадают миграцией, а не из браузера.
+
+    python vocabulario/deck2sql.py a1-a2 > supabase/migrations/007_deck_a1_a2.sql
+
+Настройки колод — в DECKS ниже. Чтобы добавить B1–B2: положить рядом
+baralho-completo-B1-B2.json, дописать сюда запись и выполнить ту же команду.
+
+Уровень и тема берутся из temas-*.json: слово ищется в списках a1/a2 каждой темы.
+Чего там нет — уезжает с пустым уровнем и темой, и скрипт об этом предупреждает.
+"""
+
+import io
+import json
+import os
+import re
+import sys
+
+ЗДЕСЬ = os.path.dirname(os.path.abspath(__file__))
+
+DECKS = {
+    "a1-a2": {
+        "cards": "baralho-completo-A1-A2.json",
+        "temas": "temas-A1-A2.json",
+        "name": "Базовый A1–A2",
+        "descr": "Словник Referencial Camões PLE: 1829 карточек с примерами и заметками",
+        "level_from": "A1",
+        "level_to": "A2",
+        "sort": 10,
+    },
+}
+
+АРТИКЛЬ = re.compile(r"^(o|a|os|as|um|uma)\s+")
+ПУНКТУАЦИЯ = re.compile(r"[.,;:!?\"'()]")
+
+
+def norm(s):
+    """То же, что norm() в index.html и public.pt_norm() в базе."""
+    s = (s or "").lower()
+    s = АРТИКЛЬ.sub("", s)
+    s = ПУНКТУАЦИЯ.sub("", s)
+    return s.strip()
+
+
+def читать(имя):
+    with io.open(os.path.join(ЗДЕСЬ, имя), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def лит(s):
+    """Строковый литерал для SQL."""
+    return "'" + (s or "").replace("'", "''") + "'"
+
+
+def собрать(ключ):
+    d = DECKS[ключ]
+    колода = читать(d["cards"])
+    темы = читать(d["temas"])
+    темы = темы if isinstance(темы, list) else темы["temas"]
+
+    индекс = {}
+    for t in темы:
+        for уровень in ("a1", "a2"):
+            for слово in t.get(уровень, []):
+                индекс.setdefault(norm(слово), (уровень.upper(), t["id"]))
+
+    выведенные = set(колода.get("retired") or [])
+    строки, без_темы, лишние = [], [], []
+    видели = set()
+
+    for i, c in enumerate(колода["cards"]):
+        слово = (c.get("word") or "").strip()
+        if not слово:
+            continue
+        k = norm(слово)
+        if k in выведенные:
+            лишние.append(слово)
+            continue
+        if k in видели:
+            лишние.append(слово)
+            continue
+        видели.add(k)
+        уровень, тема = индекс.get(k, ("", ""))
+        if not тема:
+            без_темы.append(слово)
+        строки.append((
+            "w:" + k, ключ, слово,
+            c.get("pos") or "", c.get("ru") or "", c.get("ex") or "",
+            c.get("exru") or "", c.get("note") or "", уровень, тема, i,
+        ))
+
+    return d, строки, без_темы, лишние
+
+
+def печатать(ключ, кусок=200):
+    d, строки, без_темы, лишние = собрать(ключ)
+
+    out = sys.stdout
+    out.write("-- Колода «%s» в общей базе слов. Напечатано vocabulario/deck2sql.py\n" % d["name"])
+    out.write("-- Источник: vocabulario/%s + %s, карточек: %d.\n" % (d["cards"], d["temas"], len(строки)))
+    if без_темы:
+        out.write("-- Без темы и уровня (%d): %s\n" % (len(без_темы), ", ".join(без_темы)))
+    out.write("-- Повторное выполнение безопасно: содержимое обновляется, прогресс людей не трогается.\n\n")
+    out.write("begin;\n\n")
+
+    out.write(
+        "insert into public.pt_decks (id, name, descr, level_from, level_to, sort)\n"
+        "values (%s, %s, %s, %s, %s, %d)\n"
+        "on conflict (id) do update set name = excluded.name, descr = excluded.descr,\n"
+        "  level_from = excluded.level_from, level_to = excluded.level_to, sort = excluded.sort;\n\n"
+        % (лит(ключ), лит(d["name"]), лит(d["descr"]),
+           лит(d["level_from"]), лит(d["level_to"]), d["sort"])
+    )
+
+    поля = "(id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort)"
+    обновление = (
+        "on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,\n"
+        "  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,\n"
+        "  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;\n\n"
+    )
+    for нач in range(0, len(строки), кусок):
+        часть = строки[нач:нач + кусок]
+        out.write("insert into public.pt_words %s values\n" % поля)
+        out.write(",\n".join(
+            "(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d)" % (
+                лит(r[0]), лит(r[1]), лит(r[2]), лит(r[3]), лит(r[4]),
+                лит(r[5]), лит(r[6]), лит(r[7]), лит(r[8]), лит(r[9]), r[10])
+            for r in часть
+        ))
+        out.write("\n" + обновление)
+
+    # Слово, выпавшее из файла колоды, должно исчезнуть и из базы: тогда «вывод слова
+    # из колоды» — это просто удаление из JSON, без списка retired и без чистки у людей.
+    # now() внутри транзакции — время её начала, и триггер ставит его всем тронутым
+    # строкам; у нетронутых метка старее, они и удаляются. Перечислять тысячу id не нужно.
+    out.write(
+        "delete from public.pt_words\n"
+        " where deck_id = %s and updated_at < now();\n\n" % лит(ключ)
+    )
+
+    out.write("commit;\n\n")
+    out.write(
+        "select count(*) as слов, count(*) filter (where level = '') as без_уровня,\n"
+        "       count(distinct tema) as тем\n"
+        "  from public.pt_words where deck_id = %s;\n" % лит(ключ)
+    )
+
+    sys.stderr.write("колода %s: %d слов, без темы %d, пропущено %d\n"
+                     % (ключ, len(строки), len(без_темы), len(лишние)))
+
+
+if __name__ == "__main__":
+    ключ = sys.argv[1] if len(sys.argv) > 1 else "a1-a2"
+    if ключ not in DECKS:
+        sys.exit("неизвестная колода: %s (есть: %s)" % (ключ, ", ".join(DECKS)))
+    печатать(ключ)
