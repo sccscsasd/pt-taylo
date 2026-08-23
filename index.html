@@ -99,11 +99,12 @@
 
   /* controls */
   input,textarea,button{font-family:inherit;font-size:17px;color:inherit}
-  input[type=text],input[type=password],textarea{
+  input[type=text],input[type=password],input[type=email],textarea{
     width:100%;background:var(--group);color:var(--label);
     border:none;border-radius:10px;padding:12px 14px;outline:none;
   }
   input::placeholder,textarea::placeholder{color:var(--label3)}
+  input[type=email]{outline:none}
   textarea{resize:vertical;min-height:110px;line-height:1.45;font-size:16px}
 
   .btn{
@@ -122,19 +123,65 @@
   .row>*{flex:1}
 
   /* экран входа */
+  /* Два мягких пятна теми же двумя акцентами, что и во всём приложении.
+     Именно градиентами, а не размытыми кругами: filter:blur() поднимает слой
+     и оставляет на нём заметный прямоугольный шов. */
   .gate{
-    position:fixed;inset:0;z-index:100;background:var(--bg);
-    display:flex;align-items:center;justify-content:center;padding:24px;
+    position:fixed;inset:0;z-index:100;
+    background:
+      radial-gradient(58% 42% at 8% 2%, rgba(10,132,255,.17), rgba(10,132,255,0) 72%),
+      radial-gradient(62% 46% at 94% 100%, rgba(52,199,89,.15), rgba(52,199,89,0) 72%),
+      var(--bg);
+    display:flex;align-items:center;justify-content:center;
+    padding:24px calc(24px + env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) calc(24px + env(safe-area-inset-left));
   }
   .gate[hidden]{display:none}
-  .gatebox{width:100%;max-width:340px;display:flex;flex-direction:column;gap:10px}
+  @media (prefers-color-scheme:dark){
+    .gate{
+      background:
+        radial-gradient(58% 42% at 8% 2%, rgba(10,132,255,.3), rgba(10,132,255,0) 72%),
+        radial-gradient(62% 46% at 94% 100%, rgba(48,209,88,.2), rgba(48,209,88,0) 72%),
+        var(--bg);
+    }
+  }
+  .gatebox{
+    position:relative;width:100%;max-width:340px;
+    display:flex;flex-direction:column;
+    animation:gateIn .45s cubic-bezier(.2,.7,.3,1) both;
+  }
+  @keyframes gateIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  /* значок тот же, что в иконке вкладки: одно приложение — один знак */
+  .gatebox .mark{
+    width:60px;height:60px;margin:0 auto 16px;border-radius:15px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--blue);color:#fff;
+    font-size:21px;font-weight:600;letter-spacing:.06em;
+    box-shadow:0 10px 26px rgba(10,132,255,.34);
+  }
   .gatebox h1{
     margin:0;font-size:18px;font-weight:600;text-align:center;
     text-transform:uppercase;letter-spacing:.28em;text-indent:.28em;
   }
-  .gatebox p{margin:0 0 10px;font-size:14px;color:var(--label2);text-align:center;line-height:1.4}
-  .gatebox input{background:var(--group)}
-  .gateerr{min-height:18px;font-size:13px;color:var(--red);text-align:center}
+  .gatebox .what{margin:7px 0 22px;font-size:14px;color:var(--label2);text-align:center;line-height:1.4}
+  .gatebox .fields{
+    background:var(--group);border-radius:14px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,.05),0 12px 30px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    .gatebox .fields{box-shadow:0 0 0 .5px var(--sep)}
+  }
+  .gatebox .fields input{
+    display:block;width:100%;padding:15px 16px;
+    border:none;border-radius:0;background:none;color:var(--label);font-size:17px;
+  }
+  .gatebox .fields input+input{border-top:.5px solid var(--sep)}
+  .gatebox .fields input:focus{outline:none;box-shadow:inset 0 0 0 1.6px var(--blue)}
+  .gatebox .btn.primary{
+    margin-top:12px;min-height:50px;border-radius:13px;font-size:17px;
+    box-shadow:0 8px 20px rgba(10,132,255,.3);
+  }
+  .gateerr{min-height:18px;margin-top:10px;font-size:13px;color:var(--red);text-align:center;line-height:1.35}
+  .gatefoot{margin-top:18px;font-size:12.5px;color:var(--label3);text-align:center;line-height:1.4}
   .account{display:flex;align-items:baseline;gap:14px;padding:0 4px}
   .account .who{flex:1;min-width:0;overflow-wrap:anywhere}
   .account .who b{display:block;font-size:15px;font-weight:400}
@@ -627,12 +674,18 @@
 
 <div class="gate" id="gate">
   <form class="gatebox" id="gateForm">
+    <div class="mark" aria-hidden="true">PT</div>
     <h1>Português</h1>
-    <p>Вход только для своих. Аккаунты заводит владелец.</p>
-    <input type="email" id="gateEmail" placeholder="Почта" autocapitalize="off" autocomplete="username" required>
-    <input type="password" id="gatePass" placeholder="Пароль" autocomplete="current-password" required>
+    <p class="what">Карточки европейского португальского</p>
+    <div class="fields">
+      <input type="email" id="gateEmail" placeholder="Почта" autocapitalize="off" autocorrect="off"
+             spellcheck="false" autocomplete="username" enterkeyhint="next" required>
+      <input type="password" id="gatePass" placeholder="Пароль" autocomplete="current-password"
+             enterkeyhint="go" required>
+    </div>
     <button class="btn primary wide" id="gateBtn" type="submit">Войти</button>
     <div class="gateerr" id="gateErr"></div>
+    <p class="gatefoot">Вход только для своих — аккаунты заводит владелец</p>
   </form>
 </div>
 
