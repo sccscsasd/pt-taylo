@@ -234,7 +234,17 @@
   }
   .goal.done .arc .fill{stroke:var(--green)}
   .goal.done .mid .n{color:var(--green)}
-  .goal .mid{position:absolute;left:0;right:0;bottom:2px}
+  /* z-index: подпись цели должна остаться выше прозрачной кнопки, иначе по ней не нажать */
+  .goal .mid{position:absolute;left:0;right:0;bottom:2px;z-index:2;pointer-events:none}
+  .goal .mid .aim{pointer-events:auto}
+  /* по дуге и числу нажимают, чтобы посмотреть, откуда это число взялось */
+  .goal .peek{
+    position:absolute;inset:0;z-index:1;
+    border:none;background:none;padding:0;cursor:pointer;border-radius:12px;
+  }
+  .goal .peek:active{opacity:.55}
+  .goal .mid .t i{font-style:normal;color:var(--label3);margin-left:3px}
+  .goal .week{cursor:pointer}
   /* коробки по ширине текста: так они не задевают дугу и видно, где на самом деле край */
   .goal .mid>*{width:max-content;max-width:96%;margin-left:auto;margin-right:auto}
   .goal .mid .t{font-size:11px;color:var(--label2)}
@@ -261,6 +271,72 @@
   .goal .streak .line:active{opacity:.55}
   .goal .streak .line i{font-style:normal;color:var(--label3);margin-left:4px}
   .goal .streak .rec{margin-top:3px;font-size:14px;color:var(--label3)}
+
+  /* модалка прогресса: график и выводы по нему */
+  .sheet{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center}
+  .sheet[hidden]{display:none}
+  .sheet .veil{position:absolute;inset:0;background:rgba(0,0,0,.45);opacity:0;transition:opacity .25s}
+  .sheet.on .veil{opacity:1}
+  .sheet .box{
+    position:relative;width:100%;max-width:520px;max-height:88dvh;
+    display:flex;flex-direction:column;
+    background:var(--bg);border-radius:16px 16px 0 0;
+    padding-bottom:env(safe-area-inset-bottom);
+    /* в тёмной теме фон листа совпадает с фоном страницы — отбиваем краем и тенью */
+    box-shadow:0 0 0 .5px var(--sep), 0 -8px 34px rgba(0,0,0,.3);
+    transform:translateY(16px);opacity:0;transition:transform .25s ease,opacity .25s ease;
+  }
+  .sheet.on .box{transform:none;opacity:1}
+  @media (min-width:560px){
+    .sheet{align-items:center;padding:24px}
+    .sheet .box{border-radius:16px;max-height:86dvh}
+  }
+  .sheet .head{display:flex;align-items:center;gap:12px;padding:16px 16px 8px}
+  .sheet .head h2{flex:1;margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em}
+  .sheet .head .x{
+    flex:none;width:30px;height:30px;border:none;border-radius:50%;cursor:pointer;
+    background:var(--fill);color:var(--label2);font-size:14px;line-height:1;
+  }
+  .sheet .head .x:active{opacity:.55}
+  .sheet .body{overflow-y:auto;overscroll-behavior:contain;padding:0 16px 20px}
+
+  .tiles{display:flex;gap:8px;margin-bottom:12px}
+  .tile{flex:1;min-width:0;background:var(--group);border-radius:12px;padding:10px 12px}
+  .tile b{display:block;font-size:19px;font-weight:600;letter-spacing:-.02em}
+  .tile b.done{color:var(--green)}
+  .tile span{display:block;margin-top:2px;font-size:12px;color:var(--label2)}
+
+  .chartbox{background:var(--group);border-radius:12px;padding:10px 8px 6px;margin-top:12px}
+  .chart{display:block;width:100%;height:auto}
+  .chart .grid{stroke:var(--sep);stroke-width:.5}
+  .chart .dash{stroke:var(--label3);stroke-width:.7;stroke-dasharray:3 3}
+  .chart .axis{fill:var(--label3);font-size:8.5px}
+  .chart .bar{fill:var(--blue)}
+  .chart .bar.hit{fill:var(--green)}
+  .chart .bar.late{fill:var(--red)}
+  .chart .area{fill:var(--green);opacity:.14}
+  .chart .line{fill:none;stroke:var(--green);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
+  .chart .plan{fill:none;stroke:var(--blue);stroke-width:2;stroke-dasharray:5 4;stroke-linecap:round}
+  .chart .plan.pale{stroke:var(--label3);stroke-width:1.6}
+  .chart .now{fill:var(--green);stroke:var(--group);stroke-width:2}
+  .chart .cap{fill:var(--label2);font-size:9px}
+
+  .legend{
+    display:flex;flex-wrap:wrap;align-items:center;gap:5px 4px;
+    margin:2px 4px 2px;font-size:11px;color:var(--label2);
+  }
+  .legend i{width:14px;height:0;border-top:2px solid;margin-left:9px}
+  .legend i:first-child{margin-left:0}
+  .legend .was{color:var(--green)}
+  .legend .now{color:var(--blue);border-top-style:dashed}
+  .legend .aim{color:var(--label3);border-top-style:dashed}
+
+  .insight{margin:14px 2px 0;font-size:14px;line-height:1.5;color:var(--label)}
+  .insight p{margin:0 0 7px}
+  .insight p:last-child{margin-bottom:0}
+  .insight b{font-weight:600}
+  .insight .dim{color:var(--label2)}
+  .insight .none{color:var(--label2)}
 
   /* исходник разбора: распознанный или вставленный текст */
   .srcbox{position:relative;background:var(--group);border-radius:10px;padding:14px 44px 14px 14px}
@@ -469,12 +545,13 @@
       <h2>Цель на день</h2>
       <p class="lead" id="goalLead"></p>
       <div class="gauge">
+        <button class="peek" id="goalPeek" type="button" aria-label="Показать, как идут дела"></button>
         <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
           <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
           <path class="fill" id="goalArc" d="M12 100a88 88 0 0 1 176 0"/>
         </svg>
         <div class="mid">
-          <div class="t">Выучено сегодня</div>
+          <div class="t">Выучено сегодня<i>›</i></div>
           <div class="n" id="goalNum">0</div>
           <button class="aim" id="goalEdit" type="button">из <span id="goalTarget">15</span> слов в день ›</button>
         </div>
@@ -557,6 +634,17 @@
     <button class="btn primary wide" id="gateBtn" type="submit">Войти</button>
     <div class="gateerr" id="gateErr"></div>
   </form>
+</div>
+
+<div class="sheet" id="statSheet" hidden>
+  <div class="veil" id="statVeil"></div>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="statTitle">
+    <div class="head">
+      <h2 id="statTitle">Как идут дела</h2>
+      <button class="x" id="statClose" type="button" aria-label="Закрыть">&#10005;</button>
+    </div>
+    <div class="body" id="statBody"></div>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -1418,9 +1506,8 @@ function renderGoal(){
     '<div class="rec">'+esc(вторая)+'</div>';
 }
 $('#goalGo').onclick=()=>$$('nav button').find(b=>b.dataset.v==='study').click();
-$('#goalStreak').onclick=e=>{
-  if(e.target.closest('.line')) $$('nav button').find(b=>b.dataset.v==='study').click();
-};
+// серия — это статистика, а не действие: раньше строка дублировала кнопку под собой
+$('#goalStreak').onclick=e=>{ if(e.target.closest('.line')) openStats() };
 $('#goalEdit').onclick=()=>{
   $$('nav button').find(b=>b.dataset.v==='set').click();
   $('#goal').focus();
@@ -1463,6 +1550,257 @@ $$('nav button').forEach(b=>b.onclick=()=>{
   if(v==='set') renderDeckBtn();
   if(v==='study'){ buildQueue(); current=null; renderStudy(); }
 });
+
+/* ---------------- как идут дела: график и выводы ----------------
+   Модалка открывается по дуге цели, по неделе и по строке серии. Считает всё
+   из того, что уже есть: settings.learned — история по дням (120 дней),
+   archived — сколько выучено сейчас, due — какая нагрузка придёт вперёд.
+   Три вида: «Прогноз» (когда закончится колода), «Темп» (по дням),
+   «Повторения» (что ждёт в ближайшие две недели).                          */
+
+const nice=x=>x>=10?String(Math.round(x)):String(Math.round(x*10)/10).replace('.',',');
+// у дробных в русском всегда родительный: «10,4 слова», «0,8 слова»
+const wordsOf=x=>{
+  const v=x>=10?Math.round(x):Math.round(x*10)/10;
+  return Number.isInteger(v)?plural(v,'слово','слова','слов'):nice(v)+' слова';
+};
+const dm=t=>new Date(t).toLocaleDateString('ru-RU',{day:'numeric',month:'long'});
+const dmy=t=>{
+  const d=new Date(t);
+  return dm(t)+(d.getFullYear()!==new Date().getFullYear()?' '+d.getFullYear():'');
+};
+const dsh=t=>new Date(t).toLocaleDateString('ru-RU',{day:'numeric',month:'short'}).replace('.','');
+const humanSpan=n=>{
+  if(n<45) return plural(n,'день','дня','дней');
+  if(n<365) return plural(Math.round(n/30),'месяц','месяца','месяцев');
+  let y=Math.floor(n/365), m=Math.round((n%365)/30);
+  if(m>=12){ y++; m=0 }
+  return plural(y,'год','года','лет')+(m?' и '+plural(m,'месяц','месяца','месяцев'):'');
+};
+const pctOf=(a,b)=>!b||!a?'0%':(a/b<.01?'меньше 1%':Math.round(a/b*100)+'%');
+
+/* --- ряды данных --- */
+function learnedDays(n){
+  const days=settings.learned||{}, out=[];
+  const base=new Date(); base.setHours(0,0,0,0);
+  for(let i=n-1;i>=0;i--){
+    const x=new Date(base); x.setDate(base.getDate()-i);
+    const k=dayKey(x);
+    out.push({t:x.getTime(), k:k, n:Math.max(0,days[k]||0)});
+  }
+  return out;
+}
+const firstLearnDay=()=>{
+  const d=settings.learned||{};
+  const ks=Object.keys(d).filter(k=>d[k]>0).sort();
+  return ks.length?ks[0]:null;
+};
+// темп за n дней: делим не на n, а на прожитое — иначе у того, кто начал вчера,
+// темп выйдет в тридцать раз меньше настоящего
+function pace(n){
+  const rows=learnedDays(n), f=firstLearnDay();
+  const live=f?rows.filter(r=>r.k>=f):[];
+  if(!live.length) return 0;
+  return live.reduce((a,r)=>a+r.n,0)/live.length;
+}
+// накопительная кривая: идём от сегодняшнего итога назад, вычитая дневные счётчики
+function histSeries(){
+  const done=cards.filter(c=>c.archived).length;
+  const rows=learnedDays(120), f=firstLearnDay();
+  let from=rows.length-8;
+  if(f){ const i=rows.findIndex(r=>r.k===f); if(i>=0) from=i-1 }
+  const use=rows.slice(Math.max(0,Math.min(from,rows.length-2)));
+  let acc=done; const out=[];
+  for(let i=use.length-1;i>=0;i--){ out.unshift({t:use[i].t,v:Math.max(0,acc)}); acc-=use[i].n }
+  return out;
+}
+function dueDays(n){
+  const base=new Date(); base.setHours(0,0,0,0);
+  const out=[]; let late=0;
+  for(let i=0;i<n;i++){ const x=new Date(base); x.setDate(base.getDate()+i); out.push({t:x.getTime(),n:0}) }
+  const end=out[n-1].t+DAY;
+  cards.forEach(c=>{
+    if(c.archived||!(c.reps>0)||c.due>=end) return;
+    const i=Math.floor((c.due-out[0].t)/DAY);
+    if(i<0){ out[0].n++; late++ } else out[i].n++;      // просроченное падает в «сегодня»
+  });
+  return {rows:out, late:late};
+}
+
+/* --- рисование: свой SVG, без библиотек --- */
+const CW=320,CH=132,CL=28,CR=10,CT=14,CB=18;
+const svgWrap=inner=>'<svg class="chart" viewBox="0 0 '+CW+' '+CH+'" role="img">'+inner+'</svg>';
+const axisY=(v,y)=>'<text class="axis" x="'+(CL-5)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end">'+v+'</text>';
+
+function barsSVG(rows,opt){
+  opt=opt||{};
+  const max=Math.max(1,...rows.map(r=>r.n));
+  const iw=(CW-CL-CR)/rows.length;
+  const bw=Math.max(2,Math.min(16,iw*.72));
+  const y=v=>CH-CB-(CH-CB-CT)*(v/max);
+  let out='<line class="grid" x1="'+CL+'" y1="'+y(0)+'" x2="'+(CW-CR)+'" y2="'+y(0)+'"/>'+
+          axisY(max,y(max))+axisY(0,y(0));
+  if(opt.goal&&opt.goal<max)
+    out+='<line class="dash" x1="'+CL+'" y1="'+y(opt.goal).toFixed(1)+'" x2="'+(CW-CR)+'" y2="'+y(opt.goal).toFixed(1)+'"/>'+
+         '<text class="cap" x="'+(CL+1)+'" y="'+(CT-5)+'">- - цель '+opt.goal+'</text>';
+  rows.forEach((r,i)=>{
+    const x=CL+iw*i+(iw-bw)/2;
+    if(r.n){
+      const h=Math.max(1.5,(CH-CB-CT)*(r.n/max));
+      out+='<rect class="bar'+(r.cls?' '+r.cls:'')+'" x="'+x.toFixed(1)+'" y="'+(CH-CB-h).toFixed(1)+
+           '" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="'+Math.min(2,bw/2).toFixed(1)+'">'+
+           '<title>'+esc(r.title||'')+'</title></rect>';
+    }
+    if(r.lab) out+='<text class="axis" x="'+(x+bw/2).toFixed(1)+'" y="'+(CH-4)+
+                   '" text-anchor="middle">'+esc(r.lab)+'</text>';
+  });
+  return svgWrap(out);
+}
+
+function planSVG(hist,plan,pale,total){
+  const t0=hist[0].t;
+  const t1=Math.max((plan?plan.t:0),(pale?pale.t:0),hist[hist.length-1].t+DAY);
+  const X=t=>CL+(CW-CL-CR)*((t-t0)/Math.max(1,t1-t0));
+  const Y=v=>CH-CB-(CH-CB-CT)*(v/Math.max(1,total));
+  const line=a=>a.map((q,i)=>(i?'L':'M')+X(q.t).toFixed(1)+' '+Y(q.v).toFixed(1)).join(' ');
+  const last=hist[hist.length-1];
+  let out=
+    '<line class="dash" x1="'+CL+'" y1="'+Y(total).toFixed(1)+'" x2="'+(CW-CR)+'" y2="'+Y(total).toFixed(1)+'"/>'+
+    '<line class="grid" x1="'+CL+'" y1="'+Y(0)+'" x2="'+(CW-CR)+'" y2="'+Y(0)+'"/>'+
+    axisY(total,Y(total))+axisY(0,Y(0));
+  if(pale) out+='<path class="plan pale" d="'+line([{t:last.t,v:last.v},pale])+'"/>';
+  if(plan) out+='<path class="plan" d="'+line([{t:last.t,v:last.v},plan])+'"/>';
+  out+='<path class="area" d="'+line(hist)+'L'+X(last.t).toFixed(1)+' '+Y(0)+'L'+X(t0).toFixed(1)+' '+Y(0)+'Z"/>'+
+       '<path class="line" d="'+line(hist)+'"/>'+
+       '<circle class="now" cx="'+X(last.t).toFixed(1)+'" cy="'+Y(last.v).toFixed(1)+'" r="3.4"/>'+
+       '<text class="axis" x="'+CL+'" y="'+(CH-4)+'" text-anchor="start">'+esc(dsh(t0))+'</text>'+
+       '<text class="axis" x="'+(CW-CR)+'" y="'+(CH-4)+'" text-anchor="end">'+esc(dsh(t1))+'</text>';
+  const xn=X(last.t);
+  if(xn-CL>34&&(CW-CR)-xn>34)
+    out+='<text class="axis" x="'+xn.toFixed(1)+'" y="'+(CH-4)+'" text-anchor="middle">сегодня</text>';
+  return svgWrap(out);
+}
+// в легенде только те линии, которые на графике действительно есть
+const planLegend=(plan,pale)=>'<div class="legend"><i class="was"></i>пройдено'+
+  (plan?'<i class="now"></i>нынешний темп':'')+(pale?'<i class="aim"></i>по цели':'')+'</div>';
+
+/* --- сама модалка --- */
+let statMode='plan', statBack=null;
+const MODES=[['plan','Прогноз'],['pace','Темп'],['reps','Повторения']];
+
+function statPlan(){
+  const total=cards.length, done=cards.filter(c=>c.archived).length, left=total-done;
+  const r=pace(14), g=goalOf();
+  const fc=left>0&&r>0?Math.ceil(left/r):0;
+  const gc=left>0?Math.ceil(left/g):0;
+  const hist=histSeries(), last=hist[hist.length-1];
+  const plan=fc?{t:last.t+fc*DAY,v:total}:null;
+  const pale=((!fc&&gc)||(fc&&gc&&Math.abs(gc-fc)>2))?{t:last.t+gc*DAY,v:total}:null;
+  let t='<p><b>Выучено '+done+' из '+total+'</b> — это '+pctOf(done,total)+'.'+
+        (left?' Осталось '+plural(left,'слово','слова','слов')+'.':'')+'</p>';
+  if(!left) t+='<p>Колода пройдена целиком. Добавьте новые слова — прогноз построится заново.</p>';
+  else if(r>0)
+    t+='<p>Темп за две недели — <b>'+wordsOf(r)+' в день</b>. Если он сохранится, '+
+       'последнее слово колоды будет выучено <b>'+dmy(last.t+fc*DAY)+'</b> — через '+humanSpan(fc)+'.</p>'+
+       (Math.abs(gc-fc)<=2?''
+        :gc<fc?'<p class="dim">С целью в '+g+' слов в день ушло бы '+humanSpan(gc)+
+               ' — на '+humanSpan(fc-gc)+' меньше.</p>'
+              :'<p class="dim">Это быстрее цели: по '+g+' слов в день ушло бы '+humanSpan(gc)+'.</p>');
+  else
+    t+='<p class="none">За две недели ни одно слово не переведено в «выучено», так что считать темп не от чего.</p>'+
+       '<p class="dim">С целью в '+g+' слов в день на оставшееся ушло бы '+humanSpan(gc)+
+       ' — до '+dmy(Date.now()+gc*DAY)+'.</p>';
+  return {svg:planSVG(hist,plan,pale,total)+planLegend(plan,pale), text:t};
+}
+
+function statPace(){
+  const g=goalOf(), rows=learnedDays(30);
+  const sum=rows.reduce((a,r)=>a+r.n,0);
+  const hits=rows.filter(r=>r.n>=g).length;
+  const best=rows.reduce((a,r)=>r.n>a.n?r:a,{n:0});
+  const st=streakInfo();
+  const bars=rows.map((r,i)=>({n:r.n, cls:r.n>=g?'hit':'', title:dm(r.t)+': '+r.n,
+                               lab:(i===0||i===14||i===29)?(i===29?'сегодня':dsh(r.t)):''}));
+  let t;
+  if(!sum) t='<p class="none">За тридцать дней ни одного слова в «выучено». Столбики появятся, '+
+             'как только в тренировке нажмётся «Легко».</p>';
+  else t='<p>За тридцать дней выучено <b>'+plural(sum,'слово','слова','слов')+'</b> — '+
+         'в среднем '+wordsOf(sum/30)+' в день.</p>'+
+         '<p>Цель взята в <b>'+hits+' из 30 дней</b>. '+
+         'Лучший день — '+plural(best.n,'слово','слова','слов')+', '+dm(best.t)+'.</p>';
+  t+='<p class="dim">'+(st.cur?'Сейчас серия '+plural(st.cur,'день','дня','дней')+
+        (st.best>st.cur?', рекорд — '+plural(st.best,'день','дня','дней'):' — это рекорд')+'.'
+      :st.best?'Серия прервана. Рекорд — '+plural(st.best,'день','дня','дней')+'.'
+      :'Серии ещё не было: цель нужно взять два дня подряд.')+'</p>';
+  return {svg:barsSVG(bars,{goal:g}), text:t};
+}
+
+function statReps(){
+  const d=dueDays(14), rows=d.rows;
+  const week=rows.slice(0,7).reduce((a,r)=>a+r.n,0);
+  const all=rows.reduce((a,r)=>a+r.n,0);
+  const peak=rows.slice(1).reduce((a,r)=>r.n>a.n?r:a,{n:0});
+  const fresh=cards.filter(c=>!c.archived&&!c.reps).length;
+  const bars=rows.map((r,i)=>({n:r.n, cls:i===0&&d.late?'late':'', title:dm(r.t)+': '+r.n,
+                               lab:i===0?'сегодня':(i===6||i===13)?dsh(r.t):''}));
+  let t;
+  if(!all) t='<p class="none">На ближайшие две недели повторений не назначено.</p>';
+  else t='<p>Сегодня ждёт <b>'+plural(rows[0].n,'слово','слова','слов')+'</b>'+
+         (d.late?', из них '+d.late+' просрочено.':'.')+'</p>'+
+         '<p>За неделю подойдёт '+plural(week,'слово','слова','слов')+
+         (week?', в среднем '+wordsOf(week/7)+' в день':'')+'. '+
+         (peak.n?'Самый плотный день — '+dm(peak.t)+', '+plural(peak.n,'слово','слова','слов')+'.':'')+'</p>';
+  t+='<p class="dim">'+(fresh?'Новых слов в колоде '+fresh+' — они ждут без срока и в график не идут.'
+                             :'Новых слов не осталось: вся колода уже в работе.')+'</p>';
+  return {svg:barsSVG(bars), text:t};
+}
+
+function renderStat(){
+  const box=$('#statBody'); if(!box) return;
+  const total=cards.length, done=cards.filter(c=>c.archived).length;
+  if(!total){
+    box.innerHTML='<div class="insight none">Колода пуста — сначала добавьте слова, '+
+                  'и здесь появится история.</div>';
+    return;
+  }
+  const st=streakInfo(), r=pace(14);
+  const part=statMode==='pace'?statPace():statMode==='reps'?statReps():statPlan();
+  box.innerHTML=
+    '<div class="tiles">'+
+      '<div class="tile"><b'+(done?' class="done"':'')+'>'+done+'</b><span>выучено из '+total+'</span></div>'+
+      '<div class="tile"><b>'+nice(r)+'</b><span>'+pWord(Math.round(r),'слово','слова','слов')+' в день</span></div>'+
+      '<div class="tile"><b>'+st.cur+'</b><span>'+pWord(st.cur,'день','дня','дней')+' подряд</span></div>'+
+    '</div>'+
+    '<div class="seg" id="statSeg" style="margin-top:0">'+
+      MODES.map(m=>'<button data-m="'+m[0]+'"'+(statMode===m[0]?' class="on"':'')+'>'+m[1]+'</button>').join('')+
+    '</div>'+
+    '<div class="chartbox">'+part.svg+'</div>'+
+    '<div class="insight">'+part.text+'</div>';
+}
+
+function openStats(){
+  statBack=document.activeElement;
+  const sh=$('#statSheet');
+  sh.hidden=false; renderStat();
+  requestAnimationFrame(()=>sh.classList.add('on'));
+  $('#statClose').focus();
+}
+function closeStats(){
+  const sh=$('#statSheet');
+  if(sh.hidden) return;
+  sh.classList.remove('on');
+  setTimeout(()=>{ sh.hidden=true },250);
+  if(statBack&&statBack.focus) statBack.focus();
+}
+$('#statBody').onclick=e=>{
+  const b=e.target.closest('button[data-m]'); if(!b) return;
+  statMode=b.dataset.m; renderStat();
+};
+$('#statClose').onclick=closeStats;
+$('#statVeil').onclick=closeStats;
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeStats() });
+$('#goalPeek').onclick=openStats;
+$('#goalWeek').onclick=openStats;
 
 /* ---------------- settings ---------------- */
 $('#dir').onclick=e=>{
