@@ -492,6 +492,7 @@
 
   /* empty */
   .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
+  .more{text-align:center;color:var(--label2);font-size:13px;padding:14px 0 4px}
   .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
   .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
 
@@ -1207,6 +1208,28 @@ function searchRank(c,q){
   if(words(ru).some(t=>t.startsWith(q))) return 3;   // то же самое по переводу
   return 4;                                         // середина слова совпадением не считаем
 }
+/* Список рисуется порциями. Целиком это 1829 карточек, 34 тысячи узлов и треть секунды,
+   и цена не разовая: renderCards() зовётся в конце каждой синхронизации, то есть при
+   каждом возврате в приложение. В DOM держим только то, что человек долистал; следующая
+   порция дорисовывается, когда до конца списка остаётся экран с небольшим запасом.     */
+const CARD_PAGE=60, CARD_TAIL=800;   // порция и запас до конца списка, при котором рисуем следующую
+let cardList=[], cardShown=0, cardKey='';
+
+function growCards(n){
+  const tail=$('#cardMore'); if(!tail) return;
+  const part=cardList.slice(cardShown,cardShown+(n||CARD_PAGE));
+  cardShown+=part.length;
+  if(part.length) tail.insertAdjacentHTML('beforebegin',part.map(cardHTML).join(''));
+  if(cardShown>=cardList.length) tail.remove();
+  else tail.textContent='Ещё '+plural(cardList.length-cardShown,'карточка','карточки','карточек');
+}
+// Прокручивается только main — по нему и смотрим, не пора ли дорисовать следующую порцию.
+$('main').addEventListener('scroll',()=>{
+  if(cardShown>=cardList.length||!$('#v-cards').classList.contains('on')) return;
+  const m=$('main');
+  if(m.scrollHeight-m.scrollTop-m.clientHeight<CARD_TAIL) growCards();
+},{passive:true});
+
 function renderCards(){
   const q=deacc(norm($('#search').value));
   const byFilter=cards.filter(c=>cardFilter==='all'||(cardFilter==='done'?c.archived:!c.archived));
@@ -1219,13 +1242,21 @@ function renderCards(){
     segs[1].textContent='Изучаю '+(cards.length-done);
     segs[2].textContent='Выучено '+done;
   }
+  // тот же список, что и был (пришла синхронизация) — возвращаем и долистанное, и прокрутку
+  const key=cardFilter+'|'+q;
+  const keep=key===cardKey?cardShown:0;
+  const top=$('main').scrollTop, здесь=$('#v-cards').classList.contains('on');
+  cardKey=key; cardList=list; cardShown=0;
   $('#cardList').innerHTML = list.length
-    ? list.map(cardHTML).join('')
+    ? '<div class="more" id="cardMore"></div>'
     : '<div class="empty">'+IC_DECK+(cards.length
         ? (cardFilter==='done'&&!q
             ? '<div>Пока ничего не выучено</div><div class="sub">Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь</div>'
             : '<div>Ничего не найдено</div>')
         : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
+  if(!list.length) return;
+  growCards(Math.max(CARD_PAGE,keep));
+  if(keep&&здесь) $('main').scrollTop=top;
 }
 $('#cardFilter').onclick=e=>{
   const b=e.target.closest('button'); if(!b)return;
