@@ -646,8 +646,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "где-то",
-   "ex": "Deixei as chaves algures na cozinha.",
-   "exru": "Я оставил ключи где-то на кухне.",
+   "ex": "Deixei as chaves algures na cozinha e não as encontro.",
+   "exru": "Я оставил ключи где-то на кухне и не могу их найти.",
    "note": "Европейская норма; бразильцы говорят иначе"
   },
   {
@@ -807,7 +807,7 @@
    "word": "detrás",
    "pos": "нареч.",
    "level": "B1",
-   "ru": "сзади, позади",
+   "ru": "позади (в обороте por detrás de)",
    "ex": "O gato apareceu detrás do sofá da sala.",
    "exru": "Кот появился из-за дивана в гостиной.",
    "note": "Чаще в обороте por detrás de"
@@ -834,7 +834,7 @@
    "word": "o litoral",
    "pos": "сущ.",
    "level": "B1",
-   "ru": "побережье",
+   "ru": "прибрежная полоса, взморье",
    "ex": "No verão, o litoral fica cheio de turistas.",
    "exru": "Летом побережье заполняется туристами.",
    "note": "Внутренняя часть страны — o interior"
@@ -889,8 +889,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "прощать",
-   "ex": "Ela nunca me perdoou aquela mentira.",
-   "exru": "Она так и не простила мне ту ложь.",
+   "ex": "Ela nunca me perdoou aquela mentira sobre o dinheiro.",
+   "exru": "Она так и не простила мне ту ложь про деньги.",
    "note": ""
   },
   {
@@ -907,8 +907,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "заранее, предварительно",
-   "ex": "É preciso marcar a consulta previamente.",
-   "exru": "Приём нужно записать заранее.",
+   "ex": "É preciso marcar a consulta previamente, por telefone ou online.",
+   "exru": "Приём нужно записать заранее — по телефону или онлайн.",
    "note": ""
   },
   {
@@ -943,8 +943,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "недавно",
-   "ex": "Mudaram-se recentemente para uma casa maior.",
-   "exru": "Они недавно переехали в дом побольше.",
+   "ex": "Mudaram-se recentemente para uma casa maior nos arredores da cidade.",
+   "exru": "Они недавно переехали в дом побольше на окраине города.",
    "note": ""
   },
   {
@@ -978,18 +978,18 @@
    "word": "contemporâneo",
    "pos": "прил.",
    "level": "B1",
-   "ru": "современный",
+   "ru": "современный (нынешней эпохи)",
    "ex": "Gosto de arte contemporânea, sobretudo de fotografia.",
    "exru": "Люблю современное искусство, особенно фотографию.",
-   "note": ""
+   "note": "Об искусстве и авторах наших дней"
   },
   {
    "word": "eventualmente",
    "pos": "нареч.",
    "level": "B1",
    "ru": "возможно, при случае",
-   "ex": "Eventualmente, posso passar por lá amanhã.",
-   "exru": "Возможно, я заеду туда завтра.",
+   "ex": "Eventualmente, posso passar por lá amanhã depois do trabalho.",
+   "exru": "Возможно, я заеду туда завтра после работы.",
    "note": "Ложный друг: это не «в конце концов»"
   },
   {
@@ -1105,8 +1105,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "чужой; посторонний",
-   "ex": "Não se meta em assuntos alheios.",
-   "exru": "Не лезьте в чужие дела.",
+   "ex": "Não se meta em assuntos alheios, isso não lhe diz respeito.",
+   "exru": "Не лезьте в чужие дела, вас это не касается.",
    "note": ""
   },
   {
@@ -1114,8 +1114,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "размещать, селить",
-   "ex": "O hotel pode alojar duzentas pessoas.",
-   "exru": "Отель может разместить двести человек.",
+   "ex": "O hotel pode alojar duzentas pessoas em época alta.",
+   "exru": "В высокий сезон отель может разместить двести человек.",
    "note": ""
   },
   {
@@ -1141,8 +1141,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "ежегодно",
-   "ex": "A revisão do carro faz-se anualmente.",
-   "exru": "Техосмотр машины делается ежегодно.",
+   "ex": "A revisão do carro faz-se anualmente numa oficina certificada.",
+   "exru": "Техосмотр машины проходят ежегодно в сертифицированной мастерской.",
    "note": ""
   },
   {
@@ -1186,8 +1186,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "гореть; щипать",
-   "ex": "A ferida arde quando ponho álcool.",
-   "exru": "Рана щиплет, когда я мажу спиртом.",
+   "ex": "A ferida arde quando ponho álcool, mas passa depressa.",
+   "exru": "Рана щиплет, когда я мажу спиртом, но быстро проходит.",
    "note": ""
   },
   {
@@ -1249,8 +1249,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "властный, авторитарный",
-   "ex": "O antigo chefe era demasiado autoritário.",
-   "exru": "Прежний начальник был слишком властным.",
+   "ex": "O antigo chefe era demasiado autoritário e ninguém o contrariava.",
+   "exru": "Прежний начальник был слишком властным, и ему никто не перечил.",
    "note": ""
   },
   {
@@ -1275,9 +1275,9 @@
    "word": "basear",
    "pos": "глаг.",
    "level": "B1",
-   "ru": "основывать",
-   "ex": "O filme baseia-se numa história verdadeira.",
-   "exru": "Фильм основан на реальной истории.",
+   "ru": "класть в основу, опираться",
+   "ex": "O filme baseia-se numa história verdadeira passada nos Açores.",
+   "exru": "Фильм основан на реальной истории, случившейся на Азорах.",
    "note": "Чаще возвратное: basear-se em"
   },
   {
@@ -1375,8 +1375,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "бюрократический",
-   "ex": "O processo burocrático demorou três meses.",
-   "exru": "Бюрократическая процедура заняла три месяца.",
+   "ex": "O processo burocrático demorou três meses a ficar resolvido.",
+   "exru": "На бюрократические формальности ушло три месяца.",
    "note": ""
   },
   {
@@ -1384,8 +1384,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "помещаться, вмещаться",
-   "ex": "Esta mala não cabe no porta-bagagens.",
-   "exru": "Этот чемодан не помещается в багажник.",
+   "ex": "Esta mala não cabe no porta-bagagens do carro pequeno.",
+   "exru": "Этот чемодан не помещается в багажник маленькой машины.",
    "note": "Неправильный: eu caibo, ele cabe"
   },
   {
@@ -1402,8 +1402,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "охотиться",
-   "ex": "É proibido caçar nesta zona protegida.",
-   "exru": "В этой заповедной зоне охотиться запрещено.",
+   "ex": "É proibido caçar nesta zona protegida durante todo o ano.",
+   "exru": "В этой заповедной зоне охота запрещена круглый год.",
    "note": ""
   },
   {
@@ -1420,8 +1420,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "молчаливый",
-   "ex": "Ficou calado durante toda a discussão.",
-   "exru": "Он молчал в течение всего спора.",
+   "ex": "Ficou calado durante toda a discussão e saiu sem se despedir.",
+   "exru": "Он промолчал весь спор и ушёл не попрощавшись.",
    "note": "Не путать с quieto — неподвижный"
   },
   {
@@ -1492,8 +1492,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "пещера",
-   "ex": "Encontrámos pinturas antigas dentro da caverna.",
-   "exru": "Мы нашли древние рисунки внутри пещеры.",
+   "ex": "Encontrámos pinturas antigas dentro da caverna, junto à entrada.",
+   "exru": "Мы нашли древние рисунки в пещере, у самого входа.",
    "note": ""
   },
   {
@@ -1582,8 +1582,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "цитировать, ссылаться",
-   "ex": "O professor citou dois autores portugueses.",
-   "exru": "Преподаватель процитировал двух португальских авторов.",
+   "ex": "O professor citou dois autores portugueses do século passado.",
+   "exru": "Преподаватель процитировал двух португальских авторов прошлого века.",
    "note": ""
   },
   {
@@ -1852,8 +1852,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "жестокий",
-   "ex": "Foi uma decisão cruel, mas necessária.",
-   "exru": "Это было жестокое, но необходимое решение.",
+   "ex": "Foi uma decisão cruel, mas necessária para salvar a empresa.",
+   "exru": "Решение было жестоким, но необходимым, чтобы спасти компанию.",
    "note": ""
   },
   {
@@ -1978,8 +1978,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "катастрофа, бедствие",
-   "ex": "O jantar foi um verdadeiro desastre.",
-   "exru": "Ужин обернулся настоящей катастрофой.",
+   "ex": "O jantar foi um verdadeiro desastre: queimei tudo.",
+   "exru": "Ужин обернулся настоящей катастрофой: я всё сжёг.",
    "note": ""
   },
   {
@@ -2023,8 +2023,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "отказываться, сдаваться",
-   "ex": "Nunca desistas depois do primeiro erro.",
-   "exru": "Никогда не сдавайся после первой ошибки.",
+   "ex": "Nunca desistas depois do primeiro erro, tenta outra vez.",
+   "exru": "Никогда не сдавайся после первой ошибки — попробуй ещё раз.",
    "note": "Требует предлога de"
   },
   {
@@ -2131,8 +2131,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "устройство, приспособление",
-   "ex": "Este dispositivo mede a tensão arterial.",
-   "exru": "Это устройство измеряет артериальное давление.",
+   "ex": "Este dispositivo mede a tensão arterial em poucos segundos.",
+   "exru": "Это устройство измеряет давление за несколько секунд.",
    "note": ""
   },
   {
@@ -2239,8 +2239,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "избиратель",
-   "ex": "Muitos eleitores votaram pela primeira vez.",
-   "exru": "Многие избиратели голосовали впервые.",
+   "ex": "Muitos eleitores votaram pela primeira vez nestas eleições.",
+   "exru": "На этих выборах многие избиратели голосовали впервые.",
    "note": ""
   },
   {
@@ -2257,8 +2257,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "посольство",
-   "ex": "Fui à embaixada tratar do visto.",
-   "exru": "Я ходил в посольство оформлять визу.",
+   "ex": "Fui à embaixada tratar do visto para o próximo verão.",
+   "exru": "Я ходил в посольство оформлять визу на следующее лето.",
    "note": ""
   },
   {
@@ -2320,8 +2320,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "вовлечённый, замешанный",
-   "ex": "Havia três empresas envolvidas no projeto.",
-   "exru": "В проекте участвовали три компании.",
+   "ex": "Havia três empresas envolvidas no projeto da nova ponte.",
+   "exru": "В проекте нового моста участвовали три компании.",
    "note": ""
   },
   {
@@ -2365,8 +2365,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "исчерпать; распродать",
-   "ex": "Os bilhetes esgotaram-se em duas horas.",
-   "exru": "Билеты разошлись за два часа.",
+   "ex": "Os bilhetes esgotaram-se em duas horas no site oficial.",
+   "exru": "Билеты на официальном сайте разошлись за два часа.",
    "note": "Esgotado — «распродано»"
   },
   {
@@ -2392,8 +2392,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "зритель",
-   "ex": "O estádio recebeu quarenta mil espectadores.",
-   "exru": "Стадион принял сорок тысяч зрителей.",
+   "ex": "O estádio recebeu quarenta mil espectadores na noite de sábado.",
+   "exru": "В субботу вечером стадион принял сорок тысяч зрителей.",
    "note": ""
   },
   {
@@ -2419,8 +2419,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "забытый; забывчивый",
-   "ex": "Deixei o guarda-chuva esquecido no café.",
-   "exru": "Я забыл зонт в кафе.",
+   "ex": "Deixei o guarda-chuva esquecido no café da esquina.",
+   "exru": "Я забыл зонт в кафе на углу.",
    "note": ""
   },
   {
@@ -2446,8 +2446,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "находить странным, удивляться",
-   "ex": "Estranhei que ele não tivesse telefonado.",
-   "exru": "Мне показалось странным, что он не позвонил.",
+   "ex": "Estranhei que ele não tivesse telefonado durante o fim de semana.",
+   "exru": "Мне показалось странным, что он не позвонил за все выходные.",
    "note": ""
   },
   {
@@ -2509,8 +2509,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "требование",
-   "ex": "As exigências do senhorio pareceram-me excessivas.",
-   "exru": "Требования домовладельца показались мне чрезмерными.",
+   "ex": "As exigências do senhorio pareceram-me excessivas para aquele preço.",
+   "exru": "Требования хозяина показались мне чрезмерными за такие деньги.",
    "note": ""
   },
   {
@@ -2590,8 +2590,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "фантазия, выдумка",
-   "ex": "A história dele é pura fantasia.",
-   "exru": "Его история — чистая выдумка.",
+   "ex": "A história dele é pura fantasia, não acredito em nada.",
+   "exru": "Его история — чистая выдумка, я не верю ни слову.",
    "note": ""
   },
   {
@@ -2671,8 +2671,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "слабость",
-   "ex": "Sentiu uma fraqueza súbita e sentou-se.",
-   "exru": "Он почувствовал внезапную слабость и сел.",
+   "ex": "Sentiu uma fraqueza súbita e sentou-se no primeiro banco.",
+   "exru": "Он почувствовал внезапную слабость и сел на первую же скамейку.",
    "note": ""
   },
   {
@@ -2697,7 +2697,7 @@
    "word": "fundar",
    "pos": "глаг.",
    "level": "B1",
-   "ru": "основывать",
+   "ru": "основывать, учреждать",
    "ex": "A universidade foi fundada no século dezasseis.",
    "exru": "Университет был основан в шестнадцатом веке.",
    "note": ""
@@ -2707,8 +2707,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "разъярённый",
-   "ex": "Ficou furioso quando soube da notícia.",
-   "exru": "Он пришёл в ярость, когда узнал новость.",
+   "ex": "Ficou furioso quando soube da notícia pelos jornais.",
+   "exru": "Он пришёл в ярость, узнав новость из газет.",
    "note": ""
   },
   {
@@ -2788,8 +2788,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "обитать, населять",
-   "ex": "Nesta zona habitam muitas aves marinhas.",
-   "exru": "В этой местности обитает много морских птиц.",
+   "ex": "Nesta zona habitam muitas aves marinhas durante o inverno.",
+   "exru": "Зимой в этой местности обитает много морских птиц.",
    "note": ""
   },
   {
@@ -2806,8 +2806,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "ужас",
-   "ex": "Tenho horror a aranhas desde pequena.",
-   "exru": "Я с детства боюсь пауков до ужаса.",
+   "ex": "Tenho horror a aranhas desde pequena, não consigo evitar.",
+   "exru": "Я с детства до ужаса боюсь пауков, ничего не могу поделать.",
    "note": "ter horror a — испытывать отвращение"
   },
   {
@@ -2833,8 +2833,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "незаконный",
-   "ex": "Estacionar naquele passeio é ilegal.",
-   "exru": "Парковаться на том тротуаре незаконно.",
+   "ex": "Estacionar naquele passeio é ilegal e dá multa pesada.",
+   "exru": "Парковаться на том тротуаре незаконно, штраф немаленький.",
    "note": ""
   },
   {
@@ -2860,8 +2860,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "поощрять, стимулировать",
-   "ex": "Os pais incentivaram-na a estudar música.",
-   "exru": "Родители поощряли её заниматься музыкой.",
+   "ex": "Os pais incentivaram-na a estudar música desde muito cedo.",
+   "exru": "Родители с самого детства поощряли её заниматься музыкой.",
    "note": ""
   },
   {
@@ -2878,8 +2878,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "беспокоить, мешать",
-   "ex": "Desculpe incomodar, posso fazer uma pergunta?",
-   "exru": "Извините за беспокойство, можно вопрос?",
+   "ex": "Desculpe incomodar, posso fazer-lhe uma pergunta rápida?",
+   "exru": "Извините за беспокойство, можно задать вам быстрый вопрос?",
    "note": "Очень частая формула вежливости"
   },
   {
@@ -2887,8 +2887,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "без сознания; безрассудный",
-   "ex": "Encontraram-no inconsciente no chão da cozinha.",
-   "exru": "Его нашли без сознания на полу кухни.",
+   "ex": "Encontraram-no inconsciente no chão da cozinha e chamaram o INEM.",
+   "exru": "Его нашли без сознания на полу кухни и вызвали скорую.",
    "note": ""
   },
   {
@@ -2986,8 +2986,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "ход, приём",
-   "ex": "Foi uma jogada inteligente do treinador.",
-   "exru": "Это был умный ход тренера.",
+   "ex": "Foi uma jogada inteligente do treinador nos últimos minutos.",
+   "exru": "Это был умный ход тренера на последних минутах.",
    "note": ""
   },
   {
@@ -2995,8 +2995,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "судебный процесс",
-   "ex": "O julgamento começa na próxima segunda-feira.",
-   "exru": "Процесс начинается в следующий понедельник.",
+   "ex": "O julgamento começa na próxima segunda-feira em Lisboa.",
+   "exru": "Процесс начинается в следующий понедельник в Лиссабоне.",
    "note": ""
   },
   {
@@ -3085,8 +3085,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "избавиться",
-   "ex": "Finalmente livrei-me daquela constipação.",
-   "exru": "Наконец-то я избавился от той простуды.",
+   "ex": "Finalmente livrei-me daquela constipação que durou duas semanas.",
+   "exru": "Наконец-то я избавился от простуды, которая тянулась две недели.",
    "note": "livrar-se de"
   },
   {
@@ -3130,8 +3130,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "обидеть; ушибить",
-   "ex": "Não quis magoar-te com aquele comentário.",
-   "exru": "Я не хотел обидеть тебя тем замечанием.",
+   "ex": "Não quis magoar-te com aquele comentário sobre o teu trabalho.",
+   "exru": "Я не хотел обидеть тебя тем замечанием о твоей работе.",
    "note": "И о боли: magoei o joelho"
   },
   {
@@ -3139,8 +3139,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "недомогание; неловкость",
-   "ex": "Sinto um mal-estar desde o almoço.",
-   "exru": "Мне нездоровится с обеда.",
+   "ex": "Sinto um mal-estar desde o almoço, talvez tenha sido o peixe.",
+   "exru": "Мне нездоровится с обеда — возможно, из-за рыбы.",
    "note": ""
   },
   {
@@ -3157,8 +3157,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "диво, прелесть",
-   "ex": "O jantar estava uma maravilha, parabéns!",
-   "exru": "Ужин был просто прелесть, поздравляю!",
+   "ex": "O jantar estava uma maravilha, o bacalhau ficou perfeito.",
+   "exru": "Ужин был просто прелесть, треска удалась на славу.",
    "note": ""
   },
   {
@@ -3211,8 +3211,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "лжец",
-   "ex": "Ninguém acredita naquele mentiroso.",
-   "exru": "Тому лжецу никто не верит.",
+   "ex": "Ninguém acredita naquele mentiroso, já contou histórias demais.",
+   "exru": "Тому лжецу никто не верит — слишком много он насочинял.",
    "note": ""
   },
   {
@@ -3238,8 +3238,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "молоть",
-   "ex": "Prefiro moer o café na hora.",
-   "exru": "Я предпочитаю молоть кофе непосредственно перед варкой.",
+   "ex": "Prefiro moer o café na hora, o sabor é outro.",
+   "exru": "Я предпочитаю молоть кофе перед варкой — вкус совсем другой.",
    "note": ""
   },
   {
@@ -3256,8 +3256,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "житель, жилец",
-   "ex": "Os moradores queixaram-se do barulho nocturno.",
-   "exru": "Жильцы пожаловались на ночной шум.",
+   "ex": "Os moradores queixaram-se do barulho noturno do bar.",
+   "exru": "Жильцы пожаловались на ночной шум из бара.",
    "note": ""
   },
   {
@@ -3292,8 +3292,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "чёткий, ясный",
-   "ex": "A fotografia não ficou muito nítida.",
-   "exru": "Фотография получилась не очень чёткой.",
+   "ex": "A fotografia não ficou muito nítida por causa do movimento.",
+   "exru": "Фотография получилась нечёткой из-за движения.",
    "note": ""
   },
   {
@@ -3310,8 +3310,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "противный, отвратительный",
-   "ex": "O cheiro daquele peixe estava nojento.",
-   "exru": "Запах той рыбы был отвратительным.",
+   "ex": "O cheiro daquele peixe estava nojento, deitei tudo fora.",
+   "exru": "Запах той рыбы был отвратительным, я всё выбросил.",
    "note": ""
   },
   {
@@ -3319,8 +3319,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "отвращение",
-   "ex": "Tenho nojo de tocar em insetos.",
-   "exru": "Мне противно трогать насекомых.",
+   "ex": "Tenho nojo de tocar em insetos, mesmo nos pequenos.",
+   "exru": "Мне противно трогать насекомых, даже маленьких.",
    "note": "ter nojo de"
   },
   {
@@ -3328,8 +3328,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "новость; новинка",
-   "ex": "Contas-me as novidades ao almoço?",
-   "exru": "Расскажешь новости за обедом?",
+   "ex": "Contas-me as novidades ao almoço de domingo?",
+   "exru": "Расскажешь новости за воскресным обедом?",
    "note": ""
   },
   {
@@ -3346,8 +3346,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "очевидно, разумеется",
-   "ex": "Obviamente, ninguém esperava aquele resultado.",
-   "exru": "Разумеется, никто не ожидал такого результата.",
+   "ex": "Obviamente, ninguém esperava aquele resultado no primeiro jogo.",
+   "exru": "Разумеется, такого результата в первом матче никто не ждал.",
    "note": ""
   },
   {
@@ -3427,8 +3427,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "крёстный отец",
-   "ex": "O padrinho ofereceu-lhe a primeira bicicleta.",
-   "exru": "Крёстный подарил ему первый велосипед.",
+   "ex": "O padrinho ofereceu-lhe a primeira bicicleta no dia dos anos.",
+   "exru": "Крёстный подарил ему первый велосипед на день рождения.",
    "note": "Крёстная — a madrinha"
   },
   {
@@ -3598,8 +3598,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "отвратительный, худший",
-   "ex": "O serviço daquele café é péssimo.",
-   "exru": "Обслуживание в том кафе отвратительное.",
+   "ex": "O serviço daquele café é péssimo, nunca mais lá volto.",
+   "exru": "Обслуживание в том кафе отвратительное, больше туда ни ногой.",
    "note": "Превосходная степень от mau"
   },
   {
@@ -3607,8 +3607,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "лично",
-   "ex": "Prefiro tratar deste assunto pessoalmente.",
-   "exru": "Я предпочитаю уладить это дело лично.",
+   "ex": "Prefiro tratar deste assunto pessoalmente, não por email.",
+   "exru": "Я предпочитаю уладить это лично, а не по почте.",
    "note": ""
   },
   {
@@ -3688,8 +3688,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "потенциал",
-   "ex": "Aquele jogador tem muito potencial.",
-   "exru": "У того игрока большой потенциал.",
+   "ex": "Aquele jogador tem muito potencial, mas falta-lhe disciplina.",
+   "exru": "У того игрока большой потенциал, но не хватает дисциплины.",
    "note": ""
   },
   {
@@ -3805,8 +3805,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "предоставлять, доставлять",
-   "ex": "A viagem proporcionou-nos momentos inesquecíveis.",
-   "exru": "Поездка подарила нам незабываемые моменты.",
+   "ex": "A viagem proporcionou-nos momentos inesquecíveis com a família toda.",
+   "exru": "Поездка подарила нам незабываемые моменты со всей семьёй.",
    "note": ""
   },
   {
@@ -3832,8 +3832,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "реклама",
-   "ex": "Há demasiada publicidade neste canal.",
-   "exru": "На этом канале слишком много рекламы.",
+   "ex": "Há demasiada publicidade neste canal, corto sempre o som.",
+   "exru": "На этом канале слишком много рекламы, я всегда выключаю звук.",
    "note": ""
   },
   {
@@ -3913,8 +3913,8 @@
    "pos": "глаг.",
    "level": "B1",
    "ru": "требовать; подавать заявление",
-   "ex": "Este trabalho requer muita paciência.",
-   "exru": "Эта работа требует большого терпения.",
+   "ex": "Este trabalho requer muita paciência e atenção ao pormenor.",
+   "exru": "Эта работа требует большого терпения и внимания к деталям.",
    "note": ""
   },
   {
@@ -3994,8 +3994,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "кража",
-   "ex": "O roubo aconteceu durante a noite.",
-   "exru": "Кража произошла ночью.",
+   "ex": "O roubo aconteceu durante a noite, sem ninguém dar por nada.",
+   "exru": "Кража произошла ночью, и никто ничего не заметил.",
    "note": ""
   },
   {
@@ -4003,8 +4003,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "жертва, самоотдача",
-   "ex": "Estudar à noite exigiu muito sacrifício.",
-   "exru": "Учёба по вечерам потребовала многих жертв.",
+   "ex": "Estudar à noite exigiu muito sacrifício durante aqueles anos.",
+   "exru": "Учёба по вечерам все те годы требовала большой самоотдачи.",
    "note": ""
   },
   {
@@ -4039,8 +4039,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "искренний",
-   "ex": "Quero uma resposta sincera, sem rodeios.",
-   "exru": "Я хочу искреннего ответа, без обиняков.",
+   "ex": "Quero uma resposta sincera, sem rodeios nem meias palavras.",
+   "exru": "Мне нужен искренний ответ, без обиняков и недомолвок.",
    "note": ""
   },
   {
@@ -4255,8 +4255,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "у кого кружится голова",
-   "ex": "Fiquei tonto quando me levantei depressa.",
-   "exru": "У меня закружилась голова, когда я быстро встал.",
+   "ex": "Fiquei tonto quando me levantei depressa do sofá.",
+   "exru": "У меня закружилась голова, когда я резко встал с дивана.",
    "note": ""
   },
   {
@@ -4363,8 +4363,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "в последнее время",
-   "ex": "Ultimamente tenho dormido muito mal.",
-   "exru": "В последнее время я очень плохо сплю.",
+   "ex": "Ultimamente tenho dormido muito mal por causa do calor.",
+   "exru": "В последнее время я очень плохо сплю из-за жары.",
    "note": ""
   },
   {
@@ -4372,8 +4372,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "форма (одежда)",
-   "ex": "Os alunos daquele colégio usam uniforme.",
-   "exru": "Ученики того колледжа носят форму.",
+   "ex": "Os alunos daquele colégio usam uniforme azul-escuro.",
+   "exru": "Ученики того колледжа носят тёмно-синюю форму.",
    "note": ""
   },
   {
@@ -4381,8 +4381,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "срочный",
-   "ex": "Recebi um email urgente do escritório.",
-   "exru": "Я получил срочное письмо из офиса.",
+   "ex": "Recebi um email urgente do escritório a meio das férias.",
+   "exru": "Посреди отпуска мне пришло срочное письмо из офиса.",
    "note": ""
   },
   {
@@ -4462,8 +4462,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "по-видимому",
-   "ex": "Aparentemente, ninguém reparou no erro.",
-   "exru": "По-видимому, никто не заметил ошибки.",
+   "ex": "Aparentemente, ninguém reparou no erro do cartaz.",
+   "exru": "По-видимому, ошибку на афише никто не заметил.",
    "note": ""
   },
   {
@@ -4471,8 +4471,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "характерный, свойственный",
-   "ex": "Aquele cheiro é característico das padarias.",
-   "exru": "Тот запах характерен для пекарен.",
+   "ex": "Aquele cheiro a pão quente é característico das padarias.",
+   "exru": "Тот запах горячего хлеба характерен для пекарен.",
    "note": ""
   },
   {
@@ -4480,8 +4480,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "встречное условие; зато",
-   "ex": "Trabalha muito; em contrapartida, ganha bem.",
-   "exru": "Он много работает; зато хорошо зарабатывает.",
+   "ex": "Trabalha muito; em contrapartida, ganha bem e viaja imenso.",
+   "exru": "Он много работает; зато хорошо зарабатывает и много путешествует.",
    "note": "em contrapartida — «зато»"
   },
   {
@@ -4489,8 +4489,8 @@
    "pos": "сущ.",
    "level": "B1",
    "ru": "шариковая ручка",
-   "ex": "Preencha o formulário a esferográfica azul.",
-   "exru": "Заполните бланк синей шариковой ручкой.",
+   "ex": "Preencha o formulário a esferográfica azul, sem rasuras.",
+   "exru": "Заполните бланк синей шариковой ручкой, без помарок.",
    "note": "Европейское слово; сокращают до esfero"
   },
   {
@@ -4507,8 +4507,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "впечатляющий",
-   "ex": "O silêncio daquela igreja é impressionante.",
-   "exru": "Тишина в той церкви впечатляет.",
+   "ex": "O silêncio daquela igreja ao fim da tarde é impressionante.",
+   "exru": "Тишина в той церкви под вечер впечатляет.",
    "note": ""
   },
   {
@@ -4534,8 +4534,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "вероятно",
-   "ex": "Possivelmente chegaremos depois das oito.",
-   "exru": "Мы, вероятно, приедем после восьми.",
+   "ex": "Possivelmente chegaremos depois das oito, o trânsito está mau.",
+   "exru": "Мы, вероятно, приедем после восьми — на дорогах пробки.",
    "note": ""
   },
   {
@@ -4543,8 +4543,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "глубоко",
-   "ex": "Fiquei profundamente impressionado com a exposição.",
-   "exru": "Я был глубоко впечатлён выставкой.",
+   "ex": "Fiquei profundamente impressionado com a exposição de fotografia.",
+   "exru": "Я был глубоко впечатлён фотовыставкой.",
    "note": ""
   },
   {
@@ -4597,8 +4597,8 @@
    "pos": "прил.",
    "level": "B1",
    "ru": "отличный",
-   "ex": "Ótimo, então combinamos para as sete.",
-   "exru": "Отлично, тогда договорились на семь.",
+   "ex": "Ótimo, então combinamos para as sete no café do costume.",
+   "exru": "Отлично, тогда договорились на семь в обычном кафе.",
    "note": ""
   },
   {
@@ -4606,8 +4606,8 @@
    "pos": "нареч.",
    "level": "B1",
    "ru": "откровенно говоря",
-   "ex": "Francamente, não gostei nada do filme.",
-   "exru": "Честно говоря, фильм мне совсем не понравился.",
+   "ex": "Francamente, não gostei nada do filme nem do final.",
+   "exru": "Честно говоря, ни фильм, ни концовка мне не понравились.",
    "note": ""
   },
   {
@@ -4642,8 +4642,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "этап",
-   "ex": "A obra está na última etapa.",
-   "exru": "Стройка на последнем этапе.",
+   "ex": "A obra está na última etapa e acaba em março.",
+   "exru": "Стройка на последнем этапе и закончится в марте.",
    "note": ""
   },
   {
@@ -4660,8 +4660,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "насмешка",
-   "ex": "Fizeram troça do sotaque dele.",
-   "exru": "Над его акцентом посмеялись.",
+   "ex": "Fizeram troça do sotaque dele durante todo o almoço.",
+   "exru": "Над его акцентом посмеивались весь обед.",
    "note": "fazer troça de — подшучивать"
   },
   {
@@ -4687,8 +4687,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "конкретный",
-   "ex": "Dê-me um exemplo concreto do problema.",
-   "exru": "Приведите конкретный пример проблемы.",
+   "ex": "Dê-me um exemplo concreto do problema que encontrou.",
+   "exru": "Приведите конкретный пример проблемы, с которой вы столкнулись.",
    "note": ""
   },
   {
@@ -4723,8 +4723,8 @@
    "pos": "нареч.",
    "level": "B2",
    "ru": "бегло, свободно",
-   "ex": "Ela fala francês fluentemente desde criança.",
-   "exru": "Она свободно говорит по-французски с детства.",
+   "ex": "Ela fala francês fluentemente desde criança, aprendeu em casa.",
+   "exru": "Она с детства свободно говорит по-французски — выучила дома.",
    "note": ""
   },
   {
@@ -4786,8 +4786,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "влечь за собой; придираться",
-   "ex": "Mudar de casa implica muitas despesas.",
-   "exru": "Переезд влечёт за собой много расходов.",
+   "ex": "Mudar de casa implica muitas despesas e muita paciência.",
+   "exru": "Переезд влечёт за собой много расходов и требует терпения.",
    "note": "implicar com alguém — цепляться к кому-то"
   },
   {
@@ -4795,8 +4795,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "показатель; оглавление",
-   "ex": "O índice de desemprego desceu ligeiramente.",
-   "exru": "Уровень безработицы немного снизился.",
+   "ex": "O índice de desemprego desceu ligeiramente no último trimestre.",
+   "exru": "Уровень безработицы немного снизился в последнем квартале.",
    "note": ""
   },
   {
@@ -4813,8 +4813,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "переговоры",
-   "ex": "As negociações duraram toda a madrugada.",
-   "exru": "Переговоры длились всю ночь до рассвета.",
+   "ex": "As negociações duraram toda a madrugada e não deram nada.",
+   "exru": "Переговоры тянулись всю ночь и ничем не кончились.",
    "note": ""
   },
   {
@@ -4912,8 +4912,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "восхищение",
-   "ex": "Sinto grande admiração pelo trabalho dela.",
-   "exru": "Я испытываю большое восхищение её работой.",
+   "ex": "Sinto grande admiração pelo trabalho dela com as crianças.",
+   "exru": "Я очень восхищаюсь её работой с детьми.",
    "note": ""
   },
   {
@@ -5065,8 +5065,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "недоверие",
-   "ex": "Olhou para o vendedor com desconfiança.",
-   "exru": "Он посмотрел на продавца с недоверием.",
+   "ex": "Olhou para o vendedor com desconfiança e saiu da loja.",
+   "exru": "Он с недоверием посмотрел на продавца и вышел из магазина.",
    "note": ""
   },
   {
@@ -5119,8 +5119,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "устойчивость, стабильность",
-   "ex": "Procuro um emprego com mais estabilidade.",
-   "exru": "Я ищу работу с большей стабильностью.",
+   "ex": "Procuro um emprego com mais estabilidade e horário fixo.",
+   "exru": "Я ищу работу постабильнее и с фиксированным графиком.",
    "note": ""
   },
   {
@@ -5137,8 +5137,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "скалистый обрыв, утёс",
-   "ex": "As falésias do Algarve são impressionantes.",
-   "exru": "Скалы Алгарви впечатляют.",
+   "ex": "As falésias do Algarve são impressionantes ao pôr do sol.",
+   "exru": "Скалы Алгарви впечатляют на закате.",
    "note": ""
   },
   {
@@ -5146,8 +5146,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "поздравлять",
-   "ex": "Quero felicitá-lo pelo excelente resultado.",
-   "exru": "Хочу поздравить вас с отличным результатом.",
+   "ex": "Quero felicitá-lo pelo excelente resultado do seu trabalho.",
+   "exru": "Хочу поздравить вас с отличным результатом вашей работы.",
    "note": "Официальнее, чем dar os parabéns"
   },
   {
@@ -5155,8 +5155,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "поместье, усадьба",
-   "ex": "Passámos a noite numa herdade alentejana.",
-   "exru": "Мы переночевали в усадьбе в Алентежу.",
+   "ex": "Passámos a noite numa herdade alentejana rodeada de sobreiros.",
+   "exru": "Мы переночевали в усадьбе в Алентежу среди пробковых дубов.",
    "note": ""
   },
   {
@@ -5173,8 +5173,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "освещать",
-   "ex": "Umas velas iluminavam a sala toda.",
-   "exru": "Несколько свечей освещали всю комнату.",
+   "ex": "Umas velas iluminavam a sala toda durante o apagão.",
+   "exru": "Во время отключения света всю комнату освещали свечи.",
    "note": ""
   },
   {
@@ -5191,8 +5191,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "неопределённость",
-   "ex": "Vivemos meses de grande incerteza económica.",
-   "exru": "Мы прожили месяцы большой экономической неопределённости.",
+   "ex": "Vivemos meses de grande incerteza económica depois da crise.",
+   "exru": "После кризиса мы прожили месяцы большой экономической неопределённости.",
    "note": ""
   },
   {
@@ -5227,8 +5227,8 @@
    "pos": "нареч.",
    "level": "B2",
    "ru": "поначалу, изначально",
-   "ex": "Inicialmente parecia simples, mas complicou-se.",
-   "exru": "Поначалу казалось просто, но всё усложнилось.",
+   "ex": "Inicialmente parecia simples, mas complicou-se logo na primeira semana.",
+   "exru": "Поначалу казалось просто, но уже на первой неделе всё усложнилось.",
    "note": ""
   },
   {
@@ -5262,10 +5262,10 @@
    "word": "o município",
    "pos": "сущ.",
    "level": "B2",
-   "ru": "муниципалитет",
+   "ru": "муниципалитет (орган власти)",
    "ex": "O município investiu na recolha de lixo.",
    "exru": "Муниципалитет вложился в вывоз мусора.",
-   "note": ""
+   "note": "Территория того же деления — o concelho"
   },
   {
    "word": "o patamar",
@@ -5308,8 +5308,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "поступать; приступать",
-   "ex": "Vamos proceder à leitura do contrato.",
-   "exru": "Приступим к чтению договора.",
+   "ex": "Vamos proceder à leitura do contrato antes de assinar.",
+   "exru": "Прежде чем подписывать, приступим к чтению договора.",
    "note": ""
   },
   {
@@ -5335,8 +5335,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "успокаиваться",
-   "ex": "Sossega, ainda temos tempo de sobra.",
-   "exru": "Успокойся, у нас ещё полно времени.",
+   "ex": "Sossega, ainda temos tempo de sobra para apanhar o comboio.",
+   "exru": "Успокойся, у нас полно времени, чтобы успеть на поезд.",
    "note": ""
   },
   {
@@ -5371,8 +5371,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "независимость",
-   "ex": "A independência financeira deu-lhe muita liberdade.",
-   "exru": "Финансовая независимость дала ей много свободы.",
+   "ex": "A independência financeira deu-lhe liberdade para escolher o trabalho.",
+   "exru": "Финансовая независимость дала ей свободу выбирать работу.",
    "note": ""
   },
   {
@@ -5407,8 +5407,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "значительный",
-   "ex": "Houve uma melhoria significativa nos resultados.",
-   "exru": "В результатах произошло значительное улучшение.",
+   "ex": "Houve uma melhoria significativa nos resultados deste trimestre.",
+   "exru": "В этом квартале результаты значительно улучшились.",
    "note": ""
   },
   {
@@ -5416,8 +5416,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "иммигрант",
-   "ex": "Muitos imigrantes trabalham na construção civil.",
-   "exru": "Многие иммигранты работают в строительстве.",
+   "ex": "Muitos imigrantes trabalham na construção civil e na restauração.",
+   "exru": "Многие иммигранты работают в строительстве и в общепите.",
    "note": ""
   },
   {
@@ -5425,8 +5425,8 @@
    "pos": "союз",
    "level": "B2",
    "ru": "однако, тем не менее",
-   "ex": "Estava cansado; todavia, continuou a trabalhar.",
-   "exru": "Он устал; тем не менее продолжил работать.",
+   "ex": "Estava cansado; todavia, continuou a trabalhar até de madrugada.",
+   "exru": "Он устал; тем не менее работал до самого рассвета.",
    "note": "Книжное; в речи чаще no entanto"
   },
   {
@@ -5434,8 +5434,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "авокадо",
-   "ex": "Comprei dois abacates maduros no mercado.",
-   "exru": "Я купил на рынке два спелых авокадо.",
+   "ex": "Comprei dois abacates maduros no mercado da praça.",
+   "exru": "Я купил два спелых авокадо на рынке на площади.",
    "note": ""
   },
   {
@@ -5461,8 +5461,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "сокращение, аббревиатура",
-   "ex": "Escreva o nome completo, sem abreviaturas.",
-   "exru": "Напишите полное имя, без сокращений.",
+   "ex": "Escreva o nome completo, sem abreviaturas nem iniciais.",
+   "exru": "Напишите полное имя, без сокращений и инициалов.",
    "note": ""
   },
   {
@@ -5542,8 +5542,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "отрочество, подростковый возраст",
-   "ex": "A adolescência dele foi bastante complicada.",
-   "exru": "Его подростковый возраст был довольно сложным.",
+   "ex": "A adolescência dele foi bastante complicada, mudaram de país.",
+   "exru": "Отрочество у него было непростым: семья переехала в другую страну.",
    "note": ""
   },
   {
@@ -5587,8 +5587,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "хвататься, цепляться",
-   "ex": "Agarrou-se ao corrimão para não cair.",
-   "exru": "Он ухватился за перила, чтобы не упасть.",
+   "ex": "Agarrou-se ao corrimão para não cair nas escadas molhadas.",
+   "exru": "Он ухватился за перила, чтобы не упасть на мокрой лестнице.",
    "note": "agarrar-se a"
   },
   {
@@ -5668,8 +5668,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "розмарин",
-   "ex": "Pus alecrim nas batatas assadas.",
-   "exru": "Я добавил розмарин к запечённой картошке.",
+   "ex": "Pus alecrim e alho nas batatas assadas no forno.",
+   "exru": "Я добавил розмарин и чеснок к картошке, запечённой в духовке.",
    "note": ""
   },
   {
@@ -5731,8 +5731,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "самолюбие",
-   "ex": "A crítica feriu-lhe o amor-próprio.",
-   "exru": "Критика задела его самолюбие.",
+   "ex": "A crítica do chefe feriu-lhe o amor-próprio.",
+   "exru": "Замечание начальника задело его самолюбие.",
    "note": ""
   },
   {
@@ -5740,8 +5740,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "надутый, обиженный",
-   "ex": "Ficou amuado o resto da tarde.",
-   "exru": "Он дулся весь остаток вечера.",
+   "ex": "Ficou amuado o resto da tarde por causa da discussão.",
+   "exru": "Он дулся весь остаток дня из-за той ссоры.",
    "note": ""
   },
   {
@@ -5776,8 +5776,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "обезболивающее, анестетик",
-   "ex": "O dentista deu-me um anestésico local.",
-   "exru": "Стоматолог сделал мне местную анестезию.",
+   "ex": "O dentista deu-me um anestésico local antes de arrancar o dente.",
+   "exru": "Стоматолог сделал местную анестезию, прежде чем удалить зуб.",
    "note": ""
   },
   {
@@ -5803,8 +5803,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "предплечье",
-   "ex": "Partiu o antebraço a jogar futebol.",
-   "exru": "Он сломал предплечье, играя в футбол.",
+   "ex": "Partiu o antebraço a jogar futebol com os amigos.",
+   "exru": "Он сломал предплечье, играя в футбол с друзьями.",
    "note": ""
   },
   {
@@ -5812,8 +5812,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "переносить на более ранний срок; предвосхищать",
-   "ex": "Antecipámos a reunião para as nove.",
-   "exru": "Мы перенесли совещание на девять.",
+   "ex": "Antecipámos a reunião para as nove por causa das viagens.",
+   "exru": "Мы перенесли совещание на девять из-за поездок.",
    "note": ""
   },
   {
@@ -5821,8 +5821,8 @@
    "pos": "нареч.",
    "level": "B2",
    "ru": "заранее, наперёд",
-   "ex": "Agradeço de antemão a sua atenção.",
-   "exru": "Заранее благодарю за внимание.",
+   "ex": "Agradeço de antemão a sua atenção e a resposta rápida.",
+   "exru": "Заранее благодарю за внимание и быстрый ответ.",
    "note": "Устойчивый оборот"
   },
   {
@@ -5830,8 +5830,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "предок",
-   "ex": "Os antepassados dele vieram dos Açores.",
-   "exru": "Его предки приехали с Азорских островов.",
+   "ex": "Os antepassados dele vieram dos Açores no século dezanove.",
+   "exru": "Его предки приехали с Азорских островов в девятнадцатом веке.",
    "note": ""
   },
   {
@@ -5847,7 +5847,7 @@
    "word": "apaixonante",
    "pos": "прил.",
    "level": "B2",
-   "ru": "увлекательный, захватывающий",
+   "ru": "затягивающий, влюбляющий в себя",
    "ex": "O trabalho dela é difícil, mas apaixonante.",
    "exru": "Её работа трудная, но увлекательная.",
    "note": ""
@@ -5902,8 +5902,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "конспект, запись",
-   "ex": "Tirei apontamentos durante toda a aula.",
-   "exru": "Я вёл конспект всё занятие.",
+   "ex": "Tirei apontamentos durante toda a aula, mas não percebi tudo.",
+   "exru": "Я вёл конспект всё занятие, но не всё понял.",
    "note": "tirar apontamentos — конспектировать"
   },
   {
@@ -5920,8 +5920,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "проветривать",
-   "ex": "Abre a janela para arejar o quarto.",
-   "exru": "Открой окно, чтобы проветрить комнату.",
+   "ex": "Deixa a roupa a arejar na varanda umas horas.",
+   "exru": "Оставь бельё проветриться на балконе на пару часов.",
    "note": ""
   },
   {
@@ -5956,8 +5956,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "вызывать мурашки",
-   "ex": "Aquela história arrepia só de ouvir.",
-   "exru": "От той истории мурашки бегут, только услышишь.",
+   "ex": "Aquela história arrepia só de ouvir, ainda por cima é verdadeira.",
+   "exru": "От той истории мурашки бегут, а она к тому же правдивая.",
    "note": ""
   },
   {
@@ -5974,8 +5974,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "уборка, наведение порядка",
-   "ex": "Fizemos uma grande arrumação na garagem.",
-   "exru": "Мы устроили большую уборку в гараже.",
+   "ex": "Fizemos uma grande arrumação na garagem no fim de semana.",
+   "exru": "На выходных мы устроили большую уборку в гараже.",
    "note": ""
   },
   {
@@ -6028,8 +6028,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "привлекать",
-   "ex": "A feira atraiu milhares de visitantes.",
-   "exru": "Ярмарка привлекла тысячи посетителей.",
+   "ex": "A feira do livro atraiu milhares de visitantes este ano.",
+   "exru": "Книжная ярмарка привлекла в этом году тысячи посетителей.",
    "note": ""
   },
   {
@@ -6064,8 +6064,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "наушник; телефонная трубка",
-   "ex": "Esqueci-me dos auscultadores em casa.",
-   "exru": "Я забыл наушники дома.",
+   "ex": "Esqueci-me dos auscultadores em casa e a viagem foi longa.",
+   "exru": "Я забыл наушники дома, а дорога была долгой.",
    "note": "Европейское слово; во мн. ч. — наушники"
   },
   {
@@ -6091,8 +6091,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "фундук",
-   "ex": "Este chocolate leva avelãs inteiras.",
-   "exru": "В этом шоколаде цельный фундук.",
+   "ex": "Este chocolate leva avelãs inteiras e um pouco de sal.",
+   "exru": "В этом шоколаде цельный фундук и немного соли.",
    "note": ""
   },
   {
@@ -6118,8 +6118,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "изжога",
-   "ex": "A comida picante dá-me azia.",
-   "exru": "От острой еды у меня изжога.",
+   "ex": "A comida picante dá-me azia durante a noite toda.",
+   "exru": "От острой еды у меня всю ночь изжога.",
    "note": ""
   },
   {
@@ -6181,8 +6181,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "баклажан",
-   "ex": "Assei beringelas com azeite e alho.",
-   "exru": "Я запёк баклажаны с оливковым маслом и чесноком.",
+   "ex": "Assei beringelas com azeite, alho e um pouco de orégãos.",
+   "exru": "Я запёк баклажаны с оливковым маслом, чесноком и щепоткой орегано.",
    "note": ""
   },
   {
@@ -6235,8 +6235,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "загорать",
-   "ex": "Ela bronzeia-se com muita facilidade.",
-   "exru": "Она загорает очень легко.",
+   "ex": "Ela bronzeia-se com muita facilidade, basta uma manhã de praia.",
+   "exru": "Она загорает очень легко — хватает одного утра на пляже.",
    "note": ""
   },
   {
@@ -6244,8 +6244,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "резкий, внезапный",
-   "ex": "Houve uma descida brusca da temperatura.",
-   "exru": "Произошло резкое падение температуры.",
+   "ex": "Houve uma descida brusca da temperatura durante a noite.",
+   "exru": "Ночью произошло резкое падение температуры.",
    "note": ""
   },
   {
@@ -6262,8 +6262,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "обманывать, мошенничать",
-   "ex": "Burlaram vários idosos com telefonemas falsos.",
-   "exru": "Несколько пожилых людей обманули фальшивыми звонками.",
+   "ex": "Burlaram vários idosos com telefonemas falsos do banco.",
+   "exru": "Несколько пожилых людей обманули фальшивыми звонками из банка.",
    "note": "Мошенничество — a burla"
   },
   {
@@ -6288,7 +6288,7 @@
    "word": "a caçarola",
    "pos": "сущ.",
    "level": "B2",
-   "ru": "кастрюля",
+   "ru": "сотейник, глубокая кастрюля",
    "ex": "Deixei a sopa a ferver na caçarola grande.",
    "exru": "Я оставил суп кипеть в большой кастрюле.",
    "note": ""
@@ -6316,8 +6316,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "тёплый, радушный",
-   "ex": "Recebeu-nos com um abraço caloroso.",
-   "exru": "Он встретил нас тёплыми объятиями.",
+   "ex": "Recebeu-nos com um abraço caloroso à porta de casa.",
+   "exru": "Он встретил нас тёплыми объятиями у порога.",
    "note": ""
   },
   {
@@ -6361,8 +6361,8 @@
    "pos": "глаг.",
    "level": "B2",
    "ru": "утомлять",
-   "ex": "Subir tantas escadas cansa qualquer pessoa.",
-   "exru": "Подниматься по стольким лестницам утомит любого.",
+   "ex": "Subir tantas escadas cansa qualquer pessoa, mesmo em boa forma.",
+   "exru": "Столько ступенек утомят кого угодно, даже в хорошей форме.",
    "note": ""
   },
   {
@@ -6379,8 +6379,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "коврик у двери",
-   "ex": "Deixei a chave debaixo do capacho.",
-   "exru": "Я оставил ключ под ковриком.",
+   "ex": "Deixei a chave debaixo do capacho, como combinámos.",
+   "exru": "Я оставил ключ под ковриком, как договаривались.",
    "note": ""
   },
   {
@@ -6397,8 +6397,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "косточка (плода)",
-   "ex": "Cuidado com o caroço da azeitona.",
-   "exru": "Осторожно с косточкой от оливки.",
+   "ex": "Cuidado com o caroço da azeitona, parte-se um dente.",
+   "exru": "Осторожно с оливковой косточкой — так и зуб сломать недолго.",
    "note": ""
   },
   {
@@ -6424,8 +6424,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "католик",
-   "ex": "A maioria dos portugueses é católica.",
-   "exru": "Большинство португальцев — католики.",
+   "ex": "A maioria dos portugueses é católica, embora poucos vão à missa.",
+   "exru": "Большинство португальцев — католики, хотя в церковь ходят немногие.",
    "note": ""
   },
   {
@@ -6460,8 +6460,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "суть, ядро",
-   "ex": "Chegámos finalmente ao cerne da questão.",
-   "exru": "Мы наконец добрались до сути вопроса.",
+   "ex": "Chegámos finalmente ao cerne da questão ao fim de duas horas.",
+   "exru": "Через два часа мы наконец добрались до сути вопроса.",
    "note": ""
   },
   {
@@ -6649,8 +6649,8 @@
    "pos": "прил.",
    "level": "B2",
    "ru": "конкурентный; соревновательный",
-   "ex": "O preço deles é muito competitivo.",
-   "exru": "Их цена очень конкурентоспособна.",
+   "ex": "O preço deles é muito competitivo para a qualidade oferecida.",
+   "exru": "Их цена очень выгодна для такого качества.",
    "note": ""
   },
   {
@@ -6658,8 +6658,8 @@
    "pos": "сущ.",
    "level": "B2",
    "ru": "осложнение",
-   "ex": "Houve uma complicação depois da operação.",
-   "exru": "После операции возникло осложнение.",
+   "ex": "Houve uma complicação depois da operação e ficou mais dias.",
+   "exru": "После операции возникло осложнение, и он пролежал дольше.",
    "note": ""
   },
   {
@@ -6720,10 +6720,10 @@
    "word": "a confeitaria",
    "pos": "сущ.",
    "level": "B2",
-   "ru": "кондитерская",
-   "ex": "Comprámos os bolos naquela confeitaria antiga.",
-   "exru": "Мы купили пирожные в той старой кондитерской.",
-   "note": ""
+   "ru": "лавка со сладостями",
+   "ex": "Comprámos os bolos naquela confeitaria antiga junto ao rio.",
+   "exru": "Мы купили пирожные в той старой лавке у реки.",
+   "note": "Кофе и завтрак — скорее в pastelaria"
   },
   {
    "word": "conferir",
@@ -7323,7 +7323,7 @@
    "word": "desmarcar",
    "pos": "глаг.",
    "level": "B2",
-   "ru": "отменять запись, отменять встречу",
+   "ru": "отменять (запись, встречу)",
    "ex": "Tive de desmarcar a consulta no dentista.",
    "exru": "Мне пришлось отменить запись к стоматологу.",
    "note": "Обратное — marcar: записаться, назначить"
@@ -7665,7 +7665,7 @@
    "word": "encolher",
    "pos": "глаг.",
    "level": "B2",
-   "ru": "садиться о ткани, сжиматься",
+   "ru": "садиться (о ткани), сжиматься",
    "ex": "A camisola encolheu na máquina e ficou pequena.",
    "exru": "Свитер сел в машинке и стал мал.",
    "note": "Encolher os ombros — пожать плечами"
@@ -7989,7 +7989,7 @@
    "word": "estrelado",
    "pos": "прил.",
    "level": "B2",
-   "ru": "жареный о яйце; звёздный",
+   "ru": "жареный (о яйце); звёздный",
    "ex": "Ao pequeno-almoço come dois ovos estrelados com pão.",
    "exru": "На завтрак он ест два жареных яйца с хлебом.",
    "note": "Céu estrelado — звёздное небо, второе значение"
@@ -8043,7 +8043,7 @@
    "word": "expirar",
    "pos": "глаг.",
    "level": "B2",
-   "ru": "истекать о сроке",
+   "ru": "истекать (о сроке)",
    "ex": "O prazo para entregar os documentos expira sexta-feira.",
    "exru": "Срок подачи документов истекает в пятницу.",
    "note": "Второе значение — выдыхать, в медицине"
