@@ -8931,6 +8931,1126 @@
    "exru": "Во время болезни он мог рассчитывать на поддержку коллег.",
    "note": "Apoio ao cliente — служба поддержки",
    "tema": "B1"
+  },
+  {
+   "word": "o atendimento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "обслуживание, приём посетителей",
+   "ex": "O atendimento nas finanças é só por marcação.",
+   "exru": "В налоговой принимают только по записи.",
+   "note": "Horário de atendimento — часы приёма",
+   "tema": "B9"
+  },
+  {
+   "word": "a senha",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "талон с номером очереди",
+   "ex": "Tira uma senha e espera que chamem o número.",
+   "exru": "Возьми талон и жди, когда назовут номер.",
+   "note": "В учреждениях и на почте — обычное дело",
+   "tema": "B9"
+  },
+  {
+   "word": "a marcação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "запись, бронирование",
+   "ex": "Fiz a marcação da consulta pela aplicação do centro.",
+   "exru": "Я записался к врачу через приложение поликлиники.",
+   "note": "Marcar — записаться, desmarcar — отменить",
+   "tema": "B9"
+  },
+  {
+   "word": "as finanças",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "налоговая служба",
+   "ex": "Fui às finanças pedir o número de contribuinte.",
+   "exru": "Я ходил в налоговую за номером налогоплательщика.",
+   "note": "Всегда во мн. ч.; полное имя — Autoridade Tributária",
+   "tema": "B9"
+  },
+  {
+   "word": "o imposto",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "налог",
+   "ex": "O imposto sobre o carro paga-se uma vez por ano.",
+   "exru": "Налог на машину платят раз в год.",
+   "note": "IRS — подоходный, IVA — налог с продаж",
+   "tema": "B9"
+  },
+  {
+   "word": "a taxa",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сбор, пошлина",
+   "ex": "A renovação do cartão tem uma taxa de quinze euros.",
+   "exru": "За продление карты берут сбор в пятнадцать евро.",
+   "note": "Также ставка: a taxa de juro, a taxa de desemprego",
+   "tema": "B9"
+  },
+  {
+   "word": "a transferência",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "перевод денег",
+   "ex": "Fiz a transferência ontem, deve chegar amanhã.",
+   "exru": "Я сделал перевод вчера, должен дойти завтра.",
+   "note": "Transferência bancária — банковский перевод",
+   "tema": "B9"
+  },
+  {
+   "word": "o levantamento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "снятие наличных",
+   "ex": "Há um limite diário para levantamentos na caixa automática.",
+   "exru": "На снятие в банкомате есть дневной лимит.",
+   "note": "Levantar dinheiro — снять деньги",
+   "tema": "B9"
+  },
+  {
+   "word": "o extrato",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "выписка со счёта",
+   "ex": "Pedi o extrato dos últimos três meses ao banco.",
+   "exru": "Я запросил в банке выписку за последние три месяца.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o empréstimo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "заём, кредит",
+   "ex": "Pediram um empréstimo ao banco para comprar casa.",
+   "exru": "Они взяли в банке кредит на покупку жилья.",
+   "note": "Кредит на жильё — o crédito à habitação",
+   "tema": "B9"
+  },
+  {
+   "word": "o juro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "процент по кредиту",
+   "ex": "Os juros subiram e a prestação ficou mais alta.",
+   "exru": "Проценты выросли, и платёж стал больше.",
+   "note": "Обычно во мн. ч.: os juros",
+   "tema": "B9"
+  },
+  {
+   "word": "a poupança",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сбережения",
+   "ex": "Gastaram as poupanças todas nas obras da cozinha.",
+   "exru": "Все сбережения они потратили на ремонт кухни.",
+   "note": "Poupar — копить, экономить",
+   "tema": "B9"
+  },
+  {
+   "word": "a apólice",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "страховой полис",
+   "ex": "A apólice não cobre danos causados por inundação.",
+   "exru": "Полис не покрывает ущерб от затопления.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o sinistro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "страховой случай",
+   "ex": "Participou o sinistro à seguradora no mesmo dia.",
+   "exru": "О происшествии он сообщил в страховую в тот же день.",
+   "note": "Participar um sinistro — заявить о страховом случае",
+   "tema": "B9"
+  },
+  {
+   "word": "o registo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "регистрация, запись",
+   "ex": "O registo do contrato de arrendamento faz-se online.",
+   "exru": "Договор аренды регистрируют через интернет.",
+   "note": "Carta registada — заказное письмо",
+   "tema": "B9"
+  },
+  {
+   "word": "o notário",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "нотариус",
+   "ex": "Assinámos a escritura no notário na sexta de manhã.",
+   "exru": "Договор купли-продажи мы подписали у нотариуса в пятницу утром.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o cartório",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "нотариальная контора",
+   "ex": "O cartório fica ao lado do tribunal, na mesma rua.",
+   "exru": "Нотариальная контора рядом с судом, на той же улице.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o tribunal",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "суд",
+   "ex": "O caso só chegou ao tribunal dois anos depois.",
+   "exru": "До суда дело дошло только через два года.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o orçamento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "смета; бюджет",
+   "ex": "Pedi três orçamentos antes de escolher o canalizador.",
+   "exru": "Прежде чем выбрать сантехника, я запросил три сметы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o subsídio",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "пособие, доплата",
+   "ex": "Recebe um subsídio de alimentação todos os meses.",
+   "exru": "Он каждый месяц получает доплату на питание.",
+   "note": "Subsídio de férias e de Natal — две доп. зарплаты в год",
+   "tema": "B9"
+  },
+  {
+   "word": "a dívida",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "долг",
+   "ex": "Pagou a dívida toda antes do fim do ano.",
+   "exru": "Он выплатил весь долг до конца года.",
+   "note": "Dever — быть должным",
+   "tema": "B9"
+  },
+  {
+   "word": "o reembolso",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "возмещение, возврат денег",
+   "ex": "O reembolso do bilhete demorou quase um mês.",
+   "exru": "Возврат денег за билет занял почти месяц.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o formulário",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "бланк, анкета",
+   "ex": "Preencha o formulário e entregue-o no balcão dois.",
+   "exru": "Заполните бланк и сдайте его во второе окно.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o requerimento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "заявление",
+   "ex": "Entregou o requerimento na câmara na semana passada.",
+   "exru": "Он подал заявление в мэрию на прошлой неделе.",
+   "note": "Requerer — подавать заявление, ходатайствовать",
+   "tema": "B9"
+  },
+  {
+   "word": "a certidão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "свидетельство, справка",
+   "ex": "Precisa da certidão de nascimento para o processo.",
+   "exru": "Для дела нужно свидетельство о рождении.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o comprovativo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "подтверждающий документ",
+   "ex": "Levei o comprovativo de morada e o cartão de cidadão.",
+   "exru": "Я взял справку о месте жительства и удостоверение личности.",
+   "note": "Comprovativo de morada просят почти везде",
+   "tema": "B9"
+  },
+  {
+   "word": "a moradia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "частный дом",
+   "ex": "Compraram uma moradia com quintal nos arredores.",
+   "exru": "Они купили дом с участком на окраине.",
+   "note": "В отличие от apartamento — отдельный дом, не квартира",
+   "tema": "B2"
+  },
+  {
+   "word": "o sótão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "чердак, мансарда",
+   "ex": "Guardámos as malas velhas no sótão da casa.",
+   "exru": "Старые чемоданы мы убрали на чердак.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a arrecadação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "кладовка, чулан",
+   "ex": "Cada apartamento tem uma arrecadação na cave.",
+   "exru": "У каждой квартиры есть кладовка в подвале.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o condomínio",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "плата за содержание дома",
+   "ex": "O condomínio subiu vinte euros por causa do elevador.",
+   "exru": "Плата за дом выросла на двадцать евро из-за лифта.",
+   "note": "Так же называют и сам жилой комплекс",
+   "tema": "B2"
+  },
+  {
+   "word": "a caução",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "залог при аренде",
+   "ex": "A caução é devolvida no fim do arrendamento.",
+   "exru": "Залог возвращают в конце аренды.",
+   "note": "Обычно один-два месяца аренды вперёд",
+   "tema": "B2"
+  },
+  {
+   "word": "a avaria",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "поломка",
+   "ex": "O elevador está parado por causa de uma avaria.",
+   "exru": "Лифт стоит из-за поломки.",
+   "note": "Avariado — сломанный, неисправный",
+   "tema": "B2"
+  },
+  {
+   "word": "a fuga",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "утечка; побег",
+   "ex": "Havia uma fuga de água atrás da máquina.",
+   "exru": "За стиральной машиной подтекала вода.",
+   "note": "Fuga de gás — утечка газа; fugir — убегать",
+   "tema": "B2"
+  },
+  {
+   "word": "a infiltração",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "протечка с улицы",
+   "ex": "As chuvas provocaram uma infiltração na parede do quarto.",
+   "exru": "Из-за дождей стену в спальне промочило.",
+   "note": "Частая беда в старых домах без изоляции",
+   "tema": "B2"
+  },
+  {
+   "word": "o isolamento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "утепление, изоляция",
+   "ex": "O isolamento das janelas fez toda a diferença.",
+   "exru": "Утепление окон изменило всё.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a caldeira",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "котёл отопления",
+   "ex": "A caldeira avariou e ficámos sem água quente.",
+   "exru": "Котёл сломался, и мы остались без горячей воды.",
+   "note": "Газовая колонка — o esquentador",
+   "tema": "B2"
+  },
+  {
+   "word": "o estore",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "рольставня",
+   "ex": "Baixa o estore, o sol da tarde bate aqui.",
+   "exru": "Опусти рольставню, сюда бьёт послеобеденное солнце.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a persiana",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "жалюзи",
+   "ex": "As persianas do escritório estão sempre meio fechadas.",
+   "exru": "Жалюзи в кабинете всегда наполовину закрыты.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o interruptor",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "выключатель",
+   "ex": "O interruptor da casa de banho está do lado de fora.",
+   "exru": "Выключатель для ванной снаружи.",
+   "note": "Розетка — a tomada",
+   "tema": "B2"
+  },
+  {
+   "word": "o canalizador",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сантехник",
+   "ex": "Chamei um canalizador para arranjar a torneira da cozinha.",
+   "exru": "Я вызвал сантехника починить кран на кухне.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o eletricista",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "электрик",
+   "ex": "O eletricista trocou o quadro todo numa manhã.",
+   "exru": "Электрик за утро поменял весь щиток.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a ferramenta",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "инструмент",
+   "ex": "Não tenho as ferramentas certas para este trabalho.",
+   "exru": "У меня нет подходящих инструментов для этой работы.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o prego",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "гвоздь",
+   "ex": "Preciso de um prego mais comprido para o quadro.",
+   "exru": "Для картины нужен гвоздь подлиннее.",
+   "note": "Um prego в кафе — это ещё и бутерброд с мясом",
+   "tema": "B2"
+  },
+  {
+   "word": "o parafuso",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "шуруп, винт",
+   "ex": "Faltou um parafuso e a prateleira ficou torta.",
+   "exru": "Не хватило шурупа, и полка встала криво.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o corrimão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "перила",
+   "ex": "Segura-te ao corrimão, os degraus são altos.",
+   "exru": "Держись за перила, ступеньки высокие.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a vizinhança",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "соседи, окрестности",
+   "ex": "A vizinhança toda se queixou do barulho das obras.",
+   "exru": "На шум от стройки жаловались все соседи.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "mobilado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "меблированный",
+   "ex": "Alugámos um apartamento mobilado por seis meses.",
+   "exru": "Мы сняли меблированную квартиру на полгода.",
+   "note": "Слово из объявлений: mobilado e equipado",
+   "tema": "B2"
+  },
+  {
+   "word": "equipado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "оборудованный",
+   "ex": "A cozinha vem equipada com forno e máquina de lavar.",
+   "exru": "Кухня идёт с духовкой и стиральной машиной.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o sintoma",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "симптом",
+   "ex": "Os primeiros sintomas apareceram dois dias depois.",
+   "exru": "Первые симптомы появились через два дня.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "o diagnóstico",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "диагноз",
+   "ex": "O diagnóstico só ficou claro depois dos exames.",
+   "exru": "Диагноз прояснился только после обследования.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "o tratamento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "лечение",
+   "ex": "O tratamento dura seis semanas e é gratuito.",
+   "exru": "Лечение длится шесть недель и бесплатно.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a ligadura",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "бинт, повязка",
+   "ex": "Pôs uma ligadura no tornozelo e continuou a andar.",
+   "exru": "Он забинтовал лодыжку и пошёл дальше.",
+   "note": "Пластырь — o penso rápido",
+   "tema": "B6"
+  },
+  {
+   "word": "a urgência",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "неотложная помощь",
+   "ex": "Levaram-no às urgências do hospital de madrugada.",
+   "exru": "Его отвезли в приёмный покой больницы под утро.",
+   "note": "Обычно во мн. ч.: ir às urgências",
+   "tema": "B6"
+  },
+  {
+   "word": "a análise",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "анализ",
+   "ex": "As análises ao sangue estão prontas na sexta.",
+   "exru": "Анализы крови будут готовы в пятницу.",
+   "note": "Análises ao sangue — с предлогом a, не de",
+   "tema": "B6"
+  },
+  {
+   "word": "a radiografia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "рентген",
+   "ex": "A radiografia mostrou que o osso não partiu.",
+   "exru": "Рентген показал, что кость цела.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a cirurgia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "хирургическая операция",
+   "ex": "A cirurgia correu bem e teve alta no dia seguinte.",
+   "exru": "Операция прошла хорошо, и на следующий день его выписали.",
+   "note": "Ter alta — быть выписанным из больницы",
+   "tema": "B6"
+  },
+  {
+   "word": "a recuperação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "восстановление после болезни",
+   "ex": "A recuperação foi lenta, mas acabou por andar.",
+   "exru": "Восстановление шло медленно, но ходить он в итоге стал.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a enxaqueca",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "мигрень",
+   "ex": "Tem enxaquecas fortes sempre que dorme pouco.",
+   "exru": "У неё сильная мигрень всякий раз, когда мало спит.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a náusea",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "тошнота",
+   "ex": "Sentiu náuseas durante toda a viagem de barco.",
+   "exru": "Всю дорогу на пароме её тошнило.",
+   "note": "Чаще во мн. ч.: ter náuseas",
+   "tema": "B6"
+  },
+  {
+   "word": "o vómito",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "рвота",
+   "ex": "O vómito parou depois do comprimido que lhe deram.",
+   "exru": "Рвота прекратилась после таблетки, которую ему дали.",
+   "note": "Vomitar — рвать, тошнить",
+   "tema": "B6"
+  },
+  {
+   "word": "a diarreia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "понос, расстройство",
+   "ex": "Ficou com diarreia depois do jantar no restaurante.",
+   "exru": "После ужина в ресторане у него началось расстройство.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a insónia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "бессонница",
+   "ex": "As insónias começaram com a mudança de horário.",
+   "exru": "Бессонница началась со сменой графика.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a tontura",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "головокружение",
+   "ex": "Teve uma tontura e sentou-se no chão.",
+   "exru": "У него закружилась голова, и он сел на пол.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "o inchaço",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "отёк, припухлость",
+   "ex": "O inchaço do pé baixou com gelo e repouso.",
+   "exru": "Отёк на ноге спал от льда и покоя.",
+   "note": "Inchado — опухший",
+   "tema": "B6"
+  },
+  {
+   "word": "a queimadura",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "ожог",
+   "ex": "Ficou com uma queimadura pequena no braço direito.",
+   "exru": "У него остался небольшой ожог на правой руке.",
+   "note": "Queimadura solar — солнечный ожог",
+   "tema": "B6"
+  },
+  {
+   "word": "a cicatriz",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "шрам",
+   "ex": "Ainda tem a cicatriz da operação de há dez anos.",
+   "exru": "У него ещё виден шрам от операции десятилетней давности.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a nódoa",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "пятно на одежде",
+   "ex": "Não consegui tirar a nódoa de vinho da camisa.",
+   "exru": "Пятно от вина с рубашки вывести не удалось.",
+   "note": "Nódoa negra — это синяк, а не пятно",
+   "tema": "B3"
+  },
+  {
+   "word": "desmaiar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "падать в обморок",
+   "ex": "Desmaiou com o calor no meio da fila.",
+   "exru": "От жары он потерял сознание прямо в очереди.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "recuperar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "поправляться, приходить в себя",
+   "ex": "Recuperou depressa e voltou ao trabalho numa semana.",
+   "exru": "Он быстро поправился и через неделю вышел на работу.",
+   "note": "Также «вернуть себе»: recuperar o dinheiro",
+   "tema": "B6"
+  },
+  {
+   "word": "internar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "класть в больницу",
+   "ex": "Foi internado dois dias para ficar em observação.",
+   "exru": "Его положили в больницу на два дня под наблюдение.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "operar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "оперировать",
+   "ex": "Vão operá-lo ao joelho no início do mês.",
+   "exru": "Его будут оперировать на колене в начале месяца.",
+   "note": "Орган — через a: operar ao joelho, ao coração",
+   "tema": "B6"
+  },
+  {
+   "word": "o colesterol",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "холестерин",
+   "ex": "O médico disse que o colesterol está um pouco alto.",
+   "exru": "Врач сказал, что холестерин немного повышен.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "o embarque",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "посадка",
+   "ex": "O embarque começa quarenta minutos antes do voo.",
+   "exru": "Посадка начинается за сорок минут до вылета.",
+   "note": "Cartão de embarque — посадочный талон",
+   "tema": "B5"
+  },
+  {
+   "word": "a escala",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "пересадка в пути",
+   "ex": "O voo faz escala em Madrid durante duas horas.",
+   "exru": "У рейса пересадка в Мадриде на два часа.",
+   "note": "Voo direto — прямой рейс, без пересадки",
+   "tema": "B5"
+  },
+  {
+   "word": "a ligação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "стыковка; соединение",
+   "ex": "Perdi a ligação para o Porto por causa do atraso.",
+   "exru": "Из-за задержки я не успел на стыковку до Порту.",
+   "note": "Также «связь»: a ligação à internet",
+   "tema": "B5"
+  },
+  {
+   "word": "a greve",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "забастовка",
+   "ex": "A greve dos comboios deixou muita gente a pé.",
+   "exru": "Из-за забастовки на железной дороге многие остались без транспорта.",
+   "note": "Fazer greve — бастовать",
+   "tema": "B5"
+  },
+  {
+   "word": "a carruagem",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "вагон",
+   "ex": "O nosso lugar é na carruagem três, junto à janela.",
+   "exru": "Наши места в третьем вагоне, у окна.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "o terminal",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "терминал, конечная",
+   "ex": "O autocarro para Faro sai do terminal rodoviário.",
+   "exru": "Автобус до Фару отходит с автовокзала.",
+   "note": "Terminal rodoviário — автовокзал",
+   "tema": "B5"
+  },
+  {
+   "word": "a portagem",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "плата за проезд по трассе",
+   "ex": "As portagens da A2 custam mais de vinte euros.",
+   "exru": "Проезд по трассе A2 стоит больше двадцати евро.",
+   "note": "Via Verde — полоса с автоматической оплатой",
+   "tema": "B5"
+  },
+  {
+   "word": "a berma",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "обочина",
+   "ex": "Encostou o carro à berma para mudar o pneu.",
+   "exru": "Он съехал на обочину, чтобы поменять колесо.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "o peão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "пешеход",
+   "ex": "Os peões têm prioridade na passadeira, sempre.",
+   "exru": "У пешеходов на переходе всегда приоритет.",
+   "note": "Мн. ч. — peões",
+   "tema": "B5"
+  },
+  {
+   "word": "o engarrafamento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "затор, пробка",
+   "ex": "Ficámos presos num engarrafamento de quase uma hora.",
+   "exru": "Мы простояли в пробке почти час.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "o desvio",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "объезд",
+   "ex": "Puseram um desvio por causa das obras na estrada.",
+   "exru": "Из-за ремонта дороги пустили объезд.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "a oficina",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "автомастерская",
+   "ex": "O carro está na oficina desde segunda-feira.",
+   "exru": "Машина в мастерской с понедельника.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "a inspeção",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "техосмотр",
+   "ex": "A inspeção do carro é obrigatória a partir dos quatro anos.",
+   "exru": "Техосмотр обязателен для машин старше четырёх лет.",
+   "note": "Пишется без c — европейская норма",
+   "tema": "B5"
+  },
+  {
+   "word": "o combustível",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "топливо",
+   "ex": "O preço do combustível subiu outra vez esta semana.",
+   "exru": "Цена на топливо на этой неделе снова выросла.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "o reboque",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "эвакуатор; буксир",
+   "ex": "Chamaram o reboque porque o carro não pegava.",
+   "exru": "Вызвали эвакуатор, потому что машина не заводилась.",
+   "note": "Levar a reboque — тащить на буксире",
+   "tema": "B5"
+  },
+  {
+   "word": "o parquímetro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "паркомат",
+   "ex": "Põe moedas no parquímetro, senão levas multa.",
+   "exru": "Брось монеты в паркомат, иначе получишь штраф.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "a lotação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "вместимость",
+   "ex": "A sala esgotou, a lotação era de trezentos lugares.",
+   "exru": "Зал был полон: вместимость — триста мест.",
+   "note": "«Lotação esgotada» — мест нет, всё продано",
+   "tema": "B5"
+  },
+  {
+   "word": "validar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "компостировать, подтверждать",
+   "ex": "Não te esqueças de validar o bilhete à entrada.",
+   "exru": "Не забудь пробить билет на входе.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "a previsão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "прогноз",
+   "ex": "A previsão do tempo dá chuva para todo o fim de semana.",
+   "exru": "Прогноз погоды обещает дождь на все выходные.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o relâmpago",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "молния",
+   "ex": "Um relâmpago iluminou o céu por um instante.",
+   "exru": "Молния на миг осветила небо.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o trovão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "гром",
+   "ex": "O trovão assustou o cão, que se escondeu debaixo da cama.",
+   "exru": "Гром напугал пса, и он спрятался под кровать.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o granizo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "град",
+   "ex": "O granizo estragou as vinhas em poucos minutos.",
+   "exru": "Град за считаные минуты побил виноградники.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a geada",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "заморозки, иней",
+   "ex": "Houve geada de manhã e os carros ficaram brancos.",
+   "exru": "Утром были заморозки, и машины побелели.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o orvalho",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "роса",
+   "ex": "A relva estava cheia de orvalho ao nascer do sol.",
+   "exru": "На рассвете трава была вся в росе.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o aguaceiro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "короткий ливень",
+   "ex": "Apanhámos um aguaceiro à saída do supermercado.",
+   "exru": "На выходе из супермаркета нас накрыл ливень.",
+   "note": "В прогнозе — aguaceiros, короткие дожди",
+   "tema": "B2"
+  },
+  {
+   "word": "o temporal",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "буря, непогода",
+   "ex": "O temporal derrubou árvores em várias ruas da cidade.",
+   "exru": "Буря повалила деревья на нескольких улицах города.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o vendaval",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "ураганный ветер",
+   "ex": "O vendaval arrancou o estore da varanda.",
+   "exru": "Ураганный ветер сорвал рольставню с балкона.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a rajada",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "порыв ветра",
+   "ex": "As rajadas chegaram aos noventa quilómetros por hora.",
+   "exru": "Порывы ветра доходили до девяноста километров в час.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a maré",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "прилив и отлив",
+   "ex": "Com a maré baixa dá para andar até às rochas.",
+   "exru": "В отлив до скал можно дойти пешком.",
+   "note": "Maré alta — прилив, maré baixa — отлив",
+   "tema": "B2"
+  },
+  {
+   "word": "a cheia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "наводнение, разлив",
+   "ex": "As cheias do inverno cortaram a estrada duas vezes.",
+   "exru": "Зимние разливы дважды перекрывали дорогу.",
+   "note": "Обычно во мн. ч.: as cheias",
+   "tema": "B2"
+  },
+  {
+   "word": "a seca",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "засуха",
+   "ex": "A seca deste verão deixou os campos amarelos.",
+   "exru": "Из-за летней засухи поля пожелтели.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a poluição",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "загрязнение",
+   "ex": "A poluição do ar piora sempre no inverno.",
+   "exru": "Загрязнение воздуха всегда усиливается зимой.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o ambiente",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "обстановка; окружающая среда",
+   "ex": "O restaurante tem um ambiente calmo e acolhedor.",
+   "exru": "В ресторане спокойная и уютная обстановка.",
+   "note": "Meio ambiente — окружающая среда",
+   "tema": "B2"
+  },
+  {
+   "word": "o pinhal",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "сосновый лес",
+   "ex": "O caminho para a praia atravessa um pinhal grande.",
+   "exru": "Дорога к пляжу идёт через большой сосновый лес.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o sobreiro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "пробковый дуб",
+   "ex": "Os sobreiros do Alentejo dão a cortiça das rolhas.",
+   "exru": "Из пробковых дубов Алентежу делают пробку для бутылок.",
+   "note": "Дерево-символ Португалии, рубить его нельзя",
+   "tema": "B2"
+  },
+  {
+   "word": "a oliveira",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "оливковое дерево",
+   "ex": "Há oliveiras com mais de mil anos naquela quinta.",
+   "exru": "В той усадьбе есть оливы старше тысячи лет.",
+   "note": "Оливка — a azeitona, масло — o azeite",
+   "tema": "B2"
+  },
+  {
+   "word": "a ribeira",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "речка, ручей",
+   "ex": "A ribeira seca todos os verões e volta no outono.",
+   "exru": "Ручей пересыхает каждое лето и возвращается осенью.",
+   "note": "Так же называют набережную в Порту — a Ribeira",
+   "tema": "B2"
+  },
+  {
+   "word": "a nascente",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "источник, родник",
+   "ex": "A água da nascente é fresca mesmo no verão.",
+   "exru": "Вода из родника прохладная даже летом.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "ameno",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "мягкий о погоде",
+   "ex": "O inverno aqui é ameno, raramente gela.",
+   "exru": "Зима здесь мягкая, морозы редкость.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "abafado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "душный",
+   "ex": "O quarto estava abafado e abri a janela toda.",
+   "exru": "В комнате было душно, и я открыл окно настежь.",
+   "note": "",
+   "tema": "B2"
   }
  ]
 }

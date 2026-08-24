@@ -14777,6 +14777,132 @@
    "ex": "O casamento foi numa quinta perto de Sintra.",
    "exru": "Свадьбу играли в усадьбе под Синтрой.",
    "note": ""
+  },
+  {
+   "word": "o funcionário",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "сотрудник, служащий",
+   "ex": "A funcionária do balcão explicou-me tudo com paciência.",
+   "exru": "Сотрудница за стойкой всё мне терпеливо объяснила.",
+   "note": "Funcionário público — госслужащий"
+  },
+  {
+   "word": "a multa",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "штраф",
+   "ex": "Apanhei uma multa por estacionar em cima do passeio.",
+   "exru": "Меня оштрафовали за парковку на тротуаре.",
+   "note": ""
+  },
+  {
+   "word": "o rés-do-chão",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "первый этаж",
+   "ex": "Moramos no rés-do-chão, mesmo por baixo dela.",
+   "exru": "Мы живём на первом этаже, прямо под ней.",
+   "note": "Primeiro andar — это уже второй по-русски"
+  },
+  {
+   "word": "o contrato",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "договор",
+   "ex": "Leia o contrato com calma antes de assinar.",
+   "exru": "Прочтите договор спокойно, прежде чем подписывать.",
+   "note": ""
+  },
+  {
+   "word": "as obras",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "ремонт, стройка",
+   "ex": "A casa esteve em obras durante quase um ano.",
+   "exru": "Дом был в ремонте почти год.",
+   "note": "Estar em obras — быть на ремонте"
+  },
+  {
+   "word": "o martelo",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "молоток",
+   "ex": "Passa-me o martelo, que está aí na caixa.",
+   "exru": "Передай молоток, он там в ящике.",
+   "note": ""
+  },
+  {
+   "word": "o telhado",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "крыша",
+   "ex": "O telhado precisa de obras antes do inverno.",
+   "exru": "Крышу надо чинить до зимы.",
+   "note": ""
+  },
+  {
+   "word": "o xarope",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "сироп от кашля",
+   "ex": "Toma o xarope à noite e a tosse passa.",
+   "exru": "Прими сироп на ночь, и кашель пройдёт.",
+   "note": ""
+  },
+  {
+   "word": "o cansaço",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "усталость",
+   "ex": "O cansaço da semana só passa ao domingo.",
+   "exru": "Усталость за неделю проходит только в воскресенье.",
+   "note": ""
+  },
+  {
+   "word": "a autoestrada",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "автомагистраль",
+   "ex": "Pela autoestrada chega-se lá em duas horas.",
+   "exru": "По автомагистрали туда два часа езды.",
+   "note": "На знаках — A1, A2 и так далее"
+  },
+  {
+   "word": "a rotunda",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "круговое движение",
+   "ex": "Na rotunda, sai na segunda saída à direita.",
+   "exru": "На круге сверни во второй съезд направо.",
+   "note": ""
+  },
+  {
+   "word": "a passadeira",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "пешеходный переход",
+   "ex": "Atravessa na passadeira, o carro vai parar.",
+   "exru": "Переходи по переходу, машина остановится.",
+   "note": ""
+  },
+  {
+   "word": "o trânsito",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "дорожное движение",
+   "ex": "Havia muito trânsito na ponte à hora de ponta.",
+   "exru": "В час пик на мосту было плотное движение.",
+   "note": "Hora de ponta — час пик"
+  },
+  {
+   "word": "a onda",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "волна",
+   "ex": "As ondas estavam altas de mais para tomar banho.",
+   "exru": "Волны были слишком высокие, чтобы купаться.",
+   "note": "Также про жару: uma onda de calor"
   }
  ],
  "retired": [

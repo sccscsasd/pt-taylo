@@ -135,7 +135,8 @@ def добавить():
             if tema not in по_id:
                 return 0, 0, ["нет такой темы: %s (%s)" % (tema, w)]
             a["cards"].append(карточка)
-            по_id[tema].setdefault(lvl.lower(), []).append(w)
+            # в файле тем слова лежат без артикля: «chuva», а не «a chuva»
+            по_id[tema].setdefault(lvl.lower(), []).append(АРТИКЛЬ.sub("", w))
             в_a += 1
         else:
             карточка["tema"] = tema
