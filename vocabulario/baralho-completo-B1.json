@@ -9,7 +9,8 @@
    "ru": "репертуар; набор приёмов",
    "ex": "O grupo tem um repertório muito variado de fado.",
    "exru": "У группы очень разнообразный репертуар фаду.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o leque",
@@ -18,7 +19,8 @@
    "ru": "веер; спектр",
    "ex": "A escola oferece um leque alargado de atividades.",
    "exru": "Школа предлагает широкий спектр занятий.",
-   "note": "Переносное «набор» встречается чаще прямого «веер»"
+   "note": "Переносное «набор» встречается чаще прямого «веер»",
+   "tema": "A5"
   },
   {
    "word": "o pormenor",
@@ -27,7 +29,8 @@
    "ru": "подробность, деталь",
    "ex": "Contou-me a história com todos os pormenores.",
    "exru": "Он рассказал мне историю со всеми подробностями.",
-   "note": "В Португалии обычнее, чем detalhe"
+   "note": "В Португалии обычнее, чем detalhe",
+   "tema": "A8"
   },
   {
    "word": "a ação",
@@ -36,7 +39,8 @@
    "ru": "действие; акция",
    "ex": "É preciso passar das palavras à ação.",
    "exru": "Нужно перейти от слов к делу.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "a autonomia",
@@ -45,7 +49,8 @@
    "ru": "самостоятельность; автономия",
    "ex": "Os alunos ganham autonomia ao longo do curso.",
    "exru": "Ученики обретают самостоятельность в течение курса.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "os bens",
@@ -54,7 +59,8 @@
    "ru": "имущество, добро",
    "ex": "Ele deixou todos os bens aos filhos mais novos.",
    "exru": "Он оставил всё имущество младшим детям.",
-   "note": "Обычно во множественном числе"
+   "note": "Обычно во множественном числе",
+   "tema": "B9"
   },
   {
    "word": "o lar",
@@ -63,7 +69,8 @@
    "ru": "домашний очаг",
    "ex": "Depois de uma longa viagem, é bom voltar ao lar.",
    "exru": "После долгой поездки приятно вернуться домой.",
-   "note": "Дом как очаг; здание — casa"
+   "note": "Дом как очаг; здание — casa",
+   "tema": "B2"
   },
   {
    "word": "a localidade",
@@ -72,7 +79,8 @@
    "ru": "населённый пункт",
    "ex": "A localidade tem apenas duzentos habitantes no inverno.",
    "exru": "В этом посёлке зимой всего двести жителей.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o beco",
@@ -81,7 +89,8 @@
    "ru": "переулок, тупик",
    "ex": "O restaurante fica num beco estreito de Alfama.",
    "exru": "Ресторан находится в узком переулке Алфамы.",
-   "note": "beco sem saída — тупик, в том числе переносно"
+   "note": "beco sem saída — тупик, в том числе переносно",
+   "tema": "B2"
   },
   {
    "word": "o mobiliário",
@@ -90,7 +99,8 @@
    "ru": "мебель, обстановка",
    "ex": "Compraram o mobiliário todo numa loja de usados.",
    "exru": "Они купили всю мебель в комиссионном магазине.",
-   "note": "Собирательное; один предмет — o móvel"
+   "note": "Собирательное; один предмет — o móvel",
+   "tema": "B2"
   },
   {
    "word": "o posto",
@@ -99,7 +109,8 @@
    "ru": "пункт; должность",
    "ex": "Há um posto de combustível a dois quilómetros daqui.",
    "exru": "Заправка есть в двух километрах отсюда.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "a sabedoria",
@@ -108,7 +119,8 @@
    "ru": "мудрость",
    "ex": "A minha avó dava conselhos com muita sabedoria.",
    "exru": "Моя бабушка давала советы с большой мудростью.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a sobrevivência",
@@ -117,7 +129,8 @@
    "ru": "выживание",
    "ex": "A água é essencial para a sobrevivência da aldeia.",
    "exru": "Вода необходима для выживания деревни.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "o abrigo",
@@ -126,7 +139,8 @@
    "ru": "укрытие, приют",
    "ex": "Procurámos abrigo da chuva debaixo de uma árvore.",
    "exru": "Мы искали укрытие от дождя под деревом.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o azulejo",
@@ -135,7 +149,8 @@
    "ru": "изразец, плитка азулежу",
    "ex": "As paredes da estação estão cobertas de azulejos azuis.",
    "exru": "Стены вокзала покрыты синими изразцами.",
-   "note": "Символ португальской архитектуры"
+   "note": "Символ португальской архитектуры",
+   "tema": "B2"
   },
   {
    "word": "o brinde",
@@ -144,7 +159,8 @@
    "ru": "тост; подарок при покупке",
    "ex": "Fizemos um brinde à saúde dos noivos.",
    "exru": "Мы подняли тост за здоровье молодожёнов.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a confusão",
@@ -153,7 +169,8 @@
    "ru": "путаница; суматоха",
    "ex": "Houve uma grande confusão à saída do estádio.",
    "exru": "На выходе со стадиона была большая суматоха.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o cumprimento",
@@ -162,7 +179,8 @@
    "ru": "приветствие; исполнение",
    "ex": "Deixou um cumprimento simpático antes de sair.",
    "exru": "Уходя, он приветливо попрощался.",
-   "note": "Второе значение — соблюдение обязательства"
+   "note": "Второе значение — соблюдение обязательства",
+   "tema": "A8"
   },
   {
    "word": "o esquema",
@@ -171,7 +189,8 @@
    "ru": "схема; план действий",
    "ex": "Fizemos um esquema para organizar melhor o trabalho.",
    "exru": "Мы составили схему, чтобы лучше организовать работу.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o estúdio",
@@ -180,7 +199,8 @@
    "ru": "студия",
    "ex": "A banda gravou o disco num estúdio no Porto.",
    "exru": "Группа записала альбом в студии в Порту.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a horta",
@@ -189,7 +209,8 @@
    "ru": "огород",
    "ex": "O meu avô cultiva tomates e couves na horta.",
    "exru": "Мой дед выращивает помидоры и капусту на огороде.",
-   "note": "Овощи — horta, цветы и деревья — jardim"
+   "note": "Овощи — horta, цветы и деревья — jardim",
+   "tema": "B2"
   },
   {
    "word": "o impacto",
@@ -198,7 +219,8 @@
    "ru": "воздействие, влияние",
    "ex": "A notícia teve um grande impacto na cidade toda.",
    "exru": "Новость произвела сильное впечатление на весь город.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "o incêndio",
@@ -207,7 +229,8 @@
    "ru": "пожар",
    "ex": "Os bombeiros combateram o incêndio durante toda a noite.",
    "exru": "Пожарные боролись с огнём всю ночь.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a naturalidade",
@@ -216,7 +239,8 @@
    "ru": "место рождения; естественность",
    "ex": "No formulário pede-se o nome e a naturalidade.",
    "exru": "В анкете просят имя и место рождения.",
-   "note": "В документах — именно место рождения"
+   "note": "В документах — именно место рождения",
+   "tema": "B1"
   },
   {
    "word": "a parcela",
@@ -225,7 +249,8 @@
    "ru": "часть, доля",
    "ex": "Uma parcela dos lucros vai para uma instituição de caridade.",
    "exru": "Часть прибыли идёт на благотворительность.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "a pausa",
@@ -234,7 +259,8 @@
    "ru": "перерыв, пауза",
    "ex": "Vamos fazer uma pausa de dez minutos para café.",
    "exru": "Давайте сделаем перерыв на десять минут на кофе.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "o planalto",
@@ -243,7 +269,8 @@
    "ru": "плоскогорье",
    "ex": "O planalto central é bastante frio no inverno.",
    "exru": "Центральное плоскогорье зимой довольно холодное.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a planície",
@@ -252,7 +279,8 @@
    "ru": "равнина",
    "ex": "O Alentejo é uma planície coberta de sobreiros.",
    "exru": "Алентежу — равнина, покрытая пробковыми дубами.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a prioridade",
@@ -261,7 +289,8 @@
    "ru": "приоритет",
    "ex": "A segurança das crianças é a nossa maior prioridade.",
    "exru": "Безопасность детей — наш главный приоритет.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a proporção",
@@ -270,7 +299,8 @@
    "ru": "соотношение, доля",
    "ex": "A proporção de mulheres na equipa aumentou este ano.",
    "exru": "Доля женщин в команде в этом году выросла.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "o quartel",
@@ -279,7 +309,8 @@
    "ru": "казарма; пожарная часть",
    "ex": "O quartel dos bombeiros fica ao lado da escola.",
    "exru": "Пожарная часть находится рядом со школой.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a rota",
@@ -288,7 +319,8 @@
    "ru": "маршрут, курс",
    "ex": "O navio mudou de rota por causa da tempestade.",
    "exru": "Судно изменило курс из-за шторма.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "a selva",
@@ -297,7 +329,8 @@
    "ru": "джунгли",
    "ex": "Os exploradores atravessaram a selva a pé.",
    "exru": "Исследователи пересекли джунгли пешком.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a síntese",
@@ -306,7 +339,8 @@
    "ru": "краткое изложение",
    "ex": "Faça uma síntese do texto em dez linhas.",
    "exru": "Изложите текст кратко в десяти строках.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a tensão",
@@ -315,7 +349,8 @@
    "ru": "напряжение",
    "ex": "A tensão entre os dois vizinhos aumentou muito.",
    "exru": "Напряжение между двумя соседями сильно возросло.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o transeunte",
@@ -324,7 +359,8 @@
    "ru": "прохожий",
    "ex": "Um transeunte ajudou-me a encontrar a rua certa.",
    "exru": "Прохожий помог мне найти нужную улицу.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a disponibilidade",
@@ -333,7 +369,8 @@
    "ru": "готовность; наличие времени",
    "ex": "Agradeço a sua disponibilidade para me receber hoje.",
    "exru": "Благодарю за то, что нашли время принять меня сегодня.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "o aço",
@@ -342,7 +379,8 @@
    "ru": "сталь",
    "ex": "A ponte nova é feita de aço e betão.",
    "exru": "Новый мост сделан из стали и бетона.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "o acréscimo",
@@ -351,7 +389,8 @@
    "ru": "прибавка, увеличение",
    "ex": "Houve um acréscimo de dez por cento no preço.",
    "exru": "Цена выросла на десять процентов.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "a acusação",
@@ -360,7 +399,8 @@
    "ru": "обвинение",
    "ex": "A acusação não apresentou provas suficientes ao tribunal.",
    "exru": "Обвинение не представило суду достаточных доказательств.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o acusado",
@@ -369,7 +409,8 @@
    "ru": "обвиняемый",
    "ex": "O acusado negou tudo perante o juiz.",
    "exru": "Обвиняемый всё отрицал перед судьёй.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o alarme",
@@ -378,7 +419,8 @@
    "ru": "сигнализация; тревога",
    "ex": "O alarme do carro tocou a meio da noite.",
    "exru": "Сигнализация машины сработала посреди ночи.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o alerta",
@@ -387,7 +429,8 @@
    "ru": "предупреждение, оповещение",
    "ex": "Foi lançado um alerta de mau tempo para amanhã.",
    "exru": "Объявлено предупреждение о непогоде на завтра.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o alicerce",
@@ -396,7 +439,8 @@
    "ru": "фундамент, основа",
    "ex": "A confiança é o alicerce de qualquer amizade.",
    "exru": "Доверие — основа любой дружбы.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o amante",
@@ -405,7 +449,8 @@
    "ru": "любитель; любовник",
    "ex": "É um grande amante de música clássica.",
    "exru": "Он большой любитель классической музыки.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a ambiguidade",
@@ -414,7 +459,8 @@
    "ru": "двусмысленность",
    "ex": "A resposta dele deixou alguma ambiguidade no ar.",
    "exru": "Его ответ оставил некоторую двусмысленность.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o amortecedor",
@@ -423,7 +469,8 @@
    "ru": "амортизатор",
    "ex": "O mecânico disse que o amortecedor está partido.",
    "exru": "Механик сказал, что амортизатор сломан.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "a amostra",
@@ -432,7 +479,8 @@
    "ru": "образец, проба",
    "ex": "O laboratório analisou uma amostra da água do rio.",
    "exru": "Лаборатория проанализировала пробу речной воды.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "a ampliação",
@@ -441,7 +489,8 @@
    "ru": "расширение",
    "ex": "A ampliação da escola vai começar em setembro.",
    "exru": "Расширение школы начнётся в сентябре.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "o anjo",
@@ -450,7 +499,8 @@
    "ru": "ангел",
    "ex": "Na igreja há uma pintura antiga com dois anjos.",
    "exru": "В церкви есть старинная картина с двумя ангелами.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "a aposta",
@@ -459,7 +509,8 @@
    "ru": "ставка, пари",
    "ex": "Perdi a aposta e tive de pagar o jantar.",
    "exru": "Я проиграл пари и должен был оплатить ужин.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a armadilha",
@@ -468,7 +519,8 @@
    "ru": "ловушка",
    "ex": "A última pergunta do exame era uma armadilha.",
    "exru": "Последний вопрос экзамена был ловушкой.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o armazém",
@@ -477,7 +529,8 @@
    "ru": "склад",
    "ex": "As mercadorias ficam no armazém até sexta-feira.",
    "exru": "Товар лежит на складе до пятницы.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "o arquipélago",
@@ -486,7 +539,8 @@
    "ru": "архипелаг",
    "ex": "O arquipélago dos Açores tem nove ilhas habitadas.",
    "exru": "Азорский архипелаг состоит из девяти обитаемых островов.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o arquivo",
@@ -495,7 +549,8 @@
    "ru": "архив; файл",
    "ex": "Guardei o arquivo numa pasta nova do computador.",
    "exru": "Я сохранил файл в новой папке на компьютере.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "a asneira",
@@ -504,7 +559,8 @@
    "ru": "глупость, оплошность",
    "ex": "Fiz uma asneira e apaguei o trabalho todo.",
    "exru": "Я сглупил и стёр всю работу.",
-   "note": "Разговорное, очень частое в Португалии"
+   "note": "Разговорное, очень частое в Португалии",
+   "tema": "A7"
   },
   {
    "word": "o assalto",
@@ -513,7 +569,8 @@
    "ru": "ограбление, нападение",
    "ex": "Houve um assalto ao banco da esquina esta manhã.",
    "exru": "Сегодня утром ограбили банк на углу.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o assassinato",
@@ -522,7 +579,8 @@
    "ru": "убийство",
    "ex": "O filme conta a investigação de um assassinato antigo.",
    "exru": "Фильм рассказывает о расследовании давнего убийства.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a assembleia",
@@ -531,7 +589,8 @@
    "ru": "собрание; ассамблея",
    "ex": "A assembleia de condóminos é na quinta-feira à noite.",
    "exru": "Собрание жильцов состоится в четверг вечером.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a audiência",
@@ -540,7 +599,8 @@
    "ru": "аудитория; судебное заседание",
    "ex": "O programa perdeu audiência ao longo deste ano.",
    "exru": "Передача потеряла аудиторию за этот год.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a autorização",
@@ -549,7 +609,8 @@
    "ru": "разрешение",
    "ex": "Preciso de autorização dos pais para a viagem.",
    "exru": "Мне нужно разрешение родителей на поездку.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o azar",
@@ -558,7 +619,8 @@
    "ru": "невезение",
    "ex": "Que azar, perdi o comboio por um minuto!",
    "exru": "Вот невезение, я опоздал на поезд на минуту!",
-   "note": "Противоположное — sorte"
+   "note": "Противоположное — sorte",
+   "tema": "A7"
   },
   {
    "word": "lidar",
@@ -567,7 +629,8 @@
    "ru": "справляться, иметь дело",
    "ex": "Ela sabe lidar bem com clientes difíceis.",
    "exru": "Она умеет ладить с трудными клиентами.",
-   "note": "Всегда с предлогом: lidar com"
+   "note": "Всегда с предлогом: lidar com",
+   "tema": "B3"
   },
   {
    "word": "razoável",
@@ -576,7 +639,8 @@
    "ru": "разумный; сносный",
    "ex": "O preço parece-me razoável para esta zona.",
    "exru": "Цена кажется мне разумной для этого района.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "quotidiano",
@@ -585,7 +649,8 @@
    "ru": "повседневный",
    "ex": "A conversa quotidiana é o mais difícil de aprender.",
    "exru": "Повседневная речь — самое трудное в изучении.",
-   "note": "Пишется через qu-, а не co-"
+   "note": "Пишется через qu-, а не co-",
+   "tema": "A4"
   },
   {
    "word": "a física",
@@ -594,7 +659,8 @@
    "ru": "физика",
    "ex": "A minha filha quer estudar física na universidade.",
    "exru": "Моя дочь хочет изучать физику в университете.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "amplo",
@@ -603,7 +669,8 @@
    "ru": "просторный; широкий",
    "ex": "O apartamento tem uma sala ampla e luminosa.",
    "exru": "В квартире просторная и светлая гостиная.",
-   "note": ""
+   "note": "",
+   "tema": "A3"
   },
   {
    "word": "destacar",
@@ -612,7 +679,8 @@
    "ru": "выделять, подчёркивать",
    "ex": "O professor destacou os erros mais frequentes.",
    "exru": "Преподаватель выделил самые частые ошибки.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "educativo",
@@ -621,7 +689,8 @@
    "ru": "образовательный, воспитательный",
    "ex": "O museu tem um programa educativo para escolas.",
    "exru": "В музее есть образовательная программа для школ.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "selecionar",
@@ -630,7 +699,8 @@
    "ru": "отбирать, выбирать",
    "ex": "Selecionámos três candidatos para a entrevista final.",
    "exru": "Мы отобрали трёх кандидатов на итоговое собеседование.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a conversação",
@@ -639,7 +709,8 @@
    "ru": "разговорная практика, беседа",
    "ex": "Inscrevi-me numa aula de conversação em português.",
    "exru": "Я записался на занятие по разговорному португальскому.",
-   "note": "О языковой практике; обычный разговор — a conversa"
+   "note": "О языковой практике; обычный разговор — a conversa",
+   "tema": "A8"
   },
   {
    "word": "algures",
@@ -648,7 +719,8 @@
    "ru": "где-то",
    "ex": "Deixei as chaves algures na cozinha e não as encontro.",
    "exru": "Я оставил ключи где-то на кухне и не могу их найти.",
-   "note": "Европейская норма; бразильцы говорят иначе"
+   "note": "Европейская норма; бразильцы говорят иначе",
+   "tema": "A2"
   },
   {
    "word": "incluir",
@@ -657,7 +729,8 @@
    "ru": "включать, содержать",
    "ex": "O preço inclui o pequeno-almoço e o estacionamento.",
    "exru": "В цену входят завтрак и парковка.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "situado",
@@ -666,7 +739,8 @@
    "ru": "расположенный",
    "ex": "O hotel está situado mesmo em frente à praia.",
    "exru": "Отель расположен прямо напротив пляжа.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "surgir",
@@ -675,7 +749,8 @@
    "ru": "возникать, появляться",
    "ex": "Surgiu um problema com a reserva do voo.",
    "exru": "Возникла проблема с бронированием рейса.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "advertir",
@@ -684,7 +759,8 @@
    "ru": "предупреждать, делать замечание",
    "ex": "O médico advertiu-me sobre os riscos do tabaco.",
    "exru": "Врач предупредил меня о вреде табака.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "alargar",
@@ -693,7 +769,8 @@
    "ru": "расширять",
    "ex": "A câmara vai alargar a estrada até à ponte.",
    "exru": "Мэрия расширит дорогу до моста.",
-   "note": ""
+   "note": "",
+   "tema": "A3"
   },
   {
    "word": "a consoante",
@@ -702,7 +779,8 @@
    "ru": "согласный звук",
    "ex": "Em português, algumas consoantes finais não se pronunciam.",
    "exru": "В португальском некоторые конечные согласные не произносятся.",
-   "note": "Гласный — a vogal"
+   "note": "Гласный — a vogal",
+   "tema": "A8"
   },
   {
    "word": "elegante",
@@ -711,7 +789,8 @@
    "ru": "элегантный",
    "ex": "Ela apareceu na festa com um vestido elegante.",
    "exru": "Она пришла на праздник в элегантном платье.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "encaminhar",
@@ -720,7 +799,8 @@
    "ru": "направлять, перенаправлять",
    "ex": "O médico de família encaminhou-me para um especialista.",
    "exru": "Семейный врач направил меня к специалисту.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "manifestar",
@@ -729,7 +809,8 @@
    "ru": "выражать, проявлять",
    "ex": "Os vizinhos manifestaram o seu descontentamento na reunião.",
    "exru": "Соседи выразили своё недовольство на собрании.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "suficientemente",
@@ -738,7 +819,8 @@
    "ru": "достаточно",
    "ex": "O quarto não é suficientemente grande para dois.",
    "exru": "Комната недостаточно велика для двоих.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "afirmar",
@@ -747,7 +829,8 @@
    "ru": "утверждать",
    "ex": "O jornalista afirma que a notícia é verdadeira.",
    "exru": "Журналист утверждает, что новость правдива.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "agrícola",
@@ -756,7 +839,8 @@
    "ru": "сельскохозяйственный",
    "ex": "A região vive sobretudo da produção agrícola.",
    "exru": "Регион живёт главным образом сельским хозяйством.",
-   "note": "Форма одна для обоих родов"
+   "note": "Форма одна для обоих родов",
+   "tema": "B2"
   },
   {
    "word": "atrasado",
@@ -765,7 +849,8 @@
    "ru": "опоздавший; отстающий",
    "ex": "Cheguei atrasado por causa do trânsito na ponte.",
    "exru": "Я опоздал из-за пробки на мосту.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "complementar",
@@ -774,7 +859,8 @@
    "ru": "дополнительный",
    "ex": "O curso tem aulas complementares ao sábado de manhã.",
    "exru": "В курсе есть дополнительные занятия по субботам утром.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "conciliar",
@@ -783,7 +869,8 @@
    "ru": "совмещать, примирять",
    "ex": "É difícil conciliar o trabalho com a vida familiar.",
    "exru": "Трудно совмещать работу и семейную жизнь.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "condicional",
@@ -792,7 +879,8 @@
    "ru": "условный",
    "ex": "A oferta é condicional e depende da resposta deles.",
    "exru": "Предложение условное и зависит от их ответа.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "deslocar",
@@ -801,7 +889,8 @@
    "ru": "перемещать; смещать",
    "ex": "Tivemos de deslocar a mesa para o outro canto.",
    "exru": "Нам пришлось передвинуть стол в другой угол.",
-   "note": "deslocar-se — передвигаться, ездить"
+   "note": "deslocar-se — передвигаться, ездить",
+   "tema": "A2"
   },
   {
    "word": "detrás",
@@ -810,7 +899,8 @@
    "ru": "позади (в обороте por detrás de)",
    "ex": "O gato apareceu detrás do sofá da sala.",
    "exru": "Кот появился из-за дивана в гостиной.",
-   "note": "Чаще в обороте por detrás de"
+   "note": "Чаще в обороте por detrás de",
+   "tema": "A2"
   },
   {
    "word": "estrear",
@@ -819,7 +909,8 @@
    "ru": "впервые надеть; премьера",
    "ex": "Vou estrear estes sapatos no casamento da Ana.",
    "exru": "Я впервые надену эти туфли на свадьбу Аны.",
-   "note": "О вещи, фильме или спектакле"
+   "note": "О вещи, фильме или спектакле",
+   "tema": "B4"
   },
   {
    "word": "falado",
@@ -828,7 +919,8 @@
    "ru": "разговорный, устный",
    "ex": "O português falado é diferente do escrito.",
    "exru": "Разговорный португальский отличается от письменного.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o litoral",
@@ -837,7 +929,8 @@
    "ru": "прибрежная полоса, взморье",
    "ex": "No verão, o litoral fica cheio de turistas.",
    "exru": "Летом побережье заполняется туристами.",
-   "note": "Внутренняя часть страны — o interior"
+   "note": "Внутренняя часть страны — o interior",
+   "tema": "B2"
   },
   {
    "word": "a modalidade",
@@ -846,7 +939,8 @@
    "ru": "вид спорта; разновидность",
    "ex": "A natação é a minha modalidade preferida.",
    "exru": "Плавание — мой любимый вид спорта.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "necessitar",
@@ -855,7 +949,8 @@
    "ru": "нуждаться",
    "ex": "O doente necessita de repouso durante uma semana.",
    "exru": "Больному нужен покой в течение недели.",
-   "note": "Требует предлога de"
+   "note": "Требует предлога de",
+   "tema": "A1"
   },
   {
    "word": "nomeadamente",
@@ -864,7 +959,8 @@
    "ru": "а именно, в частности",
    "ex": "Faltam vários documentos, nomeadamente o comprovativo de morada.",
    "exru": "Не хватает нескольких документов, в частности справки о месте жительства.",
-   "note": "Европейская норма"
+   "note": "Европейская норма",
+   "tema": "A9"
   },
   {
    "word": "parado",
@@ -873,7 +969,8 @@
    "ru": "неподвижный; остановившийся",
    "ex": "O trânsito esteve parado durante meia hora.",
    "exru": "Движение стояло полчаса.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "partilhar",
@@ -882,7 +979,8 @@
    "ru": "делить, делиться",
    "ex": "Partilhamos o apartamento com mais dois estudantes.",
    "exru": "Мы делим квартиру ещё с двумя студентами.",
-   "note": "Европейская норма; бразильцы говорят compartilhar"
+   "note": "Европейская норма; бразильцы говорят compartilhar",
+   "tema": "A5"
   },
   {
    "word": "perdoar",
@@ -891,7 +989,8 @@
    "ru": "прощать",
    "ex": "Ela nunca me perdoou aquela mentira sobre o dinheiro.",
    "exru": "Она так и не простила мне ту ложь про деньги.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o pó",
@@ -900,7 +999,8 @@
    "ru": "пыль; порошок",
    "ex": "Há muito pó em cima dos livros da estante.",
    "exru": "На книгах на полке много пыли.",
-   "note": "Стирать пыль — limpar o pó"
+   "note": "Стирать пыль — limpar o pó",
+   "tema": "B2"
   },
   {
    "word": "previamente",
@@ -909,7 +1009,8 @@
    "ru": "заранее, предварительно",
    "ex": "É preciso marcar a consulta previamente, por telefone ou online.",
    "exru": "Приём нужно записать заранее — по телефону или онлайн.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "prévio",
@@ -918,7 +1019,8 @@
    "ru": "предварительный",
    "ex": "O curso exige conhecimento prévio de inglês.",
    "exru": "Курс требует предварительного знания английского.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "proveniente",
@@ -927,7 +1029,8 @@
    "ru": "происходящий из, поступающий из",
    "ex": "O peixe é proveniente da costa alentejana.",
    "exru": "Рыба поступает с побережья Алентежу.",
-   "note": "Всегда с de"
+   "note": "Всегда с de",
+   "tema": "A9"
   },
   {
    "word": "quieto",
@@ -936,7 +1039,8 @@
    "ru": "тихий, смирный",
    "ex": "As crianças não conseguem ficar quietas nem um minuto.",
    "exru": "Дети не могут посидеть смирно ни минуты.",
-   "note": "Не путать с calado — молчаливый"
+   "note": "Не путать с calado — молчаливый",
+   "tema": "A6"
   },
   {
    "word": "recentemente",
@@ -945,7 +1049,8 @@
    "ru": "недавно",
    "ex": "Mudaram-se recentemente para uma casa maior nos arredores da cidade.",
    "exru": "Они недавно переехали в дом побольше на окраине города.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "solar",
@@ -954,7 +1059,8 @@
    "ru": "солнечный",
    "ex": "Instalaram painéis de energia solar no telhado.",
    "exru": "Они установили солнечные панели на крыше.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "sublinhar",
@@ -963,7 +1069,8 @@
    "ru": "подчёркивать",
    "ex": "O autor sublinha a importância da leitura diária.",
    "exru": "Автор подчёркивает важность ежедневного чтения.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "resumir",
@@ -972,7 +1079,8 @@
    "ru": "кратко излагать, подводить итог",
    "ex": "Podes resumir o filme em duas frases?",
    "exru": "Можешь пересказать фильм в двух предложениях?",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "contemporâneo",
@@ -981,7 +1089,8 @@
    "ru": "современный (нынешней эпохи)",
    "ex": "Gosto de arte contemporânea, sobretudo de fotografia.",
    "exru": "Люблю современное искусство, особенно фотографию.",
-   "note": "Об искусстве и авторах наших дней"
+   "note": "Об искусстве и авторах наших дней",
+   "tema": "A4"
   },
   {
    "word": "eventualmente",
@@ -990,7 +1099,8 @@
    "ru": "возможно, при случае",
    "ex": "Eventualmente, posso passar por lá amanhã depois do trabalho.",
    "exru": "Возможно, я заеду туда завтра после работы.",
-   "note": "Ложный друг: это не «в конце концов»"
+   "note": "Ложный друг: это не «в конце концов»",
+   "tema": "A9"
   },
   {
    "word": "o metropolitano",
@@ -999,7 +1109,8 @@
    "ru": "метро",
    "ex": "Apanhei o metropolitano até ao Marquês de Pombal.",
    "exru": "Я доехал на метро до Маркеша де Помбала.",
-   "note": "В речи сокращают до metro"
+   "note": "В речи сокращают до metro",
+   "tema": "B5"
   },
   {
    "word": "absurdo",
@@ -1008,7 +1119,8 @@
    "ru": "нелепый, абсурдный",
    "ex": "O preço deste café é absolutamente absurdo.",
    "exru": "Цена за этот кофе совершенно нелепая.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "aceite",
@@ -1017,7 +1129,8 @@
    "ru": "принятый",
    "ex": "A proposta foi aceite por toda a equipa.",
    "exru": "Предложение было принято всей командой.",
-   "note": "Европейская форма; бразильская — aceito"
+   "note": "Европейская форма; бразильская — aceito",
+   "tema": "A7"
   },
   {
    "word": "acumular",
@@ -1026,7 +1139,8 @@
    "ru": "накапливать",
    "ex": "O pó acumula-se depressa em cima dos móveis.",
    "exru": "Пыль быстро скапливается на мебели.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "aderir",
@@ -1035,7 +1149,8 @@
    "ru": "присоединяться; прилипать",
    "ex": "Muitos trabalhadores aderiram à greve de ontem.",
    "exru": "Многие работники присоединились ко вчерашней забастовке.",
-   "note": "Требует предлога a"
+   "note": "Требует предлога a",
+   "tema": "A9"
   },
   {
    "word": "adorável",
@@ -1044,7 +1159,8 @@
    "ru": "очаровательный",
    "ex": "A tua sobrinha é uma criança adorável.",
    "exru": "Твоя племянница — очаровательный ребёнок.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "adquirir",
@@ -1053,7 +1169,8 @@
    "ru": "приобретать",
    "ex": "A empresa adquiriu dois terrenos perto do rio.",
    "exru": "Компания приобрела два участка у реки.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "recuar",
@@ -1062,7 +1179,8 @@
    "ru": "отступать, подавать назад",
    "ex": "Recuei o carro para deixar passar o autocarro.",
    "exru": "Я подал машину назад, чтобы пропустить автобус.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "a clara",
@@ -1071,7 +1189,8 @@
    "ru": "яичный белок",
    "ex": "Bata as claras até ficarem em castelo.",
    "exru": "Взбейте белки до плотной пены.",
-   "note": "Желток — a gema"
+   "note": "Желток — a gema",
+   "tema": "B8"
   },
   {
    "word": "agravar",
@@ -1080,7 +1199,8 @@
    "ru": "усугублять, ухудшать",
    "ex": "O frio agravou a doença do meu pai.",
    "exru": "Холод усугубил болезнь моего отца.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "agudo",
@@ -1089,7 +1209,8 @@
    "ru": "острый; резкий",
    "ex": "Sentiu uma dor aguda no lado direito.",
    "exru": "Он почувствовал острую боль в правом боку.",
-   "note": "Об ударении: acento agudo"
+   "note": "Об ударении: acento agudo",
+   "tema": "A6"
   },
   {
    "word": "aguentar",
@@ -1098,7 +1219,8 @@
    "ru": "выдерживать, терпеть",
    "ex": "Não aguento mais este barulho todos os dias.",
    "exru": "Я больше не выношу этот шум каждый день.",
-   "note": "Очень частое в разговоре"
+   "note": "Очень частое в разговоре",
+   "tema": "A1"
   },
   {
    "word": "alheio",
@@ -1107,7 +1229,8 @@
    "ru": "чужой; посторонний",
    "ex": "Não se meta em assuntos alheios, isso não lhe diz respeito.",
    "exru": "Не лезьте в чужие дела, вас это не касается.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "alojar",
@@ -1116,7 +1239,8 @@
    "ru": "размещать, селить",
    "ex": "O hotel pode alojar duzentas pessoas em época alta.",
    "exru": "В высокий сезон отель может разместить двести человек.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "alternar",
@@ -1125,7 +1249,8 @@
    "ru": "чередовать",
    "ex": "Alternamos entre inglês e português nas aulas.",
    "exru": "На занятиях мы чередуем английский и португальский.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "amassar",
@@ -1134,7 +1259,8 @@
    "ru": "мять; месить",
    "ex": "É preciso amassar bem a massa do pão.",
    "exru": "Тесто для хлеба нужно хорошо вымесить.",
-   "note": ""
+   "note": "",
+   "tema": "B8"
   },
   {
    "word": "anualmente",
@@ -1143,7 +1269,8 @@
    "ru": "ежегодно",
    "ex": "A revisão do carro faz-se anualmente numa oficina certificada.",
    "exru": "Техосмотр машины проходят ежегодно в сертифицированной мастерской.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "ansioso",
@@ -1152,7 +1279,8 @@
    "ru": "тревожный; нетерпеливый",
    "ex": "Estou ansioso por saber o resultado do exame.",
    "exru": "Я с нетерпением жду результата экзамена.",
-   "note": "ansioso por — в нетерпении"
+   "note": "ansioso por — в нетерпении",
+   "tema": "B1"
   },
   {
    "word": "apaixonado",
@@ -1161,7 +1289,8 @@
    "ru": "влюблённый; страстный",
    "ex": "Ele está apaixonado pela vizinha do terceiro andar.",
    "exru": "Он влюблён в соседку с третьего этажа.",
-   "note": "apaixonado por"
+   "note": "apaixonado por",
+   "tema": "B1"
   },
   {
    "word": "apostar",
@@ -1170,7 +1299,8 @@
    "ru": "держать пари; делать ставку",
    "ex": "Aposto que ela chega atrasada outra vez.",
    "exru": "Спорим, она опять опоздает.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "aprofundar",
@@ -1179,7 +1309,8 @@
    "ru": "углублять",
    "ex": "Quero aprofundar os meus conhecimentos de gramática.",
    "exru": "Хочу углубить свои знания грамматики.",
-   "note": ""
+   "note": "",
+   "tema": "A3"
   },
   {
    "word": "arder",
@@ -1188,7 +1319,8 @@
    "ru": "гореть; щипать",
    "ex": "A ferida arde quando ponho álcool, mas passa depressa.",
    "exru": "Рана щиплет, когда я мажу спиртом, но быстро проходит.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "arriscar",
@@ -1197,7 +1329,8 @@
    "ru": "рисковать",
    "ex": "Não vale a pena arriscar a saúde por dinheiro.",
    "exru": "Не стоит рисковать здоровьем ради денег.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o assassino",
@@ -1206,7 +1339,8 @@
    "ru": "убийца",
    "ex": "A polícia procura o assassino há duas semanas.",
    "exru": "Полиция ищет убийцу уже две недели.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "assinalar",
@@ -1215,7 +1349,8 @@
    "ru": "отмечать, помечать",
    "ex": "Assinale com uma cruz a resposta correta.",
    "exru": "Отметьте крестиком правильный ответ.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "associar",
@@ -1224,7 +1359,8 @@
    "ru": "связывать, ассоциировать",
    "ex": "Associo sempre este cheiro à casa da avó.",
    "exru": "Я всегда связываю этот запах с бабушкиным домом.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "atraente",
@@ -1233,7 +1369,8 @@
    "ru": "привлекательный",
    "ex": "A proposta de emprego é bastante atraente.",
    "exru": "Предложение о работе довольно привлекательное.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "autenticar",
@@ -1242,7 +1379,8 @@
    "ru": "заверять, удостоверять",
    "ex": "Preciso de autenticar a cópia do passaporte.",
    "exru": "Мне нужно заверить копию паспорта.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "autoritário",
@@ -1251,7 +1389,8 @@
    "ru": "властный, авторитарный",
    "ex": "O antigo chefe era demasiado autoritário e ninguém o contrariava.",
    "exru": "Прежний начальник был слишком властным, и ему никто не перечил.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o baile",
@@ -1260,7 +1399,8 @@
    "ru": "бал, танцы",
    "ex": "Houve um baile na praça durante as festas.",
    "exru": "Во время праздников на площади были танцы.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o bando",
@@ -1269,7 +1409,8 @@
    "ru": "стая; шайка",
    "ex": "Um bando de pássaros pousou no telhado.",
    "exru": "Стая птиц села на крышу.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "basear",
@@ -1278,7 +1419,8 @@
    "ru": "класть в основу, опираться",
    "ex": "O filme baseia-se numa história verdadeira passada nos Açores.",
    "exru": "Фильм основан на реальной истории, случившейся на Азорах.",
-   "note": "Чаще возвратное: basear-se em"
+   "note": "Чаще возвратное: basear-se em",
+   "tema": "A9"
   },
   {
    "word": "basicamente",
@@ -1287,7 +1429,8 @@
    "ru": "в основном, по сути",
    "ex": "Basicamente, o problema é falta de tempo.",
    "exru": "По сути, проблема — нехватка времени.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "a bata",
@@ -1296,7 +1439,8 @@
    "ru": "халат (рабочий, медицинский)",
    "ex": "O médico vestiu a bata antes da consulta.",
    "exru": "Врач надел халат перед приёмом.",
-   "note": "Домашний халат — o roupão"
+   "note": "Домашний халат — o roupão",
+   "tema": "B7"
   },
   {
    "word": "a batata-doce",
@@ -1305,7 +1449,8 @@
    "ru": "батат, сладкий картофель",
    "ex": "A batata-doce assada é típica desta região.",
    "exru": "Печёный батат типичен для этого региона.",
-   "note": ""
+   "note": "",
+   "tema": "B8"
   },
   {
    "word": "bêbado",
@@ -1314,7 +1459,8 @@
    "ru": "пьяный",
    "ex": "Estava bêbado e não conseguia andar direito.",
    "exru": "Он был пьян и не мог идти прямо.",
-   "note": "В Португалии говорят и bêbedo"
+   "note": "В Португалии говорят и bêbedo",
+   "tema": "B6"
   },
   {
    "word": "o bife",
@@ -1323,7 +1469,8 @@
    "ru": "бифштекс, стейк",
    "ex": "Pedi um bife com batatas fritas e salada.",
    "exru": "Я заказал бифштекс с картошкой фри и салатом.",
-   "note": "bife à portuguesa — с яйцом сверху"
+   "note": "bife à portuguesa — с яйцом сверху",
+   "tema": "B8"
   },
   {
    "word": "bocejar",
@@ -1332,7 +1479,8 @@
    "ru": "зевать",
    "ex": "Ele bocejou várias vezes durante a reunião.",
    "exru": "Он несколько раз зевнул во время совещания.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o bordado",
@@ -1341,7 +1489,8 @@
    "ru": "вышивка",
    "ex": "Comprei uma toalha com bordado da Madeira.",
    "exru": "Я купил скатерть с мадейрской вышивкой.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "bravo",
@@ -1350,7 +1499,8 @@
    "ru": "храбрый; сердитый",
    "ex": "O mar está bravo, ninguém entra na água.",
    "exru": "Море бушует, никто не заходит в воду.",
-   "note": "О море — бурный"
+   "note": "О море — бурный",
+   "tema": "B1"
   },
   {
    "word": "a broa",
@@ -1359,7 +1509,8 @@
    "ru": "кукурузный хлеб",
    "ex": "Comemos caldo verde com broa de milho.",
    "exru": "Мы едим калду верде с кукурузным хлебом.",
-   "note": "Традиционный португальский хлеб"
+   "note": "Традиционный португальский хлеб",
+   "tema": "B8"
   },
   {
    "word": "a bruxa",
@@ -1368,7 +1519,8 @@
    "ru": "ведьма",
    "ex": "A história infantil fala de uma bruxa má.",
    "exru": "Детская сказка рассказывает о злой ведьме.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "burocrático",
@@ -1377,7 +1529,8 @@
    "ru": "бюрократический",
    "ex": "O processo burocrático demorou três meses a ficar resolvido.",
    "exru": "На бюрократические формальности ушло три месяца.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "caber",
@@ -1386,7 +1539,8 @@
    "ru": "помещаться, вмещаться",
    "ex": "Esta mala não cabe no porta-bagagens do carro pequeno.",
    "exru": "Этот чемодан не помещается в багажник маленькой машины.",
-   "note": "Неправильный: eu caibo, ele cabe"
+   "note": "Неправильный: eu caibo, ele cabe",
+   "tema": "A3"
   },
   {
    "word": "o caçador",
@@ -1395,7 +1549,8 @@
    "ru": "охотник",
    "ex": "Os caçadores saíram de madrugada para a serra.",
    "exru": "Охотники ушли на рассвете в горы.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "caçar",
@@ -1404,7 +1559,8 @@
    "ru": "охотиться",
    "ex": "É proibido caçar nesta zona protegida durante todo o ano.",
    "exru": "В этой заповедной зоне охота запрещена круглый год.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o cacho",
@@ -1413,7 +1569,8 @@
    "ru": "гроздь",
    "ex": "Trouxe um cacho de uvas da vinha.",
    "exru": "Я принёс гроздь винограда с виноградника.",
-   "note": ""
+   "note": "",
+   "tema": "B8"
   },
   {
    "word": "calado",
@@ -1422,7 +1579,8 @@
    "ru": "молчаливый",
    "ex": "Ficou calado durante toda a discussão e saiu sem se despedir.",
    "exru": "Он промолчал весь спор и ушёл не попрощавшись.",
-   "note": "Не путать с quieto — неподвижный"
+   "note": "Не путать с quieto — неподвижный",
+   "tema": "B1"
   },
   {
    "word": "o calafrio",
@@ -1431,7 +1589,8 @@
    "ru": "озноб",
    "ex": "Tive calafrios a noite toda por causa da febre.",
    "exru": "Меня всю ночь знобило из-за температуры.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a calma",
@@ -1440,7 +1599,8 @@
    "ru": "спокойствие",
    "ex": "Mantenha a calma e siga as instruções.",
    "exru": "Сохраняйте спокойствие и следуйте указаниям.",
-   "note": "Calma! — «спокойно!»"
+   "note": "Calma! — «спокойно!»",
+   "tema": "B1"
   },
   {
    "word": "o cancro",
@@ -1449,7 +1609,8 @@
    "ru": "рак (болезнь)",
    "ex": "O avô foi tratado a um cancro da pele.",
    "exru": "Дедушку лечили от рака кожи.",
-   "note": "Европейская форма; бразильская — câncer"
+   "note": "Европейская форма; бразильская — câncer",
+   "tema": "B6"
   },
   {
    "word": "o caos",
@@ -1458,7 +1619,8 @@
    "ru": "хаос",
    "ex": "O trânsito estava um caos por causa da greve.",
    "exru": "Движение было хаосом из-за забастовки.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a caridade",
@@ -1467,7 +1629,8 @@
    "ru": "милосердие, благотворительность",
    "ex": "O jantar foi organizado para uma obra de caridade.",
    "exru": "Ужин устроили в благотворительных целях.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o castigo",
@@ -1476,7 +1639,8 @@
    "ru": "наказание",
    "ex": "O castigo pareceu-me demasiado severo para uma criança.",
    "exru": "Наказание показалось мне слишком суровым для ребёнка.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o cavalheiro",
@@ -1485,7 +1649,8 @@
    "ru": "джентльмен",
    "ex": "Um cavalheiro cedeu-me o lugar no autocarro.",
    "exru": "Один господин уступил мне место в автобусе.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a caverna",
@@ -1494,7 +1659,8 @@
    "ru": "пещера",
    "ex": "Encontrámos pinturas antigas dentro da caverna, junto à entrada.",
    "exru": "Мы нашли древние рисунки в пещере, у самого входа.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "célebre",
@@ -1503,7 +1669,8 @@
    "ru": "знаменитый",
    "ex": "É um prato célebre em todo o Alentejo.",
    "exru": "Это блюдо знаменито по всему Алентежу.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o cemitério",
@@ -1512,7 +1679,8 @@
    "ru": "кладбище",
    "ex": "O cemitério fica no alto da colina.",
    "exru": "Кладбище находится на вершине холма.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "cercar",
@@ -1521,7 +1689,8 @@
    "ru": "окружать",
    "ex": "A polícia cercou o edifício durante a noite.",
    "exru": "Полиция окружила здание ночью.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "certificar-se",
@@ -1530,7 +1699,8 @@
    "ru": "убедиться",
    "ex": "Certifica-te de que fechaste bem a porta.",
    "exru": "Убедись, что хорошо закрыл дверь.",
-   "note": "Возвратное, с предлогом de"
+   "note": "Возвратное, с предлогом de",
+   "tema": "A8"
   },
   {
    "word": "chatear",
@@ -1539,7 +1709,8 @@
    "ru": "надоедать, доставать",
    "ex": "Para de me chatear com essas perguntas!",
    "exru": "Хватит доставать меня этими вопросами!",
-   "note": "Очень частое разговорное"
+   "note": "Очень частое разговорное",
+   "tema": "B1"
   },
   {
    "word": "chateado",
@@ -1548,7 +1719,8 @@
    "ru": "раздосадованный, расстроенный",
    "ex": "Ela ficou chateada com o que eu disse.",
    "exru": "Она расстроилась из-за того, что я сказал.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "chato",
@@ -1557,7 +1729,8 @@
    "ru": "скучный; надоедливый",
    "ex": "O filme era tão chato que adormeci.",
    "exru": "Фильм был такой скучный, что я уснул.",
-   "note": "Одно из самых частых разговорных слов"
+   "note": "Одно из самых частых разговорных слов",
+   "tema": "A7"
   },
   {
    "word": "o cigarro",
@@ -1566,7 +1739,8 @@
    "ru": "сигарета",
    "ex": "Ele deixou os cigarros há dois anos.",
    "exru": "Он бросил сигареты два года назад.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o cirurgião",
@@ -1575,7 +1749,8 @@
    "ru": "хирург",
    "ex": "O cirurgião explicou os riscos da operação.",
    "exru": "Хирург объяснил риски операции.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "citar",
@@ -1584,7 +1759,8 @@
    "ru": "цитировать, ссылаться",
    "ex": "O professor citou dois autores portugueses do século passado.",
    "exru": "Преподаватель процитировал двух португальских авторов прошлого века.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "classificar",
@@ -1593,7 +1769,8 @@
    "ru": "классифицировать; оценивать",
    "ex": "O júri classificou os trabalhos de um a dez.",
    "exru": "Жюри оценило работы от одного до десяти.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "cobarde",
@@ -1602,7 +1779,8 @@
    "ru": "трусливый",
    "ex": "Foi uma atitude cobarde da parte dele.",
    "exru": "С его стороны это был трусливый поступок.",
-   "note": "Европейская форма; бразильская — covarde"
+   "note": "Европейская форма; бразильская — covarde",
+   "tema": "B1"
   },
   {
    "word": "a cobertura",
@@ -1611,7 +1789,8 @@
    "ru": "покрытие; освещение в СМИ",
    "ex": "A cobertura do jogo começa às oito.",
    "exru": "Трансляция матча начинается в восемь.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o cofre",
@@ -1620,7 +1799,8 @@
    "ru": "сейф",
    "ex": "Guardámos os documentos no cofre do hotel.",
    "exru": "Мы положили документы в сейф отеля.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a coincidência",
@@ -1629,7 +1809,8 @@
    "ru": "совпадение",
    "ex": "Que coincidência, também vou a Braga amanhã!",
    "exru": "Какое совпадение, я тоже завтра еду в Брагу!",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "coincidir",
@@ -1638,7 +1819,8 @@
    "ru": "совпадать",
    "ex": "As férias dela coincidem com as minhas.",
    "exru": "Её отпуск совпадает с моим.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "a cola",
@@ -1647,7 +1829,8 @@
    "ru": "клей",
    "ex": "Preciso de cola para colar a fotografia.",
    "exru": "Мне нужен клей, чтобы приклеить фотографию.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o colírio",
@@ -1656,7 +1839,8 @@
    "ru": "глазные капли",
    "ex": "O médico receitou-me um colírio para a alergia.",
    "exru": "Врач прописал мне капли от аллергии.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a combinação",
@@ -1665,7 +1849,8 @@
    "ru": "сочетание, комбинация",
    "ex": "A combinação de cores da sala ficou muito bonita.",
    "exru": "Сочетание цветов в комнате получилось очень красивым.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "compor",
@@ -1674,7 +1859,8 @@
    "ru": "сочинять; составлять",
    "ex": "Ele compôs esta canção para a filha.",
    "exru": "Он сочинил эту песню для дочери.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "comprovar",
@@ -1683,7 +1869,8 @@
    "ru": "подтверждать, доказывать",
    "ex": "Preciso de comprovar a morada com uma fatura.",
    "exru": "Мне нужно подтвердить адрес счётом за услуги.",
-   "note": "Справка о чём-то — o comprovativo"
+   "note": "Справка о чём-то — o comprovativo",
+   "tema": "A8"
   },
   {
    "word": "a condução",
@@ -1692,7 +1879,8 @@
    "ru": "вождение",
    "ex": "A condução com chuva exige mais atenção.",
    "exru": "Вождение в дождь требует большего внимания.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "confessar",
@@ -1701,7 +1889,8 @@
    "ru": "признаваться",
    "ex": "Confesso que me esqueci completamente da reunião.",
    "exru": "Признаюсь, я совсем забыл о встрече.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "confidencial",
@@ -1710,7 +1899,8 @@
    "ru": "конфиденциальный",
    "ex": "Esta informação é confidencial e não pode sair daqui.",
    "exru": "Эта информация конфиденциальна и не должна выйти отсюда.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "confuso",
@@ -1719,7 +1909,8 @@
    "ru": "сбитый с толку; запутанный",
    "ex": "O mapa estava tão confuso que nos perdemos.",
    "exru": "Карта была такой запутанной, что мы заблудились.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "consecutivo",
@@ -1728,7 +1919,8 @@
    "ru": "идущий подряд",
    "ex": "Choveu sem parar durante cinco dias consecutivos.",
    "exru": "Дождь шёл не переставая пять дней подряд.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "constar",
@@ -1737,7 +1929,8 @@
    "ru": "значиться, содержаться",
    "ex": "O seu nome não consta na lista dos inscritos.",
    "exru": "Вашего имени нет в списке записавшихся.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a contagem",
@@ -1746,7 +1939,8 @@
    "ru": "подсчёт, счёт",
    "ex": "A contagem dos votos demorou toda a noite.",
    "exru": "Подсчёт голосов занял всю ночь.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "contrair",
@@ -1755,7 +1949,8 @@
    "ru": "заключать (брак); подхватить",
    "ex": "Contraiu uma gripe forte durante a viagem.",
    "exru": "Он подхватил сильный грипп во время поездки.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "contrariar",
@@ -1764,7 +1959,8 @@
    "ru": "перечить, идти наперекор",
    "ex": "Não gosta que o contrariem à frente dos outros.",
    "exru": "Он не любит, когда ему перечат при других.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "contratar",
@@ -1773,7 +1969,8 @@
    "ru": "нанимать",
    "ex": "A empresa contratou dois engenheiros este mês.",
    "exru": "Компания наняла двух инженеров в этом месяце.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o contribuinte",
@@ -1782,7 +1979,8 @@
    "ru": "налогоплательщик; ИНН",
    "ex": "Escreva o número de contribuinte no formulário.",
    "exru": "Впишите налоговый номер в бланк.",
-   "note": "В Португалии сокращают до NIF"
+   "note": "В Португалии сокращают до NIF",
+   "tema": "B9"
   },
   {
    "word": "convencido",
@@ -1791,7 +1989,8 @@
    "ru": "самоуверенный; убеждённый",
    "ex": "Ele é muito convencido e acha que sabe tudo.",
    "exru": "Он очень самоуверен и думает, что всё знает.",
-   "note": "В разговоре чаще «зазнайка», чем «убеждённый»"
+   "note": "В разговоре чаще «зазнайка», чем «убеждённый»",
+   "tema": "B1"
   },
   {
    "word": "a convivência",
@@ -1800,7 +1999,8 @@
    "ru": "общение, совместная жизнь",
    "ex": "A convivência com os vizinhos é muito agradável.",
    "exru": "Общение с соседями очень приятное.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a coroa",
@@ -1809,7 +2009,8 @@
    "ru": "корона; венок",
    "ex": "O museu expõe a coroa de um antigo rei.",
    "exru": "В музее выставлена корона древнего короля.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a cortiça",
@@ -1818,7 +2019,8 @@
    "ru": "пробка (материал)",
    "ex": "Portugal é o maior produtor de cortiça do mundo.",
    "exru": "Португалия — крупнейший производитель пробки в мире.",
-   "note": "Пробковый дуб — o sobreiro"
+   "note": "Пробковый дуб — o sobreiro",
+   "tema": "A6"
   },
   {
    "word": "a criatura",
@@ -1827,7 +2029,8 @@
    "ru": "существо",
    "ex": "O livro fala de criaturas do fundo do mar.",
    "exru": "В книге рассказывается о существах морских глубин.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "o criminoso",
@@ -1836,7 +2039,8 @@
    "ru": "преступник",
    "ex": "O criminoso foi detido perto da fronteira.",
    "exru": "Преступника задержали у границы.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a crónica",
@@ -1845,7 +2049,8 @@
    "ru": "колонка, очерк",
    "ex": "Ele escreve uma crónica semanal no jornal.",
    "exru": "Он ведёт еженедельную колонку в газете.",
-   "note": "Европейское написание, без -ô-"
+   "note": "Европейское написание, без -ô-",
+   "tema": "B4"
   },
   {
    "word": "cruel",
@@ -1854,7 +2059,8 @@
    "ru": "жестокий",
    "ex": "Foi uma decisão cruel, mas necessária para salvar a empresa.",
    "exru": "Решение было жестоким, но необходимым, чтобы спасти компанию.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o culpado",
@@ -1863,7 +2069,8 @@
    "ru": "виновный",
    "ex": "Ainda não se sabe quem foi o culpado do incêndio.",
    "exru": "Пока неизвестно, кто виновен в пожаре.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "culpar",
@@ -1872,7 +2079,8 @@
    "ru": "винить, обвинять",
    "ex": "Não me culpes pelo que aconteceu ontem.",
    "exru": "Не вини меня в том, что случилось вчера.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a cura",
@@ -1881,7 +2089,8 @@
    "ru": "лечение, исцеление",
    "ex": "Ainda não existe cura para esta doença.",
    "exru": "Лекарства от этой болезни пока нет.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "curar",
@@ -1890,7 +2099,8 @@
    "ru": "лечить, излечивать",
    "ex": "O antibiótico curou a infeção em três dias.",
    "exru": "Антибиотик вылечил инфекцию за три дня.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "decente",
@@ -1899,7 +2109,8 @@
    "ru": "приличный, достойный",
    "ex": "Por este preço, espero um quarto decente.",
    "exru": "За такую цену я жду приличный номер.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "decisivo",
@@ -1908,7 +2119,8 @@
    "ru": "решающий",
    "ex": "O último golo foi decisivo para o resultado.",
    "exru": "Последний гол стал решающим для результата.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "dedicar",
@@ -1917,7 +2129,8 @@
    "ru": "посвящать",
    "ex": "Dedico duas horas por dia ao português.",
    "exru": "Я посвящаю португальскому два часа в день.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "definitivo",
@@ -1926,7 +2139,8 @@
    "ru": "окончательный",
    "ex": "A resposta definitiva só chega na próxima semana.",
    "exru": "Окончательный ответ придёт только на следующей неделе.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "deitado",
@@ -1935,7 +2149,8 @@
    "ru": "лежащий",
    "ex": "Passei a tarde deitado no sofá a ler.",
    "exru": "Я провёл вечер лёжа на диване с книгой.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "democrático",
@@ -1944,7 +2159,8 @@
    "ru": "демократический",
    "ex": "A decisão foi tomada de forma democrática.",
    "exru": "Решение было принято демократическим путём.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o deputado",
@@ -1953,7 +2169,8 @@
    "ru": "депутат",
    "ex": "O deputado falou durante vinte minutos na assembleia.",
    "exru": "Депутат выступал в ассамблее двадцать минут.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "derrotar",
@@ -1962,7 +2179,8 @@
    "ru": "побеждать, разбить",
    "ex": "A equipa da casa derrotou o adversário por três golos.",
    "exru": "Хозяева поля победили соперника с разницей в три мяча.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "desaparecido",
@@ -1971,7 +2189,8 @@
    "ru": "пропавший, исчезнувший",
    "ex": "A polícia procura um turista desaparecido na serra.",
    "exru": "Полиция ищет туриста, пропавшего в горах.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "o desastre",
@@ -1980,7 +2199,8 @@
    "ru": "катастрофа, бедствие",
    "ex": "O jantar foi um verdadeiro desastre: queimei tudo.",
    "exru": "Ужин обернулся настоящей катастрофой: я всё сжёг.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o descanso",
@@ -1989,7 +2209,8 @@
    "ru": "отдых",
    "ex": "Depois de tanto trabalho, mereces um descanso.",
    "exru": "После такой работы ты заслуживаешь отдых.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "desenrolar-se",
@@ -1998,7 +2219,8 @@
    "ru": "разворачиваться, происходить",
    "ex": "A história desenrola-se numa aldeia do Minho.",
    "exru": "Действие происходит в деревне в Минью.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "a desgraça",
@@ -2007,7 +2229,8 @@
    "ru": "несчастье, беда",
    "ex": "Aquela notícia foi uma desgraça para a família.",
    "exru": "Та новость стала бедой для семьи.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a desigualdade",
@@ -2016,7 +2239,8 @@
    "ru": "неравенство",
    "ex": "O relatório fala da desigualdade entre regiões.",
    "exru": "В докладе говорится о неравенстве между регионами.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "desistir",
@@ -2025,7 +2249,8 @@
    "ru": "отказываться, сдаваться",
    "ex": "Nunca desistas depois do primeiro erro, tenta outra vez.",
    "exru": "Никогда не сдавайся после первой ошибки — попробуй ещё раз.",
-   "note": "Требует предлога de"
+   "note": "Требует предлога de",
+   "tema": "A7"
   },
   {
    "word": "desmentir",
@@ -2034,7 +2259,8 @@
    "ru": "опровергать",
    "ex": "O ministro desmentiu a notícia no mesmo dia.",
    "exru": "Министр опроверг новость в тот же день.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "despachar-se",
@@ -2043,7 +2269,8 @@
    "ru": "поторопиться",
    "ex": "Despacha-te, o comboio sai daqui a dez minutos.",
    "exru": "Поторопись, поезд отходит через десять минут.",
-   "note": "Без -se значит «отправлять, оформлять»"
+   "note": "Без -se значит «отправлять, оформлять»",
+   "tema": "A4"
   },
   {
    "word": "a despedida",
@@ -2052,7 +2279,8 @@
    "ru": "прощание",
    "ex": "A despedida na estação foi muito emocionante.",
    "exru": "Прощание на вокзале было очень трогательным.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "desperdiçar",
@@ -2061,7 +2289,8 @@
    "ru": "растрачивать впустую",
    "ex": "Não desperdices esta oportunidade de estudar fora.",
    "exru": "Не упусти эту возможность поучиться за границей.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "a despesa",
@@ -2070,7 +2299,8 @@
    "ru": "расход, трата",
    "ex": "As despesas da casa aumentaram muito este ano.",
    "exru": "Расходы на дом сильно выросли в этом году.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "desprezar",
@@ -2079,7 +2309,8 @@
    "ru": "презирать; пренебрегать",
    "ex": "Ele despreza quem não pensa como ele.",
    "exru": "Он презирает тех, кто думает не как он.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "devido a",
@@ -2088,7 +2319,8 @@
    "ru": "из-за, вследствие",
    "ex": "O voo atrasou devido ao mau tempo no Porto.",
    "exru": "Рейс задержался из-за непогоды в Порту.",
-   "note": "Устойчивый оборот, всегда с a"
+   "note": "Устойчивый оборот, всегда с a",
+   "tema": "A9"
   },
   {
    "word": "a diminuição",
@@ -2097,7 +2329,8 @@
    "ru": "уменьшение, снижение",
    "ex": "Houve uma diminuição clara no número de acidentes.",
    "exru": "Произошло явное снижение числа аварий.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "disparar",
@@ -2106,7 +2339,8 @@
    "ru": "стрелять; резко расти",
    "ex": "Os preços das casas dispararam nos últimos anos.",
    "exru": "Цены на жильё резко выросли за последние годы.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o disparate",
@@ -2115,7 +2349,8 @@
    "ru": "нелепость, чушь",
    "ex": "Não digas disparates à frente dos teus pais.",
    "exru": "Не говори глупостей при родителях.",
-   "note": "Частое разговорное"
+   "note": "Частое разговорное",
+   "tema": "A7"
   },
   {
    "word": "dispor",
@@ -2124,7 +2359,8 @@
    "ru": "располагать, иметь в распоряжении",
    "ex": "O hotel dispõe de piscina e ginásio.",
    "exru": "Отель располагает бассейном и спортзалом.",
-   "note": "dispor de — иметь в наличии"
+   "note": "dispor de — иметь в наличии",
+   "tema": "A5"
   },
   {
    "word": "o dispositivo",
@@ -2133,7 +2369,8 @@
    "ru": "устройство, приспособление",
    "ex": "Este dispositivo mede a tensão arterial em poucos segundos.",
    "exru": "Это устройство измеряет давление за несколько секунд.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "disputar",
@@ -2142,7 +2379,8 @@
    "ru": "оспаривать; участвовать в матче",
    "ex": "As duas equipas disputam a final no domingo.",
    "exru": "Две команды играют в финале в воскресенье.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "dissolver",
@@ -2151,7 +2389,8 @@
    "ru": "растворять",
    "ex": "Dissolva o comprimido num copo de água.",
    "exru": "Растворите таблетку в стакане воды.",
-   "note": ""
+   "note": "",
+   "tema": "B8"
   },
   {
    "word": "a ditadura",
@@ -2160,7 +2399,8 @@
    "ru": "диктатура",
    "ex": "O país viveu quase cinquenta anos de ditadura.",
    "exru": "Страна прожила почти пятьдесят лет диктатуры.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o divórcio",
@@ -2169,7 +2409,8 @@
    "ru": "развод",
    "ex": "O divórcio deles foi rápido e sem conflitos.",
    "exru": "Их развод прошёл быстро и без конфликтов.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o docente",
@@ -2178,7 +2419,8 @@
    "ru": "преподаватель",
    "ex": "Os docentes reuniram-se para discutir os horários.",
    "exru": "Преподаватели собрались обсудить расписание.",
-   "note": "Официальное слово; в речи — professor"
+   "note": "Официальное слово; в речи — professor",
+   "tema": "B3"
   },
   {
    "word": "doido",
@@ -2187,7 +2429,8 @@
    "ru": "сумасшедший, чокнутый",
    "ex": "Estás doido de conduzir com este nevoeiro.",
    "exru": "Ты с ума сошёл ехать в такой туман.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o dragão",
@@ -2196,7 +2439,8 @@
    "ru": "дракон",
    "ex": "O escudo da cidade tem um dragão verde.",
    "exru": "На гербе города изображён зелёный дракон.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "duplo",
@@ -2205,7 +2449,8 @@
    "ru": "двойной",
    "ex": "Pedi um quarto duplo com vista para o mar.",
    "exru": "Я попросил двухместный номер с видом на море.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "ecológico",
@@ -2214,7 +2459,8 @@
    "ru": "экологичный",
    "ex": "Trouxe um saco ecológico para as compras.",
    "exru": "Я взял экологичную сумку для покупок.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o economista",
@@ -2223,7 +2469,8 @@
    "ru": "экономист",
    "ex": "O economista explicou a subida dos preços.",
    "exru": "Экономист объяснил рост цен.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "eleger",
@@ -2232,7 +2479,8 @@
    "ru": "избирать",
    "ex": "Os sócios elegeram um novo presidente do clube.",
    "exru": "Члены клуба избрали нового президента.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o eleitor",
@@ -2241,7 +2489,8 @@
    "ru": "избиратель",
    "ex": "Muitos eleitores votaram pela primeira vez nestas eleições.",
    "exru": "На этих выборах многие избиратели голосовали впервые.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "eleitoral",
@@ -2250,7 +2499,8 @@
    "ru": "избирательный",
    "ex": "A campanha eleitoral começa no próximo mês.",
    "exru": "Избирательная кампания начинается в следующем месяце.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a embaixada",
@@ -2259,7 +2509,8 @@
    "ru": "посольство",
    "ex": "Fui à embaixada tratar do visto para o próximo verão.",
    "exru": "Я ходил в посольство оформлять визу на следующее лето.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o embaixador",
@@ -2268,7 +2519,8 @@
    "ru": "посол",
    "ex": "O embaixador recebeu os jornalistas na terça-feira.",
    "exru": "Посол принял журналистов во вторник.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "emigrar",
@@ -2277,7 +2529,8 @@
    "ru": "эмигрировать",
    "ex": "Muitos portugueses emigraram para a França nos anos sessenta.",
    "exru": "Многие португальцы эмигрировали во Францию в шестидесятые.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "empenhar-se",
@@ -2286,7 +2539,8 @@
    "ru": "стараться, прилагать усилия",
    "ex": "Ela empenhou-se muito para acabar o curso.",
    "exru": "Она очень старалась, чтобы закончить курс.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "encarregar",
@@ -2295,7 +2549,8 @@
    "ru": "поручать",
    "ex": "Encarregaram-me de organizar a festa da escola.",
    "exru": "Мне поручили организовать школьный праздник.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o engano",
@@ -2304,7 +2559,8 @@
    "ru": "ошибка, недоразумение",
    "ex": "Desculpe, foi engano, liguei para o número errado.",
    "exru": "Извините, ошибся номером.",
-   "note": "É engano — «вы не туда попали»"
+   "note": "É engano — «вы не туда попали»",
+   "tema": "A8"
   },
   {
    "word": "a entidade",
@@ -2313,7 +2569,8 @@
    "ru": "организация, орган",
    "ex": "A entidade responsável pela água é a câmara.",
    "exru": "За водоснабжение отвечает муниципалитет.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "envolvido",
@@ -2322,7 +2579,8 @@
    "ru": "вовлечённый, замешанный",
    "ex": "Havia três empresas envolvidas no projeto da nova ponte.",
    "exru": "В проекте нового моста участвовали три компании.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "o episódio",
@@ -2331,7 +2589,8 @@
    "ru": "эпизод, серия",
    "ex": "Vi o último episódio da série ontem à noite.",
    "exru": "Я посмотрел последнюю серию вчера вечером.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "escasso",
@@ -2340,7 +2599,8 @@
    "ru": "скудный, недостаточный",
    "ex": "A água é escassa nesta região no verão.",
    "exru": "Летом в этом регионе мало воды.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "escondido",
@@ -2349,7 +2609,8 @@
    "ru": "спрятанный, скрытый",
    "ex": "O restaurante está escondido numa rua lateral.",
    "exru": "Ресторан спрятан на боковой улочке.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "o escultor",
@@ -2358,7 +2619,8 @@
    "ru": "скульптор",
    "ex": "O escultor trabalhou dois anos nesta estátua.",
    "exru": "Скульптор работал над этой статуей два года.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "esgotar",
@@ -2367,7 +2629,8 @@
    "ru": "исчерпать; распродать",
    "ex": "Os bilhetes esgotaram-se em duas horas no site oficial.",
    "exru": "Билеты на официальном сайте разошлись за два часа.",
-   "note": "Esgotado — «распродано»"
+   "note": "Esgotado — «распродано»",
+   "tema": "A5"
   },
   {
    "word": "a espada",
@@ -2376,7 +2639,8 @@
    "ru": "меч",
    "ex": "No museu há uma espada do século quinze.",
    "exru": "В музее есть меч пятнадцатого века.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "espantoso",
@@ -2385,7 +2649,8 @@
    "ru": "поразительный",
    "ex": "A vista do miradouro é simplesmente espantosa.",
    "exru": "Вид со смотровой площадки просто поразительный.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o espectador",
@@ -2394,7 +2659,8 @@
    "ru": "зритель",
    "ex": "O estádio recebeu quarenta mil espectadores na noite de sábado.",
    "exru": "В субботу вечером стадион принял сорок тысяч зрителей.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "esperto",
@@ -2403,7 +2669,8 @@
    "ru": "смышлёный, хитрый",
    "ex": "Aquele miúdo é muito esperto para a idade dele.",
    "exru": "Тот мальчишка очень смышлёный для своего возраста.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o espião",
@@ -2412,7 +2679,8 @@
    "ru": "шпион",
    "ex": "O filme conta a história de um espião russo.",
    "exru": "Фильм рассказывает историю русского шпиона.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "esquecido",
@@ -2421,7 +2689,8 @@
    "ru": "забытый; забывчивый",
    "ex": "Deixei o guarda-chuva esquecido no café da esquina.",
    "exru": "Я забыл зонт в кафе на углу.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "estimular",
@@ -2430,7 +2699,8 @@
    "ru": "побуждать, стимулировать",
    "ex": "A leitura estimula a imaginação das crianças.",
    "exru": "Чтение развивает воображение детей.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "estragar",
@@ -2439,7 +2709,8 @@
    "ru": "портить",
    "ex": "A chuva estragou-nos o passeio de domingo.",
    "exru": "Дождь испортил нам воскресную прогулку.",
-   "note": "Очень частое; о еде — испортиться"
+   "note": "Очень частое; о еде — испортиться",
+   "tema": "A6"
   },
   {
    "word": "estranhar",
@@ -2448,7 +2719,8 @@
    "ru": "находить странным, удивляться",
    "ex": "Estranhei que ele não tivesse telefonado durante o fim de semana.",
    "exru": "Мне показалось странным, что он не позвонил за все выходные.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "estratégico",
@@ -2457,7 +2729,8 @@
    "ru": "стратегический",
    "ex": "A loja fica num ponto estratégico da cidade.",
    "exru": "Магазин находится в стратегическом месте города.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a estupidez",
@@ -2466,7 +2739,8 @@
    "ru": "глупость",
    "ex": "Foi uma estupidez sair sem casaco com este frio.",
    "exru": "Было глупостью выйти без куртки в такой холод.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "eventual",
@@ -2475,7 +2749,8 @@
    "ru": "возможный, вероятный",
    "ex": "Preparámos um plano para uma eventual greve.",
    "exru": "Мы подготовили план на случай возможной забастовки.",
-   "note": "Ложный друг: не «окончательный»"
+   "note": "Ложный друг: не «окончательный»",
+   "tema": "A9"
   },
   {
    "word": "examinar",
@@ -2484,7 +2759,8 @@
    "ru": "осматривать, изучать",
    "ex": "O médico examinou-me a garganta com atenção.",
    "exru": "Врач внимательно осмотрел мне горло.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "exceder",
@@ -2493,7 +2769,8 @@
    "ru": "превышать",
    "ex": "O peso da bagagem excede o limite permitido.",
    "exru": "Вес багажа превышает разрешённый предел.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "exercer",
@@ -2502,7 +2779,8 @@
    "ru": "исполнять, заниматься (профессией)",
    "ex": "Ela exerce medicina há mais de vinte anos.",
    "exru": "Она занимается медициной больше двадцати лет.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "a exigência",
@@ -2511,7 +2789,8 @@
    "ru": "требование",
    "ex": "As exigências do senhorio pareceram-me excessivas para aquele preço.",
    "exru": "Требования хозяина показались мне чрезмерными за такие деньги.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a expectativa",
@@ -2520,7 +2799,8 @@
    "ru": "ожидание, надежда",
    "ex": "O concerto superou todas as nossas expectativas.",
    "exru": "Концерт превзошёл все наши ожидания.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "explodir",
@@ -2529,7 +2809,8 @@
    "ru": "взрываться",
    "ex": "Ouviu-se um pneu a explodir na rua.",
    "exru": "На улице было слышно, как лопнула шина.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "exportar",
@@ -2538,7 +2819,8 @@
    "ru": "экспортировать",
    "ex": "Portugal exporta vinho para todo o mundo.",
    "exru": "Португалия экспортирует вино по всему миру.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "extenso",
@@ -2547,7 +2829,8 @@
    "ru": "обширный, пространный",
    "ex": "O relatório é demasiado extenso para ler hoje.",
    "exru": "Отчёт слишком объёмный, чтобы прочитать сегодня.",
-   "note": ""
+   "note": "",
+   "tema": "A3"
   },
   {
    "word": "externo",
@@ -2556,7 +2839,8 @@
    "ru": "внешний",
    "ex": "O disco externo tem um terabyte de memória.",
    "exru": "Внешний диск на один терабайт.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "extinto",
@@ -2565,7 +2849,8 @@
    "ru": "вымерший; исчезнувший",
    "ex": "Aquela ave está extinta há mais de cem anos.",
    "exru": "Та птица вымерла более ста лет назад.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "o fado",
@@ -2574,7 +2859,8 @@
    "ru": "фаду; судьба",
    "ex": "Ouvimos fado numa casa típica de Alfama.",
    "exru": "Мы слушали фаду в традиционном доме в Алфаме.",
-   "note": "Второе значение — судьба, рок"
+   "note": "Второе значение — судьба, рок",
+   "tema": "B4"
   },
   {
    "word": "falecer",
@@ -2583,7 +2869,8 @@
    "ru": "скончаться",
    "ex": "O avô dela faleceu no inverno passado.",
    "exru": "Её дед скончался прошлой зимой.",
-   "note": "Вежливее, чем morrer"
+   "note": "Вежливее, чем morrer",
+   "tema": "A1"
   },
   {
    "word": "a fantasia",
@@ -2592,7 +2879,8 @@
    "ru": "фантазия, выдумка",
    "ex": "A história dele é pura fantasia, não acredito em nada.",
    "exru": "Его история — чистая выдумка, я не верю ни слову.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o fantasma",
@@ -2601,7 +2889,8 @@
    "ru": "привидение, призрак",
    "ex": "Dizem que há um fantasma no castelo velho.",
    "exru": "Говорят, в старом замке есть привидение.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "farto",
@@ -2610,7 +2899,8 @@
    "ru": "сытый по горло",
    "ex": "Estou farto de ouvir sempre a mesma desculpa.",
    "exru": "Мне надоело слышать одно и то же оправдание.",
-   "note": "Estar farto de — очень частое"
+   "note": "Estar farto de — очень частое",
+   "tema": "B1"
   },
   {
    "word": "fascinante",
@@ -2619,7 +2909,8 @@
    "ru": "увлекательный, захватывающий",
    "ex": "O documentário sobre os Açores é fascinante.",
    "exru": "Документальный фильм об Азорах захватывающий.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "favorável",
@@ -2628,7 +2919,8 @@
    "ru": "благоприятный",
    "ex": "O tempo esteve favorável durante toda a viagem.",
    "exru": "Погода была благоприятной всю поездку.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o favorito",
@@ -2637,7 +2929,8 @@
    "ru": "любимец; фаворит",
    "ex": "Este prato é o favorito das crianças.",
    "exru": "Это блюдо — любимое у детей.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "fingir",
@@ -2646,7 +2939,8 @@
    "ru": "притворяться",
    "ex": "Ele fingiu que não me viu na rua.",
    "exru": "Он сделал вид, что не заметил меня на улице.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "fixar",
@@ -2655,7 +2949,8 @@
    "ru": "закреплять; запоминать",
    "ex": "Fixei o horário na porta do frigorífico.",
    "exru": "Я прикрепил расписание к дверце холодильника.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a fortuna",
@@ -2664,7 +2959,8 @@
    "ru": "состояние, богатство",
    "ex": "Aquele carro deve ter custado uma fortuna.",
    "exru": "Та машина, должно быть, стоила целое состояние.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a fraqueza",
@@ -2673,7 +2969,8 @@
    "ru": "слабость",
    "ex": "Sentiu uma fraqueza súbita e sentou-se no primeiro banco.",
    "exru": "Он почувствовал внезапную слабость и сел на первую же скамейку.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a fraude",
@@ -2682,7 +2979,8 @@
    "ru": "мошенничество",
    "ex": "A empresa foi acusada de fraude fiscal.",
    "exru": "Компанию обвинили в налоговом мошенничестве.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "frequentar",
@@ -2691,7 +2989,8 @@
    "ru": "посещать, часто бывать",
    "ex": "Frequento aquele café quase todas as manhãs.",
    "exru": "Я хожу в то кафе почти каждое утро.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "fundar",
@@ -2700,7 +2999,8 @@
    "ru": "основывать, учреждать",
    "ex": "A universidade foi fundada no século dezasseis.",
    "exru": "Университет был основан в шестнадцатом веке.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "furioso",
@@ -2709,7 +3009,8 @@
    "ru": "разъярённый",
    "ex": "Ficou furioso quando soube da notícia pelos jornais.",
    "exru": "Он пришёл в ярость, узнав новость из газет.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o gajo",
@@ -2718,7 +3019,8 @@
    "ru": "тип, парень",
    "ex": "Aquele gajo trabalha na loja da esquina.",
    "exru": "Тот парень работает в магазине на углу.",
-   "note": "Разговорное, чисто португальское"
+   "note": "Разговорное, чисто португальское",
+   "tema": "B1"
   },
   {
    "word": "o gigante",
@@ -2727,7 +3029,8 @@
    "ru": "великан",
    "ex": "O conto fala de um gigante que vivia na montanha.",
    "exru": "В сказке говорится о великане, жившем в горах.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "gozar",
@@ -2736,7 +3039,8 @@
    "ru": "насмехаться; наслаждаться",
    "ex": "Estás a gozar comigo ou falas a sério?",
    "exru": "Ты надо мной смеёшься или серьёзно?",
-   "note": "gozar com alguém — подшучивать"
+   "note": "gozar com alguém — подшучивать",
+   "tema": "B1"
   },
   {
    "word": "grátis",
@@ -2745,7 +3049,8 @@
    "ru": "бесплатно",
    "ex": "A entrada no museu é grátis ao domingo.",
    "exru": "Вход в музей по воскресеньям бесплатный.",
-   "note": "Форма не меняется"
+   "note": "Форма не меняется",
+   "tema": "B7"
   },
   {
    "word": "a gravata",
@@ -2754,7 +3059,8 @@
    "ru": "галстук",
    "ex": "Levou gravata azul para a entrevista de emprego.",
    "exru": "Он надел синий галстук на собеседование.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "grávida",
@@ -2763,7 +3069,8 @@
    "ru": "беременная",
    "ex": "A minha irmã está grávida de cinco meses.",
    "exru": "Моя сестра на пятом месяце беременности.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a gravidade",
@@ -2772,7 +3079,8 @@
    "ru": "серьёзность; сила тяжести",
    "ex": "Só depois percebemos a gravidade do problema.",
    "exru": "Только потом мы поняли серьёзность проблемы.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "genial",
@@ -2781,7 +3089,8 @@
    "ru": "гениальный, отличный",
    "ex": "A tua ideia para o fim de semana foi genial.",
    "exru": "Твоя идея на выходные была гениальной.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "habitar",
@@ -2790,7 +3099,8 @@
    "ru": "обитать, населять",
    "ex": "Nesta zona habitam muitas aves marinhas durante o inverno.",
    "exru": "Зимой в этой местности обитает много морских птиц.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "horrível",
@@ -2799,7 +3109,8 @@
    "ru": "ужасный",
    "ex": "O tempo esteve horrível durante todo o fim de semana.",
    "exru": "Погода была ужасной все выходные.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o horror",
@@ -2808,7 +3119,8 @@
    "ru": "ужас",
    "ex": "Tenho horror a aranhas desde pequena, não consigo evitar.",
    "exru": "Я с детства до ужаса боюсь пауков, ничего не могу поделать.",
-   "note": "ter horror a — испытывать отвращение"
+   "note": "ter horror a — испытывать отвращение",
+   "tema": "B1"
   },
   {
    "word": "hospitaleiro",
@@ -2817,7 +3129,8 @@
    "ru": "гостеприимный",
    "ex": "As pessoas desta aldeia são muito hospitaleiras.",
    "exru": "Люди в этой деревне очень гостеприимны.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o idiota",
@@ -2826,7 +3139,8 @@
    "ru": "идиот",
    "ex": "Não sejas idiota e pede desculpa já.",
    "exru": "Не будь идиотом и извинись сейчас же.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "ilegal",
@@ -2835,7 +3149,8 @@
    "ru": "незаконный",
    "ex": "Estacionar naquele passeio é ilegal e dá multa pesada.",
    "exru": "Парковаться на том тротуаре незаконно, штраф немаленький.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a imaginação",
@@ -2844,7 +3159,8 @@
    "ru": "воображение",
    "ex": "As crianças têm uma imaginação sem limites.",
    "exru": "У детей безграничное воображение.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "inaugurar",
@@ -2853,7 +3169,8 @@
    "ru": "торжественно открывать",
    "ex": "A câmara inaugurou a nova biblioteca no sábado.",
    "exru": "Мэрия открыла новую библиотеку в субботу.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "incentivar",
@@ -2862,7 +3179,8 @@
    "ru": "поощрять, стимулировать",
    "ex": "Os pais incentivaram-na a estudar música desde muito cedo.",
    "exru": "Родители с самого детства поощряли её заниматься музыкой.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o incidente",
@@ -2871,7 +3189,8 @@
    "ru": "происшествие, инцидент",
    "ex": "Houve um pequeno incidente à entrada do estádio.",
    "exru": "У входа на стадион произошёл небольшой инцидент.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "incomodar",
@@ -2880,7 +3199,8 @@
    "ru": "беспокоить, мешать",
    "ex": "Desculpe incomodar, posso fazer-lhe uma pergunta rápida?",
    "exru": "Извините за беспокойство, можно задать вам быстрый вопрос?",
-   "note": "Очень частая формула вежливости"
+   "note": "Очень частая формула вежливости",
+   "tema": "B1"
   },
   {
    "word": "inconsciente",
@@ -2889,7 +3209,8 @@
    "ru": "без сознания; безрассудный",
    "ex": "Encontraram-no inconsciente no chão da cozinha e chamaram o INEM.",
    "exru": "Его нашли без сознания на полу кухни и вызвали скорую.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "incrível",
@@ -2898,7 +3219,8 @@
    "ru": "невероятный",
    "ex": "A vista daqui de cima é simplesmente incrível.",
    "exru": "Вид отсюда сверху просто невероятный.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a infeção",
@@ -2907,7 +3229,8 @@
    "ru": "инфекция",
    "ex": "O médico receitou antibiótico para a infeção.",
    "exru": "Врач прописал антибиотик от инфекции.",
-   "note": "Пишется без -c-: европейская норма"
+   "note": "Пишется без -c-: европейская норма",
+   "tema": "B6"
   },
   {
    "word": "o inferno",
@@ -2916,7 +3239,8 @@
    "ru": "ад",
    "ex": "Aquela viagem de comboio foi um inferno.",
    "exru": "Та поездка на поезде была адом.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "inocente",
@@ -2925,7 +3249,8 @@
    "ru": "невиновный; невинный",
    "ex": "O tribunal considerou-o inocente de todas as acusações.",
    "exru": "Суд признал его невиновным по всем обвинениям.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o instinto",
@@ -2934,7 +3259,8 @@
    "ru": "инстинкт, чутьё",
    "ex": "O instinto dela raramente falha nestas coisas.",
    "exru": "Её чутьё в таких вещах редко подводит.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a integração",
@@ -2943,7 +3269,8 @@
    "ru": "интеграция, включение",
    "ex": "A escola tem um programa de integração para estrangeiros.",
    "exru": "В школе есть программа интеграции для иностранцев.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "intensivo",
@@ -2952,7 +3279,8 @@
    "ru": "интенсивный",
    "ex": "Fiz um curso intensivo de português em julho.",
    "exru": "Я прошёл интенсивный курс португальского в июле.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "a invasão",
@@ -2961,7 +3289,8 @@
    "ru": "вторжение",
    "ex": "O livro conta a invasão da cidade em mil e oitocentos.",
    "exru": "Книга рассказывает о вторжении в город в тысяча восьмисотом.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "invisível",
@@ -2970,7 +3299,8 @@
    "ru": "невидимый",
    "ex": "A mancha ficou praticamente invisível depois de lavar.",
    "exru": "После стирки пятно стало почти незаметным.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "isento",
@@ -2979,7 +3309,8 @@
    "ru": "освобождённый (от платы, обязанности)",
    "ex": "Os menores de doze anos estão isentos de pagamento.",
    "exru": "Дети до двенадцати лет освобождены от оплаты.",
-   "note": "isento de"
+   "note": "isento de",
+   "tema": "B9"
   },
   {
    "word": "a jogada",
@@ -2988,7 +3319,8 @@
    "ru": "ход, приём",
    "ex": "Foi uma jogada inteligente do treinador nos últimos minutos.",
    "exru": "Это был умный ход тренера на последних минутах.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o julgamento",
@@ -2997,7 +3329,8 @@
    "ru": "судебный процесс",
    "ex": "O julgamento começa na próxima segunda-feira em Lisboa.",
    "exru": "Процесс начинается в следующий понедельник в Лиссабоне.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o júri",
@@ -3006,7 +3339,8 @@
    "ru": "жюри",
    "ex": "O júri escolheu três finalistas do concurso.",
    "exru": "Жюри выбрало трёх финалистов конкурса.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "jurídico",
@@ -3015,7 +3349,8 @@
    "ru": "юридический",
    "ex": "Pedi apoio jurídico para resolver o contrato.",
    "exru": "Я обратился за юридической помощью по контракту.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a ladeira",
@@ -3024,7 +3359,8 @@
    "ru": "крутая улица, склон",
    "ex": "Subir aquela ladeira a pé cansa qualquer um.",
    "exru": "Подняться по той крутой улице пешком утомит любого.",
-   "note": "В Лиссабоне их множество"
+   "note": "В Лиссабоне их множество",
+   "tema": "B2"
   },
   {
    "word": "o ladrão",
@@ -3033,7 +3369,8 @@
    "ru": "вор",
    "ex": "O ladrão entrou pela janela da cozinha.",
    "exru": "Вор влез через кухонное окно.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a lealdade",
@@ -3042,7 +3379,8 @@
    "ru": "верность, преданность",
    "ex": "A lealdade dos amigos vale mais que dinheiro.",
    "exru": "Верность друзей дороже денег.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a lenda",
@@ -3051,7 +3389,8 @@
    "ru": "легенда, предание",
    "ex": "Há uma lenda antiga sobre aquela fonte.",
    "exru": "Об этом источнике есть старинная легенда.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a lição",
@@ -3060,7 +3399,8 @@
    "ru": "урок (в том числе жизненный)",
    "ex": "Aquele erro foi uma boa lição para mim.",
    "exru": "Та ошибка стала для меня хорошим уроком.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o liceu",
@@ -3069,7 +3409,8 @@
    "ru": "лицей, старшая школа",
    "ex": "Andei no liceu aqui perto durante três anos.",
    "exru": "Я три года учился в лицее неподалёку.",
-   "note": "Историческое название старшей школы"
+   "note": "Историческое название старшей школы",
+   "tema": "B3"
   },
   {
    "word": "literalmente",
@@ -3078,7 +3419,8 @@
    "ru": "буквально",
    "ex": "A sala estava literalmente cheia de gente.",
    "exru": "Зал был буквально забит людьми.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "livrar-se",
@@ -3087,7 +3429,8 @@
    "ru": "избавиться",
    "ex": "Finalmente livrei-me daquela constipação que durou duas semanas.",
    "exru": "Наконец-то я избавился от простуды, которая тянулась две недели.",
-   "note": "livrar-se de"
+   "note": "livrar-se de",
+   "tema": "A1"
   },
   {
    "word": "a loucura",
@@ -3096,7 +3439,8 @@
    "ru": "безумие",
    "ex": "Foi uma loucura sair de casa com aquela tempestade.",
    "exru": "Было безумием выходить из дома в такую бурю.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o luxo",
@@ -3105,7 +3449,8 @@
    "ru": "роскошь",
    "ex": "Um táxi todos os dias é um luxo que não posso ter.",
    "exru": "Такси каждый день — роскошь, которую я не могу себе позволить.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "mágico",
@@ -3114,7 +3459,8 @@
    "ru": "волшебный",
    "ex": "O jardim tem um ambiente mágico à noite.",
    "exru": "Ночью в саду волшебная атмосфера.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "magnífico",
@@ -3123,7 +3469,8 @@
    "ru": "великолепный",
    "ex": "O jantar estava magnífico, obrigado pelo convite.",
    "exru": "Ужин был великолепен, спасибо за приглашение.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "magoar",
@@ -3132,7 +3479,8 @@
    "ru": "обидеть; ушибить",
    "ex": "Não quis magoar-te com aquele comentário sobre o teu trabalho.",
    "exru": "Я не хотел обидеть тебя тем замечанием о твоей работе.",
-   "note": "И о боли: magoei o joelho"
+   "note": "И о боли: magoei o joelho",
+   "tema": "B1"
   },
   {
    "word": "o mal-estar",
@@ -3141,7 +3489,8 @@
    "ru": "недомогание; неловкость",
    "ex": "Sinto um mal-estar desde o almoço, talvez tenha sido o peixe.",
    "exru": "Мне нездоровится с обеда — возможно, из-за рыбы.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "maluco",
@@ -3150,7 +3499,8 @@
    "ru": "чокнутый",
    "ex": "Ele conduz como um maluco naquela estrada.",
    "exru": "Он ездит по той дороге как сумасшедший.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a maravilha",
@@ -3159,7 +3509,8 @@
    "ru": "диво, прелесть",
    "ex": "O jantar estava uma maravilha, o bacalhau ficou perfeito.",
    "exru": "Ужин был просто прелесть, треска удалась на славу.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "maravilhoso",
@@ -3168,7 +3519,8 @@
    "ru": "чудесный, восхитительный",
    "ex": "Passámos um fim de semana maravilhoso no Gerês.",
    "exru": "Мы провели чудесные выходные в Жерезе.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "marcante",
@@ -3177,7 +3529,8 @@
    "ru": "запоминающийся",
    "ex": "Foi o momento mais marcante da viagem.",
    "exru": "Это был самый запоминающийся момент поездки.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a máscara",
@@ -3186,7 +3539,8 @@
    "ru": "маска",
    "ex": "No carnaval, toda a gente usa máscara.",
    "exru": "На карнавале все носят маски.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a medalha",
@@ -3195,7 +3549,8 @@
    "ru": "медаль",
    "ex": "Ganhou a medalha de prata na natação.",
    "exru": "Он выиграл серебряную медаль по плаванию.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "mentir",
@@ -3204,7 +3559,8 @@
    "ru": "лгать, врать",
    "ex": "Percebe-se logo quando ele está a mentir.",
    "exru": "Сразу видно, когда он врёт.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o mentiroso",
@@ -3213,7 +3569,8 @@
    "ru": "лжец",
    "ex": "Ninguém acredita naquele mentiroso, já contou histórias demais.",
    "exru": "Тому лжецу никто не верит — слишком много он насочинял.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o milagre",
@@ -3222,7 +3579,8 @@
    "ru": "чудо (сверхъестественное)",
    "ex": "Foi um milagre ninguém se ter magoado.",
    "exru": "Это чудо, что никто не пострадал.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "modificar",
@@ -3231,7 +3589,8 @@
    "ru": "изменять, вносить изменения",
    "ex": "Tivemos de modificar o plano à última hora.",
    "exru": "Нам пришлось изменить план в последний момент.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "moer",
@@ -3240,7 +3599,8 @@
    "ru": "молоть",
    "ex": "Prefiro moer o café na hora, o sabor é outro.",
    "exru": "Я предпочитаю молоть кофе перед варкой — вкус совсем другой.",
-   "note": ""
+   "note": "",
+   "tema": "B8"
   },
   {
    "word": "o monstro",
@@ -3249,7 +3609,8 @@
    "ru": "чудовище",
    "ex": "O miúdo sonhou com um monstro debaixo da cama.",
    "exru": "Мальчику приснилось чудовище под кроватью.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o morador",
@@ -3258,7 +3619,8 @@
    "ru": "житель, жилец",
    "ex": "Os moradores queixaram-se do barulho noturno do bar.",
    "exru": "Жильцы пожаловались на ночной шум из бара.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "mortal",
@@ -3267,7 +3629,8 @@
    "ru": "смертельный; смертный",
    "ex": "A picada daquela cobra pode ser mortal.",
    "exru": "Укус той змеи может быть смертельным.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a multidão",
@@ -3276,7 +3639,8 @@
    "ru": "толпа",
    "ex": "Uma multidão esperava o cantor à saída.",
    "exru": "Толпа ждала певца у выхода.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "multiplicar",
@@ -3285,7 +3649,8 @@
    "ru": "умножать",
    "ex": "Aprendeu a multiplicar antes dos sete anos.",
    "exru": "Он научился умножать до семи лет.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "nítido",
@@ -3294,7 +3659,8 @@
    "ru": "чёткий, ясный",
    "ex": "A fotografia não ficou muito nítida por causa do movimento.",
    "exru": "Фотография получилась нечёткой из-за движения.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "a noiva",
@@ -3303,7 +3669,8 @@
    "ru": "невеста",
    "ex": "A noiva chegou à igreja com meia hora de atraso.",
    "exru": "Невеста приехала в церковь с получасовым опозданием.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "nojento",
@@ -3312,7 +3679,8 @@
    "ru": "противный, отвратительный",
    "ex": "O cheiro daquele peixe estava nojento, deitei tudo fora.",
    "exru": "Запах той рыбы был отвратительным, я всё выбросил.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o nojo",
@@ -3321,7 +3689,8 @@
    "ru": "отвращение",
    "ex": "Tenho nojo de tocar em insetos, mesmo nos pequenos.",
    "exru": "Мне противно трогать насекомых, даже маленьких.",
-   "note": "ter nojo de"
+   "note": "ter nojo de",
+   "tema": "B1"
   },
   {
    "word": "a novidade",
@@ -3330,7 +3699,8 @@
    "ru": "новость; новинка",
    "ex": "Contas-me as novidades ao almoço de domingo?",
    "exru": "Расскажешь новости за воскресным обедом?",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "óbvio",
@@ -3339,7 +3709,8 @@
    "ru": "очевидный",
    "ex": "É óbvio que ela não quer falar do assunto.",
    "exru": "Очевидно, что она не хочет говорить об этом.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "obviamente",
@@ -3348,7 +3719,8 @@
    "ru": "очевидно, разумеется",
    "ex": "Obviamente, ninguém esperava aquele resultado no primeiro jogo.",
    "exru": "Разумеется, такого результата в первом матче никто не ждал.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "a ofensa",
@@ -3357,7 +3729,8 @@
    "ru": "обида, оскорбление",
    "ex": "Ele levou o comentário como uma ofensa pessoal.",
    "exru": "Он воспринял замечание как личное оскорбление.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "oficialmente",
@@ -3366,7 +3739,8 @@
    "ru": "официально",
    "ex": "O curso começa oficialmente a quinze de setembro.",
    "exru": "Курс официально начинается пятнадцатого сентября.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a olhadela",
@@ -3375,7 +3749,8 @@
    "ru": "беглый взгляд",
    "ex": "Dá uma olhadela ao contrato antes de assinar.",
    "exru": "Взгляни на договор, прежде чем подписывать.",
-   "note": "dar uma olhadela — глянуть"
+   "note": "dar uma olhadela — глянуть",
+   "tema": "A8"
   },
   {
    "word": "o operário",
@@ -3384,7 +3759,8 @@
    "ru": "рабочий",
    "ex": "Os operários começam o turno às seis da manhã.",
    "exru": "Рабочие начинают смену в шесть утра.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "opor-se",
@@ -3393,7 +3769,8 @@
    "ru": "противиться, возражать",
    "ex": "Os vizinhos opuseram-se à construção do prédio.",
    "exru": "Соседи выступили против строительства дома.",
-   "note": "opor-se a"
+   "note": "opor-se a",
+   "tema": "A8"
   },
   {
    "word": "ousar",
@@ -3402,7 +3779,8 @@
    "ru": "сметь, отваживаться",
    "ex": "Ninguém ousou contrariar o chefe naquele dia.",
    "exru": "Никто не осмелился перечить начальнику в тот день.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a pá",
@@ -3411,7 +3789,8 @@
    "ru": "лопата",
    "ex": "Preciso de uma pá para tirar a areia.",
    "exru": "Мне нужна лопата, чтобы убрать песок.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a paciência",
@@ -3420,7 +3799,8 @@
    "ru": "терпение",
    "ex": "É preciso muita paciência para ensinar crianças.",
    "exru": "Чтобы учить детей, нужно много терпения.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o padrinho",
@@ -3429,7 +3809,8 @@
    "ru": "крёстный отец",
    "ex": "O padrinho ofereceu-lhe a primeira bicicleta no dia dos anos.",
    "exru": "Крёстный подарил ему первый велосипед на день рождения.",
-   "note": "Крёстная — a madrinha"
+   "note": "Крёстная — a madrinha",
+   "tema": "B1"
   },
   {
    "word": "o palerma",
@@ -3438,7 +3819,8 @@
    "ru": "дурачок, простофиля",
    "ex": "Não sejas palerma, isso é obviamente uma piada.",
    "exru": "Не будь дурачком, это же явно шутка.",
-   "note": "Разговорное, беззлобное"
+   "note": "Разговорное, беззлобное",
+   "tema": "B1"
   },
   {
    "word": "o palhaço",
@@ -3447,7 +3829,8 @@
    "ru": "клоун",
    "ex": "As crianças riram-se muito com o palhaço.",
    "exru": "Дети очень смеялись над клоуном.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a palmeira",
@@ -3456,7 +3839,8 @@
    "ru": "пальма",
    "ex": "Há palmeiras ao longo de toda a avenida.",
    "exru": "Вдоль всего проспекта растут пальмы.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "o palpite",
@@ -3465,7 +3849,8 @@
    "ru": "догадка, предчувствие",
    "ex": "Tenho um palpite de que ela vai aceitar.",
    "exru": "У меня есть предчувствие, что она согласится.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o pânico",
@@ -3474,7 +3859,8 @@
    "ru": "паника",
    "ex": "Houve pânico quando as luzes se apagaram.",
    "exru": "Началась паника, когда погас свет.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o paraíso",
@@ -3483,7 +3869,8 @@
    "ru": "рай",
    "ex": "Aquela praia deserta é um verdadeiro paraíso.",
    "exru": "Тот безлюдный пляж — настоящий рай.",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "parecido",
@@ -3492,7 +3879,8 @@
    "ru": "похожий",
    "ex": "O teu casaco é parecido com o meu.",
    "exru": "Твоя куртка похожа на мою.",
-   "note": "parecido com"
+   "note": "parecido com",
+   "tema": "A9"
   },
   {
    "word": "o participante",
@@ -3501,7 +3889,8 @@
    "ru": "участник",
    "ex": "Cada participante recebeu um certificado no fim.",
    "exru": "Каждый участник в конце получил сертификат.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o parto",
@@ -3510,7 +3899,8 @@
    "ru": "роды",
    "ex": "O parto correu bem e a mãe já está em casa.",
    "exru": "Роды прошли хорошо, и мать уже дома.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o pastor",
@@ -3519,7 +3909,8 @@
    "ru": "пастух; пастор",
    "ex": "O pastor levava as ovelhas para a serra ao amanhecer.",
    "exru": "Пастух гнал овец в горы на рассвете.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o patrão",
@@ -3528,7 +3919,8 @@
    "ru": "хозяин, начальник",
    "ex": "O patrão deu-nos a tarde de sexta livre.",
    "exru": "Начальник дал нам свободную вторую половину пятницы.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o pecado",
@@ -3537,7 +3929,8 @@
    "ru": "грех",
    "ex": "Deitar comida fora é um pecado, dizia a avó.",
    "exru": "Выбрасывать еду — грех, говорила бабушка.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o perdão",
@@ -3546,7 +3939,8 @@
    "ru": "прощение",
    "ex": "Pediu perdão à irmã depois da discussão.",
    "exru": "Он попросил у сестры прощения после ссоры.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "perdido",
@@ -3555,7 +3949,8 @@
    "ru": "потерянный; заблудившийся",
    "ex": "Andámos perdidos no centro durante uma hora.",
    "exru": "Мы час плутали по центру.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "permitido",
@@ -3564,7 +3959,8 @@
    "ru": "разрешённый",
    "ex": "Não é permitido fumar dentro do restaurante.",
    "exru": "Курить внутри ресторана запрещено.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "persistir",
@@ -3573,7 +3969,8 @@
    "ru": "упорствовать; сохраняться",
    "ex": "A dor persistiu durante mais de uma semana.",
    "exru": "Боль сохранялась больше недели.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "o pesadelo",
@@ -3582,7 +3979,8 @@
    "ru": "кошмар",
    "ex": "A viagem de regresso foi um verdadeiro pesadelo.",
    "exru": "Обратная дорога была настоящим кошмаром.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "pescar",
@@ -3591,7 +3989,8 @@
    "ru": "ловить рыбу",
    "ex": "O meu tio vai pescar todos os domingos de manhã.",
    "exru": "Мой дядя ходит на рыбалку каждое воскресное утро.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "péssimo",
@@ -3600,7 +3999,8 @@
    "ru": "отвратительный, худший",
    "ex": "O serviço daquele café é péssimo, nunca mais lá volto.",
    "exru": "Обслуживание в том кафе отвратительное, больше туда ни ногой.",
-   "note": "Превосходная степень от mau"
+   "note": "Превосходная степень от mau",
+   "tema": "A7"
   },
   {
    "word": "pessoalmente",
@@ -3609,7 +4009,8 @@
    "ru": "лично",
    "ex": "Prefiro tratar deste assunto pessoalmente, não por email.",
    "exru": "Я предпочитаю уладить это лично, а не по почте.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "o petróleo",
@@ -3618,7 +4019,8 @@
    "ru": "нефть",
    "ex": "O preço do petróleo subiu outra vez.",
    "exru": "Цена на нефть снова выросла.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a piada",
@@ -3627,7 +4029,8 @@
    "ru": "шутка, анекдот",
    "ex": "Ele contou uma piada e ninguém se riu.",
    "exru": "Он рассказал анекдот, и никто не засмеялся.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a pista",
@@ -3636,7 +4039,8 @@
    "ru": "след, зацепка; дорожка",
    "ex": "A polícia ainda não tem nenhuma pista.",
    "exru": "У полиции пока нет ни одной зацепки.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o poço",
@@ -3645,7 +4049,8 @@
    "ru": "колодец",
    "ex": "A casa antiga ainda tem um poço no quintal.",
    "exru": "В старом доме во дворе ещё есть колодец.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a polémica",
@@ -3654,7 +4059,8 @@
    "ru": "полемика, спор",
    "ex": "A decisão do árbitro gerou muita polémica.",
    "exru": "Решение судьи вызвало много споров.",
-   "note": "Европейское написание, с -é-"
+   "note": "Европейское написание, с -é-",
+   "tema": "A8"
   },
   {
    "word": "o pontapé",
@@ -3663,7 +4069,8 @@
    "ru": "пинок, удар ногой",
    "ex": "Deu um pontapé na bola com toda a força.",
    "exru": "Он изо всех сил ударил по мячу.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a porcaria",
@@ -3672,7 +4079,8 @@
    "ru": "гадость, дрянь",
    "ex": "Não comas essa porcaria antes do jantar.",
    "exru": "Не ешь эту гадость перед ужином.",
-   "note": "Очень частое разговорное"
+   "note": "Очень частое разговорное",
+   "tema": "A7"
   },
   {
    "word": "a portaria",
@@ -3681,7 +4089,8 @@
    "ru": "вахта, стойка портье",
    "ex": "Deixei a encomenda na portaria do prédio.",
    "exru": "Я оставил посылку на вахте дома.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "o potencial",
@@ -3690,7 +4099,8 @@
    "ru": "потенциал",
    "ex": "Aquele jogador tem muito potencial, mas falta-lhe disciplina.",
    "exru": "У того игрока большой потенциал, но не хватает дисциплины.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "preferido",
@@ -3699,7 +4109,8 @@
    "ru": "любимый, предпочитаемый",
    "ex": "Este é o meu restaurante preferido em Lisboa.",
    "exru": "Это мой любимый ресторан в Лиссабоне.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o prejuízo",
@@ -3708,7 +4119,8 @@
    "ru": "ущерб, убыток",
    "ex": "A tempestade causou prejuízos enormes na agricultura.",
    "exru": "Буря нанесла огромный ущерб сельскому хозяйству.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a prenda",
@@ -3717,7 +4129,8 @@
    "ru": "подарок",
    "ex": "Comprei uma prenda de anos para a minha afilhada.",
    "exru": "Я купил подарок на день рождения крестнице.",
-   "note": "Европейское слово; бразильцы говорят presente"
+   "note": "Европейское слово; бразильцы говорят presente",
+   "tema": "B7"
   },
   {
    "word": "o presépio",
@@ -3726,7 +4139,8 @@
    "ru": "рождественский вертеп",
    "ex": "Montámos o presépio no início de dezembro.",
    "exru": "Мы поставили вертеп в начале декабря.",
-   "note": "Обязательная часть португальского Рождества"
+   "note": "Обязательная часть португальского Рождества",
+   "tema": "B4"
   },
   {
    "word": "a pressa",
@@ -3735,7 +4149,8 @@
    "ru": "спешка",
    "ex": "Estou com pressa, falamos logo à noite.",
    "exru": "Я тороплюсь, поговорим вечером.",
-   "note": "estar com pressa"
+   "note": "estar com pressa",
+   "tema": "A4"
   },
   {
    "word": "a prestação",
@@ -3744,7 +4159,8 @@
    "ru": "взнос, платёж",
    "ex": "Pagamos o carro em trinta e seis prestações.",
    "exru": "Мы платим за машину тридцатью шестью взносами.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "prestes",
@@ -3753,7 +4169,8 @@
    "ru": "готовый вот-вот",
    "ex": "O comboio estava prestes a partir quando cheguei.",
    "exru": "Поезд уже отходил, когда я пришёл.",
-   "note": "estar prestes a + инфинитив"
+   "note": "estar prestes a + инфинитив",
+   "tema": "A4"
   },
   {
    "word": "pretender",
@@ -3762,7 +4179,8 @@
    "ru": "намереваться",
    "ex": "Pretendo mudar de emprego no próximo ano.",
    "exru": "Я намерен сменить работу в следующем году.",
-   "note": "Ложный друг: это не «притворяться»"
+   "note": "Ложный друг: это не «притворяться»",
+   "tema": "A8"
   },
   {
    "word": "primário",
@@ -3771,7 +4189,8 @@
    "ru": "начальный, первичный",
    "ex": "A minha filha anda no ensino primário.",
    "exru": "Моя дочь учится в начальной школе.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "a princesa",
@@ -3780,7 +4199,8 @@
    "ru": "принцесса",
    "ex": "A lenda fala de uma princesa presa na torre.",
    "exru": "Легенда рассказывает о принцессе, запертой в башне.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o prisioneiro",
@@ -3789,7 +4209,8 @@
    "ru": "заключённый, пленник",
    "ex": "Os prisioneiros trabalhavam na horta da cadeia.",
    "exru": "Заключённые работали в тюремном огороде.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a privacidade",
@@ -3798,7 +4219,8 @@
    "ru": "частная жизнь, приватность",
    "ex": "Toda a gente tem direito à sua privacidade.",
    "exru": "Каждый имеет право на частную жизнь.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "proporcionar",
@@ -3807,7 +4229,8 @@
    "ru": "предоставлять, доставлять",
    "ex": "A viagem proporcionou-nos momentos inesquecíveis com a família toda.",
    "exru": "Поездка подарила нам незабываемые моменты со всей семьёй.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "provisório",
@@ -3816,7 +4239,8 @@
    "ru": "временный",
    "ex": "Arranjaram uma solução provisória até ao verão.",
    "exru": "Они нашли временное решение до лета.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "o psiquiatra",
@@ -3825,7 +4249,8 @@
    "ru": "психиатр",
    "ex": "Foi encaminhado para um psiquiatra pelo médico de família.",
    "exru": "Семейный врач направил его к психиатру.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "a publicidade",
@@ -3834,7 +4259,8 @@
    "ru": "реклама",
    "ex": "Há demasiada publicidade neste canal, corto sempre o som.",
    "exru": "На этом канале слишком много рекламы, я всегда выключаю звук.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "querido",
@@ -3843,7 +4269,8 @@
    "ru": "дорогой, милый",
    "ex": "Querida, podes trazer o pão quando vieres?",
    "exru": "Дорогая, принесёшь хлеб, когда будешь идти?",
-   "note": "Обычное обращение к близким"
+   "note": "Обычное обращение к близким",
+   "tema": "B1"
   },
   {
    "word": "a química",
@@ -3852,7 +4279,8 @@
    "ru": "химия",
    "ex": "Sempre tive dificuldade em química na escola.",
    "exru": "В школе мне всегда была трудна химия.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "rebentar",
@@ -3861,7 +4289,8 @@
    "ru": "лопаться, взрываться",
    "ex": "O balão rebentou nas mãos da criança.",
    "exru": "Шарик лопнул в руках у ребёнка.",
-   "note": "Европейская форма; бразильцы говорят estourar"
+   "note": "Европейская форма; бразильцы говорят estourar",
+   "tema": "A1"
   },
   {
    "word": "o receio",
@@ -3870,7 +4299,8 @@
    "ru": "опасение",
    "ex": "Tenho receio de que ele não venha.",
    "exru": "Я опасаюсь, что он не придёт.",
-   "note": "ter receio de"
+   "note": "ter receio de",
+   "tema": "B1"
   },
   {
    "word": "a recompensa",
@@ -3879,7 +4309,8 @@
    "ru": "награда, вознаграждение",
    "ex": "Ofereceram uma recompensa a quem encontrasse o cão.",
    "exru": "Тому, кто найдёт собаку, предложили вознаграждение.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o recorde",
@@ -3888,7 +4319,8 @@
    "ru": "рекорд",
    "ex": "Ele bateu o recorde nacional dos cem metros.",
    "exru": "Он побил национальный рекорд на ста метрах.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "redigir",
@@ -3897,7 +4329,8 @@
    "ru": "составлять, писать (текст)",
    "ex": "O advogado redigiu o contrato numa tarde.",
    "exru": "Юрист составил договор за один вечер.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a reputação",
@@ -3906,7 +4339,8 @@
    "ru": "репутация",
    "ex": "Aquele restaurante tem boa reputação na cidade.",
    "exru": "У того ресторана хорошая репутация в городе.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "requerer",
@@ -3915,7 +4349,8 @@
    "ru": "требовать; подавать заявление",
    "ex": "Este trabalho requer muita paciência e atenção ao pormenor.",
    "exru": "Эта работа требует большого терпения и внимания к деталям.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o resgate",
@@ -3924,7 +4359,8 @@
    "ru": "спасение; выкуп",
    "ex": "O resgate dos náufragos demorou seis horas.",
    "exru": "Спасение потерпевших кораблекрушение заняло шесть часов.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a respiração",
@@ -3933,7 +4369,8 @@
    "ru": "дыхание",
    "ex": "O médico ouviu-lhe a respiração com atenção.",
    "exru": "Врач внимательно послушал его дыхание.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "restar",
@@ -3942,7 +4379,8 @@
    "ru": "оставаться",
    "ex": "Só resta um bilhete para o concerto.",
    "exru": "Остался только один билет на концерт.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "o revisor",
@@ -3951,7 +4389,8 @@
    "ru": "контролёр (в транспорте)",
    "ex": "O revisor pediu-me o bilhete a meio da viagem.",
    "exru": "Контролёр попросил у меня билет посреди поездки.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "rezar",
@@ -3960,7 +4399,8 @@
    "ru": "молиться",
    "ex": "A avó reza todas as noites antes de dormir.",
    "exru": "Бабушка молится каждый вечер перед сном.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "ridículo",
@@ -3969,7 +4409,8 @@
    "ru": "смехотворный, нелепый",
    "ex": "Achei ridículo pagar tanto por um café.",
    "exru": "Мне показалось нелепым платить столько за кофе.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o robô",
@@ -3978,7 +4419,8 @@
    "ru": "робот",
    "ex": "A fábrica comprou dois robôs para a linha de montagem.",
    "exru": "Завод купил два робота для сборочной линии.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "romântico",
@@ -3987,7 +4429,8 @@
    "ru": "романтичный",
    "ex": "Escolheram um sítio romântico para o jantar.",
    "exru": "Они выбрали романтичное место для ужина.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o roubo",
@@ -3996,7 +4439,8 @@
    "ru": "кража",
    "ex": "O roubo aconteceu durante a noite, sem ninguém dar por nada.",
    "exru": "Кража произошла ночью, и никто ничего не заметил.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "o sacrifício",
@@ -4005,7 +4449,8 @@
    "ru": "жертва, самоотдача",
    "ex": "Estudar à noite exigiu muito sacrifício durante aqueles anos.",
    "exru": "Учёба по вечерам все те годы требовала большой самоотдачи.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "salvo",
@@ -4014,7 +4459,8 @@
    "ru": "целый и невредимый",
    "ex": "Todos os passageiros saíram sãos e salvos.",
    "exru": "Все пассажиры вышли целыми и невредимыми.",
-   "note": "são e salvo — устойчивое"
+   "note": "são e salvo — устойчивое",
+   "tema": "B6"
   },
   {
    "word": "sangrar",
@@ -4023,7 +4469,8 @@
    "ru": "кровоточить",
    "ex": "O corte no dedo ainda sangra um pouco.",
    "exru": "Порез на пальце ещё немного кровоточит.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "satisfeito",
@@ -4032,7 +4479,8 @@
    "ru": "довольный",
    "ex": "O cliente saiu satisfeito com o serviço.",
    "exru": "Клиент ушёл довольным обслуживанием.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "sincero",
@@ -4041,7 +4489,8 @@
    "ru": "искренний",
    "ex": "Quero uma resposta sincera, sem rodeios nem meias palavras.",
    "exru": "Мне нужен искренний ответ, без обиняков и недомолвок.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "socorrer",
@@ -4050,7 +4499,8 @@
    "ru": "приходить на помощь",
    "ex": "Os vizinhos socorreram o senhor que caiu.",
    "exru": "Соседи помогли упавшему мужчине.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o sofrimento",
@@ -4059,7 +4509,8 @@
    "ru": "страдание",
    "ex": "O tratamento reduziu bastante o sofrimento dele.",
    "exru": "Лечение заметно уменьшило его страдания.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "solidário",
@@ -4068,7 +4519,8 @@
    "ru": "отзывчивый, солидарный",
    "ex": "Os colegas foram muito solidários naquela altura.",
    "exru": "Коллеги были очень отзывчивы в то время.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "solitário",
@@ -4077,7 +4529,8 @@
    "ru": "одинокий; уединённый",
    "ex": "Ele leva uma vida solitária no campo.",
    "exru": "Он ведёт одинокую жизнь в деревне.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o soluço",
@@ -4086,7 +4539,8 @@
    "ru": "икота",
    "ex": "Bebe água devagar para passar os soluços.",
    "exru": "Пей воду медленно, чтобы прошла икота.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "somar",
@@ -4095,7 +4549,8 @@
    "ru": "складывать, суммировать",
    "ex": "Some estas três parcelas e diga-me o total.",
    "exru": "Сложите эти три числа и скажите мне итог.",
-   "note": ""
+   "note": "",
+   "tema": "A5"
   },
   {
    "word": "suceder",
@@ -4104,7 +4559,8 @@
    "ru": "происходить; сменять",
    "ex": "O que sucedeu ontem à noite na praça?",
    "exru": "Что произошло вчера вечером на площади?",
-   "note": ""
+   "note": "",
+   "tema": "A1"
   },
   {
    "word": "supor",
@@ -4113,7 +4569,8 @@
    "ru": "предполагать",
    "ex": "Suponho que eles já tenham chegado a casa.",
    "exru": "Полагаю, они уже добрались домой.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "suposto",
@@ -4122,7 +4579,8 @@
    "ru": "предполагаемый",
    "ex": "O suposto ladrão foi identificado pelas câmaras.",
    "exru": "Предполагаемого вора опознали по камерам.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a suspeita",
@@ -4131,7 +4589,8 @@
    "ru": "подозрение",
    "ex": "Tenho a suspeita de que ele sabia de tudo.",
    "exru": "У меня есть подозрение, что он всё знал.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "o suspeito",
@@ -4140,7 +4599,8 @@
    "ru": "подозреваемый",
    "ex": "O suspeito foi levado para a esquadra.",
    "exru": "Подозреваемого доставили в участок.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a taça",
@@ -4149,7 +4609,8 @@
    "ru": "кубок; чаша",
    "ex": "A equipa ganhou a taça pela terceira vez.",
    "exru": "Команда выиграла кубок в третий раз.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a tarifa",
@@ -4158,7 +4619,8 @@
    "ru": "тариф",
    "ex": "A tarifa da eletricidade sobe em janeiro.",
    "exru": "Тариф на электричество вырастет в январе.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "a tatuagem",
@@ -4167,7 +4629,8 @@
    "ru": "татуировка",
    "ex": "Fez uma tatuagem pequena no pulso esquerdo.",
    "exru": "Она сделала маленькую татуировку на левом запястье.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "tecnológico",
@@ -4176,7 +4639,8 @@
    "ru": "технологический",
    "ex": "A empresa investiu em equipamento tecnológico novo.",
    "exru": "Компания вложилась в новое технологическое оборудование.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "o telefonema",
@@ -4185,7 +4649,8 @@
    "ru": "телефонный звонок",
    "ex": "Recebi um telefonema estranho de manhã cedo.",
    "exru": "Мне рано утром поступил странный звонок.",
-   "note": "Европейское слово; сам аппарат — telefone"
+   "note": "Европейское слово; сам аппарат — telefone",
+   "tema": "A8"
   },
   {
    "word": "o templo",
@@ -4194,7 +4659,8 @@
    "ru": "храм",
    "ex": "Visitámos um templo antigo perto de Évora.",
    "exru": "Мы посетили древний храм рядом с Эворой.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "a temporada",
@@ -4203,7 +4669,8 @@
    "ru": "сезон, период",
    "ex": "A temporada de praia começa em junho.",
    "exru": "Пляжный сезон начинается в июне.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "a terapia",
@@ -4212,7 +4679,8 @@
    "ru": "терапия, лечение",
    "ex": "A terapia ajudou-a a lidar com a ansiedade.",
    "exru": "Терапия помогла ей справиться с тревожностью.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o tesouro",
@@ -4221,7 +4689,8 @@
    "ru": "сокровище",
    "ex": "As crianças brincavam a procurar um tesouro.",
    "exru": "Дети играли в поиски сокровища.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "a testemunha",
@@ -4230,7 +4699,8 @@
    "ru": "свидетель",
    "ex": "A testemunha contou tudo o que viu.",
    "exru": "Свидетель рассказал всё, что видел.",
-   "note": ""
+   "note": "",
+   "tema": "B9"
   },
   {
    "word": "típico",
@@ -4239,7 +4709,8 @@
    "ru": "типичный, характерный",
    "ex": "O caldo verde é um prato típico do Minho.",
    "exru": "Калду верде — типичное блюдо Минью.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "tolo",
@@ -4248,7 +4719,8 @@
    "ru": "глупый, дурацкий",
    "ex": "Foi uma discussão tola por causa de nada.",
    "exru": "Это был глупый спор из-за пустяка.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "tonto",
@@ -4257,7 +4729,8 @@
    "ru": "у кого кружится голова",
    "ex": "Fiquei tonto quando me levantei depressa do sofá.",
    "exru": "У меня закружилась голова, когда я резко встал с дивана.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o topo",
@@ -4266,7 +4739,8 @@
    "ru": "вершина, верх",
    "ex": "Do topo da colina vê-se o rio todo.",
    "exru": "С вершины холма видна вся река.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "o torneio",
@@ -4275,7 +4749,8 @@
    "ru": "турнир",
    "ex": "O torneio de ténis realiza-se em maio.",
    "exru": "Теннисный турнир проходит в мае.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "trabalhoso",
@@ -4284,7 +4759,8 @@
    "ru": "трудоёмкий, хлопотный",
    "ex": "Fazer pastéis de nata em casa é trabalhoso.",
    "exru": "Готовить паштел-де-ната дома хлопотно.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a traição",
@@ -4293,7 +4769,8 @@
    "ru": "предательство, измена",
    "ex": "Ele nunca perdoou aquela traição do amigo.",
    "exru": "Он так и не простил другу того предательства.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "trair",
@@ -4302,7 +4779,8 @@
    "ru": "предавать, изменять",
    "ex": "Nunca pensei que ele me fosse trair.",
    "exru": "Я никогда не думал, что он меня предаст.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "o trecho",
@@ -4311,7 +4789,8 @@
    "ru": "отрывок; участок пути",
    "ex": "Leia em voz alta este trecho do texto.",
    "exru": "Прочтите вслух этот отрывок текста.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "trincar",
@@ -4320,7 +4799,8 @@
    "ru": "откусывать, разгрызать",
    "ex": "Trincou a maçã e sentiu uma dor no dente.",
    "exru": "Он откусил яблоко и почувствовал боль в зубе.",
-   "note": "Европейское слово; бразильцы говорят morder"
+   "note": "Европейское слово; бразильцы говорят morder",
+   "tema": "B8"
   },
   {
    "word": "a tripulação",
@@ -4329,7 +4809,8 @@
    "ru": "экипаж",
    "ex": "A tripulação do avião foi muito simpática.",
    "exru": "Экипаж самолёта был очень любезен.",
-   "note": ""
+   "note": "",
+   "tema": "B5"
   },
   {
    "word": "o truque",
@@ -4338,7 +4819,8 @@
    "ru": "трюк, уловка",
    "ex": "Ele conhece um truque para tirar nódoas de vinho.",
    "exru": "Он знает хитрость, как вывести пятна от вина.",
-   "note": ""
+   "note": "",
+   "tema": "B4"
   },
   {
    "word": "o tubo",
@@ -4347,7 +4829,8 @@
    "ru": "трубка, тюбик",
    "ex": "Comprei um tubo de pasta de dentes.",
    "exru": "Я купил тюбик зубной пасты.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "o turno",
@@ -4356,7 +4839,8 @@
    "ru": "смена (рабочая)",
    "ex": "Ela faz o turno da noite duas vezes por semana.",
    "exru": "Она выходит в ночную смену дважды в неделю.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "ultimamente",
@@ -4365,7 +4849,8 @@
    "ru": "в последнее время",
    "ex": "Ultimamente tenho dormido muito mal por causa do calor.",
    "exru": "В последнее время я очень плохо сплю из-за жары.",
-   "note": ""
+   "note": "",
+   "tema": "A4"
   },
   {
    "word": "o uniforme",
@@ -4374,7 +4859,8 @@
    "ru": "форма (одежда)",
    "ex": "Os alunos daquele colégio usam uniforme azul-escuro.",
    "exru": "Ученики того колледжа носят тёмно-синюю форму.",
-   "note": ""
+   "note": "",
+   "tema": "B7"
   },
   {
    "word": "urgente",
@@ -4383,7 +4869,8 @@
    "ru": "срочный",
    "ex": "Recebi um email urgente do escritório a meio das férias.",
    "exru": "Посреди отпуска мне пришло срочное письмо из офиса.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a vaga",
@@ -4392,7 +4879,8 @@
    "ru": "свободное место; вакансия",
    "ex": "Não havia uma única vaga no parque de estacionamento.",
    "exru": "На парковке не было ни одного свободного места.",
-   "note": "И о работе: vaga de emprego"
+   "note": "И о работе: vaga de emprego",
+   "tema": "B3"
   },
   {
    "word": "valorizar",
@@ -4401,7 +4889,8 @@
    "ru": "ценить; повышать ценность",
    "ex": "Os portugueses valorizam muito a comida caseira.",
    "exru": "Португальцы очень ценят домашнюю еду.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "o vencimento",
@@ -4410,7 +4899,8 @@
    "ru": "зарплата; срок годности",
    "ex": "O vencimento é pago no último dia do mês.",
    "exru": "Зарплату выплачивают в последний день месяца.",
-   "note": "На продуктах — data de validade"
+   "note": "На продуктах — data de validade",
+   "tema": "B3"
   },
   {
    "word": "o veneno",
@@ -4419,7 +4909,8 @@
    "ru": "яд",
    "ex": "O veneno daquela cobra atua muito depressa.",
    "exru": "Яд той змеи действует очень быстро.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "vigiar",
@@ -4428,7 +4919,8 @@
    "ru": "следить, присматривать",
    "ex": "Pode vigiar a minha mala um momento?",
    "exru": "Можете присмотреть за моим чемоданом минутку?",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "a vingança",
@@ -4437,7 +4929,8 @@
    "ru": "месть",
    "ex": "O filme conta uma história de vingança familiar.",
    "exru": "Фильм рассказывает историю семейной мести.",
-   "note": ""
+   "note": "",
+   "tema": "B1"
   },
   {
    "word": "a vinha",
@@ -4446,7 +4939,8 @@
    "ru": "виноградник",
    "ex": "A família tem uma vinha pequena no Douro.",
    "exru": "У семьи небольшой виноградник в Дору.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "vomitar",
@@ -4455,7 +4949,8 @@
    "ru": "рвать, тошнить",
    "ex": "O miúdo vomitou duas vezes durante a viagem.",
    "exru": "Ребёнка дважды вырвало во время поездки.",
-   "note": ""
+   "note": "",
+   "tema": "B6"
   },
   {
    "word": "aparentemente",
@@ -4464,7 +4959,8 @@
    "ru": "по-видимому",
    "ex": "Aparentemente, ninguém reparou no erro do cartaz.",
    "exru": "По-видимому, ошибку на афише никто не заметил.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "característico",
@@ -4473,7 +4969,8 @@
    "ru": "характерный, свойственный",
    "ex": "Aquele cheiro a pão quente é característico das padarias.",
    "exru": "Тот запах горячего хлеба характерен для пекарен.",
-   "note": ""
+   "note": "",
+   "tema": "A6"
   },
   {
    "word": "a contrapartida",
@@ -4482,7 +4979,8 @@
    "ru": "встречное условие; зато",
    "ex": "Trabalha muito; em contrapartida, ganha bem e viaja imenso.",
    "exru": "Он много работает; зато хорошо зарабатывает и много путешествует.",
-   "note": "em contrapartida — «зато»"
+   "note": "em contrapartida — «зато»",
+   "tema": "A9"
   },
   {
    "word": "a esferográfica",
@@ -4491,7 +4989,8 @@
    "ru": "шариковая ручка",
    "ex": "Preencha o formulário a esferográfica azul, sem rasuras.",
    "exru": "Заполните бланк синей шариковой ручкой, без помарок.",
-   "note": "Европейское слово; сокращают до esfero"
+   "note": "Европейское слово; сокращают до esfero",
+   "tema": "B3"
   },
   {
    "word": "especializado",
@@ -4500,7 +4999,8 @@
    "ru": "специализированный",
    "ex": "Precisamos de um técnico especializado em caldeiras.",
    "exru": "Нам нужен специалист по котлам.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "impressionante",
@@ -4509,7 +5009,8 @@
    "ru": "впечатляющий",
    "ex": "O silêncio daquela igreja ao fim da tarde é impressionante.",
    "exru": "Тишина в той церкви под вечер впечатляет.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "indispensável",
@@ -4518,7 +5019,8 @@
    "ru": "необходимый, незаменимый",
    "ex": "Um bom dicionário é indispensável para traduzir.",
    "exru": "Хороший словарь необходим для перевода.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "a matéria-prima",
@@ -4527,7 +5029,8 @@
    "ru": "сырьё",
    "ex": "A cortiça é a principal matéria-prima da fábrica.",
    "exru": "Пробка — основное сырьё завода.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "possivelmente",
@@ -4536,7 +5039,8 @@
    "ru": "вероятно",
    "ex": "Possivelmente chegaremos depois das oito, o trânsito está mau.",
    "exru": "Мы, вероятно, приедем после восьми — на дорогах пробки.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "profundamente",
@@ -4545,7 +5049,8 @@
    "ru": "глубоко",
    "ex": "Fiquei profundamente impressionado com a exposição de fotografia.",
    "exru": "Я был глубоко впечатлён фотовыставкой.",
-   "note": ""
+   "note": "",
+   "tema": "A3"
   },
   {
    "word": "oxalá",
@@ -4554,7 +5059,8 @@
    "ru": "дай бог, хоть бы",
    "ex": "Oxalá o tempo melhore antes do fim de semana.",
    "exru": "Хоть бы погода наладилась до выходных.",
-   "note": "Требует конъюнктива; слово арабского происхождения"
+   "note": "Требует конъюнктива; слово арабского происхождения",
+   "tema": "A8"
   },
   {
    "word": "enfiar",
@@ -4563,7 +5069,8 @@
    "ru": "засовывать, надевать",
    "ex": "Enfiou as mãos nos bolsos e saiu.",
    "exru": "Он сунул руки в карманы и вышел.",
-   "note": ""
+   "note": "",
+   "tema": "A2"
   },
   {
    "word": "entupir",
@@ -4572,7 +5079,8 @@
    "ru": "засорять(ся)",
    "ex": "O lava-loiça entupiu outra vez esta manhã.",
    "exru": "Раковина снова засорилась сегодня утром.",
-   "note": ""
+   "note": "",
+   "tema": "B2"
   },
   {
    "word": "estender",
@@ -4581,7 +5089,8 @@
    "ru": "растягивать; развешивать",
    "ex": "Estendi a roupa lá fora porque está sol.",
    "exru": "Я развесил бельё на улице, потому что солнечно.",
-   "note": ""
+   "note": "",
+   "tema": "B3"
   },
   {
    "word": "exceto",
@@ -4590,7 +5099,8 @@
    "ru": "кроме, за исключением",
    "ex": "Estamos abertos todos os dias exceto ao domingo.",
    "exru": "Мы открыты каждый день, кроме воскресенья.",
-   "note": ""
+   "note": "",
+   "tema": "A9"
   },
   {
    "word": "ótimo",
@@ -4599,7 +5109,8 @@
    "ru": "отличный",
    "ex": "Ótimo, então combinamos para as sete no café do costume.",
    "exru": "Отлично, тогда договорились на семь в обычном кафе.",
-   "note": ""
+   "note": "",
+   "tema": "A7"
   },
   {
    "word": "francamente",
@@ -4608,7 +5119,8 @@
    "ru": "откровенно говоря",
    "ex": "Francamente, não gostei nada do filme nem do final.",
    "exru": "Честно говоря, ни фильм, ни концовка мне не понравились.",
-   "note": ""
+   "note": "",
+   "tema": "A8"
   },
   {
    "word": "atingir",
