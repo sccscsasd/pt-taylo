@@ -22,7 +22,8 @@ import io, json, os, re, sys, importlib.util
 ФАЙЛЫ = {"B1": os.path.join(БАЗА, "vocabulario", "baralho-completo-B1.json"),
          "B2": os.path.join(БАЗА, "vocabulario", "baralho-completo-B2.json")}
 ОТКАЗ = os.path.join(БАЗА, "vocabulario", "b1b2-rejeitadas.txt")
-A1A2 = os.path.join(БАЗА, "vocabulario", "baralho-completo-A1-A2.json")
+A1A2 = [os.path.join(БАЗА, "vocabulario", "baralho-completo-A1.json"),
+        os.path.join(БАЗА, "vocabulario", "baralho-completo-A2.json")]
 ИСТ = r"E:/other/chrome/portuguese_PTPT_B1_B2_3000_clean_candidate.xlsx"
 ЖДУТ = os.path.join(БАЗА, "vocabulario", "_b1b2-ждут.txt")
 ПОРЦИЯ = os.path.join(БАЗА, "vocabulario", "_b1b2-porcao.py")
@@ -52,6 +53,14 @@ def слова_b():
     return вместе
 
 
+def слова_a():
+    """То же для базовых колод A1 и A2."""
+    вместе = set()
+    for п in A1A2:
+        вместе |= слова_из(п)
+    return вместе
+
+
 def отклонённые():
     if not os.path.exists(ОТКАЗ):
         return [], []
@@ -75,7 +84,7 @@ def добавить():
     m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
     d = {ур: колода(п) for ур, п in ФАЙЛЫ.items()}
     было = слова_b()
-    базовые = слова_из(A1A2)
+    базовые = слова_a()
     переводы = {}
     for к in d.values():
         for c in к["cards"]:
@@ -108,7 +117,7 @@ def отметить():
     if not os.path.exists(ЖДУТ):
         return 0
     показано = [l.strip() for l in io.open(ЖДУТ, encoding="utf-8") if l.strip()]
-    взято = слова_b() | слова_из(A1A2)
+    взято = слова_b() | слова_a()
     шапка, уже = отклонённые()
     новые = [w for w in показано if norm(w) not in взято and w not in уже]
     if not шапка:
@@ -120,7 +129,7 @@ def отметить():
 
 
 def следующие():
-    готово = слова_b() | слова_из(A1A2) | {norm(w) for w in отклонённые()[1]}
+    готово = слова_b() | слова_a() | {norm(w) for w in отклонённые()[1]}
     ждут = [x for x in источник() if norm(x[0]) not in готово]
     порция = ждут[:СЛОВ]
     io.open(ЖДУТ, "w", encoding="utf-8", newline="").write("\n".join(w for w, _, _ in порция) + "\n")
