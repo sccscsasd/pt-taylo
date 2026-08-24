@@ -5,18 +5,20 @@
 Колоды пишутся руками в vocabulario/*.json — это формат авторства, с историей
 и разбором правок в git. В базу они попадают миграцией, а не из браузера.
 
-    python vocabulario/deck2sql.py a1-a2 > supabase/migrations/007_deck_a1_a2.sql
+    python vocabulario/deck2sql.py a1 > supabase/migrations/010_deck_a1.sql
 
-Настройки колод — в DECKS ниже. Чтобы добавить B1–B2: положить рядом
-baralho-completo-B1-B2.json, дописать сюда запись и выполнить ту же команду.
+Настройки колод — в DECKS ниже. Чтобы добавить колоду: положить рядом её JSON,
+дописать сюда запись и выполнить ту же команду.
 
-Уровень и тема у колоды A1–A2 берутся из temas-A1-A2.json: слово ищется в списках
-a1/a2 каждой темы. Чего там нет — уезжает с пустым уровнем и темой, и скрипт об этом
-предупреждает.
+У колод A1 и A2 уровень и тема берутся из temas-A1-A2.json — слово ищется в списках
+a1/a2 каждой темы. Файл общий на обе: колоды делятся по уровню, а темы у них одни.
 
 У колод B1 и B2 файла тем нет, и ключа "temas" в DECKS у них тоже нет: уровень
 и тема берутся из самой карточки. Тема у части карточек пока пустая — такие слова
 попадут в «Разное».
+
+Колода «Свои слова» (id manual) генератором не печатается: слов в pt_words у неё нет,
+они лежат у каждого человека в pt_cards. В каталог её заводит миграция 012.
 """
 
 import io
@@ -28,14 +30,23 @@ import sys
 ЗДЕСЬ = os.path.dirname(os.path.abspath(__file__))
 
 DECKS = {
-    "a1-a2": {
-        "cards": "baralho-completo-A1-A2.json",
+    "a1": {
+        "cards": "baralho-completo-A1.json",
         "temas": "temas-A1-A2.json",
-        "name": "Базовый A1–A2",
-        "descr": "Словник Referencial Camões PLE: 1829 карточек с примерами и заметками",
+        "name": "Начальный A1",
+        "descr": "748 карточек уровня A1 из словника Referencial Camões PLE",
         "level_from": "A1",
-        "level_to": "A2",
+        "level_to": "A1",
         "sort": 10,
+    },
+    "a2": {
+        "cards": "baralho-completo-A2.json",
+        "temas": "temas-A1-A2.json",
+        "name": "Базовый A2",
+        "descr": "1128 карточек уровня A2 из словника Referencial Camões PLE",
+        "level_from": "A2",
+        "level_to": "A2",
+        "sort": 20,
     },
     "b1": {
         "cards": "baralho-completo-B1.json",
@@ -43,7 +54,7 @@ DECKS = {
         "descr": "755 карточек уровня B1 с примерами и заметками",
         "level_from": "B1",
         "level_to": "B1",
-        "sort": 20,
+        "sort": 30,
     },
     "b2": {
         "cards": "baralho-completo-B2.json",
@@ -51,7 +62,7 @@ DECKS = {
         "descr": "497 карточек уровня B2 с примерами и заметками",
         "level_from": "B2",
         "level_to": "B2",
-        "sort": 30,
+        "sort": 40,
     },
 }
 
@@ -179,7 +190,7 @@ def печатать(ключ, кусок=200):
 
 
 if __name__ == "__main__":
-    ключ = sys.argv[1] if len(sys.argv) > 1 else "a1-a2"
+    ключ = sys.argv[1] if len(sys.argv) > 1 else "a1"
     if ключ not in DECKS:
         sys.exit("неизвестная колода: %s (есть: %s)" % (ключ, ", ".join(DECKS)))
     печатать(ключ)

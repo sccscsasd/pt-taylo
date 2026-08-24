@@ -6,7 +6,7 @@
 begin;
 
 insert into public.pt_decks (id, name, descr, level_from, level_to, sort)
-values ('b1', 'Средний B1', '755 карточек уровня B1 с примерами и заметками', 'B1', 'B1', 20)
+values ('b1', 'Средний B1', '755 карточек уровня B1 с примерами и заметками', 'B1', 'B1', 30)
 on conflict (id) do update set name = excluded.name, descr = excluded.descr,
   level_from = excluded.level_from, level_to = excluded.level_to, sort = excluded.sort;
 

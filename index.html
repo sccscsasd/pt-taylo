@@ -751,18 +751,27 @@ let syncedAt='';            // метка сервера: до какого мо
 let setDirty=false;         // настройки изменены и не отправлены
 
 const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,rev:0};
-// Карточка — это слово колоды плюс личный прогресс, если он уже есть.
-const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,BLANK,p||{});
+// Карточка — это слово колоды плюс личный прогресс, если он уже есть. own в конце
+// не случайно: слово, которое человек когда-то завёл сам, а потом оно попало в колоду,
+// принадлежит колоде — иначе его содержимое уехало бы на сервер как личное.
+const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,BLANK,p||{},{own:false});
 
+// Колода своих слов — единственная без строк в pt_words: её содержимое лежит
+// у каждого в личных карточках. В каталоге она есть, чтобы её можно было выключить.
+const MANUAL='manual';
 function rebuild(){
-  const out=[];
+  const out=[], взято=new Set();
   deck.forEach(w=>{
     if(!myDecks.has(w.deck)) return;
     const p=prog.get(w.id);
     if(p&&p.deleted) return;                  // человек убрал это слово у себя
-    out.push(join(w,p));
+    out.push(join(w,p)); взято.add(w.id);
   });
-  prog.forEach(p=>{ if(p.own&&!p.deleted) out.push(Object.assign({},BLANK,p,{own:true})) });
+  // Своё слово показываем, только если оно ещё не пришло из колоды: слово, заведённое
+  // руками и позже попавшее в общую колоду, иначе показалось бы дважды.
+  if(myDecks.has(MANUAL))
+    prog.forEach(p=>{ if(p.own&&!p.deleted&&!взято.has(p.id))
+      out.push(Object.assign({},BLANK,p,{own:true})) });
   cards=out;
 }
 
@@ -1987,15 +1996,16 @@ $('#goal').addEventListener('keydown',e=>{ if(e.key==='Enter') e.target.blur() }
    retired — слово убрали из колоды, и оно пропало у всех, потому что копий нет. */
 function renderDecks(){
   const box=$('#deckList'); if(!box) return;
-  const свои=cards.filter(c=>c.own).length;
+  // Свои слова считаем по prog, а не по cards: выключенной колоды в cards нет.
+  // Слово, попавшее потом в колоду, своим уже не считаем — оно теперь её.
+  const свои=[...prog.values()].filter(p=>p.own&&!p.deleted&&!deck.has(p.id)).length;
   box.innerHTML=decks.map(d=>{
-    const n=[...deck.values()].filter(w=>w.deck===d.id).length;
+    const n=d.id===MANUAL?свои:[...deck.values()].filter(w=>w.deck===d.id).length;
     const on=myDecks.has(d.id);
     return '<button class="deck'+(on?' on':'')+'" data-d="'+esc(d.id)+'" type="button">'+
       '<span class="t">'+esc(d.name)+'<i>'+plural(n,'слово','слова','слов')+'</i></span>'+
       '<span class="mark">'+(on?IC_DONE:'')+'</span></button>';
-  }).join('')+(свои?'<div class="hint" style="margin:10px 0 0">И '+
-      plural(свои,'своё слово','своих слова','своих слов')+' — они всегда в тренировке.</div>':'');
+  }).join('');
 }
 $('#deckList').onclick=async e=>{
   const b=e.target.closest('[data-d]'); if(!b) return;
