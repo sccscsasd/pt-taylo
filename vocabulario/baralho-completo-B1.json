@@ -8191,6 +8191,1126 @@
    "exru": "Он выиграл турнир, не проиграв ни одного матча.",
    "note": "Второе значение — истечь: o prazo venceu",
    "tema": "B4"
+  },
+  {
+   "word": "a atitude",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "отношение к делу, поведение",
+   "ex": "Mudou de atitude assim que percebeu o problema.",
+   "exru": "Он изменил своё отношение, как только понял проблему.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o avanço",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "продвижение вперёд",
+   "ex": "Houve um avanço grande nas obras esta semana.",
+   "exru": "На этой неделе стройка сильно продвинулась.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "o compromisso",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "обязательство; условленная встреча",
+   "ex": "Tenho um compromisso às seis, não posso ficar.",
+   "exru": "У меня в шесть встреча, остаться не могу.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a crise",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "кризис",
+   "ex": "A crise deixou muita gente sem trabalho na região.",
+   "exru": "Кризис оставил многих в этих краях без работы.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "o desafio",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "вызов, испытание",
+   "ex": "Mudar de país foi o maior desafio da vida dela.",
+   "exru": "Переезд в другую страну стал главным испытанием в её жизни.",
+   "note": "Desafiar — бросать вызов",
+   "tema": "A7"
+  },
+  {
+   "word": "a discussão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "обсуждение, спор",
+   "ex": "A discussão sobre o condomínio durou duas horas.",
+   "exru": "Обсуждение расходов на дом заняло два часа.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o esforço",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "усилие",
+   "ex": "Com algum esforço, conseguimos acabar a tempo.",
+   "exru": "Ценой некоторых усилий мы успели вовремя.",
+   "note": "Fazer um esforço — постараться",
+   "tema": "A7"
+  },
+  {
+   "word": "a falha",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сбой, промах",
+   "ex": "Houve uma falha de energia em todo o bairro.",
+   "exru": "Во всём квартале случился сбой электроснабжения.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a fonte",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "источник",
+   "ex": "O jornal não revelou a fonte da informação.",
+   "exru": "Газета не раскрыла источник сведений.",
+   "note": "Также фонтан и родник",
+   "tema": "A9"
+  },
+  {
+   "word": "a hipótese",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "предположение; возможность",
+   "ex": "Não pomos de lado a hipótese de mudar de casa.",
+   "exru": "Мы не исключаем возможности переехать.",
+   "note": "«Nem por hipótese!» — «ни в коем случае!»",
+   "tema": "A8"
+  },
+  {
+   "word": "a iniciativa",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "инициатива, почин",
+   "ex": "A iniciativa partiu dos próprios moradores do prédio.",
+   "exru": "Инициатива исходила от самих жильцов дома.",
+   "note": "Ter iniciativa — быть инициативным",
+   "tema": "A8"
+  },
+  {
+   "word": "a meta",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "рубеж, к которому стремятся",
+   "ex": "A minha meta é ler um livro por mês.",
+   "exru": "Моя цель — читать по книге в месяц.",
+   "note": "Также финиш в соревновании",
+   "tema": "A7"
+  },
+  {
+   "word": "o método",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "метод, способ",
+   "ex": "Cada professor tem o seu método de ensinar.",
+   "exru": "У каждого учителя свой метод преподавания.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o modelo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "модель, образец",
+   "ex": "Este modelo de máquina gasta menos água.",
+   "exru": "Эта модель машинки расходует меньше воды.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "o nível",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "уровень",
+   "ex": "O nível do rio subiu muito depois das chuvas.",
+   "exru": "После дождей уровень реки сильно поднялся.",
+   "note": "Nível de português — уровень владения языком",
+   "tema": "A5"
+  },
+  {
+   "word": "a noção",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "представление о чём-то",
+   "ex": "Não faço a mínima noção de onde ele mora.",
+   "exru": "Понятия не имею, где он живёт.",
+   "note": "«Não faço ideia» — то же самое",
+   "tema": "A8"
+  },
+  {
+   "word": "o objetivo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "цель, задача",
+   "ex": "O objetivo do curso é falar sem medo.",
+   "exru": "Цель курса — заговорить без страха.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a obrigação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "обязанность",
+   "ex": "Pagar o condomínio é obrigação de todos os moradores.",
+   "exru": "Платить за содержание дома обязаны все жильцы.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "a oportunidade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "удобный случай",
+   "ex": "Foi a oportunidade que ele esperava há anos.",
+   "exru": "Это была возможность, которой он ждал годами.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a política",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "политика",
+   "ex": "Não gosta de falar de política ao jantar.",
+   "exru": "Он не любит говорить о политике за ужином.",
+   "note": "Также «курс, линия»: a política da empresa",
+   "tema": "B9"
+  },
+  {
+   "word": "a possibilidade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "вероятность",
+   "ex": "Há a possibilidade de chover ao fim da tarde.",
+   "exru": "Есть вероятность, что под вечер пойдёт дождь.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a prática",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "практика, применение",
+   "ex": "Na prática, o horário nunca é cumprido.",
+   "exru": "На практике расписание никогда не соблюдается.",
+   "note": "Na prática — на деле",
+   "tema": "B3"
+  },
+  {
+   "word": "o processo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "процедура; дело",
+   "ex": "O processo de renovação demora cerca de um mês.",
+   "exru": "Процедура продления занимает около месяца.",
+   "note": "Также судебное дело",
+   "tema": "B9"
+  },
+  {
+   "word": "o progresso",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "успехи, продвижение",
+   "ex": "Fez progressos grandes desde que começou as aulas.",
+   "exru": "С начала занятий он сильно продвинулся.",
+   "note": "Обычно во мн. ч.: fazer progressos",
+   "tema": "A4"
+  },
+  {
+   "word": "a proposta",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "предложение",
+   "ex": "Aceitámos a proposta sem pensar duas vezes.",
+   "exru": "Мы приняли предложение не раздумывая.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a rede",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сеть",
+   "ex": "A rede de comboios cobre quase todo o país.",
+   "exru": "Железнодорожная сеть покрывает почти всю страну.",
+   "note": "Также рыболовная сеть и сетка",
+   "tema": "A9"
+  },
+  {
+   "word": "o resultado",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "результат",
+   "ex": "O resultado das análises chega por email.",
+   "exru": "Результат анализов приходит по почте.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o ritmo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "темп, ритм",
+   "ex": "A este ritmo, acabamos a obra só no inverno.",
+   "exru": "Такими темпами мы закончим стройку только зимой.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "a série",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "сериал; серия",
+   "ex": "Vimos a série toda num fim de semana.",
+   "exru": "Мы посмотрели весь сериал за выходные.",
+   "note": "Uma série de — целый ряд чего-то",
+   "tema": "B4"
+  },
+  {
+   "word": "o sinal",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "знак, признак; сигнал",
+   "ex": "Não há sinal de rede aqui dentro do prédio.",
+   "exru": "Внутри дома нет сигнала сети.",
+   "note": "Также дорожный знак и задаток",
+   "tema": "A8"
+  },
+  {
+   "word": "o sistema",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "система",
+   "ex": "O sistema de saúde português chama-se SNS.",
+   "exru": "Португальская система здравоохранения называется SNS.",
+   "note": "SNS — Serviço Nacional de Saúde",
+   "tema": "A9"
+  },
+  {
+   "word": "a solução",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "решение, выход",
+   "ex": "A solução mais simples era mudar de horário.",
+   "exru": "Самым простым решением было сменить график.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a subida",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "подъём, рост",
+   "ex": "Houve uma subida grande no preço da eletricidade.",
+   "exru": "Цена на электричество заметно поднялась.",
+   "note": "Также подъём в гору",
+   "tema": "A5"
+  },
+  {
+   "word": "o sucesso",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "успех",
+   "ex": "A peça teve tanto sucesso que ficou mais um mês.",
+   "exru": "Спектакль имел такой успех, что его продлили на месяц.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "o tema",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "тема",
+   "ex": "O tema da conversa mudou várias vezes ao jantar.",
+   "exru": "За ужином тема разговора менялась несколько раз.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o tipo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "тип, разновидность",
+   "ex": "Que tipo de pão prefere, escuro ou branco?",
+   "exru": "Какой хлеб предпочитаете, тёмный или белый?",
+   "note": "В разговоре «um tipo» — «какой-то парень»",
+   "tema": "A6"
+  },
+  {
+   "word": "a variedade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "выбор, ассортимент",
+   "ex": "Há uma variedade enorme de queijos nesta loja.",
+   "exru": "В этом магазине огромный выбор сыров.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "a versão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "версия",
+   "ex": "Cada um contou a sua versão do que aconteceu.",
+   "exru": "Каждый рассказал свою версию случившегося.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a visão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "взгляд на вещи",
+   "ex": "Tem uma visão muito própria sobre a educação.",
+   "exru": "У него весьма своеобразный взгляд на воспитание.",
+   "note": "Также зрение: perder a visão",
+   "tema": "A8"
+  },
+  {
+   "word": "acessível",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "доступный",
+   "ex": "Os preços são acessíveis para quem estuda.",
+   "exru": "Цены доступные для студентов.",
+   "note": "И о человеке: простой в общении",
+   "tema": "A7"
+  },
+  {
+   "word": "atual",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "нынешний, действующий",
+   "ex": "O contrato atual acaba no fim do ano.",
+   "exru": "Нынешний договор заканчивается в конце года.",
+   "note": "Atualmente — в настоящее время",
+   "tema": "A4"
+  },
+  {
+   "word": "capaz",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "способный на что-то",
+   "ex": "É capaz de resolver isto sozinho, tenho a certeza.",
+   "exru": "Он способен разобраться с этим сам, я уверен.",
+   "note": "«É capaz de chover» — «пожалуй, пойдёт дождь»",
+   "tema": "A7"
+  },
+  {
+   "word": "complexo",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "многосоставный, непростой",
+   "ex": "É um assunto complexo, não se resolve num dia.",
+   "exru": "Дело непростое, за день не решается.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "comum",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "обычный, распространённый",
+   "ex": "É comum chover assim em novembro por aqui.",
+   "exru": "У нас в ноябре такой дождь — обычное дело.",
+   "note": "Em comum — общий, совместный",
+   "tema": "A6"
+  },
+  {
+   "word": "constante",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "непрекращающийся",
+   "ex": "O barulho constante da rua cansa toda a gente.",
+   "exru": "Непрекращающийся шум с улицы всех выматывает.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "determinado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "решительный",
+   "ex": "É uma pessoa determinada, não desiste facilmente.",
+   "exru": "Человек он решительный, легко не сдаётся.",
+   "note": "Второе значение — некий: em determinado momento",
+   "tema": "B1"
+  },
+  {
+   "word": "específico",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "особый, конкретный",
+   "ex": "Preciso de um parafuso específico para esta prateleira.",
+   "exru": "Для этой полки нужен особый шуруп.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "essencial",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "самое нужное, существенный",
+   "ex": "Levem só o essencial, a mala é pequena.",
+   "exru": "Берите только самое нужное, чемодан маленький.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "exigente",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "требовательный",
+   "ex": "É um chefe exigente, mas justo com todos.",
+   "exru": "Начальник он требовательный, но ко всем справедливый.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "fundamental",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "основополагающий",
+   "ex": "É fundamental beber água ao longo do dia.",
+   "exru": "Пить воду в течение дня совершенно необходимо.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "imediato",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "немедленный",
+   "ex": "A resposta foi imediata, nem esperei um minuto.",
+   "exru": "Ответ пришёл сразу, я и минуты не ждал.",
+   "note": "De imediato — сразу же",
+   "tema": "A4"
+  },
+  {
+   "word": "inicial",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "первоначальный",
+   "ex": "O plano inicial era ficar só três dias.",
+   "exru": "Изначально мы планировали остаться только на три дня.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "intenso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "напряжённый, насыщенный",
+   "ex": "Foi uma semana intensa, quase não parámos.",
+   "exru": "Неделя выдалась напряжённой, мы почти не отдыхали.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "preciso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "точный",
+   "ex": "Deu-me indicações precisas para chegar lá depressa.",
+   "exru": "Он дал мне точные указания, как добраться быстро.",
+   "note": "«É preciso» — «нужно», совсем другое значение",
+   "tema": "A6"
+  },
+  {
+   "word": "provável",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "вероятный",
+   "ex": "É provável que fechem a estrada durante as obras.",
+   "exru": "Скорее всего, дорогу на время работ перекроют.",
+   "note": "После é provável que — конъюнктив",
+   "tema": "A8"
+  },
+  {
+   "word": "recente",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "недавний, свежий",
+   "ex": "A notícia é recente, saiu esta manhã.",
+   "exru": "Новость свежая, вышла сегодня утром.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "semelhante",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "похожий, подобный",
+   "ex": "Comprei uma mala semelhante à tua, mas azul.",
+   "exru": "Я купил сумку, похожую на твою, только синюю.",
+   "note": "semelhante a — требует a",
+   "tema": "A9"
+  },
+  {
+   "word": "sensível",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "чувствительный",
+   "ex": "Tem a pele sensível e queima-se com facilidade.",
+   "exru": "У него чувствительная кожа, легко обгорает.",
+   "note": "Также «щекотливый»: um assunto sensível",
+   "tema": "B1"
+  },
+  {
+   "word": "variado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "разнообразный",
+   "ex": "O menu é variado e muda todas as semanas.",
+   "exru": "Меню разнообразное и меняется каждую неделю.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "visível",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "видимый, заметный",
+   "ex": "A mancha ainda é visível à luz do dia.",
+   "exru": "При дневном свете пятно всё ещё заметно.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "atencioso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "внимательный к людям",
+   "ex": "O empregado foi atencioso do princípio ao fim.",
+   "exru": "Официант был внимателен от начала до конца.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "cuidadoso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "аккуратный, осмотрительный",
+   "ex": "É cuidadoso com as ferramentas, nunca partiu nenhuma.",
+   "exru": "С инструментами он аккуратен, ни одного не сломал.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "dedicado",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "преданный делу",
+   "ex": "É uma professora dedicada, fica sempre até tarde.",
+   "exru": "Учительница она преданная делу, всегда задерживается допоздна.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "discreto",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "сдержанный, неприметный",
+   "ex": "É discreto, nunca conta nada sobre a vida dele.",
+   "exru": "Он человек сдержанный, никогда не рассказывает о себе.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "generoso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "щедрый",
+   "ex": "Foi generoso e pagou o jantar a toda a gente.",
+   "exru": "Он щедро заплатил за ужин на всех.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "honesto",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "честный",
+   "ex": "Prefiro uma resposta honesta a uma desculpa bonita.",
+   "exru": "Честный ответ мне милее красивой отговорки.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "impaciente",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "нетерпеливый",
+   "ex": "Ficou impaciente à espera na fila do banco.",
+   "exru": "Он извёлся, стоя в очереди в банке.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "orgulhoso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "гордый",
+   "ex": "Está orgulhoso do filho que acabou o curso.",
+   "exru": "Он гордится сыном, который окончил учёбу.",
+   "note": "Estar orgulhoso de — гордиться кем-то",
+   "tema": "B1"
+  },
+  {
+   "word": "preguiçoso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "ленивый",
+   "ex": "Ao domingo fico preguiçoso e não saio de casa.",
+   "exru": "По воскресеньям на меня нападает лень и я не выхожу.",
+   "note": "A preguiça — лень",
+   "tema": "B1"
+  },
+  {
+   "word": "sociável",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "общительный",
+   "ex": "É sociável e faz amigos em qualquer lado.",
+   "exru": "Он общительный и заводит друзей где угодно.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "teimoso",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "упрямый",
+   "ex": "É teimoso como uma mula, não muda de ideias.",
+   "exru": "Упрям как мул, своего мнения не меняет.",
+   "note": "A teimosia — упрямство",
+   "tema": "B1"
+  },
+  {
+   "word": "tímido",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "застенчивый",
+   "ex": "Era tímido em criança, agora fala em público.",
+   "exru": "В детстве он был застенчивым, а теперь выступает публично.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "trabalhador",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "трудолюбивый",
+   "ex": "É trabalhador, chega cedo e sai sempre tarde.",
+   "exru": "Он работящий: приходит рано, уходит всегда поздно.",
+   "note": "Как существительное — работник",
+   "tema": "B1"
+  },
+  {
+   "word": "a lei",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "закон",
+   "ex": "A lei mudou e agora o prazo é maior.",
+   "exru": "Закон изменился, и теперь срок больше.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o governo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "правительство",
+   "ex": "O governo anunciou um apoio para as rendas.",
+   "exru": "Правительство объявило о помощи с арендой.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o presidente",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "президент; председатель",
+   "ex": "O presidente da junta atende às terças de manhã.",
+   "exru": "Глава местной управы принимает по вторникам утром.",
+   "note": "A junta de freguesia — низовая местная власть",
+   "tema": "B9"
+  },
+  {
+   "word": "a justiça",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "правосудие; справедливость",
+   "ex": "A justiça demorou dois anos a decidir o caso.",
+   "exru": "Правосудию понадобилось два года, чтобы решить дело.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a liberdade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "свобода",
+   "ex": "Trabalhar em casa deu-lhe muito mais liberdade.",
+   "exru": "Работа из дома дала ему гораздо больше свободы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a economia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "экономика",
+   "ex": "A economia da ilha vive quase só do turismo.",
+   "exru": "Экономика острова живёт почти только туризмом.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o acordo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "соглашение, договорённость",
+   "ex": "Chegámos a acordo sobre a data da mudança.",
+   "exru": "Мы договорились о дате переезда.",
+   "note": "De acordo com — согласно чему-то",
+   "tema": "A9"
+  },
+  {
+   "word": "a aplicação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "приложение",
+   "ex": "Instalei a aplicação dos transportes no telemóvel.",
+   "exru": "Я поставил на телефон транспортное приложение.",
+   "note": "В речи часто просто «a app»",
+   "tema": "B3"
+  },
+  {
+   "word": "o ecrã",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "экран",
+   "ex": "O ecrã do portátil ficou riscado na viagem.",
+   "exru": "Экран ноутбука поцарапался в поездке.",
+   "note": "В Португалии ecrã",
+   "tema": "B3"
+  },
+  {
+   "word": "o teclado",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "клавиатура",
+   "ex": "Este teclado tem acentos e cedilha, ainda bem.",
+   "exru": "На этой клавиатуре есть диакритика и седиль, и хорошо.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o rato",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "мышь, в том числе компьютерная",
+   "ex": "O rato do computador deixou de funcionar ontem.",
+   "exru": "Компьютерная мышь вчера перестала работать.",
+   "note": "То же слово, что и зверь",
+   "tema": "B3"
+  },
+  {
+   "word": "a palavra-passe",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "пароль",
+   "ex": "Esqueci-me da palavra-passe e tive de a mudar.",
+   "exru": "Я забыл пароль, и пришлось его менять.",
+   "note": "В Португалии palavra-passe",
+   "tema": "B3"
+  },
+  {
+   "word": "o ficheiro",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "файл",
+   "ex": "O ficheiro é grande de mais para enviar por email.",
+   "exru": "Файл слишком большой, чтобы отправить почтой.",
+   "note": "В Португалии ficheiro",
+   "tema": "B3"
+  },
+  {
+   "word": "a publicação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "публикация, запись в сети",
+   "ex": "A publicação dela teve centenas de comentários.",
+   "exru": "У её записи были сотни комментариев.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "o carregador",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "зарядное устройство",
+   "ex": "Deixei o carregador do telemóvel no hotel.",
+   "exru": "Я забыл зарядку от телефона в отеле.",
+   "note": "Carregar — заряжать и грузить",
+   "tema": "B3"
+  },
+  {
+   "word": "o utilizador",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "пользователь",
+   "ex": "Cada utilizador tem o seu nome e palavra-passe.",
+   "exru": "У каждого пользователя своё имя и пароль.",
+   "note": "В Португалии utilizador",
+   "tema": "B3"
+  },
+  {
+   "word": "a partilha",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "совместное пользование",
+   "ex": "A partilha de casa saiu mais barata a todos.",
+   "exru": "Снимать жильё вскладчину вышло всем дешевле.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "o comentário",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "комментарий",
+   "ex": "Apagou o comentário logo depois de o escrever.",
+   "exru": "Он удалил комментарий сразу после того, как написал.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "a notificação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "уведомление",
+   "ex": "Desliguei as notificações à noite para dormir melhor.",
+   "exru": "На ночь я отключил уведомления, чтобы лучше спать.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "a bateria",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "аккумулятор",
+   "ex": "A bateria do carro morreu com o frio da noite.",
+   "exru": "Аккумулятор машины сел от ночного холода.",
+   "note": "Также ударная установка",
+   "tema": "B3"
+  },
+  {
+   "word": "a rede social",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "социальная сеть",
+   "ex": "Passa horas nas redes sociais sem dar por isso.",
+   "exru": "Он часами сидит в соцсетях, сам того не замечая.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "o correio eletrónico",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "электронная почта",
+   "ex": "Mandei tudo por correio eletrónico na sexta-feira.",
+   "exru": "Всё отправил по электронной почте в пятницу.",
+   "note": "В речи чаще просто «email»",
+   "tema": "B9"
+  },
+  {
+   "word": "fixe",
+   "pos": "прил.",
+   "level": "B1",
+   "ru": "классный, отличный",
+   "ex": "O concerto foi mesmo fixe, valeu a viagem.",
+   "exru": "Концерт был реально классный, поездка того стоила.",
+   "note": "Разговорное и очень португальское; по родам не меняется",
+   "tema": "A7"
+  },
+  {
+   "word": "a chatice",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "досада, морока",
+   "ex": "Que chatice, esqueci-me das chaves no carro.",
+   "exru": "Вот досада, забыл ключи в машине.",
+   "note": "«Que chatice!» — «вот незадача!»",
+   "tema": "A7"
+  },
+  {
+   "word": "a malta",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "компания, наши ребята",
+   "ex": "A malta toda vai ao arraial no sábado.",
+   "exru": "Все наши в субботу идут на гулянье.",
+   "note": "Разговорное",
+   "tema": "B1"
+  },
+  {
+   "word": "o pessoal",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "народ; персонал",
+   "ex": "O pessoal do escritório almoça sempre à uma.",
+   "exru": "Народ из офиса всегда обедает в час.",
+   "note": "И «персонал», и разговорное «ребята»",
+   "tema": "B1"
+  },
+  {
+   "word": "o exagero",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "перебор, преувеличение",
+   "ex": "Pagar tanto por um café é um exagero.",
+   "exru": "Платить столько за кофе — это перебор.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "exagerar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "преувеличивать, перебарщивать",
+   "ex": "Exageraste no sal, a sopa está intragável.",
+   "exru": "Ты переборщил с солью, суп есть невозможно.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "ter pena",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "жалеть кого-то",
+   "ex": "Tenho pena dele, ficou sozinho tão novo.",
+   "exru": "Мне его жаль: остался один таким молодым.",
+   "note": "ter pena de alguém — жалеть кого-то",
+   "tema": "B1"
+  },
+  {
+   "word": "que pena",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "как жаль",
+   "ex": "Que pena, já não há bilhetes para hoje.",
+   "exru": "Как жаль, на сегодня билетов уже нет.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "de certeza",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "точно, без сомнений",
+   "ex": "De certeza que ele já saiu do escritório.",
+   "exru": "Он точно уже ушёл из офиса.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "se calhar",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "может быть, пожалуй",
+   "ex": "Se calhar é melhor irmos de comboio.",
+   "exru": "Пожалуй, лучше поехать поездом.",
+   "note": "Очень частое в разговоре, то же что talvez",
+   "tema": "A8"
+  },
+  {
+   "word": "a sério",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "всерьёз",
+   "ex": "A sério? Não fazia ideia que tinhas mudado.",
+   "exru": "Серьёзно? Я и не знал, что ты переехал.",
+   "note": "Levar a sério — принимать всерьёз",
+   "tema": "A7"
+  },
+  {
+   "word": "por acaso",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "случайно; кстати",
+   "ex": "Por acaso encontrei-a ontem à tarde no supermercado.",
+   "exru": "Я случайно встретил её вчера днём в супермаркете.",
+   "note": "В вопросе — «а не…?»: tens, por acaso, um lápis?",
+   "tema": "A9"
+  },
+  {
+   "word": "à vontade",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "свободно, непринуждённо",
+   "ex": "Fica à vontade, a casa é tua também.",
+   "exru": "Чувствуй себя как дома, это и твой дом.",
+   "note": "«Esteja à vontade» — «располагайтесь»",
+   "tema": "B1"
+  },
+  {
+   "word": "o entusiasmo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "воодушевление",
+   "ex": "Contou a viagem com um entusiasmo contagiante.",
+   "exru": "Он рассказывал о поездке с заразительным воодушевлением.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a curiosidade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "любопытство",
+   "ex": "Abri a caixa só por curiosidade, sem pensar.",
+   "exru": "Я открыл коробку из чистого любопытства, не подумав.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a satisfação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "удовлетворение",
+   "ex": "Deu-me satisfação ver a obra finalmente acabada.",
+   "exru": "Мне было приятно увидеть работу наконец законченной.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a espécie",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "биологический вид",
+   "ex": "Há uma espécie de gaivota que só vive aqui.",
+   "exru": "Есть вид чаек, который водится только здесь.",
+   "note": "«Uma espécie de» — «что-то вроде»",
+   "tema": "A5"
   }
  ]
 }

@@ -5226,7 +5226,7 @@
    "word": "unicamente",
    "pos": "нареч.",
    "level": "B2",
-   "ru": "исключительно, только",
+   "ru": "всего лишь, только",
    "ex": "Esta porta serve unicamente para as emergências.",
    "exru": "Эта дверь только для экстренных случаев.",
    "note": "",
@@ -5831,6 +5831,1226 @@
    "exru": "Мера нацелена на снижение трафика в центре.",
    "note": "",
    "tema": "A9"
+  },
+  {
+   "word": "a abordagem",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "подход к делу",
+   "ex": "A abordagem dele ao problema foi diferente da nossa.",
+   "exru": "Его подход к задаче отличался от нашего.",
+   "note": "abordar — затрагивать тему, подходить к вопросу",
+   "tema": "A8"
+  },
+  {
+   "word": "o âmbito",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "рамки, сфера",
+   "ex": "A obra faz-se no âmbito do programa da câmara.",
+   "exru": "Работы идут в рамках программы мэрии.",
+   "note": "No âmbito de — в рамках чего-то",
+   "tema": "A2"
+  },
+  {
+   "word": "o alvo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "мишень, объект нападок",
+   "ex": "A loja foi alvo de um assalto na madrugada de sábado.",
+   "exru": "В ночь на субботу магазин ограбили.",
+   "note": "Ser alvo de — стать объектом чего-то",
+   "tema": "A7"
+  },
+  {
+   "word": "a ameaça",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "угроза",
+   "ex": "A seca é uma ameaça séria para a agricultura.",
+   "exru": "Засуха — серьёзная угроза для сельского хозяйства.",
+   "note": "Ameaçar — угрожать",
+   "tema": "A7"
+  },
+  {
+   "word": "o cenário",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "вариант развития событий",
+   "ex": "O pior cenário seria ficarmos sem água quente.",
+   "exru": "Худший вариант — остаться без горячей воды.",
+   "note": "Также декорации на сцене",
+   "tema": "A2"
+  },
+  {
+   "word": "o ciclo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "цикл, ступень",
+   "ex": "O primeiro ciclo do ensino básico dura quatro anos.",
+   "exru": "Первая ступень начальной школы длится четыре года.",
+   "note": "Школа в Португалии делится на ciclos",
+   "tema": "A4"
+  },
+  {
+   "word": "o conflito",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "конфликт",
+   "ex": "O conflito entre vizinhos durou quase dois anos.",
+   "exru": "Конфликт между соседями тянулся почти два года.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o contexto",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "контекст, обстановка",
+   "ex": "Sem contexto, a frase parece muito mais dura.",
+   "exru": "Без контекста фраза звучит гораздо резче.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o contributo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "вклад в общее дело",
+   "ex": "O contributo dela foi decisivo para o resultado.",
+   "exru": "Её вклад оказался решающим для результата.",
+   "note": "В Португалии чаще, чем contribuição",
+   "tema": "A9"
+  },
+  {
+   "word": "o critério",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "критерий",
+   "ex": "Qual foi o critério para escolher os candidatos?",
+   "exru": "По какому критерию отбирали кандидатов?",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a dimensão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "масштаб",
+   "ex": "Ninguém previu a dimensão do estrago causado.",
+   "exru": "Масштаба нанесённого ущерба никто не предвидел.",
+   "note": "",
+   "tema": "A3"
+  },
+  {
+   "word": "o elemento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "элемент; участник группы",
+   "ex": "Cada elemento da equipa recebeu uma tarefa.",
+   "exru": "Каждый участник команды получил задание.",
+   "note": "О людях в группе говорят os elementos",
+   "tema": "A5"
+  },
+  {
+   "word": "a estratégia",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "стратегия",
+   "ex": "A estratégia da empresa mudou com a nova direção.",
+   "exru": "С новым руководством стратегия компании изменилась.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a estrutura",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "структура, конструкция",
+   "ex": "A estrutura do edifício aguentou bem o sismo.",
+   "exru": "Конструкция здания хорошо выдержала землетрясение.",
+   "note": "",
+   "tema": "A3"
+  },
+  {
+   "word": "a evidência",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "свидетельство, подтверждение",
+   "ex": "Não há evidência nenhuma que sustente essa ideia.",
+   "exru": "Нет никаких свидетельств в пользу этой мысли.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a expansão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "расширение, рост",
+   "ex": "A expansão da rede de metro leva vários anos.",
+   "exru": "Расширение сети метро занимает несколько лет.",
+   "note": "",
+   "tema": "A3"
+  },
+  {
+   "word": "o fator",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "фактор",
+   "ex": "O preço foi o fator decisivo na nossa escolha.",
+   "exru": "Цена стала решающим фактором в нашем выборе.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "a finalidade",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "назначение",
+   "ex": "Qual é a finalidade deste formulário todo?",
+   "exru": "Каково назначение всего этого бланка?",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o impasse",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "тупик, безвыходное положение",
+   "ex": "As negociações chegaram a um impasse total.",
+   "exru": "Переговоры зашли в полный тупик.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o indicador",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "показатель",
+   "ex": "Os indicadores da economia melhoraram no verão.",
+   "exru": "Летом показатели экономики улучшились.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "o instrumento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "инструмент, средство",
+   "ex": "A lei é um instrumento, não uma solução completa.",
+   "exru": "Закон — это инструмент, а не готовое решение.",
+   "note": "Музыкальный инструмент — тоже instrumento",
+   "tema": "A9"
+  },
+  {
+   "word": "a lacuna",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "пробел",
+   "ex": "O texto tem lacunas que é preciso preencher.",
+   "exru": "В тексте есть пробелы, которые надо заполнить.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "a norma",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "норма, правило",
+   "ex": "A norma obriga a usar capacete na obra.",
+   "exru": "Правила обязывают носить каску на стройке.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "o padrão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "узор; образец",
+   "ex": "A camisa tem um padrão de riscas finas.",
+   "exru": "На рубашке узор в тонкую полоску.",
+   "note": "Второе значение — стандарт: padrão de qualidade",
+   "tema": "A6"
+  },
+  {
+   "word": "a perspetiva",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "точка зрения",
+   "ex": "Vista nesta perspetiva, a decisão faz mais sentido.",
+   "exru": "С этой точки зрения решение выглядит осмысленнее.",
+   "note": "Пишется без c — европейская норма",
+   "tema": "A8"
+  },
+  {
+   "word": "o propósito",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "намерение, умысел",
+   "ex": "Não foi de propósito, garanto que foi sem querer.",
+   "exru": "Это вышло не нарочно, уверяю — случайно.",
+   "note": "De propósito — нарочно; a propósito — кстати",
+   "tema": "A9"
+  },
+  {
+   "word": "o recurso",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "средство, ресурс",
+   "ex": "A escola tem poucos recursos para tantos alunos.",
+   "exru": "У школы мало средств на такое число учеников.",
+   "note": "Recorrer — прибегнуть; подать апелляцию",
+   "tema": "A5"
+  },
+  {
+   "word": "a referência",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "упоминание; ориентир",
+   "ex": "Fez referência ao assunto sem entrar em pormenores.",
+   "exru": "Он упомянул о деле, не вдаваясь в подробности.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o regime",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "режим, порядок",
+   "ex": "Trabalha em regime de tempo parcial desde março.",
+   "exru": "С марта он работает на неполной ставке.",
+   "note": "Также политический режим и диета",
+   "tema": "B9"
+  },
+  {
+   "word": "o rumo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "направление, оборот дела",
+   "ex": "A conversa tomou um rumo completamente inesperado.",
+   "exru": "Разговор принял совершенно неожиданный оборот.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "o setor",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "отрасль",
+   "ex": "O setor do turismo recuperou mais depressa.",
+   "exru": "Отрасль туризма восстановилась быстрее.",
+   "note": "Пишется без c — европейская норма",
+   "tema": "B9"
+  },
+  {
+   "word": "a sequência",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "последовательность",
+   "ex": "A sequência dos passos vem explicada no manual.",
+   "exru": "Последовательность действий описана в инструкции.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "o termo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "термин",
+   "ex": "É um termo técnico que poucos conhecem.",
+   "exru": "Это технический термин, который мало кто знает.",
+   "note": "Pôr termo a — положить конец чему-то",
+   "tema": "A8"
+  },
+  {
+   "word": "a via",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "путь, способ",
+   "ex": "Acabámos por resolver o assunto por via judicial.",
+   "exru": "В итоге мы решили дело через суд.",
+   "note": "Segunda via — дубликат документа",
+   "tema": "A2"
+  },
+  {
+   "word": "abrangente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "широкий, охватывающий многое",
+   "ex": "O curso é abrangente, toca em muitos temas.",
+   "exru": "Курс широкий, затрагивает много тем.",
+   "note": "Abranger — охватывать",
+   "tema": "A3"
+  },
+  {
+   "word": "crescente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "растущий",
+   "ex": "Há um número crescente de turistas no inverno.",
+   "exru": "Зимой туристов становится всё больше.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "crucial",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "ключевой",
+   "ex": "Aquela decisão foi crucial para o futuro da empresa.",
+   "exru": "То решение стало ключевым для будущего компании.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "destacado",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "заметный, выдающийся",
+   "ex": "Teve um papel destacado na organização da feira.",
+   "exru": "Он сыграл заметную роль в организации ярмарки.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "diverso",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "разный, различный",
+   "ex": "Falámos de assuntos diversos durante o almoço.",
+   "exru": "За обедом мы говорили о разных вещах.",
+   "note": "Чаще во мн. ч.: diversos, diversas",
+   "tema": "A5"
+  },
+  {
+   "word": "eficaz",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "действенный",
+   "ex": "O remédio foi eficaz logo na primeira noite.",
+   "exru": "Лекарство подействовало уже в первую ночь.",
+   "note": "Eficaz даёт результат, eficiente — без лишних затрат",
+   "tema": "A7"
+  },
+  {
+   "word": "eficiente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "экономный, слаженный",
+   "ex": "A casa é eficiente e gasta pouca eletricidade.",
+   "exru": "Дом экономичный и мало тратит электричества.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "global",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "общий, суммарный",
+   "ex": "O custo global da obra passou dos vinte mil.",
+   "exru": "Общая стоимость работ перевалила за двадцать тысяч.",
+   "note": "",
+   "tema": "A3"
+  },
+  {
+   "word": "gradual",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "постепенный",
+   "ex": "A melhoria foi gradual, mas nunca parou.",
+   "exru": "Улучшение шло постепенно, но не прекращалось.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "imprescindível",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "без чего нельзя обойтись",
+   "ex": "O cartão é imprescindível para entrar no edifício.",
+   "exru": "Без карты в здание не войти.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "inevitável",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "неизбежный",
+   "ex": "Com este trânsito, o atraso era inevitável.",
+   "exru": "При таких пробках опоздание было неизбежно.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "interno",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "внутренний",
+   "ex": "É uma regra interna, não vem escrita no contrato.",
+   "exru": "Это внутреннее правило, в договоре его нет.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "notável",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "примечательный",
+   "ex": "A diferença entre os dois vinhos é notável.",
+   "exru": "Разница между двумя винами заметная.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "oposto",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "противоположный",
+   "ex": "A paragem fica no lado oposto da rua.",
+   "exru": "Остановка на противоположной стороне улицы.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "permanente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "постоянный, бессрочный",
+   "ex": "Conseguiu finalmente um contrato permanente na empresa.",
+   "exru": "Он наконец получил в компании бессрочный договор.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "pertinente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "уместный, по существу",
+   "ex": "Foi uma pergunta pertinente que ninguém tinha feito.",
+   "exru": "Вопрос был по существу, его никто ещё не задавал.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "progressivo",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "нарастающий, поэтапный",
+   "ex": "Houve um aumento progressivo do número de alunos.",
+   "exru": "Число учеников росло постепенно.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "relevante",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "значимый для дела",
+   "ex": "Só falta um documento relevante para o processo.",
+   "exru": "Для дела не хватает одного важного документа.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "restrito",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "ограниченный, узкий",
+   "ex": "O acesso é restrito a quem trabalha aqui.",
+   "exru": "Вход только для тех, кто здесь работает.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "rigoroso",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "строгий; суровый",
+   "ex": "O inverno foi rigoroso e gelou várias noites.",
+   "exru": "Зима выдалась суровой, несколько ночей были заморозки.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "simultâneo",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "одновременный",
+   "ex": "Houve tradução simultânea durante toda a conferência.",
+   "exru": "Весь доклад шёл с синхронным переводом.",
+   "note": "Em simultâneo — одновременно",
+   "tema": "A4"
+  },
+  {
+   "word": "sistemático",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "планомерный",
+   "ex": "Faz um trabalho sistemático, sem saltar nenhum passo.",
+   "exru": "Он работает планомерно, не пропуская ни шага.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "sólido",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "прочный, надёжный",
+   "ex": "A relação deles é sólida, aguenta qualquer coisa.",
+   "exru": "Отношения у них прочные, выдержат что угодно.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "sucessivo",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "следующий один за другим",
+   "ex": "Houve atrasos sucessivos na entrega do material.",
+   "exru": "С поставкой материалов задержка шла за задержкой.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "viável",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "осуществимый",
+   "ex": "A ideia é boa, mas não é viável com este orçamento.",
+   "exru": "Идея хорошая, но с такой сметой неосуществимая.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "vulnerável",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "уязвимый",
+   "ex": "Os idosos são mais vulneráveis ao calor extremo.",
+   "exru": "Пожилые более уязвимы к сильной жаре.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ambicioso",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "честолюбивый, амбициозный",
+   "ex": "É um plano ambicioso para tão pouco tempo.",
+   "exru": "План амбициозный для такого короткого срока.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "humilde",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "простой в обращении, без гонора",
+   "ex": "Apesar do sucesso, continua humilde com toda a gente.",
+   "exru": "Несмотря на успех, он со всеми держится просто.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "modesto",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "скромный, непритязательный",
+   "ex": "Vivem numa casa modesta perto da estação.",
+   "exru": "Они живут в скромном доме у вокзала.",
+   "note": "И о человеке, и о размере: um salário modesto",
+   "tema": "B1"
+  },
+  {
+   "word": "prudente",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "осторожный, благоразумный",
+   "ex": "Seria prudente confirmar a hora antes de sair.",
+   "exru": "Разумно было бы уточнить время перед выходом.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "sensato",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "здравомыслящий",
+   "ex": "Deu-me um conselho sensato e sem rodeios.",
+   "exru": "Он дал мне здравый совет и без обиняков.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a manifestação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "демонстрация, митинг",
+   "ex": "A manifestação juntou milhares de pessoas na avenida.",
+   "exru": "На проспект вышли тысячи человек.",
+   "note": "Manifestar-se — выйти на митинг",
+   "tema": "B9"
+  },
+  {
+   "word": "o protesto",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "протест",
+   "ex": "O protesto contra as portagens durou toda a manhã.",
+   "exru": "Протест против платных дорог длился всё утро.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o parlamento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "парламент",
+   "ex": "A proposta foi discutida no parlamento em julho.",
+   "exru": "Предложение обсуждали в парламенте в июле.",
+   "note": "В Португалии — a Assembleia da República",
+   "tema": "B9"
+  },
+  {
+   "word": "o ministro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "министр",
+   "ex": "O ministro visitou a escola no dia da inauguração.",
+   "exru": "Министр посетил школу в день открытия.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a autarquia",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "местная власть",
+   "ex": "A autarquia paga os passes aos estudantes.",
+   "exru": "Местная власть оплачивает студентам проездные.",
+   "note": "Autárquicas — муниципальные выборы",
+   "tema": "B9"
+  },
+  {
+   "word": "a igualdade",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "равенство",
+   "ex": "A lei garante a igualdade de salários entre homens e mulheres.",
+   "exru": "Закон гарантирует равенство зарплат мужчин и женщин.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "a pobreza",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "бедность",
+   "ex": "A pobreza aumentou nas zonas mais afastadas.",
+   "exru": "В отдалённых районах бедность выросла.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a riqueza",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "богатство",
+   "ex": "A riqueza do país está mal distribuída.",
+   "exru": "Богатство страны распределено неравномерно.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a inflação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "инфляция",
+   "ex": "A inflação comeu boa parte do aumento salarial.",
+   "exru": "Инфляция съела бо́льшую часть прибавки к зарплате.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o lucro",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "прибыль",
+   "ex": "A loja teve lucro no primeiro ano de abertura.",
+   "exru": "Магазин вышел в прибыль в первый же год.",
+   "note": "Sem fins lucrativos — некоммерческий",
+   "tema": "B9"
+  },
+  {
+   "word": "o investimento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "вложение",
+   "ex": "As janelas novas foram um bom investimento.",
+   "exru": "Новые окна оказались хорошим вложением.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a concorrência",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "конкуренция",
+   "ex": "A concorrência baixou os preços em toda a rua.",
+   "exru": "Конкуренция сбила цены по всей улице.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "a votação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "голосование",
+   "ex": "A votação foi apertada, ganhou por três votos.",
+   "exru": "Голосование вышло напряжённым: перевес в три голоса.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o referendo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "референдум",
+   "ex": "O referendo teve pouca participação em todo o país.",
+   "exru": "Явка на референдуме по всей стране была низкой.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a atualização",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "обновление",
+   "ex": "A atualização do sistema demorou quase uma hora.",
+   "exru": "Обновление системы заняло почти час.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o auricular",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "наушник-вкладыш",
+   "ex": "Um dos auriculares deixou de dar som.",
+   "exru": "Один наушник перестал звучать.",
+   "note": "То же, что auscultadores, но чаще о вкладышах",
+   "tema": "B4"
+  },
+  {
+   "word": "digitalizar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "сканировать",
+   "ex": "Digitalizei os documentos e enviei-os por email.",
+   "exru": "Я отсканировал документы и отправил по почте.",
+   "note": "В Португалии digitalizar",
+   "tema": "B3"
+  },
+  {
+   "word": "porreiro",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "славный, что надо",
+   "ex": "O senhorio é porreiro, resolve tudo à primeira.",
+   "exru": "Хозяин славный, всё решает с первого раза.",
+   "note": "Разговорное; о людях и о ситуациях",
+   "tema": "A7"
+  },
+  {
+   "word": "a aldrabice",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "надувательство",
+   "ex": "Aquela história da garantia era tudo aldrabice.",
+   "exru": "Вся эта история с гарантией была надувательством.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "aldrabar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "надувать, обманывать",
+   "ex": "Tentaram aldrabar-nos no troco lá do restaurante.",
+   "exru": "Нас попытались надуть со сдачей в том ресторане.",
+   "note": "Разговорное; o aldrabão — врун, жулик",
+   "tema": "B9"
+  },
+  {
+   "word": "a treta",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "чепуха, отговорка",
+   "ex": "Isso é treta, ninguém acredita nessa desculpa.",
+   "exru": "Это чепуха, в такую отговорку никто не верит.",
+   "note": "Разговорное",
+   "tema": "A8"
+  },
+  {
+   "word": "a bronca",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "нагоняй, взбучка",
+   "ex": "Levei uma bronca do chefe por causa do atraso.",
+   "exru": "Мне влетело от начальника из-за опоздания.",
+   "note": "Разговорное: levar uma bronca — получить нагоняй",
+   "tema": "A7"
+  },
+  {
+   "word": "o alarido",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "гвалт, шумиха",
+   "ex": "Fez-se um alarido enorme por causa de nada.",
+   "exru": "Из ничего подняли страшный шум.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a algazarra",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "весёлый галдёж",
+   "ex": "As crianças fizeram algazarra a tarde toda.",
+   "exru": "Дети галдели весь день напролёт.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ao certo",
+   "pos": "нареч.",
+   "level": "B2",
+   "ru": "доподлинно",
+   "ex": "Ninguém sabe ao certo quando reabre a ponte.",
+   "exru": "Никто доподлинно не знает, когда откроют мост.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "à toa",
+   "pos": "нареч.",
+   "level": "B2",
+   "ru": "зря, без толку",
+   "ex": "Andámos à toa meia hora à procura da rua.",
+   "exru": "Полчаса мы бестолково кружили в поисках улицы.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "em condições",
+   "pos": "нареч.",
+   "level": "B2",
+   "ru": "как следует, по-человечески",
+   "ex": "Quero um almoço em condições, não uma sandes.",
+   "exru": "Хочу нормально пообедать, а не бутерброд.",
+   "note": "Разговорное: «настоящий», «нормальный»",
+   "tema": "A7"
+  },
+  {
+   "word": "o bem-estar",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "хорошее самочувствие",
+   "ex": "Caminhar ao fim do dia dá-me uma sensação de bem-estar.",
+   "exru": "Прогулка в конце дня даёт мне ощущение покоя.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a autoestima",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "самооценка",
+   "ex": "O novo emprego melhorou-lhe muito a autoestima.",
+   "exru": "Новая работа заметно подняла ему самооценку.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o vício",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "пагубная привычка",
+   "ex": "O café é um vício que não consigo largar.",
+   "exru": "Кофе — привычка, от которой я не могу отделаться.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "a frustração",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "досада от неудачи",
+   "ex": "A frustração foi grande depois de tanto trabalho.",
+   "exru": "После такой работы досада была сильной.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a insatisfação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "недовольство",
+   "ex": "A insatisfação dos moradores cresceu com as obras.",
+   "exru": "Недовольство жильцов росло вместе со стройкой.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o desânimo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "уныние",
+   "ex": "Depois da terceira recusa, veio o desânimo.",
+   "exru": "После третьего отказа накатило уныние.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o desespero",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "отчаяние",
+   "ex": "Foi um momento de desespero, mas passou depressa.",
+   "exru": "Это была минута отчаяния, но она быстро прошла.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a nostalgia",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "ностальгия",
+   "ex": "Sente nostalgia dos verões passados na aldeia.",
+   "exru": "Он тоскует по летам, проведённым в деревне.",
+   "note": "Близко к saudade, но книжнее",
+   "tema": "B1"
+  },
+  {
+   "word": "a ternura",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "нежность",
+   "ex": "Olhou para o neto com uma ternura enorme.",
+   "exru": "Он посмотрел на внука с огромной нежностью.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a compaixão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "сострадание",
+   "ex": "Tratou o doente com paciência e compaixão.",
+   "exru": "К больному он относился терпеливо и сострадательно.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a gratidão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "благодарность",
+   "ex": "Escreveu-lhe uma carta de gratidão pelos anos de ajuda.",
+   "exru": "Он написал ей благодарственное письмо за годы помощи.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o remorso",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "угрызения совести",
+   "ex": "Ficou com remorsos por não ter telefonado antes.",
+   "exru": "Его мучила совесть, что не позвонил раньше.",
+   "note": "Чаще во мн. ч.: ter remorsos",
+   "tema": "B1"
+  },
+  {
+   "word": "o arrependimento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "раскаяние",
+   "ex": "Não mostrou arrependimento nenhum pelo que fez.",
+   "exru": "Он не выказал никакого раскаяния за содеянное.",
+   "note": "Arrepender-se — раскаиваться",
+   "tema": "B1"
+  },
+  {
+   "word": "a serenidade",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "безмятежность",
+   "ex": "Enfrentou a notícia com uma serenidade surpreendente.",
+   "exru": "Новость он встретил с удивительным спокойствием.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a euforia",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "эйфория",
+   "ex": "A euforia do primeiro dia passou logo na semana seguinte.",
+   "exru": "Эйфория первого дня прошла уже на следующей неделе.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o desconforto",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "телесное неудобство",
+   "ex": "Sentiu algum desconforto na perna depois da caminhada.",
+   "exru": "После прогулки он почувствовал в ноге неудобство.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "o incómodo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "беспокойство, помеха",
+   "ex": "Peço desculpa pelo incómodo a esta hora.",
+   "exru": "Прошу прощения за беспокойство в такой час.",
+   "note": "Пишется с ó — европейская норма",
+   "tema": "B1"
+  },
+  {
+   "word": "a inquietação",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "тревога",
+   "ex": "A demora da resposta deixou-o com inquietação.",
+   "exru": "Задержка с ответом его встревожила.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o resíduo",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "отход, остаток",
+   "ex": "Os resíduos da obra ficaram na rua uma semana.",
+   "exru": "Строительный мусор пролежал на улице неделю.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a pegada",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "след ноги; углеродный след",
+   "ex": "Andar de comboio reduz muito a pegada de carbono.",
+   "exru": "Поездки на поезде сильно снижают углеродный след.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o habitat",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "среда обитания",
+   "ex": "As obras destruíram o habitat de várias aves.",
+   "exru": "Стройка уничтожила среду обитания нескольких видов птиц.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a biodiversidade",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "биоразнообразие",
+   "ex": "A serra tem uma biodiversidade rara na Europa.",
+   "exru": "В этих горах биоразнообразие, редкое для Европы.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a extinção",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "вымирание",
+   "ex": "Esta espécie está em vias de extinção.",
+   "exru": "Этот вид находится на грани вымирания.",
+   "note": "Em vias de extinção — под угрозой исчезновения",
+   "tema": "B2"
+  },
+  {
+   "word": "a emissão",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "выброс в атмосферу",
+   "ex": "As emissões de carbono baixaram durante a pandemia.",
+   "exru": "Во время пандемии выбросы углерода снизились.",
+   "note": "Также выпуск документа и телепередача",
+   "tema": "B2"
+  },
+  {
+   "word": "a sustentabilidade",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "устойчивое развитие",
+   "ex": "A sustentabilidade passou a ser tema em todas as escolas.",
+   "exru": "Устойчивое развитие стало темой во всех школах.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "as alterações climáticas",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "изменение климата",
+   "ex": "As alterações climáticas já se notam nas vindimas.",
+   "exru": "Изменение климата уже заметно по сбору винограда.",
+   "note": "В Португалии говорят именно так",
+   "tema": "B2"
+  },
+  {
+   "word": "o aquecimento global",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "глобальное потепление",
+   "ex": "O aquecimento global torna os verões cada vez mais secos.",
+   "exru": "Из-за глобального потепления лето становится всё суше.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a energia renovável",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "возобновляемая энергия",
+   "ex": "Metade da eletricidade vem de energias renováveis.",
+   "exru": "Половина электричества поступает из возобновляемых источников.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "radical",
+   "pos": "прил.",
+   "level": "B2",
+   "ru": "коренной, радикальный",
+   "ex": "Foi uma mudança radical na vida deles.",
+   "exru": "Это была коренная перемена в их жизни.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "exclusivamente",
+   "pos": "нареч.",
+   "level": "B2",
+   "ru": "исключительно, ни для чего другого",
+   "ex": "Este lugar é exclusivamente para pessoas com deficiência.",
+   "exru": "Это место только для людей с инвалидностью.",
+   "note": "",
+   "tema": "A5"
   }
  ]
 }
