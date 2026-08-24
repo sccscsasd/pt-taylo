@@ -8191,6 +8191,746 @@
    "ex": "O grupo reúne-se semanalmente para conversar em português.",
    "exru": "Группа собирается еженедельно, чтобы говорить по-португальски.",
    "note": ""
+  },
+  {
+   "word": "atingir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "достигать, поражать",
+   "ex": "A temperatura atingiu os quarenta graus no interior.",
+   "exru": "В глубине страны температура достигла сорока градусов.",
+   "note": "Также «попасть, задеть»: a bala atingiu a parede",
+   "tema": "A2"
+  },
+  {
+   "word": "obter",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "получать, добывать",
+   "ex": "Obteve a nacionalidade portuguesa ao fim de seis anos.",
+   "exru": "Он получил португальское гражданство через шесть лет.",
+   "note": "Формальнее receber: obter resultados, obter licença",
+   "tema": "A5"
+  },
+  {
+   "word": "evitar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "избегать, предотвращать",
+   "ex": "Saímos cedo para evitar o trânsito da manhã.",
+   "exru": "Мы выехали рано, чтобы не попасть в утренние пробки.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "impedir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "мешать, препятствовать",
+   "ex": "A chuva impediu-nos de acabar as obras no prazo.",
+   "exru": "Дождь помешал нам закончить работы в срок.",
+   "note": "impedir alguém de fazer algo — требует de",
+   "tema": "A7"
+  },
+  {
+   "word": "garantir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "гарантировать, ручаться",
+   "ex": "A loja garante a reparação durante dois anos.",
+   "exru": "Магазин гарантирует ремонт в течение двух лет.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "exigir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "требовать",
+   "ex": "O senhorio exigiu dois meses de caução adiantados.",
+   "exru": "Хозяин квартиры потребовал два месяца залога вперёд.",
+   "note": "Сильнее pedir: это требование, а не просьба",
+   "tema": "A8"
+  },
+  {
+   "word": "sugerir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "предлагать, советовать",
+   "ex": "O médico sugeriu que fizesse mais exercício físico.",
+   "exru": "Врач посоветовал больше двигаться.",
+   "note": "После sugerir que — конъюнктив: que faças, que fizesse",
+   "tema": "A8"
+  },
+  {
+   "word": "apoiar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "поддерживать",
+   "ex": "A família apoiou-a na decisão de mudar de país.",
+   "exru": "Семья поддержала её решение переехать в другую страну.",
+   "note": "apoiar-se em — опираться на что-то",
+   "tema": "A7"
+  },
+  {
+   "word": "reduzir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сокращать, снижать",
+   "ex": "A câmara reduziu o preço dos passes para estudantes.",
+   "exru": "Мэрия снизила цену проездных для студентов.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "substituir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "заменять",
+   "ex": "Substituíram as janelas antigas por outras com vidro duplo.",
+   "exru": "Старые окна заменили на стеклопакеты.",
+   "note": "substituir A por B — заменить одно другим",
+   "tema": "A6"
+  },
+  {
+   "word": "merecer",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "заслуживать",
+   "ex": "Depois de tanto trabalho, mereces umas férias a sério.",
+   "exru": "После такой работы ты заслуживаешь настоящего отпуска.",
+   "note": "«Vale a pena» и «merece a pena» — обе формы живые",
+   "tema": "A7"
+  },
+  {
+   "word": "aguardar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "ожидать, дожидаться",
+   "ex": "Aguarde na sala até ser chamado pelo médico.",
+   "exru": "Подождите в зале, пока вас не позовёт врач.",
+   "note": "Формальнее esperar; так пишут в объявлениях",
+   "tema": "A4"
+  },
+  {
+   "word": "notar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "замечать",
+   "ex": "Notei logo que alguma coisa não estava bem.",
+   "exru": "Я сразу заметил, что что-то не так.",
+   "note": "Nota-se — заметно, чувствуется",
+   "tema": "A8"
+  },
+  {
+   "word": "falhar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "давать сбой, отказывать",
+   "ex": "O travão falhou e o carro não parou a tempo.",
+   "exru": "Тормоз отказал, и машина не остановилась вовремя.",
+   "note": "Также «не прийти»: falhou a consulta",
+   "tema": "A7"
+  },
+  {
+   "word": "insistir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "настаивать",
+   "ex": "Insistiu em pagar a conta, apesar dos nossos protestos.",
+   "exru": "Он настоял на том, чтобы заплатить, несмотря на наши возражения.",
+   "note": "Требует em: insistir em fazer algo",
+   "tema": "A8"
+  },
+  {
+   "word": "destruir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "разрушать, уничтожать",
+   "ex": "O incêndio destruiu metade da floresta em duas horas.",
+   "exru": "Пожар уничтожил половину леса за два часа.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "baixar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "опускать, понижать",
+   "ex": "Baixa um pouco o som, os vizinhos já se queixaram.",
+   "exru": "Сделай звук потише, соседи уже жаловались.",
+   "note": "Baixar uma app — скачать приложение",
+   "tema": "A5"
+  },
+  {
+   "word": "atirar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "бросать, кидать",
+   "ex": "Atirou a bola por cima do muro sem querer.",
+   "exru": "Он нечаянно перекинул мяч через стену.",
+   "note": "Atirar-se a — броситься на кого-то или что-то",
+   "tema": "A2"
+  },
+  {
+   "word": "largar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "отпускать, откладывать",
+   "ex": "Larga o telemóvel e vem jantar connosco.",
+   "exru": "Отложи телефон и иди ужинать с нами.",
+   "note": "Также «бросить дело»: largou o curso a meio",
+   "tema": "A2"
+  },
+  {
+   "word": "recolher",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "собирать, забирать",
+   "ex": "A câmara recolhe o lixo grande às terças-feiras.",
+   "exru": "Мэрия вывозит крупный мусор по вторникам.",
+   "note": "Recolher assinaturas, recolher dados — тоже обычное",
+   "tema": "A2"
+  },
+  {
+   "word": "investir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "вкладывать, инвестировать",
+   "ex": "Investiram as poupanças na compra de um apartamento.",
+   "exru": "Они вложили сбережения в покупку квартиры.",
+   "note": "investir em algo — требует em",
+   "tema": "B9"
+  },
+  {
+   "word": "alcançar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "дотягиваться, добиваться",
+   "ex": "Não alcanço o frasco que está na prateleira de cima.",
+   "exru": "Я не дотягиваюсь до банки на верхней полке.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "ultrapassar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "обгонять; превышать",
+   "ex": "É proibido ultrapassar nesta curva sem visibilidade.",
+   "exru": "На этом слепом повороте обгон запрещён.",
+   "note": "И о числах: ultrapassar os mil euros",
+   "tema": "B5"
+  },
+  {
+   "word": "transportar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "перевозить",
+   "ex": "A carrinha transporta as encomendas para todo o país.",
+   "exru": "Фургон развозит посылки по всей стране.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "espalhar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "разбрасывать, распространять",
+   "ex": "O vento espalhou as folhas por todo o quintal.",
+   "exru": "Ветер разнёс листья по всему двору.",
+   "note": "Espalhar-se — расходиться, разлетаться о новости",
+   "tema": "A2"
+  },
+  {
+   "word": "revelar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "раскрывать, обнаруживать",
+   "ex": "Não quis revelar o nome de quem lhe contou.",
+   "exru": "Он не захотел назвать того, кто ему рассказал.",
+   "note": "Revelar-se — оказаться каким-то на деле",
+   "tema": "A8"
+  },
+  {
+   "word": "apontar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "указывать; записывать",
+   "ex": "Apontou para o mapa e explicou-nos o caminho.",
+   "exru": "Он показал на карту и объяснил нам дорогу.",
+   "note": "Второе значение — записать: apontar o número",
+   "tema": "A2"
+  },
+  {
+   "word": "o pensamento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "мысль, мышление",
+   "ex": "Perdeu-se nos seus pensamentos e não ouviu a pergunta.",
+   "exru": "Он ушёл в свои мысли и не услышал вопроса.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a consequência",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "последствие",
+   "ex": "A greve teve consequências para milhares de passageiros.",
+   "exru": "Забастовка обернулась последствиями для тысяч пассажиров.",
+   "note": "Em consequência de — вследствие чего-то",
+   "tema": "A9"
+  },
+  {
+   "word": "o sentido",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "смысл; направление",
+   "ex": "Esta frase não faz sentido nenhum assim traduzida.",
+   "exru": "В таком переводе фраза лишена всякого смысла.",
+   "note": "Rua de sentido único — улица с односторонним движением",
+   "tema": "A8"
+  },
+  {
+   "word": "o significado",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "значение",
+   "ex": "Procurei o significado da palavra no dicionário.",
+   "exru": "Я посмотрел значение слова в словаре.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o resumo",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "краткий пересказ",
+   "ex": "Faz um resumo do texto em dez linhas.",
+   "exru": "Изложи текст кратко, в десяти строках.",
+   "note": "Em resumo — короче говоря",
+   "tema": "A8"
+  },
+  {
+   "word": "o argumento",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "довод, аргумент",
+   "ex": "Apresentou dois argumentos fortes contra a proposta.",
+   "exru": "Он привёл два сильных довода против предложения.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "duvidar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сомневаться",
+   "ex": "Duvido que consigam acabar tudo antes do almoço.",
+   "exru": "Сомневаюсь, что они успеют всё закончить до обеда.",
+   "note": "После duvidar que — конъюнктив",
+   "tema": "A8"
+  },
+  {
+   "word": "confiar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "доверять",
+   "ex": "Confio nele de olhos fechados desde a escola.",
+   "exru": "Я доверяю ему с закрытыми глазами ещё со школы.",
+   "note": "confiar em alguém — требует em",
+   "tema": "A8"
+  },
+  {
+   "word": "reconhecer",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "узнавать; признавать",
+   "ex": "Não te reconheci logo com esse corte de cabelo.",
+   "exru": "Я не сразу тебя узнал с этой стрижкой.",
+   "note": "Второе значение — признать: reconhecer o erro",
+   "tema": "A8"
+  },
+  {
+   "word": "descrever",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "описывать",
+   "ex": "Descreveu o ladrão à polícia com muito pormenor.",
+   "exru": "Он описал полиции грабителя во всех подробностях.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "comparar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сравнивать",
+   "ex": "Comparei os preços de três lojas antes de comprar.",
+   "exru": "Перед покупкой я сравнил цены в трёх магазинах.",
+   "note": "comparar com — сравнивать с чем-то",
+   "tema": "A8"
+  },
+  {
+   "word": "referir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "упоминать, отмечать",
+   "ex": "O relatório refere vários problemas no edifício antigo.",
+   "exru": "В отчёте отмечено несколько проблем со старым зданием.",
+   "note": "referir-se a — иметь в виду, говорить о чём-то",
+   "tema": "A8"
+  },
+  {
+   "word": "mencionar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "называть, приводить",
+   "ex": "Não mencionou o preço nem uma única vez.",
+   "exru": "Цену он не назвал ни разу.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "informar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "извещать, сообщать",
+   "ex": "Informaram-nos por email de que a consulta mudou.",
+   "exru": "Нас известили по почте, что приём перенесли.",
+   "note": "informar-se — навести справки",
+   "tema": "A8"
+  },
+  {
+   "word": "alertar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "предупреждать об опасности",
+   "ex": "O médico alertou-a para os riscos do tabaco.",
+   "exru": "Врач предупредил её об опасности курения.",
+   "note": "alertar para — предупредить о чём-то",
+   "tema": "A8"
+  },
+  {
+   "word": "anunciar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "объявлять",
+   "ex": "A companhia anunciou dois voos novos para o Porto.",
+   "exru": "Авиакомпания объявила о двух новых рейсах в Порту.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "comunicar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сообщать; общаться",
+   "ex": "Tem de comunicar a mudança de morada às finanças.",
+   "exru": "О смене адреса нужно сообщить в налоговую.",
+   "note": "Также «общаться»: comunicam bem um com o outro",
+   "tema": "A8"
+  },
+  {
+   "word": "recomendar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "рекомендовать",
+   "ex": "Recomendo-te aquele restaurante pequeno junto ao mercado.",
+   "exru": "Рекомендую тебе тот маленький ресторан у рынка.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "aconselhar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "советовать",
+   "ex": "A advogada aconselhou-nos a assinar só na segunda-feira.",
+   "exru": "Адвокат посоветовала нам подписать только в понедельник.",
+   "note": "aconselhar alguém a fazer algo — требует a",
+   "tema": "A8"
+  },
+  {
+   "word": "convencer",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "убеждать, уговаривать",
+   "ex": "Custou-me muito convencê-la a ir finalmente ao médico.",
+   "exru": "Мне стоило больших трудов уговорить её пойти к врачу.",
+   "note": "convencer-se — убедиться самому",
+   "tema": "A8"
+  },
+  {
+   "word": "argumentar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "приводить доводы",
+   "ex": "Argumentou que o prazo era curto de mais.",
+   "exru": "Он доказывал, что срок слишком короткий.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "admitir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "признавать; допускать",
+   "ex": "Admitiu o erro logo a seguir à reunião.",
+   "exru": "Он признал ошибку сразу после совещания.",
+   "note": "Второе значение — принять на работу: admitir pessoal",
+   "tema": "A8"
+  },
+  {
+   "word": "suspeitar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "держать на подозрении",
+   "ex": "A polícia suspeita de dois funcionários da empresa.",
+   "exru": "Полиция подозревает двоих сотрудников компании.",
+   "note": "suspeitar de alguém; в быту чаще desconfiar",
+   "tema": "A8"
+  },
+  {
+   "word": "recordar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "вспоминать, помнить",
+   "ex": "Recordo aquele verão como se fosse ontem.",
+   "exru": "Я помню то лето, будто это было вчера.",
+   "note": "recordar-se de — то же, что lembrar-se de",
+   "tema": "A8"
+  },
+  {
+   "word": "planear",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "планировать",
+   "ex": "Planeámos a viagem toda em duas noites.",
+   "exru": "Всю поездку мы спланировали за два вечера.",
+   "note": "O planeamento — планирование",
+   "tema": "A8"
+  },
+  {
+   "word": "tencionar",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "собираться что-то сделать",
+   "ex": "Tenciono mudar de emprego ainda este ano.",
+   "exru": "Я намерен сменить работу ещё в этом году.",
+   "note": "Разговорнее — ter a intenção de",
+   "tema": "A8"
+  },
+  {
+   "word": "recear",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "опасаться",
+   "ex": "Receio que não haja lugares para toda a gente.",
+   "exru": "Боюсь, мест хватит не всем.",
+   "note": "После recear que — конъюнктив",
+   "tema": "A8"
+  },
+  {
+   "word": "temer",
+   "pos": "глаг.",
+   "level": "B2",
+   "ru": "страшиться",
+   "ex": "Os moradores temem que as obras durem anos.",
+   "exru": "Жильцы боятся, что стройка растянется на годы.",
+   "note": "Книжнее, чем ter medo de",
+   "tema": "A8"
+  },
+  {
+   "word": "o carácter",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "характер",
+   "ex": "Tem um carácter difícil, mas é boa pessoa.",
+   "exru": "Характер у него тяжёлый, но человек он хороший.",
+   "note": "В Португалии пишется с c: carácter",
+   "tema": "B1"
+  },
+  {
+   "word": "a personalidade",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "личность, склад характера",
+   "ex": "A personalidade dela nota-se logo na primeira conversa.",
+   "exru": "Её склад характера виден уже с первого разговора.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o temperamento",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "нрав, темперамент",
+   "ex": "Tem um temperamento calmo, nada o irrita.",
+   "exru": "Нрав у него спокойный, его ничем не вывести.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o humor",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "настроение; юмор",
+   "ex": "Acordou de bom humor apesar da noite mal dormida.",
+   "exru": "Он проснулся в хорошем настроении, хоть и не выспался.",
+   "note": "Estar de mau humor — быть не в духе",
+   "tema": "B1"
+  },
+  {
+   "word": "a confiança",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "доверие",
+   "ex": "Ganhou a confiança dos vizinhos em poucos meses.",
+   "exru": "Он завоевал доверие соседей за несколько месяцев.",
+   "note": "De confiança — надёжный, проверенный",
+   "tema": "B1"
+  },
+  {
+   "word": "o respeito",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "уважение",
+   "ex": "Trata toda a gente com respeito, seja quem for.",
+   "exru": "Он относится с уважением ко всем, кем бы они ни были.",
+   "note": "A respeito de — по поводу чего-то",
+   "tema": "B1"
+  },
+  {
+   "word": "a delicadeza",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "деликатность, тактичность",
+   "ex": "Teve a delicadeza de avisar antes de aparecer.",
+   "exru": "Ему хватило такта предупредить, прежде чем прийти.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a grosseria",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "грубость",
+   "ex": "Respondeu com uma grosseria que deixou todos calados.",
+   "exru": "Он ответил грубостью, и все замолчали.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o orgulho",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "гордость",
+   "ex": "Fala dos filhos com um orgulho evidente.",
+   "exru": "О детях он говорит с явной гордостью.",
+   "note": "Ter orgulho em — гордиться чем-то",
+   "tema": "B1"
+  },
+  {
+   "word": "a inveja",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "зависть",
+   "ex": "Não tenho inveja nenhuma da vida que ele leva.",
+   "exru": "Я нисколько не завидую его жизни.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o ciúme",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "ревность",
+   "ex": "O ciúme acabou por estragar aquela amizade toda.",
+   "exru": "Ревность в итоге разрушила всю ту дружбу.",
+   "note": "Чаще во мн. ч.: ter ciúmes de alguém",
+   "tema": "B1"
+  },
+  {
+   "word": "o alívio",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "облегчение",
+   "ex": "Foi um alívio saber que estavam todos bem.",
+   "exru": "Было облегчением узнать, что все живы-здоровы.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a raiva",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "злость, ярость",
+   "ex": "Bateu com a porta com raiva e saiu.",
+   "exru": "Он в злости хлопнул дверью и вышел.",
+   "note": "Также бешенство у животных — a raiva",
+   "tema": "B1"
+  },
+  {
+   "word": "o namoro",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "отношения, ухаживание",
+   "ex": "O namoro começou num arraial de Santo António.",
+   "exru": "Их роман начался на празднике святого Антония.",
+   "note": "Namorado, namorada — парень и девушка",
+   "tema": "B1"
+  },
+  {
+   "word": "o noivado",
+   "pos": "сущ.",
+   "level": "B2",
+   "ru": "помолвка",
+   "ex": "Anunciaram o noivado num jantar com a família toda.",
+   "exru": "О помолвке они объявили за ужином со всей семьёй.",
+   "note": "Os noivos — жених и невеста, а потом молодожёны",
+   "tema": "B1"
+  },
+  {
+   "word": "a separação",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "расставание, разрыв",
+   "ex": "Depois da separação, mudou-se para outra cidade.",
+   "exru": "После разрыва он переехал в другой город.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a solidão",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "одиночество",
+   "ex": "A solidão do primeiro inverno lá fora foi dura.",
+   "exru": "Одиночество первой зимы вдали от дома далось тяжело.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "a companhia",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "общество, компания",
+   "ex": "Gosto da companhia dele, conversamos sobre tudo.",
+   "exru": "Мне нравится его общество, мы говорим обо всём.",
+   "note": "Также фирма: uma companhia de seguros",
+   "tema": "B1"
+  },
+  {
+   "word": "o apoio",
+   "pos": "сущ.",
+   "level": "B1",
+   "ru": "поддержка",
+   "ex": "Contou com o apoio dos colegas durante a doença.",
+   "exru": "Во время болезни он мог рассчитывать на поддержку коллег.",
+   "note": "Apoio ao cliente — служба поддержки",
+   "tema": "B1"
   }
  ]
 }

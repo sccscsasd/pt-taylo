@@ -14633,6 +14633,150 @@
    "ex": "Chegou em décimo lugar na corrida.",
    "exru": "Он пришёл десятым в забеге.",
    "note": ""
+  },
+  {
+   "word": "o conselho",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "совет",
+   "ex": "Pedi um conselho ao meu irmão antes de decidir.",
+   "exru": "Прежде чем решить, я спросил совета у брата.",
+   "note": "Не путать с concelho — муниципалитет"
+  },
+  {
+   "word": "a explicação",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "объяснение",
+   "ex": "A explicação dele não convenceu ninguém na reunião.",
+   "exru": "Его объяснение никого на встрече не убедило.",
+   "note": "Во мн. ч. explicações — ещё и занятия с репетитором"
+  },
+  {
+   "word": "a promessa",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "обещание",
+   "ex": "Cumpriu a promessa e levou-nos à praia no domingo.",
+   "exru": "Он сдержал обещание и повёз нас в воскресенье на пляж.",
+   "note": ""
+  },
+  {
+   "word": "o segredo",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "секрет, тайна",
+   "ex": "Guardou o segredo durante mais de vinte anos.",
+   "exru": "Он хранил тайну больше двадцати лет.",
+   "note": ""
+  },
+  {
+   "word": "a mentira",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "ложь, враньё",
+   "ex": "Foi apanhado numa mentira logo na primeira pergunta.",
+   "exru": "Его поймали на вранье на первом же вопросе.",
+   "note": "Врать — mentir, лжец — o mentiroso"
+  },
+  {
+   "word": "prometer",
+   "pos": "глаг.",
+   "level": "A2",
+   "ru": "обещать",
+   "ex": "Prometeu telefonar assim que chegasse a casa.",
+   "exru": "Он обещал позвонить, как только придёт домой.",
+   "note": ""
+  },
+  {
+   "word": "a educação",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "воспитание; образование",
+   "ex": "Teve uma educação rígida numa aldeia do norte.",
+   "exru": "Он получил строгое воспитание в северной деревне.",
+   "note": "«Que falta de educação!» — «какая невоспитанность!»"
+  },
+  {
+   "word": "a vergonha",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "стыд; смущение",
+   "ex": "Tenho vergonha de falar português em público.",
+   "exru": "Мне стыдно говорить по-португальски при людях.",
+   "note": "«Que vergonha!» — «какой стыд!»"
+  },
+  {
+   "word": "a saudade",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "тоска по кому-то или чему-то",
+   "ex": "Tenho saudades do cheiro da casa da minha avó.",
+   "exru": "Я скучаю по запаху бабушкиного дома.",
+   "note": "Ter saudades de alguém — скучать по кому-то"
+  },
+  {
+   "word": "o susto",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "испуг",
+   "ex": "Apanhei um susto quando o alarme tocou de madrugada.",
+   "exru": "Я перепугался, когда среди ночи сработала сигнализация.",
+   "note": "Apanhar um susto — испугаться, вздрогнуть"
+  },
+  {
+   "word": "a alegria",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "радость",
+   "ex": "Foi uma alegria enorme ver-te outra vez.",
+   "exru": "Увидеть тебя снова было огромной радостью.",
+   "note": ""
+  },
+  {
+   "word": "a tristeza",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "грусть, печаль",
+   "ex": "Uma tristeza grande tomou conta dela naquele inverno.",
+   "exru": "Той зимой её охватила большая печаль.",
+   "note": ""
+  },
+  {
+   "word": "o medo",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "страх",
+   "ex": "Tenho medo de altura desde que era pequeno.",
+   "exru": "Я боюсь высоты с самого детства.",
+   "note": "Ter medo de — бояться чего-то"
+  },
+  {
+   "word": "a esperança",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "надежда",
+   "ex": "Ainda tenho esperança de que o tempo melhore.",
+   "exru": "Я ещё надеюсь, что погода наладится.",
+   "note": ""
+  },
+  {
+   "word": "a amizade",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "дружба",
+   "ex": "A amizade deles já dura mais de trinta anos.",
+   "exru": "Их дружбе уже больше тридцати лет.",
+   "note": ""
+  },
+  {
+   "word": "o casamento",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "свадьба, брак",
+   "ex": "O casamento foi numa quinta perto de Sintra.",
+   "exru": "Свадьбу играли в усадьбе под Синтрой.",
+   "note": ""
   }
  ],
  "retired": [
