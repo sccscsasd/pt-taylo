@@ -16,8 +16,9 @@
   A1, A2 → baralho-completo-A1-A2.json, и слово дописывается в temas-A1-A2.json
            в список a1/a2 своей темы: у колоды A1–A2 генератор берёт уровень и тему
            только оттуда, иначе слово уедет в базу пустым;
-  B1, B2 → baralho-completo-B1-B2.json. Файла тем у этой колоды нет, тема пока
-           хранится в самой карточке и генератором не используется.
+  B1     → baralho-completo-B1.json;
+  B2     → baralho-completo-B2.json. Файла тем у этих двух колод нет, уровень и тему
+           генератор берёт из самой карточки.
 
 В отличие от b1b2-passo.py, `add` ничего не пишет, пока есть хоть одно замечание:
 колода A1–A2 уже залита в базу, чинить её потом дороже.
@@ -32,7 +33,8 @@ import sys
 БАЗА = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ЗДЕСЬ = os.path.join(БАЗА, "vocabulario")
 КОЛОДА_A = os.path.join(ЗДЕСЬ, "baralho-completo-A1-A2.json")
-КОЛОДА_B = os.path.join(ЗДЕСЬ, "baralho-completo-B1-B2.json")
+КОЛОДЫ_B = {"B1": os.path.join(ЗДЕСЬ, "baralho-completo-B1.json"),
+            "B2": os.path.join(ЗДЕСЬ, "baralho-completo-B2.json")}
 ТЕМЫ_A = os.path.join(ЗДЕСЬ, "temas-A1-A2.json")
 СВЕРКА = os.path.join(ЗДЕСЬ, "temas-verificacao.json")
 ПОРЦИЯ = os.path.join(ЗДЕСЬ, "_lacunas-porcao.py")
@@ -56,13 +58,16 @@ def писать(п, данные):
         json.dumps(данные, ensure_ascii=False, indent=1))
 
 
-def обе_колоды():
-    return читать(КОЛОДА_A)["cards"] + читать(КОЛОДА_B)["cards"]
+def все_колоды():
+    карточки = читать(КОЛОДА_A)["cards"]
+    for п in КОЛОДЫ_B.values():
+        карточки += читать(п)["cards"]
+    return карточки
 
 
 def сверить():
     """Печатает, каких слов из списка сверки нет ни в одной колоде."""
-    слова = [c["word"].lower() for c in обе_колоды()]
+    слова = [c["word"].lower() for c in все_колоды()]
     точно = {norm(s) for s in слова}
 
     def есть(w):
@@ -119,11 +124,12 @@ def добавить():
     spec.loader.exec_module(m)
     порция = m.КАРТОЧКИ
 
-    замечания = проверить(порция, обе_колоды())
+    замечания = проверить(порция, все_колоды())
     if замечания:
         return 0, 0, замечания
 
-    a, b = читать(КОЛОДА_A), читать(КОЛОДА_B)
+    a = читать(КОЛОДА_A)
+    b = {ур: читать(п) for ур, п in КОЛОДЫ_B.items()}
     темы = читать(ТЕМЫ_A)
     по_id = {t["id"]: t for t in темы}
     в_a, в_b = 0, 0
@@ -140,11 +146,12 @@ def добавить():
             в_a += 1
         else:
             карточка["tema"] = tema
-            b["cards"].append(карточка)
+            b[lvl]["cards"].append(карточка)
             в_b += 1
 
     писать(КОЛОДА_A, a)
-    писать(КОЛОДА_B, b)
+    for ур, п in КОЛОДЫ_B.items():
+        писать(п, b[ур])
     писать(ТЕМЫ_A, темы)
     return в_a, в_b, []
 
@@ -158,8 +165,10 @@ if __name__ == "__main__":
             for з in замечания:
                 print("  " + з)
             raise SystemExit(1)
-        print("добавлено: в A1–A2 %d, в B1–B2 %d" % (в_a, в_b))
-        print("теперь в колодах: %d + %d" % (len(читать(КОЛОДА_A)["cards"]),
-                                             len(читать(КОЛОДА_B)["cards"])))
+        print("добавлено: в A1–A2 %d, в B1 и B2 %d" % (в_a, в_b))
+        print("теперь в колодах: A1–A2 %d, B1 %d, B2 %d"
+              % (len(читать(КОЛОДА_A)["cards"]),
+                 len(читать(КОЛОДЫ_B["B1"])["cards"]),
+                 len(читать(КОЛОДЫ_B["B2"])["cards"])))
     else:
         сверить()

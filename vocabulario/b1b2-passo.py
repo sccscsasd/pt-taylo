@@ -6,15 +6,21 @@
 
 Карточки пишутся руками в vocabulario/_b1b2-porcao.py — список кортежей КАРТОЧКИ вида
 (слово, часть речи, уровень, перевод, пример, перевод примера, заметка). Скрипт их
-дописывает в колоду, проверяет на повторы, одинаковые переводы и длину примера,
-а всё показанное и не ставшее карточкой заносит в b1b2-rejeitadas.txt: это решение
-«просмотрено и не взято», без него слова возвращались бы в список по кругу.
+дописывает в колоду по уровню (B1 или B2 — это разные колоды), проверяет на повторы,
+одинаковые переводы и длину примера, а всё показанное и не ставшее карточкой заносит
+в b1b2-rejeitadas.txt: это решение «просмотрено и не взято», без него слова
+возвращались бы в список по кругу.
+
+Выгрузка просмотрена до конца — «осталось просмотреть: 0». Скрипт лежит здесь ради
+истории и на случай, если появится новая выгрузка; для добора карточек по темам
+есть lacunas.py.
 """
 import io, json, os, re, sys, importlib.util
 
 БАЗА = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 СЛОВ = 120
-ФАЙЛ = os.path.join(БАЗА, "vocabulario", "baralho-completo-B1-B2.json")
+ФАЙЛЫ = {"B1": os.path.join(БАЗА, "vocabulario", "baralho-completo-B1.json"),
+         "B2": os.path.join(БАЗА, "vocabulario", "baralho-completo-B2.json")}
 ОТКАЗ = os.path.join(БАЗА, "vocabulario", "b1b2-rejeitadas.txt")
 A1A2 = os.path.join(БАЗА, "vocabulario", "baralho-completo-A1-A2.json")
 ИСТ = r"E:/other/chrome/portuguese_PTPT_B1_B2_3000_clean_candidate.xlsx"
@@ -30,12 +36,20 @@ def norm(s):
 
 def колода(п, пусто=None):
     if not os.path.exists(п):
-        return пусто if пусто is not None else {"v": 1, "deck": "b1-b2", "cards": []}
+        return пусто if пусто is not None else {"v": 1, "deck": "b1", "cards": []}
     return json.load(io.open(п, encoding="utf-8"))
 
 
 def слова_из(п):
     return {norm(c["word"]) for c in колода(п, {"cards": []})["cards"]}
+
+
+def слова_b():
+    """Слова обеих колод B1 и B2 — они лежат в разных файлах."""
+    вместе = set()
+    for п in ФАЙЛЫ.values():
+        вместе |= слова_из(п)
+    return вместе
 
 
 def отклонённые():
@@ -59,12 +73,13 @@ def источник():
 def добавить():
     spec = importlib.util.spec_from_file_location("porcao", ПОРЦИЯ)
     m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-    d = колода(ФАЙЛ)
-    было = {norm(c["word"]) for c in d["cards"]}
+    d = {ур: колода(п) for ур, п in ФАЙЛЫ.items()}
+    было = слова_b()
     базовые = слова_из(A1A2)
     переводы = {}
-    for c in d["cards"]:
-        переводы.setdefault(c["ru"], []).append(c["word"])
+    for к in d.values():
+        for c in к["cards"]:
+            переводы.setdefault(c["ru"], []).append(c["word"])
     добавлено, замечания = 0, []
     for w, pos, lvl, ru, ex, exru, note in m.КАРТОЧКИ:
         k = norm(w)
@@ -77,10 +92,15 @@ def добавить():
             замечания.append("пример из %d слов: %s" % (n, w))
         if len(note) > 90:
             замечания.append("длинная заметка: " + w)
-        d["cards"].append({"word": w, "pos": pos, "level": lvl, "ru": ru, "ex": ex, "exru": exru, "note": note})
+        if lvl not in d:
+            замечания.append("непонятный уровень «%s»: %s" % (lvl, w)); continue
+        d[lvl]["cards"].append({"word": w, "pos": pos, "level": lvl, "ru": ru,
+                                "ex": ex, "exru": exru, "note": note})
         было.add(k); переводы.setdefault(ru, []).append(w); добавлено += 1
-    io.open(ФАЙЛ, "w", encoding="utf-8", newline="").write(json.dumps(d, ensure_ascii=False, indent=1))
-    return добавлено, len(d["cards"]), замечания
+    for ур, п in ФАЙЛЫ.items():
+        io.open(п, "w", encoding="utf-8", newline="").write(
+            json.dumps(d[ур], ensure_ascii=False, indent=1))
+    return добавлено, sum(len(к["cards"]) for к in d.values()), замечания
 
 
 def отметить():
@@ -88,7 +108,7 @@ def отметить():
     if not os.path.exists(ЖДУТ):
         return 0
     показано = [l.strip() for l in io.open(ЖДУТ, encoding="utf-8") if l.strip()]
-    взято = слова_из(ФАЙЛ) | слова_из(A1A2)
+    взято = слова_b() | слова_из(A1A2)
     шапка, уже = отклонённые()
     новые = [w for w in показано if norm(w) not in взято and w not in уже]
     if not шапка:
@@ -100,7 +120,7 @@ def отметить():
 
 
 def следующие():
-    готово = слова_из(ФАЙЛ) | слова_из(A1A2) | {norm(w) for w in отклонённые()[1]}
+    готово = слова_b() | слова_из(A1A2) | {norm(w) for w in отклонённые()[1]}
     ждут = [x for x in источник() if norm(x[0]) not in готово]
     порция = ждут[:СЛОВ]
     io.open(ЖДУТ, "w", encoding="utf-8", newline="").write("\n".join(w for w, _, _ in порция) + "\n")

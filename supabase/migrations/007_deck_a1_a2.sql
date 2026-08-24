@@ -1,6 +1,6 @@
 -- Колода «Базовый A1–A2» в общей базе слов. Напечатано vocabulario/deck2sql.py
 -- Источник: vocabulario/baralho-completo-A1-A2.json + temas-A1-A2.json, карточек: 1876.
--- Без темы и уровня (4): o pé, as compras, o ponto, o medicamento contra a dor
+-- Без темы (4): o pé, as compras, o ponto, o medicamento contra a dor
 -- Повторное выполнение безопасно: содержимое обновляется, прогресс людей не трогается.
 
 begin;
