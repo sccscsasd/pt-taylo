@@ -1,5 +1,5 @@
 -- Колода «Базовый A1–A2» в общей базе слов. Напечатано vocabulario/deck2sql.py
--- Источник: vocabulario/baralho-completo-A1-A2.json + temas-A1-A2.json, карточек: 1829.
+-- Источник: vocabulario/baralho-completo-A1-A2.json + temas-A1-A2.json, карточек: 1876.
 -- Без темы и уровня (4): o pé, as compras, o ponto, o medicamento contra a dor
 -- Повторное выполнение безопасно: содержимое обновляется, прогресс людей не трогается.
 
@@ -210,7 +210,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:casa de banho','a1-a2','a casa de banho','сущ.','ванная, туалет','A casa de banho fica ao fundo do corredor.','Ванная в конце коридора.','ж. р.; casa de banho pública — общественный туалет','A1','B2',196),
 ('w:despensa','a1-a2','a despensa','сущ.','кладовая','Guardo o arroz e a massa na despensa.','Рис и макароны я держу в кладовой.','ж. р.','A1','B2',197),
 ('w:garagem','a1-a2','a garagem','сущ.','гараж','O carro está na garagem do prédio.','Машина в гараже дома.','ж. р.; мн. ч.: as garagens','A1','B2',198),
-('w:jardim','a1-a2','o jardim','сущ.','сад','Tomamos o café no jardim ao domingo.','По воскресеньям мы пьём кофе в саду.','Мн. ч.: os jardins','A1','B2',199),
+('w:jardim','a1-a2','o jardim','сущ.','сад','Tomamos o café no jardim ao domingo.','По воскресеньям мы пьём кофе в саду.','Мн. ч.: os jardins','A1','B2',199)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:piso','a1-a2','o piso','сущ.','этаж; пол','Moro no terceiro piso, sem elevador.','Я живу на четвёртом этаже, без лифта.','Синоним andar; piso 0 = наш 1-й этаж','A1','B2',200),
 ('w:porta','a1-a2','a porta','сущ.','дверь','Fecha a porta, está frio.','Закрой дверь, холодно.','ж. р.','A1','B2',201),
 ('w:janela','a1-a2','a janela','сущ.','окно','Abre a janela para arejar o quarto.','Открой окно, чтобы проветрить комнату.','ж. р.','A1','B2',202),
@@ -260,12 +265,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:país','a1-a2','o país','сущ.','страна','Portugal é um país pequeno mas variado.','Португалия — небольшая, но разнообразная страна.','Мн. ч.: os países','A1','B2',246),
 ('w:capital','a1-a2','a capital','сущ.','столица','A capital fica no centro do país.','Столица находится в центре страны.','ж. р.; o capital — капитал','A1','B2',247),
 ('w:estrangeiro','a1-a2','o estrangeiro','сущ.','иностранец; заграница','Trabalhou no estrangeiro durante dez anos.','Он десять лет работал за границей.','no estrangeiro — за границей','A1','B2',248),
-('w:mapa','a1-a2','o mapa','сущ.','карта (географическая)','Vê no mapa onde fica a estação.','Посмотри на карте, где вокзал.','м. р., несмотря на -a','A1','B2',249)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:mapa','a1-a2','o mapa','сущ.','карта (географическая)','Vê no mapa onde fica a estação.','Посмотри на карте, где вокзал.','м. р., несмотря на -a','A1','B2',249),
 ('w:loja','a1-a2','a loja','сущ.','магазин','A loja abre às dez da manhã.','Магазин открывается в десять утра.','ж. р.','A1','B2',250),
 ('w:café','a1-a2','o café','сущ.','кафе; кофе','Encontramo-nos no café da esquina.','Встретимся в кафе на углу.','И напиток, и заведение','A1','B2',251),
 ('w:restaurante','a1-a2','o restaurante','сущ.','ресторан','Reservei mesa num restaurante típico.','Я забронировал столик в традиционном ресторане.','м. р.','A1','B2',252),
@@ -415,7 +415,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:aqui','a1-a2','aqui','нареч.','здесь, сюда','Assina aqui, por favor.','Подпиши здесь, пожалуйста.','Рядом с говорящим','A1','A2',396),
 ('w:aí','a1-a2','aí','нареч.','там (у тебя), туда','O que tens aí na mão?','Что у тебя там в руке?','Рядом с собеседником','A1','A2',397),
 ('w:ali','a1-a2','ali','нареч.','вон там','A paragem é ali, ao lado da farmácia.','Остановка вон там, рядом с аптекой.','Далеко от обоих','A1','A2',398),
-('w:daqui','a1-a2','daqui','нареч.','отсюда','Daqui até ao centro são dez minutos.','Отсюда до центра десять минут.','de + aqui','A1','A2',399),
+('w:daqui','a1-a2','daqui','нареч.','отсюда','Daqui até ao centro são dez minutos.','Отсюда до центра десять минут.','de + aqui','A1','A2',399)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:daí','a1-a2','daí','нареч.','оттуда (от тебя)','Sai daí, está molhado.','Уйди оттуда, там мокро.','de + aí','A1','A2',400),
 ('w:dali','a1-a2','dali','нареч.','оттуда (издалека)','Dali vê-se o rio todo.','Оттуда виден весь берег реки.','de + ali','A1','A2',401),
 ('w:este','a1-a2','este','мест.','этот','Este livro é meu.','Эта книга моя.','este/esta — рядом со мной','A1','A2',402),
@@ -515,12 +520,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:bom','a1-a2','bom','прил.','хороший','Este restaurante é muito bom.','Этот ресторан очень хороший.','Ж. р.: boa; сравн.: melhor','A1','A6',496),
 ('w:mau','a1-a2','mau','прил.','плохой','Foi um mau dia no trabalho.','На работе был плохой день.','Ж. р.: má; сравн.: pior','A1','A7',497),
 ('w:bem','a1-a2','bem','нареч.','хорошо','Dormi bem esta noite.','Сегодня ночью я хорошо спал.','Прилаг. — bom, наречие — bem','A1','A7',498),
-('w:mal','a1-a2','mal','нареч.','плохо; едва','Ouço-te mal, há muito barulho.','Я плохо тебя слышу, здесь шумно.','Также «едва»: mal cheguei','A1','A6',499)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:mal','a1-a2','mal','нареч.','плохо; едва','Ouço-te mal, há muito barulho.','Я плохо тебя слышу, здесь шумно.','Также «едва»: mal cheguei','A1','A6',499),
 ('w:estar bem','a1-a2','estar bem','выраж.','быть в порядке, чувствовать себя хорошо','Estás bem? Pareces cansado.','Ты в порядке? Выглядишь усталым.','Ответ: estou bem, obrigado','A1','A7',500),
 ('w:novo','a1-a2','novo','прил.','новый; молодой','Comprei um telemóvel novo.','Я купил новый телефон.','Также «молодой»: é muito nova','A1','A6',501),
 ('w:velho','a1-a2','velho','прил.','старый','Este prédio é muito velho.','Это здание очень старое.','О людях вежливее — idoso','A1','A6',502),
@@ -561,7 +561,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:usar','a1-a2','usar','глаг.','использовать; носить','Uso óculos para ler.','Я ношу очки для чтения.','Также об одежде','A1','A7',537),
 ('w:todos os dias','a1-a2','todos os dias','выраж.','каждый день','Ando de metro todos os dias.','Я каждый день езжу на метро.','Ср.: todo o dia — весь день','A1','A7',538),
 ('w:corpo','a1-a2','o corpo','сущ.','тело','Depois do treino dói-me o corpo todo.','После тренировки у меня болит всё тело.','м. р.','A1','B6',539),
-('w:cabeça','a1-a2','a cabeça','сущ.','голова','Dói-me a cabeça desde manhã.','У меня с утра болит голова.','ж. р.','A1','B6',540),
+('w:cabeça','a1-a2','a cabeça','сущ.','голова','Bati com a cabeça na porta do armário.','Я стукнулся головой о дверцу шкафа.','ж. р.','A1','B6',540),
 ('w:cara','a1-a2','a cara','сущ.','лицо (разговорное)','Lavo a cara com água fria.','Я умываю лицо холодной водой.','Ещё «наглость»: que cara!','A1','B6',541),
 ('w:cabelo','a1-a2','o cabelo','сущ.','волосы','Cortei o cabelo ontem.','Вчера я подстригся.','м. р., ед. ч.','A1','B6',542),
 ('w:olho','a1-a2','o olho','сущ.','глаз','Tenho um olho vermelho.','У меня покраснел глаз.','Мн. ч.: os olhos (о звуком)','A1','B6',543),
@@ -620,7 +620,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:roubar','a1-a2','roubar','глаг.','красть, грабить','Roubaram-me o telemóvel no metro.','У меня украли телефон в метро.','Часто безлично: roubaram-me','A1','B9',596),
 ('w:perder','a1-a2','perder','глаг.','терять; опаздывать на','Perdi as chaves e o comboio no mesmo dia.','В один день я потерял ключи и опоздал на поезд.','perder o comboio — опоздать на поезд','A1','B9',597),
 ('w:ajuda','a1-a2','a ajuda','сущ.','помощь','Preciso de ajuda com estas malas.','Мне нужна помощь с этими чемоданами.','ж. р.; ajudar — помогать','A1','B9',598),
-('w:passatempo','a1-a2','o passatempo','сущ.','хобби, увлечение','O meu passatempo preferido é cozinhar.','Моё любимое увлечение — готовить.','м. р.','A1','B4',599),
+('w:passatempo','a1-a2','o passatempo','сущ.','хобби, увлечение','O meu passatempo preferido é cozinhar.','Моё любимое увлечение — готовить.','м. р.','A1','B4',599)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:hobby','a1-a2','o hobby','сущ.','хобби','A fotografia é o meu hobby.','Фотография — моё хобби.','Португальский аналог — passatempo','A1','B4',600),
 ('w:interesse','a1-a2','o interesse','сущ.','интерес','Temos interesses parecidos.','У нас похожие интересы.','м. р.','A1','B4',601),
 ('w:ter tempo','a1-a2','ter tempo','выраж.','иметь время','Não tenho tempo para nada esta semana.','На этой неделе у меня ни на что нет времени.','ter tempo para — время на что-то','A1','B4',602),
@@ -770,12 +775,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:motivo','a1-a2','o motivo','сущ.','причина, повод','Qual foi o motivo da discussão?','Какова была причина спора?','м. р.','A2','A9',746),
 ('w:causar','a1-a2','causar','глаг.','вызывать, причинять','A chuva causou atrasos nos comboios.','Дождь вызвал задержки поездов.','','A2','A9',747),
 ('w:provocar','a1-a2','provocar','глаг.','вызывать, провоцировать','O ruído provocou dores de cabeça.','Шум вызвал головную боль.','','A2','A9',748),
-('w:concluir','a1-a2','concluir','глаг.','заключать, завершать','Concluí o curso em junho.','Я завершил курс в июне.','Причастие: concluído','A2','A9',749)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:concluir','a1-a2','concluir','глаг.','заключать, завершать','Concluí o curso em junho.','Я завершил курс в июне.','Причастие: concluído','A2','A9',749),
 ('w:afinal','a1-a2','afinal','нареч.','в итоге, всё-таки','Afinal, não foi tão difícil.','В итоге всё оказалось не так уж трудно.','afinal de contas — в конце концов','A2','A9',750),
 ('w:mesmo assim','a1-a2','mesmo assim','выраж.','всё равно, тем не менее','Estava cansado, mesmo assim foi trabalhar.','Он устал, но всё равно пошёл на работу.','','A2','A9',751),
 ('w:por outro lado','a1-a2','por outro lado','выраж.','с другой стороны','É caro; por outro lado, dura muitos anos.','Дорого; с другой стороны, служит много лет.','por um lado… por outro lado','A2','A9',752),
@@ -825,7 +825,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:encaracolado','a1-a2','encaracolado','прил.','кудрявый','Tem cabelo encaracolado e escuro.','У неё тёмные кудрявые волосы.','encaracolado / encaracolada','A2','B1',796),
 ('w:ondulado','a1-a2','ondulado','прил.','волнистый','O cabelo dela é ondulado.','У неё волнистые волосы.','ondulado / ondulada','A2','B1',797),
 ('w:pentear-se','a1-a2','pentear-se','глаг.','причёсываться','Penteio-me antes de sair.','Я причёсываюсь перед выходом.','o pente — расчёска','A2','B1',798),
-('w:calçar','a1-a2','calçar','глаг.','обувать(ся); носить (обувь)','Calço o número quarenta e dois.','У меня сорок второй размер обуви.','Про обувь — calçar, не vestir','A2','B1',799),
+('w:calçar','a1-a2','calçar','глаг.','обувать(ся); носить (обувь)','Calço o número quarenta e dois.','У меня сорок второй размер обуви.','Про обувь — calçar, не vestir','A2','B1',799)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:usar óculos','a1-a2','usar óculos','выраж.','носить очки','Uso óculos desde a escola.','Я ношу очки со школы.','Линзы — lentes de contacto','A2','B1',800),
 ('w:usar gorro','a1-a2','usar gorro','выраж.','носить шапку','No inverno uso sempre gorro.','Зимой я всегда ношу шапку.','o gorro — вязаная шапка','A2','B1',801),
 ('w:chapéu','a1-a2','o chapéu','сущ.','шляпа','Leva um chapéu, o sol está forte.','Возьми шляпу, солнце сильное.','Мн. ч.: os chapéus','A2','B1',802),
@@ -911,7 +916,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:corrente','a1-a2','a corrente','сущ.','ток; цепь; течение','Cuidado com a corrente elétrica.','Осторожно с электрическим током.','ж. р.','A2','B2',882),
 ('w:botão','a1-a2','o botão','сущ.','кнопка; пуговица','Carrega no botão verde.','Нажми на зелёную кнопку.','Мн. ч.: os botões','A2','B2',883),
 ('w:acender','a1-a2','acender','глаг.','зажигать, включать (свет)','Acende a luz, não vejo nada.','Включи свет, я ничего не вижу.','Причастие: aceso','A2','B2',884),
-('w:apagar','a1-a2','apagar','глаг.','гасить, выключать; стирать','Apaga a luz quando saíres.','Выключи свет, когда будешь уходить.','Также «стирать написанное»','A2','B2',885),
+('w:apagar','a1-a2','apagar','глаг.','гасить, выключать; стирать','Apaga a luz do corredor antes de te deitares.','Выключи свет в коридоре, прежде чем ложиться.','Также «стирать написанное»','A2','B2',885),
 ('w:micro-ondas','a1-a2','o micro-ondas','сущ.','микроволновка','Aquece a sopa no micro-ondas.','Разогрей суп в микроволновке.','м. р., не изменяется','A2','B2',886),
 ('w:torradeira','a1-a2','a torradeira','сущ.','тостер','A torradeira queimou o pão.','Тостер сжёг хлеб.','ж. р.','A2','B2',887),
 ('w:cafeteira','a1-a2','a cafeteira','сущ.','кофеварка, кофейник','Ponho a cafeteira ao lume.','Я ставлю кофейник на плиту.','ж. р.','A2','B2',888),
@@ -1230,7 +1235,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:dança','a1-a2','a dança','сущ.','танец','A dança tradicional chama-se vira.','Традиционный танец называется вира.','ж. р.','A2','B4',1196),
 ('w:exposição','a1-a2','a exposição','сущ.','выставка','A exposição está aberta até domingo.','Выставка открыта до воскресенья.','Мн. ч.: as exposições','A2','B4',1197),
 ('w:obra de teatro','a1-a2','a obra de teatro','сущ.','театральная постановка','A obra de teatro dura duas horas.','Спектакль идёт два часа.','Синоним: a peça','A2','B4',1198),
-('w:peça','a1-a2','a peça','сущ.','пьеса, спектакль; деталь','A peça teve muito sucesso.','Спектакль имел большой успех.','Также «деталь, предмет»','A2','B4',1199),
+('w:peça','a1-a2','a peça','сущ.','пьеса, спектакль; деталь','A peça teve muito sucesso.','Спектакль имел большой успех.','Также «деталь, предмет»','A2','B4',1199)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:público','a1-a2','o público','сущ.','публика, зрители','O público gostou do espetáculo.','Публике понравилось представление.','м. р.','A2','B4',1200),
 ('w:ator','a1-a2','o ator','сущ.','актёр','O ator principal é português.','Главный актёр — португалец.','Пишется без c: ator','A2','B4',1201),
 ('w:atriz','a1-a2','a atriz','сущ.','актриса','A atriz ganhou um prémio.','Актриса получила премию.','Мн. ч.: as atrizes','A2','B4',1202),
@@ -1280,12 +1290,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:surf','a1-a2','o surf','сущ.','сёрфинг','Ele faz surf na Ericeira.','Он занимается сёрфингом в Эрисейре.','fazer surf — сёрфить','A2','B4',1246),
 ('w:ténis','a1-a2','o ténis','сущ.','теннис; кроссовки','Jogo ténis ao sábado de manhã.','Я играю в теннис в субботу утром.','os ténis — кроссовки','A2','B4',1247),
 ('w:partida de ténis','a1-a2','a partida de ténis','сущ.','теннисный матч','A partida de ténis durou três horas.','Теннисный матч длился три часа.','a partida — партия, матч','A2','B4',1248),
-('w:basquetebol','a1-a2','o basquetebol','сущ.','баскетбол','Joga basquetebol na equipa da escola.','Он играет в баскетбол за школьную команду.','Разг.: basquete','A2','B4',1249)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:basquetebol','a1-a2','o basquetebol','сущ.','баскетбол','Joga basquetebol na equipa da escola.','Он играет в баскетбол за школьную команду.','Разг.: basquete','A2','B4',1249),
 ('w:voleibol','a1-a2','o voleibol','сущ.','волейбол','Jogamos voleibol na praia.','Мы играем в волейбол на пляже.','Разг.: vólei','A2','B4',1250),
 ('w:jogador','a1-a2','o jogador','сущ.','игрок','O jogador marcou dois golos.','Игрок забил два гола.','Ж. р.: a jogadora','A2','B4',1251),
 ('w:jogar contra','a1-a2','jogar contra','выраж.','играть против','Amanhã jogamos contra os primeiros da tabela.','Завтра мы играем против лидеров таблицы.','','A2','B4',1252),
@@ -1341,7 +1346,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:alimento','a1-a2','o alimento','сущ.','продукт питания','Os alimentos frescos são mais caros.','Свежие продукты дороже.','м. р.','A2','B7',1302),
 ('w:atum','a1-a2','o atum','сущ.','тунец','Uma sandes de atum, por favor.','Сэндвич с тунцом, пожалуйста.','м. р.','A2','B7',1303),
 ('w:esparguete','a1-a2','o esparguete','сущ.','спагетти','Fiz esparguete à bolonhesa.','Я приготовил спагетти болоньезе.','м. р., ед. ч.','A2','B7',1304),
-('w:dúzia de ovos','a1-a2','a dúzia de ovos','выраж.','дюжина яиц','Compra uma dúzia de ovos.','Купи дюжину яиц.','Меньше — meia dúzia','A2','B7',1305),
+('w:dúzia de ovos','a1-a2','a dúzia de ovos','выраж.','дюжина яиц','Uma dúzia de ovos chega para o bolo todo.','Дюжины яиц хватит на весь пирог.','Меньше — meia dúzia','A2','B7',1305),
 ('w:litro de leite','a1-a2','o litro de leite','выраж.','литр молока','Falta um litro de leite.','Не хватает литра молока.','','A2','B7',1306),
 ('w:meio quilo','a1-a2','o meio quilo','выраж.','полкило','Meio quilo de queijo, por favor.','Полкило сыра, пожалуйста.','','A2','B7',1307),
 ('w:quilo de batatas','a1-a2','o quilo de batatas','выраж.','килограмм картошки','Dois quilos de batatas, se faz favor.','Два килограмма картошки, пожалуйста.','','A2','B7',1308),
@@ -1433,9 +1438,14 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:mão','a1-a2','a mão','сущ.','рука, кисть','Lava as mãos antes de comer.','Помой руки перед едой.','Мн. ч.: as mãos','A2','B6',1394),
 ('w:dedo','a1-a2','o dedo','сущ.','палец','Cortei o dedo a fazer o jantar.','Я порезал палец, готовя ужин.','м. р.','A2','B6',1395),
 ('w:perna','a1-a2','a perna','сущ.','нога','Dói-me a perna direita.','У меня болит правая нога.','Ступня — o pé','A2','B6',1396),
-('w:costas','a1-a2','as costas','сущ.','спина','Tenho dores nas costas.','У меня болит спина.','Всегда мн. ч.','A2','B6',1397),
+('w:costas','a1-a2','as costas','сущ.','спина','Deitou-se de costas na areia a olhar o céu.','Он лёг на спину на песок и смотрел в небо.','Всегда мн. ч.','A2','B6',1397),
 ('w:coluna','a1-a2','a coluna','сущ.','позвоночник; колонка','Tenho um problema na coluna.','У меня проблема с позвоночником.','ж. р.','A2','B6',1398),
-('w:peito','a1-a2','o peito','сущ.','грудь, грудная клетка','Sinto uma dor no peito.','Я чувствую боль в груди.','м. р.','A2','B6',1399),
+('w:peito','a1-a2','o peito','сущ.','грудь, грудная клетка','Sinto uma dor no peito.','Я чувствую боль в груди.','м. р.','A2','B6',1399)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:pescoço','a1-a2','o pescoço','сущ.','шея','Acordei com o pescoço rígido.','Я проснулся с затёкшей шеей.','м. р.','A2','B6',1400),
 ('w:barriga','a1-a2','a barriga','сущ.','живот','Dói-me a barriga desde ontem.','У меня со вчера болит живот.','ж. р.','A2','B6',1401),
 ('w:estômago','a1-a2','o estômago','сущ.','желудок','Tenho o estômago vazio.','У меня пустой желудок.','м. р.','A2','B6',1402),
@@ -1499,7 +1509,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:ser saudável','a1-a2','ser saudável','выраж.','быть здоровым, полезным','Andar a pé é saudável.','Ходить пешком полезно.','saudável — здоровый образ','A2','B6',1460),
 ('w:medicamento contra a dor','a1-a2','o medicamento contra a dor','выраж.','лекарство от боли','Preciso de um medicamento contra a dor.','Мне нужно лекарство от боли.','contra — против','','',1461),
 ('w:tomar um medicamento','a1-a2','tomar um medicamento','выраж.','принимать лекарство','Tome o medicamento depois das refeições.','Принимайте лекарство после еды.','tomar — принимать лекарства','A2','B6',1462),
-('w:aberto','a1-a2','aberto','прил.','открытый','A loja está aberta até às oito.','Магазин открыт до восьми.','Причастие от abrir','A2','A6',1463),
+('w:aberto','a1-a2','aberto','прил.','открытый','A porta ficou aberta e entrou frio na sala.','Дверь осталась открытой, и в комнату надуло холода.','Причастие от abrir','A2','A6',1463),
 ('w:abrir','a1-a2','abrir','глаг.','открывать(ся)','O museu abre às dez.','Музей открывается в десять.','Причастие: aberto','A2','A6',1464),
 ('w:fechado','a1-a2','fechado','прил.','закрытый','O banco está fechado ao sábado.','Банк закрыт по субботам.','fechado / fechada','A2','A6',1465),
 ('w:claro','a1-a2','claro','прил.','светлый, ясный','Prefiro azul claro.','Я предпочитаю светло-синий.','Claro! — конечно!','A2','A6',1466),
@@ -1535,12 +1545,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:cristal','a1-a2','o cristal','сущ.','хрусталь, кристалл','Os copos são de cristal.','Бокалы хрустальные.','Мн. ч.: os cristais','A2','A6',1496),
 ('w:tinta','a1-a2','a tinta','сущ.','краска; чернила','A impressora ficou sem tinta.','В принтере кончились чернила.','ж. р.','A2','A6',1497),
 ('w:pintado','a1-a2','pintado','прил.','покрашенный','A parede está pintada de branco.','Стена покрашена в белый.','pintado / pintada','A2','A6',1498),
-('w:bege','a1-a2','bege','прил.','бежевый','Comprou um casaco bege.','Она купила бежевое пальто.','Не изменяется','A2','A6',1499)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:bege','a1-a2','bege','прил.','бежевый','Comprou um casaco bege.','Она купила бежевое пальто.','Не изменяется','A2','A6',1499),
 ('w:lilás','a1-a2','lilás','прил.','сиреневый','As flores lilás são bonitas.','Сиреневые цветы красивые.','Не изменяется','A2','A6',1500),
 ('w:grená','a1-a2','grená','прил.','бордовый','O equipamento da equipa é grená.','Форма команды бордовая.','Не изменяется','A2','A6',1501),
 ('w:vinho tinto','a1-a2','o vinho tinto','сущ.','красное вино','Um copo de vinho tinto, por favor.','Бокал красного вина, пожалуйста.','Красное вино — tinto, не vermelho','A2','A6',1502),
@@ -1640,7 +1645,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:crescer','a1-a2','crescer','глаг.','расти, вырастать','As crianças crescem depressa demais nestes primeiros anos.','В эти первые годы дети растут слишком быстро.','cresço, cresces, cresce','A2','A1',1596),
 ('w:melhorar','a1-a2','melhorar','глаг.','улучшаться, поправляться','O tempo vai melhorar no fim de semana.','К выходным погода улучшится.','As melhoras! — «выздоравливай»','A2','B6',1597),
 ('w:escutar','a1-a2','escutar','глаг.','слушать, вслушиваться','Escuta bem o que o professor está a dizer.','Слушай внимательно, что говорит преподаватель.','ouvir — слышать, escutar — слушать намеренно','A2','A8',1598),
-('w:regressar','a1-a2','regressar','глаг.','возвращаться (официальнее)','Regressámos a Lisboa no domingo à noite.','Мы вернулись в Лиссабон в воскресенье вечером.','Синоним voltar, чуть официальнее','A2','A2',1599),
+('w:regressar','a1-a2','regressar','глаг.','возвращаться (официальнее)','Regressámos a Lisboa no domingo à noite.','Мы вернулись в Лиссабон в воскресенье вечером.','Синоним voltar, чуть официальнее','A2','A2',1599)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:gastar','a1-a2','gastar','глаг.','тратить','Gastámos demasiado dinheiro nas férias deste ano.','В этом году мы потратили на отпуск слишком много денег.','gastar dinheiro, tempo; про износ — gastar-se','A2','B7',1600),
 ('w:poupar','a1-a2','poupar','глаг.','экономить, копить','Estamos a poupar para comprar um carro usado.','Мы копим на подержанную машину.','poupar dinheiro; ещё «беречь»: poupa as forças','A2','B7',1601),
 ('w:detestar','a1-a2','detestar','глаг.','терпеть не могу, ненавидеть','Detesto acordar cedo aos fins de semana.','Терпеть не могу вставать рано по выходным.','Сильнее não gostar; мягче odiar','A2','A7',1602),
@@ -1790,12 +1800,7 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:futuro','a1-a2','o futuro','сущ.','будущее','No futuro, quero viver perto do mar.','В будущем хочу жить у моря.','','A2','A4',1746),
 ('w:verdade','a1-a2','a verdade','сущ.','правда','Diz-me a verdade, não faz mal.','Скажи мне правду, ничего страшного.','É verdade — это правда','A2','A8',1747),
 ('w:experiência','a1-a2','a experiência','сущ.','опыт','Não tenho experiência nesse tipo de trabalho.','У меня нет опыта в такой работе.','Ещё «опыт, эксперимент»','A2','A8',1748),
-('w:situação','a1-a2','a situação','сущ.','ситуация, положение','A situação melhorou depois da conversa.','После разговора ситуация улучшилась.','','A2','A8',1749)
-on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
-  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
-  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
-
-insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
+('w:situação','a1-a2','a situação','сущ.','ситуация, положение','A situação melhorou depois da conversa.','После разговора ситуация улучшилась.','','A2','A8',1749),
 ('w:resolver','a1-a2','resolver','глаг.','решать (проблему)','Resolvemos o problema em dez minutos.','Мы решили проблему за десять минут.','О задаче и о проблеме; «принять решение» — decidir','A2','A8',1750),
 ('w:oferecer','a1-a2','oferecer','глаг.','дарить; предлагать','Ofereci-lhe um livro pelos anos.','Я подарил ему книгу на день рождения.','В PT-PT «дарить» — именно oferecer','A2','B3',1751),
 ('w:colocar','a1-a2','colocar','глаг.','класть, помещать','Coloca as chaves em cima da mesa.','Положи ключи на стол.','Разговорнее — pôr','A2','B2',1752),
@@ -1845,7 +1850,12 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:prima','a1-a2','a prima','сущ.','двоюродная сестра','A minha prima estuda medicina no Porto.','Моя двоюродная сестра учится на врача в Порту.','Двоюродный брат — o primo','A2','B1',1796),
 ('w:sobrinho','a1-a2','o sobrinho','сущ.','племянник','O meu sobrinho faz cinco anos amanhã.','Моему племяннику завтра исполняется пять.','Племянница — a sobrinha','A2','B1',1797),
 ('w:neta','a1-a2','a neta','сущ.','внучка','A avó vai buscar a neta à escola.','Бабушка забирает внучку из школы.','Внук — o neto','A2','B1',1798),
-('w:namorada','a1-a2','a namorada','сущ.','девушка (подруга)','Vou ao cinema com a minha namorada.','Я иду в кино со своей девушкой.','Парень — o namorado; жена — a mulher','A2','B1',1799),
+('w:namorada','a1-a2','a namorada','сущ.','девушка (подруга)','Vou ao cinema com a minha namorada.','Я иду в кино со своей девушкой.','Парень — o namorado; жена — a mulher','A2','B1',1799)
+on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
+  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
+  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
+
+insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort) values
 ('w:trovoada','a1-a2','a trovoada','сущ.','гроза','A trovoada começou a meio da tarde.','Гроза началась в середине дня.','Гром — o trovão; молния — o relâmpago','A2','A4',1800),
 ('w:morango','a1-a2','o morango','сущ.','клубника','Comprei morangos frescos no mercado.','Я купил свежую клубнику на рынке.','','A1','B8',1801),
 ('w:candeeiro','a1-a2','o candeeiro','сущ.','лампа, светильник','Acende o candeeiro, está escuro aqui.','Включи лампу, здесь темно.','Лампочка — a lâmpada','A2','B2',1802),
@@ -1874,7 +1884,54 @@ insert into public.pt_words (id, deck_id, word, pos, ru, ex, exru, note, level, 
 ('w:sétimo','a1-a2','sétimo','числ.','седьмой','Ficámos no sétimo lugar da competição.','Мы заняли седьмое место в соревновании.','','A2','A5',1825),
 ('w:oitavo','a1-a2','oitavo','числ.','восьмой','O meu filho anda no oitavo ano.','Мой сын учится в восьмом классе.','','A2','A5',1826),
 ('w:nono','a1-a2','nono','числ.','девятый','Estamos no nono mês do ano.','Идёт девятый месяц года.','','A2','A5',1827),
-('w:décimo','a1-a2','décimo','числ.','десятый','Chegou em décimo lugar na corrida.','Он пришёл десятым в забеге.','','A2','A5',1828)
+('w:décimo','a1-a2','décimo','числ.','десятый','Chegou em décimo lugar na corrida.','Он пришёл десятым в забеге.','','A2','A5',1828),
+('w:conselho','a1-a2','o conselho','сущ.','совет','Pedi um conselho ao meu irmão antes de decidir.','Прежде чем решить, я спросил совета у брата.','Не путать с concelho — муниципалитет','A2','A8',1829),
+('w:explicação','a1-a2','a explicação','сущ.','объяснение','A explicação dele não convenceu ninguém na reunião.','Его объяснение никого на встрече не убедило.','Во мн. ч. explicações — ещё и занятия с репетитором','A2','A8',1830),
+('w:promessa','a1-a2','a promessa','сущ.','обещание','Cumpriu a promessa e levou-nos à praia no domingo.','Он сдержал обещание и повёз нас в воскресенье на пляж.','','A2','A8',1831),
+('w:segredo','a1-a2','o segredo','сущ.','секрет, тайна','Guardou o segredo durante mais de vinte anos.','Он хранил тайну больше двадцати лет.','','A2','A8',1832),
+('w:mentira','a1-a2','a mentira','сущ.','ложь, враньё','Foi apanhado numa mentira logo na primeira pergunta.','Его поймали на вранье на первом же вопросе.','Врать — mentir, лжец — o mentiroso','A2','A8',1833),
+('w:prometer','a1-a2','prometer','глаг.','обещать','Prometeu telefonar assim que chegasse a casa.','Он обещал позвонить, как только придёт домой.','','A2','A8',1834),
+('w:educação','a1-a2','a educação','сущ.','воспитание; образование','Teve uma educação rígida numa aldeia do norte.','Он получил строгое воспитание в северной деревне.','«Que falta de educação!» — «какая невоспитанность!»','A2','B1',1835),
+('w:vergonha','a1-a2','a vergonha','сущ.','стыд; смущение','Tenho vergonha de falar português em público.','Мне стыдно говорить по-португальски при людях.','«Que vergonha!» — «какой стыд!»','A2','B1',1836),
+('w:saudade','a1-a2','a saudade','сущ.','тоска по кому-то или чему-то','Tenho saudades do cheiro da casa da minha avó.','Я скучаю по запаху бабушкиного дома.','Ter saudades de alguém — скучать по кому-то','A2','B1',1837),
+('w:susto','a1-a2','o susto','сущ.','испуг','Apanhei um susto quando o alarme tocou de madrugada.','Я перепугался, когда среди ночи сработала сигнализация.','Apanhar um susto — испугаться, вздрогнуть','A2','B1',1838),
+('w:alegria','a1-a2','a alegria','сущ.','радость','Foi uma alegria enorme ver-te outra vez.','Увидеть тебя снова было огромной радостью.','','A2','B1',1839),
+('w:tristeza','a1-a2','a tristeza','сущ.','грусть, печаль','Uma tristeza grande tomou conta dela naquele inverno.','Той зимой её охватила большая печаль.','','A2','B1',1840),
+('w:medo','a1-a2','o medo','сущ.','страх','Tenho medo de altura desde que era pequeno.','Я боюсь высоты с самого детства.','Ter medo de — бояться чего-то','A2','B1',1841),
+('w:esperança','a1-a2','a esperança','сущ.','надежда','Ainda tenho esperança de que o tempo melhore.','Я ещё надеюсь, что погода наладится.','','A2','B1',1842),
+('w:amizade','a1-a2','a amizade','сущ.','дружба','A amizade deles já dura mais de trinta anos.','Их дружбе уже больше тридцати лет.','','A2','B1',1843),
+('w:casamento','a1-a2','o casamento','сущ.','свадьба, брак','O casamento foi numa quinta perto de Sintra.','Свадьбу играли в усадьбе под Синтрой.','','A2','B1',1844),
+('w:funcionário','a1-a2','o funcionário','сущ.','сотрудник, служащий','A funcionária do balcão explicou-me tudo com paciência.','Сотрудница за стойкой всё мне терпеливо объяснила.','Funcionário público — госслужащий','A2','B9',1845),
+('w:multa','a1-a2','a multa','сущ.','штраф','Apanhei uma multa por estacionar em cima do passeio.','Меня оштрафовали за парковку на тротуаре.','','A2','B9',1846),
+('w:rés-do-chão','a1-a2','o rés-do-chão','сущ.','первый этаж','Moramos no rés-do-chão, mesmo por baixo dela.','Мы живём на первом этаже, прямо под ней.','Primeiro andar — это уже второй по-русски','A2','B2',1847),
+('w:contrato','a1-a2','o contrato','сущ.','договор','Leia o contrato com calma antes de assinar.','Прочтите договор спокойно, прежде чем подписывать.','','A2','B2',1848),
+('w:obras','a1-a2','as obras','сущ.','ремонт, стройка','A casa esteve em obras durante quase um ano.','Дом был в ремонте почти год.','Estar em obras — быть на ремонте','A2','B2',1849),
+('w:martelo','a1-a2','o martelo','сущ.','молоток','Passa-me o martelo, que está aí na caixa.','Передай молоток, он там в ящике.','','A2','B2',1850),
+('w:telhado','a1-a2','o telhado','сущ.','крыша','O telhado precisa de obras antes do inverno.','Крышу надо чинить до зимы.','','A2','B2',1851),
+('w:xarope','a1-a2','o xarope','сущ.','сироп от кашля','Toma o xarope à noite e a tosse passa.','Прими сироп на ночь, и кашель пройдёт.','','A2','B6',1852),
+('w:cansaço','a1-a2','o cansaço','сущ.','усталость','O cansaço da semana só passa ao domingo.','Усталость за неделю проходит только в воскресенье.','','A2','B6',1853),
+('w:autoestrada','a1-a2','a autoestrada','сущ.','автомагистраль','Pela autoestrada chega-se lá em duas horas.','По автомагистрали туда два часа езды.','На знаках — A1, A2 и так далее','A2','B5',1854),
+('w:rotunda','a1-a2','a rotunda','сущ.','круговое движение','Na rotunda, sai na segunda saída à direita.','На круге сверни во второй съезд направо.','','A2','B5',1855),
+('w:passadeira','a1-a2','a passadeira','сущ.','пешеходный переход','Atravessa na passadeira, o carro vai parar.','Переходи по переходу, машина остановится.','','A2','B5',1856),
+('w:trânsito','a1-a2','o trânsito','сущ.','дорожное движение','Havia muito trânsito na ponte à hora de ponta.','В час пик на мосту было плотное движение.','Hora de ponta — час пик','A2','B5',1857),
+('w:onda','a1-a2','a onda','сущ.','волна','As ondas estavam altas de mais para tomar banho.','Волны были слишком высокие, чтобы купаться.','Также про жару: uma onda de calor','A2','B2',1858),
+('w:tarefa','a1-a2','a tarefa','сущ.','задача, дело','Dividimos as tarefas da casa entre os três.','Домашние дела мы разделили на троих.','','A2','B3',1859),
+('w:festival','a1-a2','o festival','сущ.','фестиваль','O festival de música dura três dias em agosto.','Музыкальный фестиваль длится три дня в августе.','','A2','B4',1860),
+('w:equipa','a1-a2','a equipa','сущ.','команда','A equipa jogou melhor na segunda parte.','Во втором тайме команда играла лучше.','И о рабочем коллективе: a equipa do projeto','A2','B4',1861),
+('w:treino','a1-a2','o treino','сущ.','тренировка','Tem treino três vezes por semana depois do trabalho.','У него тренировки трижды в неделю после работы.','','A2','B4',1862),
+('w:fila','a1-a2','a fila','сущ.','очередь','Estive vinte minutos na fila do supermercado.','Я простоял двадцать минут в очереди в супермаркете.','','A2','B7',1863),
+('w:marca','a1-a2','a marca','сущ.','марка, бренд','Compro sempre a marca do supermercado, sai mais barata.','Я всегда беру магазинную марку, выходит дешевле.','Также след, отметина: uma marca na parede','A2','B7',1864),
+('w:qualidade','a1-a2','a qualidade','сущ.','качество','A qualidade do pão daquela padaria é outra.','Хлеб в той пекарне совсем другого качества.','','A2','B7',1865),
+('w:maduro','a1-a2','maduro','прил.','спелый','Estes tomates ainda não estão maduros para salada.','Эти помидоры ещё не дозрели для салата.','Vinho maduro — обычное вино, в отличие от verde','A2','B8',1866),
+('w:estragado','a1-a2','estragado','прил.','испорченный','O leite estava estragado e cheirava mal.','Молоко испортилось и плохо пахло.','Estragar-se — портиться','A2','B8',1867),
+('w:salgado','a1-a2','salgado','прил.','солёный','A sopa ficou salgada de mais para o meu gosto.','Суп на мой вкус вышел пересоленным.','Os salgados — солёная выпечка в кафе','A2','B8',1868),
+('w:picante','a1-a2','picante','прил.','острый','Este molho é picante, come com cuidado.','Этот соус острый, ешь осторожно.','Piri-piri — главный острый перец Португалии','A2','B8',1869),
+('w:aborrecido','a1-a2','aborrecido','прил.','скучный; раздосадованный','O filme era aborrecido e saímos a meio.','Фильм был скучный, и мы ушли с середины.','Estar aborrecido com alguém — быть в обиде','A2','A7',1870),
+('w:grave','a1-a2','grave','прил.','серьёзный, тяжёлый','O acidente não foi grave, ninguém ficou ferido.','Авария была несерьёзной, никто не пострадал.','«Não é grave» — «ничего страшного»','A2','A7',1871),
+('w:aumento','a1-a2','o aumento','сущ.','рост, увеличение','Houve um aumento grande no preço da eletricidade.','Цена на электричество сильно выросла.','Pedir um aumento — просить прибавку','A2','A5',1872),
+('w:enorme','a1-a2','enorme','прил.','огромный','A fila à porta do museu estava enorme.','Очередь у входа в музей была огромная.','','A2','A3',1873),
+('w:madrugada','a1-a2','a madrugada','сущ.','предрассветные часы','Chegámos a casa já de madrugada, mortos de sono.','Домой мы добрались уже под утро, засыпая на ходу.','От полуночи до рассвета — по-русски это ещё ночь','A2','A4',1874),
+('w:diferença','a1-a2','a diferença','сущ.','разница, отличие','A diferença de preço entre as duas lojas é grande.','Разница в цене между двумя магазинами велика.','Fazer diferença — играть роль, менять дело','A2','A9',1875)
 on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,
   pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,
   note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort;
