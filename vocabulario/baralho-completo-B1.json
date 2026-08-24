@@ -7551,6 +7551,646 @@
    "exru": "Скорее всего, в последний момент билетов не будет.",
    "note": "",
    "tema": "A9"
+  },
+  {
+   "word": "ter a ver com",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "иметь отношение к",
+   "ex": "Isso não tem nada a ver com o que combinámos.",
+   "exru": "Это никак не связано с тем, о чём мы договорились.",
+   "note": "«Não tem nada a ver» — «совершенно ни при чём»",
+   "tema": "A9"
+  },
+  {
+   "word": "dar jeito",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "быть кстати, выручать",
+   "ex": "Dava-me jeito uma boleia até à estação.",
+   "exru": "Мне бы очень пригодилось, если бы подбросили до вокзала.",
+   "note": "О вещи или услуге: это мне подходит, помогает",
+   "tema": "A7"
+  },
+  {
+   "word": "ter jeito",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "иметь способности к чему-то",
+   "ex": "Tem muito jeito para consertar coisas em casa.",
+   "exru": "У него хорошо получается чинить вещи по дому.",
+   "note": "ter jeito para — иметь склонность к чему-то",
+   "tema": "B1"
+  },
+  {
+   "word": "fazer questão",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "непременно хотеть",
+   "ex": "Fez questão de nos acompanhar até ao carro.",
+   "exru": "Он непременно захотел проводить нас до машины.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "valer a pena",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "стоить того",
+   "ex": "Vale a pena subir, a vista lá de cima compensa.",
+   "exru": "Подняться стоит — вид сверху того стоит.",
+   "note": "Говорят и merece a pena",
+   "tema": "A7"
+  },
+  {
+   "word": "dar-se bem",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "ладить",
+   "ex": "Dou-me bem com todos os colegas do escritório.",
+   "exru": "Я лажу со всеми коллегами по офису.",
+   "note": "Также о еде: o marisco não me dá bem",
+   "tema": "B1"
+  },
+  {
+   "word": "dar conta",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "справляться с чем-то",
+   "ex": "Não dou conta de tanto trabalho sozinho.",
+   "exru": "Один я с таким объёмом работы не справлюсь.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "tomar conta",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "присматривать за кем-то",
+   "ex": "A vizinha toma conta das crianças à quarta-feira.",
+   "exru": "По средам за детьми присматривает соседка.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "estar prestes a",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "вот-вот сделать что-то",
+   "ex": "Estávamos prestes a sair quando o telefone tocou.",
+   "exru": "Мы уже собирались выходить, когда зазвонил телефон.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "deixar de",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "перестать что-то делать",
+   "ex": "Deixou de fumar há três anos e nunca mais voltou.",
+   "exru": "Он бросил курить три года назад и больше не возвращался.",
+   "note": "«Não deixes de…» — «обязательно сделай…»",
+   "tema": "A4"
+  },
+  {
+   "word": "acabar por",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "в итоге сделать что-то",
+   "ex": "Acabámos por ficar em casa por causa da chuva.",
+   "exru": "В итоге мы остались дома из-за дождя.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "andar a",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "заниматься чем-то в последнее время",
+   "ex": "Ando a estudar português há quase dois anos.",
+   "exru": "Я учу португальский уже почти два года.",
+   "note": "Продолжающееся действие: ando a ler, andas a fazer",
+   "tema": "A4"
+  },
+  {
+   "word": "meter-se em",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "влезать во что-то",
+   "ex": "Não te metas em discussões que não são tuas.",
+   "exru": "Не лезь в споры, которые тебя не касаются.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "pôr-se a",
+   "pos": "оборот",
+   "level": "B1",
+   "ru": "взяться, приняться за что-то",
+   "ex": "Pôs-se a chorar assim que ouviu a notícia.",
+   "exru": "Он расплакался, едва услышал новость.",
+   "note": "Внезапное начало действия",
+   "tema": "A4"
+  },
+  {
+   "word": "além disso",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "кроме того",
+   "ex": "É caro; além disso, fica muito longe do centro.",
+   "exru": "Дорого, и, кроме того, далеко от центра.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "ainda assim",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "и всё-таки",
+   "ex": "Choveu o dia todo; ainda assim, fomos à praia.",
+   "exru": "Дождь шёл весь день, и всё-таки мы поехали на пляж.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "apesar disso",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "несмотря на это",
+   "ex": "Avisámos com tempo; apesar disso, ninguém apareceu.",
+   "exru": "Мы предупредили заранее, и всё же никто не пришёл.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "no entanto",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "при этом, всё же",
+   "ex": "Custa pouco; no entanto, dura muitos anos.",
+   "exru": "Стоит недорого, при этом служит много лет.",
+   "note": "Самый обычный из ряда mas, porém, contudo",
+   "tema": "A9"
+  },
+  {
+   "word": "ou seja",
+   "pos": "союз",
+   "level": "B1",
+   "ru": "то есть",
+   "ex": "Chega na sexta, ou seja, daqui a dois dias.",
+   "exru": "Он приезжает в пятницу, то есть через два дня.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "isto é",
+   "pos": "союз",
+   "level": "B1",
+   "ru": "иначе говоря",
+   "ex": "Fecha ao almoço, isto é, entre a uma e as três.",
+   "exru": "Закрывается на обед, иначе говоря, с часу до трёх.",
+   "note": "То же, что ou seja, но чуть книжнее",
+   "tema": "A9"
+  },
+  {
+   "word": "pelo contrário",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "напротив",
+   "ex": "Não me incomodou; pelo contrário, gostei imenso.",
+   "exru": "Меня это не смутило — напротив, очень понравилось.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "pelo menos",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "по меньшей мере",
+   "ex": "Demora pelo menos duas horas de carro.",
+   "exru": "На машине это займёт по меньшей мере два часа.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "praticamente",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "практически, почти",
+   "ex": "A loja estava praticamente vazia àquela hora.",
+   "exru": "В тот час магазин был практически пуст.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "geralmente",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "как правило",
+   "ex": "Geralmente almoço em casa, mas hoje não deu.",
+   "exru": "Обычно я обедаю дома, но сегодня не вышло.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "raramente",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "нечасто",
+   "ex": "Raramente vejo televisão durante a semana de trabalho.",
+   "exru": "На рабочей неделе я редко смотрю телевизор.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "claramente",
+   "pos": "нареч.",
+   "level": "B1",
+   "ru": "явно, ясно",
+   "ex": "Claramente não foi ele quem partiu o vidro.",
+   "exru": "Явно не он разбил стекло.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "contribuir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "способствовать, вносить вклад",
+   "ex": "Cada um contribuiu com vinte euros para a prenda.",
+   "exru": "Каждый скинулся по двадцать евро на подарок.",
+   "note": "contribuir para — способствовать чему-то",
+   "tema": "A9"
+  },
+  {
+   "word": "definir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "определять, задавать",
+   "ex": "Ainda não definimos a data da viagem.",
+   "exru": "Дату поездки мы пока не определили.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "desenvolver",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "развивать, разрабатывать",
+   "ex": "A empresa desenvolveu uma aplicação para os transportes.",
+   "exru": "Компания разработала приложение для транспорта.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "dirigir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "руководить; направлять",
+   "ex": "Dirige a escola há mais de dez anos.",
+   "exru": "Он руководит школой больше десяти лет.",
+   "note": "dirigir-se a — обращаться к кому-то",
+   "tema": "B3"
+  },
+  {
+   "word": "eliminar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "устранять, убирать",
+   "ex": "Eliminámos duas etapas para acelerar o processo.",
+   "exru": "Мы убрали две стадии, чтобы ускорить процесс.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "enfrentar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сталкиваться, противостоять",
+   "ex": "Enfrentámos um inverno duro logo no primeiro ano.",
+   "exru": "В первый же год мы столкнулись с суровой зимой.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "explorar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "исследовать, обследовать",
+   "ex": "Passámos a manhã a explorar as ruelas do bairro.",
+   "exru": "Всё утро мы бродили по переулкам квартала.",
+   "note": "Второе значение — использовать в своих интересах",
+   "tema": "A2"
+  },
+  {
+   "word": "expressar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "выражать словами",
+   "ex": "Custa-lhe expressar o que sente em português.",
+   "exru": "Ему трудно выразить свои чувства по-португальски.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "facilitar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "облегчать, упрощать",
+   "ex": "A aplicação facilita muito a compra de bilhetes.",
+   "exru": "Приложение сильно упрощает покупку билетов.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "identificar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "определять, опознавать",
+   "ex": "O médico identificou a causa logo na primeira consulta.",
+   "exru": "Врач определил причину уже на первом приёме.",
+   "note": "identificar-se — предъявить документы",
+   "tema": "A8"
+  },
+  {
+   "word": "ignorar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "пропускать мимо ушей",
+   "ex": "Ignorou o comentário e continuou a falar.",
+   "exru": "Он пропустил замечание мимо ушей и продолжил.",
+   "note": "Второе значение — не знать: ignoro o motivo",
+   "tema": "A8"
+  },
+  {
+   "word": "indicar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "показывать, обозначать",
+   "ex": "A placa indica a saída para a autoestrada.",
+   "exru": "Указатель показывает съезд на автомагистраль.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "investigar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "расследовать, изучать",
+   "ex": "A polícia investiga o caso desde o mês passado.",
+   "exru": "Полиция расследует дело с прошлого месяца.",
+   "note": "Учёный — o investigador",
+   "tema": "B9"
+  },
+  {
+   "word": "justificar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "объяснять, оправдывать",
+   "ex": "Justificou a falta com um atestado do médico.",
+   "exru": "Он объяснил пропуск справкой от врача.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "lamentar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сожалеть",
+   "ex": "Lamento imenso, mas não vou conseguir ir.",
+   "exru": "Мне очень жаль, но прийти не получится.",
+   "note": "Вежливая формула отказа",
+   "tema": "B1"
+  },
+  {
+   "word": "lançar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "выпускать, запускать",
+   "ex": "A editora lançou o livro na feira do Porto.",
+   "exru": "Издательство выпустило книгу на ярмарке в Порту.",
+   "note": "lançar-se — броситься, взяться за что-то",
+   "tema": "A2"
+  },
+  {
+   "word": "limitar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "ограничивать",
+   "ex": "O médico limitou-lhe o sal e o café.",
+   "exru": "Врач ограничил ему соль и кофе.",
+   "note": "limitar-se a — ограничиться чем-то",
+   "tema": "A5"
+  },
+  {
+   "word": "negociar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "вести переговоры, договариваться",
+   "ex": "Negociámos o preço da renda com o senhorio.",
+   "exru": "Мы договорились с хозяином о цене аренды.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "ocupar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "занимать место или время",
+   "ex": "O sofá ocupa metade da sala de estar.",
+   "exru": "Диван занимает половину гостиной.",
+   "note": "ocupar-se de — заниматься чем-то",
+   "tema": "A2"
+  },
+  {
+   "word": "organizar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "организовывать, устраивать",
+   "ex": "Organizaram um jantar para toda a equipa.",
+   "exru": "Они устроили ужин для всей команды.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "prejudicar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "вредить, наносить ущерб",
+   "ex": "O ruído prejudica o sono de toda a família.",
+   "exru": "Шум мешает спать всей семье.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "produzir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "производить, выпускать",
+   "ex": "A região produz vinho desde o tempo dos romanos.",
+   "exru": "Здесь делают вино со времён римлян.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "propor",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "предлагать",
+   "ex": "Propôs que adiássemos a reunião para quinta-feira.",
+   "exru": "Он предложил перенести встречу на четверг.",
+   "note": "propor-se a — вызваться сделать что-то",
+   "tema": "A8"
+  },
+  {
+   "word": "proteger",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "защищать",
+   "ex": "Este creme protege a pele do sol forte.",
+   "exru": "Этот крем защищает кожу от сильного солнца.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "publicar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "публиковать, издавать",
+   "ex": "Publicou o primeiro romance aos cinquenta anos.",
+   "exru": "Первый роман он издал в пятьдесят.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "registar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "регистрировать, оформлять",
+   "ex": "Registei a morada nova no portal das finanças.",
+   "exru": "Новый адрес я зарегистрировал на портале налоговой.",
+   "note": "В Португалии registar, без лишней s",
+   "tema": "B9"
+  },
+  {
+   "word": "renovar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "продлевать, обновлять",
+   "ex": "Tenho de renovar o cartão de cidadão este mês.",
+   "exru": "В этом месяце мне нужно продлить удостоверение личности.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "resistir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "сопротивляться, устоять",
+   "ex": "Não resisti e comprei mais um pastel de nata.",
+   "exru": "Я не удержался и купил ещё одно пирожное.",
+   "note": "resistir a — требует a",
+   "tema": "A7"
+  },
+  {
+   "word": "respeitar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "уважать; соблюдать",
+   "ex": "É preciso respeitar o horário de silêncio do prédio.",
+   "exru": "Часы тишины в доме нужно соблюдать.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "resultar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "получаться, приводить к",
+   "ex": "A ideia resultou melhor do que esperávamos.",
+   "exru": "Задумка получилась лучше, чем мы ожидали.",
+   "note": "resultar em — привести к чему-то",
+   "tema": "A9"
+  },
+  {
+   "word": "reunir",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "собирать, объединять",
+   "ex": "A feira reúne artesãos de todo o país.",
+   "exru": "Ярмарка собирает ремесленников со всей страны.",
+   "note": "reunir-se — собираться, встречаться",
+   "tema": "A5"
+  },
+  {
+   "word": "sofrer",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "страдать, мучиться",
+   "ex": "Sofre de dores nas costas desde o acidente.",
+   "exru": "После аварии он страдает от болей в спине.",
+   "note": "sofrer de — страдать от болезни",
+   "tema": "B6"
+  },
+  {
+   "word": "suportar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "выносить, переносить",
+   "ex": "Não suporto o barulho das obras logo de manhã.",
+   "exru": "Терпеть не могу шум стройки с самого утра.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "surpreender",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "удивлять, заставать врасплох",
+   "ex": "A resposta dela surpreendeu toda a gente.",
+   "exru": "Её ответ удивил всех.",
+   "note": "surpreender-se — удивиться самому",
+   "tema": "A7"
+  },
+  {
+   "word": "testar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "проверять, испытывать",
+   "ex": "Testámos a receita antes de a servir aos convidados.",
+   "exru": "Мы опробовали рецепт, прежде чем подавать гостям.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "transformar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "превращать, преображать",
+   "ex": "Transformaram o armazém antigo numa galeria de arte.",
+   "exru": "Старый склад превратили в художественную галерею.",
+   "note": "transformar-se em — превратиться во что-то",
+   "tema": "A6"
+  },
+  {
+   "word": "variar",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "различаться, меняться",
+   "ex": "Os preços variam muito conforme a época do ano.",
+   "exru": "Цены сильно различаются в зависимости от сезона.",
+   "note": "«Para variar» — «для разнообразия»",
+   "tema": "A6"
+  },
+  {
+   "word": "vencer",
+   "pos": "глаг.",
+   "level": "B1",
+   "ru": "выигрывать; истекать о сроке",
+   "ex": "Venceu o torneio sem perder um único jogo.",
+   "exru": "Он выиграл турнир, не проиграв ни одного матча.",
+   "note": "Второе значение — истечь: o prazo venceu",
+   "tema": "B4"
   }
  ]
 }
