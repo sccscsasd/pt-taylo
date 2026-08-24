@@ -171,7 +171,8 @@
    "tamanho único",
    "temperatura",
    "ter frio",
-   "vazio"
+   "vazio",
+   "enorme"
   ]
  },
  {
@@ -330,7 +331,8 @@
    "todas as manhãs",
    "tornar-se",
    "trocar",
-   "umas horas"
+   "umas horas",
+   "madrugada"
   ]
  },
  {
@@ -412,7 +414,8 @@
    "totalmente",
    "tudo",
    "tão",
-   "vários"
+   "vários",
+   "aumento"
   ]
  },
  {
@@ -621,7 +624,9 @@
    "valer",
    "valor",
    "verdadeiro",
-   "útil"
+   "útil",
+   "aborrecido",
+   "grave"
   ]
  },
  {
@@ -760,7 +765,8 @@
    "se",
    "separados",
    "separar",
-   "tal"
+   "tal",
+   "diferença"
   ]
  },
  {
@@ -1305,7 +1311,8 @@
    "tomar café",
    "trabalhos de casa",
    "tratar",
-   "ver televisão"
+   "ver televisão",
+   "tarefa"
   ]
  },
  {
@@ -1439,7 +1446,10 @@
    "título",
    "voleibol",
    "xadrez",
-   "youtube"
+   "youtube",
+   "festival",
+   "equipa",
+   "treino"
   ]
  },
  {
@@ -1817,7 +1827,10 @@
    "unidade",
    "vendedor",
    "vestir",
-   "óculos de sol"
+   "óculos de sol",
+   "fila",
+   "marca",
+   "qualidade"
   ]
  },
  {
@@ -1962,7 +1975,11 @@
    "vinagre",
    "vinho",
    "vitamina",
-   "água mineral"
+   "água mineral",
+   "maduro",
+   "estragado",
+   "salgado",
+   "picante"
   ]
  },
  {

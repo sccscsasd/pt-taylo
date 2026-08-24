@@ -4326,8 +4326,8 @@
    "word": "a cabeça",
    "pos": "сущ.",
    "ru": "голова",
-   "ex": "Dói-me a cabeça desde manhã.",
-   "exru": "У меня с утра болит голова.",
+   "ex": "Bati com a cabeça na porta do armário.",
+   "exru": "Я стукнулся головой о дверцу шкафа.",
    "note": "ж. р."
   },
   {
@@ -7086,8 +7086,8 @@
    "word": "apagar",
    "pos": "глаг.",
    "ru": "гасить, выключать; стирать",
-   "ex": "Apaga a luz quando saíres.",
-   "exru": "Выключи свет, когда будешь уходить.",
+   "ex": "Apaga a luz do corredor antes de te deitares.",
+   "exru": "Выключи свет в коридоре, прежде чем ложиться.",
    "note": "Также «стирать написанное»"
   },
   {
@@ -10446,8 +10446,8 @@
    "word": "a dúzia de ovos",
    "pos": "выраж.",
    "ru": "дюжина яиц",
-   "ex": "Compra uma dúzia de ovos.",
-   "exru": "Купи дюжину яиц.",
+   "ex": "Uma dúzia de ovos chega para o bolo todo.",
+   "exru": "Дюжины яиц хватит на весь пирог.",
    "note": "Меньше — meia dúzia"
   },
   {
@@ -11182,8 +11182,8 @@
    "word": "as costas",
    "pos": "сущ.",
    "ru": "спина",
-   "ex": "Tenho dores nas costas.",
-   "exru": "У меня болит спина.",
+   "ex": "Deitou-se de costas na areia a olhar o céu.",
+   "exru": "Он лёг на спину на песок и смотрел в небо.",
    "note": "Всегда мн. ч."
   },
   {
@@ -11710,8 +11710,8 @@
    "word": "aberto",
    "pos": "прил.",
    "ru": "открытый",
-   "ex": "A loja está aberta até às oito.",
-   "exru": "Магазин открыт до восьми.",
+   "ex": "A porta ficou aberta e entrou frio na sala.",
+   "exru": "Дверь осталась открытой, и в комнату надуло холода.",
    "note": "Причастие от abrir"
   },
   {
@@ -14903,6 +14903,159 @@
    "ex": "As ondas estavam altas de mais para tomar banho.",
    "exru": "Волны были слишком высокие, чтобы купаться.",
    "note": "Также про жару: uma onda de calor"
+  },
+  {
+   "word": "a tarefa",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "задача, дело",
+   "ex": "Dividimos as tarefas da casa entre os três.",
+   "exru": "Домашние дела мы разделили на троих.",
+   "note": ""
+  },
+  {
+   "word": "o festival",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "фестиваль",
+   "ex": "O festival de música dura três dias em agosto.",
+   "exru": "Музыкальный фестиваль длится три дня в августе.",
+   "note": ""
+  },
+  {
+   "word": "a equipa",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "команда",
+   "ex": "A equipa jogou melhor na segunda parte.",
+   "exru": "Во втором тайме команда играла лучше.",
+   "note": "И о рабочем коллективе: a equipa do projeto"
+  },
+  {
+   "word": "o treino",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "тренировка",
+   "ex": "Tem treino três vezes por semana depois do trabalho.",
+   "exru": "У него тренировки трижды в неделю после работы.",
+   "note": ""
+  },
+  {
+   "word": "a fila",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "очередь",
+   "ex": "Estive vinte minutos na fila do supermercado.",
+   "exru": "Я простоял двадцать минут в очереди в супермаркете.",
+   "note": ""
+  },
+  {
+   "word": "a marca",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "марка, бренд",
+   "ex": "Compro sempre a marca do supermercado, sai mais barata.",
+   "exru": "Я всегда беру магазинную марку, выходит дешевле.",
+   "note": "Также след, отметина: uma marca na parede"
+  },
+  {
+   "word": "a qualidade",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "качество",
+   "ex": "A qualidade do pão daquela padaria é outra.",
+   "exru": "Хлеб в той пекарне совсем другого качества.",
+   "note": ""
+  },
+  {
+   "word": "maduro",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "спелый",
+   "ex": "Estes tomates ainda não estão maduros para salada.",
+   "exru": "Эти помидоры ещё не дозрели для салата.",
+   "note": "Vinho maduro — обычное вино, в отличие от verde"
+  },
+  {
+   "word": "estragado",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "испорченный",
+   "ex": "O leite estava estragado e cheirava mal.",
+   "exru": "Молоко испортилось и плохо пахло.",
+   "note": "Estragar-se — портиться"
+  },
+  {
+   "word": "salgado",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "солёный",
+   "ex": "A sopa ficou salgada de mais para o meu gosto.",
+   "exru": "Суп на мой вкус вышел пересоленным.",
+   "note": "Os salgados — солёная выпечка в кафе"
+  },
+  {
+   "word": "picante",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "острый",
+   "ex": "Este molho é picante, come com cuidado.",
+   "exru": "Этот соус острый, ешь осторожно.",
+   "note": "Piri-piri — главный острый перец Португалии"
+  },
+  {
+   "word": "aborrecido",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "скучный; раздосадованный",
+   "ex": "O filme era aborrecido e saímos a meio.",
+   "exru": "Фильм был скучный, и мы ушли с середины.",
+   "note": "Estar aborrecido com alguém — быть в обиде"
+  },
+  {
+   "word": "grave",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "серьёзный, тяжёлый",
+   "ex": "O acidente não foi grave, ninguém ficou ferido.",
+   "exru": "Авария была несерьёзной, никто не пострадал.",
+   "note": "«Não é grave» — «ничего страшного»"
+  },
+  {
+   "word": "o aumento",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "рост, увеличение",
+   "ex": "Houve um aumento grande no preço da eletricidade.",
+   "exru": "Цена на электричество сильно выросла.",
+   "note": "Pedir um aumento — просить прибавку"
+  },
+  {
+   "word": "enorme",
+   "pos": "прил.",
+   "level": "A2",
+   "ru": "огромный",
+   "ex": "A fila à porta do museu estava enorme.",
+   "exru": "Очередь у входа в музей была огромная.",
+   "note": ""
+  },
+  {
+   "word": "a madrugada",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "предрассветные часы",
+   "ex": "Chegámos a casa já de madrugada, mortos de sono.",
+   "exru": "Домой мы добрались уже под утро, засыпая на ходу.",
+   "note": "От полуночи до рассвета — по-русски это ещё ночь"
+  },
+  {
+   "word": "a diferença",
+   "pos": "сущ.",
+   "level": "A2",
+   "ru": "разница, отличие",
+   "ex": "A diferença de preço entre as duas lojas é grande.",
+   "exru": "Разница в цене между двумя магазинами велика.",
+   "note": "Fazer diferença — играть роль, менять дело"
   }
  ],
  "retired": [
