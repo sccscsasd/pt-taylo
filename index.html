@@ -186,6 +186,7 @@
   .account .who{flex:1;min-width:0;overflow-wrap:anywhere}
   .account .who b{display:block;font-size:15px;font-weight:400}
   .account .who span{display:block;margin-top:3px;font-size:12px;color:var(--label3)}
+  .account .who span[hidden]{display:none}
   /* цель на день: минус, вписываемое число, плюс */
   .stepper{
     display:flex;align-items:stretch;
@@ -678,12 +679,14 @@
     <div class="sec">
       <span class="lbl">Колоды</span>
       <div id="deckList"></div>
-      <div class="hint">Слова колод общие для всех, у вас хранится только прогресс.</div>
     </div>
 
-    <div class="sec account">
-      <span class="who"><b id="whoEmail"></b><span id="syncState"></span></span>
-      <button class="linkbtn" id="signOut" type="button">Выйти</button>
+    <div class="sec">
+      <span class="lbl">Аккаунт</span>
+      <div class="account">
+        <span class="who"><b id="whoEmail"></b><span id="syncState" hidden></span></span>
+        <button class="linkbtn" id="signOut" type="button">Выйти</button>
+      </div>
     </div>
 
   </section>
@@ -2387,13 +2390,15 @@ function renderSyncState(){
   const el=$('#syncState'); if(!el) return;
   const pend=dirty.size;
   const at=lastSync?new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'';
-  el.textContent = !authed() ? 'Вход не выполнен'
+  const t = !authed() ? 'Вход не выполнен'
     : syncing ? 'Синхронизирую…'
     : !navigator.onLine ? (pend?'Нет сети · ждут отправки: '+pend:'Нет сети · всё отправлено')
     : syncErr ? (syncErr[0].toUpperCase()+syncErr.slice(1)+(pend?' · ждут отправки: '+pend:''))
     : pend ? ('Отправляю изменения: '+pend)
-    : at ? ('Синхронизировано в '+at)
-    : 'Синхронизация включена';
+    : '';                       // всё отправлено — молчим, сказать нечего
+  el.textContent=t;
+  el.hidden=!t;
+  el.title=at?('Последняя синхронизация в '+at):'';
 }
 
 async function startSession(){
