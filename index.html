@@ -657,16 +657,8 @@
 
   <section id="v-set" class="view">
     <div class="sec">
-      <span class="lbl">Цель на день</span>
-      <div class="stepper">
-        <button id="goalMinus" type="button" aria-label="Меньше">−</button>
-        <span class="val">
-          <input id="goal" type="number" min="5" max="99" step="1" inputmode="numeric" aria-label="Слов в день">
-          <span class="u" id="goalWord">слов</span>
-        </span>
-        <button id="goalPlus" type="button" aria-label="Больше">+</button>
-      </div>
-      <div class="hint">От 5 до 99. Можно вписать своё число.</div>
+      <span class="lbl">Колоды</span>
+      <div id="deckList"></div>
     </div>
 
     <div class="sec">
@@ -680,8 +672,16 @@
     </div>
 
     <div class="sec">
-      <span class="lbl">Колоды</span>
-      <div id="deckList"></div>
+      <span class="lbl">Цель на день</span>
+      <div class="stepper">
+        <button id="goalMinus" type="button" aria-label="Меньше">−</button>
+        <span class="val">
+          <input id="goal" type="number" min="5" max="99" step="1" inputmode="numeric" aria-label="Слов в день">
+          <span class="u" id="goalWord">слов</span>
+        </span>
+        <button id="goalPlus" type="button" aria-label="Больше">+</button>
+      </div>
+      <div class="hint">От 5 до 99. Можно вписать своё число.</div>
     </div>
 
     <div class="sec">
