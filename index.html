@@ -469,11 +469,27 @@
   }
   #studyCard .tag{font-size:12px;color:var(--label3);margin-bottom:18px;letter-spacing:.04em}
   #studyCard .lvl{
-    position:absolute;top:12px;right:14px;
+    position:absolute;top:12px;left:14px;
     padding:2px 7px;border:.5px solid var(--sep);border-radius:6px;
     font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--label3);
   }
   #studyCard .lvl.hard{color:var(--orange);border-color:var(--orange)}
+  /* Оранжевый тут по общему правилу: синий — «идёт», зелёный — «сделано»,
+     оранжевый — то, что человек пометил сам (им же покрашены заметки). */
+  #studyCard .fav{
+    position:absolute;top:7px;right:9px;z-index:1;
+    width:36px;height:36px;padding:0;border:none;background:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;color:var(--label3);
+  }
+  #studyCard .fav svg{width:19px;height:19px}
+  #studyCard .fav.on{color:var(--orange)}
+  #studyCard .fav:active{opacity:.5}
+  .btn.icon.on{color:var(--orange)}
+  /* Четвёртый сегмент — иконкой: «Избранное» словом отнимает у трёх соседей
+     ширину, а на 320 px они и так впритык. */
+  .seg button.ic{flex:0 0 40px;display:flex;align-items:center;justify-content:center}
+  .seg button.ic svg{width:16px;height:16px}
+  .seg button.ic[hidden]{display:none}
   #studyCard .q{font-size:30px;font-weight:600;letter-spacing:-.02em;overflow-wrap:break-word;max-width:100%}
   #studyCard .q.ru{font-size:24px}
   #studyCard .dots{margin-top:16px;color:var(--label3);letter-spacing:.25em;font-size:14px}
@@ -624,7 +640,7 @@
   <section id="v-cards" class="view">
     <input type="text" id="search" placeholder="Поиск" autocapitalize="off" style="margin-bottom:10px">
     <div class="seg" id="cardFilter" style="margin:0 0 14px">
-      <button data-f="all" class="on">Все</button><button data-f="learning">Изучаю</button><button data-f="done">Выучено</button>
+      <button data-f="all" class="on">Все</button><button data-f="learning">Изучаю</button><button data-f="done">Выучено</button><button data-f="fav" class="ic" title="Избранное" aria-label="Избранное"></button>
     </div>
     <div id="cardList"></div>
   </section>
@@ -750,7 +766,7 @@ let dirty=new Set();        // id строк с неотправленными �
 let syncedAt='';            // метка сервера: до какого момента изменения уже получены
 let setDirty=false;         // настройки изменены и не отправлены
 
-const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,rev:0};
+const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,fav:false,rev:0};
 // Карточка — это слово колоды плюс личный прогресс, если он уже есть. own в конце
 // не случайно: слово, которое человек когда-то завёл сам, а потом оно попало в колоду,
 // принадлежит колоде — иначе его содержимое уехало бы на сервер как личное.
@@ -782,7 +798,7 @@ function touch(c){
   const p=prog.get(c.id)||{id:c.id,created:c.created||Date.now()};
   p.own=!!c.own; p.word=c.word; p.deleted=false; p.rev=c.rev;
   p.due=c.due||0; p.interval=c.interval||0; p.reps=c.reps||0; p.lapses=c.lapses||0;
-  p.archived=!!c.archived; p.archivedAt=c.archivedAt||0;
+  p.archived=!!c.archived; p.archivedAt=c.archivedAt||0; p.fav=!!c.fav;
   if(c.own){ p.query=c.query||''; p.pos=c.pos||''; p.ru=c.ru||''; p.ex=c.ex||'';
              p.exru=c.exru||''; p.note=c.note||''; p.level=c.level||'' }
   prog.set(c.id,p);
@@ -813,6 +829,8 @@ const SVG=p=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const IC_REFRESH=SVG('<path d="M20 11a8 8 0 0 0-13.7-5.3L4 8"/><path d="M4 4.5V8h3.5"/><path d="M4 13a8 8 0 0 0 13.7 5.3L20 16"/><path d="M20 19.5V16h-3.5"/>');
 const IC_TRASH=SVG('<path d="M4 7h16M9.5 7V5h5v2M6.5 7l.9 13h9.2l.9-13"/>');
 const IC_DECK=SVG('<rect x="3.5" y="6.5" width="17" height="13" rx="2.5"/><path d="M7 3.5h10M8 11h8M8 15h5"/>');
+const IC_STAR=SVG('<path d="M12 3.7l2.6 5.2 5.8.9-4.2 4 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4 5.8-.9z"/>');
+const IC_STAR_ON=IC_STAR.replace('fill="none"','fill="currentColor"');
 const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/>');
 
 let toastT;
@@ -1251,11 +1269,21 @@ function cardHTML(c){
       (c.reps?'<span class="badge">· повторов '+c.reps+'</span>':'')+
       '<span style="flex:1"></span>'+
       (c.archived?'<button class="btn sm" data-act="back">Вернуть в изучение</button>':'')+
+      '<button class="btn icon'+(c.fav?' on':'')+'" data-act="fav" title="'+
+        (c.fav?'Убрать из избранного':'В избранное')+'">'+(c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
       '<button class="btn icon" data-act="regen" title="Перегенерировать">'+IC_REFRESH+'</button>'+
       '<button class="btn icon" data-act="del" title="Удалить">'+IC_TRASH+'</button>'+
     '</div></article>';
 }
 let cardFilter='all';
+// Сегмент избранного прячется, пока список пуст, — как уровни в полоске тренировки.
+// Пока фильтр выбран, сегмент остаётся: иначе, сняв последнюю звезду, человек
+// застрял бы в фильтре без кнопки выхода.
+function paintFavSeg(){
+  const b=$$('#cardFilter button')[3]; if(!b) return;
+  b.innerHTML=IC_STAR;
+  b.hidden=!cards.some(c=>c.fav)&&cardFilter!=='fav';
+}
 // Поиск идёт только по слову и переводу — в примерах не ищем, иначе «cham»
 // вытаскивает «fecham» из чужого предложения. Порядок: точное совпадение, начало
 // слова, начало слова внутри выражения, потом то же самое по переводу.
@@ -1292,7 +1320,9 @@ $('main').addEventListener('scroll',()=>{
 
 function renderCards(){
   const q=deacc(norm($('#search').value));
-  const byFilter=cards.filter(c=>cardFilter==='all'||(cardFilter==='done'?c.archived:!c.archived));
+  const byFilter=cards.filter(c=>cardFilter==='all'?true
+    :cardFilter==='fav'?!!c.fav
+    :cardFilter==='done'?c.archived:!c.archived);
   const list=!q ? byFilter
     : byFilter.map(c=>[c,searchRank(c,q)]).filter(p=>p[1]<4)
               .sort((a,b)=>a[1]-b[1]).map(p=>p[0]);
@@ -1301,6 +1331,7 @@ function renderCards(){
   if(segs.length){
     segs[1].textContent='Изучаю '+(cards.length-done);
     segs[2].textContent='Выучено '+done;
+    paintFavSeg();
   }
   // тот же список, что и был (пришла синхронизация) — возвращаем и долистанное, и прокрутку
   const key=cardFilter+'|'+q;
@@ -1312,6 +1343,8 @@ function renderCards(){
     : '<div class="empty">'+IC_DECK+(cards.length
         ? (cardFilter==='done'&&!q
             ? '<div>Пока ничего не выучено</div><div class="sub">Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь</div>'
+            : cardFilter==='fav'&&!q
+            ? '<div>В избранном пусто</div><div class="sub">Звёздочка на карточке собирает личный список — его можно учить отдельным фильтром</div>'
             : '<div>Ничего не найдено</div>')
         : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
   if(!list.length) return;
@@ -1329,6 +1362,14 @@ $('#cardList').onclick=async e=>{
   const btn=e.target.closest('[data-act]'); if(!btn)return;
   const id=e.target.closest('.card').dataset.id;
   const c=cards.find(x=>x.id===id); if(!c)return;
+  if(btn.dataset.act==='fav'){
+    const on=toggleFav(c);
+    if(cardFilter==='fav'){ renderCards(); return }
+    btn.classList.toggle('on',on);
+    btn.title=on?'Убрать из избранного':'В избранное';
+    btn.innerHTML=on?IC_STAR_ON:IC_STAR;
+    return;
+  }
   if(btn.dataset.act==='back'){
     if((c.archivedAt||0)>=startOfDay()) bumpDay(-1);   // выучили и передумали в тот же день
     c.archived=false; c.archivedAt=Date.now(); c.interval=1; c.due=Date.now();
@@ -1398,10 +1439,12 @@ let queue=[], current=null, shown=false, sessionTotal=0, sessionDone=0;
 
 
 const active=()=>cards.filter(c=>!c.archived);
+function toggleFav(c){ c.fav=!c.fav; touch(c); persist(); paintFavSeg(); return c.fav }
 const shuffle=a=>{ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]] } return a };
 
 /* Темы Camões как фильтр тренировки: 1825 слов словника разложены по 18 темам,
    карточка попадает в тему по своему слову. Свои слова — в «Разное». */
+let studyFav=false;                      // избранное — единственный фильтр не из колоды
 let studyTema=null;                      // null — вся колода
 let studyLevel=null;                     // выбранный уровень; уровень и тема не совмещаются
 let studyVerbs=false;                    // фильтр «Глаголы» — по части речи из карточки
@@ -1412,7 +1455,8 @@ const cardLevel=c=>(c.level||'').toUpperCase();
 const cardTema=c=>c.tema?temaIdx(c.tema):-1;
 const temaKey=t=>t==null?'':String(t);
 const isVerb=c=>(c.pos||'').startsWith('глаг');
-const inTema=c=>studyVerbs?isVerb(c)
+const inTema=c=>studyFav?!!c.fav
+               :studyVerbs?isVerb(c)
                :studyLevel?cardLevel(c)===studyLevel
                :(studyTema==null||cardTema(c)===studyTema);
 const ready=c=>c.reps===0||c.due<=Date.now();
@@ -1421,10 +1465,11 @@ function renderTemaBar(){
   const bar=$('#temaBar'); if(!bar) return;
   const keep=bar.scrollLeft;
   const nt=new Map(), nl=new Map();
-  let all=0, other=0, verbs=0;
+  let all=0, other=0, verbs=0, favs=0;
   active().forEach(c=>{
     if(!ready(c)) return;
     all++;
+    if(c.fav) favs++;
     if(isVerb(c)) verbs++;
     const t=cardTema(c);
     if(t<0) other++; else nt.set(t,(nt.get(t)||0)+1);
@@ -1435,9 +1480,13 @@ function renderTemaBar(){
     (on?'on':(cnt?'':'empty'))+'">'+esc(name)+(cnt?'<i>'+cnt+'</i>':'')+'</button>';
   // уровни показываем только те, по которым есть слова
   const lv=LEVELS.filter(l=>nl.has(l));
-  const свой=studyVerbs||studyLevel;
+  const свой=studyVerbs||studyLevel||studyFav;
+  // Избранное держим первым после «Все»: это личный список, к нему возвращаются чаще
+  // всего. Показываем, пока в нём что-то есть или пока он выбран — иначе, сняв
+  // последнюю звезду прямо на тренировке, человек остался бы без выхода из фильтра.
   bar.innerHTML=
     btn('data-t','','Все',all,!свой&&studyTema==null)+
+    (favs||studyFav?btn('data-f','1','Избранное',favs,studyFav):'')+
     lv.map(l=>btn('data-l',l,l,nl.get(l),studyLevel===l)).join('')+
     (verbs?btn('data-p','1','Глаголы',verbs,studyVerbs):'')+
     (lv.length||verbs?'<span class="sep"></span>':'')+
@@ -1446,6 +1495,7 @@ function renderTemaBar(){
   bar.scrollLeft=keep;
 }
 function temaName(){
+  if(studyFav) return 'Избранное';
   if(studyVerbs) return 'Глаголы';
   if(studyLevel) return studyLevel;
   if(studyTema==null) return '';
@@ -1453,9 +1503,10 @@ function temaName(){
 }
 $('#temaBar').onclick=e=>{
   const b=e.target.closest('button'); if(!b) return;
-  if('l' in b.dataset){ studyLevel=b.dataset.l; studyTema=null; studyVerbs=false }
-  else if('p' in b.dataset){ studyVerbs=!studyVerbs; studyLevel=null; studyTema=null }
-  else if('t' in b.dataset){ studyLevel=null; studyVerbs=false; studyTema=b.dataset.t===''?null:+b.dataset.t }
+  if('f' in b.dataset){ studyFav=!studyFav; studyLevel=null; studyVerbs=false; studyTema=null }
+  else if('l' in b.dataset){ studyLevel=b.dataset.l; studyTema=null; studyVerbs=false; studyFav=false }
+  else if('p' in b.dataset){ studyVerbs=!studyVerbs; studyLevel=null; studyTema=null; studyFav=false }
+  else if('t' in b.dataset){ studyLevel=null; studyVerbs=false; studyFav=false; studyTema=b.dataset.t===''?null:+b.dataset.t }
   else return;
   buildQueue(); current=null; renderStudy();
   const on=$('#temaBar button.on');
@@ -1480,13 +1531,15 @@ function renderStudy(){
       $('#prog').style.width='100%';
       const pool=active().filter(inTema);
       const next=pool.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
-      const где=studyVerbs?' среди глаголов'
+      const где=studyFav?' в избранном'
+              :studyVerbs?' среди глаголов'
               :studyLevel?(' на уровне '+esc(studyLevel))
               :studyTema==null?'':(' в теме «'+esc(temaName())+'»');
       w.innerHTML='<div class="empty">'+IC_DONE+
         (!cards.length?'<div>Добавьте слова, чтобы начать</div>'
           :pool.length?'<div>На сегодня всё повторено'+где+'</div>'
-          :(studyVerbs?'<div>Глаголов в колоде пока нет</div>'
+          :(studyFav?'<div>В избранном пока пусто</div>'
+             :studyVerbs?'<div>Глаголов в колоде пока нет</div>'
              :studyLevel?'<div>Слов этого уровня пока нет</div>'
                      :'<div>В этой теме пока нет карточек</div>'))+
         (next?'<div class="sub">Следующее повторение: '+new Date(next.due).toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+'</div>':'')+
@@ -1506,6 +1559,9 @@ function renderStudy(){
   w.innerHTML=
     '<div id="studyCard">'+
       (lvl?'<span class="lvl'+(/^[BC]/.test(lvl)?' hard':'')+'">'+esc(lvl)+'</span>':'')+
+      '<button class="fav'+(c.fav?' on':'')+'" id="favBtn" aria-pressed="'+(!!c.fav)+
+        '" title="'+(c.fav?'Убрать из избранного':'В избранное')+'">'+
+        (c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
       '<div class="tag">'+(d==='pt'?'PT → RU':'RU → PT')+'</div>'+
       '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
       (shown?'<div class="a">'+esc(a)+'</div>':'<div class="dots">•••</div>')+
@@ -1522,6 +1578,11 @@ function renderStudy(){
       :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">Показать ответ</button>')+
     '<div class="tapHint">осталось '+left+'</div>';
 
+  $('#favBtn').onclick=e=>{
+    e.stopPropagation();
+    toggleFav(c);
+    renderStudy();          // перерисовка заодно обновит счётчик в полоске фильтров
+  };
   if(shown){
     $$('.grades .btn').forEach(b=>b.onclick=()=>grade(+b.dataset.g));
   }else{
@@ -2161,7 +2222,7 @@ function toRow(p){
   const row={user_id:auth.user.id, id:p.id, word:p.word||'', own:!!p.own,
     created:p.created||0, due:p.due||0, ivl:p.interval||0,
     reps:p.reps||0, lapses:p.lapses||0,
-    archived:!!p.archived, archived_at:p.archivedAt||0,
+    archived:!!p.archived, archived_at:p.archivedAt||0, fav:!!p.fav,
     deleted:!!p.deleted, rev:p.rev||p.created||Date.now()};
   if(p.own) Object.assign(row,{query:p.query||'', pos:p.pos||'', ru:p.ru||'',
     ex:p.ex||'', exru:p.exru||'', note:p.note||'', level:p.level||''});
@@ -2171,7 +2232,7 @@ function fromRow(r){
   const p={id:r.id, own:!!r.own, word:r.word||'',
     created:+r.created||0, due:+r.due||0, interval:+r.ivl||0,
     reps:+r.reps||0, lapses:+r.lapses||0,
-    archived:!!r.archived, archivedAt:+r.archived_at||0,
+    archived:!!r.archived, archivedAt:+r.archived_at||0, fav:!!r.fav,
     deleted:!!r.deleted, rev:+r.rev||0};
   if(p.own) Object.assign(p,{query:r.query||'', pos:r.pos||'', ru:r.ru||'',
     ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||''});
