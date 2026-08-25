@@ -513,20 +513,31 @@
   /* empty */
   .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
   .more{text-align:center;color:var(--label2);font-size:13px;padding:14px 0 4px}
-  /* Строка с галкой справа — то же, что в списке настроек iOS. Ею выбираются и колоды,
-     и язык; разница в том, что колоды все на виду, а язык свёрнут до выбранного. */
-  .deck,.lang{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;margin-bottom:8px;
+  /* выбор колод: строка на колоду, галка справа — то же, что в списке настроек iOS */
+  .deck{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;margin-bottom:8px;
         border:1px solid var(--sep);border-radius:12px;background:var(--group);cursor:pointer;
         font:inherit;color:var(--label);text-align:left}
-  .deck:last-child,.lang:last-child{margin-bottom:0}
-  .deck.on,.lang.on{border-color:var(--green);background:color-mix(in srgb, var(--green) 8%, transparent)}
-  .deck .t,.lang .t{flex:1;font-size:15px}
+  .deck:last-child{margin-bottom:0}
+  .deck.on{border-color:var(--green);background:color-mix(in srgb, var(--green) 8%, transparent)}
+  .deck .t{flex:1;font-size:15px}
   .deck .t i{display:block;font-style:normal;font-size:13px;color:var(--label2);margin-top:2px}
-  .deck .mark,.lang .mark{width:22px;height:22px;color:var(--green)}
-  .deck .mark svg,.lang .mark svg{width:22px;height:22px}
-  /* Свёрнутая строка — не выбор, а вход в список: шеврон серый и не спорит с зелёной галкой. */
+  .deck .mark{width:22px;height:22px;color:var(--green)}
+  .deck .mark svg{width:22px;height:22px}
+
+  /* Выбор языка — одна коробка, строки внутри разделены волосяной линией. Колода
+     выбирается карточками, потому что колод берут сколько угодно; язык один из списка,
+     и группа читается быстрее, чем столбик отдельных плашек. */
+  .langs{border:1px solid var(--sep);border-radius:12px;background:var(--group);overflow:hidden}
+  .lang{display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;
+        border:none;background:none;cursor:pointer;font:inherit;color:var(--label);text-align:left}
+  .lang+.lang{border-top:.5px solid var(--sep)}
+  .lang .t{flex:1;font-size:15px}
+  .lang.on .t{font-weight:500}
+  .lang .mark{width:20px;height:20px;color:var(--green)}
+  .lang .mark svg{width:20px;height:20px}
+  /* Свёрнутая строка — не выбор, а вход в список: шеврон серый и не спорит с галкой. */
   .lang .mark.chev{color:var(--label3)}
-  .lang:active{opacity:.6}
+  .lang:active{background:var(--fill)}
   .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
   .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
 
@@ -668,8 +679,8 @@
     <div class="sec">
       <span class="lbl" data-tr>Направление тренировки</span>
       <div class="seg big" id="dir">
-        <button data-d="pt" type="button">PT → RU</button>
-        <button data-d="ru" type="button">RU → PT</button>
+        <button data-d="pt" type="button" data-tr>Слово</button>
+        <button data-d="ru" type="button" data-tr>Перевод</button>
         <button data-d="mix" type="button" data-tr>Вперемешку</button>
       </div>
       <div class="hint" data-tr>Что показывать на карточке первым: португальское слово или перевод.</div>
@@ -690,7 +701,7 @@
 
     <div class="sec">
       <span class="lbl" data-tr>Язык</span>
-      <div id="langList"></div>
+      <div class="langs" id="langList"></div>
     </div>
 
     <div class="sec">
@@ -1088,6 +1099,9 @@ const UK={
 'Колоды':'Колоди',
 'Хотя бы одна колода нужна':'Хоча б одна колода потрібна',
 'Направление тренировки':'Напрям тренування',
+'Слово':'Слово',
+'Слово → перевод':'Слово → переклад',
+'Перевод → слово':'Переклад → слово',
 'Вперемешку':'Упереміш',
 'Что показывать на карточке первым: португальское слово или перевод.':
   'Що показувати на картці першим: португальське слово чи переклад.',
@@ -1348,6 +1362,9 @@ const EN={
 'Колоды':'Decks',
 'Хотя бы одна колода нужна':'At least one deck is needed',
 'Направление тренировки':'Session direction',
+'Слово':'Word',
+'Слово → перевод':'Word → translation',
+'Перевод → слово':'Translation → word',
 'Вперемешку':'Mixed',
 'Что показывать на карточке первым: португальское слово или перевод.':
   'What to show on the card first: the Portuguese word or the translation.',
@@ -2219,7 +2236,7 @@ function renderStudy(){
       '<button class="fav'+(c.fav?' on':'')+'" id="favBtn" aria-pressed="'+(!!c.fav)+
         '" title="'+T(c.fav?'Убрать из избранного':'В избранное')+'">'+
         (c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
-      '<div class="tag">'+(d==='pt'?'PT → RU':'RU → PT')+'</div>'+
+      '<div class="tag">'+T(d==='pt'?'Слово → перевод':'Перевод → слово')+'</div>'+
       '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
       (shown?'<div class="a">'+esc(a)+'</div>':'<div class="dots">•••</div>')+
       (shown&&c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
