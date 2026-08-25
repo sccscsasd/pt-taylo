@@ -91,27 +91,8 @@
 
   /* grouped sections */
   .sec{margin-bottom:26px}
-  /* Главный экран — карточки на подложке, а не свободный блок и блок за
-     разделительной линией. Подложка группирует сильнее любой линии и задаёт
-     общий ритм: один радиус, один внутренний отступ, один зазор. */
-  .composer,#textSec,.goal{
-    background:var(--group);border-radius:16px;
-    padding:16px;margin-bottom:14px;
-  }
-  .goal{padding:18px 16px 16px}
-  /* Вложенные плашки внутри карточки переходят на --fill: белое на белом
-     не читается. Забудете новую плашку — она просто сольётся с подложкой. */
-  .composer input[type=text],.composer .attach,.composer .card,
-  #textSec .srcbox,#textSec .chip,#textSec .card{background:var(--fill)}
-  #textSec .chip.on{background:var(--blue)}
-  .composer .lbl,.composer .hint,#textSec .chiphead{margin-left:0;margin-right:0}
-  /* узкий экран: боковые отступы вдвое, иначе поле ввода остаётся без места */
-  @media (max-width:360px){
-    main{padding-left:12px;padding-right:12px}
-    .composer,#textSec,.goal{padding-left:12px;padding-right:12px}
-  }
   .lbl{
-    display:block;margin:0 0 8px 4px;
+    display:block;margin:0 0 7px 4px;
     font-size:13px;color:var(--label2);
   }
   .hint{margin:8px 4px 0;font-size:13px;line-height:1.4;color:var(--label2)}
@@ -284,10 +265,10 @@
 
   /* screenshot */
   /* цель на день: дуга, неделя, серия */
-  .goal{text-align:center}
+  .goal{text-align:center;margin-top:18px;padding-top:16px;border-top:.5px solid var(--sep)}
   .goal h2{margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em}
   .goal .lead{
-    max-width:360px;margin:6px auto 16px;
+    max-width:360px;margin:4px auto 6px;
     font-size:13px;line-height:1.35;color:var(--label2);
   }
   .goal .gauge{position:relative;max-width:214px;margin:0 auto}
@@ -321,8 +302,8 @@
     font-size:13px;color:var(--label2);
   }
   .goal .mid .aim:active{opacity:.55}
-  .goal .go{margin-top:16px}
-  .goal .week{display:flex;justify-content:center;gap:7px;margin-top:16px}
+  .goal .go{margin-top:10px}
+  .goal .week{display:flex;justify-content:center;gap:7px;margin-top:12px}
   .goal .week span{
     width:30px;height:30px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
@@ -330,7 +311,7 @@
   }
   .goal .week span.done{background:var(--green);color:#fff}
   .goal .week span.today{box-shadow:inset 0 0 0 1.5px var(--blue);color:var(--blue)}
-  .goal .streak{margin-top:10px}
+  .goal .streak{margin-top:8px}
   .goal .streak .line{
     border:none;background:none;padding:0;cursor:pointer;
     font-size:15px;color:var(--label);
@@ -338,19 +319,6 @@
   .goal .streak .line:active{opacity:.55}
   .goal .streak .line i{font-style:normal;color:var(--label3);margin-left:4px}
   .goal .streak .rec{margin-top:3px;font-size:14px;color:var(--label3)}
-  /* Экран невысокий (iPhone SE и всё, что 667 и ниже) — тот же ритм, но плотнее.
-     Главный экран должен помещаться целиком: цель, неделя и серия — одна мысль,
-     и прокручивать её по частям незачем. */
-  @media (max-height:720px){
-    main{padding-top:10px;padding-bottom:10px}
-    .composer,#textSec,.goal{padding-top:13px;padding-bottom:13px;margin-bottom:10px}
-    .goal{padding-top:14px}
-    .goal .lead{margin-bottom:10px}
-    .goal .gauge{max-width:178px}
-    .goal .go{margin-top:12px}
-    .goal .week{margin-top:12px}
-    .goal .streak{margin-top:8px}
-  }
 
   /* модалка прогресса: график и выводы по нему */
   .sheet{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center}
@@ -632,7 +600,7 @@
         <span class="an">Скриншот прикреплён — нажмите «Распознать»</span>
         <button class="x" id="attachClear" type="button" title="Убрать">&#10005;</button>
       </div>
-      <div class="hint">Несколько слов — через запятую.<br>Скриншот и длинный текст вставляйте прямо сюда.</div>
+      <div class="hint">Несколько слов — через запятую. Скриншот и длинный текст вставляйте прямо сюда.</div>
       <div id="preview"></div>
     </div>
 
