@@ -793,10 +793,18 @@ let syncedAt='';            // метка сервера: до какого мо
 let setDirty=false;         // настройки изменены и не отправлены
 
 const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,fav:false,rev:0};
+/* Оборот карточки — на языке интерфейса, если перевод для него есть. Слово и пример
+   по-португальски у карточки одни, меняется только перевод, перевод примера и заметка.
+   Пустая колонка значит «перевода ещё нет», а не «показать пусто»: у своих слов
+   украинского не будет никогда, у части колод — пока, и русский остаётся запасным. */
+const trOf=w=> uiLang==='uk'&&w.uk
+  ? {ru:w.uk, exru:w.exuk||w.exru, note:w.noteuk||w.note}
+  : {ru:w.ru, exru:w.exru, note:w.note};
 // Карточка — это слово колоды плюс личный прогресс, если он уже есть. own в конце
 // не случайно: слово, которое человек когда-то завёл сам, а потом оно попало в колоду,
 // принадлежит колоде — иначе его содержимое уехало бы на сервер как личное.
-const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,BLANK,p||{},{own:false});
+// trOf стоит после w и до p: переводом колоды подменяются поля колоды, но не личные.
+const join=(w,p)=>Object.assign({own:false,query:'',created:0},w,trOf(w),BLANK,p||{},{own:false});
 
 // Колода своих слов — единственная без строк в pt_words: её содержимое лежит
 // у каждого в личных карточках. В каталоге она есть, чтобы её можно было выключить.
@@ -995,6 +1003,19 @@ const UK={
   'Таке слово є у спільній колоді — картку прив’язано до нього',
 'Такое слово уже было — карточки объединены в «{w}»':'Таке слово вже було — картки об’єднано в «{w}»',
 'Обновлено: теперь «{w}»':'Оновлено: тепер «{w}»',
+
+/* части речи: список закрытый, поэтому переводится словарём, а не колонкой у слова */
+'сущ.':'ім.',
+'глаг.':'дієсл.',
+'прил.':'прикм.',
+'выраж.':'вислів',
+'нареч.':'присл.',
+'оборот':'зворот',
+'числ.':'числ.',
+'союз':'сполуч.',
+'предл.':'прийм.',
+'мест.':'займ.',
+'межд.':'виг.',
 
 /* темы словника */
 'Бытие':'Буття',
@@ -1256,6 +1277,19 @@ const EN={
   'That word already existed — the cards are merged into “{w}”',
 'Обновлено: теперь «{w}»':'Updated: now “{w}”',
 
+/* части речи: список закрытый, поэтому переводится словарём, а не колонкой у слова */
+'сущ.':'n.',
+'глаг.':'v.',
+'прил.':'adj.',
+'выраж.':'phrase',
+'нареч.':'adv.',
+'оборот':'idiom',
+'числ.':'num.',
+'союз':'conj.',
+'предл.':'prep.',
+'мест.':'pron.',
+'межд.':'interj.',
+
 /* темы словника */
 'Бытие':'Being',
 'Пространство':'Space',
@@ -1474,6 +1508,7 @@ function renderLangs(){
 function applyLang(){
   document.documentElement.lang=uiLang;
   paintStatic(); renderLangs(); paintDir(); paintGoal();
+  rebuild();          // оборот карточки зависит от языка, значит пересобираем колоду
   renderAttach(); renderPreview(); updateSelCount();
   renderStats(); renderCards(); renderDecks();
   renderWhoami(); renderSyncState();
@@ -1568,7 +1603,7 @@ function commitCards(fresh){
 const cardBody=c=>
   (cardLevel(c)?'<span class="lvl'+(/^[BC]/.test(cardLevel(c))?' hard':'')+'">'
                 +esc(cardLevel(c))+'</span>':'')+
-  '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(c.pos)+'</span>':'')+'</div>'+
+  '<div class="pt">'+esc(c.word)+(c.pos?'<span class="pos">'+esc(T(c.pos))+'</span>':'')+'</div>'+
   '<div class="ru">'+esc(c.ru)+'</div>'+
   (c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
   (c.note?'<div class="note">'+esc(c.note)+'</div>':'');
@@ -1638,13 +1673,17 @@ $('#addOne').onclick=async e=>{
 };
 /* ---------------- автоподсказки при вводе ---------------- */
 const deacc=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-let SUGGEST=null, SUGGEST_N=-1;         // пересобираем, когда колода доехала или доросла
+// пересобираем, когда колода доехала или доросла — и когда сменился язык:
+// в подсказке виден перевод, а он у языков разный
+let SUGGEST=null, SUGGEST_N='';
 function suggestPool(){
-  if(SUGGEST&&SUGGEST_N===deck.size) return SUGGEST;
-  SUGGEST=[]; SUGGEST_N=deck.size;
+  const ключ=deck.size+':'+uiLang;
+  if(SUGGEST&&SUGGEST_N===ключ) return SUGGEST;
+  SUGGEST=[]; SUGGEST_N=ключ;
   deck.forEach(w=>{
     if(!myDecks.has(w.deck)) return;
-    SUGGEST.push({w:w.word, lvl:w.level||'', tema:temaRu(w.tema), ru:w.ru, k:deacc(norm(w.word))});
+    SUGGEST.push({w:w.word, lvl:w.level||'', tema:T(temaRu(w.tema)), ru:trOf(w).ru,
+                  k:deacc(norm(w.word))});
   });
   return SUGGEST;
 }
@@ -2992,7 +3031,7 @@ function fromRow(r){
 }
 const wordRow=r=>({id:r.id, deck:r.deck_id, word:r.word, pos:r.pos||'', ru:r.ru||'',
   ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'', tema:r.tema||'',
-  sort:+r.sort||0});
+  sort:+r.sort||0, uk:r.uk||'', exuk:r.exuk||'', noteuk:r.noteuk||''});
 
 /* Проверка ответа была написана в каждом запросе подряд — вынесена сюда. ask() отдаёт
    сам ответ (нужен там, где читаются заголовки), askJSON() — уже разобранное тело. */
