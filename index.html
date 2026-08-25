@@ -513,16 +513,20 @@
   /* empty */
   .empty{text-align:center;color:var(--label2);padding:60px 20px;font-size:16px;line-height:1.5}
   .more{text-align:center;color:var(--label2);font-size:13px;padding:14px 0 4px}
-  /* выбор колод: строка на колоду, галка справа — то же, что в списке настроек iOS */
-  .deck{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;margin-bottom:8px;
+  /* Строка с галкой справа — то же, что в списке настроек iOS. Ею выбираются и колоды,
+     и язык; разница в том, что колоды все на виду, а язык свёрнут до выбранного. */
+  .deck,.lang{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;margin-bottom:8px;
         border:1px solid var(--sep);border-radius:12px;background:var(--group);cursor:pointer;
         font:inherit;color:var(--label);text-align:left}
-  .deck:last-child{margin-bottom:0}
-  .deck.on{border-color:var(--green);background:color-mix(in srgb, var(--green) 8%, transparent)}
-  .deck .t{flex:1;font-size:15px}
+  .deck:last-child,.lang:last-child{margin-bottom:0}
+  .deck.on,.lang.on{border-color:var(--green);background:color-mix(in srgb, var(--green) 8%, transparent)}
+  .deck .t,.lang .t{flex:1;font-size:15px}
   .deck .t i{display:block;font-style:normal;font-size:13px;color:var(--label2);margin-top:2px}
-  .deck .mark{width:22px;height:22px;color:var(--green)}
-  .deck .mark svg{width:22px;height:22px}
+  .deck .mark,.lang .mark{width:22px;height:22px;color:var(--green)}
+  .deck .mark svg,.lang .mark svg{width:22px;height:22px}
+  /* Свёрнутая строка — не выбор, а вход в список: шеврон серый и не спорит с зелёной галкой. */
+  .lang .mark.chev{color:var(--label3)}
+  .lang:active{opacity:.6}
   .empty svg{width:34px;height:34px;stroke:var(--label3);margin-bottom:12px}
   .empty .sub{margin-top:6px;font-size:14px;color:var(--label3)}
 
@@ -686,11 +690,7 @@
 
     <div class="sec">
       <span class="lbl" data-tr>Язык</span>
-      <div class="seg big" id="uiLang">
-        <button data-lang="ru" type="button">Русский</button>
-        <button data-lang="uk" type="button">Українська</button>
-        <button data-lang="en" type="button">English</button>
-      </div>
+      <div id="langList"></div>
       <div class="hint" data-tr>Язык приложения. Слова и переводы на карточках остаются как есть — колода общая.</div>
     </div>
 
@@ -848,6 +848,7 @@ const IC_DECK=SVG('<rect x="3.5" y="6.5" width="17" height="13" rx="2.5"/><path 
 const IC_STAR=SVG('<path d="M12 3.7l2.6 5.2 5.8.9-4.2 4 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4 5.8-.9z"/>');
 const IC_STAR_ON=IC_STAR.replace('fill="none"','fill="currentColor"');
 const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/>');
+const IC_CHEV=SVG('<path d="M7.5 10.5 12 15l4.5-4.5"/>');
 
 /* ---------------- язык интерфейса ----------------
    Ключ словаря — сама русская строка, как в gettext. Код от этого остаётся
@@ -1441,14 +1442,32 @@ function paintStatic(){
     if(o.aria!=null) el.setAttribute('aria-label',T(o.aria));
   });
 }
-function paintLangSeg(){
-  $$('#uiLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===uiLang));
+/* Языки интерфейса. Добавить язык — дописать сюда строку и словарь рядом с UK и EN;
+   больше нигде ничего. Название каждого языка написано на нём самом и не переводится:
+   человек ищет глазами «English», а не «Английский». */
+const UI_LANGS=[{id:'ru',name:'Русский'},{id:'uk',name:'Українська'},{id:'en',name:'English'}];
+let langOpen=false;
+/* Свёрнуто список показывает одну строку — выбранный язык с шевроном, и стоит ровно
+   столько же, сколько стоила полоска сегментов. Развёрнуто это обычный список с галкой,
+   как у колод. Сегменты держали три языка и переставали держать четыре: кнопки делят
+   ширину поровну, и на 320 px «Português» рядом с «Українська» уже не помещается. */
+function renderLangs(){
+  const box=$('#langList'); if(!box) return;
+  const rows=langOpen?UI_LANGS:UI_LANGS.filter(l=>l.id===uiLang);
+  box.innerHTML=rows.map(l=>{
+    const on=l.id===uiLang;
+    return '<button class="lang'+(on&&langOpen?' on':'')+'" data-lang="'+esc(l.id)+'" type="button"'+
+      (on?' aria-current="true" aria-expanded="'+langOpen+'"':'')+'>'+
+      '<span class="t" lang="'+esc(l.id)+'">'+esc(l.name)+'</span>'+
+      '<span class="mark'+(langOpen?'':' chev')+'">'+
+        (langOpen?(on?IC_DONE:''):IC_CHEV)+'</span></button>';
+  }).join('');
 }
 // Перерисовываем всё, что уже нарисовано: язык — не фильтр и не сортировка,
 // он меняет каждую подпись сразу.
 function applyLang(){
   document.documentElement.lang=uiLang;
-  paintStatic(); paintLangSeg(); paintGoal();
+  paintStatic(); renderLangs(); paintGoal();
   renderAttach(); renderPreview(); updateSelCount();
   renderStats(); renderCards(); renderDecks();
   renderWhoami(); renderSyncState();
@@ -2470,7 +2489,7 @@ $$('nav button').forEach(b=>b.onclick=()=>{
   const v=b.dataset.v; $('#v-'+v).classList.add('on');
   $('main').scrollTop=0;
   if(v==='cards') renderCards();
-  if(v==='set') renderDecks();
+  if(v==='set'){ langOpen=false; renderDecks(); renderLangs() }
   if(v==='study'){ buildQueue(); current=null; renderStudy(); }
 });
 
@@ -2726,14 +2745,21 @@ $('#statBody').onclick=e=>{
 };
 $('#statClose').onclick=closeStats;
 $('#statVeil').onclick=closeStats;
-document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeStats() });
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape') return;
+  closeStats();
+  if(langOpen){ langOpen=false; renderLangs() }
+});
 $('#goalPeek').onclick=openStats;
 $('#goalWeek').onclick=openStats;
 
 /* ---------------- settings ---------------- */
-$('#uiLang').onclick=e=>{
+$('#langList').onclick=e=>{
   const b=e.target.closest('button[data-lang]'); if(!b) return;
-  setLang(b.dataset.lang);
+  if(!langOpen){ langOpen=true; renderLangs(); return }   // свёрнутая строка — это вход в список
+  langOpen=false;
+  setLang(b.dataset.lang);   // язык мог не измениться, поэтому сворачиваем отдельной строкой
+  renderLangs();
 };
 $('#dir').onclick=e=>{
   const b=e.target.closest('button[data-d]'); if(!b) return;
