@@ -1595,12 +1595,12 @@
    "note": "ж. р."
   },
   {
-   "word": "o natal",
+   "word": "o Natal",
    "pos": "сущ.",
    "ru": "Рождество",
    "ex": "Passamos o Natal em família.",
    "exru": "Рождество мы проводим в кругу семьи.",
-   "note": "Пишется с большой: o Natal"
+   "note": ""
   },
   {
    "word": "o corredor",
@@ -2251,15 +2251,15 @@
    "note": "Для португальцев — материковая Португалия"
   },
   {
-   "word": "a europa",
+   "word": "a Europa",
    "pos": "сущ.",
    "ru": "Европа",
    "ex": "Portugal fica no sudoeste da Europa.",
    "exru": "Португалия находится на юго-западе Европы.",
-   "note": "Пишется с большой: a Europa"
+   "note": ""
   },
   {
-   "word": "a áfrica",
+   "word": "a África",
    "pos": "сущ.",
    "ru": "Африка",
    "ex": "Trabalhou dois anos em África.",
@@ -2267,15 +2267,15 @@
    "note": "Часто без артикля: em África"
   },
   {
-   "word": "a ásia",
+   "word": "a Ásia",
    "pos": "сущ.",
    "ru": "Азия",
    "ex": "Viajou pela Ásia durante meio ano.",
    "exru": "Он полгода путешествовал по Азии.",
-   "note": "Пишется с большой: a Ásia"
+   "note": ""
   },
   {
-   "word": "a américa",
+   "word": "a América",
    "pos": "сущ.",
    "ru": "Америка",
    "ex": "Tem família na América do Sul.",
@@ -2795,12 +2795,12 @@
    "note": "Пишется с большой: o Carnaval"
   },
   {
-   "word": "a páscoa",
+   "word": "a Páscoa",
    "pos": "сущ.",
    "ru": "Пасха",
    "ex": "Na Páscoa come-se o folar.",
    "exru": "На Пасху едят фолар.",
-   "note": "Пишется с большой: a Páscoa"
+   "note": ""
   },
   {
    "word": "o século",

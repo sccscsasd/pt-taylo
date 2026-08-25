@@ -1523,7 +1523,7 @@
    "note": "Мн. ч.: as religiões"
   },
   {
-   "word": "deus",
+   "word": "Deus",
    "pos": "сущ.",
    "ru": "бог",
    "ex": "Graças a Deus, correu tudo bem.",
@@ -3659,12 +3659,12 @@
    "note": "meio quilo — полкило"
   },
   {
-   "word": "a grama",
+   "word": "o grama",
    "pos": "сущ.",
    "ru": "грамм",
-   "ex": "Precisa de duzentas gramas de farinha.",
+   "ex": "Precisa de duzentos gramas de farinha.",
    "exru": "Нужно двести граммов муки.",
-   "note": "Разговорно ж. р.; в мерах — o grama"
+   "note": "В разговоре часто ж. р.: duzentas gramas"
   },
   {
    "word": "o litro",
