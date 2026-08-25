@@ -971,22 +971,6 @@
    "note": "Синоним mandar"
   },
   {
-   "word": "o fax",
-   "pos": "сущ.",
-   "ru": "факс",
-   "ex": "O escritório ainda tem fax.",
-   "exru": "В офисе ещё есть факс.",
-   "note": "м. р."
-  },
-  {
-   "word": "mandar um fax",
-   "pos": "выраж.",
-   "ru": "отправить факс",
-   "ex": "Tem de mandar um fax para as finanças.",
-   "exru": "Нужно отправить факс в налоговую.",
-   "note": "mandar = enviar"
-  },
-  {
    "word": "a internet",
    "pos": "сущ.",
    "ru": "интернет",

@@ -803,16 +803,6 @@
    "tema": "A4"
   },
   {
-   "word": "a antevéspera",
-   "pos": "сущ.",
-   "level": "C1",
-   "ru": "канун кануна, за два дня до",
-   "ex": "Chegámos na antevéspera do casamento para ajudar.",
-   "exru": "Мы приехали за два дня до свадьбы, чтобы помочь.",
-   "note": "anteontem — позавчера, antevéspera — за два дня до события",
-   "tema": "A4"
-  },
-  {
    "word": "o adiamento",
    "pos": "сущ.",
    "level": "C1",
@@ -9283,16 +9273,6 @@
    "tema": "A8"
   },
   {
-   "word": "ter macaquinhos no sótão",
-   "pos": "оборот",
-   "level": "C1",
-   "ru": "иметь странности в голове",
-   "ex": "Anda com macaquinhos no sótão desde o divórcio.",
-   "exru": "После развода у него не всё в порядке с головой.",
-   "note": "",
-   "tema": "A8"
-  },
-  {
    "word": "estar nas suas sete quintas",
    "pos": "оборот",
    "level": "C1",
@@ -9521,26 +9501,6 @@
    "exru": "Я согласился сразу, не раздумывая.",
    "note": "Разговорное",
    "tema": "A9"
-  },
-  {
-   "word": "ir com os porcos",
-   "pos": "оборот",
-   "level": "C1",
-   "ru": "отправиться на тот свет",
-   "ex": "Se continuar assim, vai com os porcos cedo.",
-   "exru": "Если так пойдёт, он рано отправится на тот свет.",
-   "note": "Разговорное и грубоватое",
-   "tema": "A1"
-  },
-  {
-   "word": "dar uma no cravo e outra na ferradura",
-   "pos": "оборот",
-   "level": "C1",
-   "ru": "и нашим и вашим",
-   "ex": "Dá uma no cravo e outra na ferradura.",
-   "exru": "Он и нашим и вашим.",
-   "note": "",
-   "tema": "A7"
   },
   {
    "word": "a hiperligação",

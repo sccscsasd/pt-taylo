@@ -1513,16 +1513,6 @@
    "tema": "B8"
   },
   {
-   "word": "a bruxa",
-   "pos": "сущ.",
-   "level": "B1",
-   "ru": "ведьма",
-   "ex": "A história infantil fala de uma bruxa má.",
-   "exru": "Детская сказка рассказывает о злой ведьме.",
-   "note": "",
-   "tema": "B4"
-  },
-  {
    "word": "burocrático",
    "pos": "прил.",
    "level": "B1",
@@ -2433,16 +2423,6 @@
    "tema": "B1"
   },
   {
-   "word": "o dragão",
-   "pos": "сущ.",
-   "level": "B1",
-   "ru": "дракон",
-   "ex": "O escudo da cidade tem um dragão verde.",
-   "exru": "На гербе города изображён зелёный дракон.",
-   "note": "",
-   "tema": "B4"
-  },
-  {
    "word": "duplo",
    "pos": "прил.",
    "level": "B1",
@@ -3021,16 +3001,6 @@
    "exru": "Тот парень работает в магазине на углу.",
    "note": "Разговорное, чисто португальское",
    "tema": "B1"
-  },
-  {
-   "word": "o gigante",
-   "pos": "сущ.",
-   "level": "B1",
-   "ru": "великан",
-   "ex": "O conto fala de um gigante que vivia na montanha.",
-   "exru": "В сказке говорится о великане, жившем в горах.",
-   "note": "",
-   "tema": "B4"
   },
   {
    "word": "gozar",
@@ -4191,16 +4161,6 @@
    "exru": "Моя дочь учится в начальной школе.",
    "note": "",
    "tema": "A4"
-  },
-  {
-   "word": "a princesa",
-   "pos": "сущ.",
-   "level": "B1",
-   "ru": "принцесса",
-   "ex": "A lenda fala de uma princesa presa na torre.",
-   "exru": "Легенда рассказывает о принцессе, запертой в башне.",
-   "note": "",
-   "tema": "B4"
   },
   {
    "word": "o prisioneiro",
