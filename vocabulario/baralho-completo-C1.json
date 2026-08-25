@@ -6081,6 +6081,3866 @@
    "exru": "Мне выдали кредит-ноту вместо денег.",
    "note": "",
    "tema": "B7"
+  },
+  {
+   "word": "a carta de vinhos",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "винная карта",
+   "ex": "Pediu a carta de vinhos ao empregado de mesa.",
+   "exru": "Он попросил у официанта винную карту.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o couvert",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "закуски, поданные до заказа",
+   "ex": "O couvert paga-se à parte se for consumido.",
+   "exru": "Закуски на столе оплачиваются отдельно, если их ели.",
+   "note": "Можно вернуть нетронутым и не платить",
+   "tema": "B8"
+  },
+  {
+   "word": "o prato do dia",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "блюдо дня",
+   "ex": "O prato do dia hoje é bacalhau assado.",
+   "exru": "Блюдо дня сегодня — запечённая треска.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a especialidade da casa",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "фирменное блюдо заведения",
+   "ex": "A especialidade da casa é o cabrito no forno.",
+   "exru": "Фирменное блюдо здесь — козлёнок в печи.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a meia-dose",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "полпорции",
+   "ex": "Uma meia-dose chega perfeitamente para mim ao almoço.",
+   "exru": "Полпорции мне вполне хватит.",
+   "note": "В Португалии полпорции заказывают повсеместно",
+   "tema": "B8"
+  },
+  {
+   "word": "a guarnição",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "гарнир",
+   "ex": "A carne vem com guarnição de legumes salteados.",
+   "exru": "Мясо подаётся с гарниром из обжаренных овощей.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a marinada",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "маринад",
+   "ex": "A carne ficou na marinada desde ontem à noite.",
+   "exru": "Мясо мариновалось со вчерашнего вечера.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a salmoura",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "рассол",
+   "ex": "As azeitonas ficam em salmoura durante semanas.",
+   "exru": "Оливки держат в рассоле неделями.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o refogado",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "зажарка из лука и чеснока на оливковом масле",
+   "ex": "Quase toda a cozinha portuguesa começa com um refogado.",
+   "exru": "Почти вся португальская кухня начинается с зажарки.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o grelhado na brasa",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "приготовленное на углях",
+   "ex": "O peixe grelhado na brasa é a especialidade aqui.",
+   "exru": "Рыба на углях — здешняя фирменная еда.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a fervura",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "кипение",
+   "ex": "Deixe levantar fervura e baixe o lume.",
+   "exru": "Доведите до кипения и убавьте огонь.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a levedura",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "дрожжи",
+   "ex": "A levedura faz a massa crescer em duas horas.",
+   "exru": "Дрожжи поднимают тесто за два часа.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a côdea",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "хлебная корка",
+   "ex": "Gosto mais da côdea do que do miolo.",
+   "exru": "Корка мне нравится больше мякиша.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o miolo do pão",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "хлебный мякиш",
+   "ex": "Tirou o miolo do pão para fazer açorda.",
+   "exru": "Он вынул мякиш, чтобы приготовить асорду.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o cozido à portuguesa",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "варёное мясо с овощами по-португальски",
+   "ex": "O cozido à portuguesa aquece qualquer domingo de inverno.",
+   "exru": "Косиду по-португальски согреет любое зимнее воскресенье.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a francesinha",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "сэндвич франсезинья под острым соусом",
+   "ex": "A francesinha é o prato mais conhecido do Porto.",
+   "exru": "Франсезинья — самое известное блюдо Порту.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a alheira",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "колбаска альейра из птицы и хлеба",
+   "ex": "A alheira é servida com batata frita e ovo.",
+   "exru": "Альейру подают с картошкой фри и яйцом.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o enchido",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "колбасное изделие",
+   "ex": "Comprámos enchidos fumados numa loja da aldeia.",
+   "exru": "Мы купили копчёные колбаски в деревенской лавке.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a farinheira",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "мучная колбаска",
+   "ex": "A farinheira leva farinha, gordura e temperos.",
+   "exru": "Фариньейра делается из муки, жира и специй.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o presunto",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "вяленый окорок",
+   "ex": "O presunto de Barrancos é muito apreciado aqui.",
+   "exru": "Окорок из Барранкуша здесь очень ценят.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a tasca",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "простая недорогая забегаловка",
+   "ex": "Almoçámos numa tasca barata perto do mercado.",
+   "exru": "Мы пообедали в дешёвой закусочной у рынка.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a marisqueira",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "ресторан морепродуктов",
+   "ex": "Fomos a uma marisqueira comer amêijoas e gambas.",
+   "exru": "Мы пошли в марискейру есть моллюсков и креветок.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a churrasqueira",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "гриль-закусочная навынос",
+   "ex": "Trouxemos frango da churrasqueira para o jantar.",
+   "exru": "Мы взяли курицу-гриль на ужин.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o vinho verde",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "молодое «зелёное» вино",
+   "ex": "O vinho verde é leve e bebe-se bem fresco.",
+   "exru": "Зелёное вино лёгкое и пьётся холодным.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o vinho do Porto",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "портвейн",
+   "ex": "Um cálice de vinho do Porto ao fim da refeição.",
+   "exru": "Рюмка портвейна в конце трапезы.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a ginjinha",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "вишнёвая наливка",
+   "ex": "Bebemos uma ginjinha num copinho de chocolate.",
+   "exru": "Мы выпили жинжинью из шоколадной стопочки.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a imperial",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "маленький бокал разливного пива",
+   "ex": "Traga-me uma imperial bem fresca, por favor.",
+   "exru": "Принесите мне холодного разливного пива, пожалуйста.",
+   "note": "В Порту то же самое называют fino",
+   "tema": "B8"
+  },
+  {
+   "word": "o galão",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "кофе с молоком в высоком стакане",
+   "ex": "Ao pequeno-almoço bebe sempre um galão claro.",
+   "exru": "На завтрак он всегда пьёт светлый галан.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o garoto",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "маленький кофе с молоком",
+   "ex": "Depois do almoço peço quase sempre um garoto.",
+   "exru": "После обеда я почти всегда прошу гароту.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a meia de leite",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "кофе с молоком в чашке",
+   "ex": "Uma meia de leite e uma torrada, faz favor.",
+   "exru": "Кофе с молоком и гренку, пожалуйста.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a bifana",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "сэндвич со свининой",
+   "ex": "Comeu uma bifana no pão com mostarda.",
+   "exru": "Он съел бифану с горчицей.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o bitoque",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "стейк с яйцом и картошкой",
+   "ex": "O bitoque vem com ovo estrelado e batatas.",
+   "exru": "Битоке подают с глазуньей и картошкой.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o pastel de nata",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пирожное с заварным кремом",
+   "ex": "Não há visita a Lisboa sem pastel de nata.",
+   "exru": "Визит в Лиссабон немыслим без паштел-де-наты.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o bolo-rei",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "рождественский кекс с цукатами",
+   "ex": "O bolo-rei aparece nas montras já em novembro.",
+   "exru": "Королевский кекс появляется на витринах уже в ноябре.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o caldo verde",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "суп из капусты с колбаской",
+   "ex": "O caldo verde leva couve, batata, azeite e chouriço.",
+   "exru": "Калду верде готовят из капусты, картофеля и колбаски.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o bacalhau à Brás",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "треска с картофелем и яйцом",
+   "ex": "O bacalhau à Brás é fácil de fazer em casa.",
+   "exru": "Треску по-брашски легко приготовить дома.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "o leitão",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "молочный поросёнок",
+   "ex": "O leitão da Bairrada come-se com laranja.",
+   "exru": "Поросёнка из Байррады едят с апельсином.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a casta",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "сорт винограда",
+   "ex": "Esta casta só se cultiva no vale do Douro.",
+   "exru": "Этот сорт растёт только в долине Дору.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a adega",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "винодельня, винный погреб",
+   "ex": "Visitámos uma adega e provámos quatro vinhos.",
+   "exru": "Мы посетили винодельню и попробовали четыре вина.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a colheita",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "урожай, год сбора винограда",
+   "ex": "É um tinto de uma colheita excelente.",
+   "exru": "Это красное отличного года.",
+   "note": "",
+   "tema": "B8"
+  },
+  {
+   "word": "a garrafeira",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "выдержанное вино высшей категории",
+   "ex": "Guardou uma garrafeira de mil novecentos e noventa.",
+   "exru": "Он хранит гаррафейру девяностого года.",
+   "note": "Так же называют винный магазин или погреб",
+   "tema": "B8"
+  },
+  {
+   "word": "a repartição de finanças",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "налоговая инспекция",
+   "ex": "Foi à repartição de finanças tratar do imposto.",
+   "exru": "Он пошёл в налоговую разбираться с налогом.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o balcão de atendimento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "окно обслуживания",
+   "ex": "O balcão de atendimento fecha às quatro da tarde.",
+   "exru": "Окно приёма закрывается в четыре часа.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o funcionário público",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "государственный служащий",
+   "ex": "É funcionário público há mais de vinte anos.",
+   "exru": "Он госслужащий больше двадцати лет.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a burocracia",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "бюрократия",
+   "ex": "A burocracia atrasa qualquer processo neste país.",
+   "exru": "Бюрократия тормозит в этой стране любое дело.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a procuração",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "доверенность",
+   "ex": "Passou uma procuração ao irmão para vender a casa.",
+   "exru": "Он выдал брату доверенность на продажу дома.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a autenticação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "заверение документа",
+   "ex": "A autenticação do documento faz-se no notário.",
+   "exru": "Документ заверяют у нотариуса.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a morada fiscal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "адрес для налоговых целей",
+   "ex": "Alterou a morada fiscal depois da mudança.",
+   "exru": "После переезда он сменил налоговый адрес.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o número de identificação fiscal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "налоговый номер",
+   "ex": "Pedem sempre o número de identificação fiscal na compra.",
+   "exru": "При покупке всегда спрашивают налоговый номер.",
+   "note": "В обиходе — NIF или número de contribuinte",
+   "tema": "B9"
+  },
+  {
+   "word": "a senha de atendimento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "талон электронной очереди",
+   "ex": "Tire uma senha de atendimento à entrada.",
+   "exru": "Возьмите талон очереди на входе.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o agendamento prévio",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "предварительная запись",
+   "ex": "O serviço só funciona com agendamento prévio.",
+   "exru": "Служба работает только по предварительной записи.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o emolumento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пошлина за оформление",
+   "ex": "Os emolumentos da certidão custam vinte euros.",
+   "exru": "Пошлина за справку — двадцать евро.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o provedor",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "омбудсмен, защитник прав",
+   "ex": "Apresentou uma queixa ao Provedor de Justiça.",
+   "exru": "Он подал жалобу омбудсмену.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a junta de freguesia",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "совет прихода, низовая власть",
+   "ex": "A junta de freguesia emite o atestado de residência.",
+   "exru": "Совет прихода выдаёт справку о месте жительства.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a assembleia municipal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "муниципальное собрание",
+   "ex": "A assembleia municipal aprovou o orçamento para o ano.",
+   "exru": "Муниципальное собрание утвердило бюджет на год.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o vereador",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "член городского совета",
+   "ex": "O vereador do urbanismo respondeu às perguntas.",
+   "exru": "Советник по градостроительству ответил на вопросы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o plenário",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пленарное заседание",
+   "ex": "O plenário da assembleia reúne-se todas as quintas-feiras.",
+   "exru": "Пленарное заседание собрания проходит по четвергам.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o mandato",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "срок полномочий",
+   "ex": "O mandato do presidente termina no próximo ano.",
+   "exru": "Срок полномочий президента истекает в следующем году.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a moção",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "резолюция на голосование",
+   "ex": "A moção de censura não foi aprovada.",
+   "exru": "Вотум недоверия не прошёл.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o decreto-lei",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "декрет-закон правительства",
+   "ex": "O decreto-lei entra em vigor no primeiro de janeiro.",
+   "exru": "Декрет-закон вступает в силу первого января.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o diploma legal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "законодательный акт",
+   "ex": "O novo diploma legal altera as regras do arrendamento.",
+   "exru": "Новый акт меняет правила аренды.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o indeferimento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "отказ по заявлению",
+   "ex": "Recebeu o indeferimento do pedido por falta de documentos.",
+   "exru": "Ему отказали в заявлении из-за нехватки документов.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o deferimento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "удовлетворение заявления",
+   "ex": "O deferimento do processo demorou apenas duas semanas.",
+   "exru": "Заявление удовлетворили всего за две недели.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a alçada",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "круг полномочий",
+   "ex": "O assunto não é da alçada desta câmara.",
+   "exru": "Этот вопрос не в компетенции мэрии.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a jurisdição",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "юрисдикция",
+   "ex": "O caso está fora da jurisdição do tribunal local.",
+   "exru": "Дело вне юрисдикции местного суда.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o litígio",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "судебная тяжба",
+   "ex": "O litígio entre vizinhos dura há cinco anos.",
+   "exru": "Тяжба между соседями длится пять лет.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o acórdão",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "постановление коллегии суда",
+   "ex": "O acórdão do tribunal foi conhecido esta manhã.",
+   "exru": "Постановление суда стало известно сегодня утром.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a sentença",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "приговор, судебное решение",
+   "ex": "A sentença ainda pode ser objeto de recurso.",
+   "exru": "Приговор ещё можно обжаловать.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a coima",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "административный штраф",
+   "ex": "A coima varia entre cem e mil euros.",
+   "exru": "Штраф составляет от ста до тысячи евро.",
+   "note": "a multa — штраф вообще, a coima — по административному делу",
+   "tema": "B9"
+  },
+  {
+   "word": "a impunidade",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "безнаказанность",
+   "ex": "A impunidade destes crimes revolta a população.",
+   "exru": "Безнаказанность таких преступлений возмущает людей.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o suborno",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "взятка",
+   "ex": "Foi detido por suborno a um funcionário público.",
+   "exru": "Его задержали за взятку госслужащему.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a fraude fiscal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "налоговое мошенничество",
+   "ex": "A fraude fiscal é punida com pena de prisão.",
+   "exru": "Налоговое мошенничество карается тюремным сроком.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a auditoria",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "аудит, проверка отчётности",
+   "ex": "A auditoria revelou falhas graves nas contas.",
+   "exru": "Аудит выявил серьёзные нарушения в отчётности.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a fiscalização",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "надзор, инспектирование",
+   "ex": "A fiscalização das obras foi feita sem aviso.",
+   "exru": "Проверку работ провели без предупреждения.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a evasão fiscal",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "уклонение от налогов",
+   "ex": "A evasão fiscal custa milhões ao Estado.",
+   "exru": "Уклонение от налогов стоит государству миллионы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o arguido",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "обвиняемый по делу",
+   "ex": "O arguido não prestou declarações no tribunal.",
+   "exru": "Обвиняемый не стал давать показания в суде.",
+   "note": "Процессуальный статус в португальском праве",
+   "tema": "B9"
+  },
+  {
+   "word": "a queixa-crime",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "заявление о преступлении",
+   "ex": "Apresentou uma queixa-crime contra o seu antigo sócio.",
+   "exru": "Он подал заявление о преступлении против бывшего партнёра.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o advogado de defesa",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "адвокат защиты",
+   "ex": "O advogado de defesa pediu a absolvição do cliente.",
+   "exru": "Адвокат защиты просил оправдать клиента.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o tribunal de recurso",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "апелляционный суд",
+   "ex": "O caso subiu ao tribunal de recurso em maio.",
+   "exru": "В мае дело дошло до апелляционного суда.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a pena suspensa",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "условный срок",
+   "ex": "Recebeu uma pena suspensa de dois anos.",
+   "exru": "Он получил два года условно.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a prescrição do crime",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "истечение срока давности",
+   "ex": "A prescrição do crime impediu qualquer condenação.",
+   "exru": "Истечение давности не позволило вынести приговор.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o cadastro",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "судимость, учёт правонарушений",
+   "ex": "Não tem cadastro nem antecedentes de qualquer tipo.",
+   "exru": "У него нет ни судимостей, ни приводов.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o sigilo profissional",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "профессиональная тайна",
+   "ex": "O médico invocou sigilo profissional e não respondeu.",
+   "exru": "Врач сослался на профессиональную тайну и не ответил.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a proteção de dados",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "защита персональных данных",
+   "ex": "A proteção de dados obriga a pedir consentimento.",
+   "exru": "Защита данных требует запрашивать согласие.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o recenseamento eleitoral",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "учёт избирателей",
+   "ex": "O recenseamento eleitoral é automático para os residentes.",
+   "exru": "Учёт избирателей для жителей происходит автоматически.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a abstenção",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "неявка на выборы",
+   "ex": "A abstenção foi a mais alta dos últimos anos.",
+   "exru": "Неявка оказалась самой высокой за последние годы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o boletim de voto",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "избирательный бюллетень",
+   "ex": "Dobre o boletim de voto antes de o colocar.",
+   "exru": "Сложите бюллетень, прежде чем опустить его.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o escrutínio",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "подсчёт голосов",
+   "ex": "O escrutínio decorreu sem qualquer incidente digno de nota.",
+   "exru": "Подсчёт голосов прошёл без происшествий.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a maioria absoluta",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "абсолютное большинство",
+   "ex": "O partido conseguiu maioria absoluta no parlamento.",
+   "exru": "Партия получила абсолютное большинство в парламенте.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a coligação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "коалиция",
+   "ex": "A coligação entre os dois partidos durou pouco.",
+   "exru": "Коалиция двух партий продержалась недолго.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a oposição",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "оппозиция",
+   "ex": "A oposição pediu explicações urgentes ao ministro da tutela.",
+   "exru": "Оппозиция потребовала объяснений от министра.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o orçamento do Estado",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "государственный бюджет",
+   "ex": "O orçamento do Estado é discutido em outubro.",
+   "exru": "Госбюджет обсуждают в октябре.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a dívida pública",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "государственный долг",
+   "ex": "A dívida pública desceu ligeiramente no último ano.",
+   "exru": "Госдолг за последний год немного снизился.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a austeridade",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "жёсткая экономия",
+   "ex": "Os anos de austeridade deixaram marcas profundas.",
+   "exru": "Годы жёсткой экономии оставили глубокий след.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o subsídio de desemprego",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пособие по безработице",
+   "ex": "O subsídio de desemprego dura conforme os descontos feitos.",
+   "exru": "Пособие по безработице платят по длительности отчислений.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o abono de família",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "детское пособие",
+   "ex": "O abono de família depende do rendimento do agregado.",
+   "exru": "Детское пособие зависит от дохода семьи.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a pensão de reforma",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пенсия по старости",
+   "ex": "A pensão de reforma mal chega para as despesas.",
+   "exru": "Пенсии едва хватает на расходы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "o salário mínimo nacional",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "минимальная зарплата",
+   "ex": "O salário mínimo nacional voltou a subir em janeiro.",
+   "exru": "Минимальная зарплата снова выросла в январе.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a greve geral",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "всеобщая забастовка",
+   "ex": "A greve geral parou o país durante um dia.",
+   "exru": "Всеобщая забастовка остановила страну на день.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a negociação coletiva",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "коллективные переговоры",
+   "ex": "A negociação coletiva ficou suspensa até ao verão.",
+   "exru": "Коллективные переговоры приостановлены до лета.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "abarcar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "охватывать, вмещать в себя",
+   "ex": "O estudo abarca um período de trinta anos.",
+   "exru": "Исследование охватывает период в тридцать лет.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "acarretar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "влечь за собой",
+   "ex": "A decisão acarreta custos que ninguém previu.",
+   "exru": "Решение влечёт расходы, которых никто не предвидел.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "acatar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подчиняться указанию",
+   "ex": "A empresa acatou a decisão do tribunal.",
+   "exru": "Компания подчинилась решению суда.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "acautelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "предусмотреть заранее, подстраховаться",
+   "ex": "Convém acautelar os riscos antes de assinar.",
+   "exru": "Стоит предусмотреть риски до подписания.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "aferir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выверять, оценивать по мерке",
+   "ex": "É difícil aferir o impacto real da medida.",
+   "exru": "Трудно оценить настоящий эффект меры.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "agilizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ускорять и упрощать процесс",
+   "ex": "O novo sistema veio agilizar os pagamentos.",
+   "exru": "Новая система ускорила платежи.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "almejar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "стремиться, желать достичь",
+   "ex": "Almeja um lugar na direção da empresa.",
+   "exru": "Он метит на место в руководстве компании.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "angariar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "привлекать средства или сторонников",
+   "ex": "Angariaram fundos para reconstruir a escola da aldeia.",
+   "exru": "Они собрали средства на восстановление школы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "antever",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "предвидеть",
+   "ex": "Ninguém antevia uma reação tão dura do público.",
+   "exru": "Никто не предвидел такой жёсткой реакции.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "apaziguar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "унимать, успокаивать",
+   "ex": "Tentou apaziguar os ânimos com uma piada.",
+   "exru": "Он попытался разрядить обстановку шуткой.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "aprimorar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "оттачивать, доводить до совершенства",
+   "ex": "Aprimorou a técnica ao longo de vários anos.",
+   "exru": "Он оттачивал технику несколько лет.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "apurar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выяснять, устанавливать точно",
+   "ex": "A polícia ainda apura as causas do incêndio.",
+   "exru": "Полиция ещё устанавливает причины пожара.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "arrecadar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "собирать деньги или налоги",
+   "ex": "O Estado arrecadou mais impostos este ano.",
+   "exru": "Государство собрало больше налогов в этом году.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "atenuar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "смягчать, ослаблять",
+   "ex": "As medidas vieram atenuar o impacto da subida.",
+   "exru": "Меры смягчили последствия подорожания.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "auferir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "получать доход",
+   "ex": "Aufere um salário bastante acima da média.",
+   "exru": "Он получает зарплату заметно выше средней.",
+   "note": "Официальное слово, из деклараций и законов",
+   "tema": "B7"
+  },
+  {
+   "word": "colmatar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "восполнять пробел",
+   "ex": "É preciso colmatar as falhas do sistema.",
+   "exru": "Нужно закрыть пробелы в системе.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "conceber",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "задумывать, мыслить себе",
+   "ex": "Não consigo conceber uma solução melhor do que esta.",
+   "exru": "Я не могу вообразить решения лучше этого.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "consagrar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "закреплять как признанное; посвящать",
+   "ex": "A Constituição consagra o direito à habitação.",
+   "exru": "Конституция закрепляет право на жильё.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "contemplar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "предусматривать в документе",
+   "ex": "A lei contempla exceções para casos especiais.",
+   "exru": "Закон предусматривает исключения для особых случаев.",
+   "note": "Есть и прямое значение — созерцать",
+   "tema": "B9"
+  },
+  {
+   "word": "contornar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обходить препятствие",
+   "ex": "Arranjou maneira de contornar a dificuldade sem discutir.",
+   "exru": "Он нашёл способ обойти сложность.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "custear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "оплачивать расходы",
+   "ex": "A empresa custeia a formação dos empregados.",
+   "exru": "Компания оплачивает обучение сотрудников.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "debelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "побороть, подавить болезнь или кризис",
+   "ex": "Foi difícil debelar a epidemia naquela região.",
+   "exru": "Побороть эпидемию в том регионе было трудно.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "declinar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отклонять предложение",
+   "ex": "Declinou o convite com muita educação e sem explicações.",
+   "exru": "Он вежливо отклонил приглашение.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "delinear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "намечать в общих чертах",
+   "ex": "Delineou o plano numa folha de papel.",
+   "exru": "Он набросал план на листе бумаги.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "demarcar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "размежёвывать, обозначать границы",
+   "ex": "Demarcaram o terreno com estacas de madeira.",
+   "exru": "Участок разметили деревянными колышками.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "denotar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выдавать, свидетельствовать о",
+   "ex": "O gesto denota alguma impaciência da parte dele.",
+   "exru": "Жест выдаёт некоторое нетерпение с его стороны.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "desencadear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "запускать цепь событий",
+   "ex": "A notícia desencadeou uma onda de protestos.",
+   "exru": "Новость вызвала волну протестов.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "descurar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "запускать, оставлять без внимания",
+   "ex": "Descurou a saúde durante anos de trabalho.",
+   "exru": "За годы работы он запустил здоровье.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "desmantelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ликвидировать сеть или схему",
+   "ex": "A polícia desmantelou uma rede de contrabando.",
+   "exru": "Полиция ликвидировала контрабандную сеть.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "despistar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выявлять на ранней стадии; сбивать со следа",
+   "ex": "O exame serve para despistar a doença cedo.",
+   "exru": "Обследование нужно, чтобы выявить болезнь рано.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "desvirtuar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "искажать смысл",
+   "ex": "A citação fora de contexto desvirtua a ideia.",
+   "exru": "Цитата вне контекста искажает мысль.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "difundir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "распространять сведения",
+   "ex": "A rádio difundiu a notícia logo pela manhã.",
+   "exru": "Радио разнесло новость с самого утра.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "diligenciar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "хлопотать, предпринимать шаги",
+   "ex": "Diligenciou junto da câmara para acelerar o processo.",
+   "exru": "Он хлопотал в мэрии, чтобы ускорить дело.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "dirimir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "разрешать спор",
+   "ex": "Cabe ao tribunal dirimir este tipo de conflitos.",
+   "exru": "Разрешать такие споры — дело суда.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "dissipar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "рассеивать сомнения или туман",
+   "ex": "A explicação dissipou todas as dúvidas dos presentes.",
+   "exru": "Объяснение рассеяло все сомнения присутствующих.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "dissuadir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отговаривать",
+   "ex": "Tentámos dissuadi-lo de vender a casa dos pais.",
+   "exru": "Мы пытались отговорить его продавать дом.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "divergir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "расходиться во мнениях",
+   "ex": "Os dois relatórios divergem em pontos essenciais.",
+   "exru": "Два отчёта расходятся в существенных пунктах.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "encabeçar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "идти во главе списка или движения",
+   "ex": "Encabeça a lista de candidatos ao cargo.",
+   "exru": "Он возглавляет список кандидатов на должность.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "encetar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "начинать, приступать",
+   "ex": "Encetaram negociações difíceis ainda no mês passado.",
+   "exru": "Переговоры начались ещё в прошлом месяце.",
+   "note": "Книжное; в речи — começar",
+   "tema": "A4"
+  },
+  {
+   "word": "enquadrar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "вписывать в рамки, относить к категории",
+   "ex": "O caso enquadra-se numa categoria muito rara.",
+   "exru": "Случай попадает в очень редкую категорию.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "entravar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "чинить препятствия",
+   "ex": "A falta de verbas entravou a obra.",
+   "exru": "Нехватка средств застопорила стройку.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "enveredar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "податься куда-то, избрать путь",
+   "ex": "Enveredou por uma carreira completamente diferente da anterior.",
+   "exru": "Он подался в совершенно другую профессию.",
+   "note": "Требует por: enveredar por",
+   "tema": "A1"
+  },
+  {
+   "word": "equacionar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "рассматривать вопрос во всех составляющих",
+   "ex": "A direção está a equacionar novas contratações.",
+   "exru": "Руководство рассматривает вопрос о новых сотрудниках.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "erradicar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "искоренить",
+   "ex": "Erradicar a doença exigiu décadas de vacinação.",
+   "exru": "Искоренение болезни потребовало десятилетий прививок.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "escamotear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "утаивать, ловко подменять",
+   "ex": "O relatório escamoteia os dados mais incómodos.",
+   "exru": "Отчёт замалчивает самые неудобные данные.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "escrutinar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "дотошно изучать",
+   "ex": "A imprensa escrutina cada palavra do ministro.",
+   "exru": "Пресса разбирает каждое слово министра.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "espoletar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "послужить спусковым крючком",
+   "ex": "O aumento dos preços espoletou a contestação.",
+   "exru": "Рост цен спровоцировал протесты.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "estipular",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "устанавливать условие договора",
+   "ex": "O contrato estipula um prazo de trinta dias.",
+   "exru": "Договор устанавливает срок в тридцать дней.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "exacerbar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обострять",
+   "ex": "A resposta do governo exacerbou o descontentamento.",
+   "exru": "Ответ правительства обострил недовольство.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "exortar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "призывать, увещевать",
+   "ex": "Exortou os colegas a manterem a calma.",
+   "exru": "Он призвал коллег сохранять спокойствие.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "extrapolar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "переносить выводы за пределы данных",
+   "ex": "Não se pode extrapolar a partir de tão poucos casos.",
+   "exru": "Нельзя делать общие выводы из столь малого числа случаев.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "facultar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "предоставлять доступ или сведения",
+   "ex": "A empresa facultou todos os documentos pedidos.",
+   "exru": "Компания предоставила все запрошенные документы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "fomentar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "поощрять, способствовать развитию",
+   "ex": "O programa fomenta o emprego nas zonas rurais.",
+   "exru": "Программа способствует занятости в сельской местности.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "fragilizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ослаблять, делать уязвимым",
+   "ex": "A crise fragilizou muitas das pequenas empresas locais.",
+   "exru": "Кризис ослабил множество малых предприятий.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "galgar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "перемахнуть, преодолеть скачком",
+   "ex": "Galgou o muro num salto e desapareceu.",
+   "exru": "Он перемахнул стену одним прыжком и исчез.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "granjear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "снискать уважение или славу",
+   "ex": "Granjeou o respeito de toda a comunidade científica.",
+   "exru": "Он снискал уважение всего научного сообщества.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "grassar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "свирепствовать о болезни или явлении",
+   "ex": "A gripe grassou no país durante todo o inverno.",
+   "exru": "Грипп свирепствовал в стране всю зиму.",
+   "note": "",
+   "tema": "B6"
+  },
+  {
+   "word": "homologar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "утверждать официально",
+   "ex": "O tribunal homologou o acordo entre as partes.",
+   "exru": "Суд утвердил соглашение сторон.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "implementar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "внедрять",
+   "ex": "A escola implementou um novo sistema de avaliação.",
+   "exru": "Школа внедрила новую систему оценивания.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "incidir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "приходиться на, распространяться на",
+   "ex": "O imposto incide sobre o valor da venda.",
+   "exru": "Налог начисляется на сумму продажи.",
+   "note": "Требует sobre",
+   "tema": "A5"
+  },
+  {
+   "word": "incitar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подстрекать",
+   "ex": "Foi acusado de incitar à desordem pública.",
+   "exru": "Его обвинили в подстрекательстве к беспорядкам.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "incorrer",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "навлекать на себя наказание или риск",
+   "ex": "Quem não declarar incorre numa coima pesada.",
+   "exru": "Кто не задекларирует, рискует крупным штрафом.",
+   "note": "Требует em: incorrer numa multa",
+   "tema": "B9"
+  },
+  {
+   "word": "incumbir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "возлагать обязанность",
+   "ex": "Incumbiram-no de organizar toda a conferência do próximo ano.",
+   "exru": "Ему поручили организовать всю конференцию будущего года.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "incutir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "внушать, прививать",
+   "ex": "Os pais incutiram-lhe o gosto pela leitura.",
+   "exru": "Родители привили ему вкус к чтению.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "indeferir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отклонить заявление",
+   "ex": "A câmara indeferiu o pedido de licença.",
+   "exru": "Мэрия отклонила заявление на разрешение.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "inibir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "сковывать, подавлять",
+   "ex": "A presença do chefe inibe toda a equipa.",
+   "exru": "Присутствие начальника сковывает всю команду.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "instaurar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "учреждать; возбуждать дело",
+   "ex": "Instauraram um processo disciplinar ao funcionário mais antigo.",
+   "exru": "Против сотрудника возбудили дисциплинарное дело.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "instigar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подбивать на что-то",
+   "ex": "Instigou os colegas a apresentarem queixa por escrito.",
+   "exru": "Он подбил коллег подать жалобу.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "instar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "настоятельно просить",
+   "ex": "Instou o governo a rever a decisão.",
+   "exru": "Он настоятельно призвал правительство пересмотреть решение.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "interpelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "требовать объяснений",
+   "ex": "Os jornalistas interpelaram o ministro à saída.",
+   "exru": "Журналисты потребовали объяснений у министра на выходе.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "invalidar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "признавать недействительным",
+   "ex": "Um erro no formulário invalidou toda a candidatura.",
+   "exru": "Ошибка в анкете сделала всю заявку недействительной.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "inverter",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обращать вспять",
+   "ex": "É preciso inverter esta tendência quanto antes.",
+   "exru": "Эту тенденцию нужно обратить вспять как можно скорее.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "lograr",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "суметь добиться; обвести вокруг пальца",
+   "ex": "Logrou convencer o júri em poucos minutos.",
+   "exru": "Он сумел убедить жюри за считаные минуты.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ludibriar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "водить за нос",
+   "ex": "Ludibriou dezenas de clientes com falsas promessas.",
+   "exru": "Он обманул десятки клиентов ложными обещаниями.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "malograr",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "срываться, идти прахом",
+   "ex": "O plano malogrou-se por falta de apoio.",
+   "exru": "План провалился из-за отсутствия поддержки.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "mitigar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "смягчать последствия",
+   "ex": "Tomaram medidas para mitigar os efeitos da seca.",
+   "exru": "Приняли меры, чтобы смягчить последствия засухи.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "mobilizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "поднимать на дело, мобилизовать",
+   "ex": "Conseguiram mobilizar centenas de voluntários numa semana.",
+   "exru": "За неделю удалось поднять сотни добровольцев.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "nortear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "служить ориентиром",
+   "ex": "São estes princípios que norteiam o nosso trabalho.",
+   "exru": "Именно эти принципы направляют нашу работу.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "obstar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "препятствовать",
+   "ex": "Nada obsta a que o processo avance.",
+   "exru": "Ничто не мешает делу двигаться дальше.",
+   "note": "Требует a",
+   "tema": "A7"
+  },
+  {
+   "word": "ocultar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "скрывать, утаивать",
+   "ex": "Ocultou o problema da família durante demasiado tempo.",
+   "exru": "Он скрывал проблему слишком долго.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ofuscar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "затмевать",
+   "ex": "O sucesso do irmão ofuscou o trabalho dela.",
+   "exru": "Успех брата затмил её работу.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "onerar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обременять расходами",
+   "ex": "A nova taxa onera sobretudo as famílias numerosas.",
+   "exru": "Новый сбор бьёт прежде всего по многодетным семьям.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "oscilar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "колебаться в пределах",
+   "ex": "Os preços oscilam entre dez e quinze euros.",
+   "exru": "Цены колеблются от десяти до пятнадцати евро.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "ostentar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выставлять напоказ",
+   "ex": "Ostenta um carro que mal consegue pagar.",
+   "exru": "Он щеголяет машиной, которую едва может оплатить.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "pautar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "сообразовывать с правилом",
+   "ex": "Pauta a vida por regras muito rígidas.",
+   "exru": "Он строит жизнь по очень жёстким правилам.",
+   "note": "Часто возвратный: pautar-se por",
+   "tema": "A6"
+  },
+  {
+   "word": "precaver",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "заранее оберегать, предостерегать",
+   "ex": "É melhor precaver-se contra imprevistos deste género.",
+   "exru": "Лучше подстраховаться от подобных неожиданностей.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "preconizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ратовать за, рекомендовать",
+   "ex": "O relatório preconiza mudanças profundas no sistema.",
+   "exru": "Отчёт ратует за глубокие перемены в системе.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "prescindir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обходиться без, отказываться от",
+   "ex": "Não podemos prescindir da ajuda dos voluntários.",
+   "exru": "Мы не можем обойтись без помощи добровольцев.",
+   "note": "Требует de",
+   "tema": "A7"
+  },
+  {
+   "word": "presenciar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "быть свидетелем",
+   "ex": "Presenciou o acidente e chamou a ambulância.",
+   "exru": "Он стал свидетелем аварии и вызвал скорую.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "prevalecer",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "брать верх, возобладать",
+   "ex": "No fim, prevaleceu a opinião dos mais velhos.",
+   "exru": "В итоге возобладало мнение старших.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "primar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отличаться чем-то в лучшую сторону",
+   "ex": "O serviço prima pela rapidez e pela simpatia.",
+   "exru": "Обслуживание отличается быстротой и приветливостью.",
+   "note": "Требует por: primar por",
+   "tema": "A6"
+  },
+  {
+   "word": "proclamar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "провозглашать",
+   "ex": "Proclamaram a vitória antes de todos os votos.",
+   "exru": "Победу провозгласили до подсчёта всех голосов.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "promulgar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подписывать закон, промульгировать",
+   "ex": "O Presidente promulgou o diploma na semana passada.",
+   "exru": "Президент подписал закон на прошлой неделе.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "propiciar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "создавать благоприятные условия",
+   "ex": "O calor propicia o aparecimento de mosquitos.",
+   "exru": "Жара способствует появлению комаров.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "prorrogar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "продлевать срок",
+   "ex": "Prorrogaram o prazo por mais quinze dias.",
+   "exru": "Срок продлили ещё на пятнадцать дней.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "protelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "оттягивать, откладывать",
+   "ex": "Não vale a pena protelar esta conversa.",
+   "exru": "Не стоит оттягивать этот разговор.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "providenciar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "распорядиться, обеспечить",
+   "ex": "Providenciou transporte para todos os convidados da festa.",
+   "exru": "Он обеспечил транспорт для всех гостей.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "quantificar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выразить в цифрах",
+   "ex": "É cedo para quantificar os prejuízos do incêndio.",
+   "exru": "Оценить ущерб от пожара в цифрах пока рано.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "ratificar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ратифицировать, подтвердить",
+   "ex": "O parlamento ratificou o acordo por larga maioria.",
+   "exru": "Парламент ратифицировал соглашение подавляющим большинством.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "reaver",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "вернуть себе утраченное",
+   "ex": "Conseguiu reaver o dinheiro que tinha adiantado.",
+   "exru": "Ему удалось вернуть выданные вперёд деньги.",
+   "note": "Спрягается как haver: reavemos, reouve",
+   "tema": "B7"
+  },
+  {
+   "word": "recrudescer",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "вспыхивать с новой силой",
+   "ex": "A violência recrudesceu depois do fim das negociações.",
+   "exru": "Насилие вспыхнуло снова после срыва переговоров.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "refrear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обуздывать, сдерживать",
+   "ex": "Custa-lhe refrear a vontade de responder mal.",
+   "exru": "Ему трудно сдержать желание нагрубить.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "regatear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "торговаться о цене",
+   "ex": "Regateou o preço durante quase meia hora.",
+   "exru": "Он торговался почти полчаса.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "regredir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "откатываться назад, ухудшаться",
+   "ex": "O doente regrediu depois de duas semanas boas.",
+   "exru": "Больному стало хуже после двух хороших недель.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "reiterar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "настойчиво повторять сказанное",
+   "ex": "Reiterou o pedido de desculpas várias vezes.",
+   "exru": "Он несколько раз повторил свои извинения.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "relegar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отодвигать на второй план",
+   "ex": "Relegou o assunto para uma reunião futura.",
+   "exru": "Он отложил вопрос до будущего собрания.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "remediar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "поправить дело, залатать",
+   "ex": "Já não há maneira de remediar o estrago.",
+   "exru": "Ущерб уже не поправить.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "remeter",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отсылать, переадресовывать",
+   "ex": "Remeteu a questão para o departamento jurídico.",
+   "exru": "Он переадресовал вопрос в юридический отдел.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "renegar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отрекаться от своего",
+   "ex": "Renegou as ideias que defendia há dez anos.",
+   "exru": "Он отрёкся от взглядов, которые отстаивал десять лет назад.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "repudiar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "с негодованием отвергать",
+   "ex": "Repudiou publicamente as acusações do antigo colega.",
+   "exru": "Он публично отверг обвинения бывшего коллеги.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "rescindir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "расторгать договор",
+   "ex": "Rescindiu o contrato antes do fim do prazo.",
+   "exru": "Он расторг договор до окончания срока.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "ressaltar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выделять, обращать внимание на",
+   "ex": "O relatório ressalta o esforço feito pela equipa.",
+   "exru": "Отчёт особо отмечает труд команды.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ressarcir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "возмещать ущерб",
+   "ex": "A companhia teve de ressarcir todos os clientes.",
+   "exru": "Компании пришлось возместить убытки всем клиентам.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "retificar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "исправлять неточность",
+   "ex": "Retificou os dados errados no documento oficial.",
+   "exru": "Он исправил неверные данные в официальном документе.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "reverter",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обращать вспять; идти в пользу",
+   "ex": "As receitas revertem a favor de uma instituição.",
+   "exru": "Выручка идёт в пользу благотворительной организации.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "revogar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "отменять закон или решение",
+   "ex": "O governo revogou a medida ao fim de um mês.",
+   "exru": "Через месяц правительство отменило меру.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "salvaguardar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "оберегать, гарантировать защиту",
+   "ex": "O acordo salvaguarda os direitos dos trabalhadores.",
+   "exru": "Соглашение защищает права работников.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "sancionar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "утверждать; налагать взыскание",
+   "ex": "O tribunal sancionou a empresa com uma coima.",
+   "exru": "Суд наказал компанию штрафом.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "sanar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "устранять недостаток",
+   "ex": "É preciso sanar as dúvidas antes de avançar.",
+   "exru": "Нужно снять сомнения, прежде чем идти дальше.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "saturar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "пресыщать, переполнять",
+   "ex": "O mercado está saturado de ofertas iguais.",
+   "exru": "Рынок перенасыщен одинаковыми предложениями.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "sedimentar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "устояться, закрепиться со временем",
+   "ex": "As mudanças ainda precisam de tempo para sedimentar.",
+   "exru": "Переменам ещё нужно время, чтобы устояться.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "segregar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обособлять, отделять людей",
+   "ex": "A cidade acabou por segregar os bairros mais pobres.",
+   "exru": "Город в итоге обособил самые бедные кварталы.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "sobressair",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "выделяться на общем фоне",
+   "ex": "O trabalho dela sobressai sempre pela sua originalidade.",
+   "exru": "Её работа всегда выделяется своей оригинальностью.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "sondar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "прощупывать почву",
+   "ex": "Sondou os colegas antes de apresentar a ideia.",
+   "exru": "Он прощупал коллег, прежде чем выдвинуть идею.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "sopesar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "прикидывать за и против",
+   "ex": "Sopesou os prós e os contras durante dias.",
+   "exru": "Он несколько дней взвешивал плюсы и минусы.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "subordinar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подчинять одно другому",
+   "ex": "Subordinou a vida pessoal à carreira profissional.",
+   "exru": "Он подчинил личную жизнь карьере.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "subscrever",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подписываться под чем-то",
+   "ex": "Subscrevo tudo o que foi dito na reunião.",
+   "exru": "Подписываюсь под всем, что было сказано на собрании.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "suplantar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "превзойти и вытеснить",
+   "ex": "O novo modelo suplantou o anterior em poucos meses.",
+   "exru": "Новая модель вытеснила прежнюю за считаные месяцы.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "suprimir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "упразднять, убирать совсем",
+   "ex": "Suprimiram várias paragens naquela linha de autocarro.",
+   "exru": "На том автобусном маршруте убрали несколько остановок.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "suprir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "восполнять нехватку",
+   "ex": "Contrataram mais gente para suprir a falta de pessoal.",
+   "exru": "Наняли людей, чтобы закрыть нехватку персонала.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "surtir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "давать эффект",
+   "ex": "O tratamento não surtiu qualquer efeito visível.",
+   "exru": "Лечение не дало заметного эффекта.",
+   "note": "Почти всегда в обороте «surtir efeito»",
+   "tema": "A1"
+  },
+  {
+   "word": "suscitar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "вызывать вопросы или интерес",
+   "ex": "O texto suscitou muitas perguntas entre os leitores.",
+   "exru": "Текст вызвал у читателей множество вопросов.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "tolher",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "сковывать движения, стеснять",
+   "ex": "O medo tolhe-lhe os movimentos em público.",
+   "exru": "Страх сковывает его на людях.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "transigir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "идти на уступки",
+   "ex": "Não transige em questões de honestidade e rigor.",
+   "exru": "В вопросах честности он не идёт на уступки.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "transpor",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "преодолевать, переносить через",
+   "ex": "Transpôs a fronteira sem qualquer documento válido.",
+   "exru": "Он пересёк границу без действительных документов.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "trilhar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "идти своим путём, торить",
+   "ex": "Trilhou um caminho diferente do dos irmãos.",
+   "exru": "Он пошёл иным путём, чем братья.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "tutelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "курировать, иметь в ведении",
+   "ex": "O ministério que tutela a área ainda não respondeu.",
+   "exru": "Профильное министерство пока не ответило.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "ultimar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "доводить до конца",
+   "ex": "Estão a ultimar os preparativos para a festa.",
+   "exru": "Они завершают подготовку к празднику.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "urgir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "быть неотложным",
+   "ex": "Urge tomar uma decisão sobre este assunto.",
+   "exru": "По этому вопросу срочно нужно решение.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "usufruir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "пользоваться благом",
+   "ex": "Podem usufruir do jardim durante todo o ano.",
+   "exru": "Садом можно пользоваться круглый год.",
+   "note": "Требует de",
+   "tema": "A7"
+  },
+  {
+   "word": "usurpar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "присваивать чужое, узурпировать",
+   "ex": "Foi acusado de usurpar funções que não lhe cabiam.",
+   "exru": "Его обвинили в присвоении чужих полномочий.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "vedar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "закрывать доступ, запрещать",
+   "ex": "Vedaram o acesso à praia durante as obras.",
+   "exru": "На время работ проход на пляж закрыли.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "vigorar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "действовать, быть в силе",
+   "ex": "A nova lei vigora desde o início do mês.",
+   "exru": "Новый закон действует с начала месяца.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "vincular",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "связывать обязательством",
+   "ex": "O acordo vincula as duas partes durante cinco anos.",
+   "exru": "Соглашение связывает обе стороны на пять лет.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "zelar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "радеть, заботиться о чём-то",
+   "ex": "Zela pela segurança de todos os funcionários.",
+   "exru": "Он заботится о безопасности всех сотрудников.",
+   "note": "Требует por",
+   "tema": "A7"
+  },
+  {
+   "word": "alicerçar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "закладывать основу",
+   "ex": "Alicerçou a carreira num trabalho muito paciente.",
+   "exru": "Он выстроил карьеру на очень терпеливой работе.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "albergar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "вмещать, давать приют",
+   "ex": "O edifício alberga três serviços públicos diferentes.",
+   "exru": "В здании размещаются три разные службы.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "amparar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "поддерживать, опекать",
+   "ex": "Amparou os pais até ao último dia.",
+   "exru": "Он опекал родителей до последнего дня.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "atestar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "удостоверять, подтверждать документом",
+   "ex": "O documento atesta a residência no concelho.",
+   "exru": "Документ подтверждает проживание в этом округе.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "avultar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "бросаться в глаза величиной",
+   "ex": "Avultam as despesas com pessoal neste orçamento.",
+   "exru": "В этом бюджете бросаются в глаза расходы на персонал.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "cercear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "урезать, ограничивать",
+   "ex": "A medida cerceia a liberdade de circulação.",
+   "exru": "Мера ограничивает свободу передвижения.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "cimentar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "укреплять отношения или репутацию",
+   "ex": "A viagem cimentou uma amizade de infância.",
+   "exru": "Поездка укрепила дружбу, идущую с детства.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "cogitar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "помышлять, допускать мысль",
+   "ex": "Nunca cogitou a hipótese de sair do país.",
+   "exru": "Он никогда не помышлял об отъезде из страны.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "compelir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "принуждать",
+   "ex": "A situação compeliu-os a pedir ajuda aos vizinhos.",
+   "exru": "Обстоятельства вынудили их просить помощи.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "contrapor",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "противопоставлять",
+   "ex": "Contrapôs números concretos aos argumentos vagos do relatório.",
+   "exru": "Он противопоставил конкретные цифры расплывчатым доводам отчёта.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "denegrir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "чернить, порочить",
+   "ex": "Tentaram denegrir a imagem do adversário na campanha.",
+   "exru": "Они пытались очернить репутацию соперника.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "depreciar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обесценивать, принижать",
+   "ex": "O carro deprecia bastante logo no primeiro ano.",
+   "exru": "Машина заметно теряет в цене уже за первый год.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "dilatar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "растягивать во времени, расширять",
+   "ex": "Dilataram o prazo de entrega por mais um mês.",
+   "exru": "Срок сдачи растянули ещё на месяц.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "emergir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "всплывать, обнаруживаться",
+   "ex": "Emergiu um problema novo a meio da obra.",
+   "exru": "Посреди работ возникла новая проблема.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "engendrar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "измышлять, состряпать",
+   "ex": "Engendrou um plano complicado para não pagar.",
+   "exru": "Он состряпал сложный план, чтобы не платить.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "enraizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "укореняться",
+   "ex": "O hábito enraizou-se ao longo de gerações.",
+   "exru": "Привычка укоренилась за несколько поколений.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "entrever",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "угадывать проблеск, смутно различать",
+   "ex": "Entrevê-se alguma esperança no relatório final deste ano.",
+   "exru": "В итоговом отчёте этого года просматривается надежда.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "estreitar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "теснее связывать, сближать",
+   "ex": "As duas escolas estreitaram relações este ano.",
+   "exru": "Две школы в этом году сблизились.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "hostilizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "враждебно нападать",
+   "ex": "Hostilizaram o árbitro à saída do estádio.",
+   "exru": "Судью атаковали на выходе со стадиона.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "impelir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "толкать, побуждать",
+   "ex": "A curiosidade impeliu-o a abrir a carta.",
+   "exru": "Любопытство толкнуло его вскрыть письмо.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "influir",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "сказываться, влиять",
+   "ex": "O clima influi bastante no estado de espírito.",
+   "exru": "Климат заметно сказывается на настроении.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "manusear",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "обращаться с предметом",
+   "ex": "Manuseou o aparelho antigo com muito cuidado.",
+   "exru": "Он обращался с прибором очень осторожно.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "pactuar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "мириться с чем-то, входить в сговор",
+   "ex": "Recusou-se a pactuar com aquele tipo de práticas.",
+   "exru": "Он отказался мириться с подобными методами.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "pormenorizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "излагать в подробностях",
+   "ex": "Não quis pormenorizar as razões da saída.",
+   "exru": "Он не захотел вдаваться в причины ухода.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "precipitar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "ускорять ход событий",
+   "ex": "A notícia precipitou a decisão da direção.",
+   "exru": "Новость ускорила решение руководства.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "pressupor",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "предполагать как условие",
+   "ex": "O cargo pressupõe alguma experiência em gestão.",
+   "exru": "Должность предполагает опыт в управлении.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "prezar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "дорожить, ценить",
+   "ex": "Preza muito a opinião dos seus alunos.",
+   "exru": "Он очень дорожит мнением своих учеников.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "propalar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "разносить слухи",
+   "ex": "Propalaram o boato pela aldeia toda numa tarde.",
+   "exru": "Слух разнесли по всей деревне.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "relevar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "не ставить в вину, простить",
+   "ex": "Releva-se o erro por ser a primeira vez.",
+   "exru": "Ошибку прощают, раз это в первый раз.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "sinalizar",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "подавать знак, обозначать проблему",
+   "ex": "O relatório sinaliza problemas na gestão do serviço.",
+   "exru": "Отчёт указывает на проблемы в управлении службой.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "sobrepor",
+   "pos": "глаг.",
+   "level": "C1",
+   "ru": "накладывать одно на другое; ставить выше",
+   "ex": "Sobrepôs os interesses pessoais aos da equipa.",
+   "exru": "Он поставил личные интересы выше командных.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "dar azo a",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "давать повод, порождать",
+   "ex": "A demora deu azo a muitas queixas dos clientes.",
+   "exru": "Задержка породила множество жалоб клиентов.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "ir ao encontro de",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "отвечать ожиданиям, совпадать с",
+   "ex": "A proposta vai ao encontro do que pedimos.",
+   "exru": "Предложение отвечает тому, о чём мы просили.",
+   "note": "«ir de encontro a» — наоборот, натолкнуться и противоречить",
+   "tema": "A9"
+  },
+  {
+   "word": "estar em causa",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть на кону",
+   "ex": "Está em causa o futuro de duzentos postos de trabalho.",
+   "exru": "На кону будущее двухсот рабочих мест.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "pôr em prática",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "воплотить на деле",
+   "ex": "Falta pôr em prática aquilo que foi decidido.",
+   "exru": "Осталось воплотить то, что решено.",
+   "note": "",
+   "tema": "A1"
+  },
+  {
+   "word": "dar conta de",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "заметить; справиться с",
+   "ex": "Não deu conta do erro até ao fim.",
+   "exru": "Он до конца не заметил ошибки.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "dar largas a",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "дать волю чувствам или воображению",
+   "ex": "Deu largas à imaginação e inventou tudo.",
+   "exru": "Он дал волю воображению и всё выдумал.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ter cabimento",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть уместным",
+   "ex": "A observação dele não tem cabimento nenhum.",
+   "exru": "Его замечание совершенно неуместно.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "deitar por terra",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "разрушить, свести на нет",
+   "ex": "Os novos dados deitaram por terra a teoria.",
+   "exru": "Новые данные разрушили теорию.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "tirar a limpo",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "выяснить до конца",
+   "ex": "Quero tirar esta história a limpo hoje mesmo.",
+   "exru": "Я хочу выяснить эту историю до конца сегодня же.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "pôr a nu",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "обнажить, вскрыть",
+   "ex": "O relatório pôs a nu as falhas do serviço.",
+   "exru": "Отчёт обнажил недостатки службы.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "meter mãos à obra",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "взяться за дело",
+   "ex": "Metemos mãos à obra logo na segunda-feira.",
+   "exru": "Мы взялись за дело прямо в понедельник.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "dar o braço a torcer",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "уступить, признать неправоту",
+   "ex": "É teimoso e nunca dá o braço a torcer.",
+   "exru": "Он упрям и никогда не уступает.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "andar às voltas com",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "возиться с чем-то",
+   "ex": "Ando às voltas com este problema há dias.",
+   "exru": "Я вожусь с этой проблемой уже несколько дней.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "ficar aquém de",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "не дотягивать до",
+   "ex": "O resultado ficou aquém das expectativas de todos.",
+   "exru": "Результат не дотянул до всеобщих ожиданий.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ir além de",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "выходить за пределы",
+   "ex": "O prejuízo foi além de tudo o que imaginávamos.",
+   "exru": "Ущерб превзошёл всё, что мы себе представляли.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "deixar a desejar",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "оставлять желать лучшего",
+   "ex": "O atendimento deixou muito a desejar naquele hotel.",
+   "exru": "Обслуживание в том отеле оставляло желать лучшего.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "fazer questão de",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "непременно хотеть, настаивать",
+   "ex": "Fez questão de pagar a conta toda.",
+   "exru": "Он непременно захотел оплатить весь счёт.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "cair em saco roto",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "остаться без внимания, пропасть впустую",
+   "ex": "O aviso caiu em saco roto mais uma vez.",
+   "exru": "Предупреждение снова осталось без внимания.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "dar que falar",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "вызвать пересуды",
+   "ex": "A decisão deu que falar durante semanas.",
+   "exru": "Решение неделями давало пищу для разговоров.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "dar que pensar",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "заставить задуматься",
+   "ex": "O documentário dá que pensar sobre o assunto.",
+   "exru": "Документальный фильм заставляет задуматься об этом.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "pôr os pontos nos is",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "расставить точки над i",
+   "ex": "Chegou a hora de pôr os pontos nos is.",
+   "exru": "Пришло время расставить точки над i.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ir por água abaixo",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "пойти прахом",
+   "ex": "Com a chuva, o piquenique foi por água abaixo.",
+   "exru": "Из-за дождя пикник пошёл прахом.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ficar a ver navios",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "остаться ни с чем",
+   "ex": "Chegou tarde e ficou a ver navios.",
+   "exru": "Он пришёл поздно и остался ни с чем.",
+   "note": "Один из самых узнаваемых португальских оборотов",
+   "tema": "A7"
+  },
+  {
+   "word": "estar feito ao bife",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "влипнуть, попасться",
+   "ex": "Se o chefe descobre, estamos feitos ao bife.",
+   "exru": "Если начальник узнает, мы влипли.",
+   "note": "Разговорное",
+   "tema": "A7"
+  },
+  {
+   "word": "estar com os azeites",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть не в духе",
+   "ex": "Hoje está com os azeites, é melhor evitar.",
+   "exru": "Сегодня он не в духе, лучше не подходить.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "pôr-se a milhas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "унести ноги, смыться",
+   "ex": "Assim que viu a polícia, pôs-se a milhas.",
+   "exru": "Увидев полицию, он тут же смылся.",
+   "note": "",
+   "tema": "A2"
+  },
+  {
+   "word": "armar-se em",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "строить из себя",
+   "ex": "Arma-se em entendido e depois erra tudo.",
+   "exru": "Он строит из себя знатока, а потом всё путает.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "meter água",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "давать сбой, не выдерживать критики",
+   "ex": "O plano começou a meter água ao segundo dia.",
+   "exru": "План начал трещать по швам на второй день.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "dar o litro",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "выложиться до предела",
+   "ex": "A equipa deu o litro até ao último minuto.",
+   "exru": "Команда выложилась до последней минуты.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "apanhar boleia",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "поймать попутку",
+   "ex": "Apanhou boleia até à aldeia mais próxima.",
+   "exru": "Он доехал на попутке до ближайшей деревни.",
+   "note": "",
+   "tema": "B5"
+  },
+  {
+   "word": "a torto e a direito",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "направо и налево, без разбора",
+   "ex": "Gasta dinheiro a torto e a direito.",
+   "exru": "Он тратит деньги направо и налево.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "de fio a pavio",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "от начала до конца",
+   "ex": "Contou a história de fio a pavio.",
+   "exru": "Он рассказал историю от начала до конца.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "de mão beijada",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "задаром, на блюдечке",
+   "ex": "Não esperem que isso venha de mão beijada.",
+   "exru": "Не ждите, что это достанется даром.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "em cima da hora",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "в последний момент",
+   "ex": "Chegou em cima da hora, como sempre.",
+   "exru": "Он пришёл в последний момент, как всегда.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "à queima-roupa",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "в упор, без подготовки",
+   "ex": "Fez a pergunta à queima-roupa, sem qualquer aviso.",
+   "exru": "Он задал вопрос в лоб, без предупреждения.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a olhos vistos",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "на глазах",
+   "ex": "O miúdo cresce a olhos vistos este ano.",
+   "exru": "Ребёнок растёт на глазах.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "de bom grado",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "охотно",
+   "ex": "Aceitou o convite de bom grado e agradeceu.",
+   "exru": "Он охотно принял приглашение.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "de má vontade",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "нехотя",
+   "ex": "Fez o trabalho de má vontade e à pressa.",
+   "exru": "Он сделал работу нехотя и наспех.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "sem mais nem menos",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "ни с того ни с сего",
+   "ex": "Desapareceu sem mais nem menos, sem avisar ninguém.",
+   "exru": "Он исчез ни с того ни с сего, никого не предупредив.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "por tabela",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "рикошетом, косвенно",
+   "ex": "A medida atinge por tabela quem vive de rendas.",
+   "exru": "Мера рикошетом бьёт по тем, кто живёт с аренды.",
+   "note": "",
+   "tema": "A9"
+  },
+  {
+   "word": "em cheio",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "точно в цель",
+   "ex": "Acertou em cheio na escolha do presente.",
+   "exru": "Он попал точно в цель с выбором подарка.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "de improviso",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "экспромтом",
+   "ex": "Falou de improviso durante quase dez minutos.",
+   "exru": "Он говорил экспромтом почти десять минут.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ao virar da esquina",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "на носу, совсем близко",
+   "ex": "O inverno está já ao virar da esquina.",
+   "exru": "Зима уже на носу.",
+   "note": "",
+   "tema": "A4"
+  },
+  {
+   "word": "não ter papas na língua",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "рубить правду в глаза",
+   "ex": "Ela não tem papas na língua e diz tudo.",
+   "exru": "Она рубит правду в глаза и говорит всё как есть.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "ter macaquinhos no sótão",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "иметь странности в голове",
+   "ex": "Anda com macaquinhos no sótão desde o divórcio.",
+   "exru": "После развода у него не всё в порядке с головой.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "estar nas suas sete quintas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть на седьмом небе",
+   "ex": "Com o neto ao colo, está nas suas sete quintas.",
+   "exru": "С внуком на руках он на седьмом небе.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "fazer das tripas coração",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "собрать волю в кулак",
+   "ex": "Fez das tripas coração e acabou a prova.",
+   "exru": "Он собрал волю в кулак и дошёл до финиша.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "custar os olhos da cara",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "стоить бешеных денег",
+   "ex": "Aquele casaco custou-lhe os olhos da cara.",
+   "exru": "То пальто обошлось ему в бешеные деньги.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "pagar o pato",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "отдуваться за других",
+   "ex": "No fim, foram os clientes que pagaram o pato.",
+   "exru": "В итоге отдуваться пришлось клиентам.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "partir a loiça toda",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "произвести фурор",
+   "ex": "O grupo partiu a loiça toda no festival.",
+   "exru": "Группа произвела на фестивале фурор.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "chorar sobre o leite derramado",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "сокрушаться о непоправимом",
+   "ex": "Não vale a pena chorar sobre o leite derramado.",
+   "exru": "Не стоит плакать над пролитым молоком.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ficar em águas de bacalhau",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "закончиться ничем",
+   "ex": "O projeto ficou em águas de bacalhau.",
+   "exru": "Проект закончился ничем.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ser canja",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "проще простого",
+   "ex": "O exame foi canja para quem estudou.",
+   "exru": "Для тех, кто учил, экзамен был проще простого.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "ser de bradar aos céus",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "ни в какие ворота не лезет",
+   "ex": "Os preços das rendas são de bradar aos céus.",
+   "exru": "Цены на аренду ни в какие ворота не лезут.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "estar entre a espada e a parede",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "между молотом и наковальней",
+   "ex": "Ficou entre a espada e a parede naquela reunião.",
+   "exru": "На том собрании он оказался между двух огней.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "puxar a brasa à sua sardinha",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "тянуть одеяло на себя",
+   "ex": "Cada um puxa a brasa à sua sardinha.",
+   "exru": "Каждый тянет одеяло на себя.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "ter a faca e o queijo na mão",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "держать все козыри",
+   "ex": "Com esses dados, tem a faca e o queijo na mão.",
+   "exru": "С такими данными все козыри у него на руках.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "ter lata",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "иметь наглость",
+   "ex": "Teve a lata de pedir dinheiro outra vez.",
+   "exru": "У него хватило наглости снова просить денег.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "estar teso",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть без гроша",
+   "ex": "Estou teso até ao fim do mês.",
+   "exru": "Я без гроша до конца месяца.",
+   "note": "Разговорное",
+   "tema": "B7"
+  },
+  {
+   "word": "andar à nora",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "блуждать в потёмках",
+   "ex": "Ando à nora com estas contas todas.",
+   "exru": "Я совсем запутался во всех этих счетах.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "fazer figura de urso",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "опростоволоситься",
+   "ex": "Fiz figura de urso à frente de toda a gente.",
+   "exru": "Я опростоволосился на глазах у всех.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "arregaçar as mangas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "засучить рукава",
+   "ex": "Arregaçámos as mangas e limpámos a casa toda.",
+   "exru": "Мы засучили рукава и убрали весь дом.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "estar de trombas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "ходить надутым",
+   "ex": "Está de trombas desde a discussão de ontem.",
+   "exru": "Он дуется со вчерашней ссоры.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "ficar em pulgas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "сгорать от нетерпения",
+   "ex": "Fiquei em pulgas à espera do resultado.",
+   "exru": "Я сгорал от нетерпения в ожидании результата.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "estar-se nas tintas",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "быть глубоко безразличным",
+   "ex": "Ele está-se nas tintas para a opinião dos outros.",
+   "exru": "Ему глубоко безразлично мнение окружающих.",
+   "note": "Разговорное",
+   "tema": "B1"
+  },
+  {
+   "word": "não dar ponto sem nó",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "ничего не делать без выгоды",
+   "ex": "Aquele homem não dá ponto sem nó.",
+   "exru": "Этот человек ничего не делает без выгоды.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "à balda",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "спустя рукава, как попало",
+   "ex": "O serviço anda à balda desde que ele saiu.",
+   "exru": "С его уходом работа идёт спустя рукава.",
+   "note": "",
+   "tema": "A6"
+  },
+  {
+   "word": "de caras",
+   "pos": "выраж.",
+   "level": "C1",
+   "ru": "сразу, без раздумий",
+   "ex": "Aceitei de caras, sem pensar duas vezes.",
+   "exru": "Я согласился сразу, не раздумывая.",
+   "note": "Разговорное",
+   "tema": "A9"
+  },
+  {
+   "word": "ir com os porcos",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "отправиться на тот свет",
+   "ex": "Se continuar assim, vai com os porcos cedo.",
+   "exru": "Если так пойдёт, он рано отправится на тот свет.",
+   "note": "Разговорное и грубоватое",
+   "tema": "A1"
+  },
+  {
+   "word": "dar uma no cravo e outra na ferradura",
+   "pos": "оборот",
+   "level": "C1",
+   "ru": "и нашим и вашим",
+   "ex": "Dá uma no cravo e outra na ferradura.",
+   "exru": "Он и нашим и вашим.",
+   "note": "",
+   "tema": "A7"
+  },
+  {
+   "word": "a hiperligação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "гиперссылка",
+   "ex": "Clique na hiperligação para abrir o documento.",
+   "exru": "Нажмите на ссылку, чтобы открыть документ.",
+   "note": "Часто просто a ligação",
+   "tema": "B3"
+  },
+  {
+   "word": "o descarregamento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "скачивание файла",
+   "ex": "O descarregamento do ficheiro demorou vários minutos.",
+   "exru": "Скачивание файла заняло несколько минут.",
+   "note": "Глагол descarregar — скачивать",
+   "tema": "B3"
+  },
+  {
+   "word": "a cópia de segurança",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "резервная копия",
+   "ex": "Faça uma cópia de segurança antes de atualizar.",
+   "exru": "Сделайте резервную копию перед обновлением.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o suporte técnico",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "техническая поддержка",
+   "ex": "O suporte técnico só responde em dias úteis.",
+   "exru": "Техподдержка отвечает только по будням.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "a palavra-chave",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "ключевое слово",
+   "ex": "Procure pela palavra-chave no motor de busca.",
+   "exru": "Поищите по ключевому слову в поисковике.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o algoritmo",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "алгоритм",
+   "ex": "O algoritmo decide o que aparece primeiro.",
+   "exru": "Алгоритм решает, что показать первым.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "a inteligência artificial",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "искусственный интеллект",
+   "ex": "A inteligência artificial já corrige textos sozinha.",
+   "exru": "Искусственный интеллект уже сам правит тексты.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "a cibersegurança",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "кибербезопасность",
+   "ex": "A cibersegurança passou a ser prioridade da empresa.",
+   "exru": "Кибербезопасность стала приоритетом компании.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o rasto digital",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "цифровой след",
+   "ex": "Todos deixamos rasto digital sem darmos por isso.",
+   "exru": "Мы все оставляем цифровой след, не замечая этого.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "a largura de banda",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пропускная способность канала",
+   "ex": "A largura de banda não chega para tantos aparelhos.",
+   "exru": "Пропускной способности не хватает на столько устройств.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o carregamento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "зарядка; загрузка",
+   "ex": "O carregamento da bateria demora duas horas.",
+   "exru": "Зарядка батареи занимает два часа.",
+   "note": "",
+   "tema": "B3"
+  },
+  {
+   "word": "o influenciador",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "блогер, влияющий на публику",
+   "ex": "O influenciador tem meio milhão de seguidores.",
+   "exru": "У блогера полмиллиона подписчиков.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "a desinformação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "дезинформация",
+   "ex": "A desinformação espalha-se mais depressa do que a verdade.",
+   "exru": "Дезинформация расходится быстрее правды.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "as notícias falsas",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "фейковые новости",
+   "ex": "As notícias falsas circulam sobretudo em grupos fechados.",
+   "exru": "Фейковые новости ходят прежде всего в закрытых группах.",
+   "note": "",
+   "tema": "B4"
+  },
+  {
+   "word": "a subscrição",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "подписка на услугу",
+   "ex": "Cancelou a subscrição mensal do serviço de música.",
+   "exru": "Он отменил месячную подписку на сервис.",
+   "note": "",
+   "tema": "B7"
+  },
+  {
+   "word": "a assinatura digital",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "электронная подпись",
+   "ex": "O contrato foi validado com assinatura digital.",
+   "exru": "Договор подтвердили электронной подписью.",
+   "note": "",
+   "tema": "B9"
+  },
+  {
+   "word": "a variável",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "переменная величина",
+   "ex": "O estudo teve em conta várias variáveis sociais.",
+   "exru": "Исследование учло несколько социальных переменных.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "a metodologia",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "методология",
+   "ex": "A metodologia do trabalho foi muito criticada.",
+   "exru": "Методологию работы сильно критиковали.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a margem de erro",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "погрешность",
+   "ex": "A sondagem tem uma margem de erro de três pontos.",
+   "exru": "У опроса погрешность в три пункта.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "o gráfico",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "график, диаграмма",
+   "ex": "O gráfico ajuda a perceber a evolução dos preços.",
+   "exru": "График помогает понять динамику цен.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "a amostragem",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "выборка для исследования",
+   "ex": "A amostragem foi demasiado pequena para tirar conclusões.",
+   "exru": "Выборка слишком мала для выводов.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "o enviesamento",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "систематическая предвзятость данных",
+   "ex": "O enviesamento da amostra explica o resultado estranho.",
+   "exru": "Смещение выборки объясняет странный результат.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a revisão por pares",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "рецензирование коллегами",
+   "ex": "O artigo passou pela revisão por pares antes de sair.",
+   "exru": "Статья прошла рецензирование до публикации.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a comprovação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "подтверждение доказательствами",
+   "ex": "Falta comprovação científica para todas essas afirmações.",
+   "exru": "Этим утверждениям не хватает научного подтверждения.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a inferência",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "умозаключение из данных",
+   "ex": "A inferência parece correta, mas assenta em poucos dados.",
+   "exru": "Вывод кажется верным, но опирается на скудные данные.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o parâmetro",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "параметр",
+   "ex": "O programa permite alterar todos os parâmetros.",
+   "exru": "Программа позволяет менять все параметры.",
+   "note": "",
+   "tema": "A5"
+  },
+  {
+   "word": "a intempérie",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "непогода",
+   "ex": "A obra parou por causa das intempéries.",
+   "exru": "Работы встали из-за непогоды.",
+   "note": "Чаще во мн. ч.: as intempéries",
+   "tema": "B2"
+  },
+  {
+   "word": "a chuvada",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "проливной дождь",
+   "ex": "Apanhámos uma chuvada à saída do comboio.",
+   "exru": "Мы попали под ливень на выходе из поезда.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "o nevoeiro cerrado",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "густой туман",
+   "ex": "O nevoeiro cerrado obrigou a fechar o aeroporto.",
+   "exru": "Густой туман заставил закрыть аэропорт.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a vaga de calor",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "волна жары",
+   "ex": "A vaga de calor deve durar mais três dias.",
+   "exru": "Волна жары продержится ещё три дня.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a ondulação",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "волнение на море",
+   "ex": "A ondulação forte impediu a saída dos barcos.",
+   "exru": "Сильное волнение не дало лодкам выйти.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a estiagem",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "засушливый период",
+   "ex": "A estiagem prolongou-se por cinco meses seguidos.",
+   "exru": "Засушливый период тянулся пять месяцев подряд.",
+   "note": "",
+   "tema": "B2"
+  },
+  {
+   "word": "a alcunha",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "прозвище",
+   "ex": "Toda a aldeia o conhece pela alcunha.",
+   "exru": "Вся деревня знает его по прозвищу.",
+   "note": "",
+   "tema": "B1"
+  },
+  {
+   "word": "o trocadilho",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "каламбур, игра слов",
+   "ex": "O título do jornal é um trocadilho engraçado.",
+   "exru": "Заголовок газеты — забавная игра слов.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o provérbio",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "пословица",
+   "ex": "Há um provérbio português para cada situação.",
+   "exru": "На каждый случай найдётся португальская пословица.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a gíria",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "сленг",
+   "ex": "A gíria dos jovens muda de ano para ano.",
+   "exru": "Молодёжный сленг меняется из года в год.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o regionalismo",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "местное словцо",
+   "ex": "Aquela palavra é um regionalismo do Alentejo.",
+   "exru": "То слово — местное словцо из Алентежу.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a ortografia",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "орфография",
+   "ex": "O acordo mudou a ortografia de várias palavras.",
+   "exru": "Соглашение изменило написание нескольких слов.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "o vocábulo",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "слово как единица языка",
+   "ex": "O dicionário registou mil vocábulos novos este ano.",
+   "exru": "Словарь зафиксировал тысячу новых слов.",
+   "note": "",
+   "tema": "A8"
+  },
+  {
+   "word": "a fluência",
+   "pos": "сущ.",
+   "level": "C1",
+   "ru": "беглость речи",
+   "ex": "Ganhou fluência depois de um ano em Lisboa.",
+   "exru": "Он заговорил бегло после года в Лиссабоне.",
+   "note": "",
+   "tema": "A8"
   }
  ]
 }

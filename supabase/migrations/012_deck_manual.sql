@@ -8,11 +8,13 @@
 -- Поэтому здесь одна строка в pt_decks и ни одной в pt_words. Клиент знает
 -- про этот id: rebuild() показывает свои слова, только если человек подписан
 -- на 'manual', а renderDecks() считает их по cards, а не по pt_words.
+--
+-- sort = 60, чтобы своя колода оставалась последней: 50 занял C1.
 
 begin;
 
 insert into public.pt_decks (id, name, descr, level_from, level_to, sort)
-values ('manual', 'Свои слова', 'Слова, которые вы добавили сами', '', '', 50)
+values ('manual', 'Свои слова', 'Слова, которые вы добавили сами', '', '', 60)
 on conflict (id) do update set name = excluded.name, descr = excluded.descr,
   level_from = excluded.level_from, level_to = excluded.level_to, sort = excluded.sort;
 

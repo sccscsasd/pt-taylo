@@ -51,7 +51,7 @@ DECKS = {
     "b1": {
         "cards": "baralho-completo-B1.json",
         "name": "Средний B1",
-        "descr": "755 карточек уровня B1 с примерами и заметками",
+        "descr": "931 карточка уровня B1 с примерами и заметками",
         "level_from": "B1",
         "level_to": "B1",
         "sort": 30,
@@ -59,10 +59,18 @@ DECKS = {
     "b2": {
         "cards": "baralho-completo-B2.json",
         "name": "Выше среднего B2",
-        "descr": "497 карточек уровня B2 с примерами и заметками",
+        "descr": "705 карточек уровня B2 с примерами и заметками",
         "level_from": "B2",
         "level_to": "B2",
         "sort": 40,
+    },
+    "c1": {
+        "cards": "baralho-completo-C1.json",
+        "name": "Продвинутый C1",
+        "descr": "994 карточки уровня C1: книжный регистр, право, обороты, разговорное",
+        "level_from": "C1",
+        "level_to": "C1",
+        "sort": 50,
     },
 }
 
@@ -133,7 +141,9 @@ def собрать(ключ):
 def печатать(ключ, кусок=200):
     d, строки, без_темы, лишние = собрать(ключ)
 
-    out = sys.stdout
+    # Миграция всегда в UTF-8. Через sys.stdout Windows берёт кодировку консоли
+    # и спотыкается на первом же португальском â, когда вывод уходит в файл.
+    out = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", newline="")
     out.write("-- Колода «%s» в общей базе слов. Напечатано vocabulario/deck2sql.py\n" % d["name"])
     out.write("-- Источник: vocabulario/%s%s, карточек: %d.\n"
               % (d["cards"], " + " + d["temas"] if d.get("temas") else "", len(строки)))
@@ -184,6 +194,8 @@ def печатать(ключ, кусок=200):
         "       count(distinct tema) as тем\n"
         "  from public.pt_words where deck_id = %s;\n" % лит(ключ)
     )
+
+    out.flush()
 
     sys.stderr.write("колода %s: %d слов, без темы %d, пропущено %d\n"
                      % (ключ, len(строки), len(без_темы), len(лишние)))
