@@ -581,11 +581,11 @@
 <main>
   <section id="v-add" class="view on">
     <div class="sec composer" id="composer">
-      <span class="lbl">Слово или выражение</span>
+      <span class="lbl" data-tr>Слово или выражение</span>
       <div class="row">
         <div style="flex:3;position:relative">
           <input type="text" id="wordInput" placeholder="arrumar, de repente…" autocapitalize="off" autocomplete="off" spellcheck="false">
-          <button class="pick" id="pickImg" type="button" title="Прикрепить скриншот">
+          <button class="pick" id="pickImg" type="button" title="Прикрепить скриншот" data-tr-title>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4.5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="M4 16.5l4.6-4.2a2 2 0 0 1 2.7 0L16 16.5"/>
             </svg>
@@ -597,16 +597,16 @@
       </div>
       <div class="attach" id="attach" style="display:none">
         <img id="attachThumb" alt="">
-        <span class="an">Скриншот прикреплён — нажмите «Распознать»</span>
-        <button class="x" id="attachClear" type="button" title="Убрать">&#10005;</button>
+        <span class="an" data-tr>Скриншот прикреплён — нажмите «Распознать»</span>
+        <button class="x" id="attachClear" type="button" title="Убрать" data-tr-title>&#10005;</button>
       </div>
-      <div class="hint">Несколько слов — через запятую. Скриншот и длинный текст вставляйте прямо сюда.</div>
+      <div class="hint" data-tr>Несколько слов — через запятую. Скриншот и длинный текст вставляйте прямо сюда.</div>
       <div id="preview"></div>
     </div>
 
     <div class="sec" id="textSec" style="display:none">
       <div class="srcbox">
-        <button class="x" id="srcClear" type="button" title="Убрать">&#10005;</button>
+        <button class="x" id="srcClear" type="button" title="Убрать" data-tr-title>&#10005;</button>
         <div class="pt" id="srcPt"></div>
         <div class="ru" id="srcRu" style="display:none"></div>
       </div>
@@ -620,21 +620,21 @@
     </div>
 
     <div class="goal" id="goalCard">
-      <h2>Цель на день</h2>
+      <h2 data-tr>Цель на день</h2>
       <p class="lead" id="goalLead"></p>
       <div class="gauge">
-        <button class="peek" id="goalPeek" type="button" aria-label="Показать, как идут дела"></button>
+        <button class="peek" id="goalPeek" type="button" aria-label="Показать, как идут дела" data-tr-aria></button>
         <svg class="arc" viewBox="0 0 200 108" aria-hidden="true">
           <path class="track" d="M12 100a88 88 0 0 1 176 0"/>
           <path class="fill" id="goalArc" d="M12 100a88 88 0 0 1 176 0"/>
         </svg>
         <div class="mid">
-          <div class="t">Выучено сегодня<i>›</i></div>
+          <div class="t" data-tr>Выучено сегодня<i>›</i></div>
           <div class="n" id="goalNum">0</div>
-          <button class="aim" id="goalEdit" type="button">из <span id="goalTarget">15</span> слов в день ›</button>
+          <button class="aim" id="goalEdit" type="button"></button>
         </div>
       </div>
-      <button class="btn primary wide go" id="goalGo">Продолжить учить</button>
+      <button class="btn primary wide go" id="goalGo" data-tr>Продолжить учить</button>
       <div class="week" id="goalWeek"></div>
       <div class="streak" id="goalStreak"></div>
     </div>
@@ -642,9 +642,9 @@
   </section>
 
   <section id="v-cards" class="view">
-    <input type="text" id="search" placeholder="Поиск" autocapitalize="off" style="margin-bottom:10px">
+    <input type="text" id="search" placeholder="Поиск" data-tr-ph autocapitalize="off" style="margin-bottom:10px">
     <div class="seg" id="cardFilter" style="margin:0 0 14px">
-      <button data-f="all" class="on">Все</button><button data-f="learning">Изучаю</button><button data-f="done">Выучено</button><button data-f="fav" class="ic" title="Избранное" aria-label="Избранное"></button>
+      <button data-f="all" class="on" data-tr>Все</button><button data-f="learning">Изучаю</button><button data-f="done">Выучено</button><button data-f="fav" class="ic" title="Избранное" aria-label="Избранное" data-tr-title data-tr-aria></button>
     </div>
     <div id="cardList"></div>
   </section>
@@ -657,38 +657,47 @@
 
   <section id="v-set" class="view">
     <div class="sec">
-      <span class="lbl">Колоды</span>
+      <span class="lbl" data-tr>Колоды</span>
       <div id="deckList"></div>
     </div>
 
     <div class="sec">
-      <span class="lbl">Направление тренировки</span>
+      <span class="lbl" data-tr>Направление тренировки</span>
       <div class="seg big" id="dir">
         <button data-d="pt" type="button">PT → RU</button>
         <button data-d="ru" type="button">RU → PT</button>
-        <button data-d="mix" type="button">Вперемешку</button>
+        <button data-d="mix" type="button" data-tr>Вперемешку</button>
       </div>
-      <div class="hint">Что показывать на карточке первым: португальское слово или перевод.</div>
+      <div class="hint" data-tr>Что показывать на карточке первым: португальское слово или перевод.</div>
     </div>
 
     <div class="sec">
-      <span class="lbl">Цель на день</span>
+      <span class="lbl" data-tr>Цель на день</span>
       <div class="stepper">
-        <button id="goalMinus" type="button" aria-label="Меньше">−</button>
+        <button id="goalMinus" type="button" aria-label="Меньше" data-tr-aria>−</button>
         <span class="val">
-          <input id="goal" type="number" min="5" max="99" step="1" inputmode="numeric" aria-label="Слов в день">
+          <input id="goal" type="number" min="5" max="99" step="1" inputmode="numeric" aria-label="Слов в день" data-tr-aria>
           <span class="u" id="goalWord">слов</span>
         </span>
-        <button id="goalPlus" type="button" aria-label="Больше">+</button>
+        <button id="goalPlus" type="button" aria-label="Больше" data-tr-aria>+</button>
       </div>
-      <div class="hint">От 5 до 99. Можно вписать своё число.</div>
+      <div class="hint" data-tr>От 5 до 99. Можно вписать своё число.</div>
     </div>
 
     <div class="sec">
-      <span class="lbl">Аккаунт</span>
+      <span class="lbl" data-tr>Язык</span>
+      <div class="seg big" id="uiLang">
+        <button data-lang="ru" type="button">Русский</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+      <div class="hint" data-tr>Язык приложения. Слова и переводы на карточках остаются как есть — колода общая.</div>
+    </div>
+
+    <div class="sec">
+      <span class="lbl" data-tr>Аккаунт</span>
       <div class="account">
         <span class="who"><b id="whoEmail"></b><span id="syncState" hidden></span></span>
-        <button class="linkbtn" id="signOut" type="button">Выйти</button>
+        <button class="linkbtn" id="signOut" type="button" data-tr>Выйти</button>
       </div>
     </div>
 
@@ -696,13 +705,13 @@
 </main>
 
 <nav>
-  <button data-v="add" class="on">
+  <button data-v="add" class="on" data-tr>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Добавить</button>
-  <button data-v="study">
+  <button data-v="study" data-tr>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.8 2.9 9.1 12 13.4l9.1-4.3L12 4.8Z"/><path d="M6.7 11v4.4c0 1.3 2.4 2.3 5.3 2.3s5.3-1 5.3-2.3V11"/><path d="M21.1 9.1v4.3"/></svg>Учить<span class="dot" id="navDue" style="display:none">0</span></button>
-  <button data-v="cards">
+  <button data-v="cards" data-tr>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="M8 10h8M8 14h5"/></svg>Карточки</button>
-  <button data-v="set">
+  <button data-v="set" data-tr>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M4 8h8M17 8h3M4 16h3M12 16h8"/><circle cx="14.5" cy="8" r="2.5"/><circle cx="9.5" cy="16" r="2.5"/></svg>Настройки</button>
 </nav>
 
@@ -710,16 +719,16 @@
   <form class="gatebox" id="gateForm">
     <div class="mark" aria-hidden="true">PT</div>
     <h1>Português</h1>
-    <p class="what">Карточки европейского португальского</p>
+    <p class="what" data-tr>Карточки европейского португальского</p>
     <div class="fields">
-      <input type="email" id="gateEmail" placeholder="Почта" autocapitalize="off" autocorrect="off"
+      <input type="email" id="gateEmail" placeholder="Почта" data-tr-ph autocapitalize="off" autocorrect="off"
              spellcheck="false" autocomplete="username" enterkeyhint="next" required>
-      <input type="password" id="gatePass" placeholder="Пароль" autocomplete="current-password"
+      <input type="password" id="gatePass" placeholder="Пароль" data-tr-ph autocomplete="current-password"
              enterkeyhint="go" required>
     </div>
-    <button class="btn primary wide" id="gateBtn" type="submit">Войти</button>
+    <button class="btn primary wide" id="gateBtn" type="submit" data-tr>Войти</button>
     <div class="gateerr" id="gateErr"></div>
-    <p class="gatefoot">Вход только для своих — аккаунты заводит владелец</p>
+    <p class="gatefoot" data-tr>Вход только для своих — аккаунты заводит владелец</p>
   </form>
 </div>
 
@@ -727,8 +736,8 @@
   <div class="veil" id="statVeil"></div>
   <div class="box" role="dialog" aria-modal="true" aria-labelledby="statTitle">
     <div class="head">
-      <h2 id="statTitle">Как идут дела</h2>
-      <button class="x" id="statClose" type="button" aria-label="Закрыть">&#10005;</button>
+      <h2 id="statTitle" data-tr>Как идут дела</h2>
+      <button class="x" id="statClose" type="button" aria-label="Закрыть" data-tr-aria>&#10005;</button>
     </div>
     <div class="body" id="statBody"></div>
   </div>
@@ -750,7 +759,7 @@ const save=(k,v)=>{
   catch(e){
     if(!storageWarned){
       storageWarned=true;
-      setTimeout(()=>toast('Браузер не даёт хранить копию колоды — работать можно, но только онлайн',6000),300);
+      setTimeout(()=>toast(T('Браузер не даёт хранить копию колоды — работать можно, но только онлайн'),6000),300);
     }
   }
 };
@@ -839,6 +848,349 @@ const IC_STAR=SVG('<path d="M12 3.7l2.6 5.2 5.8.9-4.2 4 1 5.8-5.2-2.7-5.2 2.7 1-
 const IC_STAR_ON=IC_STAR.replace('fill="none"','fill="currentColor"');
 const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/>');
 
+/* ---------------- язык интерфейса ----------------
+   Ключ словаря — сама русская строка, как в gettext. Код от этого остаётся
+   читаемым, а строка, которой в словаре нет, показывается по-русски — не пустотой
+   и не «missing.key». Переводится оболочка; содержимое карточек (перевод, пример,
+   часть речи) принадлежит колоде и остаётся русским: колода одна на всех.
+   Выбор лежит и в настройках (уезжает на сервер), и в локальном ключе — иначе
+   экран входа рисовался бы по-русски до того, как настройки доедут.          */
+const LS_LANG='pt.lang.v1';
+let uiLang=load(LS_LANG,'ru')==='uk'?'uk':'ru';
+const lang=()=>uiLang;
+// Подстановка через {n}, а не склейка кусков: порядок слов в двух языках разный,
+// и «Осталось ' + n + ' слов» переводится только целой фразой.
+const T=(s,v)=>{
+  let x=uiLang==='uk'?(UK[s]||s):s;
+  if(v) for(const k in v) x=x.split('{'+k+'}').join(v[k]);
+  return x;
+};
+// Правило числа у русского и украинского общее: 1, 2–4, 5 и больше, исключение
+// на 11–14. Разные только сами формы, поэтому таблица одна на оба языка.
+const FORMS={
+  'слово':   {ru:['слово','слова','слов'],           uk:['слово','слова','слів']},
+  'день':    {ru:['день','дня','дней'],              uk:['день','дні','днів']},
+  'карточка':{ru:['карточка','карточки','карточек'], uk:['картка','картки','карток']},
+  'месяц':   {ru:['месяц','месяца','месяцев'],       uk:['місяць','місяці','місяців']},
+  'год':     {ru:['год','года','лет'],               uk:['рік','роки','років']}
+};
+const pWord=(n,w)=>{
+  const f=FORMS[w][uiLang], m=n%100, k=n%10;
+  return m>=11&&m<=14?f[2]:k===1?f[0]:k>=2&&k<=4?f[1]:f[2];
+};
+const plural=(n,w)=>n+' '+pWord(n,w);
+const LOC=()=>uiLang==='uk'?'uk-UA':'ru-RU';
+const WEEK={ru:['П','В','С','Ч','П','С','В'],uk:['П','В','С','Ч','П','С','Н']};
+
+const UK={
+/* экран «Добавить» */
+'Слово или выражение':'Слово або вислів',
+'Прикрепить скриншот':'Додати знімок екрана',
+'Перевести':'Перекласти',
+'Распознать':'Розпізнати',
+'Скриншот прикреплён — нажмите «Распознать»':'Знімок додано — натисніть «Розпізнати»',
+'Убрать':'Прибрати',
+'Несколько слов — через запятую. Скриншот и длинный текст вставляйте прямо сюда.':
+  'Кілька слів — через кому. Знімок і довгий текст вставляйте просто сюди.',
+'Уже в колоде':'Уже в колоді',
+'Это слово уже в колоде':'Це слово вже в колоді',
+'Перевод':'Переклад',
+'Добавить в колоду':'Додати в колоду',
+'Отмена':'Скасувати',
+'Добавлено {n}':'Додано {n}',
+'Добавлено: {n}':'Додано: {n}',
+', пропущено дублей: {n}':', пропущено дублів: {n}',
+'Такие карточки уже есть':'Такі картки вже є',
+'Введите слово':'Введіть слово',
+'Часть слов пропущена как дубли':'Частину слів пропущено як дублі',
+'Генерирую {a}–{b} из {n}…':'Генерую {a}–{b} з {n}…',
+'своё':'своє',
+'своё слово':'своє слово',
+'Не нашёл слов для карточек':'Не знайшов слів для карток',
+'Незнакомых слов: {n}':'Незнайомих слів: {n}',
+' · выбрано {n}':' · вибрано {n}',
+'Все слова из текста уже в колоде':'Усі слова з тексту вже в колоді',
+'Снять выбор':'Зняти вибір',
+'Выбрать все':'Вибрати всі',
+'Создать карточки ({n})':'Створити картки ({n})',
+'Это не изображение':'Це не зображення',
+'Не удалось прочитать файл':'Не вдалося прочитати файл',
+'Не удалось открыть изображение':'Не вдалося відкрити зображення',
+'На картинке не нашлось текста':'На зображенні не знайшлося тексту',
+'Похоже, текст на языке «{s}», а не на португальском':'Схоже, текст мовою «{s}», а не португальською',
+
+/* цель на день */
+'Цель на день':'Мета на день',
+'Показать, как идут дела':'Показати, як ідуть справи',
+'Выучено сегодня':'Вивчено сьогодні',
+'из {n} {w} в день':'з {n} {w} на день',
+'Продолжить учить':'Продовжити вчити',
+'Серия — {d}.':'Серія — {d}.',
+'Начните серию заново.':'Почніть серію знову.',
+'Начните серию.':'Почніть серію.',
+'Это ваш рекорд.':'Це ваш рекорд.',
+'Ваш рекорд — {d}.':'Ваш рекорд — {d}.',
+'Выучите {n} {w} сегодня.':'Вивчіть {n} {w} сьогодні.',
+
+/* шапка */
+' · {n} новых':' · {n} нових',
+' · {n} к повтору':' · {n} до повторення',
+' · {n} выучено':' · {n} вивчено',
+'Выучено {a} · в работе {b} · новых {c}':'Вивчено {a} · у роботі {b} · нових {c}',
+
+/* экран «Карточки» */
+'Поиск':'Пошук',
+'Все':'Усі',
+'Избранное':'Обране',
+'Изучаю {n}':'Вивчаю {n}',
+'Выучено {n}':'Вивчено {n}',
+'выучено':'вивчено',
+'новая':'нова',
+'к повтору':'до повторення',
+'через {n} дн.':'через {n} дн.',
+'· повторов {n}':'· повторень {n}',
+'Вернуть в изучение':'Повернути до вивчення',
+'Убрать из избранного':'Прибрати з обраного',
+'В избранное':'В обране',
+'Перегенерировать':'Перегенерувати',
+'Удалить':'Видалити',
+'Ещё {n}':'Ще {n}',
+'Пока ничего не выучено':'Поки нічого не вивчено',
+'Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь':
+  'Кнопка «Легко» у тренуванні прибирає слово з показу і зберігає його тут',
+'В избранном пусто':'В обраному порожньо',
+'Звёздочка на карточке собирает личный список — его можно учить отдельным фильтром':
+  'Зірочка на картці збирає особистий список — його можна вчити окремим фільтром',
+'Ничего не найдено':'Нічого не знайдено',
+'Пока нет карточек':'Поки немає карток',
+'Добавьте первое слово на вкладке «Добавить»':'Додайте перше слово на вкладці «Додати»',
+'Вернул в изучение':'Повернув до вивчення',
+'Удалено «{w}»':'Видалено «{w}»',
+'Вернуть':'Повернути',
+'Вернул «{w}»':'Повернув «{w}»',
+'Это слово из общей колоды — его текст один для всех':'Це слово зі спільної колоди — його текст один для всіх',
+'Обновлено':'Оновлено',
+'Такое слово есть в общей колоде — карточка привязана к нему':
+  'Таке слово є у спільній колоді — картку прив’язано до нього',
+'Такое слово уже было — карточки объединены в «{w}»':'Таке слово вже було — картки об’єднано в «{w}»',
+'Обновлено: теперь «{w}»':'Оновлено: тепер «{w}»',
+
+/* темы словника */
+'Бытие':'Буття',
+'Пространство':'Простір',
+'Размер и форма':'Розмір і форма',
+'Время':'Час',
+'Количество':'Кількість',
+'Качества':'Якості',
+'Оценка':'Оцінка',
+'Мышление и речь':'Мислення і мовлення',
+'Связки и отношения':'Зв’язки й відношення',
+'Личные данные':'Особисті дані',
+'Дом и окружение':'Дім і оточення',
+'Повседневная жизнь':'Повсякденне життя',
+'Досуг':'Дозвілля',
+'Поездки и транспорт':'Подорожі і транспорт',
+'Здоровье и гигиена':'Здоров’я і гігієна',
+'Покупки':'Покупки',
+'Еда':'Їжа',
+'Услуги':'Послуги',
+'Разное':'Різне',
+'Глаголы':'Дієслова',
+
+/* тренировка */
+'Добавьте слова, чтобы начать':'Додайте слова, щоб почати',
+'На сегодня всё повторено{где}':'На сьогодні все повторено{где}',
+' в избранном':' в обраному',
+' среди глаголов':' серед дієслів',
+' на уровне {l}':' на рівні {l}',
+' в теме «{t}»':' у темі «{t}»',
+'В избранном пока пусто':'В обраному поки порожньо',
+'Глаголов в колоде пока нет':'Дієслів у колоді поки немає',
+'Слов этого уровня пока нет':'Слів цього рівня поки немає',
+'В этой теме пока нет карточек':'У цій темі поки немає карток',
+'Следующее повторение: {d}':'Наступне повторення: {d}',
+'Повторить всё заново':'Повторити все знову',
+'Показать ответ':'Показати відповідь',
+'Не помню':'Не пам’ятаю',
+'заново':'знову',
+'Трудно':'Важко',
+'1 день':'1 день',
+'Знаю':'Знаю',
+'14 дней':'14 днів',
+'Легко':'Легко',
+'осталось {n}':'лишилося {n}',
+
+/* «Как идут дела» */
+'Как идут дела':'Як ідуть справи',
+'Закрыть':'Закрити',
+'Прогноз':'Прогноз',
+'Темп':'Темп',
+'Повторения':'Повторення',
+'сегодня':'сьогодні',
+'- - цель {n}':'- - мета {n}',
+'пройдено':'пройдено',
+'нынешний темп':'нинішній темп',
+'по цели':'за метою',
+'меньше 1%':'менше 1%',
+'{n} слова':'{n} слова',
+'выучено из {n}':'вивчено з {n}',
+'{w} в день':'{w} на день',
+'{w} подряд':'{w} поспіль',
+'Колода пуста — сначала добавьте слова, и здесь появится история.':
+  'Колода порожня — спочатку додайте слова, і тут з’явиться історія.',
+'<b>Выучено {a} из {b}</b> — это {p}.':'<b>Вивчено {a} з {b}</b> — це {p}.',
+' Осталось {n}.':' Лишилося {n}.',
+'Колода пройдена целиком. Добавьте новые слова — прогноз построится заново.':
+  'Колоду пройдено повністю. Додайте нові слова — прогноз побудується заново.',
+'Темп за две недели — <b>{r} в день</b>. Если он сохранится, последнее слово колоды будет выучено <b>{d}</b> — через {s}.':
+  'Темп за два тижні — <b>{r} на день</b>. Якщо він збережеться, останнє слово колоди буде вивчено <b>{d}</b> — через {s}.',
+'С целью в {n} {w} в день ушло бы {a} — на {b} меньше.':
+  'З метою в {n} {w} на день пішло б {a} — на {b} менше.',
+'Это быстрее цели: по {n} {w} в день ушло бы {a}.':
+  'Це швидше за мету: по {n} {w} на день пішло б {a}.',
+'За две недели ни одно слово не переведено в «выучено», так что считать темп не от чего.':
+  'За два тижні жодне слово не переведено у «вивчено», тож рахувати темп немає від чого.',
+'С целью в {n} {w} в день на оставшееся ушло бы {a} — до {d}.':
+  'З метою в {n} {w} на день на решту пішло б {a} — до {d}.',
+'За тридцать дней ни одного слова в «выучено». Столбики появятся, как только в тренировке нажмётся «Легко».':
+  'За тридцять днів жодного слова у «вивчено». Стовпчики з’являться, щойно в тренуванні натиснеться «Легко».',
+'За тридцать дней выучено <b>{n}</b> — в среднем {a} в день.':
+  'За тридцять днів вивчено <b>{n}</b> — у середньому {a} на день.',
+'Цель взята в <b>{n} из 30 дней</b>. Лучший день — {b}, {d}.':
+  'Мету взято в <b>{n} із 30 днів</b>. Найкращий день — {b}, {d}.',
+'Сейчас серия {d}':'Зараз серія {d}',
+', рекорд — {d}':', рекорд — {d}',
+' — это рекорд':' — це рекорд',
+'Серия прервана. Рекорд — {d}.':'Серію перервано. Рекорд — {d}.',
+'Серии ещё не было: цель нужно взять два дня подряд.':
+  'Серії ще не було: мету треба взяти два дні поспіль.',
+'На ближайшие две недели повторений не назначено.':'На найближчі два тижні повторень не призначено.',
+'Сегодня ждёт <b>{n}</b>':'Сьогодні чекає <b>{n}</b>',
+', из них {n} просрочено.':', з них {n} прострочено.',
+'За неделю подойдёт {n}':'За тиждень підійде {n}',
+', в среднем {a} в день':', у середньому {a} на день',
+'Самый плотный день — {d}, {n}.':'Найщільніший день — {d}, {n}.',
+'Новых слов в колоде {n} — они ждут без срока и в график не идут.':
+  'Нових слів у колоді {n} — вони чекають без строку і в графік не йдуть.',
+'Новых слов не осталось: вся колода уже в работе.':'Нових слів не залишилося: уся колода вже в роботі.',
+
+/* настройки */
+'Колоды':'Колоди',
+'Хотя бы одна колода нужна':'Хоча б одна колода потрібна',
+'Направление тренировки':'Напрям тренування',
+'Вперемешку':'Упереміш',
+'Что показывать на карточке первым: португальское слово или перевод.':
+  'Що показувати на картці першим: португальське слово чи переклад.',
+'Меньше':'Менше',
+'Больше':'Більше',
+'Слов в день':'Слів на день',
+'От 5 до 99. Можно вписать своё число.':'Від 5 до 99. Можна вписати своє число.',
+'Язык':'Мова',
+'Язык приложения. Слова и переводы на карточках остаются как есть — колода общая.':
+  'Мова застосунку. Слова і переклади на картках лишаються як є — колода спільна.',
+'Аккаунт':'Акаунт',
+'Выйти':'Вийти',
+
+/* названия колод приходят с сервера — переводим по самому названию */
+'Начальный A1':'Початковий A1',
+'Базовый A2':'Базовий A2',
+'Средний B1':'Середній B1',
+'Выше среднего B2':'Вище середнього B2',
+'Продвинутый C1':'Просунутий C1',
+'Свои слова':'Свої слова',
+
+/* меню */
+'Добавить':'Додати',
+'Учить':'Вчити',
+'Карточки':'Картки',
+'Настройки':'Налаштування',
+
+/* вход и аккаунт */
+'Карточки европейского португальского':'Картки європейської португальської',
+'Почта':'Пошта',
+'Пароль':'Пароль',
+'Войти':'Увійти',
+'Вход только для своих — аккаунты заводит владелец':'Вхід лише для своїх — акаунти створює власник',
+'Неверная почта или пароль':'Невірна пошта або пароль',
+'Почта не подтверждена':'Пошту не підтверджено',
+'Слишком много попыток, подождите минуту':'Забагато спроб, зачекайте хвилину',
+'Регистрация закрыта — аккаунт заводит владелец':'Реєстрацію закрито — акаунт створює власник',
+'Не удалось войти':'Не вдалося увійти',
+'С возвращением':'З поверненням',
+'Вы не вошли':'Ви не увійшли',
+'Не отправлено изменений: {n}. Попробую отправить и выйти. Продолжить?':
+  'Не надіслано змін: {n}. Спробую надіслати і вийти. Продовжити?',
+'Выйти из аккаунта? Карточки останутся в облаке.':'Вийти з акаунта? Картки залишаться в хмарі.',
+'Войдите в аккаунт':'Увійдіть в акаунт',
+'Сессия истекла — войдите заново':'Сесія завершилася — увійдіть знову',
+
+/* сеть и синхронизация */
+'сервер ответил {n}':'сервер відповів {n}',
+'Пустой ответ модели':'Порожня відповідь моделі',
+'Модель не вернула текст':'Модель не повернула текст',
+'нет связи с сервером':'немає зв’язку із сервером',
+'ошибка':'помилка',
+'Вход не выполнен':'Вхід не виконано',
+'Синхронизирую…':'Синхронізую…',
+'Нет сети · ждут отправки: {n}':'Немає мережі · чекають надсилання: {n}',
+'Нет сети · всё отправлено':'Немає мережі · усе надіслано',
+' · ждут отправки: {n}':' · чекають надсилання: {n}',
+'Отправляю изменения: {n}':'Надсилаю зміни: {n}',
+'Последняя синхронизация в {t}':'Остання синхронізація о {t}',
+' и {m}':' і {m}',
+'Браузер не даёт хранить копию колоды — работать можно, но только онлайн':
+  'Браузер не дає зберігати копію колоди — працювати можна, але лише онлайн'
+};
+
+/* Статические подписи разметки помечены data-tr (текст), data-tr-ph, data-tr-title
+   и data-tr-aria. Русский оригинал снимается при первой отрисовке и хранится рядом
+   с элементом: в разметке он один, дублировать его в атрибуте незачем. */
+const ORIG=new WeakMap();
+function paintStatic(){
+  $$('[data-tr],[data-tr-ph],[data-tr-title],[data-tr-aria]').forEach(el=>{
+    let o=ORIG.get(el);
+    if(!o){
+      o={};
+      // берём текстовый узел, а не textContent: рядом лежат svg, «›» и счётчик
+      if(el.hasAttribute('data-tr')){
+        o.node=[...el.childNodes].find(x=>x.nodeType===3&&x.textContent.trim());
+        o.text=o.node?o.node.textContent.trim():'';
+      }
+      if(el.hasAttribute('data-tr-ph')) o.ph=el.getAttribute('placeholder')||'';
+      if(el.hasAttribute('data-tr-title')) o.title=el.getAttribute('title')||'';
+      if(el.hasAttribute('data-tr-aria')) o.aria=el.getAttribute('aria-label')||'';
+      ORIG.set(el,o);
+    }
+    if(o.node) o.node.textContent=T(o.text);
+    if(o.ph!=null) el.setAttribute('placeholder',T(o.ph));
+    if(o.title!=null) el.setAttribute('title',T(o.title));
+    if(o.aria!=null) el.setAttribute('aria-label',T(o.aria));
+  });
+}
+function paintLangSeg(){
+  $$('#uiLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===uiLang));
+}
+// Перерисовываем всё, что уже нарисовано: язык — не фильтр и не сортировка,
+// он меняет каждую подпись сразу.
+function applyLang(){
+  document.documentElement.lang=uiLang;
+  paintStatic(); paintLangSeg(); paintGoal();
+  renderAttach(); renderPreview(); updateSelCount();
+  renderStats(); renderCards(); renderDecks();
+  renderWhoami(); renderSyncState();
+  // тренировку трогаем, только когда она на экране: renderStudy() при пустом
+  // current достаёт из очереди следующую карточку, а это не дело перерисовки
+  if($('#v-study').classList.contains('on')) renderStudy();
+  if(!$('#statSheet').hidden) renderStat();
+}
+function setLang(v){
+  v=v==='uk'?'uk':'ru';
+  if(v===uiLang) return;
+  uiLang=v; save(LS_LANG,v);
+  settings.lang=v; persistSet();
+  applyLang();
+}
+
 let toastT;
 function toast(msg,ms){
   const t=$('#toast'); t.innerHTML=msg;
@@ -857,21 +1209,21 @@ function toastUndo(msg,label,fn){
 
 /* ---------------- OpenAI ---------------- */
 async function callProxy(payload){
-  if(!authed()) throw new Error('Войдите в аккаунт');
+  if(!authed()) throw new Error(T('Войдите в аккаунт'));
   const r=await api('/functions/v1/ai',{method:'POST',body:JSON.stringify(payload)});
   let d={}; try{ d=await r.json() }catch(e){}
-  if(!r.ok) throw new Error(d.error||('сервер ответил '+r.status));
+  if(!r.ok) throw new Error(d.error||T('сервер ответил {n}',{n:r.status}));
   return d;
 }
 async function askAI(items){
   const parsed=await callProxy({mode:'cards',items:items});
   const arr=parsed.cards||parsed.items||parsed.result||[];
-  if(!Array.isArray(arr)||!arr.length) throw new Error('Пустой ответ модели');
+  if(!Array.isArray(arr)||!arr.length) throw new Error(T('Пустой ответ модели'));
   return arr;
 }
 async function askVision(dataUrl){
   const parsed=await callProxy({mode:'vision',image:dataUrl});
-  if(typeof parsed.text!=='string') throw new Error('Модель не вернула текст');
+  if(typeof parsed.text!=='string') throw new Error(T('Модель не вернула текст'));
   return parsed;
 }
 
@@ -880,7 +1232,8 @@ async function generateCards(items){
   const fresh=[];
   for(let i=0;i<items.length;i+=CHUNK){
     const part=items.slice(i,i+CHUNK);
-    if(items.length>CHUNK) toast('<span class="spin"></span> Генерирую '+(i+1)+'–'+Math.min(i+CHUNK,items.length)+' из '+items.length+'…',60000);
+    if(items.length>CHUNK) toast('<span class="spin"></span> '+T('Генерирую {a}–{b} из {n}…',
+      {a:i+1,b:Math.min(i+CHUNK,items.length),n:items.length}),60000);
     const res=await askAI(part);
     for(const r of res){
       if(!r||!r.word) continue;
@@ -929,19 +1282,19 @@ function renderPreview(){
   if(!pending.length&&!already.length){ box.innerHTML=''; return }
   // слово, которое уже заведено, показываем целиком, а не отбиваем тостом
   box.innerHTML=
-    (already.length?lbl(already.length>1?'Уже в колоде':'Это слово уже в колоде')+
+    (already.length?lbl(T(already.length>1?'Уже в колоде':'Это слово уже в колоде'))+
       already.map(cardPreviewHTML).join(''):'')+
-    (pending.length?lbl('Перевод')+pending.map(cardPreviewHTML).join('')+
+    (pending.length?lbl(T('Перевод'))+pending.map(cardPreviewHTML).join('')+
       '<div class="row" style="margin-top:4px">'+
-        '<button class="btn primary" id="pvAdd">Добавить в колоду'+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
-        '<button class="btn" id="pvSkip" style="max-width:110px">Отмена</button>'+
+        '<button class="btn primary" id="pvAdd">'+T('Добавить в колоду')+(pending.length>1?' ('+pending.length+')':'')+'</button>'+
+        '<button class="btn" id="pvSkip" style="max-width:110px">'+T('Отмена')+'</button>'+
       '</div>':'');
   if(!pending.length) return;
   $('#pvAdd').onclick=()=>{
     const n=commitCards(pending);
     pending=[]; already=[]; renderPreview();
     $('#wordInput').value='';
-    toast(n?('Добавлено '+n):'Такие карточки уже есть');
+    toast(n?T('Добавлено {n}',{n:n}):T('Такие карточки уже есть'));
   };
   $('#pvSkip').onclick=()=>{ pending=[]; renderPreview() };
 }
@@ -951,14 +1304,14 @@ async function runAdd(inputs, btn){
   if(!items.length) return [];
   const todo=items.filter(it=>!cards.some(c=>norm(c.word)===norm(it.text)||norm(c.query)===norm(it.text)));
   const known=items.length-todo.length;
-  if(!todo.length){toast('Такие карточки уже есть');return []}
+  if(!todo.length){toast(T('Такие карточки уже есть'));return []}
   const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
   let fresh=[];
   try{
     fresh=await generateCards(todo.map(it=>it.context?{word:it.text,context:it.context}:{word:it.text}));
     commitCards(fresh);
     const skipped=todo.length-fresh.length+known;
-    toast('Добавлено '+fresh.length+(skipped?', пропущено дублей: '+skipped:''));
+    toast(T('Добавлено {n}',{n:fresh.length})+(skipped?T(', пропущено дублей: {n}',{n:skipped}):''));
     if(fresh.length){ $('#wordInput').value=''; renderCards(); }
   }catch(e){ toast(esc(e.message),5000); fresh=[] }
   finally{ btn.disabled=false; btn.innerHTML=old; renderStats(); }
@@ -968,7 +1321,7 @@ async function runAdd(inputs, btn){
 $('#addOne').onclick=async e=>{
   if(imgData){ await runOcr($('#addOne')); return }
   const raw=$('#wordInput').value.split(/[,;\n]/).map(s=>s.trim()).filter(Boolean);
-  if(!raw.length){toast('Введите слово');return}
+  if(!raw.length){toast(T('Введите слово'));return}
   const todo=raw.filter(w=>!hasWord(w));
   pending=[];
   already=raw.map(w=>cards.find(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w))).filter(Boolean);
@@ -979,7 +1332,7 @@ $('#addOne').onclick=async e=>{
   try{
     pending=await generateCards(todo.map(w=>({word:w})));
     renderPreview();
-    if(pending.length<todo.length) toast('Часть слов пропущена как дубли');
+    if(pending.length<todo.length) toast(T('Часть слов пропущена как дубли'));
     $('#preview').scrollIntoView({behavior:'smooth',block:'nearest'});
   }catch(err){ toast(esc(err.message),5000) }
   finally{ btn.disabled=false; btn.innerHTML=old }
@@ -1000,7 +1353,7 @@ function suggestPool(){
 // делает вид, что не знает собственной карточки.
 function ownPool(){
   return cards.filter(c=>c.own)
-              .map(c=>({w:c.word, lvl:c.level||'своё', tema:'своё слово', ru:c.ru,
+              .map(c=>({w:c.word, lvl:c.level||T('своё'), tema:T('своё слово'), ru:c.ru,
                         k:deacc(norm(c.word))}));
 }
 let suggList=[], suggIdx=-1;
@@ -1093,7 +1446,7 @@ function parseWords(text){
 
 function showParse(pt,ru){
   const list=parseWords(pt);
-  if(!list.length){ toast('Не нашёл слов для карточек'); return }
+  if(!list.length){ toast(T('Не нашёл слов для карточек')); return }
   parsed=list;
   $('#srcPt').textContent=pt;
   const r=$('#srcRu');
@@ -1120,14 +1473,14 @@ function updateSelCount(){
   const n=$$('#chips .chip.on').length;
   const free=parsed.filter(p=>!hasWord(p.w)).length;
   $('#chipHead').textContent = free
-    ? ('Незнакомых слов: '+free+(n?' · выбрано '+n:''))
-    : 'Все слова из текста уже в колоде';
+    ? (T('Незнакомых слов: {n}',{n:free})+(n?T(' · выбрано {n}',{n:n}):''))
+    : T('Все слова из текста уже в колоде');
   const all=$('#chipAll');
   all.style.display = free>1?'':'none';
-  all.textContent = n&&n===free ? 'Снять выбор' : 'Выбрать все';
+  all.textContent = T(n&&n===free ? 'Снять выбор' : 'Выбрать все');
   const b=$('#addSelected');
   b.style.display = n?'':'none';
-  b.textContent='Создать карточки ('+n+')';
+  b.textContent=T('Создать карточки ({n})',{n:n});
 }
 $('#chips').onclick=e=>{
   const chip=e.target.closest('.chip'); if(!chip||chip.classList.contains('have'))return;
@@ -1147,7 +1500,7 @@ $('#addSelected').onclick=async ()=>{
   const fresh=await runAdd(sel,$('#addSelected'));
   renderChips();                     // добавленные слова тут же становятся зачёркнутыми
   if(fresh.length){
-    $('#added').innerHTML='<div class="lbl" style="margin:22px 0 7px 4px">Добавлено: '+fresh.length+'</div>'+
+    $('#added').innerHTML='<div class="lbl" style="margin:22px 0 7px 4px">'+T('Добавлено: {n}',{n:fresh.length})+'</div>'+
       fresh.map(cardPreviewHTML).join('');
     $('#added').scrollIntoView({behavior:'smooth',block:'nearest'});
   }
@@ -1158,12 +1511,12 @@ let imgData=null;
 
 function shrink(file,maxSide){
   return new Promise((res,rej)=>{
-    if(!file||!/^image\//.test(file.type)) return rej(new Error('Это не изображение'));
+    if(!file||!/^image\//.test(file.type)) return rej(new Error(T('Это не изображение')));
     const fr=new FileReader();
-    fr.onerror=()=>rej(new Error('Не удалось прочитать файл'));
+    fr.onerror=()=>rej(new Error(T('Не удалось прочитать файл')));
     fr.onload=()=>{
       const img=new Image();
-      img.onerror=()=>rej(new Error('Не удалось открыть изображение'));
+      img.onerror=()=>rej(new Error(T('Не удалось открыть изображение')));
       img.onload=()=>{
         const k=Math.min(1,(maxSide||1600)/Math.max(img.width,img.height));
         const cv=document.createElement('canvas');
@@ -1182,7 +1535,7 @@ function renderAttach(){
   const box=$('#attach');
   if(imgData){ $('#attachThumb').src=imgData; box.style.display='flex' }
   else{ box.style.display='none'; $('#attachThumb').removeAttribute('src') }
-  $('#addOne').textContent = imgData?'Распознать':'Перевести';
+  $('#addOne').textContent = T(imgData?'Распознать':'Перевести');
 }
 function clearAttach(){ imgData=null; renderAttach() }
 
@@ -1249,11 +1602,11 @@ async function runOcr(b){
   try{
     const r=await askVision(imgData);
     const text=(r.text||'').trim();
-    if(!text){ toast('На картинке не нашлось текста',3500); return }
-    const lang=(r.lang||'').toLowerCase();
+    if(!text){ toast(T('На картинке не нашлось текста'),3500); return }
+    const язык=(r.lang||'').toLowerCase();      // язык картинки, не язык интерфейса
     showParse(text,r.ru||'');
     imgData=null;                       // картинку сняли, разбор остался
-    if(lang&&lang!=='pt') toast('Похоже, текст на языке «'+esc(lang)+'», а не на португальском',4000);
+    if(язык&&язык!=='pt') toast(T('Похоже, текст на языке «{s}», а не на португальском',{s:esc(язык)}),4000);
   }catch(err){ toast(esc(err.message),5000) }
   finally{ b.disabled=false; b.innerHTML=old; renderAttach() }
 }
@@ -1270,17 +1623,18 @@ const hasWord=w=>cards.some(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w));
 function cardHTML(c){
   const due=c.due<=Date.now();
   const isNew=c.reps===0;
-  const when=c.archived?'выучено':isNew?'новая':due?'к повтору':'через '+Math.max(1,Math.ceil((c.due-Date.now())/DAY))+' дн.';
+  const when=c.archived?T('выучено'):isNew?T('новая'):due?T('к повтору')
+             :T('через {n} дн.',{n:Math.max(1,Math.ceil((c.due-Date.now())/DAY))});
   const cls=c.archived?' done':isNew?' new':due?' due':'';
   return '<article class="card" data-id="'+c.id+'">'+cardBody(c)+
     '<div class="meta"><span class="badge'+cls+'">'+when+'</span>'+
-      (c.reps?'<span class="badge">· повторов '+c.reps+'</span>':'')+
+      (c.reps?'<span class="badge">'+T('· повторов {n}',{n:c.reps})+'</span>':'')+
       '<span style="flex:1"></span>'+
-      (c.archived?'<button class="btn sm" data-act="back">Вернуть в изучение</button>':'')+
+      (c.archived?'<button class="btn sm" data-act="back">'+T('Вернуть в изучение')+'</button>':'')+
       '<button class="btn icon'+(c.fav?' on':'')+'" data-act="fav" title="'+
-        (c.fav?'Убрать из избранного':'В избранное')+'">'+(c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
-      '<button class="btn icon" data-act="regen" title="Перегенерировать">'+IC_REFRESH+'</button>'+
-      '<button class="btn icon" data-act="del" title="Удалить">'+IC_TRASH+'</button>'+
+        T(c.fav?'Убрать из избранного':'В избранное')+'">'+(c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
+      '<button class="btn icon" data-act="regen" title="'+T('Перегенерировать')+'">'+IC_REFRESH+'</button>'+
+      '<button class="btn icon" data-act="del" title="'+T('Удалить')+'">'+IC_TRASH+'</button>'+
     '</div></article>';
 }
 let cardFilter='all';
@@ -1317,7 +1671,7 @@ function growCards(n){
   shownCount+=part.length;
   if(part.length) tail.insertAdjacentHTML('beforebegin',part.map(cardHTML).join(''));
   if(shownCount>=shownList.length) tail.remove();
-  else tail.textContent='Ещё '+plural(shownList.length-shownCount,'карточка','карточки','карточек');
+  else tail.textContent=T('Ещё {n}',{n:plural(shownList.length-shownCount,'карточка')});
 }
 // Прокручивается только main — по нему и смотрим, не пора ли дорисовать следующую порцию.
 $('main').addEventListener('scroll',()=>{
@@ -1337,8 +1691,8 @@ function renderCards(){
   const done=cards.filter(c=>c.archived).length;
   const segs=$$('#cardFilter button');
   if(segs.length){
-    segs[1].textContent='Изучаю '+(cards.length-done);
-    segs[2].textContent='Выучено '+done;
+    segs[1].textContent=T('Изучаю {n}',{n:cards.length-done});
+    segs[2].textContent=T('Выучено {n}',{n:done});
     paintFavSeg();
   }
   // тот же список, что и был (пришла синхронизация) — возвращаем и долистанное, и прокрутку
@@ -1350,11 +1704,14 @@ function renderCards(){
     ? '<div class="more" id="cardMore"></div>'
     : '<div class="empty">'+IC_DECK+(cards.length
         ? (cardFilter==='done'&&!q
-            ? '<div>Пока ничего не выучено</div><div class="sub">Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь</div>'
+            ? '<div>'+T('Пока ничего не выучено')+'</div><div class="sub">'+
+              T('Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь')+'</div>'
             : cardFilter==='fav'&&!q
-            ? '<div>В избранном пусто</div><div class="sub">Звёздочка на карточке собирает личный список — его можно учить отдельным фильтром</div>'
-            : '<div>Ничего не найдено</div>')
-        : '<div>Пока нет карточек</div><div class="sub">Добавьте первое слово на вкладке «Добавить»</div>')+'</div>';
+            ? '<div>'+T('В избранном пусто')+'</div><div class="sub">'+
+              T('Звёздочка на карточке собирает личный список — его можно учить отдельным фильтром')+'</div>'
+            : '<div>'+T('Ничего не найдено')+'</div>')
+        : '<div>'+T('Пока нет карточек')+'</div><div class="sub">'+
+          T('Добавьте первое слово на вкладке «Добавить»')+'</div>')+'</div>';
   if(!list.length) return;
   growCards(Math.max(CARD_PAGE,keep));
   if(keep&&здесь) $('main').scrollTop=top;
@@ -1374,27 +1731,27 @@ $('#cardList').onclick=async e=>{
     const on=toggleFav(c);
     if(cardFilter==='fav'){ renderCards(); return }
     btn.classList.toggle('on',on);
-    btn.title=on?'Убрать из избранного':'В избранное';
+    btn.title=T(on?'Убрать из избранного':'В избранное');
     btn.innerHTML=on?IC_STAR_ON:IC_STAR;
     return;
   }
   if(btn.dataset.act==='back'){
     if((c.archivedAt||0)>=startOfDay()) bumpDay(-1);   // выучили и передумали в тот же день
     c.archived=false; c.archivedAt=Date.now(); c.interval=1; c.due=Date.now();
-    touch(c); persist(); renderCards(); toast('Вернул в изучение');
+    touch(c); persist(); renderCards(); toast(T('Вернул в изучение'));
     return;
   }
   if(btn.dataset.act==='del'){
     dropCard(c); persist(); renderCards();
-    toastUndo('Удалено «'+esc(c.word)+'»','Вернуть',()=>{
+    toastUndo(T('Удалено «{w}»',{w:esc(c.word)}),T('Вернуть'),()=>{
       touch(c);                       // надгробие снимается той же правкой: deleted=false
       if(!cards.some(x=>x.id===c.id)) cards.unshift(c);
       persist(); renderCards();
-      toast('Вернул «'+esc(c.word)+'»');
+      toast(T('Вернул «{w}»',{w:esc(c.word)}));
     });
   }else{
     // Слово колоды перегенерировать нечего: его текст один для всех и правится колодой.
-    if(!c.own){ toast('Это слово из общей колоды — его текст один для всех',4000); return }
+    if(!c.own){ toast(T('Это слово из общей колоды — его текст один для всех'),4000); return }
     const old=btn.innerHTML; btn.disabled=true; btn.innerHTML='<span class="spin"></span>';
     try{
       const r=(await askAI([{word:c.word}]))[0];
@@ -1411,10 +1768,10 @@ $('#cardList').onclick=async e=>{
         touch(t);
       }
       persist(); renderCards();
-      toast(nid===c.id ? 'Обновлено'
-           :вКолоде   ? 'Такое слово есть в общей колоде — карточка привязана к нему'
-           :двойник   ? 'Такое слово уже было — карточки объединены в «'+esc(word)+'»'
-                      : 'Обновлено: теперь «'+esc(word)+'»');
+      toast(nid===c.id ? T('Обновлено')
+           :вКолоде   ? T('Такое слово есть в общей колоде — карточка привязана к нему')
+           :двойник   ? T('Такое слово уже было — карточки объединены в «{w}»',{w:esc(word)})
+                      : T('Обновлено: теперь «{w}»',{w:esc(word)}));
     }catch(err){toast(esc(err.message),4500)}
     finally{ btn.disabled=false; btn.innerHTML=old }
   }
@@ -1493,21 +1850,21 @@ function renderTemaBar(){
   // всего. Показываем, пока в нём что-то есть или пока он выбран — иначе, сняв
   // последнюю звезду прямо на тренировке, человек остался бы без выхода из фильтра.
   bar.innerHTML=
-    btn('data-t','','Все',all,!свой&&studyTema==null)+
-    (favs||studyFav?btn('data-f','1','Избранное',favs,studyFav):'')+
+    btn('data-t','',T('Все'),all,!свой&&studyTema==null)+
+    (favs||studyFav?btn('data-f','1',T('Избранное'),favs,studyFav):'')+
     lv.map(l=>btn('data-l',l,l,nl.get(l),studyLevel===l)).join('')+
-    (verbs?btn('data-p','1','Глаголы',verbs,studyVerbs):'')+
+    (verbs?btn('data-p','1',T('Глаголы'),verbs,studyVerbs):'')+
     (lv.length||verbs?'<span class="sep"></span>':'')+
-    TEMAS.map((t,i)=>btn('data-t',temaKey(i),t.ru,nt.get(i)||0,!свой&&studyTema===i)).join('')+
-    (other?btn('data-t',temaKey(-1),'Разное',other,!свой&&studyTema===-1):'');
+    TEMAS.map((t,i)=>btn('data-t',temaKey(i),T(t.ru),nt.get(i)||0,!свой&&studyTema===i)).join('')+
+    (other?btn('data-t',temaKey(-1),T('Разное'),other,!свой&&studyTema===-1):'');
   bar.scrollLeft=keep;
 }
 function temaName(){
-  if(studyFav) return 'Избранное';
-  if(studyVerbs) return 'Глаголы';
+  if(studyFav) return T('Избранное');
+  if(studyVerbs) return T('Глаголы');
   if(studyLevel) return studyLevel;
   if(studyTema==null) return '';
-  return studyTema<0?'Разное':(TEMAS[studyTema]||{}).ru||'';
+  return studyTema<0?T('Разное'):T((TEMAS[studyTema]||{}).ru||'');
 }
 $('#temaBar').onclick=e=>{
   const b=e.target.closest('button'); if(!b) return;
@@ -1539,19 +1896,21 @@ function renderStudy(){
       $('#prog').style.width='100%';
       const pool=active().filter(inTema);
       const next=pool.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
-      const где=studyFav?' в избранном'
-              :studyVerbs?' среди глаголов'
-              :studyLevel?(' на уровне '+esc(studyLevel))
-              :studyTema==null?'':(' в теме «'+esc(temaName())+'»');
+      const где=studyFav?T(' в избранном')
+              :studyVerbs?T(' среди глаголов')
+              :studyLevel?T(' на уровне {l}',{l:esc(studyLevel)})
+              :studyTema==null?'':T(' в теме «{t}»',{t:esc(temaName())});
       w.innerHTML='<div class="empty">'+IC_DONE+
-        (!cards.length?'<div>Добавьте слова, чтобы начать</div>'
-          :pool.length?'<div>На сегодня всё повторено'+где+'</div>'
-          :(studyFav?'<div>В избранном пока пусто</div>'
-             :studyVerbs?'<div>Глаголов в колоде пока нет</div>'
-             :studyLevel?'<div>Слов этого уровня пока нет</div>'
-                     :'<div>В этой теме пока нет карточек</div>'))+
-        (next?'<div class="sub">Следующее повторение: '+new Date(next.due).toLocaleDateString('ru-RU',{day:'numeric',month:'long'})+'</div>':'')+
-        (pool.length?'<div style="margin-top:20px"><button class="btn" id="againAll">Повторить всё заново</button></div>':'')+'</div>';
+        (!cards.length?'<div>'+T('Добавьте слова, чтобы начать')+'</div>'
+          :pool.length?'<div>'+T('На сегодня всё повторено{где}',{'где':где})+'</div>'
+          :'<div>'+(studyFav?T('В избранном пока пусто')
+             :studyVerbs?T('Глаголов в колоде пока нет')
+             :studyLevel?T('Слов этого уровня пока нет')
+                     :T('В этой теме пока нет карточек'))+'</div>')+
+        (next?'<div class="sub">'+T('Следующее повторение: {d}',
+              {d:new Date(next.due).toLocaleDateString(LOC(),{day:'numeric',month:'long'})})+'</div>':'')+
+        (pool.length?'<div style="margin-top:20px"><button class="btn" id="againAll">'+
+              T('Повторить всё заново')+'</button></div>':'')+'</div>';
       const b=$('#againAll');
       if(b) b.onclick=()=>{queue=shuffle(active().filter(inTema));sessionTotal=queue.length;sessionDone=0;nextCard()};
       return;
@@ -1568,7 +1927,7 @@ function renderStudy(){
     '<div id="studyCard">'+
       (lvl?'<span class="lvl'+(/^[BC]/.test(lvl)?' hard':'')+'">'+esc(lvl)+'</span>':'')+
       '<button class="fav'+(c.fav?' on':'')+'" id="favBtn" aria-pressed="'+(!!c.fav)+
-        '" title="'+(c.fav?'Убрать из избранного':'В избранное')+'">'+
+        '" title="'+T(c.fav?'Убрать из избранного':'В избранное')+'">'+
         (c.fav?IC_STAR_ON:IC_STAR)+'</button>'+
       '<div class="tag">'+(d==='pt'?'PT → RU':'RU → PT')+'</div>'+
       '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
@@ -1578,13 +1937,14 @@ function renderStudy(){
     '</div>'+
     (shown?
       '<div class="grades">'+
-        '<button class="btn g0" data-g="0">Не помню<small>заново</small></button>'+
-        '<button class="btn g1" data-g="1">Трудно<small>1 день</small></button>'+
-        '<button class="btn g2" data-g="2">Знаю<small>14 дней</small></button>'+
-        '<button class="btn g3" data-g="3">Легко<small>выучено</small></button>'+
+        '<button class="btn g0" data-g="0">'+T('Не помню')+'<small>'+T('заново')+'</small></button>'+
+        '<button class="btn g1" data-g="1">'+T('Трудно')+'<small>'+T('1 день')+'</small></button>'+
+        '<button class="btn g2" data-g="2">'+T('Знаю')+'<small>'+T('14 дней')+'</small></button>'+
+        '<button class="btn g3" data-g="3">'+T('Легко')+'<small>'+T('выучено')+'</small></button>'+
       '</div>'
-      :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">Показать ответ</button>')+
-    '<div class="tapHint">осталось '+left+'</div>';
+      :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">'+
+        T('Показать ответ')+'</button>')+
+    '<div class="tapHint">'+T('осталось {n}',{n:left})+'</div>';
 
   $('#favBtn').onclick=e=>{
     e.stopPropagation();
@@ -1670,7 +2030,7 @@ function streakInfo(){
 }
 /* Подпись меняется раз в день: индекс от номера дня, поэтому строка не скачет
    при каждой перерисовке блока, а за тридцать дней проходит весь список. */
-const LEADS=[
+const LEADS={ru:[
   'Мозг любит понемногу и каждый день: сто слов в воскресенье он вернёт обратно в понедельник.',
   'Пятнадцать слов в день — и однажды вы поймёте, что бариста спросил, а не поздоровался.',
   'Португальцы съедают гласные. Ловить слова на слух поздно, учите заранее.',
@@ -1701,19 +2061,50 @@ const LEADS=[
   'Начать легко, продолжить трудно, бросить проще всего. Мы за средний вариант.',
   '«Pois pois» говорят и когда согласны, и когда не очень. Нюансы придут с практикой.',
   'Слова, выученные в спешке перед поездкой, забываются уже в аэропорту.'
-];
-const leadLine=()=>LEADS[Math.floor(startOfDay()/DAY_MS)%LEADS.length];
+],uk:[
+  'Мозок любить потроху і щодня: сто слів у неділю він поверне назад у понеділок.',
+  'П’ятнадцять слів на день — і одного дня ви зрозумієте, що бариста спитав, а не привітався.',
+  'Португальці ковтають голосні. Ловити слова на слух пізно, вчіть заздалегідь.',
+  'Saudade перекласти не можна. Решту тисячу шістсот слів — цілком.',
+  'Мозок як сусід: приносиш потроху — пам’ятає. Вивалюєш усе разом — «нічого не брав».',
+  'Про bacalhau кажуть: 365 рецептів, по одному на день. Слова беруться тим самим методом.',
+  'Одне слово на день — це 365 на рік. П’ятнадцять — уже підозріло схоже на мову.',
+  '«Obrigado» ви знаєте. Лишилося небагато — і можна сперечатися про футбол.',
+  'Пропустили день — нічого. Пропустили тиждень — знайомтеся наново.',
+  'Португальська нескладна. Складно згадати її на касі, коли позаду черга.',
+  'Esquisito — це «дивний», а не «вишуканий». Добре б вивчити до замовлення.',
+  'Трамвай у Лісабоні чекати довше, ніж вивчити п’ятнадцять слів.',
+  'Мозок запам’ятовує те, що миготить часто. Як реклама, тільки з користю.',
+  'Fado можна не розуміти. Але приємно знати, через що людина так побивається.',
+  'Вчіть сьогодні: завтра буде ніколи, післязавтра й поготів.',
+  'Кожне вивчене слово — на одну незручну паузу в розмові менше.',
+  'Спершу киваєш і усміхаєшся. Потім розумієш. Потім відповідаєш. Ми на другому етапі.',
+  'П’ятнадцять слів — це дві хвилини. Стрічку ви гортаєте довше і геть безкоштовно.',
+  'Знати слово і згадати слово — різні навички. Тут тренується друга.',
+  'Мозок викидає все, чим не користуються. Як ви — коробку від телевізора.',
+  'Забули слово? Воно нікуди не поділося, просто ховається. Повторіть — вилізе.',
+  'Хто вчить потроху, обганяє того, хто збирається почати з понеділка.',
+  'Кава тут bica, café і cimbalino. Три слова на один напій — мова щедра.',
+  'Місяць по п’ятнадцять слів — і меню читається без картинок.',
+  'Сьогоднішні слова — це завтрашня фраза, сказана не задумуючись.',
+  'Мозок любить режим. Зануда, звісно, зате надійний.',
+  'Три слова краще, ніж нуль. П’ятнадцять краще, ніж три. Логіка проста.',
+  'Почати легко, продовжити важко, кинути найпростіше. Ми за середній варіант.',
+  '«Pois pois» кажуть і коли згодні, і коли не дуже. Нюанси прийдуть із практикою.',
+  'Слова, вивчені поспіхом перед поїздкою, забуваються вже в аеропорту.'
+]};
+const leadLine=()=>{ const a=LEADS[uiLang]; return a[Math.floor(startOfDay()/DAY_MS)%a.length] };
 
 function renderGoal(){
   const box=$('#goalCard'); if(!box) return;
   const goal=goalOf(), days=settings.learned||{}, today=days[dayKey()]||0;
   $('#goalLead').textContent=leadLine();
   $('#goalNum').textContent=today;
-  $('#goalTarget').textContent=goal;
+  $('#goalEdit').textContent=T('из {n} {w} в день',{n:goal,w:pWord(goal,'слово')})+' ›';
   $('#goalArc').style.strokeDashoffset=(276.5*(1-Math.min(1,today/goal))).toFixed(1);
   box.classList.toggle('done',today>=goal);
 
-  const names=['П','В','С','Ч','П','С','В'];          // неделя с понедельника
+  const names=WEEK[uiLang];                            // неделя с понедельника
   const now=new Date(), shift=(now.getDay()+6)%7;
   let html='';
   for(let i=0;i<7;i++){
@@ -1724,13 +2115,13 @@ function renderGoal(){
   $('#goalWeek').innerHTML=html;
 
   const st=streakInfo();
-  const дн=n=>plural(n,'день','дня','дней');
-  const главная = st.cur ? 'Серия — '+дн(st.cur)+'.'
-                : st.best ? 'Начните серию заново.'
-                : 'Начните серию.';
-  const вторая = st.cur&&st.cur===st.best ? 'Это ваш рекорд.'
-                : st.best ? 'Ваш рекорд — '+дн(st.best)+'.'
-                : 'Выучите '+goal+' слов сегодня.';
+  const дн=n=>plural(n,'день');
+  const главная = st.cur ? T('Серия — {d}.',{d:дн(st.cur)})
+                : st.best ? T('Начните серию заново.')
+                : T('Начните серию.');
+  const вторая = st.cur&&st.cur===st.best ? T('Это ваш рекорд.')
+                : st.best ? T('Ваш рекорд — {d}.',{d:дн(st.best)})
+                : T('Выучите {n} {w} сегодня.',{n:goal,w:pWord(goal,'слово')});
   $('#goalStreak').innerHTML=
     '<button class="line" type="button">'+esc(главная)+'<i>›</i></button>'+
     '<div class="rec">'+esc(вторая)+'</div>';
@@ -1743,11 +2134,6 @@ $('#goalEdit').onclick=()=>{
   $('#goal').focus();
 };
 
-const pWord=(n,one,few,many)=>{
-  const m=n%100, k=n%10;
-  return m>=11&&m<=14?many:k===1?one:k>=2&&k<=4?few:many;
-};
-const plural=(n,one,few,many)=>n+' '+pWord(n,one,few,many);
 function renderStats(){
   const now=Date.now();
   const live=cards.filter(c=>!c.archived);
@@ -1755,16 +2141,16 @@ function renderStats(){
   // «к повтору» — только просроченные повторения: новые слова не горят красным
   const due=live.filter(c=>c.reps>0&&c.due<=now).length;
   const known=cards.length-live.length;
-  $('#stats').textContent=plural(cards.length,'слово','слова','слов')+
-    (fresh?' · '+fresh+' новых':'')+
-    (due?' · '+due+' к повтору':'')+
-    (known?' · '+known+' выучено':'');
+  $('#stats').textContent=plural(cards.length,'слово')+
+    (fresh?T(' · {n} новых',{n:fresh}):'')+
+    (due?T(' · {n} к повтору',{n:due}):'')+
+    (known?T(' · {n} выучено',{n:known}):'');
   renderGoal();
   const bar=$('#mastery');
   if(cards.length){
     const work=live.length-fresh;
     bar.style.display='flex';
-    bar.title='Выучено '+known+' · в работе '+work+' · новых '+fresh;
+    bar.title=T('Выучено {a} · в работе {b} · новых {c}',{a:known,b:work,c:fresh});
     $('#mDone').style.width=(known/cards.length*100).toFixed(2)+'%';
     $('#mWork').style.width=(work/cards.length*100).toFixed(2)+'%';
   } else bar.style.display='none';
@@ -1789,25 +2175,25 @@ $$('nav button').forEach(b=>b.onclick=()=>{
    «Повторения» (что ждёт в ближайшие две недели).                          */
 
 const nice=x=>x>=10?String(Math.round(x)):String(Math.round(x*10)/10).replace('.',',');
-// у дробных в русском всегда родительный: «10,4 слова», «0,8 слова»
+// у дробных и в русском, и в украинском родительный: «10,4 слова», «0,8 слова»
 const wordsOf=x=>{
   const v=x>=10?Math.round(x):Math.round(x*10)/10;
-  return Number.isInteger(v)?plural(v,'слово','слова','слов'):nice(v)+' слова';
+  return Number.isInteger(v)?plural(v,'слово'):T('{n} слова',{n:nice(v)});
 };
-const dm=t=>new Date(t).toLocaleDateString('ru-RU',{day:'numeric',month:'long'});
+const dm=t=>new Date(t).toLocaleDateString(LOC(),{day:'numeric',month:'long'});
 const dmy=t=>{
   const d=new Date(t);
   return dm(t)+(d.getFullYear()!==new Date().getFullYear()?' '+d.getFullYear():'');
 };
-const dsh=t=>new Date(t).toLocaleDateString('ru-RU',{day:'numeric',month:'short'}).replace('.','');
+const dsh=t=>new Date(t).toLocaleDateString(LOC(),{day:'numeric',month:'short'}).replace('.','');
 const humanSpan=n=>{
-  if(n<45) return plural(n,'день','дня','дней');
-  if(n<365) return plural(Math.round(n/30),'месяц','месяца','месяцев');
+  if(n<45) return plural(n,'день');
+  if(n<365) return plural(Math.round(n/30),'месяц');
   let y=Math.floor(n/365), m=Math.round((n%365)/30);
   if(m>=12){ y++; m=0 }
-  return plural(y,'год','года','лет')+(m?' и '+plural(m,'месяц','месяца','месяцев'):'');
+  return plural(y,'год')+(m?T(' и {m}',{m:plural(m,'месяц')}):'');
 };
-const pctOf=(a,b)=>!b||!a?'0%':(a/b<.01?'меньше 1%':Math.round(a/b*100)+'%');
+const pctOf=(a,b)=>!b||!a?'0%':(a/b<.01?T('меньше 1%'):Math.round(a/b*100)+'%');
 
 /* --- ряды данных --- */
 function learnedDays(n){
@@ -1872,7 +2258,7 @@ function barsSVG(rows,opt){
           axisY(max,y(max))+axisY(0,y(0));
   if(opt.goal&&opt.goal<max)
     out+='<line class="dash" x1="'+CL+'" y1="'+y(opt.goal).toFixed(1)+'" x2="'+(CW-CR)+'" y2="'+y(opt.goal).toFixed(1)+'"/>'+
-         '<text class="cap" x="'+(CL+1)+'" y="'+(CT-5)+'">- - цель '+opt.goal+'</text>';
+         '<text class="cap" x="'+(CL+1)+'" y="'+(CT-5)+'">'+T('- - цель {n}',{n:opt.goal})+'</text>';
   rows.forEach((r,i)=>{
     const x=CL+iw*i+(iw-bw)/2;
     if(r.n){
@@ -1907,12 +2293,12 @@ function planSVG(hist,plan,pale,total){
        '<text class="axis" x="'+(CW-CR)+'" y="'+(CH-4)+'" text-anchor="end">'+esc(dsh(t1))+'</text>';
   const xn=X(last.t);
   if(xn-CL>34&&(CW-CR)-xn>34)
-    out+='<text class="axis" x="'+xn.toFixed(1)+'" y="'+(CH-4)+'" text-anchor="middle">сегодня</text>';
+    out+='<text class="axis" x="'+xn.toFixed(1)+'" y="'+(CH-4)+'" text-anchor="middle">'+T('сегодня')+'</text>';
   return svgWrap(out);
 }
 // в легенде только те линии, которые на графике действительно есть
-const planLegend=(plan,pale)=>'<div class="legend"><i class="was"></i>пройдено'+
-  (plan?'<i class="now"></i>нынешний темп':'')+(pale?'<i class="aim"></i>по цели':'')+'</div>';
+const planLegend=(plan,pale)=>'<div class="legend"><i class="was"></i>'+T('пройдено')+
+  (plan?'<i class="now"></i>'+T('нынешний темп'):'')+(pale?'<i class="aim"></i>'+T('по цели'):'')+'</div>';
 
 /* --- сама модалка --- */
 let statMode='plan', statBack=null;
@@ -1926,20 +2312,22 @@ function statPlan(){
   const hist=histSeries(), last=hist[hist.length-1];
   const plan=fc?{t:last.t+fc*DAY,v:total}:null;
   const pale=((!fc&&gc)||(fc&&gc&&Math.abs(gc-fc)>2))?{t:last.t+gc*DAY,v:total}:null;
-  let t='<p><b>Выучено '+done+' из '+total+'</b> — это '+pctOf(done,total)+'.'+
-        (left?' Осталось '+plural(left,'слово','слова','слов')+'.':'')+'</p>';
-  if(!left) t+='<p>Колода пройдена целиком. Добавьте новые слова — прогноз построится заново.</p>';
+  const gw=pWord(g,'слово');
+  let t='<p>'+T('<b>Выучено {a} из {b}</b> — это {p}.',{a:done,b:total,p:pctOf(done,total)})+
+        (left?T(' Осталось {n}.',{n:plural(left,'слово')}):'')+'</p>';
+  if(!left) t+='<p>'+T('Колода пройдена целиком. Добавьте новые слова — прогноз построится заново.')+'</p>';
   else if(r>0)
-    t+='<p>Темп за две недели — <b>'+wordsOf(r)+' в день</b>. Если он сохранится, '+
-       'последнее слово колоды будет выучено <b>'+dmy(last.t+fc*DAY)+'</b> — через '+humanSpan(fc)+'.</p>'+
+    t+='<p>'+T('Темп за две недели — <b>{r} в день</b>. Если он сохранится, последнее слово колоды будет выучено <b>{d}</b> — через {s}.',
+               {r:wordsOf(r),d:dmy(last.t+fc*DAY),s:humanSpan(fc)})+'</p>'+
        (Math.abs(gc-fc)<=2?''
-        :gc<fc?'<p class="dim">С целью в '+g+' слов в день ушло бы '+humanSpan(gc)+
-               ' — на '+humanSpan(fc-gc)+' меньше.</p>'
-              :'<p class="dim">Это быстрее цели: по '+g+' слов в день ушло бы '+humanSpan(gc)+'.</p>');
+        :gc<fc?'<p class="dim">'+T('С целью в {n} {w} в день ушло бы {a} — на {b} меньше.',
+                 {n:g,w:gw,a:humanSpan(gc),b:humanSpan(fc-gc)})+'</p>'
+              :'<p class="dim">'+T('Это быстрее цели: по {n} {w} в день ушло бы {a}.',
+                 {n:g,w:gw,a:humanSpan(gc)})+'</p>');
   else
-    t+='<p class="none">За две недели ни одно слово не переведено в «выучено», так что считать темп не от чего.</p>'+
-       '<p class="dim">С целью в '+g+' слов в день на оставшееся ушло бы '+humanSpan(gc)+
-       ' — до '+dmy(Date.now()+gc*DAY)+'.</p>';
+    t+='<p class="none">'+T('За две недели ни одно слово не переведено в «выучено», так что считать темп не от чего.')+'</p>'+
+       '<p class="dim">'+T('С целью в {n} {w} в день на оставшееся ушло бы {a} — до {d}.',
+                 {n:g,w:gw,a:humanSpan(gc),d:dmy(Date.now()+gc*DAY)})+'</p>';
   return {svg:planSVG(hist,plan,pale,total)+planLegend(plan,pale), text:t};
 }
 
@@ -1950,18 +2338,18 @@ function statPace(){
   const best=rows.reduce((a,r)=>r.n>a.n?r:a,{n:0});
   const st=streakInfo();
   const bars=rows.map((r,i)=>({n:r.n, cls:r.n>=g?'hit':'', title:dm(r.t)+': '+r.n,
-                               lab:(i===0||i===14||i===29)?(i===29?'сегодня':dsh(r.t)):''}));
+                               lab:(i===0||i===14||i===29)?(i===29?T('сегодня'):dsh(r.t)):''}));
   let t;
-  if(!sum) t='<p class="none">За тридцать дней ни одного слова в «выучено». Столбики появятся, '+
-             'как только в тренировке нажмётся «Легко».</p>';
-  else t='<p>За тридцать дней выучено <b>'+plural(sum,'слово','слова','слов')+'</b> — '+
-         'в среднем '+wordsOf(sum/30)+' в день.</p>'+
-         '<p>Цель взята в <b>'+hits+' из 30 дней</b>. '+
-         'Лучший день — '+plural(best.n,'слово','слова','слов')+', '+dm(best.t)+'.</p>';
-  t+='<p class="dim">'+(st.cur?'Сейчас серия '+plural(st.cur,'день','дня','дней')+
-        (st.best>st.cur?', рекорд — '+plural(st.best,'день','дня','дней'):' — это рекорд')+'.'
-      :st.best?'Серия прервана. Рекорд — '+plural(st.best,'день','дня','дней')+'.'
-      :'Серии ещё не было: цель нужно взять два дня подряд.')+'</p>';
+  if(!sum) t='<p class="none">'+
+             T('За тридцать дней ни одного слова в «выучено». Столбики появятся, как только в тренировке нажмётся «Легко».')+'</p>';
+  else t='<p>'+T('За тридцать дней выучено <b>{n}</b> — в среднем {a} в день.',
+                 {n:plural(sum,'слово'),a:wordsOf(sum/30)})+'</p>'+
+         '<p>'+T('Цель взята в <b>{n} из 30 дней</b>. Лучший день — {b}, {d}.',
+                 {n:hits,b:plural(best.n,'слово'),d:dm(best.t)})+'</p>';
+  t+='<p class="dim">'+(st.cur?T('Сейчас серия {d}',{d:plural(st.cur,'день')})+
+        (st.best>st.cur?T(', рекорд — {d}',{d:plural(st.best,'день')}):T(' — это рекорд'))+'.'
+      :st.best?T('Серия прервана. Рекорд — {d}.',{d:plural(st.best,'день')})
+      :T('Серии ещё не было: цель нужно взять два дня подряд.'))+'</p>';
   return {svg:barsSVG(bars,{goal:g}), text:t};
 }
 
@@ -1972,16 +2360,16 @@ function statReps(){
   const peak=rows.slice(1).reduce((a,r)=>r.n>a.n?r:a,{n:0});
   const fresh=cards.filter(c=>!c.archived&&!c.reps).length;
   const bars=rows.map((r,i)=>({n:r.n, cls:i===0&&d.late?'late':'', title:dm(r.t)+': '+r.n,
-                               lab:i===0?'сегодня':(i===6||i===13)?dsh(r.t):''}));
+                               lab:i===0?T('сегодня'):(i===6||i===13)?dsh(r.t):''}));
   let t;
-  if(!all) t='<p class="none">На ближайшие две недели повторений не назначено.</p>';
-  else t='<p>Сегодня ждёт <b>'+plural(rows[0].n,'слово','слова','слов')+'</b>'+
-         (d.late?', из них '+d.late+' просрочено.':'.')+'</p>'+
-         '<p>За неделю подойдёт '+plural(week,'слово','слова','слов')+
-         (week?', в среднем '+wordsOf(week/7)+' в день':'')+'. '+
-         (peak.n?'Самый плотный день — '+dm(peak.t)+', '+plural(peak.n,'слово','слова','слов')+'.':'')+'</p>';
-  t+='<p class="dim">'+(fresh?'Новых слов в колоде '+fresh+' — они ждут без срока и в график не идут.'
-                             :'Новых слов не осталось: вся колода уже в работе.')+'</p>';
+  if(!all) t='<p class="none">'+T('На ближайшие две недели повторений не назначено.')+'</p>';
+  else t='<p>'+T('Сегодня ждёт <b>{n}</b>',{n:plural(rows[0].n,'слово')})+
+         (d.late?T(', из них {n} просрочено.',{n:d.late}):'.')+'</p>'+
+         '<p>'+T('За неделю подойдёт {n}',{n:plural(week,'слово')})+
+         (week?T(', в среднем {a} в день',{a:wordsOf(week/7)}):'')+'. '+
+         (peak.n?T('Самый плотный день — {d}, {n}.',{d:dm(peak.t),n:plural(peak.n,'слово')}):'')+'</p>';
+  t+='<p class="dim">'+(fresh?T('Новых слов в колоде {n} — они ждут без срока и в график не идут.',{n:fresh})
+                             :T('Новых слов не осталось: вся колода уже в работе.'))+'</p>';
   return {svg:barsSVG(bars), text:t};
 }
 
@@ -1989,20 +2377,20 @@ function renderStat(){
   const box=$('#statBody'); if(!box) return;
   const total=cards.length, done=cards.filter(c=>c.archived).length;
   if(!total){
-    box.innerHTML='<div class="insight none">Колода пуста — сначала добавьте слова, '+
-                  'и здесь появится история.</div>';
+    box.innerHTML='<div class="insight none">'+
+                  T('Колода пуста — сначала добавьте слова, и здесь появится история.')+'</div>';
     return;
   }
   const st=streakInfo(), r=pace(14);
   const part=statMode==='pace'?statPace():statMode==='reps'?statReps():statPlan();
   box.innerHTML=
     '<div class="tiles">'+
-      '<div class="tile"><b'+(done?' class="done"':'')+'>'+done+'</b><span>выучено из '+total+'</span></div>'+
-      '<div class="tile"><b>'+nice(r)+'</b><span>'+pWord(Math.round(r),'слово','слова','слов')+' в день</span></div>'+
-      '<div class="tile"><b>'+st.cur+'</b><span>'+pWord(st.cur,'день','дня','дней')+' подряд</span></div>'+
+      '<div class="tile"><b'+(done?' class="done"':'')+'>'+done+'</b><span>'+T('выучено из {n}',{n:total})+'</span></div>'+
+      '<div class="tile"><b>'+nice(r)+'</b><span>'+T('{w} в день',{w:pWord(Math.round(r),'слово')})+'</span></div>'+
+      '<div class="tile"><b>'+st.cur+'</b><span>'+T('{w} подряд',{w:pWord(st.cur,'день')})+'</span></div>'+
     '</div>'+
     '<div class="seg" id="statSeg" style="margin-top:0">'+
-      MODES.map(m=>'<button data-m="'+m[0]+'"'+(statMode===m[0]?' class="on"':'')+'>'+m[1]+'</button>').join('')+
+      MODES.map(m=>'<button data-m="'+m[0]+'"'+(statMode===m[0]?' class="on"':'')+'>'+T(m[1])+'</button>').join('')+
     '</div>'+
     '<div class="chartbox">'+part.svg+'</div>'+
     '<div class="insight">'+part.text+'</div>';
@@ -2033,6 +2421,10 @@ $('#goalPeek').onclick=openStats;
 $('#goalWeek').onclick=openStats;
 
 /* ---------------- settings ---------------- */
+$('#uiLang').onclick=e=>{
+  const b=e.target.closest('button[data-lang]'); if(!b) return;
+  setLang(b.dataset.lang);
+};
 $('#dir').onclick=e=>{
   const b=e.target.closest('button[data-d]'); if(!b) return;
   settings.dir=b.dataset.d; persistSet(); paintDir();
@@ -2044,7 +2436,7 @@ function paintGoal(){
   const g=goalOf();
   const inp=$('#goal'); if(!inp) return;
   if(document.activeElement!==inp) inp.value=g;
-  $('#goalWord').textContent=pWord(g,'слово','слова','слов');
+  $('#goalWord').textContent=pWord(g,'слово');
   $('#goalMinus').disabled=g<=5;
   $('#goalPlus').disabled=g>=99;
 }
@@ -2072,14 +2464,14 @@ function renderDecks(){
     const n=d.id===MANUAL?свои:[...deck.values()].filter(w=>w.deck===d.id).length;
     const on=myDecks.has(d.id);
     return '<button class="deck'+(on?' on':'')+'" data-d="'+esc(d.id)+'" type="button">'+
-      '<span class="t">'+esc(d.name)+'<i>'+plural(n,'слово','слова','слов')+'</i></span>'+
+      '<span class="t">'+esc(T(d.name))+'<i>'+plural(n,'слово')+'</i></span>'+
       '<span class="mark">'+(on?IC_DONE:'')+'</span></button>';
   }).join('');
 }
 $('#deckList').onclick=async e=>{
   const b=e.target.closest('[data-d]'); if(!b) return;
   const id=b.dataset.d, было=myDecks.has(id);
-  if(было&&myDecks.size<2){ toast('Хотя бы одна колода нужна'); return }
+  if(было&&myDecks.size<2){ toast(T('Хотя бы одна колода нужна')); return }
   b.disabled=true;
   try{
     if(было){
@@ -2119,7 +2511,7 @@ async function refreshSession(){
 async function api(path,opt){
   opt=opt||{};
   if(auth&&Date.now()>(auth.expires_at||0)-60000){
-    if(!await refreshSession()){ signOut(true); throw new Error('Сессия истекла — войдите заново') }
+    if(!await refreshSession()){ signOut(true); throw new Error(T('Сессия истекла — войдите заново')) }
   }
   const headers=Object.assign({'apikey':SUPA_KEY,'Content-Type':'application/json',
     'Authorization':'Bearer '+(auth?auth.access_token:SUPA_KEY)},opt.headers||{});
@@ -2127,7 +2519,7 @@ async function api(path,opt){
 }
 async function errText(r){
   let d={}; try{ d=await r.json() }catch(e){}
-  return d.message||d.error||d.hint||('сервер ответил '+r.status);
+  return d.message||d.error||d.hint||T('сервер ответил {n}',{n:r.status});
 }
 async function signIn(email,password){
   const r=await fetch(SUPA_URL+'/auth/v1/token?grant_type=password',{
@@ -2136,12 +2528,12 @@ async function signIn(email,password){
   const d=await r.json().catch(()=>({}));
   if(!r.ok){
     const raw=(d.msg||d.error_description||d.error||'').toLowerCase();
-    const ru=/invalid login/.test(raw)?'Неверная почта или пароль'
-      :/email not confirmed/.test(raw)?'Почта не подтверждена'
-      :/too many/.test(raw)?'Слишком много попыток, подождите минуту'
-      :/signup|not allowed/.test(raw)?'Регистрация закрыта — аккаунт заводит владелец'
-      :(d.msg||d.error_description||'Не удалось войти');
-    throw new Error(ru);
+    const текст=/invalid login/.test(raw)?T('Неверная почта или пароль')
+      :/email not confirmed/.test(raw)?T('Почта не подтверждена')
+      :/too many/.test(raw)?T('Слишком много попыток, подождите минуту')
+      :/signup|not allowed/.test(raw)?T('Регистрация закрыта — аккаунт заводит владелец')
+      :(d.msg||d.error_description||T('Не удалось войти'));
+    throw new Error(текст);
   }
   setSession(d);
 }
@@ -2165,20 +2557,20 @@ $('#gateForm').onsubmit=async e=>{
     await signIn($('#gateEmail').value.trim(),$('#gatePass').value);
     $('#gatePass').value='';
     await startSession();
-    toast('С возвращением');
+    toast(T('С возвращением'));
   }catch(err){ $('#gateErr').textContent=err.message }
   finally{ b.disabled=false; b.textContent=old }
 };
 
 function renderWhoami(){
   const el=$('#whoEmail'); if(!el) return;
-  el.textContent=authed()?auth.user.email:'Вы не вошли';
+  el.textContent=authed()?auth.user.email:T('Вы не вошли');
   const b=$('#signOut');
   b.style.display=authed()?'':'none';
   b.onclick=async ()=>{
     const pend=dirty.size;
-    const q=pend?('Не отправлено изменений: '+pend+'. Попробую отправить и выйти. Продолжить?')
-                :'Выйти из аккаунта? Карточки останутся в облаке.';
+    const q=pend?T('Не отправлено изменений: {n}. Попробую отправить и выйти. Продолжить?',{n:pend})
+                :T('Выйти из аккаунта? Карточки останутся в облаке.');
     if(confirm(q)) await signOut();
   };
 }
@@ -2215,9 +2607,10 @@ function loadDeckCache(){
   deckAt=d.at||'';
 }
 function applySettings(){
+  // язык приезжает вместе с настройками; локальный ключ нужен раньше них — на экране входа
+  if(settings.lang){ uiLang=settings.lang==='uk'?'uk':'ru'; save(LS_LANG,uiLang) }
   paintDir();
-  paintGoal();
-  renderGoal();
+  applyLang();          // цель, шапка, списки и подписи — всё внутри
 }
 
 /* ---------------- синхронизация ---------------- */
@@ -2352,7 +2745,7 @@ async function pushSettings(){
 }
 
 const friendlyErr=e=>/Failed to fetch|NetworkError|network/i.test(e.message||'')
-  ? 'нет связи с сервером' : (e.message||'ошибка');
+  ? T('нет связи с сервером') : (e.message||T('ошибка'));
 
 async function syncNow(){
   if(!authed()||syncing) return;
@@ -2394,16 +2787,16 @@ function scheduleFlush(ms){
 function renderSyncState(){
   const el=$('#syncState'); if(!el) return;
   const pend=dirty.size;
-  const at=lastSync?new Date(lastSync).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}):'';
-  const t = !authed() ? 'Вход не выполнен'
-    : syncing ? 'Синхронизирую…'
-    : !navigator.onLine ? (pend?'Нет сети · ждут отправки: '+pend:'Нет сети · всё отправлено')
-    : syncErr ? (syncErr[0].toUpperCase()+syncErr.slice(1)+(pend?' · ждут отправки: '+pend:''))
-    : pend ? ('Отправляю изменения: '+pend)
+  const at=lastSync?new Date(lastSync).toLocaleTimeString(LOC(),{hour:'2-digit',minute:'2-digit'}):'';
+  const t = !authed() ? T('Вход не выполнен')
+    : syncing ? T('Синхронизирую…')
+    : !navigator.onLine ? (pend?T('Нет сети · ждут отправки: {n}',{n:pend}):T('Нет сети · всё отправлено'))
+    : syncErr ? (syncErr[0].toUpperCase()+syncErr.slice(1)+(pend?T(' · ждут отправки: {n}',{n:pend}):''))
+    : pend ? T('Отправляю изменения: {n}',{n:pend})
     : '';                       // всё отправлено — молчим, сказать нечего
   el.textContent=t;
   el.hidden=!t;
-  el.title=at?('Последняя синхронизация в '+at):'';
+  el.title=at?T('Последняя синхронизация в {t}',{t:at}):'';
 }
 
 async function startSession(){
@@ -2432,7 +2825,7 @@ window.addEventListener('pagehide',()=>{
 });
 
 /* ---------------- init ---------------- */
-renderStats(); renderCards(); renderWhoami(); renderSyncState();
+applyLang();          // рисует всё, включая экран входа, на выбранном языке
 if(authed()) startSession(); else showGate();
 </script>
 </body>
