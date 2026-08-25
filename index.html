@@ -689,6 +689,7 @@
       <div class="seg big" id="uiLang">
         <button data-lang="ru" type="button">Русский</button>
         <button data-lang="uk" type="button">Українська</button>
+        <button data-lang="en" type="button">English</button>
       </div>
       <div class="hint" data-tr>Язык приложения. Слова и переводы на карточках остаются как есть — колода общая.</div>
     </div>
@@ -856,31 +857,40 @@ const IC_DONE=SVG('<circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.
    Выбор лежит и в настройках (уезжает на сервер), и в локальном ключе — иначе
    экран входа рисовался бы по-русски до того, как настройки доедут.          */
 const LS_LANG='pt.lang.v1';
-let uiLang=load(LS_LANG,'ru')==='uk'?'uk':'ru';
+const LANGS=['ru','uk','en'];
+const okLang=v=>LANGS.indexOf(v)>=0?v:'ru';
+let uiLang=okLang(load(LS_LANG,'ru'));
 const lang=()=>uiLang;
 // Подстановка через {n}, а не склейка кусков: порядок слов в двух языках разный,
 // и «Осталось ' + n + ' слов» переводится только целой фразой.
 const T=(s,v)=>{
-  let x=uiLang==='uk'?(UK[s]||s):s;
+  const d=DICT[uiLang];
+  let x=(d&&d[s])||s;
   if(v) for(const k in v) x=x.split('{'+k+'}').join(v[k]);
   return x;
 };
 // Правило числа у русского и украинского общее: 1, 2–4, 5 и больше, исключение
-// на 11–14. Разные только сами формы, поэтому таблица одна на оба языка.
+// на 11–14; у английского форм две. Поэтому в таблице у ru и uk по три формы,
+// у en две, а выбирает их pWord() по языку.
 const FORMS={
-  'слово':   {ru:['слово','слова','слов'],           uk:['слово','слова','слів']},
-  'день':    {ru:['день','дня','дней'],              uk:['день','дні','днів']},
-  'карточка':{ru:['карточка','карточки','карточек'], uk:['картка','картки','карток']},
-  'месяц':   {ru:['месяц','месяца','месяцев'],       uk:['місяць','місяці','місяців']},
-  'год':     {ru:['год','года','лет'],               uk:['рік','роки','років']}
+  'слово':   {ru:['слово','слова','слов'],           uk:['слово','слова','слів'],       en:['word','words']},
+  'день':    {ru:['день','дня','дней'],              uk:['день','дні','днів'],          en:['day','days']},
+  'карточка':{ru:['карточка','карточки','карточек'], uk:['картка','картки','карток'],   en:['card','cards']},
+  'месяц':   {ru:['месяц','месяца','месяцев'],       uk:['місяць','місяці','місяців'],  en:['month','months']},
+  'год':     {ru:['год','года','лет'],               uk:['рік','роки','років'],         en:['year','years']}
 };
 const pWord=(n,w)=>{
-  const f=FORMS[w][uiLang], m=n%100, k=n%10;
+  const f=FORMS[w][uiLang];
+  if(uiLang==='en') return f[n===1?0:1];
+  const m=n%100, k=n%10;
   return m>=11&&m<=14?f[2]:k===1?f[0]:k>=2&&k<=4?f[1]:f[2];
 };
 const plural=(n,w)=>n+' '+pWord(n,w);
-const LOC=()=>uiLang==='uk'?'uk-UA':'ru-RU';
-const WEEK={ru:['П','В','С','Ч','П','С','В'],uk:['П','В','С','Ч','П','С','Н']};
+// британский английский, а не американский: приложение про Европу, и дата в нём
+// читается как «4 September», а не «September 4»
+const LOC=()=>({ru:'ru-RU',uk:'uk-UA',en:'en-GB'})[uiLang];
+const WEEK={ru:['П','В','С','Ч','П','С','В'],uk:['П','В','С','Ч','П','С','Н'],
+            en:['M','T','W','T','F','S','S']};
 
 const UK={
 /* экран «Добавить» */
@@ -947,14 +957,14 @@ const UK={
 'выучено':'вивчено',
 'новая':'нова',
 'к повтору':'до повторення',
-'через {n} дн.':'через {n} дн.',
+'через {n} {w}':'через {n} {w}',
 '· повторов {n}':'· повторень {n}',
 'Вернуть в изучение':'Повернути до вивчення',
 'Убрать из избранного':'Прибрати з обраного',
 'В избранное':'В обране',
 'Перегенерировать':'Перегенерувати',
 'Удалить':'Видалити',
-'Ещё {n}':'Ще {n}',
+'Ещё {n} {w}':'Ще {n} {w}',
 'Пока ничего не выучено':'Поки нічого не вивчено',
 'Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь':
   'Кнопка «Легко» у тренуванні прибирає слово з показу і зберігає його тут',
@@ -1142,6 +1152,270 @@ const UK={
   'Браузер не дає зберігати копію колоди — працювати можна, але лише онлайн'
 };
 
+const EN={
+/* экран «Добавить» */
+'Слово или выражение':'Word or phrase',
+'Прикрепить скриншот':'Attach a screenshot',
+'Перевести':'Translate',
+'Распознать':'Read text',
+'Скриншот прикреплён — нажмите «Распознать»':'Screenshot attached — press “Read text”',
+'Убрать':'Remove',
+'Несколько слов — через запятую. Скриншот и длинный текст вставляйте прямо сюда.':
+  'Several words — separate them with commas. Paste screenshots and long text right here.',
+'Уже в колоде':'Already in the deck',
+'Это слово уже в колоде':'This word is already in the deck',
+'Перевод':'Translation',
+'Добавить в колоду':'Add to deck',
+'Отмена':'Cancel',
+'Добавлено {n}':'Added {n}',
+'Добавлено: {n}':'Added: {n}',
+', пропущено дублей: {n}':', duplicates skipped: {n}',
+'Такие карточки уже есть':'These cards already exist',
+'Введите слово':'Type a word',
+'Часть слов пропущена как дубли':'Some words were skipped as duplicates',
+'Генерирую {a}–{b} из {n}…':'Generating {a}–{b} of {n}…',
+'своё':'own',
+'своё слово':'own word',
+'Не нашёл слов для карточек':'No words found for cards',
+'Незнакомых слов: {n}':'Unknown words: {n}',
+' · выбрано {n}':' · {n} selected',
+'Все слова из текста уже в колоде':'Every word from the text is already in the deck',
+'Снять выбор':'Clear selection',
+'Выбрать все':'Select all',
+'Создать карточки ({n})':'Create cards ({n})',
+'Это не изображение':'That is not an image',
+'Не удалось прочитать файл':'Could not read the file',
+'Не удалось открыть изображение':'Could not open the image',
+'На картинке не нашлось текста':'No text found in the image',
+'Похоже, текст на языке «{s}», а не на португальском':'The text looks like “{s}”, not Portuguese',
+
+/* цель на день */
+'Цель на день':'Daily goal',
+'Показать, как идут дела':'Show how it is going',
+'Выучено сегодня':'Learnt today',
+'из {n} {w} в день':'of {n} {w} a day',
+'Продолжить учить':'Keep learning',
+'Серия — {d}.':'Streak — {d}.',
+'Начните серию заново.':'Start a new streak.',
+'Начните серию.':'Start a streak.',
+'Это ваш рекорд.':'That is your record.',
+'Ваш рекорд — {d}.':'Your record — {d}.',
+'Выучите {n} {w} сегодня.':'Learn {n} {w} today.',
+
+/* шапка */
+' · {n} новых':' · {n} new',
+' · {n} к повтору':' · {n} due',
+' · {n} выучено':' · {n} learnt',
+'Выучено {a} · в работе {b} · новых {c}':'Learnt {a} · in progress {b} · new {c}',
+
+/* экран «Карточки» */
+'Поиск':'Search',
+'Все':'All',
+'Избранное':'Favourites',
+'Изучаю {n}':'Learning {n}',
+'Выучено {n}':'Learnt {n}',
+'выучено':'learnt',
+'новая':'new',
+'к повтору':'due',
+'через {n} {w}':'in {n} {w}',
+'· повторов {n}':'· {n} reviews',
+'Вернуть в изучение':'Move back to learning',
+'Убрать из избранного':'Remove from favourites',
+'В избранное':'Add to favourites',
+'Перегенерировать':'Regenerate',
+'Удалить':'Delete',
+'Ещё {n} {w}':'{n} more {w}',
+'Пока ничего не выучено':'Nothing learnt yet',
+'Кнопка «Легко» в тренировке убирает слово из показа и сохраняет его здесь':
+  'The “Easy” button in a session takes a word out of rotation and keeps it here',
+'В избранном пусто':'Favourites are empty',
+'Звёздочка на карточке собирает личный список — его можно учить отдельным фильтром':
+  'The star on a card builds a personal list — you can learn it as a separate filter',
+'Ничего не найдено':'Nothing found',
+'Пока нет карточек':'No cards yet',
+'Добавьте первое слово на вкладке «Добавить»':'Add your first word on the “Add” tab',
+'Вернул в изучение':'Moved back to learning',
+'Удалено «{w}»':'Deleted “{w}”',
+'Вернуть':'Undo',
+'Вернул «{w}»':'Restored “{w}”',
+'Это слово из общей колоды — его текст один для всех':
+  'This word comes from the shared deck — its text is the same for everyone',
+'Обновлено':'Updated',
+'Такое слово есть в общей колоде — карточка привязана к нему':
+  'That word is in the shared deck — the card is now linked to it',
+'Такое слово уже было — карточки объединены в «{w}»':
+  'That word already existed — the cards are merged into “{w}”',
+'Обновлено: теперь «{w}»':'Updated: now “{w}”',
+
+/* темы словника */
+'Бытие':'Being',
+'Пространство':'Space',
+'Размер и форма':'Size and shape',
+'Время':'Time',
+'Количество':'Quantity',
+'Качества':'Qualities',
+'Оценка':'Judgement',
+'Мышление и речь':'Thought and speech',
+'Связки и отношения':'Links and relations',
+'Личные данные':'Personal details',
+'Дом и окружение':'Home and surroundings',
+'Повседневная жизнь':'Everyday life',
+'Досуг':'Leisure',
+'Поездки и транспорт':'Travel and transport',
+'Здоровье и гигиена':'Health and hygiene',
+'Покупки':'Shopping',
+'Еда':'Food',
+'Услуги':'Services',
+'Разное':'Other',
+'Глаголы':'Verbs',
+
+/* тренировка */
+'Добавьте слова, чтобы начать':'Add some words to begin',
+'На сегодня всё повторено{где}':'Everything is revised for today{где}',
+' в избранном':' in favourites',
+' среди глаголов':' among verbs',
+' на уровне {l}':' at level {l}',
+' в теме «{t}»':' in the “{t}” theme',
+'В избранном пока пусто':'Favourites are still empty',
+'Глаголов в колоде пока нет':'No verbs in the deck yet',
+'Слов этого уровня пока нет':'No words of this level yet',
+'В этой теме пока нет карточек':'No cards in this theme yet',
+'Следующее повторение: {d}':'Next review: {d}',
+'Повторить всё заново':'Go through it all again',
+'Показать ответ':'Show answer',
+'Не помню':'Forgot',
+'заново':'again',
+'Трудно':'Hard',
+'1 день':'1 day',
+'Знаю':'Good',
+'14 дней':'14 days',
+'Легко':'Easy',
+'осталось {n}':'{n} left',
+
+/* «Как идут дела» */
+'Как идут дела':'How it is going',
+'Закрыть':'Close',
+'Прогноз':'Forecast',
+'Темп':'Pace',
+'Повторения':'Reviews',
+'сегодня':'today',
+'- - цель {n}':'- - goal {n}',
+'пройдено':'done',
+'нынешний темп':'current pace',
+'по цели':'at goal',
+'меньше 1%':'less than 1%',
+'{n} слова':'{n} words',
+'выучено из {n}':'learnt of {n}',
+'{w} в день':'{w} a day',
+'{w} подряд':'{w} in a row',
+'Колода пуста — сначала добавьте слова, и здесь появится история.':
+  'The deck is empty — add some words first and the history will appear here.',
+'<b>Выучено {a} из {b}</b> — это {p}.':'<b>{a} of {b} learnt</b> — that is {p}.',
+' Осталось {n}.':' {n} left.',
+'Колода пройдена целиком. Добавьте новые слова — прогноз построится заново.':
+  'The deck is finished. Add new words and the forecast will be rebuilt.',
+'Темп за две недели — <b>{r} в день</b>. Если он сохранится, последнее слово колоды будет выучено <b>{d}</b> — через {s}.':
+  'Pace over two weeks — <b>{r} a day</b>. At this rate the last word of the deck will be learnt on <b>{d}</b> — in {s}.',
+'С целью в {n} {w} в день ушло бы {a} — на {b} меньше.':
+  'At a goal of {n} {w} a day it would take {a} — {b} less.',
+'Это быстрее цели: по {n} {w} в день ушло бы {a}.':
+  'That is faster than the goal: at {n} {w} a day it would take {a}.',
+'За две недели ни одно слово не переведено в «выучено», так что считать темп не от чего.':
+  'Not a single word was marked learnt in two weeks, so there is no pace to measure.',
+'С целью в {n} {w} в день на оставшееся ушло бы {a} — до {d}.':
+  'At a goal of {n} {w} a day the rest would take {a} — until {d}.',
+'За тридцать дней ни одного слова в «выучено». Столбики появятся, как только в тренировке нажмётся «Легко».':
+  'Not a single word marked learnt in thirty days. The bars appear as soon as “Easy” is pressed in a session.',
+'За тридцать дней выучено <b>{n}</b> — в среднем {a} в день.':
+  '<b>{n}</b> learnt in thirty days — {a} a day on average.',
+'Цель взята в <b>{n} из 30 дней</b>. Лучший день — {b}, {d}.':
+  'The goal was met on <b>{n} of 30 days</b>. Best day — {b}, {d}.',
+'Сейчас серия {d}':'Current streak {d}',
+', рекорд — {d}':', record — {d}',
+' — это рекорд':' — that is the record',
+'Серия прервана. Рекорд — {d}.':'The streak is broken. Record — {d}.',
+'Серии ещё не было: цель нужно взять два дня подряд.':
+  'No streak yet: the goal has to be met two days running.',
+'На ближайшие две недели повторений не назначено.':'No reviews are due in the next two weeks.',
+'Сегодня ждёт <b>{n}</b>':'<b>{n}</b> due today',
+', из них {n} просрочено.':', {n} of them overdue.',
+'За неделю подойдёт {n}':'{n} come due over the week',
+', в среднем {a} в день':', {a} a day on average',
+'Самый плотный день — {d}, {n}.':'The busiest day — {d}, {n}.',
+'Новых слов в колоде {n} — они ждут без срока и в график не идут.':
+  'There are {n} new words in the deck — they wait without a date and stay off the chart.',
+'Новых слов не осталось: вся колода уже в работе.':'No new words left: the whole deck is in progress.',
+
+/* настройки */
+'Колоды':'Decks',
+'Хотя бы одна колода нужна':'At least one deck is needed',
+'Направление тренировки':'Session direction',
+'Вперемешку':'Mixed',
+'Что показывать на карточке первым: португальское слово или перевод.':
+  'What to show on the card first: the Portuguese word or the translation.',
+'Меньше':'Less',
+'Больше':'More',
+'Слов в день':'Words a day',
+'От 5 до 99. Можно вписать своё число.':'From 5 to 99. You can type your own number.',
+'Язык':'Language',
+'Язык приложения. Слова и переводы на карточках остаются как есть — колода общая.':
+  'The language of the app. Words and translations on the cards stay as they are — the deck is shared.',
+'Аккаунт':'Account',
+'Выйти':'Sign out',
+
+/* названия колод приходят с сервера — переводим по самому названию */
+'Начальный A1':'Beginner A1',
+'Базовый A2':'Elementary A2',
+'Средний B1':'Intermediate B1',
+'Выше среднего B2':'Upper intermediate B2',
+'Продвинутый C1':'Advanced C1',
+'Свои слова':'Own words',
+
+/* меню */
+'Добавить':'Add',
+'Учить':'Learn',
+'Карточки':'Cards',
+'Настройки':'Settings',
+
+/* вход и аккаунт */
+'Карточки европейского португальского':'European Portuguese flashcards',
+'Почта':'Email',
+'Пароль':'Password',
+'Войти':'Sign in',
+'Вход только для своих — аккаунты заводит владелец':'Private access — accounts are created by the owner',
+'Неверная почта или пароль':'Wrong email or password',
+'Почта не подтверждена':'Email is not confirmed',
+'Слишком много попыток, подождите минуту':'Too many attempts, wait a minute',
+'Регистрация закрыта — аккаунт заводит владелец':'Sign-up is closed — accounts are created by the owner',
+'Не удалось войти':'Could not sign in',
+'С возвращением':'Welcome back',
+'Вы не вошли':'Not signed in',
+'Не отправлено изменений: {n}. Попробую отправить и выйти. Продолжить?':
+  '{n} changes have not been sent. I will try to send them and sign out. Continue?',
+'Выйти из аккаунта? Карточки останутся в облаке.':'Sign out? The cards will stay in the cloud.',
+'Войдите в аккаунт':'Sign in to your account',
+'Сессия истекла — войдите заново':'The session has expired — sign in again',
+
+/* сеть и синхронизация */
+'сервер ответил {n}':'server replied {n}',
+'Пустой ответ модели':'Empty response from the model',
+'Модель не вернула текст':'The model returned no text',
+'нет связи с сервером':'no connection to the server',
+'ошибка':'error',
+'Вход не выполнен':'Not signed in',
+'Синхронизирую…':'Syncing…',
+'Нет сети · ждут отправки: {n}':'Offline · waiting to be sent: {n}',
+'Нет сети · всё отправлено':'Offline · everything sent',
+' · ждут отправки: {n}':' · waiting to be sent: {n}',
+'Отправляю изменения: {n}':'Sending changes: {n}',
+'Последняя синхронизация в {t}':'Last sync at {t}',
+' и {m}':' and {m}',
+'Браузер не даёт хранить копию колоды — работать можно, но только онлайн':
+  'The browser will not store a copy of the deck — you can work, but only online'
+};
+
+const DICT={uk:UK,en:EN};
+
 /* Статические подписи разметки помечены data-tr (текст), data-tr-ph, data-tr-title
    и data-tr-aria. Русский оригинал снимается при первой отрисовке и хранится рядом
    с элементом: в разметке он один, дублировать его в атрибуте незачем. */
@@ -1184,7 +1458,7 @@ function applyLang(){
   if(!$('#statSheet').hidden) renderStat();
 }
 function setLang(v){
-  v=v==='uk'?'uk':'ru';
+  v=okLang(v);
   if(v===uiLang) return;
   uiLang=v; save(LS_LANG,v);
   settings.lang=v; persistSet();
@@ -1623,8 +1897,9 @@ const hasWord=w=>cards.some(c=>norm(c.word)===norm(w)||norm(c.query)===norm(w));
 function cardHTML(c){
   const due=c.due<=Date.now();
   const isNew=c.reps===0;
+  const left=Math.max(1,Math.ceil((c.due-Date.now())/DAY));
   const when=c.archived?T('выучено'):isNew?T('новая'):due?T('к повтору')
-             :T('через {n} дн.',{n:Math.max(1,Math.ceil((c.due-Date.now())/DAY))});
+             :T('через {n} {w}',{n:left,w:pWord(left,'день')});
   const cls=c.archived?' done':isNew?' new':due?' due':'';
   return '<article class="card" data-id="'+c.id+'">'+cardBody(c)+
     '<div class="meta"><span class="badge'+cls+'">'+when+'</span>'+
@@ -1671,7 +1946,8 @@ function growCards(n){
   shownCount+=part.length;
   if(part.length) tail.insertAdjacentHTML('beforebegin',part.map(cardHTML).join(''));
   if(shownCount>=shownList.length) tail.remove();
-  else tail.textContent=T('Ещё {n}',{n:plural(shownList.length-shownCount,'карточка')});
+  else{ const n=shownList.length-shownCount;
+        tail.textContent=T('Ещё {n} {w}',{n:n,w:pWord(n,'карточка')}) }
 }
 // Прокручивается только main — по нему и смотрим, не пора ли дорисовать следующую порцию.
 $('main').addEventListener('scroll',()=>{
@@ -2092,6 +2368,37 @@ const LEADS={ru:[
   'Почати легко, продовжити важко, кинути найпростіше. Ми за середній варіант.',
   '«Pois pois» кажуть і коли згодні, і коли не дуже. Нюанси прийдуть із практикою.',
   'Слова, вивчені поспіхом перед поїздкою, забуваються вже в аеропорту.'
+],en:[
+  'The brain likes a little every day: a hundred words on Sunday come straight back out on Monday.',
+  'Fifteen words a day — and one day you will realise the barista asked something, not just said hello.',
+  'The Portuguese swallow their vowels. Too late to catch words by ear — learn them in advance.',
+  'Saudade cannot be translated. The other sixteen hundred words can.',
+  'The brain is like a neighbour: bring a little at a time and he remembers. Dump it all at once — “never took a thing”.',
+  'They say bacalhau has 365 recipes, one for each day. Words are taken the same way.',
+  'One word a day is 365 a year. Fifteen already looks suspiciously like a language.',
+  'You know “Obrigado”. A little more and you can argue about football.',
+  'Missed a day — never mind. Missed a week — get acquainted again.',
+  'Portuguese is not hard. What is hard is recalling it at the till with a queue behind you.',
+  'Esquisito means “odd”, not “exquisite”. Worth learning before you order.',
+  'Waiting for a tram in Lisbon takes longer than learning fifteen words.',
+  'The brain remembers whatever flashes past often. Like advertising, only useful.',
+  'You need not understand fado. But it is nice to know what the man is so upset about.',
+  'Learn today: tomorrow there will be no time, the day after even less.',
+  'Every word learnt is one awkward pause fewer in a conversation.',
+  'First you nod and smile. Then you understand. Then you answer. We are at stage two.',
+  'Fifteen words is two minutes. You scroll a feed for longer, and entirely free of charge.',
+  'Knowing a word and recalling a word are different skills. This trains the second.',
+  'The brain throws out whatever goes unused. Like you and the box the telly came in.',
+  'Forgotten a word? It has not gone anywhere, it is just hiding. Repeat it and out it comes.',
+  'Whoever learns a little at a time overtakes the one planning to start on Monday.',
+  'Coffee here is bica, café and cimbalino. Three words for one drink — a generous language.',
+  'A month at fifteen words a day and the menu reads without pictures.',
+  'Today’s words are tomorrow’s sentence, said without thinking.',
+  'The brain likes routine. A bore, admittedly, but a reliable one.',
+  'Three words beat none. Fifteen beat three. Simple logic.',
+  'Starting is easy, carrying on is hard, quitting is easiest of all. We are for the middle option.',
+  '“Pois pois” is said both when people agree and when they rather do not. The nuances come with practice.',
+  'Words learnt in a rush before a trip are forgotten by the airport.'
 ]};
 const leadLine=()=>{ const a=LEADS[uiLang]; return a[Math.floor(startOfDay()/DAY_MS)%a.length] };
 
@@ -2174,7 +2481,10 @@ $$('nav button').forEach(b=>b.onclick=()=>{
    Три вида: «Прогноз» (когда закончится колода), «Темп» (по дням),
    «Повторения» (что ждёт в ближайшие две недели).                          */
 
-const nice=x=>x>=10?String(Math.round(x)):String(Math.round(x*10)/10).replace('.',',');
+const nice=x=>{
+  const v=x>=10?String(Math.round(x)):String(Math.round(x*10)/10);
+  return uiLang==='en'?v:v.replace('.',',');   // «2,2 слова», но «2.2 words»
+};
 // у дробных и в русском, и в украинском родительный: «10,4 слова», «0,8 слова»
 const wordsOf=x=>{
   const v=x>=10?Math.round(x):Math.round(x*10)/10;
@@ -2608,7 +2918,7 @@ function loadDeckCache(){
 }
 function applySettings(){
   // язык приезжает вместе с настройками; локальный ключ нужен раньше них — на экране входа
-  if(settings.lang){ uiLang=settings.lang==='uk'?'uk':'ru'; save(LS_LANG,uiLang) }
+  if(settings.lang){ uiLang=okLang(settings.lang); save(LS_LANG,uiLang) }
   paintDir();
   applyLang();          // цель, шапка, списки и подписи — всё внутри
 }
