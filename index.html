@@ -796,10 +796,12 @@ const BLANK={due:0,interval:0,reps:0,lapses:0,archived:false,archivedAt:0,fav:fa
 /* Оборот карточки — на языке интерфейса, если перевод для него есть. Слово и пример
    по-португальски у карточки одни, меняется только перевод, перевод примера и заметка.
    Пустая колонка значит «перевода ещё нет», а не «показать пусто»: у своих слов
-   украинского не будет никогда, у части колод — пока, и русский остаётся запасным. */
-const trOf=w=> uiLang==='uk'&&w.uk
-  ? {ru:w.uk, exru:w.exuk||w.exru, note:w.noteuk||w.note}
-  : {ru:w.ru, exru:w.exru, note:w.note};
+   чужого языка не будет никогда, у части колод — пока, и русский остаётся запасным.
+   Русского в TR нет: он и есть запасной, его колонки называются ru, exru, note. */
+const TR={uk:['uk','exuk','noteuk'], en:['en','exen','noteen']};
+const trOf=w=>{ const c=TR[uiLang];
+  return c&&w[c[0]] ? {ru:w[c[0]], exru:w[c[1]]||w.exru, note:w[c[2]]||w.note}
+                    : {ru:w.ru, exru:w.exru, note:w.note} };
 // Карточка — это слово колоды плюс личный прогресс, если он уже есть. own в конце
 // не случайно: слово, которое человек когда-то завёл сам, а потом оно попало в колоду,
 // принадлежит колоде — иначе его содержимое уехало бы на сервер как личное.
@@ -3031,7 +3033,8 @@ function fromRow(r){
 }
 const wordRow=r=>({id:r.id, deck:r.deck_id, word:r.word, pos:r.pos||'', ru:r.ru||'',
   ex:r.ex||'', exru:r.exru||'', note:r.note||'', level:r.level||'', tema:r.tema||'',
-  sort:+r.sort||0, uk:r.uk||'', exuk:r.exuk||'', noteuk:r.noteuk||''});
+  sort:+r.sort||0, uk:r.uk||'', exuk:r.exuk||'', noteuk:r.noteuk||'',
+  en:r.en||'', exen:r.exen||'', noteen:r.noteen||''});
 
 /* Проверка ответа была написана в каждом запросе подряд — вынесена сюда. ask() отдаёт
    сам ответ (нужен там, где читаются заголовки), askJSON() — уже разобранное тело. */

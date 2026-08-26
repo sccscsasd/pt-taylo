@@ -134,6 +134,7 @@ def собрать(ключ):
             c.get("pos") or "", c.get("ru") or "", c.get("ex") or "",
             c.get("exru") or "", c.get("note") or "", уровень, тема, i,
             c.get("uk") or "", c.get("exuk") or "", c.get("noteuk") or "",
+            c.get("en") or "", c.get("exen") or "", c.get("noteen") or "",
         ))
 
     return d, строки, без_темы, лишние
@@ -163,24 +164,26 @@ def печатать(ключ, кусок=200):
            лит(d["level_from"]), лит(d["level_to"]), d["sort"])
     )
 
-    # Украинский перевод лежит рядом с русским, тремя колонками: слово и пример
+    # Переводы лежат рядом с русским, по три колонки на язык: слово и пример
     # по-португальски у карточки одни, меняется только оборот.
     поля = ("(id, deck_id, word, pos, ru, ex, exru, note, level, tema, sort,"
-            " uk, exuk, noteuk)")
+            " uk, exuk, noteuk, en, exen, noteen)")
     обновление = (
         "on conflict (id) do update set deck_id = excluded.deck_id, word = excluded.word,\n"
         "  pos = excluded.pos, ru = excluded.ru, ex = excluded.ex, exru = excluded.exru,\n"
         "  note = excluded.note, level = excluded.level, tema = excluded.tema, sort = excluded.sort,\n"
-        "  uk = excluded.uk, exuk = excluded.exuk, noteuk = excluded.noteuk;\n\n"
+        "  uk = excluded.uk, exuk = excluded.exuk, noteuk = excluded.noteuk,\n"
+        "  en = excluded.en, exen = excluded.exen, noteen = excluded.noteen;\n\n"
     )
     for нач in range(0, len(строки), кусок):
         часть = строки[нач:нач + кусок]
         out.write("insert into public.pt_words %s values\n" % поля)
         out.write(",\n".join(
-            "(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%s)" % (
+            "(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%s,%s,%s,%s)" % (
                 лит(r[0]), лит(r[1]), лит(r[2]), лит(r[3]), лит(r[4]),
                 лит(r[5]), лит(r[6]), лит(r[7]), лит(r[8]), лит(r[9]), r[10],
-                лит(r[11]), лит(r[12]), лит(r[13]))
+                лит(r[11]), лит(r[12]), лит(r[13]),
+                лит(r[14]), лит(r[15]), лит(r[16]))
             for r in часть
         ))
         out.write("\n" + обновление)
@@ -198,7 +201,8 @@ def печатать(ключ, кусок=200):
     out.write(
         "select count(*) as слов, count(*) filter (where level = '') as без_уровня,\n"
         "       count(distinct tema) as тем,\n"
-        "       count(*) filter (where uk <> '') as по_украински\n"
+        "       count(*) filter (where uk <> '') as по_украински,\n"
+        "       count(*) filter (where en <> '') as по_английски\n"
         "  from public.pt_words where deck_id = %s;\n" % лит(ключ)
     )
 
