@@ -7693,7 +7693,10 @@
    "tema": "B4",
    "uk": "гримерка",
    "exuk": "Музиканти сиділи в гримерці перед концертом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dressing room",
+   "exen": "The musicians stayed in the dressing room before the concert.",
+   "noteen": ""
   },
   {
    "word": "o maestro",
@@ -7706,7 +7709,10 @@
    "tema": "B4",
    "uk": "диригент",
    "exuk": "Диригент подякував оркестру наприкінці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "conductor",
+   "exen": "The conductor thanked the orchestra at the end.",
+   "noteen": ""
   },
   {
    "word": "a partitura",
@@ -7719,7 +7725,10 @@
    "tema": "B4",
    "uk": "нотна партитура",
    "exuk": "Він забув ноти вдома в день репетиції.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "musical score",
+   "exen": "He left the score at home on rehearsal day.",
+   "noteen": ""
   },
   {
    "word": "o ensaio geral",
@@ -7732,7 +7741,10 @@
    "tema": "B4",
    "uk": "генеральна репетиція",
    "exuk": "Генеральна репетиція минула гірше за прем’єру.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dress rehearsal",
+   "exen": "The dress rehearsal went worse than the first night.",
+   "noteen": ""
   },
   {
    "word": "a esplanada",
@@ -7745,7 +7757,10 @@
    "tema": "B4",
    "uk": "літня тераса кафе",
    "exuk": "Ми випили каву на терасі під сонцем.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "outdoor café terrace",
+   "exen": "We had a coffee on the terrace in the sun.",
+   "noteen": ""
   },
   {
    "word": "o recinto",
@@ -7758,7 +7773,10 @@
    "tema": "B4",
    "uk": "обгороджений майданчик заходу",
    "exuk": "Майданчик фестивалю відкривається о п’ятій вечора.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the enclosure of an event",
+   "exen": "The festival ground opens at five in the afternoon.",
+   "noteen": ""
   },
   {
    "word": "a deslocação",
@@ -7771,7 +7789,10 @@
    "tema": "B5",
    "uk": "поїздка, переміщення",
    "exuk": "Дорога до столиці триває три години.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a journey made, travelling",
+   "exen": "The trip to the capital takes three hours.",
+   "noteen": ""
   },
   {
    "word": "o congestionamento",
@@ -7784,7 +7805,10 @@
    "tema": "B5",
    "uk": "затор на дорозі",
    "exuk": "Затор на мосту тримався цілий ранок.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "traffic congestion",
+   "exen": "The congestion on the bridge lasted all morning.",
+   "noteen": ""
   },
   {
    "word": "a faixa de rodagem",
@@ -7797,7 +7821,10 @@
    "tema": "B5",
    "uk": "смуга руху",
    "exuk": "Права смуга перекрита через роботи.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "carriageway lane",
+   "exen": "The right-hand lane is closed for works.",
+   "noteen": ""
   },
   {
    "word": "o separador central",
@@ -7810,7 +7837,10 @@
    "tema": "B5",
    "uk": "розділювальна смуга",
    "exuk": "Машина врізалася у розділювальний відбійник на трасі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "central reservation",
+   "exen": "The car hit the central reservation on the motorway.",
+   "noteen": ""
   },
   {
    "word": "a via rápida",
@@ -7823,7 +7853,10 @@
    "tema": "B5",
    "uk": "швидкісна траса",
    "exuk": "Ми виїхали на швидкісну трасу, щоб заощадити час.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "expressway",
+   "exen": "We took the expressway to save time.",
+   "noteen": ""
   },
   {
    "word": "o nó de acesso",
@@ -7836,7 +7869,10 @@
    "tema": "B5",
    "uk": "розв’язка для в’їзду",
    "exuk": "Розв’язка на трасу — за два кілометри.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "motorway interchange",
+   "exen": "The motorway interchange is two kilometres further on.",
+   "noteen": ""
   },
   {
    "word": "a sinalização",
@@ -7849,7 +7885,10 @@
    "tema": "B5",
    "uk": "дорожні знаки і розмітка",
    "exuk": "Розмітка стерлася і плутає водіїв.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "road signs and markings",
+   "exen": "The markings have faded and confuse drivers.",
+   "noteen": ""
   },
   {
    "word": "o excesso de velocidade",
@@ -7862,7 +7901,10 @@
    "tema": "B5",
    "uk": "перевищення швидкості",
    "exuk": "Він дістав штраф за перевищення швидкості на національній дорозі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "speeding",
+   "exen": "He was fined for speeding on the main road.",
+   "noteen": ""
   },
   {
    "word": "a contraordenação",
@@ -7875,7 +7917,10 @@
    "tema": "B5",
    "uk": "адміністративне правопорушення",
    "exuk": "Правопорушення тягне штраф і втрату балів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "an administrative offence",
+   "exen": "The offence carries a fine and loss of points.",
+   "noteen": ""
   },
   {
    "word": "o seguro automóvel",
@@ -7888,7 +7933,10 @@
    "tema": "B5",
    "uk": "автострахування",
    "exuk": "Автостраховка подорожчала майже на п’ятдесят євро.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "car insurance",
+   "exen": "The car insurance went up almost fifty euros.",
+   "noteen": ""
   },
   {
    "word": "a franquia",
@@ -7901,7 +7949,10 @@
    "tema": "B5",
    "uk": "франшиза у страхуванні",
    "exuk": "Франшиза за страховкою — триста євро.",
-   "noteuk": "Сума, яку при шкоді платить сам застрахований"
+   "noteuk": "Сума, яку при шкоді платить сам застрахований",
+   "en": "insurance excess",
+   "exen": "The insurance excess is three hundred euros.",
+   "noteen": "The amount the insured pays themselves on a claim"
   },
   {
    "word": "o pneu furado",
@@ -7914,7 +7965,10 @@
    "tema": "B5",
    "uk": "проколоте колесо",
    "exuk": "Ми поміняли пробите колесо на узбіччі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a flat tyre",
+   "exen": "We changed the flat tyre at the roadside.",
+   "noteen": ""
   },
   {
    "word": "a bagageira",
@@ -7927,7 +7981,10 @@
    "tema": "B5",
    "uk": "багажник автомобіля",
    "exuk": "Багажника не вистачає на стільки валіз.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "car boot",
+   "exen": "The boot isn't big enough for so many cases.",
+   "noteen": ""
   },
   {
    "word": "a lotação esgotada",
@@ -7940,7 +7997,10 @@
    "tema": "B5",
    "uk": "усі місця продані",
    "exuk": "На концерт усе продано вже кілька тижнів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a full house, all seats sold",
+   "exen": "The concert has been sold out for weeks.",
+   "noteen": ""
   },
   {
    "word": "o voo de ligação",
@@ -7953,7 +8013,10 @@
    "tema": "B5",
    "uk": "стикувальний рейс",
    "exuk": "Ми не встигли на стикувальний рейс через затримку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "connecting flight",
+   "exen": "We missed the connecting flight because of the delay.",
+   "noteen": ""
   },
   {
    "word": "o embarque prioritário",
@@ -7966,7 +8029,10 @@
    "tema": "B5",
    "uk": "пріоритетна посадка",
    "exuk": "Пріоритетна посадка коштує на десять євро дорожче.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "priority boarding",
+   "exen": "Priority boarding costs ten euros more.",
+   "noteen": ""
   },
   {
    "word": "o excesso de bagagem",
@@ -7979,7 +8045,10 @@
    "tema": "B5",
    "uk": "перевага багажу",
    "exuk": "Ми оплатили перевагу на стійці в аеропорту.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "excess baggage",
+   "exen": "We paid the excess baggage at the airport desk.",
+   "noteen": ""
   },
   {
    "word": "a greve dos transportes",
@@ -7992,7 +8061,10 @@
    "tema": "B5",
    "uk": "страйк транспорту",
    "exuk": "Страйк транспорту лишив багатьох без проїзду.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "transport strike",
+   "exen": "The transport strike left many people on foot.",
+   "noteen": ""
   },
   {
    "word": "o passe social",
@@ -8005,7 +8077,10 @@
    "tema": "B5",
    "uk": "єдиний проїзний на весь транспорт",
    "exuk": "Проїзний діє на потяги й автобуси.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "an all-modes travel pass",
+   "exen": "The travel pass covers trains and buses.",
+   "noteen": ""
   },
   {
    "word": "a validação do bilhete",
@@ -8018,7 +8093,10 @@
    "tema": "B5",
    "uk": "позначення квитка при вході",
    "exuk": "Квиток позначають при вході до потяга.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "validating your ticket",
+   "exen": "Tickets are validated as you board the train.",
+   "noteen": ""
   },
   {
    "word": "o comboio suburbano",
@@ -8031,7 +8109,10 @@
    "tema": "B5",
    "uk": "приміський потяг",
    "exuk": "Приміський потяг о цій порі йде набитий.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "suburban train",
+   "exen": "The suburban train is packed at this hour.",
+   "noteen": ""
   },
   {
    "word": "a hora de ponta",
@@ -8044,7 +8125,10 @@
    "tema": "B5",
    "uk": "година пік",
    "exuk": "Він уникає їздити в ранкову годину пік.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the rush hour",
+   "exen": "He avoids driving in the morning rush hour.",
+   "noteen": ""
   },
   {
    "word": "a época alta",
@@ -8057,7 +8141,10 @@
    "tema": "B5",
    "uk": "високий сезон",
    "exuk": "У високий сезон ціни подвоюються.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the high season",
+   "exen": "Prices double during the high season.",
+   "noteen": ""
   },
   {
    "word": "a época baixa",
@@ -8070,7 +8157,10 @@
    "tema": "B5",
    "uk": "низький сезон",
    "exuk": "Ми завжди їздимо в низький сезон, виходить набагато дешевше.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the low season",
+   "exen": "We always travel in low season, it's far cheaper.",
+   "noteen": ""
   },
   {
    "word": "o roteiro",
@@ -8083,7 +8173,10 @@
    "tema": "B5",
    "uk": "план маршруту, путівник",
    "exuk": "Він склав п’ятиденний маршрут по півночі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a planned route, a guidebook",
+   "exen": "He drew up a five-day route around the north.",
+   "noteen": ""
   },
   {
    "word": "o itinerário",
@@ -8096,7 +8189,10 @@
    "tema": "B5",
    "uk": "маршрут прямування",
    "exuk": "Маршрут проходить через три гірські села.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "itinerary",
+   "exen": "The itinerary passes through three mountain villages.",
+   "noteen": ""
   },
   {
    "word": "a bomba de gasolina",
@@ -8109,7 +8205,10 @@
    "tema": "B5",
    "uk": "автозаправка",
    "exuk": "Заправка є за два кілометри.",
-   "noteuk": "Розмовне; офіційно — posto de combustível"
+   "noteuk": "Розмовне; офіційно — posto de combustível",
+   "en": "petrol station",
+   "exen": "There's a petrol station two kilometres away.",
+   "noteen": "Colloquial; officially posto de combustível"
   },
   {
    "word": "o dístico",
@@ -8122,7 +8221,10 @@
    "tema": "B5",
    "uk": "паркувальний талон під склом",
    "exuk": "Він лишив талон на видноті під склом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "parking permit displayed in the car",
+   "exen": "He left the permit visible on the windscreen.",
+   "noteen": ""
   },
   {
    "word": "a revisão",
@@ -8135,7 +8237,10 @@
    "tema": "B5",
    "uk": "техобслуговування машини",
    "exuk": "Машина пройшла ТО на сорока тисячах кілометрів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a vehicle service",
+   "exen": "The car had its forty thousand kilometre service.",
+   "noteen": ""
   },
   {
    "word": "o transbordo",
@@ -8148,7 +8253,10 @@
    "tema": "B5",
    "uk": "пересадка з рейсу на рейс",
    "exuk": "Поїздка вимагає пересадки в Мадриді.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "changing between services",
+   "exen": "The journey requires a change in Madrid.",
+   "noteen": ""
   },
   {
    "word": "o cartão de embarque",
@@ -8161,7 +8269,10 @@
    "tema": "B5",
    "uk": "посадковий талон",
    "exuk": "Зберігайте посадковий талон до кінця поїздки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "boarding pass",
+   "exen": "Keep the boarding pass until the end of the journey.",
+   "noteen": ""
   },
   {
    "word": "a bagagem de porão",
@@ -8174,7 +8285,10 @@
    "tema": "B5",
    "uk": "багаж у багажному відсіку",
    "exuk": "У цій авіакомпанії багаж оплачується окремо.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "hold luggage",
+   "exen": "Hold luggage is paid for separately with this airline.",
+   "noteen": ""
   },
   {
    "word": "o desembarque",
@@ -8187,7 +8301,10 @@
    "tema": "B5",
    "uk": "висадка пасажирів",
    "exuk": "Висадка йшла через задні двері.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "disembarking",
+   "exen": "Passengers got off through the rear door.",
+   "noteen": ""
   },
   {
    "word": "o controlo de passaportes",
@@ -8200,7 +8317,10 @@
    "tema": "B5",
    "uk": "паспортний контроль",
    "exuk": "На паспортному контролі була величезна черга.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "passport control",
+   "exen": "There was an enormous queue at passport control.",
+   "noteen": ""
   },
   {
    "word": "a época balnear",
@@ -8213,7 +8333,10 @@
    "tema": "B5",
    "uk": "купальний сезон",
    "exuk": "Купальний сезон на південних пляжах починається в червні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the bathing season",
+   "exen": "The bathing season starts in June on southern beaches.",
+   "noteen": ""
   },
   {
    "word": "o prognóstico",
@@ -8226,7 +8349,10 @@
    "tema": "B6",
    "uk": "лікарський прогноз",
    "exuk": "Прогноз добрий, якщо лікування триватиме.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "medical prognosis",
+   "exen": "The prognosis is good if the treatment continues.",
+   "noteen": ""
   },
   {
    "word": "o rastreio",
@@ -8239,7 +8365,10 @@
    "tema": "B6",
    "uk": "скринінг, профілактичне обстеження",
    "exuk": "Скринінг на рак безкоштовний від п’ятдесяти років.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "screening",
+   "exen": "Cancer screening is free from the age of fifty.",
+   "noteen": ""
   },
   {
    "word": "a triagem",
@@ -8252,7 +8381,10 @@
    "tema": "B6",
    "uk": "сортування хворих за терміновістю",
    "exuk": "У приймальному покої сортування йде за кольорами.",
-   "noteuk": "Кольорові браслети терміновості — triagem de Manchester"
+   "noteuk": "Кольорові браслети терміновості — triagem de Manchester",
+   "en": "triage of patients",
+   "exen": "Triage in A and E is done by colours.",
+   "noteen": "The colour wristbands are the Manchester triage system"
   },
   {
    "word": "o internamento",
@@ -8265,7 +8397,10 @@
    "tema": "B6",
    "uk": "госпіталізація",
    "exuk": "Госпіталізація зрештою тривала лише дві ночі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a hospital stay",
+   "exen": "The hospital stay ended up lasting only two nights.",
+   "noteen": ""
   },
   {
    "word": "a alta médica",
@@ -8278,7 +8413,10 @@
    "tema": "B6",
    "uk": "виписка з лікарні",
    "exuk": "Його виписали через тиждень.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "discharge from hospital",
+   "exen": "He was discharged after a week.",
+   "noteen": ""
   },
   {
    "word": "a comparticipação",
@@ -8291,7 +8429,10 @@
    "tema": "B6",
    "uk": "частка вартості, яку покриває держава",
    "exuk": "Держава покриває частину вартості багатьох ліків.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the state's share of the cost",
+   "exen": "The state covers part of the cost of many medicines.",
+   "noteen": ""
   },
   {
    "word": "o efeito secundário",
@@ -8304,7 +8445,10 @@
    "tema": "B6",
    "uk": "побічний ефект",
    "exuk": "Найчастіший побічний ефект — сонливість.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "side effect",
+   "exen": "The commonest side effect is drowsiness.",
+   "noteen": ""
   },
   {
    "word": "a dosagem",
@@ -8317,7 +8461,10 @@
    "tema": "B6",
    "uk": "дозування",
    "exuk": "Лікар скоригував дозування ліків.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dosage",
+   "exen": "The doctor adjusted the dosage of the medicine.",
+   "noteen": ""
   },
   {
    "word": "a posologia",
@@ -8330,7 +8477,10 @@
    "tema": "B6",
    "uk": "схема прийому препарату",
    "exuk": "Схему прийому описано у вкладці до ліків.",
-   "noteuk": "a bula — інструкція-вкладка"
+   "noteuk": "a bula — інструкція-вкладка",
+   "en": "dosage instructions",
+   "exen": "The dosage is explained on the patient leaflet.",
+   "noteen": "a bula — the patient information leaflet"
   },
   {
    "word": "a intervenção cirúrgica",
@@ -8343,7 +8493,10 @@
    "tema": "B6",
    "uk": "хірургічне втручання",
    "exuk": "Операція минула краще, ніж очікували.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "surgical procedure",
+   "exen": "The procedure went better than expected.",
+   "noteen": ""
   },
   {
    "word": "a anestesia",
@@ -8356,7 +8509,10 @@
    "tema": "B6",
    "uk": "анестезія, наркоз",
    "exuk": "Для такого втручання досить місцевої анестезії.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "anaesthesia",
+   "exen": "Local anaesthesia is enough for this kind of procedure.",
+   "noteen": ""
   },
   {
    "word": "a reabilitação",
@@ -8369,7 +8525,10 @@
    "tema": "B6",
    "uk": "реабілітація",
    "exuk": "Реабілітація потребує занять тричі на тиждень.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "rehabilitation",
+   "exen": "Rehabilitation requires sessions three times a week.",
+   "noteen": ""
   },
   {
    "word": "a sequela",
@@ -8382,7 +8541,10 @@
    "tema": "B6",
    "uk": "залишковий наслідок хвороби",
    "exuk": "Після аварії лишилися наслідки в правій нозі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a lasting after-effect",
+   "exen": "He was left with after-effects in his right leg.",
+   "noteen": ""
   },
   {
    "word": "o surto",
@@ -8395,7 +8557,10 @@
    "tema": "B6",
    "uk": "спалах захворювання",
    "exuk": "У будинку для літніх був спалах грипу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "outbreak",
+   "exen": "There was a flu outbreak at the care home.",
+   "noteen": ""
   },
   {
    "word": "a estirpe",
@@ -8408,7 +8573,10 @@
    "tema": "B6",
    "uk": "штам",
    "exuk": "Новий штам вірусу поширився дуже швидко.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "strain of a virus",
+   "exen": "The new strain of the virus spread very fast.",
+   "noteen": ""
   },
   {
    "word": "a imunidade",
@@ -8421,7 +8589,10 @@
    "tema": "B6",
    "uk": "імунітет",
    "exuk": "Імунітет знижується через кілька місяців.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "immunity",
+   "exen": "Immunity drops after a few months.",
+   "noteen": ""
   },
   {
    "word": "o agravamento",
@@ -8434,7 +8605,10 @@
    "tema": "B6",
    "uk": "погіршення стану",
    "exuk": "Погіршення змусило викликати швидку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "worsening of a condition",
+   "exen": "The worsening forced them to call an ambulance.",
+   "noteen": ""
   },
   {
    "word": "a remissão",
@@ -8447,7 +8621,10 @@
    "tema": "B6",
    "uk": "ремісія",
    "exuk": "Хвороба в ремісії вже два роки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "remission",
+   "exen": "The illness has been in remission for two years.",
+   "noteen": ""
   },
   {
    "word": "o acompanhamento psicológico",
@@ -8460,7 +8637,10 @@
    "tema": "B6",
    "uk": "психологічний супровід",
    "exuk": "Центр пропонує молоді безкоштовну психологічну допомогу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "psychological support",
+   "exen": "The centre offers young people free psychological support.",
+   "noteen": ""
   },
   {
    "word": "a consulta de especialidade",
@@ -8473,7 +8653,10 @@
    "tema": "B6",
    "uk": "прийом вузького спеціаліста",
    "exuk": "Запису до спеціаліста довелося чекати місяцями.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "specialist appointment",
+   "exen": "The specialist appointment took months to get.",
+   "noteen": ""
   },
   {
    "word": "a lista de espera",
@@ -8486,7 +8669,10 @@
    "tema": "B6",
    "uk": "лист очікування",
    "exuk": "Він у листі очікування на операцію.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "waiting list",
+   "exen": "He is on a waiting list for the operation.",
+   "noteen": ""
   },
   {
    "word": "a urgência hospitalar",
@@ -8499,7 +8685,10 @@
    "tema": "B6",
    "uk": "приймальний покій невідкладної допомоги",
    "exuk": "Приймальний покій був переповнений цілу ніч.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "hospital emergency department",
+   "exen": "The emergency department was full all night.",
+   "noteen": ""
   },
   {
    "word": "a maca",
@@ -8512,7 +8701,10 @@
    "tema": "B6",
    "uk": "каталка, ноші",
    "exuk": "Він годинами лежав на каталці в коридорі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "stretcher, hospital trolley",
+   "exen": "He spent hours on a trolley in the hospital corridor.",
+   "noteen": ""
   },
   {
    "word": "o soro",
@@ -8525,7 +8717,10 @@
    "tema": "B6",
    "uk": "крапельниця, фізрозчин",
    "exuk": "Йому поставили крапельницю через зневоднення.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a drip, saline solution",
+   "exen": "They put him on a drip because he was dehydrated.",
+   "noteen": ""
   },
   {
    "word": "a tensão arterial",
@@ -8538,7 +8733,10 @@
    "tema": "B6",
    "uk": "артеріальний тиск",
    "exuk": "Тиск сьогодні трохи підвищений.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "blood pressure",
+   "exen": "His blood pressure is a little high today.",
+   "noteen": ""
   },
   {
    "word": "a glicemia",
@@ -8551,7 +8749,10 @@
    "tema": "B6",
    "uk": "рівень цукру в крові",
    "exuk": "Він міряє цукор щоранку натщесерце.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "blood sugar level",
+   "exen": "He measures his blood sugar every morning fasting.",
+   "noteen": ""
   },
   {
    "word": "o jejum",
@@ -8564,7 +8765,10 @@
    "tema": "B6",
    "uk": "натщесерце",
    "exuk": "Аналіз треба здавати натще.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "an empty stomach, fasting",
+   "exen": "The test must be done while fasting.",
+   "noteen": ""
   },
   {
    "word": "a análise ao sangue",
@@ -8577,7 +8781,10 @@
    "tema": "B6",
    "uk": "аналіз крові",
    "exuk": "Результати аналізу крові вже прийшли.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "blood test",
+   "exen": "The blood test results have already come.",
+   "noteen": ""
   },
   {
    "word": "a ecografia",
@@ -8590,7 +8797,10 @@
    "tema": "B6",
    "uk": "УЗД",
    "exuk": "Він записався на УЗД на наступний тиждень.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "ultrasound scan",
+   "exen": "He booked an ultrasound scan for next week.",
+   "noteen": ""
   },
   {
    "word": "a receita eletrónica",
@@ -8603,7 +8813,10 @@
    "tema": "B6",
    "uk": "електронний рецепт",
    "exuk": "Електронний рецепт приходить повідомленням на телефон.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "electronic prescription",
+   "exen": "The electronic prescription arrives by text on your phone.",
+   "noteen": ""
   },
   {
    "word": "o boletim de vacinas",
@@ -8616,7 +8829,10 @@
    "tema": "B6",
    "uk": "щеплювальний сертифікат",
    "exuk": "Візьміть щеплювальний сертифікат на завтрашній прийом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "vaccination record",
+   "exen": "Take your vaccination record to tomorrow's appointment.",
+   "noteen": ""
   },
   {
    "word": "a baixa médica",
@@ -8629,7 +8845,10 @@
    "tema": "B6",
    "uk": "лікарняний лист",
    "exuk": "Він на лікарняному вже три тижні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "sick leave",
+   "exen": "He has been on sick leave for three weeks.",
+   "noteen": ""
   },
   {
    "word": "o atestado médico",
@@ -8642,7 +8861,10 @@
    "tema": "B6",
    "uk": "довідка від лікаря",
    "exuk": "Школа зажадала довідку, щоб виправдати пропуск.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "doctor's certificate",
+   "exen": "The school asked for a doctor's note as an excuse.",
+   "noteen": ""
   },
   {
    "word": "o encaminhamento",
@@ -8655,7 +8877,10 @@
    "tema": "B6",
    "uk": "направлення до спеціаліста",
    "exuk": "Сімейний лікар дав направлення до лікарні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "referral to a specialist",
+   "exen": "The family doctor made the referral to the hospital.",
+   "noteen": ""
   },
   {
    "word": "o cuidador",
@@ -8668,7 +8893,10 @@
    "tema": "B6",
    "uk": "той, хто доглядає хворого",
    "exuk": "Родич, який доглядає хворого, не отримує підтримки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "carer",
+   "exen": "Informal carers receive no support at all.",
+   "noteen": ""
   },
   {
    "word": "os cuidados paliativos",
@@ -8681,7 +8909,10 @@
    "tema": "B6",
    "uk": "паліативна допомога",
    "exuk": "Паліативна допомога знімає біль, але не лікує.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "palliative care",
+   "exen": "Palliative care relieves pain without curing.",
+   "noteen": ""
   },
   {
    "word": "o lar de idosos",
@@ -8694,7 +8925,10 @@
    "tema": "B6",
    "uk": "будинок для літніх",
    "exuk": "По неділях він навідує матір у будинку для літніх.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "care home",
+   "exen": "He visits his mother at the care home on Sundays.",
+   "noteen": ""
   },
   {
    "word": "a demência",
@@ -8707,7 +8941,10 @@
    "tema": "B6",
    "uk": "деменція",
    "exuk": "Деменція почалася з дрібної щоденної забудькуватості.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dementia",
+   "exen": "The dementia began with small daily lapses of memory.",
+   "noteen": ""
   },
   {
    "word": "a hipertensão",
@@ -8720,7 +8957,10 @@
    "tema": "B6",
    "uk": "гіпертонія",
    "exuk": "У нього гіпертонія, і він п’є таблетку щодня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "high blood pressure",
+   "exen": "He has high blood pressure and takes a daily tablet.",
+   "noteen": ""
   },
   {
    "word": "o enfarte",
@@ -8733,7 +8973,10 @@
    "tema": "B6",
    "uk": "інфаркт",
    "exuk": "Він пережив інфаркт у п’ятдесят років.",
-   "noteuk": "Пишеться enfarte"
+   "noteuk": "Пишеться enfarte",
+   "en": "heart attack",
+   "exen": "He survived a heart attack at fifty.",
+   "noteen": "Spelt enfarte"
   },
   {
    "word": "a fratura",
@@ -8746,7 +8989,10 @@
    "tema": "B6",
    "uk": "перелом",
    "exuk": "Перелом зростався два місяці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "fracture",
+   "exen": "The fracture took two months to knit.",
+   "noteen": ""
   },
   {
    "word": "a hemorragia",
@@ -8759,7 +9005,10 @@
    "tema": "B6",
    "uk": "кровотеча",
    "exuk": "Кровотечу спинили ще у швидкій.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "haemorrhage",
+   "exen": "The bleeding was brought under control in the ambulance.",
+   "noteen": ""
   },
   {
    "word": "o penso rápido",
@@ -8772,7 +9021,10 @@
    "tema": "B6",
    "uk": "пластир на ранку",
    "exuk": "У тебе є пластир у сумці?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "sticking plaster",
+   "exen": "Have you got a plaster in your bag?",
+   "noteen": ""
   },
   {
    "word": "as muletas",
@@ -8785,7 +9037,10 @@
    "tema": "B6",
    "uk": "милиці",
    "exuk": "Він ходив на милицях майже місяць.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "crutches",
+   "exen": "He was on crutches for almost a month.",
+   "noteen": ""
   },
   {
    "word": "a cadeira de rodas",
@@ -8798,7 +9053,10 @@
    "tema": "B6",
    "uk": "інвалідний візок",
    "exuk": "У будинку немає доступу для інвалідного візка.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "wheelchair",
+   "exen": "The building has no wheelchair access.",
+   "noteen": ""
   },
   {
    "word": "o cartão de utente",
@@ -8811,7 +9069,10 @@
    "tema": "B6",
    "uk": "картка пацієнта держсистеми",
    "exuk": "Візьміть картку пацієнта і картку громадянина.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "health service patient card",
+   "exen": "Take your patient card and your identity card.",
+   "noteen": ""
   },
   {
    "word": "a taxa moderadora",
@@ -8824,7 +9085,10 @@
    "tema": "B6",
    "uk": "співплатіж за прийом у держлікарні",
    "exuk": "Співплатіж у багатьох випадках скасували.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the user fee at state health services",
+   "exen": "The user fee has been abolished in many cases.",
+   "noteen": ""
   },
   {
    "word": "a promoção relâmpago",
@@ -8837,7 +9101,10 @@
    "tema": "B7",
    "uk": "блискавичний розпродаж",
    "exuk": "Блискавичний розпродаж триває лише добу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "flash sale",
+   "exen": "The flash sale lasts only twenty-four hours.",
+   "noteen": ""
   },
   {
    "word": "a liquidação",
@@ -8850,7 +9117,10 @@
    "tema": "B7",
    "uk": "розпродаж залишків",
    "exuk": "Магазин розпродає залишки перед закриттям.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "clearance sale",
+   "exen": "The shop is having a clearance sale before it closes.",
+   "noteen": ""
   },
   {
    "word": "a mensalidade",
@@ -8863,7 +9133,10 @@
    "tema": "B7",
    "uk": "щомісячний платіж",
    "exuk": "Абонемент у спортзал подорожчав у січні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "monthly fee",
+   "exen": "The gym's monthly fee went up in January.",
+   "noteen": ""
   },
   {
    "word": "o pagamento faseado",
@@ -8876,7 +9149,10 @@
    "tema": "B7",
    "uk": "оплата частинами",
    "exuk": "Приймають оплату частинами у три внески без відсотків.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "payment in instalments",
+   "exen": "They accept payment in three interest-free instalments.",
+   "noteen": ""
   },
   {
    "word": "o crédito ao consumo",
@@ -8889,7 +9165,10 @@
    "tema": "B7",
    "uk": "споживчий кредит",
    "exuk": "У споживчого кредиту доволі високі відсотки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "consumer credit",
+   "exen": "Consumer credit carries fairly high interest.",
+   "noteen": ""
   },
   {
    "word": "a taxa de juro",
@@ -8902,7 +9181,10 @@
    "tema": "B7",
    "uk": "відсоткова ставка",
    "exuk": "Відсоткова ставка цього місяця знову зросла.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "interest rate",
+   "exen": "The interest rate rose again this month.",
+   "noteen": ""
   },
   {
    "word": "a amortização",
@@ -8915,7 +9197,10 @@
    "tema": "B7",
    "uk": "дострокове погашення частини кредиту",
    "exuk": "Він достроково погасив частину кредиту.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "early repayment of part of a loan",
+   "exen": "He made an early repayment on the house loan.",
+   "noteen": ""
   },
   {
    "word": "a transferência bancária",
@@ -8928,7 +9213,10 @@
    "tema": "B7",
    "uk": "банківський переказ",
    "exuk": "Він заплатив переказом того ж дня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a transfer between bank accounts",
+   "exen": "He paid by bank transfer the same day.",
+   "noteen": ""
   },
   {
    "word": "a referência de pagamento",
@@ -8941,7 +9229,10 @@
    "tema": "B7",
    "uk": "реквізити для оплати рахунку",
    "exuk": "Реквізити для оплати зазначені внизу рахунку.",
-   "noteuk": "Оплата в банкоматі за entidade і referência"
+   "noteuk": "Оплата в банкоматі за entidade і referência",
+   "en": "payment reference",
+   "exen": "The payment reference is at the bottom of the invoice.",
+   "noteen": "You pay at a cash machine using entidade and referência"
   },
   {
    "word": "o débito direto",
@@ -8954,7 +9245,10 @@
    "tema": "B7",
    "uk": "автосписання за рахунками",
    "exuk": "Світло і вода списуються автоматично.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "direct debit",
+   "exen": "The electricity and water are on direct debit.",
+   "noteen": ""
   },
   {
    "word": "o saldo disponível",
@@ -8967,7 +9261,10 @@
    "tema": "B7",
    "uk": "доступний залишок на рахунку",
    "exuk": "Перевірте доступний залишок, перш ніж знімати гроші.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "available balance",
+   "exen": "Check the available balance before withdrawing money.",
+   "noteen": ""
   },
   {
    "word": "o descoberto bancário",
@@ -8980,7 +9277,10 @@
    "tema": "B7",
    "uk": "овердрафт",
    "exuk": "Овердрафт обходиться у дуже високі відсотки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "overdraft",
+   "exen": "An overdraft costs very high interest.",
+   "noteen": ""
   },
   {
    "word": "a comissão bancária",
@@ -8993,7 +9293,10 @@
    "tema": "B7",
    "uk": "банківська комісія",
    "exuk": "Банківські комісії з’їдають частину заощаджень.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "bank charge",
+   "exen": "Bank charges eat into part of your savings.",
+   "noteen": ""
   },
   {
    "word": "o cartão de débito",
@@ -9006,7 +9309,10 @@
    "tema": "B7",
    "uk": "дебетова картка",
    "exuk": "Я заплатив дебетовою карткою, не кредитною.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a debit card as opposed to credit",
+   "exen": "I paid by debit card, not credit.",
+   "noteen": ""
   },
   {
    "word": "a fiança",
@@ -9019,7 +9325,10 @@
    "tema": "B7",
    "uk": "поручительство",
    "exuk": "Господар квартири зажадав поручительство родича.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "surety, a guarantee given",
+   "exen": "The landlord required surety from a relative.",
+   "noteen": ""
   },
   {
    "word": "o orçamento familiar",
@@ -9032,7 +9341,10 @@
    "tema": "B7",
    "uk": "сімейний бюджет",
    "exuk": "Сімейний бюджет не витримає нових постійних витрат.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "household budget",
+   "exen": "The household budget can't take more fixed costs.",
+   "noteen": ""
   },
   {
    "word": "a despesa fixa",
@@ -9045,7 +9357,10 @@
    "tema": "B7",
    "uk": "постійна витрата",
    "exuk": "Оренда — найбільша постійна витрата місяця.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a fixed outgoing",
+   "exen": "Rent is the biggest fixed outgoing of the month.",
+   "noteen": ""
   },
   {
    "word": "o gasto supérfluo",
@@ -9058,7 +9373,10 @@
    "tema": "B7",
    "uk": "зайва трата",
    "exuk": "Вони зрізали зайві витрати, щоб більше відкладати.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "unnecessary spending",
+   "exen": "They cut unnecessary spending to save more.",
+   "noteen": ""
   },
   {
    "word": "o consumismo",
@@ -9071,7 +9389,10 @@
    "tema": "B7",
    "uk": "споживацтво",
    "exuk": "Перед Різдвом споживання різко зростає.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "consumerism",
+   "exen": "Consumerism rises sharply before Christmas.",
+   "noteen": ""
   },
   {
    "word": "a obsolescência",
@@ -9084,7 +9405,10 @@
    "tema": "B7",
    "uk": "старіння техніки",
    "exuk": "Техніка старіє дедалі швидше.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "obsolescence",
+   "exen": "Devices become obsolete ever faster.",
+   "noteen": ""
   },
   {
    "word": "a marca própria",
@@ -9097,7 +9421,10 @@
    "tema": "B7",
    "uk": "власна марка мережі",
    "exuk": "Товари власної марки коштують помітно дешевше.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "own brand",
+   "exen": "Own brand products cost a good deal less.",
+   "noteen": ""
   },
   {
    "word": "a expedição",
@@ -9110,7 +9437,10 @@
    "tema": "B7",
    "uk": "відправлення замовлення",
    "exuk": "Відправлення замовлення триває два робочі дні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dispatch of an order",
+   "exen": "Dispatch of the order takes two working days.",
+   "noteen": ""
   },
   {
    "word": "o levantamento em loja",
@@ -9123,7 +9453,10 @@
    "tema": "B7",
    "uk": "самовивіз із магазину",
    "exuk": "Я обрав самовивіз, щоб не платити за доставку.",
-   "noteuk": "os portes — вартість доставки"
+   "noteuk": "os portes — вартість доставки",
+   "en": "click and collect",
+   "exen": "I chose click and collect to avoid paying postage.",
+   "noteen": "os portes — the cost of postage"
   },
   {
    "word": "o livro de reclamações",
@@ -9136,7 +9469,10 @@
    "tema": "B7",
    "uk": "книга скарг",
    "exuk": "Кожен заклад зобов’язаний мати книгу скарг.",
-   "noteuk": "Є й електронна версія на сайті"
+   "noteuk": "Є й електронна версія на сайті",
+   "en": "complaints book",
+   "exen": "Every business must keep a complaints book.",
+   "noteen": "There is an electronic version online too"
   },
   {
    "word": "o direito de livre resolução",
@@ -9149,7 +9485,10 @@
    "tema": "B7",
    "uk": "право відмовитися від покупки",
    "exuk": "Право повернути покупку діє чотирнадцять днів.",
-   "noteuk": "Для покупок на відстані і поза магазином"
+   "noteuk": "Для покупок на відстані і поза магазином",
+   "en": "the right to cancel a purchase",
+   "exen": "The right to cancel lasts fourteen days.",
+   "noteen": "For distance and off-premises purchases"
   },
   {
    "word": "a relação qualidade-preço",
@@ -9162,7 +9501,10 @@
    "tema": "B7",
    "uk": "співвідношення ціни і якості",
    "exuk": "Співвідношення ціни і якості в цього вина чудове.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "value for money",
+   "exen": "The value for money of this wine is excellent.",
+   "noteen": ""
   },
   {
    "word": "o IVA",
@@ -9175,7 +9517,10 @@
    "tema": "B7",
    "uk": "ПДВ",
    "exuk": "Ціна вже включає ПДВ за звичайною ставкою.",
-   "noteuk": "Imposto sobre o Valor Acrescentado"
+   "noteuk": "Imposto sobre o Valor Acrescentado",
+   "en": "VAT",
+   "exen": "The price already includes VAT at the standard rate.",
+   "noteen": "Imposto sobre o Valor Acrescentado"
   },
   {
    "word": "o IRS",
@@ -9188,7 +9533,10 @@
    "tema": "B7",
    "uk": "податок на доходи фізосіб",
    "exuk": "Подання декларації починається у квітні.",
-   "noteuk": "Imposto sobre o Rendimento das pessoas Singulares"
+   "noteuk": "Imposto sobre o Rendimento das pessoas Singulares",
+   "en": "personal income tax",
+   "exen": "Filing the income tax return starts in April.",
+   "noteen": "Imposto sobre o Rendimento das pessoas Singulares"
   },
   {
    "word": "a retenção na fonte",
@@ -9201,7 +9549,10 @@
    "tema": "B7",
    "uk": "утримання податку в джерела",
    "exuk": "Утримання податку зменшує суму на руки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "tax withheld at source",
+   "exen": "Tax withheld at source leaves less in your pay.",
+   "noteen": ""
   },
   {
    "word": "a dedução fiscal",
@@ -9214,7 +9565,10 @@
    "tema": "B7",
    "uk": "податкове вирахування",
    "exuk": "Медичні витрати дають податкове вирахування.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "tax deduction",
+   "exen": "Health costs give you a tax deduction.",
+   "noteen": ""
   },
   {
    "word": "o poder de compra",
@@ -9227,7 +9581,10 @@
    "tema": "B7",
    "uk": "купівельна спроможність",
    "exuk": "Купівельна спроможність упала через зростання цін.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "purchasing power",
+   "exen": "Purchasing power fell as prices rose.",
+   "noteen": ""
   },
   {
    "word": "o custo de vida",
@@ -9240,7 +9597,10 @@
    "tema": "B7",
    "uk": "вартість життя",
    "exuk": "Життя в Лісабоні дуже дороге.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the cost of living",
+   "exen": "The cost of living in Lisbon is very high.",
+   "noteen": ""
   },
   {
    "word": "o cabaz de compras",
