@@ -7693,7 +7693,10 @@
    "tema": "A2",
    "uk": "проходити, об’їжджати",
    "exuk": "Усе узбережжя ми об’їхали машиною за три дні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to travel across, to cover",
+   "exen": "We covered the whole coast by car in three days.",
+   "noteen": ""
   },
   {
    "word": "localizar",
@@ -7706,7 +7709,10 @@
    "tema": "A2",
    "uk": "визначати місце",
    "exuk": "Застосунок показує, де автобус, у реальному часі.",
-   "noteuk": "Localizar-se — розташовуватися десь"
+   "noteuk": "Localizar-se — розташовуватися десь",
+   "en": "to locate",
+   "exen": "The app locates the bus in real time.",
+   "noteen": "Localizar-se — to be situated somewhere"
   },
   {
    "word": "o amanhecer",
@@ -7719,7 +7725,10 @@
    "tema": "A4",
    "uk": "світанок",
    "exuk": "Ми вийшли на світанку, щоб не потрапити під денну спеку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "daybreak",
+   "exen": "We set off at daybreak to avoid the heat of the day.",
+   "noteen": ""
   },
   {
    "word": "o anoitecer",
@@ -7732,7 +7741,10 @@
    "tema": "A4",
    "uk": "сутінки",
    "exuk": "У сутінках ластівки всі повертаються до гнізд.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "nightfall, dusk",
+   "exen": "At dusk the swallows all go back to the nest.",
+   "noteen": ""
   },
   {
    "word": "apressar",
@@ -7745,7 +7757,10 @@
    "tema": "A4",
    "uk": "квапити",
    "exuk": "Не квап мене, у нас ще пів години.",
-   "noteuk": "Apressar-se — квапитися самому"
+   "noteuk": "Apressar-se — квапитися самому",
+   "en": "to hurry someone along",
+   "exen": "Don't rush me, we still have half an hour.",
+   "noteen": "Apressar-se — to hurry yourself"
   },
   {
    "word": "atempado",
@@ -7758,7 +7773,10 @@
    "tema": "A4",
    "uk": "своєчасний",
    "exuk": "Своєчасне попередження запобігло значно більшій проблемі.",
-   "noteuk": "Atempadamente — вчасно, завчасно"
+   "noteuk": "Atempadamente — вчасно, завчасно",
+   "en": "timely",
+   "exen": "The timely warning prevented a much bigger problem.",
+   "noteen": "Atempadamente — in good time"
   },
   {
    "word": "rígido",
@@ -7771,7 +7789,10 @@
    "tema": "A6",
    "uk": "жорсткий, суворий",
    "exuk": "Правила будинку суворі щодо шуму.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "rigid, strict",
+   "exen": "The building rules are strict about noise.",
+   "noteen": ""
   },
   {
    "word": "opaco",
@@ -7784,7 +7805,10 @@
    "tema": "A6",
    "uk": "непрозорий, матовий",
    "exuk": "Скло у ванній зсередини матове.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "opaque, frosted",
+   "exen": "The bathroom glass is frosted on the inside.",
+   "noteen": ""
   },
   {
    "word": "ardente",
@@ -7797,7 +7821,10 @@
    "tema": "A6",
    "uk": "жагучий, палкий",
    "exuk": "Про проєкт він говорив із палким запалом.",
-   "noteuk": "Arder — горіти, пекти"
+   "noteuk": "Arder — горіти, пекти",
+   "en": "burning, ardent",
+   "exen": "He spoke about the project with ardent enthusiasm.",
+   "noteen": "Arder — to burn, to sting"
   },
   {
    "word": "contudo",
@@ -7810,7 +7837,10 @@
    "tema": "A9",
    "uk": "і все ж",
    "exuk": "Ціна висока, і все ж якість її виправдовує.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "yet, notwithstanding",
+   "exen": "The price is high; yet the quality justifies it.",
+   "noteen": ""
   },
   {
    "word": "conforme",
@@ -7823,7 +7853,10 @@
    "tema": "A9",
    "uk": "згідно з, відповідно до",
    "exuk": "Заповніть бланк згідно з вказівками на сторінці.",
-   "noteuk": "«Conforme» у відповіді — «як коли», «по-різному»"
+   "noteuk": "«Conforme» у відповіді — «як коли», «по-різному»",
+   "en": "according to, in line with",
+   "exen": "Fill in the form according to the instructions on the page.",
+   "noteen": "Conforme as an answer means it depends"
   },
   {
    "word": "mediante",
@@ -7836,7 +7869,10 @@
    "tema": "A9",
    "uk": "за посередництвом, за умови",
    "exuk": "Доступ до зали — за попереднім записом.",
-   "noteuk": "Канцелярське слово, часто в оголошеннях"
+   "noteuk": "Канцелярське слово, часто в оголошеннях",
+   "en": "by means of, subject to",
+   "exen": "Access to the room is by prior appointment.",
+   "noteen": "An official word, common on notices"
   },
   {
    "word": "perante",
@@ -7849,7 +7885,10 @@
    "tema": "A9",
    "uk": "перед лицем",
    "exuk": "Перед лицем стількох сумнівів ми відклали покупку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "in the face of, before",
+   "exen": "Faced with so many doubts, we put the purchase off.",
+   "noteen": ""
   },
   {
    "word": "caso",
@@ -7862,7 +7901,10 @@
    "tema": "A9",
    "uk": "якщо, у разі",
    "exuk": "Якщо не зможеш прийти, попередь до четверга.",
-   "noteuk": "Після caso — кон’юнктив: caso possas, caso venha"
+   "noteuk": "Після caso — кон’юнктив: caso possas, caso venha",
+   "en": "in the event that",
+   "exen": "In case you can't come, let me know by Thursday.",
+   "noteen": "caso takes the subjunctive: caso possas, caso venha"
   },
   {
    "word": "sequer",
@@ -7875,7 +7917,10 @@
    "tema": "A9",
    "uk": "хоч би, навіть",
    "exuk": "Він пішов, навіть ні з ким не попрощавшись.",
-   "noteuk": "Nem sequer — навіть не"
+   "noteuk": "Nem sequer — навіть не",
+   "en": "even, so much as",
+   "exen": "He left without so much as saying goodbye to anyone.",
+   "noteen": "Nem sequer — not even"
   },
   {
    "word": "decerto",
@@ -7888,7 +7933,10 @@
    "tema": "A9",
    "uk": "певно, напевне",
    "exuk": "Певно, вони вже приїхали, машина стоїть надворі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "no doubt, I'm sure",
+   "exen": "They must have arrived, the car is outside.",
+   "noteen": ""
   },
   {
    "word": "dificilmente",
@@ -7901,7 +7949,10 @@
    "tema": "A9",
    "uk": "навряд чи",
    "exuk": "Навряд чи ми встигнемо туди до вечері.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "hardly, unlikely to",
+   "exen": "We're unlikely to get there before dinner.",
+   "noteen": ""
   },
   {
    "word": "haver de",
@@ -7914,7 +7965,10 @@
    "tema": "A4",
    "uk": "неодмінно колись зробити",
    "exuk": "Колись я неодмінно з’їжджу на Азори.",
-   "noteuk": "Обіцянка або намір: hei de, hás de, há de"
+   "noteuk": "Обіцянка або намір: hei de, hás de, há de",
+   "en": "to be sure to do it one day",
+   "exen": "I'll visit the Azores one of these days.",
+   "noteen": "A promise or intention: hei de, hás de, há de"
   },
   {
    "word": "ter em conta",
@@ -7927,7 +7981,10 @@
    "tema": "A8",
    "uk": "брати до уваги",
    "exuk": "Треба враховувати вартість проїзду трасою.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to take into account",
+   "exen": "You have to take the cost of the tolls into account.",
+   "noteen": ""
   },
   {
    "word": "pôr em causa",
@@ -7940,7 +7997,10 @@
    "tema": "A8",
    "uk": "ставити під сумнів",
    "exuk": "Його чесність ніхто під сумнів не ставив.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to call into question",
+   "exen": "Nobody called his honesty into question.",
+   "noteen": ""
   },
   {
    "word": "levar a cabo",
@@ -7953,7 +8013,10 @@
    "tema": "A1",
    "uk": "доводити до кінця",
    "exuk": "Мерія провела роботи за два місяці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to carry through, to complete",
+   "exen": "The council carried the works through in two months.",
+   "noteen": ""
   },
   {
    "word": "dar origem a",
@@ -7966,7 +8029,10 @@
    "tema": "A9",
    "uk": "спричиняти появу",
    "exuk": "Суперечка привела до зміни правил.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to give rise to",
+   "exen": "The argument gave rise to a change of rules.",
+   "noteen": ""
   },
   {
    "word": "ter lugar",
@@ -7979,7 +8045,10 @@
    "tema": "A4",
    "uk": "відбуватися",
    "exuk": "Церемонія пройшла в монастирському дворику.",
-   "noteuk": "Книжне; у мовленні частіше ser або realizar-se"
+   "noteuk": "Книжне; у мовленні частіше ser або realizar-se",
+   "en": "to be held",
+   "exen": "The ceremony was held in the monastery cloister.",
+   "noteen": "Bookish; in speech people say ser or realizar-se"
   },
   {
    "word": "fazer face a",
@@ -7992,7 +8061,10 @@
    "tema": "A7",
    "uk": "стояти перед, протистояти",
    "exuk": "Родинам доводиться давати раду дедалі більшим рахункам.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to meet, to stand up to",
+   "exen": "Families are meeting ever bigger bills.",
+   "noteen": ""
   },
   {
    "word": "dar-se conta",
@@ -8005,7 +8077,10 @@
    "tema": "A8",
    "uk": "усвідомлювати, схаменутися",
    "exuk": "Я помітив помилку лише наступного дня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to realise, to notice",
+   "exen": "I only realised the mistake the next day.",
+   "noteen": ""
   },
   {
    "word": "ao passo que",
@@ -8018,7 +8093,10 @@
    "tema": "A9",
    "uk": "натомість, у той час як",
    "exuk": "Він мовчазний, тоді як вона говорить з усіма.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "whereas",
+   "exen": "He says little, whereas she talks to everyone.",
+   "noteen": ""
   },
   {
    "word": "a fim de",
@@ -8031,7 +8109,10 @@
    "tema": "A9",
    "uk": "щоб, з метою",
    "exuk": "Ми виїхали рано, щоб не стояти в чергах.",
-   "noteuk": "Книжніше, ніж para"
+   "noteuk": "Книжніше, ніж para",
+   "en": "in order to",
+   "exen": "We set off early in order to avoid the queues.",
+   "noteen": "More bookish than para"
   },
   {
    "word": "caso contrário",
@@ -8044,7 +8125,10 @@
    "tema": "A9",
    "uk": "інакше, у протилежному разі",
    "exuk": "Підтверди бронь, інакше втратиш місце.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "otherwise, if not",
+   "exen": "Confirm the booking; otherwise you lose your place.",
+   "noteen": ""
   },
   {
    "word": "com efeito",
@@ -8057,7 +8141,10 @@
    "tema": "A9",
    "uk": "і справді",
    "exuk": "І справді, цифри підтверджують його слова.",
-   "noteuk": "Книжне вставне слово"
+   "noteuk": "Книжне вставне слово",
+   "en": "indeed, in point of fact",
+   "exen": "Indeed, the figures bear out what he was saying.",
+   "noteen": "A bookish linking phrase"
   },
   {
    "word": "de forma a",
@@ -8070,7 +8157,10 @@
    "tema": "A9",
    "uk": "так, щоб",
    "exuk": "Я склав коробки так, щоб помістилися всі.",
-   "noteuk": "Те саме — de modo a"
+   "noteuk": "Те саме — de modo a",
+   "en": "so as to",
+   "exen": "I stacked the boxes so they would all fit.",
+   "noteen": "The same as de modo a"
   },
   {
    "word": "de modo que",
@@ -8083,7 +8173,10 @@
    "tema": "A9",
    "uk": "так що",
    "exuk": "Я запізнився на потяг, так що прийшов пізно.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "so that, with the result that",
+   "exen": "I missed the train, so I arrived late.",
+   "noteen": ""
   },
   {
    "word": "dado que",
@@ -8096,7 +8189,10 @@
    "tema": "A9",
    "uk": "оскільки",
    "exuk": "Оскільки було зачинено, ми повернулися наступного дня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "given that",
+   "exen": "Given that it was closed, we came back the next day.",
+   "noteen": ""
   },
   {
    "word": "por conseguinte",
@@ -8109,7 +8205,10 @@
    "tema": "A9",
    "uk": "отже, тому",
    "exuk": "Він не прийшов на іспит, отже, не склав.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "consequently",
+   "exen": "He missed the exam; consequently, he failed.",
+   "noteen": ""
   },
   {
    "word": "por sua vez",
@@ -8122,7 +8221,10 @@
    "tema": "A9",
    "uk": "своєю чергою",
    "exuk": "Донька, своєю чергою, воліла лишитися в Лісабоні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "in turn, for their part",
+   "exen": "The daughter, in turn, preferred to stay in Lisbon.",
+   "noteen": ""
   },
   {
    "word": "uma vez que",
@@ -8135,7 +8237,10 @@
    "tema": "A9",
    "uk": "раз уже, позаяк",
    "exuk": "Раз уже ти тут, допоможи мені з цим.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "since, seeing that",
+   "exen": "Since you're here anyway, help me with this.",
+   "noteen": ""
   },
   {
    "word": "visto que",
@@ -8148,7 +8253,10 @@
    "tema": "A9",
    "uk": "з огляду на те, що",
    "exuk": "Раз ніхто не заперечував, ми продовжили за планом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "in view of the fact that",
+   "exen": "As nobody objected, we went on with the plan.",
+   "noteen": ""
   },
   {
    "word": "a não ser que",
@@ -8161,7 +8269,10 @@
    "tema": "A9",
    "uk": "якщо тільки не",
    "exuk": "Поїдемо на пляж, якщо тільки зранку не буде дощу.",
-   "noteuk": "Потребує кон’юнктива: a não ser que chova"
+   "noteuk": "Потребує кон’юнктива: a não ser que chova",
+   "en": "unless",
+   "exen": "We'll go to the beach, unless it rains in the morning.",
+   "noteen": "Takes the subjunctive: a não ser que chova"
   },
   {
    "word": "nem que",
@@ -8174,7 +8285,10 @@
    "tema": "A9",
    "uk": "навіть якщо, хай навіть",
    "exuk": "Я туди сьогодні зайду, хай навіть на пів години.",
-   "noteuk": "Потребує кон’юнктива"
+   "noteuk": "Потребує кон’юнктива",
+   "en": "even if, if only for",
+   "exen": "I'll go there today, even if only for half an hour.",
+   "noteen": "Takes the subjunctive"
   },
   {
    "word": "por muito que",
@@ -8187,7 +8301,10 @@
    "tema": "A9",
    "uk": "хоч би скільки",
    "exuk": "Хоч скільки намагаюся, рано вставати не виходить.",
-   "noteuk": "Потребує кон’юнктива"
+   "noteuk": "Потребує кон’юнктива",
+   "en": "however much",
+   "exen": "However much I try, I can't get up early.",
+   "noteen": "Takes the subjunctive"
   },
   {
    "word": "inclusive",
@@ -8200,7 +8317,10 @@
    "tema": "A9",
    "uk": "зокрема й",
    "exuk": "Прийшли всі, зокрема й ті, хто живе найдалі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "including, even",
+   "exen": "Everyone came, including those who live furthest away.",
+   "noteen": ""
   },
   {
    "word": "relativamente",
@@ -8213,7 +8333,10 @@
    "tema": "A5",
    "uk": "відносно, доволі",
    "exuk": "Для тих, хто готувався, іспит був відносно легкий.",
-   "noteuk": "Relativamente a — стосовно чогось"
+   "noteuk": "Relativamente a — стосовно чогось",
+   "en": "relatively; regarding",
+   "exen": "The exam was relatively easy for anyone who had studied.",
+   "noteen": "Relativamente a — with regard to"
   },
   {
    "word": "consideravelmente",
@@ -8226,7 +8349,10 @@
    "tema": "A5",
    "uk": "значно",
    "exuk": "Від літа ціни значно зросли.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "considerably",
+   "exen": "Prices have risen considerably since the summer.",
+   "noteen": ""
   },
   {
    "word": "unicamente",
@@ -8239,7 +8365,10 @@
    "tema": "A5",
    "uk": "лише, винятково",
    "exuk": "Ці двері лише для екстрених випадків.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "solely",
+   "exen": "This door is solely for emergencies.",
+   "noteen": ""
   },
   {
    "word": "essencialmente",
@@ -8252,7 +8381,10 @@
    "tema": "A9",
    "uk": "переважно, по суті",
    "exuk": "Харчується він переважно рибою.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "essentially, mainly",
+   "exen": "His diet is essentially made up of fish.",
+   "noteen": ""
   },
   {
    "word": "particularmente",
@@ -8265,7 +8397,10 @@
    "tema": "A7",
    "uk": "особливо, надто",
    "exuk": "Зима цього року видалася особливо сувора.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "particularly",
+   "exen": "The winter was particularly hard this year.",
+   "noteen": ""
   },
   {
    "word": "ocasionalmente",
@@ -8278,7 +8413,10 @@
    "tema": "A4",
    "uk": "вряди-годи",
    "exuk": "Вряди-годи ми вечеряємо в місті, майже завжди по суботах.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "occasionally",
+   "exen": "Occasionally we eat out, nearly always on a Saturday.",
+   "noteen": ""
   },
   {
    "word": "gradualmente",
@@ -8291,7 +8429,10 @@
    "tema": "A4",
    "uk": "поступово",
    "exuk": "Біль поступово минав протягом тижня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "gradually",
+   "exen": "The pain gradually wore off over the week.",
+   "noteen": ""
   },
   {
    "word": "definitivamente",
@@ -8304,7 +8445,10 @@
    "tema": "A7",
    "uk": "остаточно",
    "exuk": "Ми остаточно вирішили переїхати до Порту влітку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "once and for all",
+   "exen": "We have finally decided to move to Porto in summer.",
+   "noteen": ""
   },
   {
    "word": "evidentemente",
@@ -8317,7 +8461,10 @@
    "tema": "A8",
    "uk": "певна річ, ясна річ",
    "exuk": "Ясна річ, провину за помилку ніхто брати не захотів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "evidently, needless to say",
+   "exen": "Needless to say, nobody wanted to take the blame.",
+   "noteen": ""
   },
   {
    "word": "supostamente",
@@ -8330,7 +8477,10 @@
    "tema": "A8",
    "uk": "як гадають, буцімто",
    "exuk": "Гадали, що будівництво закінчать у травні.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "supposedly",
+   "exen": "The works were supposedly going to be ready in May.",
+   "noteen": ""
   },
   {
    "word": "alegadamente",
@@ -8343,7 +8493,10 @@
    "tema": "A8",
    "uk": "за твердженнями, начебто",
    "exuk": "Підозрюваний, за твердженнями, утік через вікно.",
-   "noteuk": "Слово з новин і поліційних зведень"
+   "noteuk": "Слово з новин і поліційних зведень",
+   "en": "allegedly",
+   "exen": "The suspect allegedly escaped through the window.",
+   "noteen": "A word from news reports and police statements"
   },
   {
    "word": "assumir",
@@ -8356,7 +8509,10 @@
    "tema": "A8",
    "uk": "брати на себе",
    "exuk": "Він узяв на себе відповідальність за затримку доставки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to take on, to accept responsibility",
+   "exen": "He took responsibility for the delay in the delivery.",
+   "noteen": ""
   },
   {
    "word": "atribuir",
@@ -8369,7 +8525,10 @@
    "tema": "A9",
    "uk": "присуджувати; приписувати",
    "exuk": "Журі присудило премію дебютантові.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to award; to attribute",
+   "exen": "The jury awarded the prize to a first-time author.",
+   "noteen": ""
   },
   {
    "word": "constatar",
@@ -8382,7 +8541,10 @@
    "tema": "A8",
    "uk": "констатувати",
    "exuk": "Ми встановили, що річ була в котлі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to establish as a fact",
+   "exen": "We established that the problem came from the boiler.",
+   "noteen": ""
   },
   {
    "word": "demonstrar",
@@ -8395,7 +8557,10 @@
    "tema": "A8",
    "uk": "показувати наочно",
    "exuk": "Дані показують, що споживання знижується.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to show, to demonstrate",
+   "exen": "The data show that consumption has been falling.",
+   "noteen": ""
   },
   {
    "word": "denunciar",
@@ -8408,7 +8573,10 @@
    "tema": "B9",
    "uk": "заявляти про порушення",
    "exuk": "Сусіди поскаржилися на шум у поліцію.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to report a wrongdoing",
+   "exen": "The neighbours reported the noise to the police.",
+   "noteen": ""
   },
   {
    "word": "destinar",
@@ -8421,7 +8589,10 @@
    "tema": "A9",
    "uk": "призначати для",
    "exuk": "Гроші призначені на ремонт даху.",
-   "noteuk": "destinar-se a — бути призначеним для"
+   "noteuk": "destinar-se a — бути призначеним для",
+   "en": "to earmark, to set aside for",
+   "exen": "The money is earmarked for repairing the roof.",
+   "noteen": "destinar-se a — to be meant for"
   },
   {
    "word": "determinar",
@@ -8434,7 +8605,10 @@
    "tema": "A8",
    "uk": "приписувати, установлювати",
    "exuk": "Закон установлює мінімальний розмір окладу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to lay down, to stipulate",
+   "exen": "The law lays down the minimum wage.",
+   "noteen": ""
   },
   {
    "word": "efetuar",
@@ -8447,7 +8621,10 @@
    "tema": "B9",
    "uk": "здійснювати (офіційно)",
    "exuk": "Оплату можна здійснити банківським переказом.",
-   "noteuk": "Канцелярське слово з рахунків і оголошень"
+   "noteuk": "Канцелярське слово з рахунків і оголошень",
+   "en": "to carry out, to make a payment",
+   "exen": "You can make the payment by bank transfer.",
+   "noteen": "An official word from invoices and notices"
   },
   {
    "word": "empregar",
@@ -8460,7 +8637,10 @@
    "tema": "B3",
    "uk": "давати роботу; вживати",
    "exuk": "На заводі працюють двісті людей з цих місць.",
-   "noteuk": "Також «вживати слово»: empregar um termo"
+   "noteuk": "Також «вживати слово»: empregar um termo",
+   "en": "to employ; to use a word",
+   "exen": "The factory employs two hundred local people.",
+   "noteen": "Also to use a term: empregar um termo"
   },
   {
    "word": "encarar",
@@ -8473,7 +8653,10 @@
    "tema": "A7",
    "uk": "сприймати, дивитися в лице",
    "exuk": "Зміни він сприйняв як нову можливість.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to face up to, to see as",
+   "exen": "He saw the change as a new opportunity.",
+   "noteen": ""
   },
   {
    "word": "esclarecer",
@@ -8486,7 +8669,10 @@
    "tema": "A8",
    "uk": "прояснювати, роз’яснювати",
    "exuk": "Працівник розвіяв усі наші сумніви.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to clarify, to clear up",
+   "exen": "The clerk cleared up all our doubts.",
+   "noteen": ""
   },
   {
    "word": "especificar",
@@ -8499,7 +8685,10 @@
    "tema": "A8",
    "uk": "уточнювати",
    "exuk": "Зазначте в бланку запису повну адресу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to specify",
+   "exen": "Specify the full address on the registration form.",
+   "noteen": ""
   },
   {
    "word": "estabelecer",
@@ -8512,7 +8701,10 @@
    "tema": "A1",
    "uk": "налагоджувати, установлювати",
    "exuk": "Вони налагодили добрі стосунки із сусідами.",
-   "noteuk": "estabelecer-se — осісти десь"
+   "noteuk": "estabelecer-se — осісти десь",
+   "en": "to establish, to build up",
+   "exen": "They built up a good relationship with the neighbours.",
+   "noteen": "estabelecer-se — to settle somewhere"
   },
   {
    "word": "evidenciar",
@@ -8525,7 +8717,10 @@
    "tema": "A8",
    "uk": "засвідчувати, унаочнювати",
    "exuk": "Звіт виявляє недоліки в безпеці будівлі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to bring to light",
+   "exen": "The report brings to light failings in the building's safety.",
+   "noteen": ""
   },
   {
    "word": "evoluir",
@@ -8538,7 +8733,10 @@
    "tema": "A4",
    "uk": "розвиватися з часом",
    "exuk": "Мова змінюється швидше, ніж нам здається.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to evolve, to change over time",
+   "exen": "Language changes faster than we think.",
+   "noteen": ""
   },
   {
    "word": "executar",
@@ -8551,7 +8749,10 @@
    "tema": "B3",
    "uk": "виконувати задум",
    "exuk": "Команда виконала план без жодної помилки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to execute, to carry out a plan",
+   "exen": "The team carried the plan out without a single error.",
+   "noteen": ""
   },
   {
    "word": "expandir",
@@ -8564,7 +8765,10 @@
    "tema": "A3",
    "uk": "розширювати(ся)",
    "exuk": "Мережа розширилася ще на три міста.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to expand",
+   "exen": "The chain expanded into three more cities.",
+   "noteen": ""
   },
   {
    "word": "formular",
@@ -8577,7 +8781,10 @@
    "tema": "A8",
    "uk": "формулювати",
    "exuk": "Він сформулював запитання дуже ясно.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to formulate, to word",
+   "exen": "He worded the question very clearly.",
+   "noteen": ""
   },
   {
    "word": "fornecer",
@@ -8590,7 +8797,10 @@
    "tema": "B7",
    "uk": "постачати",
    "exuk": "Компанія постачає хліб до всіх шкіл.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to supply",
+   "exen": "The company supplies bread to all the schools.",
+   "noteen": ""
   },
   {
    "word": "fortalecer",
@@ -8603,7 +8813,10 @@
    "tema": "A6",
    "uk": "робити міцнішим",
    "exuk": "Щоденна ходьба зміцнює ноги і серце.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to build up, to make stronger",
+   "exen": "A daily walk builds up your legs and your heart.",
+   "noteen": ""
   },
   {
    "word": "gerar",
@@ -8616,7 +8829,10 @@
    "tema": "A1",
    "uk": "породжувати",
    "exuk": "Новина породила багато суперечок у соцмережах.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to generate, to bring about",
+   "exen": "The news generated a lot of argument on social media.",
+   "noteen": ""
   },
   {
    "word": "gerir",
@@ -8629,7 +8845,10 @@
    "tema": "B3",
    "uk": "розпоряджатися, урядувати",
    "exuk": "Вона навчилася розподіляти час між роботою і дітьми.",
-   "noteuk": "A gestão — управління, менеджмент"
+   "noteuk": "A gestão — управління, менеджмент",
+   "en": "to manage",
+   "exen": "She learned to manage her time between work and children.",
+   "noteen": "A gestão — management"
   },
   {
    "word": "impor",
@@ -8642,7 +8861,10 @@
    "tema": "A8",
    "uk": "накидати, запроваджувати",
    "exuk": "Мерія встановила межу нічного шуму.",
-   "noteuk": "impor-se — заявити про себе, узяти гору"
+   "noteuk": "impor-se — заявити про себе, узяти гору",
+   "en": "to impose",
+   "exen": "The council imposed a limit on night-time noise.",
+   "noteen": "impor-se — to assert yourself, to prevail"
   },
   {
    "word": "inserir",
@@ -8655,7 +8877,10 @@
    "tema": "A2",
    "uk": "вставляти",
    "exuk": "Вставте картку і введіть таємний код.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to insert",
+   "exen": "Insert the card and enter the PIN.",
+   "noteen": ""
   },
   {
    "word": "integrar",
@@ -8668,7 +8893,10 @@
    "tema": "A9",
    "uk": "входити до складу",
    "exuk": "Він увійшов до команди одразу після стажування.",
-   "noteuk": "integrar-se — освоїтися, влитися"
+   "noteuk": "integrar-se — освоїтися, влитися",
+   "en": "to join, to be part of",
+   "exen": "He joined the team right after his placement.",
+   "noteen": "integrar-se — to settle in, to fit in"
   },
   {
    "word": "interpretar",
@@ -8681,7 +8909,10 @@
    "tema": "A8",
    "uk": "тлумачити; виконувати роль",
    "exuk": "Її мовчання кожен витлумачив по-своєму.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to interpret; to play a part",
+   "exen": "Everyone interpreted her silence in their own way.",
+   "noteen": ""
   },
   {
    "word": "introduzir",
@@ -8694,7 +8925,10 @@
    "tema": "A2",
    "uk": "уводити, вносити",
    "exuk": "У вересні до розкладу потягів внесли зміни.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to introduce, to bring in",
+   "exen": "They brought in changes to the train timetable in September.",
+   "noteen": ""
   },
   {
    "word": "liderar",
@@ -8707,7 +8941,10 @@
    "tema": "B3",
    "uk": "вести перед, лідирувати",
    "exuk": "Команда лідирує в чемпіонаті від листопада.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to lead, to be top of",
+   "exen": "The team has led the league since November.",
+   "noteen": ""
   },
   {
    "word": "motivar",
@@ -8720,7 +8957,10 @@
    "tema": "A8",
    "uk": "мотивувати, надихати",
    "exuk": "Учитель захоплює учнів прикладами з життя.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to motivate",
+   "exen": "The teacher motivates pupils with everyday examples.",
+   "noteen": ""
   },
   {
    "word": "optar",
@@ -8733,7 +8973,10 @@
    "tema": "A7",
    "uk": "обирати, віддавати перевагу",
    "exuk": "Ми воліли лишитися в Коїмбрі ще на ніч.",
-   "noteuk": "optar por — потребує por"
+   "noteuk": "optar por — потребує por",
+   "en": "to opt, to choose to",
+   "exen": "We opted to stay another night in Coimbra.",
+   "noteen": "optar por — takes por"
   },
   {
    "word": "possuir",
@@ -8746,7 +8989,10 @@
    "tema": "A1",
    "uk": "мати у власності",
    "exuk": "У будинку є гараж і новий ліфт.",
-   "noteuk": "Книжніше, ніж ter"
+   "noteuk": "Книжніше, ніж ter",
+   "en": "to possess, to have",
+   "exen": "The block has a garage and a new lift.",
+   "noteen": "More bookish than ter"
   },
   {
    "word": "preservar",
@@ -8759,7 +9005,10 @@
    "tema": "B2",
    "uk": "зберігати від змін",
    "exuk": "Село зберегло старі сланцеві будинки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to preserve",
+   "exen": "The village preserved its old schist houses.",
+   "noteen": ""
   },
   {
    "word": "prestar",
@@ -8772,7 +9021,10 @@
    "tema": "B9",
    "uk": "надавати послугу",
    "exuk": "Компанія надає офісам послуги прибирання.",
-   "noteuk": "«Não presta» — «нікуди не годиться»"
+   "noteuk": "«Não presta» — «нікуди не годиться»",
+   "en": "to provide a service",
+   "exen": "The company provides cleaning services to offices.",
+   "noteen": "Não presta — it's no good at all"
   },
   {
    "word": "promover",
@@ -8785,7 +9037,10 @@
    "tema": "B7",
    "uk": "просувати, влаштовувати",
    "exuk": "Улітку мерія влаштовує безкоштовні концерти.",
-   "noteuk": "Також «підвищити на посаді»: foi promovido"
+   "noteuk": "Також «підвищити на посаді»: foi promovido",
+   "en": "to promote, to put on",
+   "exen": "The council puts on free concerts in the summer.",
+   "noteen": "Also to promote in rank: foi promovido"
   },
   {
    "word": "questionar",
@@ -8798,7 +9053,10 @@
    "tema": "A8",
    "uk": "ставити під питання",
    "exuk": "Рішення тренера тієї миті ніхто не оскаржив.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to question, to call into doubt",
+   "exen": "Nobody questioned the coach's decision at that moment.",
+   "noteen": ""
   },
   {
    "word": "refletir",
@@ -8811,7 +9069,10 @@
    "tema": "A8",
    "uk": "розмірковувати",
    "exuk": "Мені треба подумати, перш ніж відповісти.",
-   "noteuk": "Друге значення — відбивати: o espelho reflete"
+   "noteuk": "Друге значення — відбивати: o espelho reflete",
+   "en": "to reflect, to think over",
+   "exen": "I need to think it over before giving an answer.",
+   "noteen": "The second sense is to reflect: o espelho reflete"
   },
   {
    "word": "rejeitar",
@@ -8824,7 +9085,10 @@
    "tema": "A7",
    "uk": "відхиляти, відкидати",
    "exuk": "Страхова відхилила заяву, не пояснивши чому.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to reject",
+   "exen": "The insurer rejected the claim without explaining why.",
+   "noteen": ""
   },
   {
    "word": "relacionar",
@@ -8837,7 +9101,10 @@
    "tema": "A9",
    "uk": "співвідносити",
    "exuk": "Лікарі пов’язують утому з нестачею заліза.",
-   "noteuk": "relacionar-se com — спілкуватися, мати стосунок"
+   "noteuk": "relacionar-se com — спілкуватися, мати стосунок",
+   "en": "to link, to connect",
+   "exen": "Doctors link the tiredness to a lack of iron.",
+   "noteen": "relacionar-se com — to relate to, to mix with"
   },
   {
    "word": "representar",
@@ -8850,7 +9117,10 @@
    "tema": "A9",
    "uk": "представляти когось",
    "exuk": "Адвокат представляє родину в суді.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to represent",
+   "exen": "The lawyer represents the family in court.",
+   "noteen": ""
   },
   {
    "word": "restringir",
@@ -8863,7 +9133,10 @@
    "tema": "A5",
    "uk": "обмежувати доступ",
    "exuk": "Вхід дозволено лише повнолітнім.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to restrict",
+   "exen": "Entry is restricted to adults.",
+   "noteen": ""
   },
   {
    "word": "retomar",
@@ -8876,7 +9149,10 @@
    "tema": "A4",
    "uk": "відновлювати перерване",
    "exuk": "Після великих канікул ми відновили заняття.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to resume",
+   "exen": "We resumed classes after the long holidays.",
+   "noteen": ""
   },
   {
    "word": "rever",
@@ -8889,7 +9165,10 @@
    "tema": "A8",
    "uk": "переглядати, перечитувати",
    "exuk": "Я двічі перечитав текст, перш ніж надіслати.",
-   "noteuk": "Також «знову побачити»: rever um amigo"
+   "noteuk": "Також «знову побачити»: rever um amigo",
+   "en": "to review, to go over again",
+   "exen": "I went over the text twice before sending it.",
+   "noteen": "Also to see again: rever um amigo"
   },
   {
    "word": "salientar",
@@ -8902,7 +9181,10 @@
    "tema": "A8",
    "uk": "особливо зазначати",
    "exuk": "У звіті особливо зазначено брак персоналу в лікарнях.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to point out, to emphasise",
+   "exen": "The report points out the shortage of hospital staff.",
+   "noteen": ""
   },
   {
    "word": "simplificar",
@@ -8915,7 +9197,10 @@
    "tema": "A7",
    "uk": "спрощувати",
    "exuk": "Новий бланк помітно спростив процедуру.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to simplify",
+   "exen": "The new form simplified the process considerably.",
+   "noteen": ""
   },
   {
    "word": "solicitar",
@@ -8928,7 +9213,10 @@
    "tema": "B9",
    "uk": "запитувати офіційно, клопотати",
    "exuk": "Я запросив дублікат рахунку за електрику.",
-   "noteuk": "Segunda via — повторний примірник документа"
+   "noteuk": "Segunda via — повторний примірник документа",
+   "en": "to request formally",
+   "exen": "I requested a copy of the electricity bill.",
+   "noteen": "Segunda via — a duplicate of a document"
   },
   {
    "word": "superar",
@@ -8941,7 +9229,10 @@
    "tema": "A7",
    "uk": "долати, перевершувати",
    "exuk": "За рік він подолав страх публічних виступів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to overcome",
+   "exen": "He overcame his fear of public speaking in a year.",
+   "noteen": ""
   },
   {
    "word": "suspender",
@@ -8954,7 +9245,10 @@
    "tema": "A4",
    "uk": "призупиняти",
    "exuk": "Роботи призупинили до кінця літа.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to suspend, to halt",
+   "exen": "They halted the works until the end of the summer.",
+   "noteen": ""
   },
   {
    "word": "sustentar",
@@ -8967,7 +9261,10 @@
    "tema": "A7",
    "uk": "утримувати; підкріплювати",
    "exuk": "Після розлучення він сам утримує родину.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to support financially; to uphold",
+   "exen": "He has supported the family alone since the divorce.",
+   "noteen": ""
   },
   {
    "word": "tolerar",
@@ -8980,7 +9277,10 @@
    "tema": "A7",
    "uk": "допускати, попускати",
    "exuk": "Школа не попускає постійних запізнень без причини.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to tolerate",
+   "exen": "The school does not tolerate repeated unexplained lateness.",
+   "noteen": ""
   },
   {
    "word": "transmitir",
@@ -8993,7 +9293,10 @@
    "tema": "A8",
    "uk": "передавати; транслювати",
    "exuk": "Канал показує матч у прямому ефірі о дев’ятій.",
-   "noteuk": "Em direto — у прямому ефірі"
+   "noteuk": "Em direto — у прямому ефірі",
+   "en": "to broadcast; to pass on",
+   "exen": "The channel broadcasts the match live at nine.",
+   "noteen": "Em direto — live on air"
   },
   {
    "word": "unir",
@@ -9006,7 +9309,10 @@
    "tema": "A9",
    "uk": "сполучати, поєднувати",
    "exuk": "Міст сполучає два береги річки.",
-   "noteuk": "unir-se — об’єднатися"
+   "noteuk": "unir-se — об’єднатися",
+   "en": "to join, to unite",
+   "exen": "The bridge joins the two banks of the river.",
+   "noteen": "unir-se — to come together"
   },
   {
    "word": "visar",
@@ -9019,7 +9325,10 @@
    "tema": "A9",
    "uk": "мати на меті",
    "exuk": "Захід має на меті зменшити рух у центрі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to aim at, to be intended to",
+   "exen": "The measure aims to reduce traffic in the centre.",
+   "noteen": ""
   },
   {
    "word": "a abordagem",
@@ -9032,7 +9341,10 @@
    "tema": "A8",
    "uk": "підхід до справи",
    "exuk": "Його підхід до задачі відрізнявся від нашого.",
-   "noteuk": "abordar — порушувати тему, підходити до питання"
+   "noteuk": "abordar — порушувати тему, підходити до питання",
+   "en": "approach to something",
+   "exen": "His approach to the problem was different from ours.",
+   "noteen": "abordar — to broach a subject, to tackle a question"
   },
   {
    "word": "o âmbito",
@@ -9045,7 +9357,10 @@
    "tema": "A2",
    "uk": "рамки, царина",
    "exuk": "Роботи йдуть у рамках програми мерії.",
-   "noteuk": "No âmbito de — у рамках чогось"
+   "noteuk": "No âmbito de — у рамках чогось",
+   "en": "scope, framework",
+   "exen": "The works are being done under the council's programme.",
+   "noteen": "No âmbito de — within the framework of"
   },
   {
    "word": "o alvo",
@@ -9058,7 +9373,10 @@
    "tema": "A7",
    "uk": "мішень, ціль нападок",
    "exuk": "У ніч на суботу магазин пограбували.",
-   "noteuk": "Ser alvo de — стати об’єктом чогось"
+   "noteuk": "Ser alvo de — стати об’єктом чогось",
+   "en": "target",
+   "exen": "The shop was robbed in the early hours of Saturday.",
+   "noteen": "Ser alvo de — to be the target of"
   },
   {
    "word": "a ameaça",
@@ -9071,7 +9389,10 @@
    "tema": "A7",
    "uk": "загроза",
    "exuk": "Посуха — серйозна загроза для сільського господарства.",
-   "noteuk": "Ameaçar — погрожувати"
+   "noteuk": "Ameaçar — погрожувати",
+   "en": "threat",
+   "exen": "Drought is a serious threat to farming.",
+   "noteen": "Ameaçar — to threaten"
   },
   {
    "word": "o cenário",
@@ -9084,7 +9405,10 @@
    "tema": "A2",
    "uk": "варіант розвитку подій",
    "exuk": "Найгірший варіант — лишитися без гарячої води.",
-   "noteuk": "Також декорації на сцені"
+   "noteuk": "Також декорації на сцені",
+   "en": "scenario; stage set",
+   "exen": "The worst case would be being left without hot water.",
+   "noteen": "Also the scenery on a stage"
   },
   {
    "word": "o ciclo",
@@ -9097,7 +9421,10 @@
    "tema": "A4",
    "uk": "цикл, ступінь",
    "exuk": "Перший ступінь початкової школи триває чотири роки.",
-   "noteuk": "Школа в Португалії ділиться на ciclos"
+   "noteuk": "Школа в Португалії ділиться на ciclos",
+   "en": "cycle; stage of schooling",
+   "exen": "The first cycle of basic schooling lasts four years.",
+   "noteen": "Portuguese schooling is divided into ciclos"
   },
   {
    "word": "o conflito",
@@ -9110,7 +9437,10 @@
    "tema": "A9",
    "uk": "конфлікт",
    "exuk": "Конфлікт між сусідами тягнувся майже два роки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "conflict",
+   "exen": "The conflict between the neighbours lasted almost two years.",
+   "noteen": ""
   },
   {
    "word": "o contexto",
@@ -9123,7 +9453,10 @@
    "tema": "A9",
    "uk": "контекст, обставини",
    "exuk": "Без контексту фраза звучить значно різкіше.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "context",
+   "exen": "Without context the sentence sounds much harsher.",
+   "noteen": ""
   },
   {
    "word": "o contributo",
@@ -9136,7 +9469,10 @@
    "tema": "A9",
    "uk": "внесок у спільну справу",
    "exuk": "Її внесок виявився вирішальним для результату.",
-   "noteuk": "У Португалії частіше, ніж contribuição"
+   "noteuk": "У Португалії частіше, ніж contribuição",
+   "en": "contribution made",
+   "exen": "Her contribution was decisive to the result.",
+   "noteen": "Commoner in Portugal than contribuição"
   },
   {
    "word": "o critério",
@@ -9149,7 +9485,10 @@
    "tema": "A7",
    "uk": "критерій",
    "exuk": "За яким критерієм відбирали кандидатів?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "criterion",
+   "exen": "What was the criterion for choosing the candidates?",
+   "noteen": ""
   },
   {
    "word": "a dimensão",
@@ -9162,7 +9501,10 @@
    "tema": "A3",
    "uk": "масштаб",
    "exuk": "Масштабу завданої шкоди ніхто не передбачив.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "scale, size",
+   "exen": "Nobody foresaw the scale of the damage caused.",
+   "noteen": ""
   },
   {
    "word": "o elemento",
@@ -9175,7 +9517,10 @@
    "tema": "A5",
    "uk": "елемент; учасник групи",
    "exuk": "Кожен учасник команди отримав завдання.",
-   "noteuk": "Про людей у групі кажуть os elementos"
+   "noteuk": "Про людей у групі кажуть os elementos",
+   "en": "element; a member of a group",
+   "exen": "Each member of the team was given a task.",
+   "noteen": "Of people in a group Portuguese says os elementos"
   },
   {
    "word": "a estratégia",
@@ -9188,7 +9533,10 @@
    "tema": "A8",
    "uk": "стратегія",
    "exuk": "З новим керівництвом стратегія компанії змінилася.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "strategy",
+   "exen": "The company's strategy changed with the new management.",
+   "noteen": ""
   },
   {
    "word": "a estrutura",
@@ -9201,7 +9549,10 @@
    "tema": "A3",
    "uk": "структура, конструкція",
    "exuk": "Конструкція будівлі добре витримала землетрус.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "structure",
+   "exen": "The building's structure stood up well to the earthquake.",
+   "noteen": ""
   },
   {
    "word": "a evidência",
@@ -9214,7 +9565,10 @@
    "tema": "A8",
    "uk": "свідчення, підтвердження",
    "exuk": "Немає жодних свідчень на користь цієї думки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "evidence",
+   "exen": "There is no evidence at all to support that idea.",
+   "noteen": ""
   },
   {
    "word": "a expansão",
@@ -9227,7 +9581,10 @@
    "tema": "A3",
    "uk": "розростання, зростання",
    "exuk": "Розширення мережі метро триває кілька років.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "expansion",
+   "exen": "Expanding the metro network takes several years.",
+   "noteen": ""
   },
   {
    "word": "o fator",
@@ -9240,7 +9597,10 @@
    "tema": "A9",
    "uk": "чинник",
    "exuk": "Ціна стала вирішальним чинником у нашому виборі.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "factor",
+   "exen": "Price was the deciding factor in our choice.",
+   "noteen": ""
   },
   {
    "word": "a finalidade",
@@ -9253,7 +9613,10 @@
    "tema": "A9",
    "uk": "призначення",
    "exuk": "Яке призначення всього цього бланка?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "purpose, what it is for",
+   "exen": "What is the purpose of this whole form?",
+   "noteen": ""
   },
   {
    "word": "o impasse",
@@ -9266,7 +9629,10 @@
    "tema": "A9",
    "uk": "безвихідь",
    "exuk": "Перемовини зайшли в цілковиту безвихідь.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "deadlock, impasse",
+   "exen": "The negotiations reached a complete deadlock.",
+   "noteen": ""
   },
   {
    "word": "o indicador",
@@ -9279,7 +9645,10 @@
    "tema": "A5",
    "uk": "індикатор",
    "exuk": "Улітку показники економіки поліпшилися.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "indicator",
+   "exen": "The economic indicators improved over the summer.",
+   "noteen": ""
   },
   {
    "word": "o instrumento",
@@ -9292,7 +9661,10 @@
    "tema": "A9",
    "uk": "інструмент, засіб",
    "exuk": "Закон — це засіб, а не готове рішення.",
-   "noteuk": "Музичний інструмент — теж instrumento"
+   "noteuk": "Музичний інструмент — теж instrumento",
+   "en": "instrument, means",
+   "exen": "The law is an instrument, not a complete solution.",
+   "noteen": "A musical instrument is also an instrumento"
   },
   {
    "word": "a lacuna",
@@ -9305,7 +9677,10 @@
    "tema": "A5",
    "uk": "прогалина",
    "exuk": "У тексті є прогалини, які треба заповнити.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "gap",
+   "exen": "The text has gaps that need filling in.",
+   "noteen": ""
   },
   {
    "word": "a norma",
@@ -9318,7 +9693,10 @@
    "tema": "A9",
    "uk": "норма, припис",
    "exuk": "Правила зобов’язують носити каску на будівництві.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "rule, standard",
+   "exen": "The rules oblige you to wear a helmet on site.",
+   "noteen": ""
   },
   {
    "word": "o padrão",
@@ -9331,7 +9709,10 @@
    "tema": "A6",
    "uk": "візерунок; взірець",
    "exuk": "На сорочці візерунок у тонку смужку.",
-   "noteuk": "Друге значення — стандарт: padrão de qualidade"
+   "noteuk": "Друге значення — стандарт: padrão de qualidade",
+   "en": "pattern; standard",
+   "exen": "The shirt has a fine striped pattern.",
+   "noteen": "The second sense is a standard: padrão de qualidade"
   },
   {
    "word": "a perspetiva",
@@ -9344,7 +9725,10 @@
    "tema": "A8",
    "uk": "погляд, ракурс",
    "exuk": "З цього погляду рішення виглядає осмисленіше.",
-   "noteuk": "Пишеться без c — європейська норма"
+   "noteuk": "Пишеться без c — європейська норма",
+   "en": "point of view",
+   "exen": "Seen from this angle the decision makes more sense.",
+   "noteen": "Spelt without the c in the European norm"
   },
   {
    "word": "o propósito",
@@ -9357,7 +9741,10 @@
    "tema": "A9",
    "uk": "намір, умисел",
    "exuk": "Це вийшло не навмисне, запевняю — випадково.",
-   "noteuk": "De propósito — навмисне; a propósito — до речі"
+   "noteuk": "De propósito — навмисне; a propósito — до речі",
+   "en": "intention, on purpose",
+   "exen": "It wasn't on purpose, I assure you it was an accident.",
+   "noteen": "De propósito — on purpose; a propósito — by the way"
   },
   {
    "word": "o recurso",
@@ -9370,7 +9757,10 @@
    "tema": "A5",
    "uk": "засіб, ресурс",
    "exuk": "У школи мало засобів на таку кількість учнів.",
-   "noteuk": "Recorrer — вдатися; подати апеляцію"
+   "noteuk": "Recorrer — вдатися; подати апеляцію",
+   "en": "resource, means",
+   "exen": "The school has few resources for so many pupils.",
+   "noteen": "Recorrer — to turn to; to lodge an appeal"
   },
   {
    "word": "a referência",
@@ -9383,7 +9773,10 @@
    "tema": "A8",
    "uk": "згадка; орієнтир",
    "exuk": "Він згадав про справу, не вдаючись у подробиці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "mention; reference point",
+   "exen": "He mentioned the matter without going into details.",
+   "noteen": ""
   },
   {
    "word": "o regime",
@@ -9396,7 +9789,10 @@
    "tema": "B9",
    "uk": "режим, лад",
    "exuk": "Від березня він працює на неповній ставці.",
-   "noteuk": "Також політичний режим і дієта"
+   "noteuk": "Також політичний режим і дієта",
+   "en": "arrangement, regime",
+   "exen": "He has worked part-time since March.",
+   "noteen": "Also a political regime and a diet"
   },
   {
    "word": "o rumo",
@@ -9409,7 +9805,10 @@
    "tema": "A2",
    "uk": "напрям, перебіг справи",
    "exuk": "Розмова взяла цілком несподіваний поворот.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "direction, turn events take",
+   "exen": "The conversation took a completely unexpected turn.",
+   "noteen": ""
   },
   {
    "word": "o setor",
@@ -9422,7 +9821,10 @@
    "tema": "B9",
    "uk": "галузь",
    "exuk": "Галузь туризму відновилася швидше.",
-   "noteuk": "Пишеться без c — європейська норма"
+   "noteuk": "Пишеться без c — європейська норма",
+   "en": "sector, industry",
+   "exen": "The tourism sector recovered faster.",
+   "noteen": "Spelt without the c in the European norm"
   },
   {
    "word": "a sequência",
@@ -9435,7 +9837,10 @@
    "tema": "A4",
    "uk": "послідовність",
    "exuk": "Послідовність дій описана в інструкції.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "sequence",
+   "exen": "The sequence of steps is explained in the manual.",
+   "noteen": ""
   },
   {
    "word": "o termo",
@@ -9448,7 +9853,10 @@
    "tema": "A8",
    "uk": "термін (слово)",
    "exuk": "Це технічний термін, який мало хто знає.",
-   "noteuk": "Pôr termo a — покласти край чомусь"
+   "noteuk": "Pôr termo a — покласти край чомусь",
+   "en": "term, word used",
+   "exen": "It's a technical term that few people know.",
+   "noteen": "Pôr termo a — to put an end to something"
   },
   {
    "word": "a via",
@@ -9461,7 +9869,10 @@
    "tema": "A2",
    "uk": "шлях, спосіб",
    "exuk": "Зрештою ми розв’язали справу через суд.",
-   "noteuk": "Segunda via — дублікат документа"
+   "noteuk": "Segunda via — дублікат документа",
+   "en": "way, channel",
+   "exen": "We ended up settling the matter through the courts.",
+   "noteen": "Segunda via — a duplicate of a document"
   },
   {
    "word": "abrangente",
@@ -9474,7 +9885,10 @@
    "tema": "A3",
    "uk": "широкий, всеохопний",
    "exuk": "Курс широкий, торкається багатьох тем.",
-   "noteuk": "Abranger — охоплювати"
+   "noteuk": "Abranger — охоплювати",
+   "en": "wide-ranging",
+   "exen": "The course is wide-ranging, it touches on many topics.",
+   "noteen": "Abranger — to cover, to take in"
   },
   {
    "word": "crescente",
@@ -9487,7 +9901,10 @@
    "tema": "A5",
    "uk": "дедалі більший",
    "exuk": "Узимку туристів стає дедалі більше.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "growing",
+   "exen": "There are growing numbers of tourists in winter.",
+   "noteen": ""
   },
   {
    "word": "crucial",
@@ -9500,7 +9917,10 @@
    "tema": "A7",
    "uk": "ключовий",
    "exuk": "Те рішення стало ключовим для майбутнього компанії.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "crucial",
+   "exen": "That decision was crucial for the company's future.",
+   "noteen": ""
   },
   {
    "word": "destacado",
@@ -9513,7 +9933,10 @@
    "tema": "A7",
    "uk": "помітний, визначний",
    "exuk": "Він відіграв помітну роль в організації ярмарку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "prominent, outstanding",
+   "exen": "He played a prominent part in organising the fair.",
+   "noteen": ""
   },
   {
    "word": "diverso",
@@ -9526,7 +9949,10 @@
    "tema": "A5",
    "uk": "розмаїтий",
    "exuk": "За обідом ми говорили про різні речі.",
-   "noteuk": "Частіше у множині: diversos, diversas"
+   "noteuk": "Частіше у множині: diversos, diversas",
+   "en": "various, of different kinds",
+   "exen": "We talked about various things over lunch.",
+   "noteen": "Usually plural: diversos, diversas"
   },
   {
    "word": "eficaz",
@@ -9539,7 +9965,10 @@
    "tema": "A7",
    "uk": "дієвий",
    "exuk": "Ліки подіяли вже першої ночі.",
-   "noteuk": "Eficaz дає результат, eficiente — без зайвих витрат"
+   "noteuk": "Eficaz дає результат, eficiente — без зайвих витрат",
+   "en": "effective",
+   "exen": "The medicine was effective from the very first night.",
+   "noteen": "Eficaz gets results, eficiente does so without waste"
   },
   {
    "word": "eficiente",
@@ -9552,7 +9981,10 @@
    "tema": "A7",
    "uk": "ощадний, злагоджений",
    "exuk": "Дім ощадний і мало витрачає електрики.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "efficient",
+   "exen": "The house is efficient and uses little electricity.",
+   "noteen": ""
   },
   {
    "word": "global",
@@ -9565,7 +9997,10 @@
    "tema": "A3",
    "uk": "загальний, сумарний",
    "exuk": "Загальна вартість робіт перевалила за двадцять тисяч.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "overall, total",
+   "exen": "The overall cost of the works went past twenty thousand.",
+   "noteen": ""
   },
   {
    "word": "gradual",
@@ -9578,7 +10013,10 @@
    "tema": "A4",
    "uk": "поступовий",
    "exuk": "Поліпшення було поступове, але не спинялося.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "gradual",
+   "exen": "The improvement was gradual, but it never stopped.",
+   "noteen": ""
   },
   {
    "word": "imprescindível",
@@ -9591,7 +10029,10 @@
    "tema": "A7",
    "uk": "без чого не обійтися",
    "exuk": "Без картки до будівлі не увійти.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "that cannot be done without",
+   "exen": "The card is essential for getting into the building.",
+   "noteen": ""
   },
   {
    "word": "inevitável",
@@ -9604,7 +10045,10 @@
    "tema": "A7",
    "uk": "неминучий",
    "exuk": "За таких заторів запізнення було неминуче.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "inevitable",
+   "exen": "With this traffic the delay was inevitable.",
+   "noteen": ""
   },
   {
    "word": "interno",
@@ -9617,7 +10061,10 @@
    "tema": "A2",
    "uk": "внутрішній",
    "exuk": "Це внутрішнє правило, у договорі його немає.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "internal",
+   "exen": "It's an internal rule, it isn't written in the contract.",
+   "noteen": ""
   },
   {
    "word": "notável",
@@ -9630,7 +10077,10 @@
    "tema": "A7",
    "uk": "прикметний, визначний",
    "exuk": "Різниця між двома винами прикметна.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "remarkable, noticeable",
+   "exen": "The difference between the two wines is noticeable.",
+   "noteen": ""
   },
   {
    "word": "oposto",
@@ -9643,7 +10093,10 @@
    "tema": "A2",
    "uk": "протилежний",
    "exuk": "Зупинка на протилежному боці вулиці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "opposite",
+   "exen": "The stop is on the opposite side of the street.",
+   "noteen": ""
   },
   {
    "word": "permanente",
@@ -9656,7 +10109,10 @@
    "tema": "A4",
    "uk": "постійний, безстроковий",
    "exuk": "Він нарешті отримав у компанії безстроковий договір.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "permanent",
+   "exen": "He finally got a permanent contract at the company.",
+   "noteen": ""
   },
   {
    "word": "pertinente",
@@ -9669,7 +10125,10 @@
    "tema": "A7",
    "uk": "слушний, по суті",
    "exuk": "Питання було по суті, його ще ніхто не ставив.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "pertinent, to the point",
+   "exen": "It was a pertinent question that nobody had asked.",
+   "noteen": ""
   },
   {
    "word": "progressivo",
@@ -9682,7 +10141,10 @@
    "tema": "A4",
    "uk": "наростаючий, поетапний",
    "exuk": "Кількість учнів зростала поступово.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "progressive, step by step",
+   "exen": "The number of pupils rose steadily.",
+   "noteen": ""
   },
   {
    "word": "relevante",
@@ -9695,7 +10157,10 @@
    "tema": "A7",
    "uk": "значущий для справи",
    "exuk": "Для справи бракує одного важливого документа.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "relevant, of significance",
+   "exen": "Only one relevant document is missing from the case.",
+   "noteen": ""
   },
   {
    "word": "restrito",
@@ -9708,7 +10173,10 @@
    "tema": "A5",
    "uk": "обмежений, вузький",
    "exuk": "Вхід лише для тих, хто тут працює.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "restricted, limited",
+   "exen": "Access is restricted to people who work here.",
+   "noteen": ""
   },
   {
    "word": "rigoroso",
@@ -9721,7 +10189,10 @@
    "tema": "A7",
    "uk": "прискіпливий; суворий",
    "exuk": "Зима видалася сувора, кілька ночей були приморозки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "rigorous; harsh",
+   "exen": "The winter was harsh and there was frost several nights.",
+   "noteen": ""
   },
   {
    "word": "simultâneo",
@@ -9734,7 +10205,10 @@
    "tema": "A4",
    "uk": "одночасний",
    "exuk": "Уся доповідь ішла із синхронним перекладом.",
-   "noteuk": "Em simultâneo — одночасно"
+   "noteuk": "Em simultâneo — одночасно",
+   "en": "simultaneous",
+   "exen": "There was simultaneous translation all through the conference.",
+   "noteen": "Em simultâneo — at the same time"
   },
   {
    "word": "sistemático",
@@ -9747,7 +10221,10 @@
    "tema": "A6",
    "uk": "планомірний",
    "exuk": "Він працює планомірно, не пропускаючи жодного кроку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "systematic",
+   "exen": "He works systematically, without skipping a step.",
+   "noteen": ""
   },
   {
    "word": "sólido",
@@ -9760,7 +10237,10 @@
    "tema": "A6",
    "uk": "тривкий, надійний",
    "exuk": "Стосунки в них тривкі, витримають що завгодно.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "solid, sound",
+   "exen": "Their relationship is solid, it can take anything.",
+   "noteen": ""
   },
   {
    "word": "sucessivo",
@@ -9773,7 +10253,10 @@
    "tema": "A4",
    "uk": "один за одним",
    "exuk": "З постачанням матеріалів затримка йшла за затримкою.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "successive, one after another",
+   "exen": "There were successive delays in delivering the materials.",
+   "noteen": ""
   },
   {
    "word": "viável",
@@ -9786,7 +10269,10 @@
    "tema": "A7",
    "uk": "здійсненний",
    "exuk": "Ідея добра, але з таким кошторисом нездійсненна.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "feasible, workable",
+   "exen": "The idea is good, but not feasible on this budget.",
+   "noteen": ""
   },
   {
    "word": "vulnerável",
@@ -9799,7 +10285,10 @@
    "tema": "A7",
    "uk": "вразливий",
    "exuk": "Літні люди вразливіші до сильної спеки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "vulnerable",
+   "exen": "Older people are more vulnerable to extreme heat.",
+   "noteen": ""
   },
   {
    "word": "ambicioso",
@@ -9812,7 +10301,10 @@
    "tema": "B1",
    "uk": "честолюбний",
    "exuk": "План честолюбний як на такий короткий строк.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "ambitious",
+   "exen": "It's an ambitious plan for so little time.",
+   "noteen": ""
   },
   {
    "word": "humilde",
@@ -9825,7 +10317,10 @@
    "tema": "B1",
    "uk": "простий у поводженні",
    "exuk": "Попри успіх, він з усіма тримається просто.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "humble, down to earth",
+   "exen": "Despite his success he stays humble with everyone.",
+   "noteen": ""
   },
   {
    "word": "modesto",
@@ -9838,7 +10333,10 @@
    "tema": "B1",
    "uk": "скромний, невибагливий",
    "exuk": "Вони живуть у скромному домі біля вокзалу.",
-   "noteuk": "І про людину, і про розмір: um salário modesto"
+   "noteuk": "І про людину, і про розмір: um salário modesto",
+   "en": "modest",
+   "exen": "They live in a modest house near the station.",
+   "noteen": "Of a person and of a size: um salário modesto"
   },
   {
    "word": "prudente",
@@ -9851,7 +10349,10 @@
    "tema": "B1",
    "uk": "обачний, завбачливий",
    "exuk": "Розважливо було б уточнити час перед виходом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "prudent, cautious",
+   "exen": "It would be prudent to confirm the time before leaving.",
+   "noteen": ""
   },
   {
    "word": "sensato",
@@ -9864,7 +10365,10 @@
    "tema": "B1",
    "uk": "тверезомислячий",
    "exuk": "Він дав мені тверезу пораду і без натяків.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "sensible, level-headed",
+   "exen": "He gave me sensible advice, straight to the point.",
+   "noteen": ""
   },
   {
    "word": "a manifestação",
@@ -9877,7 +10381,10 @@
    "tema": "B9",
    "uk": "демонстрація, мітинг",
    "exuk": "На проспект вийшли тисячі людей.",
-   "noteuk": "Manifestar-se — вийти на мітинг"
+   "noteuk": "Manifestar-se — вийти на мітинг",
+   "en": "demonstration, rally",
+   "exen": "The demonstration drew thousands of people to the avenue.",
+   "noteen": "Manifestar-se — to demonstrate, to march"
   },
   {
    "word": "o protesto",
@@ -9890,7 +10397,10 @@
    "tema": "B9",
    "uk": "протест",
    "exuk": "Протест проти платних доріг тривав увесь ранок.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "protest",
+   "exen": "The protest against the tolls lasted all morning.",
+   "noteen": ""
   },
   {
    "word": "o parlamento",
@@ -9903,7 +10413,10 @@
    "tema": "B9",
    "uk": "парламент",
    "exuk": "Пропозицію обговорювали в парламенті в липні.",
-   "noteuk": "У Португалії — a Assembleia da República"
+   "noteuk": "У Португалії — a Assembleia da República",
+   "en": "parliament",
+   "exen": "The proposal was debated in parliament in July.",
+   "noteen": "In Portugal it is a Assembleia da República"
   },
   {
    "word": "o ministro",
@@ -9916,7 +10429,10 @@
    "tema": "B9",
    "uk": "міністр",
    "exuk": "Міністр відвідав школу в день відкриття.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "government minister",
+   "exen": "The minister visited the school on opening day.",
+   "noteen": ""
   },
   {
    "word": "a autarquia",
@@ -9929,7 +10445,10 @@
    "tema": "B9",
    "uk": "місцева влада",
    "exuk": "Місцева влада оплачує студентам проїзні.",
-   "noteuk": "Autárquicas — муніципальні вибори"
+   "noteuk": "Autárquicas — муніципальні вибори",
+   "en": "local authority",
+   "exen": "The local authority pays for students' travel passes.",
+   "noteen": "Autárquicas — the local elections"
   },
   {
    "word": "a igualdade",
@@ -9942,7 +10461,10 @@
    "tema": "A9",
    "uk": "рівність",
    "exuk": "Закон гарантує рівність зарплат чоловіків і жінок.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "equality",
+   "exen": "The law guarantees equal pay between men and women.",
+   "noteen": ""
   },
   {
    "word": "a pobreza",
@@ -9955,7 +10477,10 @@
    "tema": "B9",
    "uk": "бідність",
    "exuk": "У віддалених районах бідність зросла.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "poverty",
+   "exen": "Poverty has increased in the more remote areas.",
+   "noteen": ""
   },
   {
    "word": "a riqueza",
@@ -9968,7 +10493,10 @@
    "tema": "B9",
    "uk": "багатство",
    "exuk": "Багатство країни розподілене нерівномірно.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "wealth",
+   "exen": "The country's wealth is unevenly distributed.",
+   "noteen": ""
   },
   {
    "word": "a inflação",
@@ -9981,7 +10509,10 @@
    "tema": "B9",
    "uk": "інфляція",
    "exuk": "Інфляція з’їла більшу частину надбавки до зарплати.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "inflation",
+   "exen": "Inflation ate up most of the pay rise.",
+   "noteen": ""
   },
   {
    "word": "o lucro",
@@ -9994,7 +10525,10 @@
    "tema": "B9",
    "uk": "прибуток",
    "exuk": "Магазин вийшов у прибуток першого ж року.",
-   "noteuk": "Sem fins lucrativos — неприбутковий"
+   "noteuk": "Sem fins lucrativos — неприбутковий",
+   "en": "profit",
+   "exen": "The shop made a profit in its first year open.",
+   "noteen": "Sem fins lucrativos — non-profit"
   },
   {
    "word": "o investimento",
@@ -10007,7 +10541,10 @@
    "tema": "B9",
    "uk": "вкладення",
    "exuk": "Нові вікна виявилися добрим вкладенням.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "investment",
+   "exen": "The new windows were a good investment.",
+   "noteen": ""
   },
   {
    "word": "a concorrência",
@@ -10020,7 +10557,10 @@
    "tema": "B7",
    "uk": "конкуренція",
    "exuk": "Конкуренція збила ціни по всій вулиці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "competition in business",
+   "exen": "Competition brought prices down along the whole street.",
+   "noteen": ""
   },
   {
    "word": "a votação",
@@ -10033,7 +10573,10 @@
    "tema": "B9",
    "uk": "голосування",
    "exuk": "Голосування вийшло напруженим: перевага у три голоси.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "vote, ballot",
+   "exen": "The vote was close, he won by three votes.",
+   "noteen": ""
   },
   {
    "word": "o referendo",
@@ -10046,7 +10589,10 @@
    "tema": "B9",
    "uk": "референдум",
    "exuk": "Явка на референдумі по всій країні була низька.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "referendum",
+   "exen": "Turnout for the referendum was low across the country.",
+   "noteen": ""
   },
   {
    "word": "a atualização",
@@ -10059,7 +10605,10 @@
    "tema": "B3",
    "uk": "оновлення",
    "exuk": "Оновлення системи тривало майже годину.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "update",
+   "exen": "Updating the system took nearly an hour.",
+   "noteen": ""
   },
   {
    "word": "o auricular",
@@ -10072,7 +10621,10 @@
    "tema": "B4",
    "uk": "навушник-вкладка",
    "exuk": "Один навушник перестав звучати.",
-   "noteuk": "Те саме, що auscultadores, але частіше про вкладки"
+   "noteuk": "Те саме, що auscultadores, але частіше про вкладки",
+   "en": "earbud",
+   "exen": "One of the earbuds stopped giving any sound.",
+   "noteen": "The same as auscultadores, but usually of earbuds"
   },
   {
    "word": "digitalizar",
@@ -10085,7 +10637,10 @@
    "tema": "B3",
    "uk": "сканувати",
    "exuk": "Я відсканував документи й надіслав їх поштою.",
-   "noteuk": "У Португалії digitalizar"
+   "noteuk": "У Португалії digitalizar",
+   "en": "to scan",
+   "exen": "I scanned the documents and sent them by email.",
+   "noteen": "In Portugal it is digitalizar"
   },
   {
    "word": "porreiro",
@@ -10098,7 +10653,10 @@
    "tema": "A7",
    "uk": "славний, що треба",
    "exuk": "Господар славний, усе вирішує з першого разу.",
-   "noteuk": "Розмовне; про людей і про ситуації"
+   "noteuk": "Розмовне; про людей і про ситуації",
+   "en": "decent, a good sort",
+   "exen": "The landlord is a good sort, he fixes everything first time.",
+   "noteen": "Colloquial; of people and of situations"
   },
   {
    "word": "a aldrabice",
@@ -10111,7 +10669,10 @@
    "tema": "A7",
    "uk": "дурисвітство",
    "exuk": "Уся ця історія з гарантією була дурисвітством.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a con, a swindle",
+   "exen": "That whole story about the warranty was a con.",
+   "noteen": ""
   },
   {
    "word": "aldrabar",
@@ -10124,7 +10685,10 @@
    "tema": "B9",
    "uk": "дурити, морочити",
    "exuk": "Нас спробували обдурити зі здачею в тому ресторані.",
-   "noteuk": "Розмовне; o aldrabão — брехун, шахрай"
+   "noteuk": "Розмовне; o aldrabão — брехун, шахрай",
+   "en": "to con, to cheat",
+   "exen": "They tried to cheat us on the change at that restaurant.",
+   "noteen": "Colloquial; o aldrabão — a liar, a cheat"
   },
   {
    "word": "a treta",
@@ -10137,7 +10701,10 @@
    "tema": "A8",
    "uk": "дурня, відмовка",
    "exuk": "Це дурня, у таку відмовку ніхто не вірить.",
-   "noteuk": "Розмовне"
+   "noteuk": "Розмовне",
+   "en": "nonsense, a likely story",
+   "exen": "That's nonsense, nobody believes that excuse.",
+   "noteen": "Colloquial"
   },
   {
    "word": "a bronca",
@@ -10150,7 +10717,10 @@
    "tema": "A7",
    "uk": "прочухан",
    "exuk": "Мені перепало від начальника через запізнення.",
-   "noteuk": "Розмовне: levar uma bronca — дістати прочухана"
+   "noteuk": "Розмовне: levar uma bronca — дістати прочухана",
+   "en": "a telling-off",
+   "exen": "I got a telling-off from the boss for being late.",
+   "noteen": "Colloquial: levar uma bronca — to get told off"
   },
   {
    "word": "o alarido",
@@ -10163,7 +10733,10 @@
    "tema": "A8",
    "uk": "галас, зчинений шум",
    "exuk": "З нічого зчинили страшний галас.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "uproar, hullabaloo",
+   "exen": "There was an enormous uproar over nothing at all.",
+   "noteen": ""
   },
   {
    "word": "a algazarra",
@@ -10176,7 +10749,10 @@
    "tema": "A8",
    "uk": "веселий гамір",
    "exuk": "Діти гомоніли цілий день поспіль.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "cheerful racket",
+   "exen": "The children made a racket all afternoon.",
+   "noteen": ""
   },
   {
    "word": "ao certo",
@@ -10189,7 +10765,10 @@
    "tema": "A8",
    "uk": "достеменно",
    "exuk": "Ніхто достеменно не знає, коли відкриють міст.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "for certain",
+   "exen": "Nobody knows for certain when the bridge reopens.",
+   "noteen": ""
   },
   {
    "word": "à toa",
@@ -10202,7 +10781,10 @@
    "tema": "A7",
    "uk": "марно, без пуття",
    "exuk": "Пів години ми безтолково кружляли в пошуках вулиці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "aimlessly, for nothing",
+   "exen": "We wandered about for half an hour looking for the street.",
+   "noteen": ""
   },
   {
    "word": "em condições",
@@ -10215,7 +10797,10 @@
    "tema": "A7",
    "uk": "як слід, по-людськи",
    "exuk": "Хочу нормально пообідати, а не бутерброд.",
-   "noteuk": "Розмовне: «справжній», «нормальний»"
+   "noteuk": "Розмовне: «справжній», «нормальний»",
+   "en": "proper, done properly",
+   "exen": "I want a proper lunch, not a sandwich.",
+   "noteen": "Colloquial: a real one, a decent one"
   },
   {
    "word": "o bem-estar",
@@ -10228,7 +10813,10 @@
    "tema": "B6",
    "uk": "добре самопочуття",
    "exuk": "Прогулянка наприкінці дня дає мені відчуття спокою.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "wellbeing",
+   "exen": "An evening walk gives me a sense of wellbeing.",
+   "noteen": ""
   },
   {
    "word": "a autoestima",
@@ -10241,7 +10829,10 @@
    "tema": "B1",
    "uk": "самооцінка",
    "exuk": "Нова робота помітно підняла йому самооцінку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "self-esteem, confidence in yourself",
+   "exen": "The new job did a lot for his self-esteem.",
+   "noteen": ""
   },
   {
    "word": "o vício",
@@ -10254,7 +10845,10 @@
    "tema": "B6",
    "uk": "згубна звичка",
    "exuk": "Кава — звичка, від якої я не можу відкараскатися.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "a bad habit you can't shake",
+   "exen": "Coffee is a habit I can't shake off.",
+   "noteen": ""
   },
   {
    "word": "a frustração",
@@ -10267,7 +10861,10 @@
    "tema": "B1",
    "uk": "прикрість від невдачі",
    "exuk": "Після такої роботи прикрість була сильна.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "frustration",
+   "exen": "The frustration was great after so much work.",
+   "noteen": ""
   },
   {
    "word": "a insatisfação",
@@ -10280,7 +10877,10 @@
    "tema": "B1",
    "uk": "невдоволення",
    "exuk": "Невдоволення мешканців росло разом із будівництвом.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "dissatisfaction",
+   "exen": "The residents' dissatisfaction grew with the works.",
+   "noteen": ""
   },
   {
    "word": "o desânimo",
@@ -10293,7 +10893,10 @@
    "tema": "B1",
    "uk": "зневіра",
    "exuk": "Після третьої відмови накотила зневіра.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "despondency",
+   "exen": "After the third refusal, despondency set in.",
+   "noteen": ""
   },
   {
    "word": "o desespero",
@@ -10306,7 +10909,10 @@
    "tema": "B1",
    "uk": "відчай",
    "exuk": "Це була хвилина відчаю, але вона швидко минула.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "despair",
+   "exen": "It was a moment of despair, but it soon passed.",
+   "noteen": ""
   },
   {
    "word": "a nostalgia",
@@ -10319,7 +10925,10 @@
    "tema": "B1",
    "uk": "ностальгія",
    "exuk": "Він тужить за літами, проведеними в селі.",
-   "noteuk": "Близьке до saudade, але книжніше"
+   "noteuk": "Близьке до saudade, але книжніше",
+   "en": "nostalgia",
+   "exen": "He feels nostalgia for the summers spent in the village.",
+   "noteen": "Close to saudade, but more bookish"
   },
   {
    "word": "a ternura",
@@ -10332,7 +10941,10 @@
    "tema": "B1",
    "uk": "ніжність",
    "exuk": "Він подивився на внука з величезною ніжністю.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "tenderness",
+   "exen": "He looked at his grandson with enormous tenderness.",
+   "noteen": ""
   },
   {
    "word": "a compaixão",
@@ -10345,7 +10957,10 @@
    "tema": "B1",
    "uk": "співчуття",
    "exuk": "До хворого він ставився терпляче і співчутливо.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "compassion",
+   "exen": "He treated the patient with patience and compassion.",
+   "noteen": ""
   },
   {
    "word": "a gratidão",
@@ -10358,7 +10973,10 @@
    "tema": "B1",
    "uk": "вдячність",
    "exuk": "Він написав їй лист подяки за роки допомоги.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "gratitude",
+   "exen": "He wrote her a letter of gratitude for years of help.",
+   "noteen": ""
   },
   {
    "word": "o remorso",
@@ -10371,7 +10989,10 @@
    "tema": "B1",
    "uk": "докори сумління",
    "exuk": "Його мучило сумління, що не зателефонував раніше.",
-   "noteuk": "Частіше у множині: ter remorsos"
+   "noteuk": "Частіше у множині: ter remorsos",
+   "en": "remorse",
+   "exen": "He felt remorse for not having phoned sooner.",
+   "noteen": "Usually plural: ter remorsos"
   },
   {
    "word": "o arrependimento",
@@ -10384,7 +11005,10 @@
    "tema": "B1",
    "uk": "каяття",
    "exuk": "Він не виказав жодного каяття за скоєне.",
-   "noteuk": "Arrepender-se — каятися"
+   "noteuk": "Arrepender-se — каятися",
+   "en": "repentance, regret",
+   "exen": "He showed no repentance at all for what he did.",
+   "noteen": "Arrepender-se — to repent, to regret"
   },
   {
    "word": "a serenidade",
@@ -10397,7 +11021,10 @@
    "tema": "B1",
    "uk": "незворушність",
    "exuk": "Новину він зустрів із дивовижним спокоєм.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "serenity",
+   "exen": "He took the news with surprising serenity.",
+   "noteen": ""
   },
   {
    "word": "a euforia",
@@ -10410,7 +11037,10 @@
    "tema": "B1",
    "uk": "ейфорія",
    "exuk": "Ейфорія першого дня минула вже наступного тижня.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "euphoria",
+   "exen": "The euphoria of the first day faded the following week.",
+   "noteen": ""
   },
   {
    "word": "o desconforto",
@@ -10423,7 +11053,10 @@
    "tema": "B6",
    "uk": "тілесна незручність",
    "exuk": "Після прогулянки він відчув у нозі незручність.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "physical discomfort",
+   "exen": "He felt some discomfort in his leg after the walk.",
+   "noteen": ""
   },
   {
    "word": "o incómodo",
@@ -10436,7 +11069,10 @@
    "tema": "B1",
    "uk": "клопіт, завада",
    "exuk": "Прошу вибачення за клопіт о такій порі.",
-   "noteuk": "Пишеться з ó — європейська норма"
+   "noteuk": "Пишеться з ó — європейська норма",
+   "en": "inconvenience, trouble caused",
+   "exen": "I apologise for the trouble at this hour.",
+   "noteen": "Spelt with ó in the European norm"
   },
   {
    "word": "a inquietação",
@@ -10449,7 +11085,10 @@
    "tema": "B1",
    "uk": "занепокоєння",
    "exuk": "Затримка з відповіддю його занепокоїла.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "unease, disquiet",
+   "exen": "The delay in the reply left him uneasy.",
+   "noteen": ""
   },
   {
    "word": "o resíduo",
@@ -10462,7 +11101,10 @@
    "tema": "B2",
    "uk": "відхід, залишок",
    "exuk": "Будівельне сміття пролежало на вулиці тиждень.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "waste, residue",
+   "exen": "The building waste sat in the street for a week.",
+   "noteen": ""
   },
   {
    "word": "a pegada",
@@ -10475,7 +11117,10 @@
    "tema": "B2",
    "uk": "слід ноги; вуглецевий слід",
    "exuk": "Поїздки потягом дуже зменшують вуглецевий слід.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "footprint",
+   "exen": "Going by train cuts your carbon footprint a lot.",
+   "noteen": ""
   },
   {
    "word": "o habitat",
@@ -10488,7 +11133,10 @@
    "tema": "B2",
    "uk": "середовище проживання",
    "exuk": "Будівництво знищило середовище проживання кількох видів птахів.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "habitat",
+   "exen": "The works destroyed the habitat of several bird species.",
+   "noteen": ""
   },
   {
    "word": "a biodiversidade",
@@ -10501,7 +11149,10 @@
    "tema": "B2",
    "uk": "біорізноманіття",
    "exuk": "У цих горах біорізноманіття, рідкісне для Європи.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "biodiversity",
+   "exen": "These hills have a biodiversity that is rare in Europe.",
+   "noteen": ""
   },
   {
    "word": "a extinção",
@@ -10514,7 +11165,10 @@
    "tema": "B2",
    "uk": "вимирання",
    "exuk": "Цей вид перебуває на межі вимирання.",
-   "noteuk": "Em vias de extinção — під загрозою зникнення"
+   "noteuk": "Em vias de extinção — під загрозою зникнення",
+   "en": "extinction",
+   "exen": "This species is on the brink of extinction.",
+   "noteen": "Em vias de extinção — endangered"
   },
   {
    "word": "a emissão",
@@ -10527,7 +11181,10 @@
    "tema": "B2",
    "uk": "викид в атмосферу",
    "exuk": "Під час пандемії викиди вуглецю знизилися.",
-   "noteuk": "Також випуск документа і телепередача"
+   "noteuk": "Також випуск документа і телепередача",
+   "en": "emission into the air",
+   "exen": "Carbon emissions fell during the pandemic.",
+   "noteen": "Also the issuing of a document and a broadcast"
   },
   {
    "word": "a sustentabilidade",
@@ -10540,7 +11197,10 @@
    "tema": "B2",
    "uk": "сталий розвиток",
    "exuk": "Сталий розвиток став темою в усіх школах.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "sustainability",
+   "exen": "Sustainability has become a topic in every school.",
+   "noteen": ""
   },
   {
    "word": "as alterações climáticas",
@@ -10553,7 +11213,10 @@
    "tema": "B2",
    "uk": "зміна клімату",
    "exuk": "Зміна клімату вже помітна по збиранню винограду.",
-   "noteuk": "У Португалії кажуть саме так"
+   "noteuk": "У Португалії кажуть саме так",
+   "en": "climate change",
+   "exen": "Climate change is already showing in the grape harvest.",
+   "noteen": "This is the phrase used in Portugal"
   },
   {
    "word": "o aquecimento global",
@@ -10566,7 +11229,10 @@
    "tema": "B2",
    "uk": "глобальне потепління",
    "exuk": "Через глобальне потепління літо стає дедалі сухішим.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "global warming",
+   "exen": "Global warming is making summers ever drier.",
+   "noteen": ""
   },
   {
    "word": "a energia renovável",
@@ -10579,7 +11245,10 @@
    "tema": "B2",
    "uk": "відновлювана енергія",
    "exuk": "Половина електрики надходить з відновлюваних джерел.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "renewable energy",
+   "exen": "Half the electricity comes from renewable sources.",
+   "noteen": ""
   },
   {
    "word": "radical",
@@ -10592,7 +11261,10 @@
    "tema": "A7",
    "uk": "докорінний",
    "exuk": "Це була докорінна зміна в їхньому житті.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "radical, sweeping",
+   "exen": "It was a radical change in their lives.",
+   "noteen": ""
   },
   {
    "word": "exclusivamente",
@@ -10605,7 +11277,10 @@
    "tema": "A5",
    "uk": "тільки для цього",
    "exuk": "Це місце тільки для людей з інвалідністю.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "exclusively",
+   "exen": "This space is exclusively for people with disabilities.",
+   "noteen": ""
   }
  ]
 }
