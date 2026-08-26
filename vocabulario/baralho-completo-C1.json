@@ -6250,7 +6250,10 @@
    "ex": "Os músicos ficaram no camarim antes do concerto.",
    "exru": "Музыканты сидели в гримёрке перед концертом.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "гримерка",
+   "exuk": "Музиканти сиділи в гримерці перед концертом.",
+   "noteuk": ""
   },
   {
    "word": "o maestro",
@@ -6260,7 +6263,10 @@
    "ex": "O maestro cumprimentou a orquestra no final.",
    "exru": "Дирижёр поблагодарил оркестр в конце.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "диригент",
+   "exuk": "Диригент подякував оркестру наприкінці.",
+   "noteuk": ""
   },
   {
    "word": "a partitura",
@@ -6270,7 +6276,10 @@
    "ex": "Esqueceu a partitura em casa no dia do ensaio.",
    "exru": "Он забыл ноты дома в день репетиции.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "нотна партитура",
+   "exuk": "Він забув ноти вдома в день репетиції.",
+   "noteuk": ""
   },
   {
    "word": "o ensaio geral",
@@ -6280,7 +6289,10 @@
    "ex": "O ensaio geral correu pior do que a estreia.",
    "exru": "Генеральная репетиция прошла хуже премьеры.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "генеральна репетиція",
+   "exuk": "Генеральна репетиція минула гірше за прем’єру.",
+   "noteuk": ""
   },
   {
    "word": "a esplanada",
@@ -6290,7 +6302,10 @@
    "ex": "Bebemos um café na esplanada ao sol.",
    "exru": "Мы выпили кофе на террасе под солнцем.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "літня тераса кафе",
+   "exuk": "Ми випили каву на терасі під сонцем.",
+   "noteuk": ""
   },
   {
    "word": "o recinto",
@@ -6300,7 +6315,10 @@
    "ex": "O recinto do festival abre às cinco da tarde.",
    "exru": "Площадка фестиваля открывается в пять вечера.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "обгороджений майданчик заходу",
+   "exuk": "Майданчик фестивалю відкривається о п’ятій вечора.",
+   "noteuk": ""
   },
   {
    "word": "a deslocação",
@@ -6310,7 +6328,10 @@
    "ex": "A deslocação até à capital demora três horas.",
    "exru": "Дорога до столицы занимает три часа.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "поїздка, переміщення",
+   "exuk": "Дорога до столиці триває три години.",
+   "noteuk": ""
   },
   {
    "word": "o congestionamento",
@@ -6320,7 +6341,10 @@
    "ex": "O congestionamento na ponte durou toda a manhã.",
    "exru": "Затор на мосту держался всё утро.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "затор на дорозі",
+   "exuk": "Затор на мосту тримався цілий ранок.",
+   "noteuk": ""
   },
   {
    "word": "a faixa de rodagem",
@@ -6330,7 +6354,10 @@
    "ex": "A faixa da direita está cortada por obras.",
    "exru": "Правая полоса перекрыта из-за работ.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "смуга руху",
+   "exuk": "Права смуга перекрита через роботи.",
+   "noteuk": ""
   },
   {
    "word": "o separador central",
@@ -6340,7 +6367,10 @@
    "ex": "O carro embateu no separador central da autoestrada.",
    "exru": "Машина врезалась в разделительный отбойник на трассе.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "розділювальна смуга",
+   "exuk": "Машина врізалася у розділювальний відбійник на трасі.",
+   "noteuk": ""
   },
   {
    "word": "a via rápida",
@@ -6350,7 +6380,10 @@
    "ex": "Apanhámos a via rápida para poupar tempo.",
    "exru": "Мы выехали на скоростную трассу, чтобы сэкономить время.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "швидкісна траса",
+   "exuk": "Ми виїхали на швидкісну трасу, щоб заощадити час.",
+   "noteuk": ""
   },
   {
    "word": "o nó de acesso",
@@ -6360,7 +6393,10 @@
    "ex": "O nó de acesso à autoestrada fica dois quilómetros adiante.",
    "exru": "Развязка на трассу — через два километра.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "розв’язка для в’їзду",
+   "exuk": "Розв’язка на трасу — за два кілометри.",
+   "noteuk": ""
   },
   {
    "word": "a sinalização",
@@ -6370,7 +6406,10 @@
    "ex": "A sinalização está apagada e confunde os condutores.",
    "exru": "Разметка стёрлась и путает водителей.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "дорожні знаки і розмітка",
+   "exuk": "Розмітка стерлася і плутає водіїв.",
+   "noteuk": ""
   },
   {
    "word": "o excesso de velocidade",
@@ -6380,7 +6419,10 @@
    "ex": "Foi multado por excesso de velocidade na nacional.",
    "exru": "Его оштрафовали за превышение скорости на трассе.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "перевищення швидкості",
+   "exuk": "Він дістав штраф за перевищення швидкості на національній дорозі.",
+   "noteuk": ""
   },
   {
    "word": "a contraordenação",
@@ -6390,7 +6432,10 @@
    "ex": "A contraordenação implica multa e perda de pontos.",
    "exru": "Правонарушение влечёт штраф и потерю баллов.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "адміністративне правопорушення",
+   "exuk": "Правопорушення тягне штраф і втрату балів.",
+   "noteuk": ""
   },
   {
    "word": "o seguro automóvel",
@@ -6400,7 +6445,10 @@
    "ex": "O seguro automóvel subiu quase cinquenta euros.",
    "exru": "Автостраховка подорожала почти на пятьдесят евро.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "автострахування",
+   "exuk": "Автостраховка подорожчала майже на п’ятдесят євро.",
+   "noteuk": ""
   },
   {
    "word": "a franquia",
@@ -6410,7 +6458,10 @@
    "ex": "A franquia do seguro é de trezentos euros.",
    "exru": "Франшиза по страховке — триста евро.",
    "note": "Сумма, которую при ущербе платит сам застрахованный",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "франшиза у страхуванні",
+   "exuk": "Франшиза за страховкою — триста євро.",
+   "noteuk": "Сума, яку при шкоді платить сам застрахований"
   },
   {
    "word": "o pneu furado",
@@ -6420,7 +6471,10 @@
    "ex": "Mudámos o pneu furado à beira da estrada.",
    "exru": "Мы поменяли пробитое колесо на обочине.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "проколоте колесо",
+   "exuk": "Ми поміняли пробите колесо на узбіччі.",
+   "noteuk": ""
   },
   {
    "word": "a bagageira",
@@ -6430,7 +6484,10 @@
    "ex": "A bagageira não chega para tanta mala.",
    "exru": "Багажника не хватает на столько чемоданов.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "багажник автомобіля",
+   "exuk": "Багажника не вистачає на стільки валіз.",
+   "noteuk": ""
   },
   {
    "word": "a lotação esgotada",
@@ -6440,7 +6497,10 @@
    "ex": "O concerto tem lotação esgotada há semanas.",
    "exru": "На концерт всё продано уже несколько недель.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "усі місця продані",
+   "exuk": "На концерт усе продано вже кілька тижнів.",
+   "noteuk": ""
   },
   {
    "word": "o voo de ligação",
@@ -6450,7 +6510,10 @@
    "ex": "Perdemos o voo de ligação por causa do atraso.",
    "exru": "Мы опоздали на стыковочный рейс из-за задержки.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "стикувальний рейс",
+   "exuk": "Ми не встигли на стикувальний рейс через затримку.",
+   "noteuk": ""
   },
   {
    "word": "o embarque prioritário",
@@ -6460,7 +6523,10 @@
    "ex": "O embarque prioritário custa mais dez euros.",
    "exru": "Приоритетная посадка стоит на десять евро дороже.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "пріоритетна посадка",
+   "exuk": "Пріоритетна посадка коштує на десять євро дорожче.",
+   "noteuk": ""
   },
   {
    "word": "o excesso de bagagem",
@@ -6470,7 +6536,10 @@
    "ex": "Pagámos o excesso de bagagem no balcão do aeroporto.",
    "exru": "Мы оплатили перевес на стойке в аэропорту.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "перевага багажу",
+   "exuk": "Ми оплатили перевагу на стійці в аеропорту.",
+   "noteuk": ""
   },
   {
    "word": "a greve dos transportes",
@@ -6480,7 +6549,10 @@
    "ex": "A greve dos transportes deixou muita gente a pé.",
    "exru": "Забастовка транспорта оставила многих без проезда.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "страйк транспорту",
+   "exuk": "Страйк транспорту лишив багатьох без проїзду.",
+   "noteuk": ""
   },
   {
    "word": "o passe social",
@@ -6490,7 +6562,10 @@
    "ex": "O passe social vale para comboios e autocarros.",
    "exru": "Проездной действует на поезда и автобусы.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "єдиний проїзний на весь транспорт",
+   "exuk": "Проїзний діє на потяги й автобуси.",
+   "noteuk": ""
   },
   {
    "word": "a validação do bilhete",
@@ -6500,7 +6575,10 @@
    "ex": "A validação do bilhete faz-se à entrada do comboio.",
    "exru": "Билет отмечают при входе в поезд.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "позначення квитка при вході",
+   "exuk": "Квиток позначають при вході до потяга.",
+   "noteuk": ""
   },
   {
    "word": "o comboio suburbano",
@@ -6510,7 +6588,10 @@
    "ex": "O comboio suburbano vai cheio a esta hora.",
    "exru": "Пригородный поезд в это время идёт битком.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "приміський потяг",
+   "exuk": "Приміський потяг о цій порі йде набитий.",
+   "noteuk": ""
   },
   {
    "word": "a hora de ponta",
@@ -6520,7 +6601,10 @@
    "ex": "Evita conduzir na hora de ponta da manhã.",
    "exru": "Он избегает ездить в утренний час пик.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "година пік",
+   "exuk": "Він уникає їздити в ранкову годину пік.",
+   "noteuk": ""
   },
   {
    "word": "a época alta",
@@ -6530,7 +6614,10 @@
    "ex": "Os preços duplicam durante a época alta.",
    "exru": "В высокий сезон цены удваиваются.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "високий сезон",
+   "exuk": "У високий сезон ціни подвоюються.",
+   "noteuk": ""
   },
   {
    "word": "a época baixa",
@@ -6540,7 +6627,10 @@
    "ex": "Viajamos sempre na época baixa, sai bem mais barato.",
    "exru": "Мы всегда ездим в низкий сезон, выходит намного дешевле.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "низький сезон",
+   "exuk": "Ми завжди їздимо в низький сезон, виходить набагато дешевше.",
+   "noteuk": ""
   },
   {
    "word": "o roteiro",
@@ -6550,7 +6640,10 @@
    "ex": "Preparou um roteiro de cinco dias pelo norte.",
    "exru": "Он составил пятидневный маршрут по северу.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "план маршруту, путівник",
+   "exuk": "Він склав п’ятиденний маршрут по півночі.",
+   "noteuk": ""
   },
   {
    "word": "o itinerário",
@@ -6560,7 +6653,10 @@
    "ex": "O itinerário passa por três aldeias de montanha.",
    "exru": "Маршрут проходит через три горные деревни.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "маршрут прямування",
+   "exuk": "Маршрут проходить через три гірські села.",
+   "noteuk": ""
   },
   {
    "word": "a bomba de gasolina",
@@ -6570,7 +6666,10 @@
    "ex": "Há uma bomba de gasolina a dois quilómetros.",
    "exru": "Заправка есть в двух километрах.",
    "note": "Разговорное; официально — posto de combustível",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "автозаправка",
+   "exuk": "Заправка є за два кілометри.",
+   "noteuk": "Розмовне; офіційно — posto de combustível"
   },
   {
    "word": "o dístico",
@@ -6580,7 +6679,10 @@
    "ex": "Deixou o dístico visível no vidro do carro.",
    "exru": "Он оставил талон на виду под стеклом.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "паркувальний талон під склом",
+   "exuk": "Він лишив талон на видноті під склом.",
+   "noteuk": ""
   },
   {
    "word": "a revisão",
@@ -6590,7 +6692,10 @@
    "ex": "O carro fez a revisão dos quarenta mil quilómetros.",
    "exru": "Машина прошла ТО на сорока тысячах километров.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "техобслуговування машини",
+   "exuk": "Машина пройшла ТО на сорока тисячах кілометрів.",
+   "noteuk": ""
   },
   {
    "word": "o transbordo",
@@ -6600,7 +6705,10 @@
    "ex": "A viagem obriga a um transbordo em Madrid.",
    "exru": "Поездка требует пересадки в Мадриде.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "пересадка з рейсу на рейс",
+   "exuk": "Поїздка вимагає пересадки в Мадриді.",
+   "noteuk": ""
   },
   {
    "word": "o cartão de embarque",
@@ -6610,7 +6718,10 @@
    "ex": "Guarde o cartão de embarque até ao fim da viagem.",
    "exru": "Сохраняйте посадочный талон до конца поездки.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "посадковий талон",
+   "exuk": "Зберігайте посадковий талон до кінця поїздки.",
+   "noteuk": ""
   },
   {
    "word": "a bagagem de porão",
@@ -6620,7 +6731,10 @@
    "ex": "A bagagem de porão paga-se à parte nesta companhia.",
    "exru": "В этой авиакомпании багаж оплачивается отдельно.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "багаж у багажному відсіку",
+   "exuk": "У цій авіакомпанії багаж оплачується окремо.",
+   "noteuk": ""
   },
   {
    "word": "o desembarque",
@@ -6630,7 +6744,10 @@
    "ex": "O desembarque fez-se pela porta de trás.",
    "exru": "Высадка шла через заднюю дверь.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "висадка пасажирів",
+   "exuk": "Висадка йшла через задні двері.",
+   "noteuk": ""
   },
   {
    "word": "o controlo de passaportes",
@@ -6640,7 +6757,10 @@
    "ex": "O controlo de passaportes estava com uma fila enorme.",
    "exru": "На паспортном контроле была огромная очередь.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "паспортний контроль",
+   "exuk": "На паспортному контролі була величезна черга.",
+   "noteuk": ""
   },
   {
    "word": "a época balnear",
@@ -6650,7 +6770,10 @@
    "ex": "A época balnear começa em junho nas praias do sul.",
    "exru": "Купальный сезон на южных пляжах начинается в июне.",
    "note": "",
-   "tema": "B5"
+   "tema": "B5",
+   "uk": "купальний сезон",
+   "exuk": "Купальний сезон на південних пляжах починається в червні.",
+   "noteuk": ""
   },
   {
    "word": "o prognóstico",
@@ -6660,7 +6783,10 @@
    "ex": "O prognóstico é bom se o tratamento continuar.",
    "exru": "Прогноз хороший, если лечение продолжится.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "лікарський прогноз",
+   "exuk": "Прогноз добрий, якщо лікування триватиме.",
+   "noteuk": ""
   },
   {
    "word": "o rastreio",
@@ -6670,7 +6796,10 @@
    "ex": "O rastreio do cancro é gratuito a partir dos cinquenta.",
    "exru": "Скрининг на рак бесплатен с пятидесяти лет.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "скринінг, профілактичне обстеження",
+   "exuk": "Скринінг на рак безкоштовний від п’ятдесяти років.",
+   "noteuk": ""
   },
   {
    "word": "a triagem",
@@ -6680,7 +6809,10 @@
    "ex": "A triagem na urgência é feita por cores.",
    "exru": "В приёмном покое сортировка идёт по цветам.",
    "note": "Цветные браслеты срочности — triagem de Manchester",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "сортування хворих за терміновістю",
+   "exuk": "У приймальному покої сортування йде за кольорами.",
+   "noteuk": "Кольорові браслети терміновості — triagem de Manchester"
   },
   {
    "word": "o internamento",
@@ -6690,7 +6822,10 @@
    "ex": "O internamento acabou por durar apenas duas noites.",
    "exru": "Госпитализация в итоге длилась всего две ночи.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "госпіталізація",
+   "exuk": "Госпіталізація зрештою тривала лише дві ночі.",
+   "noteuk": ""
   },
   {
    "word": "a alta médica",
@@ -6700,7 +6835,10 @@
    "ex": "Teve alta médica ao fim de uma semana.",
    "exru": "Его выписали через неделю.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "виписка з лікарні",
+   "exuk": "Його виписали через тиждень.",
+   "noteuk": ""
   },
   {
    "word": "a comparticipação",
@@ -6710,7 +6848,10 @@
    "ex": "O Estado dá comparticipação em muitos medicamentos.",
    "exru": "Государство покрывает часть стоимости многих лекарств.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "частка вартості, яку покриває держава",
+   "exuk": "Держава покриває частину вартості багатьох ліків.",
+   "noteuk": ""
   },
   {
    "word": "o efeito secundário",
@@ -6720,7 +6861,10 @@
    "ex": "O efeito secundário mais comum é a sonolência.",
    "exru": "Самый частый побочный эффект — сонливость.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "побічний ефект",
+   "exuk": "Найчастіший побічний ефект — сонливість.",
+   "noteuk": ""
   },
   {
    "word": "a dosagem",
@@ -6730,7 +6874,10 @@
    "ex": "O médico ajustou a dosagem do medicamento.",
    "exru": "Врач скорректировал дозировку лекарства.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "дозування",
+   "exuk": "Лікар скоригував дозування ліків.",
+   "noteuk": ""
   },
   {
    "word": "a posologia",
@@ -6740,7 +6887,10 @@
    "ex": "A posologia vem explicada na bula do medicamento.",
    "exru": "Схема приёма описана во вкладыше к лекарству.",
    "note": "a bula — инструкция-вкладыш",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "схема прийому препарату",
+   "exuk": "Схему прийому описано у вкладці до ліків.",
+   "noteuk": "a bula — інструкція-вкладка"
   },
   {
    "word": "a intervenção cirúrgica",
@@ -6750,7 +6900,10 @@
    "ex": "A intervenção cirúrgica correu melhor do que esperado.",
    "exru": "Операция прошла лучше, чем ожидалось.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "хірургічне втручання",
+   "exuk": "Операція минула краще, ніж очікували.",
+   "noteuk": ""
   },
   {
    "word": "a anestesia",
@@ -6760,7 +6913,10 @@
    "ex": "A anestesia local chega para este tipo de intervenção.",
    "exru": "Для такого вмешательства достаточно местной анестезии.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "анестезія, наркоз",
+   "exuk": "Для такого втручання досить місцевої анестезії.",
+   "noteuk": ""
   },
   {
    "word": "a reabilitação",
@@ -6770,7 +6926,10 @@
    "ex": "A reabilitação exige sessões três vezes por semana.",
    "exru": "Реабилитация требует занятий трижды в неделю.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "реабілітація",
+   "exuk": "Реабілітація потребує занять тричі на тиждень.",
+   "noteuk": ""
   },
   {
    "word": "a sequela",
@@ -6780,7 +6939,10 @@
    "ex": "Ficou com sequelas do acidente na perna direita.",
    "exru": "После аварии остались последствия в правой ноге.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "залишковий наслідок хвороби",
+   "exuk": "Після аварії лишилися наслідки в правій нозі.",
+   "noteuk": ""
   },
   {
    "word": "o surto",
@@ -6790,7 +6952,10 @@
    "ex": "Houve um surto de gripe no lar de idosos.",
    "exru": "В доме престарелых была вспышка гриппа.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "спалах захворювання",
+   "exuk": "У будинку для літніх був спалах грипу.",
+   "noteuk": ""
   },
   {
    "word": "a estirpe",
@@ -6800,7 +6965,10 @@
    "ex": "A nova estirpe do vírus espalhou-se muito depressa.",
    "exru": "Новый штамм распространился очень быстро.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "штам",
+   "exuk": "Новий штам вірусу поширився дуже швидко.",
+   "noteuk": ""
   },
   {
    "word": "a imunidade",
@@ -6810,7 +6978,10 @@
    "ex": "A imunidade baixa depois de alguns meses.",
    "exru": "Иммунитет снижается через несколько месяцев.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "імунітет",
+   "exuk": "Імунітет знижується через кілька місяців.",
+   "noteuk": ""
   },
   {
    "word": "o agravamento",
@@ -6820,7 +6991,10 @@
    "ex": "O agravamento obrigou a chamar a ambulância.",
    "exru": "Ухудшение вынудило вызвать скорую.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "погіршення стану",
+   "exuk": "Погіршення змусило викликати швидку.",
+   "noteuk": ""
   },
   {
    "word": "a remissão",
@@ -6830,7 +7004,10 @@
    "ex": "A doença está em remissão há dois anos.",
    "exru": "Болезнь в ремиссии уже два года.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "ремісія",
+   "exuk": "Хвороба в ремісії вже два роки.",
+   "noteuk": ""
   },
   {
    "word": "o acompanhamento psicológico",
@@ -6840,7 +7017,10 @@
    "ex": "O centro oferece acompanhamento psicológico gratuito aos jovens.",
    "exru": "Центр предлагает молодёжи бесплатную психологическую помощь.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "психологічний супровід",
+   "exuk": "Центр пропонує молоді безкоштовну психологічну допомогу.",
+   "noteuk": ""
   },
   {
    "word": "a consulta de especialidade",
@@ -6850,7 +7030,10 @@
    "ex": "A consulta de especialidade demorou meses a ser marcada.",
    "exru": "Записи к специалисту пришлось ждать месяцами.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "прийом вузького спеціаліста",
+   "exuk": "Запису до спеціаліста довелося чекати місяцями.",
+   "noteuk": ""
   },
   {
    "word": "a lista de espera",
@@ -6860,7 +7043,10 @@
    "ex": "Está numa lista de espera para a operação.",
    "exru": "Он в листе ожидания на операцию.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "лист очікування",
+   "exuk": "Він у листі очікування на операцію.",
+   "noteuk": ""
   },
   {
    "word": "a urgência hospitalar",
@@ -6870,7 +7056,10 @@
    "ex": "A urgência hospitalar esteve cheia toda a noite.",
    "exru": "Приёмный покой был переполнен всю ночь.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "приймальний покій невідкладної допомоги",
+   "exuk": "Приймальний покій був переповнений цілу ніч.",
+   "noteuk": ""
   },
   {
    "word": "a maca",
@@ -6880,7 +7069,10 @@
    "ex": "Ficou horas numa maca no corredor do hospital.",
    "exru": "Он часами лежал на каталке в коридоре.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "каталка, ноші",
+   "exuk": "Він годинами лежав на каталці в коридорі.",
+   "noteuk": ""
   },
   {
    "word": "o soro",
@@ -6890,7 +7082,10 @@
    "ex": "Puseram-lhe soro na veia porque estava desidratado.",
    "exru": "Ему поставили капельницу из-за обезвоживания.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "крапельниця, фізрозчин",
+   "exuk": "Йому поставили крапельницю через зневоднення.",
+   "noteuk": ""
   },
   {
    "word": "a tensão arterial",
@@ -6900,7 +7095,10 @@
    "ex": "A tensão arterial está um pouco alta hoje.",
    "exru": "Давление сегодня немного повышено.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "артеріальний тиск",
+   "exuk": "Тиск сьогодні трохи підвищений.",
+   "noteuk": ""
   },
   {
    "word": "a glicemia",
@@ -6910,7 +7108,10 @@
    "ex": "Mede a glicemia todas as manhãs em jejum.",
    "exru": "Он измеряет сахар каждое утро натощак.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "рівень цукру в крові",
+   "exuk": "Він міряє цукор щоранку натщесерце.",
+   "noteuk": ""
   },
   {
    "word": "o jejum",
@@ -6920,7 +7121,10 @@
    "ex": "A análise tem de ser feita em jejum.",
    "exru": "Анализ нужно сдавать натощак.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "натщесерце",
+   "exuk": "Аналіз треба здавати натще.",
+   "noteuk": ""
   },
   {
    "word": "a análise ao sangue",
@@ -6930,7 +7134,10 @@
    "ex": "Os resultados da análise ao sangue já chegaram.",
    "exru": "Результаты анализа крови уже пришли.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "аналіз крові",
+   "exuk": "Результати аналізу крові вже прийшли.",
+   "noteuk": ""
   },
   {
    "word": "a ecografia",
@@ -6940,7 +7147,10 @@
    "ex": "Marcou uma ecografia para a próxima semana.",
    "exru": "Он записался на УЗИ на следующую неделю.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "УЗД",
+   "exuk": "Він записався на УЗД на наступний тиждень.",
+   "noteuk": ""
   },
   {
    "word": "a receita eletrónica",
@@ -6950,7 +7160,10 @@
    "ex": "A receita eletrónica chega por mensagem ao telemóvel.",
    "exru": "Электронный рецепт приходит сообщением на телефон.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "електронний рецепт",
+   "exuk": "Електронний рецепт приходить повідомленням на телефон.",
+   "noteuk": ""
   },
   {
    "word": "o boletim de vacinas",
@@ -6960,7 +7173,10 @@
    "ex": "Leve o boletim de vacinas à consulta de amanhã.",
    "exru": "Возьмите прививочный сертификат на завтрашний приём.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "щеплювальний сертифікат",
+   "exuk": "Візьміть щеплювальний сертифікат на завтрашній прийом.",
+   "noteuk": ""
   },
   {
    "word": "a baixa médica",
@@ -6970,7 +7186,10 @@
    "ex": "Está de baixa médica há três semanas.",
    "exru": "Он на больничном уже три недели.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "лікарняний лист",
+   "exuk": "Він на лікарняному вже три тижні.",
+   "noteuk": ""
   },
   {
    "word": "o atestado médico",
@@ -6980,7 +7199,10 @@
    "ex": "A escola pediu um atestado médico para justificar.",
    "exru": "Школа потребовала справку для оправдания пропуска.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "довідка від лікаря",
+   "exuk": "Школа зажадала довідку, щоб виправдати пропуск.",
+   "noteuk": ""
   },
   {
    "word": "o encaminhamento",
@@ -6990,7 +7212,10 @@
    "ex": "O médico de família fez o encaminhamento para o hospital.",
    "exru": "Семейный врач дал направление в больницу.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "направлення до спеціаліста",
+   "exuk": "Сімейний лікар дав направлення до лікарні.",
+   "noteuk": ""
   },
   {
    "word": "o cuidador",
@@ -7000,7 +7225,10 @@
    "ex": "O cuidador informal não recebe qualquer apoio.",
    "exru": "Родственник, ухаживающий за больным, не получает поддержки.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "той, хто доглядає хворого",
+   "exuk": "Родич, який доглядає хворого, не отримує підтримки.",
+   "noteuk": ""
   },
   {
    "word": "os cuidados paliativos",
@@ -7010,7 +7238,10 @@
    "ex": "Os cuidados paliativos aliviam a dor sem curar.",
    "exru": "Паллиативная помощь снимает боль, но не лечит.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "паліативна допомога",
+   "exuk": "Паліативна допомога знімає біль, але не лікує.",
+   "noteuk": ""
   },
   {
    "word": "o lar de idosos",
@@ -7020,7 +7251,10 @@
    "ex": "Visita a mãe no lar de idosos ao domingo.",
    "exru": "По воскресеньям он навещает мать в доме престарелых.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "будинок для літніх",
+   "exuk": "По неділях він навідує матір у будинку для літніх.",
+   "noteuk": ""
   },
   {
    "word": "a demência",
@@ -7030,7 +7264,10 @@
    "ex": "A demência começou com pequenos esquecimentos diários.",
    "exru": "Деменция началась с мелкой забывчивости.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "деменція",
+   "exuk": "Деменція почалася з дрібної щоденної забудькуватості.",
+   "noteuk": ""
   },
   {
    "word": "a hipertensão",
@@ -7040,7 +7277,10 @@
    "ex": "Tem hipertensão e toma um comprimido diário.",
    "exru": "У него гипертония, и он пьёт таблетку ежедневно.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "гіпертонія",
+   "exuk": "У нього гіпертонія, і він п’є таблетку щодня.",
+   "noteuk": ""
   },
   {
    "word": "o enfarte",
@@ -7050,7 +7290,10 @@
    "ex": "Sobreviveu a um enfarte aos cinquenta anos.",
    "exru": "Он пережил инфаркт в пятьдесят лет.",
    "note": "Пишется enfarte",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "інфаркт",
+   "exuk": "Він пережив інфаркт у п’ятдесят років.",
+   "noteuk": "Пишеться enfarte"
   },
   {
    "word": "a fratura",
@@ -7060,7 +7303,10 @@
    "ex": "A fratura demorou dois meses a soldar.",
    "exru": "Перелом срастался два месяца.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "перелом",
+   "exuk": "Перелом зростався два місяці.",
+   "noteuk": ""
   },
   {
    "word": "a hemorragia",
@@ -7070,7 +7316,10 @@
    "ex": "A hemorragia foi controlada ainda na ambulância.",
    "exru": "Кровотечение остановили ещё в скорой.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "кровотеча",
+   "exuk": "Кровотечу спинили ще у швидкій.",
+   "noteuk": ""
   },
   {
    "word": "o penso rápido",
@@ -7080,7 +7329,10 @@
    "ex": "Tens um penso rápido aí na mala?",
    "exru": "У тебя есть пластырь в сумке?",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "пластир на ранку",
+   "exuk": "У тебе є пластир у сумці?",
+   "noteuk": ""
   },
   {
    "word": "as muletas",
@@ -7090,7 +7342,10 @@
    "ex": "Andou de muletas durante quase um mês.",
    "exru": "Он ходил на костылях почти месяц.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "милиці",
+   "exuk": "Він ходив на милицях майже місяць.",
+   "noteuk": ""
   },
   {
    "word": "a cadeira de rodas",
@@ -7100,7 +7355,10 @@
    "ex": "O prédio não tem acesso para cadeira de rodas.",
    "exru": "В доме нет доступа для инвалидной коляски.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "інвалідний візок",
+   "exuk": "У будинку немає доступу для інвалідного візка.",
+   "noteuk": ""
   },
   {
    "word": "o cartão de utente",
@@ -7110,7 +7368,10 @@
    "ex": "Leve o cartão de utente e o cartão de cidadão.",
    "exru": "Возьмите карту пациента и удостоверение личности.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "картка пацієнта держсистеми",
+   "exuk": "Візьміть картку пацієнта і картку громадянина.",
+   "noteuk": ""
   },
   {
    "word": "a taxa moderadora",
@@ -7120,7 +7381,10 @@
    "ex": "A taxa moderadora foi abolida em muitos casos.",
    "exru": "Соплатёж во многих случаях отменили.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "співплатіж за прийом у держлікарні",
+   "exuk": "Співплатіж у багатьох випадках скасували.",
+   "noteuk": ""
   },
   {
    "word": "a promoção relâmpago",
@@ -7130,7 +7394,10 @@
    "ex": "A promoção relâmpago dura apenas vinte e quatro horas.",
    "exru": "Молниеносная распродажа длится всего сутки.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "блискавичний розпродаж",
+   "exuk": "Блискавичний розпродаж триває лише добу.",
+   "noteuk": ""
   },
   {
    "word": "a liquidação",
@@ -7140,7 +7407,10 @@
    "ex": "A loja está em liquidação antes de fechar.",
    "exru": "Магазин распродаёт остатки перед закрытием.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "розпродаж залишків",
+   "exuk": "Магазин розпродає залишки перед закриттям.",
+   "noteuk": ""
   },
   {
    "word": "a mensalidade",
@@ -7150,7 +7420,10 @@
    "ex": "A mensalidade do ginásio subiu em janeiro.",
    "exru": "Абонемент в спортзал подорожал в январе.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "щомісячний платіж",
+   "exuk": "Абонемент у спортзал подорожчав у січні.",
+   "noteuk": ""
   },
   {
    "word": "o pagamento faseado",
@@ -7160,7 +7433,10 @@
    "ex": "Aceitam pagamento faseado em três prestações sem juros.",
    "exru": "Принимают оплату частями в три взноса без процентов.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "оплата частинами",
+   "exuk": "Приймають оплату частинами у три внески без відсотків.",
+   "noteuk": ""
   },
   {
    "word": "o crédito ao consumo",
@@ -7170,7 +7446,10 @@
    "ex": "O crédito ao consumo tem juros bastante altos.",
    "exru": "У потребительского кредита довольно высокие проценты.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "споживчий кредит",
+   "exuk": "У споживчого кредиту доволі високі відсотки.",
+   "noteuk": ""
   },
   {
    "word": "a taxa de juro",
@@ -7180,7 +7459,10 @@
    "ex": "A taxa de juro voltou a subir este mês.",
    "exru": "Процентная ставка в этом месяце снова выросла.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "відсоткова ставка",
+   "exuk": "Відсоткова ставка цього місяця знову зросла.",
+   "noteuk": ""
   },
   {
    "word": "a amortização",
@@ -7190,7 +7472,10 @@
    "ex": "Fez uma amortização antecipada do empréstimo da casa.",
    "exru": "Он досрочно погасил часть кредита.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "дострокове погашення частини кредиту",
+   "exuk": "Він достроково погасив частину кредиту.",
+   "noteuk": ""
   },
   {
    "word": "a transferência bancária",
@@ -7200,7 +7485,10 @@
    "ex": "Pagou por transferência bancária no mesmo dia.",
    "exru": "Он заплатил переводом в тот же день.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "банківський переказ",
+   "exuk": "Він заплатив переказом того ж дня.",
+   "noteuk": ""
   },
   {
    "word": "a referência de pagamento",
@@ -7210,7 +7498,10 @@
    "ex": "A referência de pagamento vem no fundo da fatura.",
    "exru": "Реквизиты для оплаты указаны внизу счёта.",
    "note": "Оплата в банкомате по entidade и referência",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "реквізити для оплати рахунку",
+   "exuk": "Реквізити для оплати зазначені внизу рахунку.",
+   "noteuk": "Оплата в банкоматі за entidade і referência"
   },
   {
    "word": "o débito direto",
@@ -7220,7 +7511,10 @@
    "ex": "A luz e a água estão em débito direto.",
    "exru": "Свет и вода списываются автоматически.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "автосписання за рахунками",
+   "exuk": "Світло і вода списуються автоматично.",
+   "noteuk": ""
   },
   {
    "word": "o saldo disponível",
@@ -7230,7 +7524,10 @@
    "ex": "Verifique o saldo disponível antes de levantar dinheiro.",
    "exru": "Проверьте доступный остаток, прежде чем снимать деньги.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "доступний залишок на рахунку",
+   "exuk": "Перевірте доступний залишок, перш ніж знімати гроші.",
+   "noteuk": ""
   },
   {
    "word": "o descoberto bancário",
@@ -7240,7 +7537,10 @@
    "ex": "O descoberto bancário custa juros muito elevados.",
    "exru": "Овердрафт обходится в очень высокие проценты.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "овердрафт",
+   "exuk": "Овердрафт обходиться у дуже високі відсотки.",
+   "noteuk": ""
   },
   {
    "word": "a comissão bancária",
@@ -7250,7 +7550,10 @@
    "ex": "As comissões bancárias comem parte da poupança.",
    "exru": "Банковские комиссии съедают часть сбережений.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "банківська комісія",
+   "exuk": "Банківські комісії з’їдають частину заощаджень.",
+   "noteuk": ""
   },
   {
    "word": "o cartão de débito",
@@ -7260,7 +7563,10 @@
    "ex": "Paguei com cartão de débito, não com crédito.",
    "exru": "Я заплатил дебетовой картой, не кредитной.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "дебетова картка",
+   "exuk": "Я заплатив дебетовою карткою, не кредитною.",
+   "noteuk": ""
   },
   {
    "word": "a fiança",
@@ -7270,7 +7576,10 @@
    "ex": "O senhorio exigiu fiança de um familiar.",
    "exru": "Хозяин квартиры потребовал поручительство родственника.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "поручительство",
+   "exuk": "Господар квартири зажадав поручительство родича.",
+   "noteuk": ""
   },
   {
    "word": "o orçamento familiar",
@@ -7280,7 +7589,10 @@
    "ex": "O orçamento familiar não aguenta mais despesas fixas.",
    "exru": "Семейный бюджет не выдержит новых постоянных расходов.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "сімейний бюджет",
+   "exuk": "Сімейний бюджет не витримає нових постійних витрат.",
+   "noteuk": ""
   },
   {
    "word": "a despesa fixa",
@@ -7290,7 +7602,10 @@
    "ex": "A renda é a maior despesa fixa do mês.",
    "exru": "Аренда — самый крупный постоянный расход месяца.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "постійна витрата",
+   "exuk": "Оренда — найбільша постійна витрата місяця.",
+   "noteuk": ""
   },
   {
    "word": "o gasto supérfluo",
@@ -7300,7 +7615,10 @@
    "ex": "Cortaram os gastos supérfluos para poupar mais.",
    "exru": "Они срезали лишние траты, чтобы больше откладывать.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "зайва трата",
+   "exuk": "Вони зрізали зайві витрати, щоб більше відкладати.",
+   "noteuk": ""
   },
   {
    "word": "o consumismo",
@@ -7310,7 +7628,10 @@
    "ex": "O consumismo aumenta muito antes do Natal.",
    "exru": "Перед Рождеством потребление резко растёт.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "споживацтво",
+   "exuk": "Перед Різдвом споживання різко зростає.",
+   "noteuk": ""
   },
   {
    "word": "a obsolescência",
@@ -7320,7 +7641,10 @@
    "ex": "A obsolescência dos aparelhos é cada vez mais rápida.",
    "exru": "Техника устаревает всё быстрее.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "старіння техніки",
+   "exuk": "Техніка старіє дедалі швидше.",
+   "noteuk": ""
   },
   {
    "word": "a marca própria",
@@ -7330,7 +7654,10 @@
    "ex": "Os produtos de marca própria custam bem menos.",
    "exru": "Товары собственной марки стоят заметно дешевле.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "власна марка мережі",
+   "exuk": "Товари власної марки коштують помітно дешевше.",
+   "noteuk": ""
   },
   {
    "word": "a expedição",
@@ -7340,7 +7667,10 @@
    "ex": "A expedição da encomenda demora dois dias úteis.",
    "exru": "Отправка заказа занимает два рабочих дня.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "відправлення замовлення",
+   "exuk": "Відправлення замовлення триває два робочі дні.",
+   "noteuk": ""
   },
   {
    "word": "o levantamento em loja",
@@ -7350,7 +7680,10 @@
    "ex": "Escolhi levantamento em loja para não pagar portes.",
    "exru": "Я выбрал самовывоз, чтобы не платить за доставку.",
    "note": "os portes — стоимость доставки",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "самовивіз із магазину",
+   "exuk": "Я обрав самовивіз, щоб не платити за доставку.",
+   "noteuk": "os portes — вартість доставки"
   },
   {
    "word": "o livro de reclamações",
@@ -7360,7 +7693,10 @@
    "ex": "Todos os estabelecimentos têm de ter livro de reclamações.",
    "exru": "Каждое заведение обязано иметь книгу жалоб.",
    "note": "Есть и электронная версия на сайте",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "книга скарг",
+   "exuk": "Кожен заклад зобов’язаний мати книгу скарг.",
+   "noteuk": "Є й електронна версія на сайті"
   },
   {
    "word": "o direito de livre resolução",
@@ -7370,7 +7706,10 @@
    "ex": "O direito de livre resolução dura catorze dias.",
    "exru": "Право вернуть покупку действует четырнадцать дней.",
    "note": "Для покупок на расстоянии и вне магазина",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "право відмовитися від покупки",
+   "exuk": "Право повернути покупку діє чотирнадцять днів.",
+   "noteuk": "Для покупок на відстані і поза магазином"
   },
   {
    "word": "a relação qualidade-preço",
@@ -7380,7 +7719,10 @@
    "ex": "A relação qualidade-preço deste vinho é excelente.",
    "exru": "Соотношение цены и качества у этого вина отличное.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "співвідношення ціни і якості",
+   "exuk": "Співвідношення ціни і якості в цього вина чудове.",
+   "noteuk": ""
   },
   {
    "word": "o IVA",
@@ -7390,7 +7732,10 @@
    "ex": "O preço já inclui IVA à taxa normal.",
    "exru": "Цена уже включает НДС по обычной ставке.",
    "note": "Imposto sobre o Valor Acrescentado",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "ПДВ",
+   "exuk": "Ціна вже включає ПДВ за звичайною ставкою.",
+   "noteuk": "Imposto sobre o Valor Acrescentado"
   },
   {
    "word": "o IRS",
@@ -7400,7 +7745,10 @@
    "ex": "A entrega do IRS começa em abril.",
    "exru": "Подача декларации начинается в апреле.",
    "note": "Imposto sobre o Rendimento das pessoas Singulares",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "податок на доходи фізосіб",
+   "exuk": "Подання декларації починається у квітні.",
+   "noteuk": "Imposto sobre o Rendimento das pessoas Singulares"
   },
   {
    "word": "a retenção na fonte",
@@ -7410,7 +7758,10 @@
    "ex": "A retenção na fonte deixa menos dinheiro no salário.",
    "exru": "Удержание налога уменьшает сумму на руки.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "утримання податку в джерела",
+   "exuk": "Утримання податку зменшує суму на руки.",
+   "noteuk": ""
   },
   {
    "word": "a dedução fiscal",
@@ -7420,7 +7771,10 @@
    "ex": "As despesas de saúde dão dedução fiscal.",
    "exru": "Медицинские расходы дают налоговый вычет.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "податкове вирахування",
+   "exuk": "Медичні витрати дають податкове вирахування.",
+   "noteuk": ""
   },
   {
    "word": "o poder de compra",
@@ -7430,7 +7784,10 @@
    "ex": "O poder de compra caiu com a subida dos preços.",
    "exru": "Покупательная способность упала из-за роста цен.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "купівельна спроможність",
+   "exuk": "Купівельна спроможність упала через зростання цін.",
+   "noteuk": ""
   },
   {
    "word": "o custo de vida",
@@ -7440,7 +7797,10 @@
    "ex": "O custo de vida em Lisboa é muito alto.",
    "exru": "Жизнь в Лиссабоне очень дорогая.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "вартість життя",
+   "exuk": "Життя в Лісабоні дуже дороге.",
+   "noteuk": ""
   },
   {
    "word": "o cabaz de compras",
@@ -7450,7 +7810,10 @@
    "ex": "O cabaz de compras ficou mais caro este ano.",
    "exru": "Продуктовая корзина в этом году подорожала.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "споживчий кошик",
+   "exuk": "Продуктовий кошик цього року подорожчав.",
+   "noteuk": ""
   },
   {
    "word": "o crédito habitação",
@@ -7460,7 +7823,10 @@
    "ex": "Pediu crédito habitação a trinta anos no banco.",
    "exru": "Он взял ипотеку на тридцать лет.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "іпотечний кредит",
+   "exuk": "Він узяв іпотеку на тридцять років у банку.",
+   "noteuk": ""
   },
   {
    "word": "a poupança-reforma",
@@ -7470,7 +7836,10 @@
    "ex": "Aplicou algum dinheiro num plano de poupança-reforma.",
    "exru": "Он вложил часть денег в пенсионный план.",
    "note": "Сокращённо PPR",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "пенсійні заощадження",
+   "exuk": "Він вклав частину грошей у пенсійний план.",
+   "noteuk": "Скорочено PPR"
   },
   {
    "word": "o prazo de garantia",
@@ -7480,7 +7849,10 @@
    "ex": "O prazo de garantia é de três anos.",
    "exru": "Гарантийный срок — три года.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "гарантійний строк",
+   "exuk": "Гарантійний строк — три роки.",
+   "noteuk": ""
   },
   {
    "word": "a assistência pós-venda",
@@ -7490,7 +7862,10 @@
    "ex": "A assistência pós-venda desta marca é conhecida.",
    "exru": "Послепродажный сервис этой марки известен.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "післяпродажне обслуговування",
+   "exuk": "Післяпродажний сервіс цієї марки відомий.",
+   "noteuk": ""
   },
   {
    "word": "a etiqueta de preço",
@@ -7500,7 +7875,10 @@
    "ex": "A etiqueta de preço estava trocada na prateleira.",
    "exru": "Ценник на полке был перепутан.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "цінник",
+   "exuk": "Цінник на полиці був переплутаний.",
+   "noteuk": ""
   },
   {
    "word": "a nota de crédito",
@@ -7510,7 +7888,10 @@
    "ex": "Deram-me uma nota de crédito em vez de dinheiro.",
    "exru": "Мне выдали кредит-ноту вместо денег.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "повернення суми магазинним кредитом",
+   "exuk": "Мені видали кредит-ноту замість грошей.",
+   "noteuk": ""
   },
   {
    "word": "a carta de vinhos",
@@ -7520,7 +7901,10 @@
    "ex": "Pediu a carta de vinhos ao empregado de mesa.",
    "exru": "Он попросил у официанта винную карту.",
    "note": "",
-   "tema": "B8"
+   "tema": "B8",
+   "uk": "винна карта",
+   "exuk": "Він попросив в офіціанта винну карту.",
+   "noteuk": ""
   },
   {
    "word": "o couvert",
@@ -7530,7 +7914,10 @@
    "ex": "O couvert paga-se à parte se for consumido.",
    "exru": "Закуски на столе оплачиваются отдельно, если их ели.",
    "note": "Можно вернуть нетронутым и не платить",
-   "tema": "B8"
+   "tema": "B8",
+   "uk": "закуски, подані до замовлення",
+   "exuk": "Закуски на столі оплачуються окремо, якщо їх їли.",
+   "noteuk": "Можна повернути незайманим і не платити"
   },
   {
    "word": "o prato do dia",
@@ -7540,7 +7927,10 @@
    "ex": "O prato do dia hoje é bacalhau assado.",
    "exru": "Блюдо дня сегодня — запечённая треска.",
    "note": "",
-   "tema": "B8"
+   "tema": "B8",
+   "uk": "страва дня",
+   "exuk": "Страва дня сьогодні — запечена тріска.",
+   "noteuk": ""
   },
   {
    "word": "a especialidade da casa",
