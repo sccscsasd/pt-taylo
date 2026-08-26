@@ -3651,7 +3651,10 @@
    "note": "м. р.",
    "uk": "квитанція, чек",
    "exuk": "Збережіть квитанцію про оплату оренди.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "receipt",
+   "exen": "Keep the receipt for the rent.",
+   "noteen": "masculine"
   },
   {
    "word": "o multibanco",
@@ -3662,7 +3665,10 @@
    "note": "Сокращение MB; система оплаты в Португалии",
    "uk": "банкомат; термінал оплати",
    "exuk": "Я зняв гроші в банкоматі.",
-   "noteuk": "Скорочення MB; система оплати в Португалії"
+   "noteuk": "Скорочення MB; система оплати в Португалії",
+   "en": "cash machine; card terminal",
+   "exen": "I withdrew cash from the machine.",
+   "noteen": "Short MB; the Portuguese payment network"
   },
   {
    "word": "o bairro",
@@ -3673,7 +3679,10 @@
    "note": "м. р.",
    "uk": "квартал, район міста",
    "exuk": "Я живу в тихому районі.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "neighbourhood, part of town",
+   "exen": "I live in a quiet neighbourhood.",
+   "noteen": "masculine"
   },
   {
    "word": "a baixa",
@@ -3684,7 +3693,10 @@
    "note": "a Baixa в Лиссабоне и Порту",
    "uk": "центр міста (нижній)",
    "exuk": "Поїдемо в центр по покупки.",
-   "noteuk": "a Baixa у Лісабоні та Порту"
+   "noteuk": "a Baixa у Лісабоні та Порту",
+   "en": "the town centre, the lower town",
+   "exen": "Let's go to the town centre to do some shopping.",
+   "noteen": "a Baixa in Lisbon and Porto"
   },
   {
    "word": "a zona",
@@ -3695,7 +3707,10 @@
    "note": "ж. р.",
    "uk": "зона, район",
    "exuk": "Цей район дуже затребуваний.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "area, zone",
+   "exen": "This area is much sought after.",
+   "noteen": "feminine"
   },
   {
    "word": "a vila",
@@ -3706,7 +3721,10 @@
    "note": "Меньше cidade, больше aldeia",
    "uk": "містечко, селище",
    "exuk": "Я народився в містечку біля Браги.",
-   "noteuk": "Менше за cidade, більше за aldeia"
+   "noteuk": "Менше за cidade, більше за aldeia",
+   "en": "small town",
+   "exen": "I was born in a small town near Braga.",
+   "noteen": "Bigger than aldeia, smaller than cidade"
   },
   {
    "word": "a aldeia",
@@ -3717,7 +3735,10 @@
    "note": "ж. р.",
    "uk": "село",
    "exuk": "Мої дідусь із бабусею живуть у селі.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "village",
+   "exen": "My grandparents live in a village.",
+   "noteen": "feminine"
   },
   {
    "word": "o habitante",
@@ -3728,7 +3749,10 @@
    "note": "Одна форма: o/a habitante",
    "uk": "мешканець",
    "exuk": "У селищі дві тисячі мешканців.",
-   "noteuk": "Одна форма: o/a habitante"
+   "noteuk": "Одна форма: o/a habitante",
+   "en": "inhabitant",
+   "exen": "The town has two thousand inhabitants.",
+   "noteen": "One form: o habitante and a habitante"
   },
   {
    "word": "a câmara municipal",
@@ -3739,7 +3763,10 @@
    "note": "Сокращение: CM",
    "uk": "мерія, муніципалітет",
    "exuk": "Я ходив до мерії оформлювати папери.",
-   "noteuk": "Скорочення: CM"
+   "noteuk": "Скорочення: CM",
+   "en": "town hall, council",
+   "exen": "I went to the town hall to sort out some papers.",
+   "noteen": "Short form: CM"
   },
   {
    "word": "o centro comercial",
@@ -3750,7 +3777,10 @@
    "note": "Мн. ч.: centros comerciais",
    "uk": "торговий центр",
    "exuk": "Торговий центр відчиняється о десятій.",
-   "noteuk": "Множина: centros comerciais"
+   "noteuk": "Множина: centros comerciais",
+   "en": "shopping centre",
+   "exen": "The shopping centre opens at ten.",
+   "noteen": "Plural: centros comerciais"
   },
   {
    "word": "o contentor de lixo",
@@ -3761,7 +3791,10 @@
    "note": "м. р.",
    "uk": "сміттєвий контейнер",
    "exuk": "Сміттєвий контейнер переповнений.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "rubbish container",
+   "exen": "The rubbish container is full.",
+   "noteen": "masculine"
   },
   {
    "word": "a reciclagem",
@@ -3772,7 +3805,10 @@
    "note": "ж. р.",
    "uk": "переробка, роздільний збір",
    "exuk": "Я здаю скло й папір на переробку.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "recycling",
+   "exen": "I recycle glass and paper.",
+   "noteen": "feminine"
   },
   {
    "word": "o banho",
@@ -3783,7 +3819,10 @@
    "note": "dar banho — купать кого-то",
    "uk": "купання, ванна",
    "exuk": "Я купаю малюка о сьомій.",
-   "noteuk": "dar banho — купати когось"
+   "noteuk": "dar banho — купати когось",
+   "en": "bath, bathing",
+   "exen": "I bath the baby at seven.",
+   "noteen": "dar banho — to bath someone"
   },
   {
    "word": "a natureza",
@@ -3794,7 +3833,10 @@
    "note": "ж. р.",
    "uk": "природа",
    "exuk": "Вихідні ми проводимо на природі.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "nature",
+   "exen": "We spend the weekend out in nature.",
+   "noteen": "feminine"
   },
   {
    "word": "a paisagem",
@@ -3805,7 +3847,10 @@
    "note": "ж. р.",
    "uk": "пейзаж, ландшафт",
    "exuk": "Краєвиди Дору вражають.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "landscape, scenery",
+   "exen": "The Douro scenery is stunning.",
+   "noteen": "feminine"
   },
   {
    "word": "o parque natural",
@@ -3816,7 +3861,10 @@
    "note": "м. р.",
    "uk": "природний парк",
    "exuk": "Ми побували в природному парку Аррабіда.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "nature park",
+   "exen": "We visited the Arrábida nature park.",
+   "noteen": "masculine"
   },
   {
    "word": "o monte",
@@ -3827,7 +3875,10 @@
    "note": "м. р.",
    "uk": "пагорб, гора",
    "exuk": "Ми піднялися на пагорб подивитися захід.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "hill",
+   "exen": "We climbed the hill to watch the sunset.",
+   "noteen": "masculine"
   },
   {
    "word": "a costa",
@@ -3838,7 +3889,10 @@
    "note": "as costas — спина",
    "uk": "узбережжя",
    "exuk": "На західному узбережжі великі хвилі.",
-   "noteuk": "as costas — спина"
+   "noteuk": "as costas — спина",
+   "en": "coast",
+   "exen": "The west coast has big waves.",
+   "noteen": "as costas means the back"
   },
   {
    "word": "a margem",
@@ -3849,7 +3903,10 @@
    "note": "Мн. ч.: as margens",
    "uk": "берег (річки)",
    "exuk": "Ми гуляли берегом річки.",
-   "noteuk": "Множина: as margens"
+   "noteuk": "Множина: as margens",
+   "en": "riverbank",
+   "exen": "We walked along the riverbank.",
+   "noteen": "Plural: as margens"
   },
   {
    "word": "o oceano",
@@ -3860,7 +3917,10 @@
    "note": "м. р.",
    "uk": "океан",
    "exuk": "Атлантичний океан омиває Португалію.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "ocean",
+   "exen": "The Atlantic Ocean washes Portugal.",
+   "noteen": "masculine"
   },
   {
    "word": "o continente",
@@ -3871,7 +3931,10 @@
    "note": "Для португальцев — материковая Португалия",
    "uk": "континент; материкова частина",
    "exuk": "Я живу на материку, не на Азорах.",
-   "noteuk": "Для португальців — материкова Португалія"
+   "noteuk": "Для португальців — материкова Португалія",
+   "en": "continent; the mainland",
+   "exen": "I live on the mainland, not in the Azores.",
+   "noteen": "For the Portuguese it means mainland Portugal"
   },
   {
    "word": "a Europa",
@@ -3882,7 +3945,10 @@
    "note": "",
    "uk": "Європа",
    "exuk": "Португалія розташована на південному заході Європи.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "Europe",
+   "exen": "Portugal is in the south-west of Europe.",
+   "noteen": ""
   },
   {
    "word": "a África",
@@ -3893,7 +3959,10 @@
    "note": "Часто без артикля: em África",
    "uk": "Африка",
    "exuk": "Він два роки працював в Африці.",
-   "noteuk": "Часто без артикля: em África"
+   "noteuk": "Часто без артикля: em África",
+   "en": "Africa",
+   "exen": "He worked in Africa for two years.",
+   "noteen": "Often with no article: em África"
   },
   {
    "word": "a Ásia",
@@ -3904,7 +3973,10 @@
    "note": "",
    "uk": "Азія",
    "exuk": "Він півроку подорожував Азією.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "Asia",
+   "exen": "He travelled around Asia for six months.",
+   "noteen": ""
   },
   {
    "word": "a América",
@@ -3915,7 +3987,10 @@
    "note": "América do Norte/do Sul",
    "uk": "Америка",
    "exuk": "У нього родина у Південній Америці.",
-   "noteuk": "América do Norte/do Sul"
+   "noteuk": "América do Norte/do Sul",
+   "en": "America",
+   "exen": "He has family in South America.",
+   "noteen": "América do Norte and América do Sul"
   },
   {
    "word": "o interior",
@@ -3926,7 +4001,10 @@
    "note": "Противопоставляется litoral",
    "uk": "внутрішні райони країни; внутрішня частина",
    "exuk": "Внутрішні райони країни втрачають населення.",
-   "noteuk": "Протиставляється litoral"
+   "noteuk": "Протиставляється litoral",
+   "en": "the inland regions; the inside",
+   "exen": "The inland regions are losing population.",
+   "noteen": "Set against o litoral"
   },
   {
    "word": "o nordeste",
@@ -3937,7 +4015,10 @@
    "note": "м. р.",
    "uk": "північний схід",
    "exuk": "Північний схід країни гористий.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "north-east",
+   "exen": "The north-east of the country is mountainous.",
+   "noteen": "masculine"
   },
   {
    "word": "o noroeste",
@@ -3948,7 +4029,10 @@
    "note": "м. р.",
    "uk": "північний захід",
    "exuk": "На північному заході багато дощів.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "north-west",
+   "exen": "It rains a lot in the north-west.",
+   "noteen": "masculine"
   },
   {
    "word": "o sudeste",
@@ -3959,7 +4043,10 @@
    "note": "м. р.",
    "uk": "південний схід",
    "exuk": "Південний схід — найпосушливіша зона.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "south-east",
+   "exen": "The south-east is the driest area.",
+   "noteen": "masculine"
   },
   {
    "word": "o sudoeste",
@@ -3970,7 +4057,10 @@
    "note": "м. р.",
    "uk": "південний захід",
    "exuk": "Вітер дме з південного заходу.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "south-west",
+   "exen": "The wind is blowing from the south-west.",
+   "noteen": "masculine"
   },
   {
    "word": "o céu",
@@ -3981,7 +4071,10 @@
    "note": "Мн. ч.: os céus",
    "uk": "небо",
    "exuk": "Сьогодні ясне небо.",
-   "noteuk": "Множина: os céus"
+   "noteuk": "Множина: os céus",
+   "en": "sky",
+   "exen": "The sky is clear today.",
+   "noteen": "Plural: os céus"
   },
   {
    "word": "a nuvem",
@@ -3992,7 +4085,10 @@
    "note": "Мн. ч.: as nuvens",
    "uk": "хмара",
    "exuk": "З моря йдуть темні хмари.",
-   "noteuk": "Множина: as nuvens"
+   "noteuk": "Множина: as nuvens",
+   "en": "cloud",
+   "exen": "Dark clouds are coming in from the sea.",
+   "noteen": "Plural: as nuvens"
   },
   {
    "word": "a chuva",
@@ -4003,7 +4099,10 @@
    "note": "ж. р.",
    "uk": "дощ",
    "exuk": "Дощ не вщухав цілий день.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "rain",
+   "exen": "The rain didn't stop all day.",
+   "noteen": "feminine"
   },
   {
    "word": "a tempestade",
@@ -4014,7 +4113,10 @@
    "note": "ж. р.",
    "uk": "буря, гроза",
    "exuk": "Уночі була сильна буря.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "storm",
+   "exen": "There was a heavy storm in the night.",
+   "noteen": "feminine"
   },
   {
    "word": "o nevoeiro",
@@ -4025,7 +4127,10 @@
    "note": "м. р.",
    "uk": "туман",
    "exuk": "Аеропорт закрили через туман.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "fog",
+   "exen": "The airport closed because of the fog.",
+   "noteen": "masculine"
   },
   {
    "word": "a humidade",
@@ -4036,7 +4141,10 @@
    "note": "Пишется без ú: humidade",
    "uk": "вологість, вогкість",
    "exuk": "Вогкість узимку — найгірше.",
-   "noteuk": "Пишеться без ú: humidade"
+   "noteuk": "Пишеться без ú: humidade",
+   "en": "humidity, damp",
+   "exen": "The damp in winter is the worst thing.",
+   "noteen": "Spelt without ú: humidade"
   },
   {
    "word": "o clima",
@@ -4047,7 +4155,10 @@
    "note": "м. р., несмотря на -a",
    "uk": "клімат",
    "exuk": "Клімат тут м’який цілий рік.",
-   "noteuk": "ч. р., попри -a"
+   "noteuk": "ч. р., попри -a",
+   "en": "climate",
+   "exen": "The climate here is mild all year round.",
+   "noteen": "masculine despite the -a"
   },
   {
    "word": "fresco",
@@ -4058,7 +4169,10 @@
    "note": "Также о продуктах — свежий",
    "uk": "прохолодний; свіжий",
    "exuk": "У вересні ранки прохолодні.",
-   "noteuk": "Також про продукти — свіжий"
+   "noteuk": "Також про продукти — свіжий",
+   "en": "cool; fresh",
+   "exen": "The mornings are cool in September.",
+   "noteen": "Also fresh, of food"
   },
   {
    "word": "o animal doméstico",
@@ -4069,7 +4183,10 @@
    "note": "м. р.",
    "uk": "домашня тварина",
    "exuk": "У готелі не приймають з домашніми тваринами.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "pet",
+   "exen": "The hotel doesn't accept pets.",
+   "noteen": "masculine"
   },
   {
    "word": "a vaca",
@@ -4080,7 +4197,10 @@
    "note": "ж. р.",
    "uk": "корова",
    "exuk": "Корови пасуться в полі.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "cow",
+   "exen": "The cows are grazing in the field.",
+   "noteen": "feminine"
   },
   {
    "word": "o boi",
@@ -4091,7 +4211,10 @@
    "note": "Мн. ч.: os bois",
    "uk": "бик, віл",
    "exuk": "Бик тягне воза.",
-   "noteuk": "Множина: os bois"
+   "noteuk": "Множина: os bois",
+   "en": "ox, bullock",
+   "exen": "The ox pulls the cart.",
+   "noteen": "Plural: os bois"
   },
   {
    "word": "o cavalo",
@@ -4102,7 +4225,10 @@
    "note": "andar a cavalo — ездить верхом",
    "uk": "кінь",
    "exuk": "Я навчився їздити верхи.",
-   "noteuk": "andar a cavalo — їздити верхи"
+   "noteuk": "andar a cavalo — їздити верхи",
+   "en": "horse",
+   "exen": "I learnt to ride a horse.",
+   "noteen": "andar a cavalo — to ride"
   },
   {
    "word": "a égua",
@@ -4113,7 +4239,10 @@
    "note": "ж. р.",
    "uk": "кобила",
    "exuk": "У кобили народилося лоша.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "mare",
+   "exen": "The mare had a foal.",
+   "noteen": "feminine"
   },
   {
    "word": "a galinha",
@@ -4124,7 +4253,10 @@
    "note": "Мясо — o frango",
    "uk": "курка (жива)",
    "exuk": "Кури несуть яйця щодня.",
-   "noteuk": "М’ясо — o frango"
+   "noteuk": "М’ясо — o frango",
+   "en": "hen, live chicken",
+   "exen": "The hens lay eggs every day.",
+   "noteen": "The meat is o frango"
   },
   {
    "word": "o galo",
@@ -4135,7 +4267,10 @@
    "note": "Galo de Barcelos — символ Португалии",
    "uk": "півень",
    "exuk": "Півень співає о п’ятій ранку.",
-   "noteuk": "Galo de Barcelos — символ Португалії"
+   "noteuk": "Galo de Barcelos — символ Португалії",
+   "en": "cockerel",
+   "exen": "The cockerel crows at five in the morning.",
+   "noteen": "Galo de Barcelos is a symbol of Portugal"
   },
   {
    "word": "o coelho",
@@ -4146,7 +4281,10 @@
    "note": "м. р.",
    "uk": "кріль, кролик",
    "exuk": "Ми їли тушкованого кролика.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "rabbit",
+   "exen": "We ate rabbit stew.",
+   "noteen": "masculine"
   },
   {
    "word": "a mosca",
@@ -4157,7 +4295,10 @@
    "note": "ж. р.",
    "uk": "муха",
    "exuk": "На кухні муха.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "fly",
+   "exen": "There's a fly in the kitchen.",
+   "noteen": "feminine"
   },
   {
    "word": "o mosquito",
@@ -4168,7 +4309,10 @@
    "note": "м. р.",
    "uk": "комар",
    "exuk": "Комарі не дали мені спати.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "mosquito",
+   "exen": "The mosquitoes wouldn't let me sleep.",
+   "noteen": "masculine"
   },
   {
    "word": "selvagem",
@@ -4179,7 +4323,10 @@
    "note": "Мн. ч.: selvagens",
    "uk": "дикий",
    "exuk": "Годувати диких тварин заборонено.",
-   "noteuk": "Множина: selvagens"
+   "noteuk": "Множина: selvagens",
+   "en": "wild",
+   "exen": "Feeding wild animals is forbidden.",
+   "noteen": "Plural: selvagens"
   },
   {
    "word": "a erva",
@@ -4190,7 +4337,10 @@
    "note": "ж. р.",
    "uk": "трава",
    "exuk": "Не топчи траву.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "grass",
+   "exen": "Keep off the grass.",
+   "noteen": "feminine"
   },
   {
    "word": "a folha",
@@ -4201,7 +4351,10 @@
    "note": "folha de papel — лист бумаги",
    "uk": "листок (дерева, паперу)",
    "exuk": "Восени листя опадає.",
-   "noteuk": "folha de papel — аркуш паперу"
+   "noteuk": "folha de papel — аркуш паперу",
+   "en": "leaf; sheet of paper",
+   "exen": "In autumn the leaves fall.",
+   "noteen": "folha de papel — a sheet of paper"
   },
   {
    "word": "a rosa",
@@ -4212,7 +4365,10 @@
    "note": "ж. р.",
    "uk": "троянда",
    "exuk": "Він подарував їй червону троянду.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "rose",
+   "exen": "He gave her a red rose.",
+   "noteen": "feminine"
   },
   {
    "word": "o ramo de flores",
@@ -4223,7 +4379,10 @@
    "note": "м. р.",
    "uk": "букет квітів",
    "exuk": "Я приніс букет господині дому.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "bunch of flowers",
+   "exen": "I took a bunch of flowers to the hostess.",
+   "noteen": "masculine"
   },
   {
    "word": "o rosto",
@@ -4234,7 +4393,10 @@
    "note": "Чуть книжнее, чем cara",
    "uk": "обличчя (книжне)",
    "exuk": "У нього було серйозне обличчя.",
-   "noteuk": "Трохи книжніше, ніж cara"
+   "noteuk": "Трохи книжніше, ніж cara",
+   "en": "face (more formal)",
+   "exen": "He had a serious face.",
+   "noteen": "Slightly more formal than cara"
   },
   {
    "word": "ontem",
@@ -4245,7 +4407,10 @@
    "note": "anteontem — позавчера",
    "uk": "учора",
    "exuk": "Учора я ходив до лікаря.",
-   "noteuk": "anteontem — позавчора"
+   "noteuk": "anteontem — позавчора",
+   "en": "yesterday",
+   "exen": "Yesterday I went to the doctor.",
+   "noteen": "anteontem — the day before yesterday"
   },
   {
    "word": "anteontem",
@@ -4256,7 +4421,10 @@
    "note": "",
    "uk": "позавчора",
    "exuk": "Позавчора цілий день лив дощ.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the day before yesterday",
+   "exen": "The day before yesterday it rained all day.",
+   "noteen": ""
   },
   {
    "word": "depois de amanhã",
@@ -4267,7 +4435,10 @@
    "note": "",
    "uk": "післязавтра",
    "exuk": "Рейс післязавтра.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "the day after tomorrow",
+   "exen": "The flight is the day after tomorrow.",
+   "noteen": ""
   },
   {
    "word": "o ano passado",
@@ -4278,7 +4449,10 @@
    "note": "Без предлога: o ano passado",
    "uk": "торік, минулого року",
    "exuk": "Минулого року я був в Іспанії.",
-   "noteuk": "Без прийменника: o ano passado"
+   "noteuk": "Без прийменника: o ano passado",
+   "en": "last year",
+   "exen": "Last year I was in Spain.",
+   "noteen": "With no preposition: o ano passado"
   },
   {
    "word": "o mês passado",
@@ -4289,7 +4463,10 @@
    "note": "",
    "uk": "минулого місяця",
    "exuk": "Минулого місяця я переїхав.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "last month",
+   "exen": "I moved house last month.",
+   "noteen": ""
   },
   {
    "word": "o ano que vem",
@@ -4300,7 +4477,10 @@
    "note": "Синоним: o próximo ano",
    "uk": "наступного року",
    "exuk": "Наступного року хочу змінити роботу.",
-   "noteuk": "Синонім: o próximo ano"
+   "noteuk": "Синонім: o próximo ano",
+   "en": "next year",
+   "exen": "Next year I want to change jobs.",
+   "noteen": "Synonym: o próximo ano"
   },
   {
    "word": "o ano seguinte",
@@ -4311,7 +4491,10 @@
    "note": "О прошлом рассказе",
    "uk": "на наступний рік",
    "exuk": "Наступного року він уже добре говорив португальською.",
-   "noteuk": "Про минулу розповідь"
+   "noteuk": "Про минулу розповідь",
+   "en": "the following year",
+   "exen": "The following year he already spoke good Portuguese.",
+   "noteen": "Used when telling of the past"
   },
   {
    "word": "o mês anterior",
@@ -4322,7 +4505,10 @@
    "note": "anterior — предыдущий",
    "uk": "попередній місяць",
    "exuk": "Рахунок за попередній місяць ще не прийшов.",
-   "noteuk": "anterior — попередній"
+   "noteuk": "anterior — попередній",
+   "en": "the previous month",
+   "exen": "The bill for the previous month still hasn't come.",
+   "noteen": "anterior — previous"
   },
   {
    "word": "anterior",
@@ -4333,7 +4519,10 @@
    "note": "Одна форма для обоих родов",
    "uk": "попередній, колишній",
    "exuk": "Попередній квартирант залишив меблі.",
-   "noteuk": "Одна форма для обох родів"
+   "noteuk": "Одна форма для обох родів",
+   "en": "previous, former",
+   "exen": "The previous tenant left the furniture.",
+   "noteen": "One form for both genders"
   },
   {
    "word": "para a semana",
@@ -4344,7 +4533,10 @@
    "note": "Очень частое в PT",
    "uk": "наступного тижня",
    "exuk": "Наступного тижня в нас нарада.",
-   "noteuk": "Дуже часте в PT"
+   "noteuk": "Дуже часте в PT",
+   "en": "next week",
+   "exen": "Next week we have a meeting.",
+   "noteen": "Very common in Portugal"
   },
   {
    "word": "para o mês",
@@ -4355,7 +4547,10 @@
    "note": "Разговорный оборот",
    "uk": "наступного місяця",
    "exuk": "Наступного місяця я починаю заняття.",
-   "noteuk": "Розмовний зворот"
+   "noteuk": "Розмовний зворот",
+   "en": "next month",
+   "exen": "Next month I start classes.",
+   "noteen": "A colloquial turn of phrase"
   },
   {
    "word": "naquela manhã",
@@ -4366,7 +4561,10 @@
    "note": "naquele dia, naquela noite",
    "uk": "того ранку",
    "exuk": "Того ранку був густий туман.",
-   "noteuk": "naquele dia, naquela noite"
+   "noteuk": "naquele dia, naquela noite",
+   "en": "that morning",
+   "exen": "That morning there was thick fog.",
+   "noteen": "Likewise naquele dia, naquela noite"
   },
   {
    "word": "todas as manhãs",
@@ -4377,7 +4575,10 @@
    "note": "todos os dias, todas as noites",
    "uk": "щоранку",
    "exuk": "Я бігаю щоранку перед роботою.",
-   "noteuk": "todos os dias, todas as noites"
+   "noteuk": "todos os dias, todas as noites",
+   "en": "every morning",
+   "exen": "I run every morning before work.",
+   "noteen": "todos os dias, todas as noites"
   },
   {
    "word": "os fins de semana",
@@ -4388,7 +4589,10 @@
    "note": "Ao fim de semana — по выходным",
    "uk": "вихідні дні",
    "exuk": "Вихідні — для відпочинку.",
-   "noteuk": "Ao fim de semana — на вихідних"
+   "noteuk": "Ao fim de semana — на вихідних",
+   "en": "weekends",
+   "exen": "Weekends are for resting.",
+   "noteen": "Ao fim de semana — at the weekend"
   },
   {
    "word": "logo à tarde",
@@ -4399,7 +4603,10 @@
    "note": "logo à noite — сегодня вечером",
    "uk": "сьогодні по обіді",
    "exuk": "Зателефоную тобі сьогодні по обіді.",
-   "noteuk": "logo à noite — сьогодні ввечері"
+   "noteuk": "logo à noite — сьогодні ввечері",
+   "en": "later this afternoon",
+   "exen": "I'll call you later this afternoon.",
+   "noteen": "logo à noite — later this evening"
   },
   {
    "word": "o final de tarde",
@@ -4410,7 +4617,10 @@
    "note": "м. р.",
    "uk": "кінець дня, ранній вечір",
    "exuk": "Ходімо гуляти надвечір.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "the end of the afternoon",
+   "exen": "Let's go for a walk in the early evening.",
+   "noteen": "masculine"
   },
   {
    "word": "mais logo",
@@ -4421,7 +4631,10 @@
    "note": "Разговорное",
    "uk": "трохи згодом сьогодні",
    "exuk": "Поговоримо згодом, зараз я зайнятий.",
-   "noteuk": "Розмовне"
+   "noteuk": "Розмовне",
+   "en": "a bit later today",
+   "exen": "We'll talk later, I'm busy right now.",
+   "noteen": "Colloquial"
   },
   {
    "word": "neste momento",
@@ -4432,7 +4645,10 @@
    "note": "o momento — момент",
    "uk": "цієї миті, наразі",
    "exuk": "Наразі я не можу відповісти.",
-   "noteuk": "o momento — момент"
+   "noteuk": "o momento — момент",
+   "en": "at the moment",
+   "exen": "I can't take the call at the moment.",
+   "noteen": "o momento — a moment"
   },
   {
    "word": "o momento",
@@ -4443,7 +4659,10 @@
    "note": "м. р.",
    "uk": "момент",
    "exuk": "Зачекайте хвилинку, будь ласка.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "moment",
+   "exen": "Wait a moment, please.",
+   "noteen": "masculine"
   },
   {
    "word": "por agora",
@@ -4454,7 +4673,10 @@
    "note": "Синоним: para já",
    "uk": "поки що",
    "exuk": "Поки що все добре.",
-   "noteuk": "Синонім: para já"
+   "noteuk": "Синонім: para já",
+   "en": "for now",
+   "exen": "For now everything is fine.",
+   "noteen": "Synonym: para já"
   },
   {
    "word": "já",
@@ -4465,7 +4687,10 @@
    "note": "já não — больше не",
    "uk": "вже; зараз же",
    "exuk": "Ти вже пообідав?",
-   "noteuk": "já não — більше не"
+   "noteuk": "já não — більше не",
+   "en": "already; right now",
+   "exen": "Have you had lunch already?",
+   "noteen": "já não — not any more"
   },
   {
    "word": "ainda",
@@ -4476,7 +4701,10 @@
    "note": "ainda não — ещё не",
    "uk": "ще, все ще",
    "exuk": "Я ще не отримав відповіді.",
-   "noteuk": "ainda não — ще не"
+   "noteuk": "ainda não — ще не",
+   "en": "still, yet",
+   "exen": "I still haven't had a reply.",
+   "noteen": "ainda não — not yet"
   },
   {
    "word": "durante",
@@ -4487,7 +4715,10 @@
    "note": "",
    "uk": "протягом, під час",
    "exuk": "Улітку все дорожчає.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "during, for",
+   "exen": "In summer everything gets more expensive.",
+   "noteen": ""
   },
   {
    "word": "enquanto",
@@ -4498,7 +4729,10 @@
    "note": "",
    "uk": "поки, тоді як",
    "exuk": "Я готую вечерю, поки ти миєшся.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "while",
+   "exen": "I'll make dinner while you have a bath.",
+   "noteen": ""
   },
   {
    "word": "o bocado",
@@ -4509,7 +4743,10 @@
    "note": "há bocado — недавно",
    "uk": "шматочок; трохи (часу)",
    "exuk": "Зачекай трохи, я зараз.",
-   "noteuk": "há bocado — щойно"
+   "noteuk": "há bocado — щойно",
+   "en": "a bit; a little while",
+   "exen": "Wait a bit, I'm coming.",
+   "noteen": "há bocado — a little while ago"
   },
   {
    "word": "a meia hora",
@@ -4520,7 +4757,10 @@
    "note": "daqui a — через (о времени)",
    "uk": "півгодини",
    "exuk": "Потяг відходить за півгодини.",
-   "noteuk": "daqui a — через (про час)"
+   "noteuk": "daqui a — через (про час)",
+   "en": "half an hour",
+   "exen": "The train leaves in half an hour.",
+   "noteen": "daqui a — in, after (of time)"
   },
   {
    "word": "o quarto de hora",
@@ -4531,7 +4771,10 @@
    "note": "м. р.",
    "uk": "чверть години",
    "exuk": "Я прийду за чверть години.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "quarter of an hour",
+   "exen": "I'll be there within a quarter of an hour.",
+   "noteen": "masculine"
   },
   {
    "word": "umas horas",
@@ -4542,7 +4785,10 @@
    "note": "um/uns/umas — несколько",
    "uk": "кілька годин",
    "exuk": "Я поспав лише кілька годин.",
-   "noteuk": "um/uns/umas — кілька"
+   "noteuk": "um/uns/umas — кілька",
+   "en": "a few hours",
+   "exen": "I only slept a few hours.",
+   "noteen": "um, uns, umas — a few"
   },
   {
    "word": "há dois dias",
@@ -4553,7 +4799,10 @@
    "note": "há + время = тому назад",
    "uk": "два дні тому",
    "exuk": "Я приїхав два дні тому.",
-   "noteuk": "há + час = тому"
+   "noteuk": "há + час = тому",
+   "en": "two days ago",
+   "exen": "I arrived two days ago.",
+   "noteen": "há + a period means ago"
   },
   {
    "word": "há duas horas",
@@ -4564,7 +4813,10 @@
    "note": "Оба значения по контексту",
    "uk": "дві години тому; уже дві години",
    "exuk": "Я чекаю вже дві години.",
-   "noteuk": "Обидва значення за контекстом"
+   "noteuk": "Обидва значення за контекстом",
+   "en": "two hours ago; for two hours",
+   "exen": "I've been waiting for two hours.",
+   "noteen": "Both senses, told apart by context"
   },
   {
    "word": "muito tempo",
@@ -4575,7 +4827,10 @@
    "note": "há muito tempo — давно",
    "uk": "довго, багато часу",
    "exuk": "Давно тебе не бачив.",
-   "noteuk": "há muito tempo — давно"
+   "noteuk": "há muito tempo — давно",
+   "en": "a long time",
+   "exen": "I haven't seen you for a long time.",
+   "noteen": "há muito tempo — a long time ago"
   },
   {
    "word": "a data",
@@ -4586,7 +4841,10 @@
    "note": "ж. р.",
    "uk": "дата",
    "exuk": "Позначте дату в щоденнику.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "date",
+   "exen": "Put the date in your diary.",
+   "noteen": "feminine"
   },
   {
    "word": "o aniversário",
@@ -4597,7 +4855,10 @@
    "note": "м. р.",
    "uk": "день народження; річниця",
    "exuk": "Ми влаштовуємо день народження.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "birthday; anniversary",
+   "exen": "We're having a birthday party.",
+   "noteen": "masculine"
   },
   {
    "word": "o feriado",
@@ -4608,7 +4869,10 @@
    "note": "м. р.",
    "uk": "святковий вихідний",
    "exuk": "У понеділок свято, занять немає.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "public holiday",
+   "exen": "Monday is a holiday, there are no classes.",
+   "noteen": "masculine"
   },
   {
    "word": "o carnaval",
@@ -4619,7 +4883,10 @@
    "note": "Пишется с большой: o Carnaval",
    "uk": "карнавал",
    "exuk": "На карнавал школи зачиняються.",
-   "noteuk": "Пишеться з великої: o Carnaval"
+   "noteuk": "Пишеться з великої: o Carnaval",
+   "en": "carnival",
+   "exen": "Schools close for carnival.",
+   "noteen": "Capitalised: o Carnaval"
   },
   {
    "word": "a Páscoa",
@@ -4630,7 +4897,10 @@
    "note": "",
    "uk": "Великдень",
    "exuk": "На Великдень їдять фолар.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "Easter",
+   "exen": "At Easter people eat folar.",
+   "noteen": ""
   },
   {
    "word": "o século",
@@ -4641,7 +4911,10 @@
    "note": "Записывают римскими: séc. XIX",
    "uk": "століття, вік",
    "exuk": "Будинок дев’ятнадцятого століття.",
-   "noteuk": "Записують римськими: séc. XIX"
+   "noteuk": "Записують римськими: séc. XIX",
+   "en": "century",
+   "exen": "The building dates from the nineteenth century.",
+   "noteen": "Written in Roman numerals: séc. XIX"
   },
   {
    "word": "antigamente",
@@ -4652,7 +4925,10 @@
    "note": "Синоним dantes",
    "uk": "раніше, за давніх часів",
    "exuk": "Раніше тут нічого не було.",
-   "noteuk": "Синонім dantes"
+   "noteuk": "Синонім dantes",
+   "en": "in the old days",
+   "exen": "In the old days there was nothing here.",
+   "noteen": "Synonym: dantes"
   },
   {
    "word": "o começo",
@@ -4663,7 +4939,10 @@
    "note": "м. р.; синоним princípio",
    "uk": "початок, старт",
    "exuk": "Спочатку було важко.",
-   "noteuk": "ч. р.; синонім princípio"
+   "noteuk": "ч. р.; синонім princípio",
+   "en": "start, beginning",
+   "exen": "At the start it was hard.",
+   "noteen": "masc.; synonym princípio"
   },
   {
    "word": "o fim",
@@ -4674,7 +4953,10 @@
    "note": "м. р.",
    "uk": "кінець",
    "exuk": "Побачимося наприкінці місяця.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "end",
+   "exen": "See you at the end of the month.",
+   "noteen": "masculine"
   },
   {
    "word": "a conclusão",
@@ -4685,7 +4967,10 @@
    "note": "Мн. ч.: as conclusões",
    "uk": "завершення; висновок",
    "exuk": "Завершення робіт — у травні.",
-   "noteuk": "Множина: as conclusões"
+   "noteuk": "Множина: as conclusões",
+   "en": "completion; conclusion",
+   "exen": "The works will be completed in May.",
+   "noteen": "Plural: as conclusões"
   },
   {
    "word": "fechar",
@@ -4696,7 +4981,10 @@
    "note": "Открывать — abrir",
    "uk": "зачиняти(ся)",
    "exuk": "Крамниці зачиняються о першій на обід.",
-   "noteuk": "Відчиняти — abrir"
+   "noteuk": "Відчиняти — abrir",
+   "en": "to close, to shut",
+   "exen": "The shops close at one for lunch.",
+   "noteen": "To open is abrir"
   },
   {
    "word": "a mudança",
@@ -4707,7 +4995,10 @@
    "note": "ж. р.",
    "uk": "зміна; переїзд",
    "exuk": "Переїзд був виснажливим.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "change; house move",
+   "exen": "Moving house was exhausting.",
+   "noteen": "feminine"
   },
   {
    "word": "trocar",
@@ -4718,7 +5009,10 @@
    "note": "trocar por — обменять на",
    "uk": "міняти, обмінювати",
    "exuk": "Чи можу я обміняти цей светр на інший?",
-   "noteuk": "trocar por — обміняти на"
+   "noteuk": "trocar por — обміняти на",
+   "en": "to exchange, to swap",
+   "exen": "Can I exchange this jumper for another one?",
+   "noteen": "trocar por — to swap for"
   },
   {
    "word": "tornar-se",
@@ -4729,7 +5023,10 @@
    "note": "Синоним ficar/passar a ser",
    "uk": "ставати",
    "exuk": "Він став учителем у тридцять.",
-   "noteuk": "Синонім ficar/passar a ser"
+   "noteuk": "Синонім ficar/passar a ser",
+   "en": "to become",
+   "exen": "He became a teacher at thirty.",
+   "noteen": "Synonym of ficar or passar a ser"
   },
   {
    "word": "a morte",
@@ -4740,7 +5037,10 @@
    "note": "ж. р.",
    "uk": "смерть",
    "exuk": "Смерть дідуся була ударом.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "death",
+   "exen": "Grandfather's death was a shock.",
+   "noteen": "feminine"
   },
   {
    "word": "atrasar",
@@ -4751,7 +5051,10 @@
    "note": "atrasar-se — опаздывать",
    "uk": "затримувати(ся), запізнюватися",
    "exuk": "Потяг запізнився на двадцять хвилин.",
-   "noteuk": "atrasar-se — запізнюватися"
+   "noteuk": "atrasar-se — запізнюватися",
+   "en": "to delay, to be late",
+   "exen": "The train was twenty minutes late.",
+   "noteen": "atrasar-se — to be running late"
   },
   {
    "word": "o atraso",
@@ -4762,7 +5065,10 @@
    "note": "м. р.",
    "uk": "запізнення, затримка",
    "exuk": "Перепрошую за запізнення.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "delay, lateness",
+   "exen": "I'm sorry I'm late.",
+   "noteen": "masculine"
   },
   {
    "word": "adiar",
@@ -4773,7 +5079,10 @@
    "note": "adiar para — перенести на",
    "uk": "відкладати, переносити",
    "exuk": "Ми перенесли нараду на п’ятницю.",
-   "noteuk": "adiar para — перенести на"
+   "noteuk": "adiar para — перенести на",
+   "en": "to postpone, to put off",
+   "exen": "We put the meeting off until Friday.",
+   "noteen": "adiar para — to put off until"
   },
   {
    "word": "adiado",
@@ -4784,7 +5093,10 @@
    "note": "adiado / adiada",
    "uk": "відкладений, перенесений",
    "exuk": "Матч перенесли через дощ.",
-   "noteuk": "adiado / adiada"
+   "noteuk": "adiado / adiada",
+   "en": "postponed",
+   "exen": "The match was postponed because of the rain.",
+   "noteen": "adiado / adiada"
   },
   {
    "word": "adiantar",
@@ -4795,7 +5107,10 @@
    "note": "adiantar-se — забегать вперёд",
    "uk": "переносити на раніший строк; поспішати (про годинник)",
    "exuk": "Годинник поспішає на п’ять хвилин.",
-   "noteuk": "adiantar-se — забігати наперед"
+   "noteuk": "adiantar-se — забігати наперед",
+   "en": "to bring forward; to run fast",
+   "exen": "The clock is five minutes fast.",
+   "noteen": "adiantar-se — to get ahead of oneself"
   },
   {
    "word": "a demora",
@@ -4806,7 +5121,10 @@
    "note": "ж. р.",
    "uk": "затримка, зволікання",
    "exuk": "Вибачте за затримку з відповіддю.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "a hold-up, slowness",
+   "exen": "Sorry for the slow reply.",
+   "noteen": "feminine"
   },
   {
    "word": "demorar",
@@ -4817,7 +5135,10 @@
    "note": "Очень частотный глагол",
    "uk": "тривати; забарюватися",
    "exuk": "Поїздка триває дві години.",
-   "noteuk": "Дуже частотне дієслово"
+   "noteuk": "Дуже частотне дієслово",
+   "en": "to take time; to be long",
+   "exen": "The journey takes two hours.",
+   "noteen": "A very common verb"
   },
   {
    "word": "antes da hora",
@@ -4828,7 +5149,10 @@
    "note": "a horas — вовремя",
    "uk": "раніше часу",
    "exuk": "Я прийшов раніше часу й почекав.",
-   "noteuk": "a horas — вчасно"
+   "noteuk": "a horas — вчасно",
+   "en": "ahead of time",
+   "exen": "I arrived ahead of time and waited.",
+   "noteen": "a horas — on time"
   },
   {
    "word": "depois da hora",
@@ -4839,7 +5163,10 @@
    "note": "",
    "uk": "пізніше призначеного",
    "exuk": "Він знову прийшов пізніше призначеного.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "after the appointed time",
+   "exen": "He turned up late again.",
+   "noteen": ""
   },
   {
    "word": "antes do tempo",
@@ -4850,7 +5177,10 @@
    "note": "",
    "uk": "передчасно, достроково",
    "exuk": "Дитина народилася раніше строку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "prematurely, ahead of term",
+   "exen": "The baby was born prematurely.",
+   "noteen": ""
   },
   {
    "word": "ficar para depois",
@@ -4861,7 +5191,10 @@
    "note": "",
    "uk": "відкласти на потім",
    "exuk": "Це відкладемо на потім, зараз немає часу.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to leave until later",
+   "exen": "That can wait, there's no time now.",
+   "noteen": ""
   },
   {
    "word": "de repente",
@@ -4872,7 +5205,10 @@
    "note": "Очень частое",
    "uk": "раптом, зненацька",
    "exuk": "Раптом почався дощ.",
-   "noteuk": "Дуже часте"
+   "noteuk": "Дуже часте",
+   "en": "suddenly",
+   "exen": "Suddenly it started to rain.",
+   "noteen": "Very common"
   },
   {
    "word": "em breve",
@@ -4883,7 +5219,10 @@
    "note": "breve — краткий",
    "uk": "скоро, незабаром",
    "exuk": "Ми зв’яжемося з вами найближчим часом.",
-   "noteuk": "breve — стислий"
+   "noteuk": "breve — стислий",
+   "en": "soon, shortly",
+   "exen": "We will contact you again shortly.",
+   "noteen": "breve means brief"
   },
   {
    "word": "breve",
@@ -4894,7 +5233,10 @@
    "note": "Одна форма для обоих родов",
    "uk": "стислий, короткий",
    "exuk": "Зустріч була короткою.",
-   "noteuk": "Одна форма для обох родів"
+   "noteuk": "Одна форма для обох родів",
+   "en": "brief, short",
+   "exen": "It was a short meeting.",
+   "noteen": "One form for both genders"
   },
   {
    "word": "longo",
@@ -4905,7 +5247,10 @@
    "note": "ao longo de — на протяжении",
    "uk": "довгий, тривалий",
    "exuk": "Це був довгий день.",
-   "noteuk": "ao longo de — упродовж"
+   "noteuk": "ao longo de — упродовж",
+   "en": "long (in time)",
+   "exen": "It was a long day.",
+   "noteen": "ao longo de — throughout"
   },
   {
    "word": "rápido",
@@ -4916,7 +5261,10 @@
    "note": "rápido / rápida",
    "uk": "швидкий",
    "exuk": "Відповідь була швидкою.",
-   "noteuk": "rápido / rápida"
+   "noteuk": "rápido / rápida",
+   "en": "quick, fast",
+   "exen": "It was a quick reply.",
+   "noteen": "rápido / rápida"
   },
   {
    "word": "rapidamente",
@@ -4927,7 +5275,10 @@
    "note": "Наречия на -mente от ж. р.",
    "uk": "швидко (книжне)",
    "exuk": "Проблему розв’язали швидко.",
-   "noteuk": "Прислівники на -mente від ж. р."
+   "noteuk": "Прислівники на -mente від ж. р.",
+   "en": "rapidly, swiftly",
+   "exen": "They solved the problem quickly.",
+   "noteen": "Adverbs in -mente come from the feminine"
   },
   {
    "word": "lento",
@@ -4938,7 +5289,10 @@
    "note": "lento / lenta",
    "uk": "повільний",
    "exuk": "Обслуговування тут повільне.",
-   "noteuk": "lento / lenta"
+   "noteuk": "lento / lenta",
+   "en": "slow",
+   "exen": "The service here is slow.",
+   "noteen": "lento / lenta"
   },
   {
    "word": "lentamente",
@@ -4949,7 +5303,10 @@
    "note": "Синоним devagar",
    "uk": "повільно (книжне)",
    "exuk": "Говоріть повільно, будь ласка.",
-   "noteuk": "Синонім devagar"
+   "noteuk": "Синонім devagar",
+   "en": "in a slow manner",
+   "exen": "Speak slowly, please.",
+   "noteen": "Synonym of devagar"
   },
   {
    "word": "sem parar",
@@ -4960,7 +5317,10 @@
    "note": "",
    "uk": "без упину, безперервно",
    "exuk": "Він працював без упину до вечора.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "non-stop",
+   "exen": "He worked non-stop until the evening.",
+   "noteen": ""
   },
   {
    "word": "normalmente",
@@ -4971,7 +5331,10 @@
    "note": "Синоним geralmente",
    "uk": "зазвичай",
    "exuk": "Зазвичай я вечеряю о восьмій.",
-   "noteuk": "Синонім geralmente"
+   "noteuk": "Синонім geralmente",
+   "en": "usually",
+   "exen": "I usually have dinner at eight.",
+   "noteen": "Synonym: geralmente"
   },
   {
    "word": "frequentemente",
@@ -4982,7 +5345,10 @@
    "note": "Разговорно чаще muitas vezes",
    "uk": "часто (книжне)",
    "exuk": "Я часто їжджу до Іспанії.",
-   "noteuk": "Розмовно частіше muitas vezes"
+   "noteuk": "Розмовно частіше muitas vezes",
+   "en": "frequently",
+   "exen": "I go to Spain frequently.",
+   "noteen": "In speech muitas vezes is commoner"
   },
   {
    "word": "frequente",
@@ -4993,7 +5359,10 @@
    "note": "Одна форма для обоих родов",
    "uk": "частий",
    "exuk": "Затримки на цій лінії часті.",
-   "noteuk": "Одна форма для обох родів"
+   "noteuk": "Одна форма для обох родів",
+   "en": "frequent",
+   "exen": "Delays are frequent on this line.",
+   "noteen": "One form for both genders"
   },
   {
    "word": "muitas vezes",
@@ -5004,7 +5373,10 @@
    "note": "às vezes — иногда",
    "uk": "часто, багато разів",
    "exuk": "Я часто обідаю поза домом.",
-   "noteuk": "às vezes — інколи"
+   "noteuk": "às vezes — інколи",
+   "en": "often, many times",
+   "exen": "I often have lunch out.",
+   "noteen": "às vezes — sometimes"
   },
   {
    "word": "poucas vezes",
@@ -5015,7 +5387,10 @@
    "note": "raramente — редко",
    "uk": "рідко",
    "exuk": "Я рідко дивлюся телевізор.",
-   "noteuk": "raramente — рідко"
+   "noteuk": "raramente — рідко",
+   "en": "seldom",
+   "exen": "I seldom watch television.",
+   "noteen": "raramente — rarely"
   },
   {
    "word": "quase nunca",
@@ -5026,7 +5401,10 @@
    "note": "Требует não перед глаголом при инверсии",
    "uk": "майже ніколи",
    "exuk": "Я майже ніколи не користуюся машиною.",
-   "noteuk": "Потребує não перед дієсловом при інверсії"
+   "noteuk": "Потребує não перед дієсловом при інверсії",
+   "en": "hardly ever",
+   "exen": "I hardly ever use the car.",
+   "noteen": "Needs não before the verb when inverted"
   },
   {
    "word": "só uma vez",
@@ -5037,7 +5415,10 @@
    "note": "",
    "uk": "тільки один раз",
    "exuk": "Я був там лише один раз.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "only once",
+   "exen": "I've been there only once.",
+   "noteen": ""
   },
   {
    "word": "mais uma vez",
@@ -5048,7 +5429,10 @@
    "note": "",
    "uk": "ще раз",
    "exuk": "Поясніть ще раз, будь ласка.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "once more",
+   "exen": "Explain it once more, please.",
+   "noteen": ""
   },
   {
    "word": "outra vez",
@@ -5059,7 +5443,10 @@
    "note": "Синоним novamente",
    "uk": "знову",
    "exuk": "Ліфт знову зламався.",
-   "noteuk": "Синонім novamente"
+   "noteuk": "Синонім novamente",
+   "en": "again",
+   "exen": "The lift has broken down again.",
+   "noteen": "Synonym: novamente"
   },
   {
    "word": "novamente",
@@ -5070,7 +5457,10 @@
    "note": "Формальнее outra vez",
    "uk": "знову, повторно",
    "exuk": "Спробуйте знову пізніше.",
-   "noteuk": "Формальніше за outra vez"
+   "noteuk": "Формальніше за outra vez",
+   "en": "anew, once again",
+   "exen": "Try again later.",
+   "noteen": "More formal than outra vez"
   },
   {
    "word": "só",
