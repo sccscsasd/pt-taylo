@@ -5730,7 +5730,10 @@
    "ex": "As rajadas chegaram aos noventa quilómetros por hora.",
    "exru": "Порывы ветра доходили до девяноста километров в час.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "порив вітру",
+   "exuk": "Пориви вітру сягали дев’яноста кілометрів на годину.",
+   "noteuk": ""
   },
   {
    "word": "o pinhal",
@@ -5740,7 +5743,10 @@
    "ex": "O caminho para a praia atravessa um pinhal grande.",
    "exru": "Дорога к пляжу идёт через большой сосновый лес.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "сосновий бір",
+   "exuk": "Дорога до пляжу йде через великий сосновий бір.",
+   "noteuk": ""
   },
   {
    "word": "o sobreiro",
@@ -5750,7 +5756,10 @@
    "ex": "Os sobreiros do Alentejo dão a cortiça das rolhas.",
    "exru": "Из пробковых дубов Алентежу делают пробку для бутылок.",
    "note": "Дерево-символ Португалии, рубить его нельзя",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "корковий дуб",
+   "exuk": "З коркових дубів Алентежу роблять корок для пляшок.",
+   "noteuk": "Дерево-символ Португалії, рубати його не можна"
   },
   {
    "word": "a ribeira",
@@ -5760,7 +5769,10 @@
    "ex": "A ribeira seca todos os verões e volta no outono.",
    "exru": "Ручей пересыхает каждое лето и возвращается осенью.",
    "note": "Так же называют набережную в Порту — a Ribeira",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "річечка, потічок",
+   "exuk": "Потічок пересихає щоліта й повертається восени.",
+   "noteuk": "Так само звуть набережну в Порту — a Ribeira"
   },
   {
    "word": "a nascente",
@@ -5770,7 +5782,10 @@
    "ex": "A água da nascente é fresca mesmo no verão.",
    "exru": "Вода из родника прохладная даже летом.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "витік, джерельце",
+   "exuk": "Вода з джерельця прохолодна навіть улітку.",
+   "noteuk": ""
   },
   {
    "word": "o despedimento",
@@ -5780,7 +5795,10 @@
    "ex": "O despedimento apanhou toda a equipa de surpresa.",
    "exru": "Увольнение застало всю команду врасплох.",
    "note": "Despedir — уволить, despedir-se — попрощаться",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "звільнення з роботи",
+   "exuk": "Звільнення заскочило всю команду зненацька.",
+   "noteuk": "Despedir — звільнити, despedir-se — попрощатися"
   },
   {
    "word": "a chefia",
@@ -5790,7 +5808,10 @@
    "ex": "A chefia ainda não respondeu ao nosso pedido.",
    "exru": "Начальство пока не ответило на нашу просьбу.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "керівництво, начальство",
+   "exuk": "Начальство поки не відповіло на наше прохання.",
+   "noteuk": ""
   },
   {
    "word": "o desempenho",
@@ -5800,7 +5821,10 @@
    "ex": "O desempenho da equipa melhorou muito neste trimestre.",
    "exru": "Показатели команды в этом квартале заметно выросли.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "результативність, показники",
+   "exuk": "Показники команди цього кварталу помітно зросли.",
+   "noteuk": ""
   },
   {
    "word": "a propina",
@@ -5810,7 +5834,10 @@
    "ex": "As propinas da universidade pagam-se em dez prestações.",
    "exru": "Плату за университет вносят десятью частями.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "плата за навчання",
+   "exuk": "Плату за університет вносять десятьма частинами.",
+   "noteuk": ""
   },
   {
    "word": "os afazeres",
@@ -5820,7 +5847,10 @@
    "ex": "Passou a manhã toda com afazeres domésticos.",
    "exru": "Всё утро у неё ушло на домашние хлопоты.",
    "note": "Только во мн. ч.",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "клопоти, справи",
+   "exuk": "Увесь ранок у неї пішов на хатні клопоти.",
+   "noteuk": "Тільки у множині"
   },
   {
    "word": "a romaria",
@@ -5830,7 +5860,10 @@
    "ex": "A romaria da aldeia junta gente de toda a região.",
    "exru": "На деревенский праздник съезжаются со всей округи.",
    "note": "Церковный праздник с процессией, музыкой и едой",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "храмове свято",
+   "exuk": "На сільське свято з’їжджаються з усієї округи.",
+   "noteuk": "Церковне свято з процесією, музикою та їжею"
   },
   {
    "word": "o arraial",
@@ -5840,7 +5873,10 @@
    "ex": "No arraial havia sardinhas assadas e música até tarde.",
    "exru": "На гулянье были жареные сардины и музыка допоздна.",
    "note": "Июньские arraiais — главные праздники Лиссабона",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "народне гуляння",
+   "exuk": "На гулянні були смажені сардини і музика допізна.",
+   "noteuk": "Червневі arraiais — головні свята Лісабона"
   },
   {
    "word": "o acampamento",
@@ -5850,7 +5886,10 @@
    "ex": "Montámos o acampamento junto ao rio antes de escurecer.",
    "exru": "Мы разбили лагерь у реки до темноты.",
    "note": "",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "табір, стоянка",
+   "exuk": "Ми розбили табір біля річки до темряви.",
+   "noteuk": ""
   },
   {
    "word": "o guisado",
@@ -5860,7 +5899,10 @@
    "ex": "O guisado de vitela leva batata e cenoura.",
    "exru": "В рагу из телятины кладут картошку и морковь.",
    "note": "Guisar — тушить в соусе, близко к estufar",
-   "tema": "B8"
+   "tema": "B8",
+   "uk": "рагу",
+   "exuk": "У рагу з телятини кладуть картоплю й моркву.",
+   "noteuk": "Guisar — тушкувати в соусі, близько до estufar"
   },
   {
    "word": "inadequado",
@@ -5870,7 +5912,10 @@
    "ex": "O tom da mensagem era inadequado para um cliente.",
    "exru": "Тон сообщения для клиента был неуместным.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "недоречний, невідповідний",
+   "exuk": "Тон повідомлення для клієнта був недоречний.",
+   "noteuk": ""
   },
   {
    "word": "o terço",
@@ -5880,7 +5925,10 @@
    "ex": "Um terço dos alunos faltou por causa da gripe.",
    "exru": "Треть учеников не пришла из-за гриппа.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "третина",
+   "exuk": "Третина учнів не прийшла через грип.",
+   "noteuk": ""
   },
   {
    "word": "o triplo",
@@ -5890,7 +5938,10 @@
    "ex": "Vendeu o terreno pelo triplo do que pagou.",
    "exru": "Он продал участок втрое дороже, чем купил.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "утричі більше",
+   "exuk": "Він продав ділянку втричі дорожче, ніж купив.",
+   "noteuk": ""
   },
   {
    "word": "a minoria",
@@ -5900,7 +5951,10 @@
    "ex": "Só uma minoria dos presentes se opôs à proposta.",
    "exru": "Против предложения выступило лишь меньшинство присутствующих.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "меншість",
+   "exuk": "Проти пропозиції виступила лише меншість присутніх.",
+   "noteuk": ""
   },
   {
    "word": "o montante",
@@ -5910,7 +5964,10 @@
    "ex": "O montante total aparece no fim da fatura.",
    "exru": "Итоговая сумма указана в конце счёта.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "сума до сплати",
+   "exuk": "Підсумкова сума зазначена наприкінці рахунку.",
+   "noteuk": ""
   },
   {
    "word": "a escassez",
@@ -5920,7 +5977,10 @@
    "ex": "Há escassez de médicos de família em muitas zonas.",
    "exru": "Во многих районах не хватает семейных врачей.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "брак, нестача",
+   "exuk": "У багатьох районах бракує сімейних лікарів.",
+   "noteuk": ""
   },
   {
    "word": "a abundância",
@@ -5930,7 +5990,10 @@
    "ex": "Naquele ano houve abundância de azeitona no Alentejo.",
    "exru": "В тот год в Алентежу был обильный урожай оливок.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "достаток, рясність",
+   "exuk": "Того року в Алентежу був рясний урожай оливок.",
+   "noteuk": ""
   },
   {
    "word": "subtrair",
@@ -5940,7 +6003,10 @@
    "ex": "Subtrai o desconto e paga só o que resta.",
    "exru": "Вычти скидку и заплати только остаток.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "віднімати",
+   "exuk": "Відніми знижку і заплати тільки решту.",
+   "noteuk": ""
   },
   {
    "word": "raso",
@@ -5950,7 +6016,10 @@
    "ex": "A piscina é rasa deste lado, dá para as crianças.",
    "exru": "С этой стороны бассейн мелкий, детям подходит.",
    "note": "Colher rasa — ложка без горки",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "мілкий, неглибокий",
+   "exuk": "З цього боку басейн мілкий, дітям підходить.",
+   "noteuk": "Colher rasa — ложка без верху"
   },
   {
    "word": "oval",
@@ -5960,7 +6029,10 @@
    "ex": "A mesa oval da sala levava dez pessoas.",
    "exru": "Овальный стол в гостиной вмещал десять человек.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "овальний",
+   "exuk": "Овальний стіл у вітальні вміщав десятьох людей.",
+   "noteuk": ""
   },
   {
    "word": "curvo",
@@ -5970,7 +6042,10 @@
    "ex": "O caminho curvo dá mais volta, mas é bonito.",
    "exru": "Извилистая дорога длиннее, зато красивая.",
    "note": "A curva — поворот дороги",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "вигнутий",
+   "exuk": "Звивиста дорога довша, зате гарна.",
+   "noteuk": "A curva — поворот дороги"
   },
   {
    "word": "áspero",
@@ -5980,7 +6055,10 @@
    "ex": "A toalha estava áspera de tanto ser lavada.",
    "exru": "Полотенце стало жёстким от частых стирок.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "шорсткий",
+   "exuk": "Рушник став цупкий від частого прання.",
+   "noteuk": ""
   },
   {
    "word": "pontiagudo",
@@ -5990,7 +6068,10 @@
    "ex": "Guarda essa faca pontiaguda longe das crianças.",
    "exru": "Убери этот острый нож подальше от детей.",
    "note": "Об острие, не о вкусе: острый на вкус — picante",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "загострений",
+   "exuk": "Прибери цей гострий ніж подалі від дітей.",
+   "noteuk": "Про вістря, не про смак: гострий на смак — picante"
   },
   {
    "word": "espesso",
@@ -6000,7 +6081,10 @@
    "ex": "O molho ficou espesso de mais, junta um pouco de água.",
    "exru": "Соус вышел слишком густым, добавь немного воды.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "тягучий, густий",
+   "exuk": "Соус вийшов надто густий, додай трохи води.",
+   "noteuk": ""
   },
   {
    "word": "o contorno",
@@ -6010,7 +6094,10 @@
    "ex": "Via-se o contorno da serra através do nevoeiro.",
    "exru": "Сквозь туман виднелись очертания гор.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "обрис, контур",
+   "exuk": "Крізь туман виднілися обриси гір.",
+   "noteuk": ""
   },
   {
    "word": "ocorrer",
@@ -6020,7 +6107,10 @@
    "ex": "O acidente ocorreu ao início da manhã de domingo.",
    "exru": "Авария произошла ранним воскресным утром.",
    "note": "Ocorre-me que… — мне приходит в голову, что…",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "ставатися, мати місце",
+   "exuk": "Аварія сталася раннього недільного ранку.",
+   "noteuk": "Ocorre-me que… — мені спадає на думку, що…"
   },
   {
    "word": "permanecer",
@@ -6030,7 +6120,10 @@
    "ex": "O museu permanece fechado até ao fim das obras.",
    "exru": "Музей остаётся закрытым до конца ремонта.",
    "note": "Формальнее, чем ficar",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "лишатися незмінним",
+   "exuk": "Музей лишається зачиненим до кінця ремонту.",
+   "noteuk": "Формальніше, ніж ficar"
   },
   {
    "word": "consistir",
@@ -6040,7 +6133,10 @@
    "ex": "O trabalho consiste em atender e registar pedidos.",
    "exru": "Работа состоит в приёме и оформлении заявок.",
    "note": "consistir em — требует em",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "полягати",
+   "exuk": "Робота полягає в прийомі та оформленні заявок.",
+   "noteuk": "consistir em — потребує em"
   },
   {
    "word": "a circunstância",
@@ -6050,7 +6146,10 @@
    "ex": "Nestas circunstâncias, é melhor adiar a viagem.",
    "exru": "При таких обстоятельствах поездку лучше отложить.",
    "note": "",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "обставина",
+   "exuk": "За таких обставин поїздку краще відкласти.",
+   "noteuk": ""
   },
   {
    "word": "o extremo",
@@ -6060,7 +6159,10 @@
    "ex": "A casa fica no extremo norte da aldeia.",
    "exru": "Дом стоит на самом северном краю деревни.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "крайність, самий край",
+   "exuk": "Дім стоїть на найпівнічнішому краю села.",
+   "noteuk": ""
   },
   {
    "word": "a profundidade",
@@ -6070,7 +6172,10 @@
    "ex": "A piscina tem dois metros de profundidade ao fundo.",
    "exru": "В глубокой части бассейна два метра.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "глибина",
+   "exuk": "У глибокій частині басейну два метри.",
+   "noteuk": ""
   },
   {
    "word": "o horizonte",
@@ -6080,7 +6185,10 @@
    "ex": "O sol desapareceu no horizonte por volta das nove.",
    "exru": "Солнце скрылось за горизонтом около девяти.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "обрій",
+   "exuk": "Сонце зникло за обрієм близько дев’ятої.",
+   "noteuk": ""
   },
   {
    "word": "o atalho",
@@ -6090,7 +6198,10 @@
    "ex": "Conhece um atalho que poupa dez minutos de viagem.",
    "exru": "Он знает короткую дорогу, экономящую десять минут.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "коротша дорога",
+   "exuk": "Він знає коротшу дорогу, що заощаджує десять хвилин.",
+   "noteuk": ""
   },
   {
    "word": "a borda",
@@ -6100,7 +6211,10 @@
    "ex": "Deixou o copo na borda da mesa e caiu.",
    "exru": "Он оставил стакан на краю стола, и тот упал.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "край, кромка",
+   "exuk": "Він лишив склянку на краю столу, і та впала.",
+   "noteuk": ""
   },
   {
    "word": "a superfície",
@@ -6110,7 +6224,10 @@
    "ex": "Limpa bem a superfície antes de pintar a parede.",
    "exru": "Хорошо очисти поверхность, прежде чем красить стену.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "поверхня",
+   "exuk": "Добре очисти поверхню, перш ніж фарбувати стіну.",
+   "noteuk": ""
   },
   {
    "word": "rodear",
@@ -6120,7 +6237,10 @@
    "ex": "Um muro alto rodeia toda a propriedade.",
    "exru": "Всю усадьбу окружает высокая стена.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "оперізувати, обступати",
+   "exuk": "Усю садибу оточує високий мур.",
+   "noteuk": ""
   },
   {
    "word": "percorrer",
@@ -6130,7 +6250,10 @@
    "ex": "Percorremos a costa toda de carro em três dias.",
    "exru": "Всё побережье мы объехали на машине за три дня.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "проходити, об’їжджати",
+   "exuk": "Усе узбережжя ми об’їхали машиною за три дні.",
+   "noteuk": ""
   },
   {
    "word": "localizar",
@@ -6140,7 +6263,10 @@
    "ex": "A aplicação localiza o autocarro em tempo real.",
    "exru": "Приложение показывает, где автобус, в реальном времени.",
    "note": "Localizar-se — находиться где-то",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "визначати місце",
+   "exuk": "Застосунок показує, де автобус, у реальному часі.",
+   "noteuk": "Localizar-se — розташовуватися десь"
   },
   {
    "word": "o amanhecer",
@@ -6150,7 +6276,10 @@
    "ex": "Saímos ao amanhecer para evitar o calor do dia.",
    "exru": "Мы вышли на рассвете, чтобы не попасть под дневную жару.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "світанок",
+   "exuk": "Ми вийшли на світанку, щоб не потрапити під денну спеку.",
+   "noteuk": ""
   },
   {
    "word": "o anoitecer",
@@ -6160,7 +6289,10 @@
    "ex": "Ao anoitecer, as andorinhas voltam todas ao ninho.",
    "exru": "В сумерках ласточки все возвращаются в гнёзда.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "сутінки",
+   "exuk": "У сутінках ластівки всі повертаються до гнізд.",
+   "noteuk": ""
   },
   {
    "word": "apressar",
@@ -6170,7 +6302,10 @@
    "ex": "Não me apresses, ainda temos meia hora.",
    "exru": "Не торопи меня, у нас ещё полчаса.",
    "note": "Apressar-se — торопиться самому",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "квапити",
+   "exuk": "Не квап мене, у нас ще пів години.",
+   "noteuk": "Apressar-se — квапитися самому"
   },
   {
    "word": "atempado",
@@ -6180,7 +6315,10 @@
    "ex": "O aviso atempado evitou um problema bem maior.",
    "exru": "Своевременное предупреждение предотвратило гораздо большую проблему.",
    "note": "Atempadamente — вовремя, заблаговременно",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "своєчасний",
+   "exuk": "Своєчасне попередження запобігло значно більшій проблемі.",
+   "noteuk": "Atempadamente — вчасно, завчасно"
   },
   {
    "word": "rígido",
@@ -6190,7 +6328,10 @@
    "ex": "As regras do condomínio são rígidas quanto ao barulho.",
    "exru": "Правила дома строги в отношении шума.",
    "note": "",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "жорсткий, суворий",
+   "exuk": "Правила будинку суворі щодо шуму.",
+   "noteuk": ""
   },
   {
    "word": "opaco",
@@ -6200,7 +6341,10 @@
    "ex": "O vidro da casa de banho é opaco por dentro.",
    "exru": "Стекло в ванной изнутри матовое.",
    "note": "",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "непрозорий, матовий",
+   "exuk": "Скло у ванній зсередини матове.",
+   "noteuk": ""
   },
   {
    "word": "ardente",
@@ -6210,7 +6354,10 @@
    "ex": "Falou do projeto com um entusiasmo ardente.",
    "exru": "О проекте он говорил с пылким воодушевлением.",
    "note": "Arder — гореть, жечь",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "жагучий, палкий",
+   "exuk": "Про проєкт він говорив із палким запалом.",
+   "noteuk": "Arder — горіти, пекти"
   },
   {
    "word": "contudo",
@@ -6220,7 +6367,10 @@
    "ex": "O preço é alto; contudo, a qualidade justifica-o.",
    "exru": "Цена высокая, и всё же качество её оправдывает.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "і все ж",
+   "exuk": "Ціна висока, і все ж якість її виправдовує.",
+   "noteuk": ""
   },
   {
    "word": "conforme",
@@ -6230,7 +6380,10 @@
    "ex": "Preencha o formulário conforme as instruções da página.",
    "exru": "Заполните бланк согласно указаниям на странице.",
    "note": "«Conforme» в ответе — «смотря как», «по-разному»",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "згідно з, відповідно до",
+   "exuk": "Заповніть бланк згідно з вказівками на сторінці.",
+   "noteuk": "«Conforme» у відповіді — «як коли», «по-різному»"
   },
   {
    "word": "mediante",
@@ -6240,7 +6393,10 @@
    "ex": "O acesso à sala faz-se mediante marcação prévia.",
    "exru": "Доступ в зал — по предварительной записи.",
    "note": "Канцелярское слово, часто в объявлениях",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "за посередництвом, за умови",
+   "exuk": "Доступ до зали — за попереднім записом.",
+   "noteuk": "Канцелярське слово, часто в оголошеннях"
   },
   {
    "word": "perante",
@@ -6250,7 +6406,10 @@
    "ex": "Perante tantas dúvidas, decidimos adiar a compra.",
    "exru": "Перед лицом стольких сомнений мы отложили покупку.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "перед лицем",
+   "exuk": "Перед лицем стількох сумнівів ми відклали покупку.",
+   "noteuk": ""
   },
   {
    "word": "caso",
@@ -6260,7 +6419,10 @@
    "ex": "Caso não possas vir, avisa-me até quinta.",
    "exru": "Если не сможешь прийти, предупреди до четверга.",
    "note": "После caso — конъюнктив: caso possas, caso venha",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "якщо, у разі",
+   "exuk": "Якщо не зможеш прийти, попередь до четверга.",
+   "noteuk": "Після caso — кон’юнктив: caso possas, caso venha"
   },
   {
    "word": "sequer",
@@ -6270,7 +6432,10 @@
    "ex": "Saiu sem sequer dizer adeus a ninguém.",
    "exru": "Он ушёл, даже ни с кем не попрощавшись.",
    "note": "Nem sequer — даже не",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "хоч би, навіть",
+   "exuk": "Він пішов, навіть ні з ким не попрощавшись.",
+   "noteuk": "Nem sequer — навіть не"
   },
   {
    "word": "decerto",
@@ -6280,7 +6445,10 @@
    "ex": "Decerto já chegaram, o carro está lá fora.",
    "exru": "Наверняка они уже приехали, машина стоит снаружи.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "певно, напевне",
+   "exuk": "Певно, вони вже приїхали, машина стоїть надворі.",
+   "noteuk": ""
   },
   {
    "word": "dificilmente",
@@ -6290,7 +6458,10 @@
    "ex": "Dificilmente conseguimos chegar lá antes do jantar.",
    "exru": "Вряд ли мы успеем туда до ужина.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "навряд чи",
+   "exuk": "Навряд чи ми встигнемо туди до вечері.",
+   "noteuk": ""
   },
   {
    "word": "haver de",
@@ -6300,7 +6471,10 @@
    "ex": "Hei de visitar os Açores um dia destes.",
    "exru": "Когда-нибудь я непременно съезжу на Азоры.",
    "note": "Обещание или намерение: hei de, hás de, há de",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "неодмінно колись зробити",
+   "exuk": "Колись я неодмінно з’їжджу на Азори.",
+   "noteuk": "Обіцянка або намір: hei de, hás de, há de"
   },
   {
    "word": "ter em conta",
@@ -6310,7 +6484,10 @@
    "ex": "É preciso ter em conta o preço das portagens.",
    "exru": "Нужно учитывать стоимость проезда по трассе.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "брати до уваги",
+   "exuk": "Треба враховувати вартість проїзду трасою.",
+   "noteuk": ""
   },
   {
    "word": "pôr em causa",
@@ -6320,7 +6497,10 @@
    "ex": "Ninguém pôs em causa a honestidade dele.",
    "exru": "Его честность никто под сомнение не ставил.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "ставити під сумнів",
+   "exuk": "Його чесність ніхто під сумнів не ставив.",
+   "noteuk": ""
   },
   {
    "word": "levar a cabo",
@@ -6330,7 +6510,10 @@
    "ex": "A câmara levou a cabo as obras em dois meses.",
    "exru": "Мэрия провела работы за два месяца.",
    "note": "",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "доводити до кінця",
+   "exuk": "Мерія провела роботи за два місяці.",
+   "noteuk": ""
   },
   {
    "word": "dar origem a",
@@ -6340,7 +6523,10 @@
    "ex": "A discussão deu origem a uma mudança de regras.",
    "exru": "Спор привёл к изменению правил.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "спричиняти появу",
+   "exuk": "Суперечка привела до зміни правил.",
+   "noteuk": ""
   },
   {
    "word": "ter lugar",
@@ -6350,7 +6536,10 @@
    "ex": "A cerimónia teve lugar no claustro do mosteiro.",
    "exru": "Церемония прошла в монастырском дворике.",
    "note": "Книжное; в речи чаще ser или realizar-se",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "відбуватися",
+   "exuk": "Церемонія пройшла в монастирському дворику.",
+   "noteuk": "Книжне; у мовленні частіше ser або realizar-se"
   },
   {
    "word": "fazer face a",
@@ -6360,7 +6549,10 @@
    "ex": "As famílias fazem face a contas cada vez maiores.",
    "exru": "Семьям приходится справляться со всё бо́льшими счетами.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "стояти перед, протистояти",
+   "exuk": "Родинам доводиться давати раду дедалі більшим рахункам.",
+   "noteuk": ""
   },
   {
    "word": "dar-se conta",
@@ -6370,7 +6562,10 @@
    "ex": "Só me dei conta do erro no dia seguinte.",
    "exru": "Я заметил ошибку только на следующий день.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "усвідомлювати, схаменутися",
+   "exuk": "Я помітив помилку лише наступного дня.",
+   "noteuk": ""
   },
   {
    "word": "ao passo que",
@@ -6380,7 +6575,10 @@
    "ex": "Ele fala pouco, ao passo que ela conversa com todos.",
    "exru": "Он молчалив, тогда как она говорит со всеми.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "натомість, у той час як",
+   "exuk": "Він мовчазний, тоді як вона говорить з усіма.",
+   "noteuk": ""
   },
   {
    "word": "a fim de",
@@ -6390,7 +6588,10 @@
    "ex": "Saímos cedo a fim de evitar as filas.",
    "exru": "Мы выехали рано, чтобы не стоять в очередях.",
    "note": "Книжнее, чем para",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "щоб, з метою",
+   "exuk": "Ми виїхали рано, щоб не стояти в чергах.",
+   "noteuk": "Книжніше, ніж para"
   },
   {
    "word": "caso contrário",
@@ -6400,7 +6601,10 @@
    "ex": "Confirma a reserva; caso contrário, perdes o lugar.",
    "exru": "Подтверди бронь, иначе потеряешь место.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "інакше, у протилежному разі",
+   "exuk": "Підтверди бронь, інакше втратиш місце.",
+   "noteuk": ""
   },
   {
    "word": "com efeito",
@@ -6410,7 +6614,10 @@
    "ex": "Com efeito, os números confirmam o que dizia.",
    "exru": "И в самом деле, цифры подтверждают его слова.",
    "note": "Книжное вводное слово",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "і справді",
+   "exuk": "І справді, цифри підтверджують його слова.",
+   "noteuk": "Книжне вставне слово"
   },
   {
    "word": "de forma a",
@@ -6420,7 +6627,10 @@
    "ex": "Arrumei as caixas de forma a caberem todas.",
    "exru": "Я сложил коробки так, чтобы поместились все.",
    "note": "То же самое — de modo a",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "так, щоб",
+   "exuk": "Я склав коробки так, щоб помістилися всі.",
+   "noteuk": "Те саме — de modo a"
   },
   {
    "word": "de modo que",
@@ -6430,7 +6640,10 @@
    "ex": "Perdi o comboio, de modo que cheguei atrasado.",
    "exru": "Я опоздал на поезд, так что пришёл поздно.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "так що",
+   "exuk": "Я запізнився на потяг, так що прийшов пізно.",
+   "noteuk": ""
   },
   {
    "word": "dado que",
@@ -6440,7 +6653,10 @@
    "ex": "Dado que estava fechado, voltámos no dia seguinte.",
    "exru": "Поскольку было закрыто, мы вернулись на следующий день.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "оскільки",
+   "exuk": "Оскільки було зачинено, ми повернулися наступного дня.",
+   "noteuk": ""
   },
   {
    "word": "por conseguinte",
@@ -6450,7 +6666,10 @@
    "ex": "Faltou à prova; por conseguinte, ficou reprovado.",
    "exru": "Он не пришёл на экзамен, следовательно, не сдал.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "отже, тому",
+   "exuk": "Він не прийшов на іспит, отже, не склав.",
+   "noteuk": ""
   },
   {
    "word": "por sua vez",
@@ -6460,7 +6679,10 @@
    "ex": "A filha, por sua vez, preferiu ficar em Lisboa.",
    "exru": "Дочь, в свою очередь, предпочла остаться в Лиссабоне.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "своєю чергою",
+   "exuk": "Донька, своєю чергою, воліла лишитися в Лісабоні.",
+   "noteuk": ""
   },
   {
    "word": "uma vez que",
@@ -6470,7 +6692,10 @@
    "ex": "Uma vez que já estás aqui, ajuda-me com isto.",
    "exru": "Раз уж ты здесь, помоги мне с этим.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "раз уже, позаяк",
+   "exuk": "Раз уже ти тут, допоможи мені з цим.",
+   "noteuk": ""
   },
   {
    "word": "visto que",
@@ -6480,7 +6705,10 @@
    "ex": "Visto que ninguém se opôs, seguimos com o plano.",
    "exru": "Раз никто не возражал, мы продолжили по плану.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "з огляду на те, що",
+   "exuk": "Раз ніхто не заперечував, ми продовжили за планом.",
+   "noteuk": ""
   },
   {
    "word": "a não ser que",
@@ -6490,7 +6718,10 @@
    "ex": "Vamos à praia, a não ser que chova de manhã.",
    "exru": "Поедем на пляж, если только с утра не будет дождя.",
    "note": "Требует конъюнктива: a não ser que chova",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "якщо тільки не",
+   "exuk": "Поїдемо на пляж, якщо тільки зранку не буде дощу.",
+   "noteuk": "Потребує кон’юнктива: a não ser que chova"
   },
   {
    "word": "nem que",
@@ -6500,7 +6731,10 @@
    "ex": "Vou lá hoje, nem que seja só por meia hora.",
    "exru": "Я туда сегодня зайду, пусть даже на полчаса.",
    "note": "Требует конъюнктива",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "навіть якщо, хай навіть",
+   "exuk": "Я туди сьогодні зайду, хай навіть на пів години.",
+   "noteuk": "Потребує кон’юнктива"
   },
   {
    "word": "por muito que",
@@ -6510,7 +6744,10 @@
    "ex": "Por muito que tente, não consigo acordar cedo.",
    "exru": "Сколько ни пытаюсь, рано вставать не получается.",
    "note": "Требует конъюнктива",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "хоч би скільки",
+   "exuk": "Хоч скільки намагаюся, рано вставати не виходить.",
+   "noteuk": "Потребує кон’юнктива"
   },
   {
    "word": "inclusive",
@@ -6520,7 +6757,10 @@
    "ex": "Vieram todos, inclusive quem morava mais longe daqui.",
    "exru": "Пришли все, в том числе те, кто живёт дальше всех.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "зокрема й",
+   "exuk": "Прийшли всі, зокрема й ті, хто живе найдалі.",
+   "noteuk": ""
   },
   {
    "word": "relativamente",
@@ -6530,7 +6770,10 @@
    "ex": "O exame foi relativamente fácil para quem estudou.",
    "exru": "Для тех, кто готовился, экзамен был относительно лёгким.",
    "note": "Relativamente a — по отношению к чему-то",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "відносно, доволі",
+   "exuk": "Для тих, хто готувався, іспит був відносно легкий.",
+   "noteuk": "Relativamente a — стосовно чогось"
   },
   {
    "word": "consideravelmente",
@@ -6540,7 +6783,10 @@
    "ex": "Os preços subiram consideravelmente desde o verão.",
    "exru": "С лета цены значительно выросли.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "значно",
+   "exuk": "Від літа ціни значно зросли.",
+   "noteuk": ""
   },
   {
    "word": "unicamente",
@@ -6550,7 +6796,10 @@
    "ex": "Esta porta serve unicamente para as emergências.",
    "exru": "Эта дверь только для экстренных случаев.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "лише, винятково",
+   "exuk": "Ці двері лише для екстрених випадків.",
+   "noteuk": ""
   },
   {
    "word": "essencialmente",
@@ -6560,7 +6809,10 @@
    "ex": "A dieta dele é essencialmente feita de peixe.",
    "exru": "Питается он в основном рыбой.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "переважно, по суті",
+   "exuk": "Харчується він переважно рибою.",
+   "noteuk": ""
   },
   {
    "word": "particularmente",
@@ -6570,7 +6822,10 @@
    "ex": "O inverno foi particularmente duro este ano.",
    "exru": "Зима в этом году выдалась особенно суровой.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "особливо, надто",
+   "exuk": "Зима цього року видалася особливо сувора.",
+   "noteuk": ""
   },
   {
    "word": "ocasionalmente",
@@ -6580,7 +6835,10 @@
    "ex": "Ocasionalmente jantamos fora, quase sempre ao sábado.",
    "exru": "Время от времени мы ужинаем в городе, почти всегда по субботам.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "вряди-годи",
+   "exuk": "Вряди-годи ми вечеряємо в місті, майже завжди по суботах.",
+   "noteuk": ""
   },
   {
    "word": "gradualmente",
@@ -6590,7 +6848,10 @@
    "ex": "A dor foi passando gradualmente ao longo da semana.",
    "exru": "Боль постепенно проходила всю неделю.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "поступово",
+   "exuk": "Біль поступово минав протягом тижня.",
+   "noteuk": ""
   },
   {
    "word": "definitivamente",
@@ -6600,7 +6861,10 @@
    "ex": "Decidimos definitivamente mudar-nos para o Porto no verão.",
    "exru": "Мы окончательно решили переехать в Порту летом.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "остаточно",
+   "exuk": "Ми остаточно вирішили переїхати до Порту влітку.",
+   "noteuk": ""
   },
   {
    "word": "evidentemente",
@@ -6610,7 +6874,10 @@
    "ex": "Evidentemente, ninguém quis assumir a culpa do erro.",
    "exru": "Само собой, вину за ошибку никто брать не захотел.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "певна річ, ясна річ",
+   "exuk": "Ясна річ, провину за помилку ніхто брати не захотів.",
+   "noteuk": ""
   },
   {
    "word": "supostamente",
@@ -6620,7 +6887,10 @@
    "ex": "Supostamente, a obra estaria pronta em maio.",
    "exru": "Предполагалось, что стройку закончат в мае.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "як гадають, буцімто",
+   "exuk": "Гадали, що будівництво закінчать у травні.",
+   "noteuk": ""
   },
   {
    "word": "alegadamente",
@@ -6630,7 +6900,10 @@
    "ex": "O suspeito terá alegadamente fugido pela janela.",
    "exru": "Подозреваемый, по утверждениям, скрылся через окно.",
    "note": "Слово из новостей и полицейских сводок",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "за твердженнями, начебто",
+   "exuk": "Підозрюваний, за твердженнями, утік через вікно.",
+   "noteuk": "Слово з новин і поліційних зведень"
   },
   {
    "word": "assumir",
@@ -6640,7 +6913,10 @@
    "ex": "Assumiu a responsabilidade pelo atraso da entrega.",
    "exru": "Он взял на себя ответственность за задержку доставки.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "брати на себе",
+   "exuk": "Він узяв на себе відповідальність за затримку доставки.",
+   "noteuk": ""
   },
   {
    "word": "atribuir",
@@ -6650,7 +6926,10 @@
    "ex": "O júri atribuiu o prémio a um autor estreante.",
    "exru": "Жюри присудило премию дебютанту.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "присуджувати; приписувати",
+   "exuk": "Журі присудило премію дебютантові.",
+   "noteuk": ""
   },
   {
    "word": "constatar",
@@ -6660,7 +6939,10 @@
    "ex": "Constatámos que o problema vinha da caldeira.",
    "exru": "Мы установили, что дело было в котле.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "констатувати",
+   "exuk": "Ми встановили, що річ була в котлі.",
+   "noteuk": ""
   },
   {
    "word": "demonstrar",
@@ -6670,7 +6952,10 @@
    "ex": "Os dados demonstram que o consumo tem baixado.",
    "exru": "Данные показывают, что потребление снижается.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "показувати наочно",
+   "exuk": "Дані показують, що споживання знижується.",
+   "noteuk": ""
   },
   {
    "word": "denunciar",
@@ -6680,7 +6965,10 @@
    "ex": "Os vizinhos denunciaram o barulho à polícia.",
    "exru": "Соседи пожаловались на шум в полицию.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "заявляти про порушення",
+   "exuk": "Сусіди поскаржилися на шум у поліцію.",
+   "noteuk": ""
   },
   {
    "word": "destinar",
@@ -6690,7 +6978,10 @@
    "ex": "O dinheiro destina-se à reparação do telhado.",
    "exru": "Деньги предназначены на ремонт крыши.",
    "note": "destinar-se a — быть предназначенным для",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "призначати для",
+   "exuk": "Гроші призначені на ремонт даху.",
+   "noteuk": "destinar-se a — бути призначеним для"
   },
   {
    "word": "determinar",
@@ -6700,7 +6991,10 @@
    "ex": "A lei determina o valor mínimo do ordenado.",
    "exru": "Закон устанавливает минимальный размер оклада.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "приписувати, установлювати",
+   "exuk": "Закон установлює мінімальний розмір окладу.",
+   "noteuk": ""
   },
   {
    "word": "efetuar",
@@ -6710,7 +7004,10 @@
    "ex": "Pode efetuar o pagamento por transferência bancária.",
    "exru": "Оплату можно произвести банковским переводом.",
    "note": "Канцелярское слово из счетов и объявлений",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "здійснювати (офіційно)",
+   "exuk": "Оплату можна здійснити банківським переказом.",
+   "noteuk": "Канцелярське слово з рахунків і оголошень"
   },
   {
    "word": "empregar",
@@ -6720,7 +7017,10 @@
    "ex": "A fábrica emprega duzentas pessoas da região.",
    "exru": "На заводе работают двести человек из этих мест.",
    "note": "Также «употреблять слово»: empregar um termo",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "давати роботу; вживати",
+   "exuk": "На заводі працюють двісті людей з цих місць.",
+   "noteuk": "Також «вживати слово»: empregar um termo"
   },
   {
    "word": "encarar",
@@ -6730,7 +7030,10 @@
    "ex": "Encarou a mudança como uma oportunidade nova.",
    "exru": "Перемены он воспринял как новую возможность.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "сприймати, дивитися в лице",
+   "exuk": "Зміни він сприйняв як нову можливість.",
+   "noteuk": ""
   },
   {
    "word": "esclarecer",
@@ -6740,7 +7043,10 @@
    "ex": "O funcionário esclareceu todas as nossas dúvidas.",
    "exru": "Сотрудник развеял все наши сомнения.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "прояснювати, роз’яснювати",
+   "exuk": "Працівник розвіяв усі наші сумніви.",
+   "noteuk": ""
   },
   {
    "word": "especificar",
@@ -6750,7 +7056,10 @@
    "ex": "Especifique a morada completa no formulário de inscrição.",
    "exru": "Укажите в бланке записи полный адрес.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "уточнювати",
+   "exuk": "Зазначте в бланку запису повну адресу.",
+   "noteuk": ""
   },
   {
    "word": "estabelecer",
@@ -6760,7 +7069,10 @@
    "ex": "Estabeleceram uma boa relação com os vizinhos.",
    "exru": "Они наладили хорошие отношения с соседями.",
    "note": "estabelecer-se — обосноваться где-то",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "налагоджувати, установлювати",
+   "exuk": "Вони налагодили добрі стосунки із сусідами.",
+   "noteuk": "estabelecer-se — осісти десь"
   },
   {
    "word": "evidenciar",
@@ -6770,7 +7082,10 @@
    "ex": "O relatório evidencia falhas na segurança do edifício.",
    "exru": "Отчёт выявляет недостатки в безопасности здания.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "засвідчувати, унаочнювати",
+   "exuk": "Звіт виявляє недоліки в безпеці будівлі.",
+   "noteuk": ""
   },
   {
    "word": "evoluir",
@@ -6780,7 +7095,10 @@
    "ex": "A língua evolui mais depressa do que pensamos.",
    "exru": "Язык меняется быстрее, чем нам кажется.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "розвиватися з часом",
+   "exuk": "Мова змінюється швидше, ніж нам здається.",
+   "noteuk": ""
   },
   {
    "word": "executar",
@@ -6790,7 +7108,10 @@
    "ex": "A equipa executou o plano sem um único erro.",
    "exru": "Команда выполнила план без единой ошибки.",
    "note": "",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "виконувати задум",
+   "exuk": "Команда виконала план без жодної помилки.",
+   "noteuk": ""
   },
   {
    "word": "expandir",
@@ -6800,7 +7121,10 @@
    "ex": "A cadeia expandiu-se para mais três cidades.",
    "exru": "Сеть расширилась ещё на три города.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "розширювати(ся)",
+   "exuk": "Мережа розширилася ще на три міста.",
+   "noteuk": ""
   },
   {
    "word": "formular",
@@ -6810,7 +7134,10 @@
    "ex": "Formulou a pergunta de maneira muito clara.",
    "exru": "Он сформулировал вопрос очень ясно.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "формулювати",
+   "exuk": "Він сформулював запитання дуже ясно.",
+   "noteuk": ""
   },
   {
    "word": "fornecer",
@@ -6820,7 +7147,10 @@
    "ex": "A empresa fornece o pão a todas as escolas.",
    "exru": "Компания поставляет хлеб во все школы.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "постачати",
+   "exuk": "Компанія постачає хліб до всіх шкіл.",
+   "noteuk": ""
   },
   {
    "word": "fortalecer",
@@ -6830,7 +7160,10 @@
    "ex": "A caminhada diária fortalece as pernas e o coração.",
    "exru": "Ежедневная ходьба укрепляет ноги и сердце.",
    "note": "",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "робити міцнішим",
+   "exuk": "Щоденна ходьба зміцнює ноги і серце.",
+   "noteuk": ""
   },
   {
    "word": "gerar",
@@ -6840,7 +7173,10 @@
    "ex": "A notícia gerou muita discussão nas redes sociais.",
    "exru": "Новость вызвала много споров в соцсетях.",
    "note": "",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "породжувати",
+   "exuk": "Новина породила багато суперечок у соцмережах.",
+   "noteuk": ""
   },
   {
    "word": "gerir",
@@ -6850,7 +7186,10 @@
    "ex": "Aprendeu a gerir o tempo entre o trabalho e os filhos.",
    "exru": "Она научилась распределять время между работой и детьми.",
    "note": "A gestão — управление, менеджмент",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "розпоряджатися, урядувати",
+   "exuk": "Вона навчилася розподіляти час між роботою і дітьми.",
+   "noteuk": "A gestão — управління, менеджмент"
   },
   {
    "word": "impor",
@@ -6860,7 +7199,10 @@
    "ex": "A câmara impôs um limite ao ruído noturno.",
    "exru": "Мэрия установила предел ночного шума.",
    "note": "impor-se — заявить о себе, взять верх",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "накидати, запроваджувати",
+   "exuk": "Мерія встановила межу нічного шуму.",
+   "noteuk": "impor-se — заявити про себе, узяти гору"
   },
   {
    "word": "inserir",
@@ -6870,7 +7212,10 @@
    "ex": "Insira o cartão e introduza o código secreto.",
    "exru": "Вставьте карту и введите секретный код.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "вставляти",
+   "exuk": "Вставте картку і введіть таємний код.",
+   "noteuk": ""
   },
   {
    "word": "integrar",
@@ -6880,7 +7225,10 @@
    "ex": "Integrou a equipa logo depois do estágio.",
    "exru": "Он вошёл в команду сразу после стажировки.",
    "note": "integrar-se — освоиться, влиться",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "входити до складу",
+   "exuk": "Він увійшов до команди одразу після стажування.",
+   "noteuk": "integrar-se — освоїтися, влитися"
   },
   {
    "word": "interpretar",
@@ -6890,7 +7238,10 @@
    "ex": "Cada um interpretou o silêncio dela à sua maneira.",
    "exru": "Её молчание каждый истолковал по-своему.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "тлумачити; виконувати роль",
+   "exuk": "Її мовчання кожен витлумачив по-своєму.",
+   "noteuk": ""
   },
   {
    "word": "introduzir",
@@ -6900,7 +7251,10 @@
    "ex": "Introduziram mudanças no horário dos comboios em setembro.",
    "exru": "В сентябре в расписание поездов внесли изменения.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "уводити, вносити",
+   "exuk": "У вересні до розкладу потягів внесли зміни.",
+   "noteuk": ""
   },
   {
    "word": "liderar",
@@ -6910,7 +7264,10 @@
    "ex": "A equipa lidera o campeonato desde novembro.",
    "exru": "Команда лидирует в чемпионате с ноября.",
    "note": "",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "вести перед, лідирувати",
+   "exuk": "Команда лідирує в чемпіонаті від листопада.",
+   "noteuk": ""
   },
   {
    "word": "motivar",
@@ -6920,7 +7277,10 @@
    "ex": "O professor motiva os alunos com exemplos do dia a dia.",
    "exru": "Учитель увлекает учеников примерами из жизни.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "мотивувати, надихати",
+   "exuk": "Учитель захоплює учнів прикладами з життя.",
+   "noteuk": ""
   },
   {
    "word": "optar",
@@ -6930,7 +7290,10 @@
    "ex": "Optámos por ficar mais uma noite em Coimbra.",
    "exru": "Мы предпочли остаться в Коимбре ещё на ночь.",
    "note": "optar por — требует por",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "обирати, віддавати перевагу",
+   "exuk": "Ми воліли лишитися в Коїмбрі ще на ніч.",
+   "noteuk": "optar por — потребує por"
   },
   {
    "word": "possuir",
@@ -6940,7 +7303,10 @@
    "ex": "O prédio possui garagem e elevador novo.",
    "exru": "В доме есть гараж и новый лифт.",
    "note": "Книжнее, чем ter",
-   "tema": "A1"
+   "tema": "A1",
+   "uk": "мати у власності",
+   "exuk": "У будинку є гараж і новий ліфт.",
+   "noteuk": "Книжніше, ніж ter"
   },
   {
    "word": "preservar",
@@ -6950,7 +7316,10 @@
    "ex": "A aldeia preservou as casas de xisto antigas.",
    "exru": "Деревня сохранила старые сланцевые дома.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "зберігати від змін",
+   "exuk": "Село зберегло старі сланцеві будинки.",
+   "noteuk": ""
   },
   {
    "word": "prestar",
@@ -6960,7 +7329,10 @@
    "ex": "A empresa presta serviços de limpeza a escritórios.",
    "exru": "Компания оказывает офисам услуги уборки.",
    "note": "«Não presta» — «никуда не годится»",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "надавати послугу",
+   "exuk": "Компанія надає офісам послуги прибирання.",
+   "noteuk": "«Não presta» — «нікуди не годиться»"
   },
   {
    "word": "promover",
@@ -6970,7 +7342,10 @@
    "ex": "A câmara promove concertos gratuitos no verão.",
    "exru": "Летом мэрия устраивает бесплатные концерты.",
    "note": "Также «повысить в должности»: foi promovido",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "просувати, влаштовувати",
+   "exuk": "Улітку мерія влаштовує безкоштовні концерти.",
+   "noteuk": "Також «підвищити на посаді»: foi promovido"
   },
   {
    "word": "questionar",
@@ -6980,7 +7355,10 @@
    "ex": "Ninguém questionou a decisão do treinador naquele momento.",
    "exru": "Решение тренера в тот момент никто не оспорил.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "ставити під питання",
+   "exuk": "Рішення тренера тієї миті ніхто не оскаржив.",
+   "noteuk": ""
   },
   {
    "word": "refletir",
@@ -6990,7 +7368,10 @@
    "ex": "Preciso de refletir antes de dar uma resposta.",
    "exru": "Мне нужно подумать, прежде чем ответить.",
    "note": "Второе значение — отражать: o espelho reflete",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "розмірковувати",
+   "exuk": "Мені треба подумати, перш ніж відповісти.",
+   "noteuk": "Друге значення — відбивати: o espelho reflete"
   },
   {
    "word": "rejeitar",
@@ -7000,7 +7381,10 @@
    "ex": "A seguradora rejeitou o pedido sem explicar porquê.",
    "exru": "Страховая отклонила заявление, не объяснив почему.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "відхиляти, відкидати",
+   "exuk": "Страхова відхилила заяву, не пояснивши чому.",
+   "noteuk": ""
   },
   {
    "word": "relacionar",
@@ -7010,7 +7394,10 @@
    "ex": "Os médicos relacionam o cansaço com a falta de ferro.",
    "exru": "Врачи связывают усталость с нехваткой железа.",
    "note": "relacionar-se com — общаться, иметь отношение",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "співвідносити",
+   "exuk": "Лікарі пов’язують утому з нестачею заліза.",
+   "noteuk": "relacionar-se com — спілкуватися, мати стосунок"
   },
   {
    "word": "representar",
@@ -7020,7 +7407,10 @@
    "ex": "O advogado representa a família no tribunal.",
    "exru": "Адвокат представляет семью в суде.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "представляти когось",
+   "exuk": "Адвокат представляє родину в суді.",
+   "noteuk": ""
   },
   {
    "word": "restringir",
@@ -7030,7 +7420,10 @@
    "ex": "A entrada está restringida a maiores de idade.",
    "exru": "Вход разрешён только совершеннолетним.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "обмежувати доступ",
+   "exuk": "Вхід дозволено лише повнолітнім.",
+   "noteuk": ""
   },
   {
    "word": "retomar",
@@ -7040,7 +7433,10 @@
    "ex": "Retomámos as aulas depois das férias grandes.",
    "exru": "После больших каникул мы возобновили занятия.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "відновлювати перерване",
+   "exuk": "Після великих канікул ми відновили заняття.",
+   "noteuk": ""
   },
   {
    "word": "rever",
@@ -7050,7 +7446,10 @@
    "ex": "Revi o texto duas vezes antes de o enviar.",
    "exru": "Я дважды перечитал текст, прежде чем отправить.",
    "note": "Также «снова увидеть»: rever um amigo",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "переглядати, перечитувати",
+   "exuk": "Я двічі перечитав текст, перш ніж надіслати.",
+   "noteuk": "Також «знову побачити»: rever um amigo"
   },
   {
    "word": "salientar",
@@ -7060,7 +7459,10 @@
    "ex": "O relatório salienta a falta de pessoal nos hospitais.",
    "exru": "В отчёте особо отмечена нехватка персонала в больницах.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "особливо зазначати",
+   "exuk": "У звіті особливо зазначено брак персоналу в лікарнях.",
+   "noteuk": ""
   },
   {
    "word": "simplificar",
@@ -7070,7 +7472,10 @@
    "ex": "O novo formulário simplificou bastante o processo.",
    "exru": "Новый бланк заметно упростил процедуру.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "спрощувати",
+   "exuk": "Новий бланк помітно спростив процедуру.",
+   "noteuk": ""
   },
   {
    "word": "solicitar",
@@ -7080,7 +7485,10 @@
    "ex": "Solicitei uma segunda via da fatura da luz.",
    "exru": "Я запросил дубликат счёта за электричество.",
    "note": "Segunda via — повторный экземпляр документа",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "запитувати офіційно, клопотати",
+   "exuk": "Я запросив дублікат рахунку за електрику.",
+   "noteuk": "Segunda via — повторний примірник документа"
   },
   {
    "word": "superar",
@@ -7090,7 +7498,10 @@
    "ex": "Superou o medo de falar em público num ano.",
    "exru": "За год он преодолел страх публичных выступлений.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "долати, перевершувати",
+   "exuk": "За рік він подолав страх публічних виступів.",
+   "noteuk": ""
   },
   {
    "word": "suspender",
@@ -7100,7 +7511,10 @@
    "ex": "Suspenderam as obras até ao fim do verão.",
    "exru": "Работы приостановили до конца лета.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "призупиняти",
+   "exuk": "Роботи призупинили до кінця літа.",
+   "noteuk": ""
   },
   {
    "word": "sustentar",
@@ -7110,7 +7524,10 @@
    "ex": "Sustenta a família sozinho desde o divórcio.",
    "exru": "После развода он один содержит семью.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "утримувати; підкріплювати",
+   "exuk": "Після розлучення він сам утримує родину.",
+   "noteuk": ""
   },
   {
    "word": "tolerar",
@@ -7120,7 +7537,10 @@
    "ex": "A escola não tolera atrasos repetidos sem justificação.",
    "exru": "Школа не спускает постоянных опозданий без причины.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "допускати, попускати",
+   "exuk": "Школа не попускає постійних запізнень без причини.",
+   "noteuk": ""
   },
   {
    "word": "transmitir",
@@ -7130,7 +7550,10 @@
    "ex": "O canal transmite o jogo em direto às nove.",
    "exru": "Канал показывает матч в прямом эфире в девять.",
    "note": "Em direto — в прямом эфире",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "передавати; транслювати",
+   "exuk": "Канал показує матч у прямому ефірі о дев’ятій.",
+   "noteuk": "Em direto — у прямому ефірі"
   },
   {
    "word": "unir",
@@ -7140,7 +7563,10 @@
    "ex": "A ponte une as duas margens do rio.",
    "exru": "Мост соединяет два берега реки.",
    "note": "unir-se — объединиться",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "сполучати, поєднувати",
+   "exuk": "Міст сполучає два береги річки.",
+   "noteuk": "unir-se — об’єднатися"
   },
   {
    "word": "visar",
@@ -7150,7 +7576,10 @@
    "ex": "A medida visa reduzir o trânsito no centro.",
    "exru": "Мера нацелена на снижение трафика в центре.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "мати на меті",
+   "exuk": "Захід має на меті зменшити рух у центрі.",
+   "noteuk": ""
   },
   {
    "word": "a abordagem",
@@ -7160,7 +7589,10 @@
    "ex": "A abordagem dele ao problema foi diferente da nossa.",
    "exru": "Его подход к задаче отличался от нашего.",
    "note": "abordar — затрагивать тему, подходить к вопросу",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "підхід до справи",
+   "exuk": "Його підхід до задачі відрізнявся від нашого.",
+   "noteuk": "abordar — порушувати тему, підходити до питання"
   },
   {
    "word": "o âmbito",
@@ -7170,7 +7602,10 @@
    "ex": "A obra faz-se no âmbito do programa da câmara.",
    "exru": "Работы идут в рамках программы мэрии.",
    "note": "No âmbito de — в рамках чего-то",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "рамки, царина",
+   "exuk": "Роботи йдуть у рамках програми мерії.",
+   "noteuk": "No âmbito de — у рамках чогось"
   },
   {
    "word": "o alvo",
@@ -7180,7 +7615,10 @@
    "ex": "A loja foi alvo de um assalto na madrugada de sábado.",
    "exru": "В ночь на субботу магазин ограбили.",
    "note": "Ser alvo de — стать объектом чего-то",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "мішень, ціль нападок",
+   "exuk": "У ніч на суботу магазин пограбували.",
+   "noteuk": "Ser alvo de — стати об’єктом чогось"
   },
   {
    "word": "a ameaça",
@@ -7190,7 +7628,10 @@
    "ex": "A seca é uma ameaça séria para a agricultura.",
    "exru": "Засуха — серьёзная угроза для сельского хозяйства.",
    "note": "Ameaçar — угрожать",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "загроза",
+   "exuk": "Посуха — серйозна загроза для сільського господарства.",
+   "noteuk": "Ameaçar — погрожувати"
   },
   {
    "word": "o cenário",
@@ -7200,7 +7641,10 @@
    "ex": "O pior cenário seria ficarmos sem água quente.",
    "exru": "Худший вариант — остаться без горячей воды.",
    "note": "Также декорации на сцене",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "варіант розвитку подій",
+   "exuk": "Найгірший варіант — лишитися без гарячої води.",
+   "noteuk": "Також декорації на сцені"
   },
   {
    "word": "o ciclo",
@@ -7210,7 +7654,10 @@
    "ex": "O primeiro ciclo do ensino básico dura quatro anos.",
    "exru": "Первая ступень начальной школы длится четыре года.",
    "note": "Школа в Португалии делится на ciclos",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "цикл, ступінь",
+   "exuk": "Перший ступінь початкової школи триває чотири роки.",
+   "noteuk": "Школа в Португалії ділиться на ciclos"
   },
   {
    "word": "o conflito",
@@ -7220,7 +7667,10 @@
    "ex": "O conflito entre vizinhos durou quase dois anos.",
    "exru": "Конфликт между соседями тянулся почти два года.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "конфлікт",
+   "exuk": "Конфлікт між сусідами тягнувся майже два роки.",
+   "noteuk": ""
   },
   {
    "word": "o contexto",
@@ -7230,7 +7680,10 @@
    "ex": "Sem contexto, a frase parece muito mais dura.",
    "exru": "Без контекста фраза звучит гораздо резче.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "контекст, обставини",
+   "exuk": "Без контексту фраза звучить значно різкіше.",
+   "noteuk": ""
   },
   {
    "word": "o contributo",
@@ -7240,7 +7693,10 @@
    "ex": "O contributo dela foi decisivo para o resultado.",
    "exru": "Её вклад оказался решающим для результата.",
    "note": "В Португалии чаще, чем contribuição",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "внесок у спільну справу",
+   "exuk": "Її внесок виявився вирішальним для результату.",
+   "noteuk": "У Португалії частіше, ніж contribuição"
   },
   {
    "word": "o critério",
@@ -7250,7 +7706,10 @@
    "ex": "Qual foi o critério para escolher os candidatos?",
    "exru": "По какому критерию отбирали кандидатов?",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "критерій",
+   "exuk": "За яким критерієм відбирали кандидатів?",
+   "noteuk": ""
   },
   {
    "word": "a dimensão",
@@ -7260,7 +7719,10 @@
    "ex": "Ninguém previu a dimensão do estrago causado.",
    "exru": "Масштаба нанесённого ущерба никто не предвидел.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "масштаб",
+   "exuk": "Масштабу завданої шкоди ніхто не передбачив.",
+   "noteuk": ""
   },
   {
    "word": "o elemento",
@@ -7270,7 +7732,10 @@
    "ex": "Cada elemento da equipa recebeu uma tarefa.",
    "exru": "Каждый участник команды получил задание.",
    "note": "О людях в группе говорят os elementos",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "елемент; учасник групи",
+   "exuk": "Кожен учасник команди отримав завдання.",
+   "noteuk": "Про людей у групі кажуть os elementos"
   },
   {
    "word": "a estratégia",
@@ -7280,7 +7745,10 @@
    "ex": "A estratégia da empresa mudou com a nova direção.",
    "exru": "С новым руководством стратегия компании изменилась.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "стратегія",
+   "exuk": "З новим керівництвом стратегія компанії змінилася.",
+   "noteuk": ""
   },
   {
    "word": "a estrutura",
@@ -7290,7 +7758,10 @@
    "ex": "A estrutura do edifício aguentou bem o sismo.",
    "exru": "Конструкция здания хорошо выдержала землетрясение.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "структура, конструкція",
+   "exuk": "Конструкція будівлі добре витримала землетрус.",
+   "noteuk": ""
   },
   {
    "word": "a evidência",
@@ -7300,7 +7771,10 @@
    "ex": "Não há evidência nenhuma que sustente essa ideia.",
    "exru": "Нет никаких свидетельств в пользу этой мысли.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "свідчення, підтвердження",
+   "exuk": "Немає жодних свідчень на користь цієї думки.",
+   "noteuk": ""
   },
   {
    "word": "a expansão",
@@ -7310,7 +7784,10 @@
    "ex": "A expansão da rede de metro leva vários anos.",
    "exru": "Расширение сети метро занимает несколько лет.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "розростання, зростання",
+   "exuk": "Розширення мережі метро триває кілька років.",
+   "noteuk": ""
   },
   {
    "word": "o fator",
@@ -7320,7 +7797,10 @@
    "ex": "O preço foi o fator decisivo na nossa escolha.",
    "exru": "Цена стала решающим фактором в нашем выборе.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "чинник",
+   "exuk": "Ціна стала вирішальним чинником у нашому виборі.",
+   "noteuk": ""
   },
   {
    "word": "a finalidade",
@@ -7330,7 +7810,10 @@
    "ex": "Qual é a finalidade deste formulário todo?",
    "exru": "Каково назначение всего этого бланка?",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "призначення",
+   "exuk": "Яке призначення всього цього бланка?",
+   "noteuk": ""
   },
   {
    "word": "o impasse",
@@ -7340,7 +7823,10 @@
    "ex": "As negociações chegaram a um impasse total.",
    "exru": "Переговоры зашли в полный тупик.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "безвихідь",
+   "exuk": "Перемовини зайшли в цілковиту безвихідь.",
+   "noteuk": ""
   },
   {
    "word": "o indicador",
@@ -7350,7 +7836,10 @@
    "ex": "Os indicadores da economia melhoraram no verão.",
    "exru": "Летом показатели экономики улучшились.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "індикатор",
+   "exuk": "Улітку показники економіки поліпшилися.",
+   "noteuk": ""
   },
   {
    "word": "o instrumento",
@@ -7360,7 +7849,10 @@
    "ex": "A lei é um instrumento, não uma solução completa.",
    "exru": "Закон — это инструмент, а не готовое решение.",
    "note": "Музыкальный инструмент — тоже instrumento",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "інструмент, засіб",
+   "exuk": "Закон — це засіб, а не готове рішення.",
+   "noteuk": "Музичний інструмент — теж instrumento"
   },
   {
    "word": "a lacuna",
@@ -7370,7 +7862,10 @@
    "ex": "O texto tem lacunas que é preciso preencher.",
    "exru": "В тексте есть пробелы, которые надо заполнить.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "прогалина",
+   "exuk": "У тексті є прогалини, які треба заповнити.",
+   "noteuk": ""
   },
   {
    "word": "a norma",
@@ -7380,7 +7875,10 @@
    "ex": "A norma obriga a usar capacete na obra.",
    "exru": "Правила обязывают носить каску на стройке.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "норма, припис",
+   "exuk": "Правила зобов’язують носити каску на будівництві.",
+   "noteuk": ""
   },
   {
    "word": "o padrão",
@@ -7390,7 +7888,10 @@
    "ex": "A camisa tem um padrão de riscas finas.",
    "exru": "На рубашке узор в тонкую полоску.",
    "note": "Второе значение — стандарт: padrão de qualidade",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "візерунок; взірець",
+   "exuk": "На сорочці візерунок у тонку смужку.",
+   "noteuk": "Друге значення — стандарт: padrão de qualidade"
   },
   {
    "word": "a perspetiva",
@@ -7400,7 +7901,10 @@
    "ex": "Vista nesta perspetiva, a decisão faz mais sentido.",
    "exru": "С этой точки зрения решение выглядит осмысленнее.",
    "note": "Пишется без c — европейская норма",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "погляд, ракурс",
+   "exuk": "З цього погляду рішення виглядає осмисленіше.",
+   "noteuk": "Пишеться без c — європейська норма"
   },
   {
    "word": "o propósito",
@@ -7410,7 +7914,10 @@
    "ex": "Não foi de propósito, garanto que foi sem querer.",
    "exru": "Это вышло не нарочно, уверяю — случайно.",
    "note": "De propósito — нарочно; a propósito — кстати",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "намір, умисел",
+   "exuk": "Це вийшло не навмисне, запевняю — випадково.",
+   "noteuk": "De propósito — навмисне; a propósito — до речі"
   },
   {
    "word": "o recurso",
@@ -7420,7 +7927,10 @@
    "ex": "A escola tem poucos recursos para tantos alunos.",
    "exru": "У школы мало средств на такое число учеников.",
    "note": "Recorrer — прибегнуть; подать апелляцию",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "засіб, ресурс",
+   "exuk": "У школи мало засобів на таку кількість учнів.",
+   "noteuk": "Recorrer — вдатися; подати апеляцію"
   },
   {
    "word": "a referência",
@@ -7430,7 +7940,10 @@
    "ex": "Fez referência ao assunto sem entrar em pormenores.",
    "exru": "Он упомянул о деле, не вдаваясь в подробности.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "згадка; орієнтир",
+   "exuk": "Він згадав про справу, не вдаючись у подробиці.",
+   "noteuk": ""
   },
   {
    "word": "o regime",
@@ -7440,7 +7953,10 @@
    "ex": "Trabalha em regime de tempo parcial desde março.",
    "exru": "С марта он работает на неполной ставке.",
    "note": "Также политический режим и диета",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "режим, лад",
+   "exuk": "Від березня він працює на неповній ставці.",
+   "noteuk": "Також політичний режим і дієта"
   },
   {
    "word": "o rumo",
@@ -7450,7 +7966,10 @@
    "ex": "A conversa tomou um rumo completamente inesperado.",
    "exru": "Разговор принял совершенно неожиданный оборот.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "напрям, перебіг справи",
+   "exuk": "Розмова взяла цілком несподіваний поворот.",
+   "noteuk": ""
   },
   {
    "word": "o setor",
@@ -7460,7 +7979,10 @@
    "ex": "O setor do turismo recuperou mais depressa.",
    "exru": "Отрасль туризма восстановилась быстрее.",
    "note": "Пишется без c — европейская норма",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "галузь",
+   "exuk": "Галузь туризму відновилася швидше.",
+   "noteuk": "Пишеться без c — європейська норма"
   },
   {
    "word": "a sequência",
@@ -7470,7 +7992,10 @@
    "ex": "A sequência dos passos vem explicada no manual.",
    "exru": "Последовательность действий описана в инструкции.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "послідовність",
+   "exuk": "Послідовність дій описана в інструкції.",
+   "noteuk": ""
   },
   {
    "word": "o termo",
@@ -7480,7 +8005,10 @@
    "ex": "É um termo técnico que poucos conhecem.",
    "exru": "Это технический термин, который мало кто знает.",
    "note": "Pôr termo a — положить конец чему-то",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "термін (слово)",
+   "exuk": "Це технічний термін, який мало хто знає.",
+   "noteuk": "Pôr termo a — покласти край чомусь"
   },
   {
    "word": "a via",
@@ -7490,7 +8018,10 @@
    "ex": "Acabámos por resolver o assunto por via judicial.",
    "exru": "В итоге мы решили дело через суд.",
    "note": "Segunda via — дубликат документа",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "шлях, спосіб",
+   "exuk": "Зрештою ми розв’язали справу через суд.",
+   "noteuk": "Segunda via — дублікат документа"
   },
   {
    "word": "abrangente",
@@ -7500,7 +8031,10 @@
    "ex": "O curso é abrangente, toca em muitos temas.",
    "exru": "Курс широкий, затрагивает много тем.",
    "note": "Abranger — охватывать",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "широкий, всеохопний",
+   "exuk": "Курс широкий, торкається багатьох тем.",
+   "noteuk": "Abranger — охоплювати"
   },
   {
    "word": "crescente",
@@ -7510,7 +8044,10 @@
    "ex": "Há um número crescente de turistas no inverno.",
    "exru": "Зимой туристов становится всё больше.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "дедалі більший",
+   "exuk": "Узимку туристів стає дедалі більше.",
+   "noteuk": ""
   },
   {
    "word": "crucial",
@@ -7520,7 +8057,10 @@
    "ex": "Aquela decisão foi crucial para o futuro da empresa.",
    "exru": "То решение стало ключевым для будущего компании.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "ключовий",
+   "exuk": "Те рішення стало ключовим для майбутнього компанії.",
+   "noteuk": ""
   },
   {
    "word": "destacado",
@@ -7530,7 +8070,10 @@
    "ex": "Teve um papel destacado na organização da feira.",
    "exru": "Он сыграл заметную роль в организации ярмарки.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "помітний, визначний",
+   "exuk": "Він відіграв помітну роль в організації ярмарку.",
+   "noteuk": ""
   },
   {
    "word": "diverso",
@@ -7540,7 +8083,10 @@
    "ex": "Falámos de assuntos diversos durante o almoço.",
    "exru": "За обедом мы говорили о разных вещах.",
    "note": "Чаще во мн. ч.: diversos, diversas",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "розмаїтий",
+   "exuk": "За обідом ми говорили про різні речі.",
+   "noteuk": "Частіше у множині: diversos, diversas"
   },
   {
    "word": "eficaz",
@@ -7550,7 +8096,10 @@
    "ex": "O remédio foi eficaz logo na primeira noite.",
    "exru": "Лекарство подействовало уже в первую ночь.",
    "note": "Eficaz даёт результат, eficiente — без лишних затрат",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "дієвий",
+   "exuk": "Ліки подіяли вже першої ночі.",
+   "noteuk": "Eficaz дає результат, eficiente — без зайвих витрат"
   },
   {
    "word": "eficiente",
@@ -7560,7 +8109,10 @@
    "ex": "A casa é eficiente e gasta pouca eletricidade.",
    "exru": "Дом экономичный и мало тратит электричества.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "ощадний, злагоджений",
+   "exuk": "Дім ощадний і мало витрачає електрики.",
+   "noteuk": ""
   },
   {
    "word": "global",
@@ -7570,7 +8122,10 @@
    "ex": "O custo global da obra passou dos vinte mil.",
    "exru": "Общая стоимость работ перевалила за двадцать тысяч.",
    "note": "",
-   "tema": "A3"
+   "tema": "A3",
+   "uk": "загальний, сумарний",
+   "exuk": "Загальна вартість робіт перевалила за двадцять тисяч.",
+   "noteuk": ""
   },
   {
    "word": "gradual",
@@ -7580,7 +8135,10 @@
    "ex": "A melhoria foi gradual, mas nunca parou.",
    "exru": "Улучшение шло постепенно, но не прекращалось.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "поступовий",
+   "exuk": "Поліпшення було поступове, але не спинялося.",
+   "noteuk": ""
   },
   {
    "word": "imprescindível",
@@ -7590,7 +8148,10 @@
    "ex": "O cartão é imprescindível para entrar no edifício.",
    "exru": "Без карты в здание не войти.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "без чого не обійтися",
+   "exuk": "Без картки до будівлі не увійти.",
+   "noteuk": ""
   },
   {
    "word": "inevitável",
@@ -7600,7 +8161,10 @@
    "ex": "Com este trânsito, o atraso era inevitável.",
    "exru": "При таких пробках опоздание было неизбежно.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "неминучий",
+   "exuk": "За таких заторів запізнення було неминуче.",
+   "noteuk": ""
   },
   {
    "word": "interno",
@@ -7610,7 +8174,10 @@
    "ex": "É uma regra interna, não vem escrita no contrato.",
    "exru": "Это внутреннее правило, в договоре его нет.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "внутрішній",
+   "exuk": "Це внутрішнє правило, у договорі його немає.",
+   "noteuk": ""
   },
   {
    "word": "notável",
@@ -7620,7 +8187,10 @@
    "ex": "A diferença entre os dois vinhos é notável.",
    "exru": "Разница между двумя винами заметная.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "прикметний, визначний",
+   "exuk": "Різниця між двома винами прикметна.",
+   "noteuk": ""
   },
   {
    "word": "oposto",
@@ -7630,7 +8200,10 @@
    "ex": "A paragem fica no lado oposto da rua.",
    "exru": "Остановка на противоположной стороне улицы.",
    "note": "",
-   "tema": "A2"
+   "tema": "A2",
+   "uk": "протилежний",
+   "exuk": "Зупинка на протилежному боці вулиці.",
+   "noteuk": ""
   },
   {
    "word": "permanente",
@@ -7640,7 +8213,10 @@
    "ex": "Conseguiu finalmente um contrato permanente na empresa.",
    "exru": "Он наконец получил в компании бессрочный договор.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "постійний, безстроковий",
+   "exuk": "Він нарешті отримав у компанії безстроковий договір.",
+   "noteuk": ""
   },
   {
    "word": "pertinente",
@@ -7650,7 +8226,10 @@
    "ex": "Foi uma pergunta pertinente que ninguém tinha feito.",
    "exru": "Вопрос был по существу, его никто ещё не задавал.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "слушний, по суті",
+   "exuk": "Питання було по суті, його ще ніхто не ставив.",
+   "noteuk": ""
   },
   {
    "word": "progressivo",
@@ -7660,7 +8239,10 @@
    "ex": "Houve um aumento progressivo do número de alunos.",
    "exru": "Число учеников росло постепенно.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "наростаючий, поетапний",
+   "exuk": "Кількість учнів зростала поступово.",
+   "noteuk": ""
   },
   {
    "word": "relevante",
@@ -7670,7 +8252,10 @@
    "ex": "Só falta um documento relevante para o processo.",
    "exru": "Для дела не хватает одного важного документа.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "значущий для справи",
+   "exuk": "Для справи бракує одного важливого документа.",
+   "noteuk": ""
   },
   {
    "word": "restrito",
@@ -7680,7 +8265,10 @@
    "ex": "O acesso é restrito a quem trabalha aqui.",
    "exru": "Вход только для тех, кто здесь работает.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "обмежений, вузький",
+   "exuk": "Вхід лише для тих, хто тут працює.",
+   "noteuk": ""
   },
   {
    "word": "rigoroso",
@@ -7690,7 +8278,10 @@
    "ex": "O inverno foi rigoroso e gelou várias noites.",
    "exru": "Зима выдалась суровой, несколько ночей были заморозки.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "прискіпливий; суворий",
+   "exuk": "Зима видалася сувора, кілька ночей були приморозки.",
+   "noteuk": ""
   },
   {
    "word": "simultâneo",
@@ -7700,7 +8291,10 @@
    "ex": "Houve tradução simultânea durante toda a conferência.",
    "exru": "Весь доклад шёл с синхронным переводом.",
    "note": "Em simultâneo — одновременно",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "одночасний",
+   "exuk": "Уся доповідь ішла із синхронним перекладом.",
+   "noteuk": "Em simultâneo — одночасно"
   },
   {
    "word": "sistemático",
@@ -7710,7 +8304,10 @@
    "ex": "Faz um trabalho sistemático, sem saltar nenhum passo.",
    "exru": "Он работает планомерно, не пропуская ни шага.",
    "note": "",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "планомірний",
+   "exuk": "Він працює планомірно, не пропускаючи жодного кроку.",
+   "noteuk": ""
   },
   {
    "word": "sólido",
@@ -7720,7 +8317,10 @@
    "ex": "A relação deles é sólida, aguenta qualquer coisa.",
    "exru": "Отношения у них прочные, выдержат что угодно.",
    "note": "",
-   "tema": "A6"
+   "tema": "A6",
+   "uk": "тривкий, надійний",
+   "exuk": "Стосунки в них тривкі, витримають що завгодно.",
+   "noteuk": ""
   },
   {
    "word": "sucessivo",
@@ -7730,7 +8330,10 @@
    "ex": "Houve atrasos sucessivos na entrega do material.",
    "exru": "С поставкой материалов задержка шла за задержкой.",
    "note": "",
-   "tema": "A4"
+   "tema": "A4",
+   "uk": "один за одним",
+   "exuk": "З постачанням матеріалів затримка йшла за затримкою.",
+   "noteuk": ""
   },
   {
    "word": "viável",
@@ -7740,7 +8343,10 @@
    "ex": "A ideia é boa, mas não é viável com este orçamento.",
    "exru": "Идея хорошая, но с такой сметой неосуществимая.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "здійсненний",
+   "exuk": "Ідея добра, але з таким кошторисом нездійсненна.",
+   "noteuk": ""
   },
   {
    "word": "vulnerável",
@@ -7750,7 +8356,10 @@
    "ex": "Os idosos são mais vulneráveis ao calor extremo.",
    "exru": "Пожилые более уязвимы к сильной жаре.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "вразливий",
+   "exuk": "Літні люди вразливіші до сильної спеки.",
+   "noteuk": ""
   },
   {
    "word": "ambicioso",
@@ -7760,7 +8369,10 @@
    "ex": "É um plano ambicioso para tão pouco tempo.",
    "exru": "План амбициозный для такого короткого срока.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "честолюбний",
+   "exuk": "План честолюбний як на такий короткий строк.",
+   "noteuk": ""
   },
   {
    "word": "humilde",
@@ -7770,7 +8382,10 @@
    "ex": "Apesar do sucesso, continua humilde com toda a gente.",
    "exru": "Несмотря на успех, он со всеми держится просто.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "простий у поводженні",
+   "exuk": "Попри успіх, він з усіма тримається просто.",
+   "noteuk": ""
   },
   {
    "word": "modesto",
@@ -7780,7 +8395,10 @@
    "ex": "Vivem numa casa modesta perto da estação.",
    "exru": "Они живут в скромном доме у вокзала.",
    "note": "И о человеке, и о размере: um salário modesto",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "скромний, невибагливий",
+   "exuk": "Вони живуть у скромному домі біля вокзалу.",
+   "noteuk": "І про людину, і про розмір: um salário modesto"
   },
   {
    "word": "prudente",
@@ -7790,7 +8408,10 @@
    "ex": "Seria prudente confirmar a hora antes de sair.",
    "exru": "Разумно было бы уточнить время перед выходом.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "обачний, завбачливий",
+   "exuk": "Розважливо було б уточнити час перед виходом.",
+   "noteuk": ""
   },
   {
    "word": "sensato",
@@ -7800,7 +8421,10 @@
    "ex": "Deu-me um conselho sensato e sem rodeios.",
    "exru": "Он дал мне здравый совет и без обиняков.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "тверезомислячий",
+   "exuk": "Він дав мені тверезу пораду і без натяків.",
+   "noteuk": ""
   },
   {
    "word": "a manifestação",
@@ -7810,7 +8434,10 @@
    "ex": "A manifestação juntou milhares de pessoas na avenida.",
    "exru": "На проспект вышли тысячи человек.",
    "note": "Manifestar-se — выйти на митинг",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "демонстрація, мітинг",
+   "exuk": "На проспект вийшли тисячі людей.",
+   "noteuk": "Manifestar-se — вийти на мітинг"
   },
   {
    "word": "o protesto",
@@ -7820,7 +8447,10 @@
    "ex": "O protesto contra as portagens durou toda a manhã.",
    "exru": "Протест против платных дорог длился всё утро.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "протест",
+   "exuk": "Протест проти платних доріг тривав увесь ранок.",
+   "noteuk": ""
   },
   {
    "word": "o parlamento",
@@ -7830,7 +8460,10 @@
    "ex": "A proposta foi discutida no parlamento em julho.",
    "exru": "Предложение обсуждали в парламенте в июле.",
    "note": "В Португалии — a Assembleia da República",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "парламент",
+   "exuk": "Пропозицію обговорювали в парламенті в липні.",
+   "noteuk": "У Португалії — a Assembleia da República"
   },
   {
    "word": "o ministro",
@@ -7840,7 +8473,10 @@
    "ex": "O ministro visitou a escola no dia da inauguração.",
    "exru": "Министр посетил школу в день открытия.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "міністр",
+   "exuk": "Міністр відвідав школу в день відкриття.",
+   "noteuk": ""
   },
   {
    "word": "a autarquia",
@@ -7850,7 +8486,10 @@
    "ex": "A autarquia paga os passes aos estudantes.",
    "exru": "Местная власть оплачивает студентам проездные.",
    "note": "Autárquicas — муниципальные выборы",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "місцева влада",
+   "exuk": "Місцева влада оплачує студентам проїзні.",
+   "noteuk": "Autárquicas — муніципальні вибори"
   },
   {
    "word": "a igualdade",
@@ -7860,7 +8499,10 @@
    "ex": "A lei garante a igualdade de salários entre homens e mulheres.",
    "exru": "Закон гарантирует равенство зарплат мужчин и женщин.",
    "note": "",
-   "tema": "A9"
+   "tema": "A9",
+   "uk": "рівність",
+   "exuk": "Закон гарантує рівність зарплат чоловіків і жінок.",
+   "noteuk": ""
   },
   {
    "word": "a pobreza",
@@ -7870,7 +8512,10 @@
    "ex": "A pobreza aumentou nas zonas mais afastadas.",
    "exru": "В отдалённых районах бедность выросла.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "бідність",
+   "exuk": "У віддалених районах бідність зросла.",
+   "noteuk": ""
   },
   {
    "word": "a riqueza",
@@ -7880,7 +8525,10 @@
    "ex": "A riqueza do país está mal distribuída.",
    "exru": "Богатство страны распределено неравномерно.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "багатство",
+   "exuk": "Багатство країни розподілене нерівномірно.",
+   "noteuk": ""
   },
   {
    "word": "a inflação",
@@ -7890,7 +8538,10 @@
    "ex": "A inflação comeu boa parte do aumento salarial.",
    "exru": "Инфляция съела бо́льшую часть прибавки к зарплате.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "інфляція",
+   "exuk": "Інфляція з’їла більшу частину надбавки до зарплати.",
+   "noteuk": ""
   },
   {
    "word": "o lucro",
@@ -7900,7 +8551,10 @@
    "ex": "A loja teve lucro no primeiro ano de abertura.",
    "exru": "Магазин вышел в прибыль в первый же год.",
    "note": "Sem fins lucrativos — некоммерческий",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "прибуток",
+   "exuk": "Магазин вийшов у прибуток першого ж року.",
+   "noteuk": "Sem fins lucrativos — неприбутковий"
   },
   {
    "word": "o investimento",
@@ -7910,7 +8564,10 @@
    "ex": "As janelas novas foram um bom investimento.",
    "exru": "Новые окна оказались хорошим вложением.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "вкладення",
+   "exuk": "Нові вікна виявилися добрим вкладенням.",
+   "noteuk": ""
   },
   {
    "word": "a concorrência",
@@ -7920,7 +8577,10 @@
    "ex": "A concorrência baixou os preços em toda a rua.",
    "exru": "Конкуренция сбила цены по всей улице.",
    "note": "",
-   "tema": "B7"
+   "tema": "B7",
+   "uk": "конкуренція",
+   "exuk": "Конкуренція збила ціни по всій вулиці.",
+   "noteuk": ""
   },
   {
    "word": "a votação",
@@ -7930,7 +8590,10 @@
    "ex": "A votação foi apertada, ganhou por três votos.",
    "exru": "Голосование вышло напряжённым: перевес в три голоса.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "голосування",
+   "exuk": "Голосування вийшло напруженим: перевага у три голоси.",
+   "noteuk": ""
   },
   {
    "word": "o referendo",
@@ -7940,7 +8603,10 @@
    "ex": "O referendo teve pouca participação em todo o país.",
    "exru": "Явка на референдуме по всей стране была низкой.",
    "note": "",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "референдум",
+   "exuk": "Явка на референдумі по всій країні була низька.",
+   "noteuk": ""
   },
   {
    "word": "a atualização",
@@ -7950,7 +8616,10 @@
    "ex": "A atualização do sistema demorou quase uma hora.",
    "exru": "Обновление системы заняло почти час.",
    "note": "",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "оновлення",
+   "exuk": "Оновлення системи тривало майже годину.",
+   "noteuk": ""
   },
   {
    "word": "o auricular",
@@ -7960,7 +8629,10 @@
    "ex": "Um dos auriculares deixou de dar som.",
    "exru": "Один наушник перестал звучать.",
    "note": "То же, что auscultadores, но чаще о вкладышах",
-   "tema": "B4"
+   "tema": "B4",
+   "uk": "навушник-вкладка",
+   "exuk": "Один навушник перестав звучати.",
+   "noteuk": "Те саме, що auscultadores, але частіше про вкладки"
   },
   {
    "word": "digitalizar",
@@ -7970,7 +8642,10 @@
    "ex": "Digitalizei os documentos e enviei-os por email.",
    "exru": "Я отсканировал документы и отправил по почте.",
    "note": "В Португалии digitalizar",
-   "tema": "B3"
+   "tema": "B3",
+   "uk": "сканувати",
+   "exuk": "Я відсканував документи й надіслав їх поштою.",
+   "noteuk": "У Португалії digitalizar"
   },
   {
    "word": "porreiro",
@@ -7980,7 +8655,10 @@
    "ex": "O senhorio é porreiro, resolve tudo à primeira.",
    "exru": "Хозяин славный, всё решает с первого раза.",
    "note": "Разговорное; о людях и о ситуациях",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "славний, що треба",
+   "exuk": "Господар славний, усе вирішує з першого разу.",
+   "noteuk": "Розмовне; про людей і про ситуації"
   },
   {
    "word": "a aldrabice",
@@ -7990,7 +8668,10 @@
    "ex": "Aquela história da garantia era tudo aldrabice.",
    "exru": "Вся эта история с гарантией была надувательством.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "дурисвітство",
+   "exuk": "Уся ця історія з гарантією була дурисвітством.",
+   "noteuk": ""
   },
   {
    "word": "aldrabar",
@@ -8000,7 +8681,10 @@
    "ex": "Tentaram aldrabar-nos no troco lá do restaurante.",
    "exru": "Нас попытались надуть со сдачей в том ресторане.",
    "note": "Разговорное; o aldrabão — врун, жулик",
-   "tema": "B9"
+   "tema": "B9",
+   "uk": "дурити, морочити",
+   "exuk": "Нас спробували обдурити зі здачею в тому ресторані.",
+   "noteuk": "Розмовне; o aldrabão — брехун, шахрай"
   },
   {
    "word": "a treta",
@@ -8010,7 +8694,10 @@
    "ex": "Isso é treta, ninguém acredita nessa desculpa.",
    "exru": "Это чепуха, в такую отговорку никто не верит.",
    "note": "Разговорное",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "дурня, відмовка",
+   "exuk": "Це дурня, у таку відмовку ніхто не вірить.",
+   "noteuk": "Розмовне"
   },
   {
    "word": "a bronca",
@@ -8020,7 +8707,10 @@
    "ex": "Levei uma bronca do chefe por causa do atraso.",
    "exru": "Мне влетело от начальника из-за опоздания.",
    "note": "Разговорное: levar uma bronca — получить нагоняй",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "прочухан",
+   "exuk": "Мені перепало від начальника через запізнення.",
+   "noteuk": "Розмовне: levar uma bronca — дістати прочухана"
   },
   {
    "word": "o alarido",
@@ -8030,7 +8720,10 @@
    "ex": "Fez-se um alarido enorme por causa de nada.",
    "exru": "Из ничего подняли страшный шум.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "галас, зчинений шум",
+   "exuk": "З нічого зчинили страшний галас.",
+   "noteuk": ""
   },
   {
    "word": "a algazarra",
@@ -8040,7 +8733,10 @@
    "ex": "As crianças fizeram algazarra a tarde toda.",
    "exru": "Дети галдели весь день напролёт.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "веселий гамір",
+   "exuk": "Діти гомоніли цілий день поспіль.",
+   "noteuk": ""
   },
   {
    "word": "ao certo",
@@ -8050,7 +8746,10 @@
    "ex": "Ninguém sabe ao certo quando reabre a ponte.",
    "exru": "Никто доподлинно не знает, когда откроют мост.",
    "note": "",
-   "tema": "A8"
+   "tema": "A8",
+   "uk": "достеменно",
+   "exuk": "Ніхто достеменно не знає, коли відкриють міст.",
+   "noteuk": ""
   },
   {
    "word": "à toa",
@@ -8060,7 +8759,10 @@
    "ex": "Andámos à toa meia hora à procura da rua.",
    "exru": "Полчаса мы бестолково кружили в поисках улицы.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "марно, без пуття",
+   "exuk": "Пів години ми безтолково кружляли в пошуках вулиці.",
+   "noteuk": ""
   },
   {
    "word": "em condições",
@@ -8070,7 +8772,10 @@
    "ex": "Quero um almoço em condições, não uma sandes.",
    "exru": "Хочу нормально пообедать, а не бутерброд.",
    "note": "Разговорное: «настоящий», «нормальный»",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "як слід, по-людськи",
+   "exuk": "Хочу нормально пообідати, а не бутерброд.",
+   "noteuk": "Розмовне: «справжній», «нормальний»"
   },
   {
    "word": "o bem-estar",
@@ -8080,7 +8785,10 @@
    "ex": "Caminhar ao fim do dia dá-me uma sensação de bem-estar.",
    "exru": "Прогулка в конце дня даёт мне ощущение покоя.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "добре самопочуття",
+   "exuk": "Прогулянка наприкінці дня дає мені відчуття спокою.",
+   "noteuk": ""
   },
   {
    "word": "a autoestima",
@@ -8090,7 +8798,10 @@
    "ex": "O novo emprego melhorou-lhe muito a autoestima.",
    "exru": "Новая работа заметно подняла ему самооценку.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "самооцінка",
+   "exuk": "Нова робота помітно підняла йому самооцінку.",
+   "noteuk": ""
   },
   {
    "word": "o vício",
@@ -8100,7 +8811,10 @@
    "ex": "O café é um vício que não consigo largar.",
    "exru": "Кофе — привычка, от которой я не могу отделаться.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "згубна звичка",
+   "exuk": "Кава — звичка, від якої я не можу відкараскатися.",
+   "noteuk": ""
   },
   {
    "word": "a frustração",
@@ -8110,7 +8824,10 @@
    "ex": "A frustração foi grande depois de tanto trabalho.",
    "exru": "После такой работы досада была сильной.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "прикрість від невдачі",
+   "exuk": "Після такої роботи прикрість була сильна.",
+   "noteuk": ""
   },
   {
    "word": "a insatisfação",
@@ -8120,7 +8837,10 @@
    "ex": "A insatisfação dos moradores cresceu com as obras.",
    "exru": "Недовольство жильцов росло вместе со стройкой.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "невдоволення",
+   "exuk": "Невдоволення мешканців росло разом із будівництвом.",
+   "noteuk": ""
   },
   {
    "word": "o desânimo",
@@ -8130,7 +8850,10 @@
    "ex": "Depois da terceira recusa, veio o desânimo.",
    "exru": "После третьего отказа накатило уныние.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "зневіра",
+   "exuk": "Після третьої відмови накотила зневіра.",
+   "noteuk": ""
   },
   {
    "word": "o desespero",
@@ -8140,7 +8863,10 @@
    "ex": "Foi um momento de desespero, mas passou depressa.",
    "exru": "Это была минута отчаяния, но она быстро прошла.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "відчай",
+   "exuk": "Це була хвилина відчаю, але вона швидко минула.",
+   "noteuk": ""
   },
   {
    "word": "a nostalgia",
@@ -8150,7 +8876,10 @@
    "ex": "Sente nostalgia dos verões passados na aldeia.",
    "exru": "Он тоскует по летам, проведённым в деревне.",
    "note": "Близко к saudade, но книжнее",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "ностальгія",
+   "exuk": "Він тужить за літами, проведеними в селі.",
+   "noteuk": "Близьке до saudade, але книжніше"
   },
   {
    "word": "a ternura",
@@ -8160,7 +8889,10 @@
    "ex": "Olhou para o neto com uma ternura enorme.",
    "exru": "Он посмотрел на внука с огромной нежностью.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "ніжність",
+   "exuk": "Він подивився на внука з величезною ніжністю.",
+   "noteuk": ""
   },
   {
    "word": "a compaixão",
@@ -8170,7 +8902,10 @@
    "ex": "Tratou o doente com paciência e compaixão.",
    "exru": "К больному он относился терпеливо и сострадательно.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "співчуття",
+   "exuk": "До хворого він ставився терпляче і співчутливо.",
+   "noteuk": ""
   },
   {
    "word": "a gratidão",
@@ -8180,7 +8915,10 @@
    "ex": "Escreveu-lhe uma carta de gratidão pelos anos de ajuda.",
    "exru": "Он написал ей благодарственное письмо за годы помощи.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "вдячність",
+   "exuk": "Він написав їй лист подяки за роки допомоги.",
+   "noteuk": ""
   },
   {
    "word": "o remorso",
@@ -8190,7 +8928,10 @@
    "ex": "Ficou com remorsos por não ter telefonado antes.",
    "exru": "Его мучила совесть, что не позвонил раньше.",
    "note": "Чаще во мн. ч.: ter remorsos",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "докори сумління",
+   "exuk": "Його мучило сумління, що не зателефонував раніше.",
+   "noteuk": "Частіше у множині: ter remorsos"
   },
   {
    "word": "o arrependimento",
@@ -8200,7 +8941,10 @@
    "ex": "Não mostrou arrependimento nenhum pelo que fez.",
    "exru": "Он не выказал никакого раскаяния за содеянное.",
    "note": "Arrepender-se — раскаиваться",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "каяття",
+   "exuk": "Він не виказав жодного каяття за скоєне.",
+   "noteuk": "Arrepender-se — каятися"
   },
   {
    "word": "a serenidade",
@@ -8210,7 +8954,10 @@
    "ex": "Enfrentou a notícia com uma serenidade surpreendente.",
    "exru": "Новость он встретил с удивительным спокойствием.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "незворушність",
+   "exuk": "Новину він зустрів із дивовижним спокоєм.",
+   "noteuk": ""
   },
   {
    "word": "a euforia",
@@ -8220,7 +8967,10 @@
    "ex": "A euforia do primeiro dia passou logo na semana seguinte.",
    "exru": "Эйфория первого дня прошла уже на следующей неделе.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "ейфорія",
+   "exuk": "Ейфорія першого дня минула вже наступного тижня.",
+   "noteuk": ""
   },
   {
    "word": "o desconforto",
@@ -8230,7 +8980,10 @@
    "ex": "Sentiu algum desconforto na perna depois da caminhada.",
    "exru": "После прогулки он почувствовал в ноге неудобство.",
    "note": "",
-   "tema": "B6"
+   "tema": "B6",
+   "uk": "тілесна незручність",
+   "exuk": "Після прогулянки він відчув у нозі незручність.",
+   "noteuk": ""
   },
   {
    "word": "o incómodo",
@@ -8240,7 +8993,10 @@
    "ex": "Peço desculpa pelo incómodo a esta hora.",
    "exru": "Прошу прощения за беспокойство в такой час.",
    "note": "Пишется с ó — европейская норма",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "клопіт, завада",
+   "exuk": "Прошу вибачення за клопіт о такій порі.",
+   "noteuk": "Пишеться з ó — європейська норма"
   },
   {
    "word": "a inquietação",
@@ -8250,7 +9006,10 @@
    "ex": "A demora da resposta deixou-o com inquietação.",
    "exru": "Задержка с ответом его встревожила.",
    "note": "",
-   "tema": "B1"
+   "tema": "B1",
+   "uk": "занепокоєння",
+   "exuk": "Затримка з відповіддю його занепокоїла.",
+   "noteuk": ""
   },
   {
    "word": "o resíduo",
@@ -8260,7 +9019,10 @@
    "ex": "Os resíduos da obra ficaram na rua uma semana.",
    "exru": "Строительный мусор пролежал на улице неделю.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "відхід, залишок",
+   "exuk": "Будівельне сміття пролежало на вулиці тиждень.",
+   "noteuk": ""
   },
   {
    "word": "a pegada",
@@ -8270,7 +9032,10 @@
    "ex": "Andar de comboio reduz muito a pegada de carbono.",
    "exru": "Поездки на поезде сильно снижают углеродный след.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "слід ноги; вуглецевий слід",
+   "exuk": "Поїздки потягом дуже зменшують вуглецевий слід.",
+   "noteuk": ""
   },
   {
    "word": "o habitat",
@@ -8280,7 +9045,10 @@
    "ex": "As obras destruíram o habitat de várias aves.",
    "exru": "Стройка уничтожила среду обитания нескольких видов птиц.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "середовище проживання",
+   "exuk": "Будівництво знищило середовище проживання кількох видів птахів.",
+   "noteuk": ""
   },
   {
    "word": "a biodiversidade",
@@ -8290,7 +9058,10 @@
    "ex": "A serra tem uma biodiversidade rara na Europa.",
    "exru": "В этих горах биоразнообразие, редкое для Европы.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "біорізноманіття",
+   "exuk": "У цих горах біорізноманіття, рідкісне для Європи.",
+   "noteuk": ""
   },
   {
    "word": "a extinção",
@@ -8300,7 +9071,10 @@
    "ex": "Esta espécie está em vias de extinção.",
    "exru": "Этот вид находится на грани вымирания.",
    "note": "Em vias de extinção — под угрозой исчезновения",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "вимирання",
+   "exuk": "Цей вид перебуває на межі вимирання.",
+   "noteuk": "Em vias de extinção — під загрозою зникнення"
   },
   {
    "word": "a emissão",
@@ -8310,7 +9084,10 @@
    "ex": "As emissões de carbono baixaram durante a pandemia.",
    "exru": "Во время пандемии выбросы углерода снизились.",
    "note": "Также выпуск документа и телепередача",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "викид в атмосферу",
+   "exuk": "Під час пандемії викиди вуглецю знизилися.",
+   "noteuk": "Також випуск документа і телепередача"
   },
   {
    "word": "a sustentabilidade",
@@ -8320,7 +9097,10 @@
    "ex": "A sustentabilidade passou a ser tema em todas as escolas.",
    "exru": "Устойчивое развитие стало темой во всех школах.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "сталий розвиток",
+   "exuk": "Сталий розвиток став темою в усіх школах.",
+   "noteuk": ""
   },
   {
    "word": "as alterações climáticas",
@@ -8330,7 +9110,10 @@
    "ex": "As alterações climáticas já se notam nas vindimas.",
    "exru": "Изменение климата уже заметно по сбору винограда.",
    "note": "В Португалии говорят именно так",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "зміна клімату",
+   "exuk": "Зміна клімату вже помітна по збиранню винограду.",
+   "noteuk": "У Португалії кажуть саме так"
   },
   {
    "word": "o aquecimento global",
@@ -8340,7 +9123,10 @@
    "ex": "O aquecimento global torna os verões cada vez mais secos.",
    "exru": "Из-за глобального потепления лето становится всё суше.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "глобальне потепління",
+   "exuk": "Через глобальне потепління літо стає дедалі сухішим.",
+   "noteuk": ""
   },
   {
    "word": "a energia renovável",
@@ -8350,7 +9136,10 @@
    "ex": "Metade da eletricidade vem de energias renováveis.",
    "exru": "Половина электричества поступает из возобновляемых источников.",
    "note": "",
-   "tema": "B2"
+   "tema": "B2",
+   "uk": "відновлювана енергія",
+   "exuk": "Половина електрики надходить з відновлюваних джерел.",
+   "noteuk": ""
   },
   {
    "word": "radical",
@@ -8360,7 +9149,10 @@
    "ex": "Foi uma mudança radical na vida deles.",
    "exru": "Это была коренная перемена в их жизни.",
    "note": "",
-   "tema": "A7"
+   "tema": "A7",
+   "uk": "докорінний",
+   "exuk": "Це була докорінна зміна в їхньому житті.",
+   "noteuk": ""
   },
   {
    "word": "exclusivamente",
@@ -8370,7 +9162,10 @@
    "ex": "Este lugar é exclusivamente para pessoas com deficiência.",
    "exru": "Это место только для людей с инвалидностью.",
    "note": "",
-   "tema": "A5"
+   "tema": "A5",
+   "uk": "тільки для цього",
+   "exuk": "Це місце тільки для людей з інвалідністю.",
+   "noteuk": ""
   }
  ]
 }
