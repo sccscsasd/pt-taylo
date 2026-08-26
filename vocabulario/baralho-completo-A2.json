@@ -5471,7 +5471,10 @@
    "note": "Прилагательное só — один, одинокий",
    "uk": "тільки, лише",
    "exuk": "Я хочу лише склянку води.",
-   "noteuk": "Прикметник só — сам, самотній"
+   "noteuk": "Прикметник só — сам, самотній",
+   "en": "only",
+   "exen": "I only want a glass of water.",
+   "noteen": "The adjective só means alone"
   },
   {
    "word": "ter aulas",
@@ -5482,7 +5485,10 @@
    "note": "ter aula de + предмет",
    "uk": "ходити на заняття, вчитися",
    "exuk": "У мене заняття по понеділках і середах.",
-   "noteuk": "ter aula de + предмет"
+   "noteuk": "ter aula de + предмет",
+   "en": "to have classes",
+   "exen": "I have classes on Mondays and Wednesdays.",
+   "noteen": "ter aula de + subject"
   },
   {
    "word": "os trabalhos de casa",
@@ -5493,7 +5499,10 @@
    "note": "Сокращённо: TPC",
    "uk": "домашнє завдання",
    "exuk": "Ти вже зробив домашнє завдання?",
-   "noteuk": "Скорочено: TPC"
+   "noteuk": "Скорочено: TPC",
+   "en": "homework",
+   "exen": "Have you done your homework yet?",
+   "noteen": "Short form: TPC"
   },
   {
    "word": "o manual",
@@ -5504,7 +5513,10 @@
    "note": "Мн. ч.: os manuais",
    "uk": "підручник",
    "exuk": "Відкрийте підручник на тридцятій сторінці.",
-   "noteuk": "Множина: os manuais"
+   "noteuk": "Множина: os manuais",
+   "en": "textbook",
+   "exen": "Open your textbook at page thirty.",
+   "noteen": "Plural: os manuais"
   },
   {
    "word": "o material",
@@ -5515,7 +5527,10 @@
    "note": "Мн. ч.: os materiais",
    "uk": "матеріали, приладдя",
    "exuk": "Принесіть письмове приладдя на тест.",
-   "noteuk": "Множина: os materiais"
+   "noteuk": "Множина: os materiais",
+   "en": "materials, supplies",
+   "exen": "Bring your writing things for the test.",
+   "noteen": "Plural: os materiais"
   },
   {
    "word": "o marcador",
@@ -5526,7 +5541,10 @@
    "note": "м. р.",
    "uk": "маркер; закладка",
    "exuk": "Маркер для дошки висох.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "marker pen; bookmark",
+   "exen": "The whiteboard marker has dried up.",
+   "noteen": "masculine"
   },
   {
    "word": "ir ao quadro",
@@ -5537,7 +5555,10 @@
    "note": "",
    "uk": "виходити до дошки",
    "exuk": "Хто хоче вийти до дошки?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to go up to the board",
+   "exen": "Who wants to come up to the board?",
+   "noteen": ""
   },
   {
    "word": "o teste",
@@ -5548,7 +5569,10 @@
    "note": "м. р.",
    "uk": "тест, контрольна",
    "exuk": "У п’ятницю в нас тест із граматики.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "test, class test",
+   "exen": "We have a grammar test on Friday.",
+   "noteen": "masculine"
   },
   {
    "word": "a prova",
@@ -5559,7 +5583,10 @@
    "note": "ж. р.",
    "uk": "іспит, перевірна; доказ",
    "exuk": "Підсумковий іспит у червні.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "exam paper; proof",
+   "exen": "The final exam is in June.",
+   "noteen": "feminine"
   },
   {
    "word": "aprovar",
@@ -5570,7 +5597,10 @@
    "note": "ser aprovado — быть допущенным",
    "uk": "скласти (іспит); схвалювати",
    "exuk": "Я склав усі предмети.",
-   "noteuk": "ser aprovado — бути допущеним"
+   "noteuk": "ser aprovado — бути допущеним",
+   "en": "to pass an exam; to approve",
+   "exen": "I passed all the subjects.",
+   "noteen": "ser aprovado — to be approved"
   },
   {
    "word": "reprovar",
@@ -5581,7 +5611,10 @@
    "note": "Противоположно aprovar",
    "uk": "провалити (іспит), лишитися на другий рік",
    "exuk": "Він завалив математику.",
-   "noteuk": "Протилежне до aprovar"
+   "noteuk": "Протилежне до aprovar",
+   "en": "to fail an exam, to repeat a year",
+   "exen": "He failed maths.",
+   "noteen": "The opposite of aprovar"
   },
   {
    "word": "a receção",
@@ -5592,7 +5625,10 @@
    "note": "Пишется без p: receção",
    "uk": "ресепшен, приймальня",
    "exuk": "Залиште ключ на ресепшені.",
-   "noteuk": "Пишеться без p: receção"
+   "noteuk": "Пишеться без p: receção",
+   "en": "reception, front desk",
+   "exen": "Leave the key at reception.",
+   "noteen": "Spelt without the p: receção"
   },
   {
    "word": "o gabinete",
@@ -5603,7 +5639,10 @@
    "note": "м. р.",
    "uk": "кабінет",
    "exuk": "Директор у себе в кабінеті.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "private office",
+   "exen": "The director is in his office.",
+   "noteen": "masculine"
   },
   {
    "word": "o chefe",
@@ -5614,7 +5653,10 @@
    "note": "Ж. р.: a chefe",
    "uk": "начальник, шеф",
    "exuk": "Я поговорив із начальником про відпустку.",
-   "noteuk": "Ж. р.: a chefe"
+   "noteuk": "Ж. р.: a chefe",
+   "en": "boss",
+   "exen": "I spoke to my boss about the holiday.",
+   "noteen": "fem.: a chefe"
   },
   {
    "word": "a folga",
@@ -5625,7 +5667,10 @@
    "note": "ж. р.",
    "uk": "вихідний (у працівника)",
    "exuk": "Завтра в мене вихідний.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "a day off",
+   "exen": "Tomorrow is my day off.",
+   "noteen": "feminine"
   },
   {
    "word": "sair mais tarde",
@@ -5636,7 +5681,10 @@
    "note": "fazer horas extra — работать сверхурочно",
    "uk": "вийти пізніше, затриматися",
    "exuk": "Сьогодні я затримаюся на роботі.",
-   "noteuk": "fazer horas extra — працювати понаднормово"
+   "noteuk": "fazer horas extra — працювати понаднормово",
+   "en": "to stay on, to leave later",
+   "exen": "I'm staying on at work today.",
+   "noteen": "fazer horas extra — to work overtime"
   },
   {
    "word": "estar disponível",
@@ -5647,7 +5695,10 @@
    "note": "disponível — доступный",
    "uk": "бути вільним, доступним",
    "exuk": "Ви вільні завтра для зустрічі?",
-   "noteuk": "disponível — доступний"
+   "noteuk": "disponível — доступний",
+   "en": "to be available",
+   "exen": "Are you available for a meeting tomorrow?",
+   "noteen": "disponível — available"
   },
   {
    "word": "atender uma chamada",
@@ -5658,7 +5709,10 @@
    "note": "atender — отвечать, обслуживать",
    "uk": "відповісти на дзвінок",
    "exuk": "Я зараз не можу відповісти на дзвінок.",
-   "noteuk": "atender — відповідати, обслуговувати"
+   "noteuk": "atender — відповідати, обслуговувати",
+   "en": "to answer a call",
+   "exen": "I can't take the call right now.",
+   "noteen": "atender — to answer, to serve"
   },
   {
    "word": "mandar",
@@ -5669,7 +5723,10 @@
    "note": "Синоним enviar; также «командовать»",
    "uk": "надсилати; наказувати",
    "exuk": "Я надішлю тобі адресу повідомленням.",
-   "noteuk": "Синонім enviar; також «командувати»"
+   "noteuk": "Синонім enviar; також «командувати»",
+   "en": "to send; to give orders",
+   "exen": "I'll send you the address by message.",
+   "noteen": "Synonym enviar; also to be in charge"
   },
   {
    "word": "os impostos",
@@ -5680,7 +5737,10 @@
    "note": "as finanças — налоговая",
    "uk": "податки",
    "exuk": "Я плачу податки у травні.",
-   "noteuk": "as finanças — податкова"
+   "noteuk": "as finanças — податкова",
+   "en": "taxes",
+   "exen": "I pay my taxes in May.",
+   "noteen": "as finanças — the tax office"
   },
   {
    "word": "escovar os dentes",
@@ -5691,7 +5751,10 @@
    "note": "Синоним lavar os dentes",
    "uk": "чистити зуби щіткою",
    "exuk": "Я чищу зуби після їжі.",
-   "noteuk": "Синонім lavar os dentes"
+   "noteuk": "Синонім lavar os dentes",
+   "en": "to clean your teeth with a brush",
+   "exen": "I clean my teeth after meals.",
+   "noteen": "Synonym of lavar os dentes"
   },
   {
    "word": "fazer a barba",
@@ -5702,7 +5765,10 @@
    "note": "barbear-se — бриться",
    "uk": "поголитися",
    "exuk": "Я голюся через день.",
-   "noteuk": "barbear-se — голитися"
+   "noteuk": "barbear-se — голитися",
+   "en": "to have a shave",
+   "exen": "I shave every other day.",
+   "noteen": "barbear-se — to shave"
   },
   {
    "word": "maquilhar-se",
@@ -5713,7 +5779,10 @@
    "note": "a maquilhagem — макияж",
    "uk": "фарбуватися, робити макіяж",
    "exuk": "Вона фарбується перед виходом.",
-   "noteuk": "a maquilhagem — макіяж"
+   "noteuk": "a maquilhagem — макіяж",
+   "en": "to put on make-up",
+   "exen": "She puts on make-up before going out.",
+   "noteen": "a maquilhagem — make-up"
   },
   {
    "word": "tomar",
@@ -5724,7 +5793,10 @@
    "note": "tomar café/banho/comprimidos",
    "uk": "приймати; пити",
    "exuk": "Я приймаю таблетку після вечері.",
-   "noteuk": "tomar café/banho/comprimidos"
+   "noteuk": "tomar café/banho/comprimidos",
+   "en": "to take; to have a drink",
+   "exen": "I take the tablet after dinner.",
+   "noteen": "tomar café, tomar banho, tomar comprimidos"
   },
   {
    "word": "tomar café",
@@ -5735,7 +5807,10 @@
    "note": "Ритуал: um café = эспрессо",
    "uk": "випити кави",
    "exuk": "Ходімо вип’ємо кави он там?",
-   "noteuk": "Ритуал: um café = еспресо"
+   "noteuk": "Ритуал: um café = еспресо",
+   "en": "to have a coffee",
+   "exen": "Shall we have a coffee over there?",
+   "noteen": "A ritual: um café is an espresso"
   },
   {
    "word": "o chá",
@@ -5746,7 +5821,10 @@
    "note": "м. р.",
    "uk": "чай",
    "exuk": "Увечері я віддаю перевагу чаю з лимоном.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "tea",
+   "exen": "In the evening I prefer lemon tea.",
+   "noteen": "masculine"
   },
   {
    "word": "ver televisão",
@@ -5757,7 +5835,10 @@
    "note": "Без предлога: ver televisão",
    "uk": "дивитися телевізор",
    "exuk": "Я дивлюся телевізор тільки ввечері.",
-   "noteuk": "Без прийменника: ver televisão"
+   "noteuk": "Без прийменника: ver televisão",
+   "en": "to watch television",
+   "exen": "I only watch television in the evening.",
+   "noteen": "No preposition: ver televisão"
   },
   {
    "word": "ir aos correios",
@@ -5768,7 +5849,10 @@
    "note": "a encomenda — посылка",
    "uk": "іти на пошту",
    "exuk": "Я йду на пошту відправити посилку.",
-   "noteuk": "a encomenda — посилка"
+   "noteuk": "a encomenda — посилка",
+   "en": "to go to the post office",
+   "exen": "I'm going to the post office to send a parcel.",
+   "noteen": "a encomenda — a parcel"
   },
   {
    "word": "o posto dos correios",
@@ -5779,7 +5863,10 @@
    "note": "м. р.",
    "uk": "поштове відділення",
    "exuk": "Поштове відділення зачиняється о шостій.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "post office branch",
+   "exen": "The post office branch closes at six.",
+   "noteen": "masculine"
   },
   {
    "word": "o carteiro",
@@ -5790,7 +5877,10 @@
    "note": "Ж. р.: a carteira (и кошелёк)",
    "uk": "листоноша",
    "exuk": "Листоноша приходить близько десятої.",
-   "noteuk": "Ж. р.: a carteira (і гаманець)"
+   "noteuk": "Ж. р.: a carteira (і гаманець)",
+   "en": "postman",
+   "exen": "The postman comes at about ten.",
+   "noteen": "fem.: a carteira, which is also a wallet"
   },
   {
    "word": "o empregado dos correios",
@@ -5801,7 +5891,10 @@
    "note": "м. р.",
    "uk": "працівник пошти",
    "exuk": "Працівник пошти зважив листа.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "post office clerk",
+   "exen": "The post office clerk weighed the letter.",
+   "noteen": "masculine"
   },
   {
    "word": "o marco de correio",
@@ -5812,7 +5905,10 @@
    "note": "Красный ящик на улице",
    "uk": "поштова скринька (вулична)",
    "exuk": "Я вкинув листа в поштову скриньку.",
-   "noteuk": "Червона скринька на вулиці"
+   "noteuk": "Червона скринька на вулиці",
+   "en": "post box in the street",
+   "exen": "I put the letter in the post box.",
+   "noteen": "The red box you see in the street"
   },
   {
    "word": "receber uma carta",
@@ -5823,7 +5919,10 @@
    "note": "",
    "uk": "отримати листа",
    "exuk": "Я отримав листа з банку.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to get a letter",
+   "exen": "I got a letter from the bank.",
+   "noteen": ""
   },
   {
    "word": "os correios online",
@@ -5834,7 +5933,10 @@
    "note": "CTT — почта Португалии",
    "uk": "пошта онлайн (сервіс)",
    "exuk": "Я відстежив посилку на сайті пошти.",
-   "noteuk": "CTT — пошта Португалії"
+   "noteuk": "CTT — пошта Португалії",
+   "en": "the post office website",
+   "exen": "I tracked the parcel on the post office website.",
+   "noteen": "CTT is the Portuguese postal service"
   },
   {
    "word": "a caixa multibanco",
@@ -5845,7 +5947,10 @@
    "note": "Синоним: o multibanco",
    "uk": "банкомат",
    "exuk": "На розі є банкомат.",
-   "noteuk": "Синонім: o multibanco"
+   "noteuk": "Синонім: o multibanco",
+   "en": "cash machine, ATM",
+   "exen": "There's a cash machine on the corner.",
+   "noteen": "Synonym: o multibanco"
   },
   {
    "word": "o número de conta",
@@ -5856,7 +5961,10 @@
    "note": "IBAN — международный формат",
    "uk": "номер рахунку",
    "exuk": "Мені потрібен номер вашого рахунку.",
-   "noteuk": "IBAN — міжнародний формат"
+   "noteuk": "IBAN — міжнародний формат",
+   "en": "account number",
+   "exen": "I need your account number.",
+   "noteen": "IBAN is the international format"
   },
   {
    "word": "fechar uma conta",
@@ -5867,7 +5975,10 @@
    "note": "abrir uma conta — открыть счёт",
    "uk": "закрити рахунок",
    "exuk": "Я ходив у банк закрити рахунок.",
-   "noteuk": "abrir uma conta — відкрити рахунок"
+   "noteuk": "abrir uma conta — відкрити рахунок",
+   "en": "to close an account",
+   "exen": "I went to the bank to close the account.",
+   "noteen": "abrir uma conta — to open an account"
   },
   {
    "word": "o cheque",
@@ -5878,7 +5989,10 @@
    "note": "м. р.",
    "uk": "чек (банківський)",
    "exuk": "Чеками вже майже ніхто не платить.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "cheque",
+   "exen": "Hardly anyone pays by cheque any more.",
+   "noteen": "masculine"
   },
   {
    "word": "o saldo positivo",
@@ -5889,7 +6003,10 @@
    "note": "o saldo — остаток на счету",
    "uk": "позитивний баланс",
    "exuk": "На рахунку позитивний баланс.",
-   "noteuk": "o saldo — залишок на рахунку"
+   "noteuk": "o saldo — залишок на рахунку",
+   "en": "a positive balance",
+   "exen": "The account has a positive balance.",
+   "noteen": "o saldo — the balance"
   },
   {
    "word": "o saldo negativo",
@@ -5900,7 +6017,10 @@
    "note": "м. р.",
    "uk": "негативний баланс",
    "exuk": "Мій рахунок пішов у мінус.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "a negative balance",
+   "exen": "My account went into the red.",
+   "noteen": "masculine"
   },
   {
    "word": "meter",
@@ -5911,7 +6031,10 @@
    "note": "Разговорнее, чем pôr",
    "uk": "класти, пхати; вносити",
    "exuk": "Я вніс гроші на рахунок.",
-   "noteuk": "Розмовніше, ніж pôr"
+   "noteuk": "Розмовніше, ніж pôr",
+   "en": "to put in, to shove; to pay in",
+   "exen": "I paid the money into the account.",
+   "noteen": "More colloquial than pôr"
   },
   {
    "word": "chamar a polícia",
@@ -5922,7 +6045,10 @@
    "note": "",
    "uk": "викликати поліцію",
    "exuk": "Мені довелося викликати поліцію.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to call the police",
+   "exen": "I had to call the police.",
+   "noteen": ""
   },
   {
    "word": "a queixa",
@@ -5933,7 +6059,10 @@
    "note": "a esquadra — участок",
    "uk": "скарга, заява",
    "exuk": "Я подав заяву до поліційної дільниці.",
-   "noteuk": "a esquadra — дільниця"
+   "noteuk": "a esquadra — дільниця",
+   "en": "complaint, formal report",
+   "exen": "I made a report at the police station.",
+   "noteen": "a esquadra — the police station"
   },
   {
    "word": "o número de emergência",
@@ -5944,7 +6073,10 @@
    "note": "м. р.",
    "uk": "номер екстреної служби",
    "exuk": "Екстрений номер у Португалії — 112.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "emergency number",
+   "exen": "The emergency number in Portugal is 112.",
+   "noteen": "masculine"
   },
   {
    "word": "o socorro",
@@ -5955,7 +6087,10 @@
    "note": "Крик о помощи: Socorro!",
    "uk": "допомога, порятунок",
    "exuk": "Рятуйте! Викличте швидку!",
-   "noteuk": "Крик про допомогу: Socorro!"
+   "noteuk": "Крик про допомогу: Socorro!",
+   "en": "help in an emergency, rescue",
+   "exen": "Help! Call an ambulance!",
+   "noteen": "The cry for help is Socorro!"
   },
   {
    "word": "o bacalhau",
@@ -5966,7 +6101,10 @@
    "note": "Национальный продукт Португалии",
    "uk": "тріска (солона)",
    "exuk": "Тріска з вершками — моя улюблена страва.",
-   "noteuk": "Національний продукт Португалії"
+   "noteuk": "Національний продукт Португалії",
+   "en": "salt cod",
+   "exen": "Cod with cream is my favourite dish.",
+   "noteen": "A national staple in Portugal"
   },
   {
    "word": "o salmão",
@@ -5977,7 +6115,10 @@
    "note": "Мн. ч.: os salmões",
    "uk": "лосось",
    "exuk": "Лосось на грилі готується за десять хвилин.",
-   "noteuk": "Множина: os salmões"
+   "noteuk": "Множина: os salmões",
+   "en": "salmon",
+   "exen": "Grilled salmon is ready in ten minutes.",
+   "noteen": "Plural: os salmões"
   },
   {
    "word": "o camarão",
@@ -5988,7 +6129,10 @@
    "note": "Мн. ч.: os camarões",
    "uk": "креветка",
    "exuk": "Ми їли варені креветки із сіллю.",
-   "noteuk": "Множина: os camarões"
+   "noteuk": "Множина: os camarões",
+   "en": "prawn",
+   "exen": "We ate boiled prawns with salt.",
+   "noteen": "Plural: os camarões"
   },
   {
    "word": "a gamba",
@@ -5999,7 +6143,10 @@
    "note": "Больше, чем camarão",
    "uk": "велика креветка",
    "exuk": "Великі креветки на грилі дорогі.",
-   "noteuk": "Більша, ніж camarão"
+   "noteuk": "Більша, ніж camarão",
+   "en": "king prawn",
+   "exen": "Grilled king prawns are expensive.",
+   "noteen": "Bigger than a camarão"
   },
   {
    "word": "o peru",
@@ -6010,7 +6157,10 @@
    "note": "o Peru — страна Перу",
    "uk": "індичка",
    "exuk": "Індичка — типова різдвяна страва.",
-   "noteuk": "o Peru — країна Перу"
+   "noteuk": "o Peru — країна Перу",
+   "en": "turkey",
+   "exen": "Turkey is the typical Christmas dish.",
+   "noteen": "o Peru is the country"
   },
   {
    "word": "o fiambre",
@@ -6021,7 +6171,10 @@
    "note": "Сыровяленая — o presunto",
    "uk": "варена шинка",
    "exuk": "Сендвіч із шинкою, будь ласка.",
-   "noteuk": "Сиров’ялена — o presunto"
+   "noteuk": "Сиров’ялена — o presunto",
+   "en": "cooked ham",
+   "exen": "A ham sandwich, please.",
+   "noteen": "Cured ham is o presunto"
   },
   {
    "word": "a salsicha",
@@ -6032,7 +6185,10 @@
    "note": "ж. р.",
    "uk": "сосиска",
    "exuk": "Діти обожнюють сосиски.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "sausage, frankfurter",
+   "exen": "Children love sausages.",
+   "noteen": "feminine"
   },
   {
    "word": "o queijo",
@@ -6043,7 +6199,10 @@
    "note": "м. р.",
    "uk": "сир",
    "exuk": "Цей гірський сир витриманий.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "cheese",
+   "exen": "This mountain cheese is well matured.",
+   "noteen": "masculine"
   },
   {
    "word": "a manteiga",
@@ -6054,7 +6213,10 @@
    "note": "ж. р.",
    "uk": "масло вершкове",
    "exuk": "Намасти масло на тост.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "butter",
+   "exen": "Spread butter on the toast.",
+   "noteen": "feminine"
   },
   {
    "word": "o iogurte",
@@ -6065,7 +6227,10 @@
    "note": "м. р.",
    "uk": "йогурт",
    "exuk": "На сніданок я їм натуральний йогурт.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "yoghurt",
+   "exen": "I have plain yoghurt for breakfast.",
+   "noteen": "masculine"
   },
   {
    "word": "o azeite",
@@ -6076,7 +6241,10 @@
    "note": "Другое масло — o óleo",
    "uk": "оливкова олія",
    "exuk": "Полий салат оливковою олією.",
-   "noteuk": "Інша олія — o óleo"
+   "noteuk": "Інша олія — o óleo",
+   "en": "olive oil",
+   "exen": "Pour some olive oil on the salad.",
+   "noteen": "Other oils are o óleo"
   },
   {
    "word": "o vinagre",
@@ -6087,7 +6255,10 @@
    "note": "м. р.",
    "uk": "оцет",
    "exuk": "Заправ олією та оцтом.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "vinegar",
+   "exen": "Dress it with oil and vinegar.",
+   "noteen": "masculine"
   },
   {
    "word": "a farinha",
@@ -6098,7 +6269,10 @@
    "note": "ж. р.",
    "uk": "борошно",
    "exuk": "Бракує борошна на пиріг.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "flour",
+   "exen": "There isn't enough flour for the cake.",
+   "noteen": "feminine"
   },
   {
    "word": "o milho",
@@ -6109,7 +6283,10 @@
    "note": "м. р.",
    "uk": "кукурудза",
    "exuk": "Кукурудзяний хліб типовий для півночі.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "maize, corn",
+   "exen": "Corn bread is typical of the north.",
+   "noteen": "masculine"
   },
   {
    "word": "a alface",
@@ -6120,7 +6297,10 @@
    "note": "ж. р.",
    "uk": "салат (листковий)",
    "exuk": "У салат ідуть листковий салат і помідор.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "lettuce",
+   "exen": "The salad has lettuce and tomato in it.",
+   "noteen": "feminine"
   },
   {
    "word": "a couve",
@@ -6131,7 +6311,10 @@
    "note": "ж. р.",
    "uk": "капуста",
    "exuk": "У калду-верде кладуть дуже дрібно нарізану капусту.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "cabbage, kale",
+   "exen": "Caldo verde has very finely shredded cabbage in it.",
+   "noteen": "feminine"
   },
   {
    "word": "a cebola",
@@ -6142,7 +6325,10 @@
    "note": "ж. р.",
    "uk": "цибуля",
    "exuk": "Наріж цибулю кільцями.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "onion",
+   "exen": "Slice the onion into rings.",
+   "noteen": "feminine"
   },
   {
    "word": "o alho",
@@ -6153,7 +6339,10 @@
    "note": "dente de alho — зубчик",
    "uk": "часник",
    "exuk": "Додай два зубчики часнику.",
-   "noteuk": "dente de alho — зубчик"
+   "noteuk": "dente de alho — зубчик",
+   "en": "garlic",
+   "exen": "Add two cloves of garlic.",
+   "noteen": "dente de alho — a clove"
   },
   {
    "word": "a cenoura",
@@ -6164,7 +6353,10 @@
    "note": "ж. р.",
    "uk": "морква",
    "exuk": "У суп ідуть морква і картопля.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "carrot",
+   "exen": "The soup has carrot and potato in it.",
+   "noteen": "feminine"
   },
   {
    "word": "a salsa",
@@ -6175,7 +6367,10 @@
    "note": "Ложный друг: не соус",
    "uk": "петрушка",
    "exuk": "Посип посіченою петрушкою.",
-   "noteuk": "Хибний друг: не соус"
+   "noteuk": "Хибний друг: не соус",
+   "en": "parsley",
+   "exen": "Sprinkle with chopped parsley.",
+   "noteen": "False friend: it isn't a sauce"
   },
   {
    "word": "a pêra",
@@ -6186,7 +6381,10 @@
    "note": "Мн. ч.: as peras",
    "uk": "груша",
    "exuk": "Після обіду я з’їв грушу.",
-   "noteuk": "Множина: as peras"
+   "noteuk": "Множина: as peras",
+   "en": "pear",
+   "exen": "I had a pear after lunch.",
+   "noteen": "Plural: as peras"
   },
   {
    "word": "a uva",
@@ -6197,7 +6395,10 @@
    "note": "Обычно мн. ч.: as uvas",
    "uk": "виноград",
    "exuk": "З винограду Дору роблять добре вино.",
-   "noteuk": "Зазвичай у множині: as uvas"
+   "noteuk": "Зазвичай у множині: as uvas",
+   "en": "grape",
+   "exen": "Douro grapes make good wine.",
+   "noteen": "Usually plural: as uvas"
   },
   {
    "word": "a melancia",
@@ -6208,7 +6409,10 @@
    "note": "ж. р.",
    "uk": "кавун",
    "exuk": "Улітку я щодня їм кавун.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "watermelon",
+   "exen": "In summer I eat watermelon every day.",
+   "noteen": "feminine"
   },
   {
    "word": "a tangerina",
@@ -6219,7 +6423,10 @@
    "note": "ж. р.",
    "uk": "мандарин",
    "exuk": "Цієї пори мандарини солодкі.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "tangerine",
+   "exen": "Tangerines are sweet at this time of year.",
+   "noteen": "feminine"
   },
   {
    "word": "a amêndoa",
@@ -6230,7 +6437,10 @@
    "note": "ж. р.",
    "uk": "мигдаль",
    "exuk": "У пиріг іде мелений мигдаль.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "almond",
+   "exen": "The cake has ground almonds in it.",
+   "noteen": "feminine"
   },
   {
    "word": "a noz",
@@ -6241,7 +6451,10 @@
    "note": "Мн. ч.: as nozes",
    "uk": "горіх (волоський)",
    "exuk": "Додай горіхи в салат.",
-   "noteuk": "Множина: as nozes"
+   "noteuk": "Множина: as nozes",
+   "en": "walnut",
+   "exen": "Add walnuts to the salad.",
+   "noteen": "Plural: as nozes"
   },
   {
    "word": "o bolo",
@@ -6252,7 +6465,10 @@
    "note": "м. р.",
    "uk": "пиріг, торт",
    "exuk": "Я спік шоколадний торт.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "cake",
+   "exen": "I baked a chocolate cake.",
+   "noteen": "masculine"
   },
   {
    "word": "a bolacha",
@@ -6263,7 +6479,10 @@
    "note": "ж. р.",
    "uk": "печиво",
    "exuk": "З’їж печиво до чаю.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "biscuit",
+   "exen": "Have a biscuit with your tea.",
+   "noteen": "feminine"
   },
   {
    "word": "a torrada",
@@ -6274,7 +6493,10 @@
    "note": "ж. р.",
    "uk": "тост",
    "exuk": "Тост з маслом, будь ласка.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "slice of toast",
+   "exen": "Toast with butter, please.",
+   "noteen": "feminine"
   },
   {
    "word": "torrar",
@@ -6285,7 +6507,10 @@
    "note": "",
    "uk": "підсмажувати (хліб), обсмажувати",
    "exuk": "Я підсмажу хліб.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to toast; to roast",
+   "exen": "I'll toast the bread.",
+   "noteen": ""
   },
   {
    "word": "torrado",
@@ -6296,7 +6521,10 @@
    "note": "torrado / torrada",
    "uk": "підсмажений",
    "exuk": "Я люблю добре підсмажений хліб.",
-   "noteuk": "torrado / torrada"
+   "noteuk": "torrado / torrada",
+   "en": "toasted",
+   "exen": "I like my bread well toasted.",
+   "noteen": "torrado / torrada"
   },
   {
    "word": "o pão com manteiga",
@@ -6307,7 +6535,10 @@
    "note": "Классический завтрак",
    "uk": "хліб з маслом",
    "exuk": "На сніданок я їм хліб з маслом.",
-   "noteuk": "Класичний сніданок"
+   "noteuk": "Класичний сніданок",
+   "en": "bread and butter",
+   "exen": "For breakfast I have bread and butter.",
+   "noteen": "The classic Portuguese breakfast"
   },
   {
    "word": "a sandes mista",
@@ -6318,7 +6549,10 @@
    "note": "a sandes — не изменяется во мн. ч.",
    "uk": "сендвіч із шинкою та сиром",
    "exuk": "Сендвіч із шинкою та сиром і сік.",
-   "noteuk": "a sandes — не змінюється у множині"
+   "noteuk": "a sandes — не змінюється у множині",
+   "en": "ham and cheese sandwich",
+   "exen": "A ham and cheese sandwich and a juice.",
+   "noteen": "a sandes does not change in the plural"
   },
   {
    "word": "a omelete",
@@ -6329,7 +6563,10 @@
    "note": "ж. р.",
    "uk": "омлет",
    "exuk": "Я роблю омлет із сиром.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "omelette",
+   "exen": "I'm making a cheese omelette.",
+   "noteen": "feminine"
   },
   {
    "word": "a piza",
@@ -6340,7 +6577,10 @@
    "note": "Португальское написание: piza",
    "uk": "піца",
    "exuk": "Ми замовили велику піцу.",
-   "noteuk": "Португальське написання: piza"
+   "noteuk": "Португальське написання: piza",
+   "en": "pizza",
+   "exen": "We ordered a large pizza.",
+   "noteen": "The Portuguese spelling is piza"
   },
   {
    "word": "a sobremesa",
@@ -6351,7 +6591,10 @@
    "note": "ж. р.",
    "uk": "десерт",
    "exuk": "Які у вас сьогодні десерти?",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "dessert",
+   "exen": "What desserts do you have today?",
+   "noteen": "feminine"
   },
   {
    "word": "a pastelaria",
@@ -6362,7 +6605,10 @@
    "note": "Тут же завтракают",
    "uk": "кондитерська",
    "exuk": "Я п’ю каву в кондитерській на розі.",
-   "noteuk": "Тут-таки снідають"
+   "noteuk": "Тут-таки снідають",
+   "en": "cake shop and café",
+   "exen": "I have my coffee at the cake shop on the corner.",
+   "noteen": "People have breakfast there too"
   },
   {
    "word": "a cafetaria",
@@ -6373,7 +6619,10 @@
    "note": "ж. р.",
    "uk": "кафетерій",
    "exuk": "Кафетерій у лікарні відкритий цілу ніч.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "cafeteria",
+   "exen": "The hospital cafeteria is open all night.",
+   "noteen": "feminine"
   },
   {
    "word": "a bica",
@@ -6384,7 +6633,10 @@
    "note": "В Порту говорят «um cimbalino»",
    "uk": "еспресо (у Лісабоні)",
    "exuk": "Еспресо і тістечко з кремом, будь ласка.",
-   "noteuk": "У Порту кажуть «um cimbalino»"
+   "noteuk": "У Порту кажуть «um cimbalino»",
+   "en": "espresso (in Lisbon)",
+   "exen": "An espresso and a custard tart, please.",
+   "noteen": "In Porto they say um cimbalino"
   },
   {
    "word": "o café cheio",
@@ -6395,7 +6647,10 @@
    "note": "Меньше воды — café curto",
    "uk": "еспресо побільше",
    "exuk": "Зранку я віддаю перевагу каві побільше.",
-   "noteuk": "Менше води — café curto"
+   "noteuk": "Менше води — café curto",
+   "en": "a longer espresso",
+   "exen": "In the morning I prefer a longer coffee.",
+   "noteen": "Less water is a café curto"
   },
   {
    "word": "descafeinado",
@@ -6406,7 +6661,10 @@
    "note": "Разг.: um deca",
    "uk": "без кофеїну",
    "exuk": "Каву без кофеїну, будь ласка.",
-   "noteuk": "Розм.: um deca"
+   "noteuk": "Розм.: um deca",
+   "en": "decaffeinated",
+   "exen": "A decaf coffee, please.",
+   "noteen": "Colloquially um deca"
   },
   {
    "word": "o sumo",
@@ -6417,7 +6675,10 @@
    "note": "м. р.",
    "uk": "сік",
    "exuk": "Свіжовичавлений апельсиновий сік.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "fruit juice",
+   "exen": "A freshly squeezed orange juice.",
+   "noteen": "masculine"
   },
   {
    "word": "a água mineral",
@@ -6428,7 +6689,10 @@
    "note": "ж. р.",
    "uk": "мінеральна вода",
    "exuk": "Холодну мінеральну воду, будь ласка.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "mineral water",
+   "exen": "A chilled mineral water, please.",
+   "noteen": "feminine"
   },
   {
    "word": "com gás",
@@ -6439,7 +6703,10 @@
    "note": "Частый вопрос в ресторане",
    "uk": "газована",
    "exuk": "Вода з газом чи без?",
-   "noteuk": "Часте питання в ресторані"
+   "noteuk": "Часте питання в ресторані",
+   "en": "sparkling, fizzy",
+   "exen": "Sparkling or still water?",
+   "noteen": "A common question in restaurants"
   },
   {
    "word": "natural",
@@ -6450,7 +6717,10 @@
    "note": "Мн. ч.: naturais",
    "uk": "натуральний; кімнатної температури",
    "exuk": "Вам воду холодну чи кімнатної температури?",
-   "noteuk": "Множина: naturais"
+   "noteuk": "Множина: naturais",
+   "en": "natural; at room temperature",
+   "exen": "Would you like the water chilled or at room temperature?",
+   "noteen": "Plural: naturais"
   },
   {
    "word": "o vinho",
@@ -6461,7 +6731,10 @@
    "note": "tinto — красное, branco — белое",
    "uk": "вино",
    "exuk": "Келих домашнього червоного вина.",
-   "noteuk": "tinto — червоне, branco — біле"
+   "noteuk": "tinto — червоне, branco — біле",
+   "en": "wine",
+   "exen": "A glass of the house red.",
+   "noteen": "tinto is red, branco is white"
   },
   {
    "word": "o copo de vinho",
@@ -6472,7 +6745,10 @@
    "note": "м. р.",
    "uk": "келих вина",
    "exuk": "За вечерею я випиваю келих вина.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "glass of wine",
+   "exen": "I have a glass of wine with dinner.",
+   "noteen": "masculine"
   },
   {
    "word": "a cerveja",
@@ -6483,7 +6759,10 @@
    "note": "imperial — разливное 0,2 л",
    "uk": "пиво",
    "exuk": "«Імперіал» — це маленьке пиво.",
-   "noteuk": "imperial — розливне 0,2 л"
+   "noteuk": "imperial — розливне 0,2 л",
+   "en": "beer",
+   "exen": "An imperial is a small draught beer.",
+   "noteen": "imperial — 200 ml of draught beer"
   },
   {
    "word": "a refeição",
@@ -6494,7 +6773,10 @@
    "note": "Мн. ч.: as refeições",
    "uk": "прийом їжі, трапеза",
    "exuk": "Я їм тричі на день.",
-   "noteuk": "Множина: as refeições"
+   "noteuk": "Множина: as refeições",
+   "en": "meal",
+   "exen": "I eat three meals a day.",
+   "noteen": "Plural: as refeições"
   },
   {
    "word": "o prato principal",
@@ -6505,7 +6787,10 @@
    "note": "м. р.",
    "uk": "основна страва",
    "exuk": "На основну страву я вибрав рибу.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "main course",
+   "exen": "For the main course I chose fish.",
+   "noteen": "masculine"
   },
   {
    "word": "o menu do dia",
@@ -6516,7 +6801,10 @@
    "note": "м. р.",
    "uk": "меню дня, комплексний обід",
    "exuk": "До комплексного обіду входять суп і напій.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "set menu of the day",
+   "exen": "The set menu includes soup and a drink.",
+   "noteen": "masculine"
   },
   {
    "word": "a dose",
@@ -6527,7 +6815,10 @@
    "note": "meia dose — полпорции",
    "uk": "порція",
    "exuk": "Мені вистачить половини порції.",
-   "noteuk": "meia dose — півпорції"
+   "noteuk": "meia dose — півпорції",
+   "en": "portion",
+   "exen": "Half a portion is enough for me.",
+   "noteen": "meia dose — half a portion"
   },
   {
    "word": "o guardanapo",
@@ -6538,7 +6829,10 @@
    "note": "м. р.",
    "uk": "серветка",
    "exuk": "Можна ще серветок?",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "napkin",
+   "exen": "Could you bring some more napkins?",
+   "noteen": "masculine"
   },
   {
    "word": "o empregado de mesa",
@@ -6549,7 +6843,10 @@
    "note": "Ж. р.: a empregada de mesa",
    "uk": "офіціант",
    "exuk": "Офіціант приніс меню.",
-   "noteuk": "Ж. р.: a empregada de mesa"
+   "noteuk": "Ж. р.: a empregada de mesa",
+   "en": "waiter, table staff",
+   "exen": "The waiter brought the menu.",
+   "noteen": "fem.: a empregada de mesa"
   },
   {
    "word": "o cozinheiro",
@@ -6560,7 +6857,10 @@
    "note": "Ж. р.: a cozinheira",
    "uk": "кухар",
    "exuk": "Кухар працював в Іспанії.",
-   "noteuk": "Ж. р.: a cozinheira"
+   "noteuk": "Ж. р.: a cozinheira",
+   "en": "cook",
+   "exen": "The cook worked in Spain.",
+   "noteen": "fem.: a cozinheira"
   },
   {
    "word": "o chef",
@@ -6571,7 +6871,10 @@
    "note": "Читается «шеф»",
    "uk": "шеф-кухар",
    "exuk": "Шеф-кухар підійшов привітатися.",
-   "noteuk": "Читається «шеф»"
+   "noteuk": "Читається «шеф»",
+   "en": "head chef",
+   "exen": "The chef came over to say hello.",
+   "noteen": "Pronounced the French way"
   },
   {
    "word": "reservar mesa",
@@ -6582,7 +6885,10 @@
    "note": "a reserva — бронь",
    "uk": "забронювати столик",
    "exuk": "Я забронював столик на восьму.",
-   "noteuk": "a reserva — бронь"
+   "noteuk": "a reserva — бронь",
+   "en": "to book a table",
+   "exen": "I booked a table for eight o'clock.",
+   "noteen": "a reserva — the booking"
   },
   {
    "word": "servir",
@@ -6593,7 +6899,10 @@
    "note": "Неправильный: sirvo, serves, serve",
    "uk": "подавати; годитися",
    "exuk": "Вечерю подають о сьомій.",
-   "noteuk": "Неправильне: sirvo, serves, serve"
+   "noteuk": "Неправильне: sirvo, serves, serve",
+   "en": "to serve; to be suitable",
+   "exen": "Dinner is served at seven.",
+   "noteen": "Irregular: sirvo, serves, serve"
   },
   {
    "word": "escolher",
@@ -6604,7 +6913,10 @@
    "note": "",
    "uk": "вибирати",
    "exuk": "Ви вже вибрали страву?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to choose",
+   "exen": "Have you chosen your dish yet?",
+   "noteen": ""
   },
   {
    "word": "decidir",
@@ -6615,7 +6927,10 @@
    "note": "",
    "uk": "вирішувати",
    "exuk": "Я ще не вирішив, що буду їсти.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to decide",
+   "exen": "I still haven't decided what to eat.",
+   "noteen": ""
   },
   {
    "word": "bom apetite",
@@ -6626,7 +6941,10 @@
    "note": "Ответ: igualmente",
    "uk": "смачного",
    "exuk": "Смачного! — Дякую, взаємно.",
-   "noteuk": "Відповідь: igualmente"
+   "noteuk": "Відповідь: igualmente",
+   "en": "enjoy your meal",
+   "exen": "Enjoy your meal! — Thank you, likewise.",
+   "noteen": "The reply is igualmente"
   },
   {
    "word": "o piquenique",
@@ -6637,7 +6955,10 @@
    "note": "м. р.",
    "uk": "пікнік",
    "exuk": "Влаштуймо пікнік у парку.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "picnic",
+   "exen": "Let's have a picnic in the park.",
+   "noteen": "masculine"
   },
   {
    "word": "a receita",
@@ -6648,7 +6969,10 @@
    "note": "Также рецепт от врача",
    "uk": "рецепт",
    "exuk": "Надішли мені рецепт пирога.",
-   "noteuk": "Також рецепт від лікаря"
+   "noteuk": "Також рецепт від лікаря",
+   "en": "recipe; prescription",
+   "exen": "Send me the recipe for the cake.",
+   "noteen": "Also a doctor's prescription"
   },
   {
    "word": "o ingrediente",
@@ -6659,7 +6983,10 @@
    "note": "м. р.",
    "uk": "інгредієнт",
    "exuk": "Бракує двох інгредієнтів.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "ingredient",
+   "exen": "Two ingredients are missing.",
+   "noteen": "masculine"
   },
   {
    "word": "o tempo de preparação",
@@ -6670,7 +6997,10 @@
    "note": "м. р.",
    "uk": "час приготування",
    "exuk": "Час приготування — двадцять хвилин.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "preparation time",
+   "exen": "The preparation time is twenty minutes.",
+   "noteen": "masculine"
   },
   {
    "word": "ferver",
@@ -6681,7 +7011,10 @@
    "note": "",
    "uk": "кип’ятити, кипіти",
    "exuk": "Дай воді закипіти, перш ніж класти макарони.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to boil",
+   "exen": "Let the water boil before adding the pasta.",
+   "noteen": ""
   },
   {
    "word": "cozer",
@@ -6692,7 +7025,10 @@
    "note": "Не путать с coser — шить",
    "uk": "варити",
    "exuk": "Вари картоплю двадцять хвилин.",
-   "noteuk": "Не плутати з coser — шити"
+   "noteuk": "Не плутати з coser — шити",
+   "en": "to boil, to cook in water",
+   "exen": "Boil the potatoes for twenty minutes.",
+   "noteen": "Not to be confused with coser, to sew"
   },
   {
    "word": "cozido",
@@ -6703,7 +7039,10 @@
    "note": "cozido à portuguesa — рагу",
    "uk": "варений",
    "exuk": "Я віддаю перевагу вареним овочам.",
-   "noteuk": "cozido à portuguesa — рагу"
+   "noteuk": "cozido à portuguesa — рагу",
+   "en": "boiled",
+   "exen": "I prefer boiled vegetables.",
+   "noteen": "cozido à portuguesa is a boiled stew"
   },
   {
    "word": "assar",
@@ -6714,7 +7053,10 @@
    "note": "",
    "uk": "запікати, смажити в духовці",
    "exuk": "Я запечу курку в духовці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to roast, to bake in the oven",
+   "exen": "I'm going to roast the chicken in the oven.",
+   "noteen": ""
   },
   {
    "word": "assado",
@@ -6725,7 +7067,10 @@
    "note": "assado / assada",
    "uk": "запечений",
    "exuk": "Запечена курка з картоплею.",
-   "noteuk": "assado / assada"
+   "noteuk": "assado / assada",
+   "en": "roast, baked",
+   "exen": "Roast chicken with potatoes.",
+   "noteen": "assado / assada"
   },
   {
    "word": "grelhar",
@@ -6736,7 +7081,10 @@
    "note": "",
    "uk": "смажити на грилі",
    "exuk": "Я посмажив сардини на грилі в саду.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to grill",
+   "exen": "I grilled sardines in the garden.",
+   "noteen": ""
   },
   {
    "word": "grelhado",
@@ -6747,7 +7095,10 @@
    "note": "grelhado / grelhada",
    "uk": "смажений на грилі",
    "exuk": "Стейк на грилі, будь ласка.",
-   "noteuk": "grelhado / grelhada"
+   "noteuk": "grelhado / grelhada",
+   "en": "grilled",
+   "exen": "A grilled steak, please.",
+   "noteen": "grelhado / grelhada"
   },
   {
    "word": "fritar",
@@ -6758,7 +7109,10 @@
    "note": "",
    "uk": "смажити (в олії)",
    "exuk": "Я не люблю смажити вдома.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to fry",
+   "exen": "I don't like frying at home.",
+   "noteen": ""
   },
   {
    "word": "frito",
@@ -6769,7 +7123,10 @@
    "note": "frito / frita",
    "uk": "смажений",
    "exuk": "Смажена риба з рисом.",
-   "noteuk": "frito / frita"
+   "noteuk": "frito / frita",
+   "en": "fried",
+   "exen": "Fried fish with rice.",
+   "noteen": "frito / frita"
   },
   {
    "word": "as batatas fritas",
@@ -6780,7 +7137,10 @@
    "note": "Всегда мн. ч.",
    "uk": "картопля фрі; чипси",
    "exuk": "Хочете картоплю фрі до бургера?",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "chips; crisps",
+   "exen": "Would you like chips with your burger?",
+   "noteen": "Always plural"
   },
   {
    "word": "descascar",
@@ -6791,7 +7151,10 @@
    "note": "a casca — кожура",
    "uk": "чистити (від шкірки)",
    "exuk": "Почисти картоплю, будь ласка.",
-   "noteuk": "a casca — шкірка"
+   "noteuk": "a casca — шкірка",
+   "en": "to peel",
+   "exen": "Peel the potatoes, please.",
+   "noteen": "a casca — the peel"
   },
   {
    "word": "picar",
@@ -6802,7 +7165,10 @@
    "note": "carne picada — фарш",
    "uk": "рубати, дрібно різати; жалити",
    "exuk": "Наріж цибулю дуже дрібно.",
-   "noteuk": "carne picada — фарш"
+   "noteuk": "carne picada — фарш",
+   "en": "to chop finely; to sting",
+   "exen": "Chop the onion very fine.",
+   "noteen": "carne picada — mince"
   },
   {
    "word": "misturar",
@@ -6813,7 +7179,10 @@
    "note": "",
    "uk": "змішувати",
    "exuk": "Перемішай усе дуже добре.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to mix",
+   "exen": "Mix it all together well.",
+   "noteen": ""
   },
   {
    "word": "bater",
@@ -6824,7 +7193,10 @@
    "note": "bater à porta — стучать в дверь",
    "uk": "збивати; стукати",
    "exuk": "Збийте яйця з цукром.",
-   "noteuk": "bater à porta — стукати у двері"
+   "noteuk": "bater à porta — стукати у двері",
+   "en": "to beat, to whisk; to knock",
+   "exen": "Beat the eggs with the sugar.",
+   "noteen": "bater à porta — to knock at the door"
   },
   {
    "word": "temperar",
@@ -6835,7 +7207,10 @@
    "note": "",
    "uk": "приправляти",
    "exuk": "Приправ м’ясо сіллю й часником.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to season",
+   "exen": "Season the meat with salt and garlic.",
+   "noteen": ""
   },
   {
    "word": "o tempero",
@@ -6846,7 +7221,10 @@
    "note": "м. р.",
    "uk": "приправа",
    "exuk": "У цьому супі бракує приправ.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "seasoning",
+   "exen": "This soup needs more seasoning.",
+   "noteen": "masculine"
   },
   {
    "word": "mal passado",
@@ -6857,7 +7235,10 @@
    "note": "bem passado — прожаренный",
    "uk": "з кров’ю (про м’ясо)",
    "exuk": "Я хочу стейк з кров’ю.",
-   "noteuk": "bem passado — просмажений"
+   "noteuk": "bem passado — просмажений",
+   "en": "rare (of meat)",
+   "exen": "I'd like the steak rare.",
+   "noteen": "bem passado — well done"
   },
   {
    "word": "mal cozido",
@@ -6868,7 +7249,10 @@
    "note": "",
    "uk": "недоварений",
    "exuk": "Рис недоварений.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "undercooked",
+   "exen": "The rice is undercooked.",
+   "noteen": ""
   },
   {
    "word": "a colher de sopa",
@@ -6879,7 +7263,10 @@
    "note": "colher de chá — чайная ложка",
    "uk": "столова ложка",
    "exuk": "Додай дві столові ложки оливкової олії.",
-   "noteuk": "colher de chá — чайна ложка"
+   "noteuk": "colher de chá — чайна ложка",
+   "en": "tablespoon",
+   "exen": "Add two tablespoons of olive oil.",
+   "noteen": "colher de chá — teaspoon"
   },
   {
    "word": "a lata",
@@ -6890,7 +7277,10 @@
    "note": "ж. р.",
    "uk": "бляшанка (консервна)",
    "exuk": "Я купив бляшанку тунця.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "tin, can",
+   "exen": "I bought a tin of tuna.",
+   "noteen": "feminine"
   },
   {
    "word": "fazer o pequeno-almoço",
@@ -6901,7 +7291,10 @@
    "note": "",
    "uk": "готувати сніданок",
    "exuk": "Я готую сніданок на всіх.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to make breakfast",
+   "exen": "I make breakfast for everyone.",
+   "noteen": ""
   },
   {
    "word": "a dieta",
@@ -6912,7 +7305,10 @@
    "note": "estar de dieta — быть на диете",
    "uk": "дієта",
    "exuk": "Цього місяця я на дієті.",
-   "noteuk": "estar de dieta — бути на дієті"
+   "noteuk": "estar de dieta — бути на дієті",
+   "en": "diet",
+   "exen": "I'm on a diet this month.",
+   "noteen": "estar de dieta — to be on a diet"
   },
   {
    "word": "saudável",
@@ -6923,7 +7319,10 @@
    "note": "Мн. ч.: saudáveis",
    "uk": "здоровий, корисний",
    "exuk": "Здорове харчування важливе.",
-   "noteuk": "Множина: saudáveis"
+   "noteuk": "Множина: saudáveis",
+   "en": "healthy, good for you",
+   "exen": "Eating healthily is important.",
+   "noteen": "Plural: saudáveis"
   },
   {
    "word": "a caloria",
@@ -6934,7 +7333,10 @@
    "note": "ж. р.",
    "uk": "калорія",
    "exuk": "У цьому торті багато калорій.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "calorie",
+   "exen": "This cake has a lot of calories.",
+   "noteen": "feminine"
   },
   {
    "word": "a energia",
@@ -6945,7 +7347,10 @@
    "note": "ж. р.",
    "uk": "енергія",
    "exuk": "Мені потрібна енергія на цілий день.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "energy",
+   "exen": "I need energy for the whole day.",
+   "noteen": "feminine"
   },
   {
    "word": "a vitamina",
@@ -6956,7 +7361,10 @@
    "note": "ж. р.",
    "uk": "вітамін",
    "exuk": "В апельсині є вітамін C.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "vitamin",
+   "exen": "Oranges contain vitamin C.",
+   "noteen": "feminine"
   },
   {
    "word": "o peso corporal",
@@ -6967,7 +7375,10 @@
    "note": "м. р.",
    "uk": "вага тіла",
    "exuk": "Я стежу за вагою щотижня.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "body weight",
+   "exen": "I check my weight every week.",
+   "noteen": "masculine"
   },
   {
    "word": "vegetariano",
@@ -6978,7 +7389,10 @@
    "note": "vegetariano / vegetariana",
    "uk": "вегетаріанський, вегетаріанець",
    "exuk": "У меню є вегетаріанські варіанти?",
-   "noteuk": "vegetariano / vegetariana"
+   "noteuk": "vegetariano / vegetariana",
+   "en": "vegetarian",
+   "exen": "Are there vegetarian options on the menu?",
+   "noteen": "vegetariano / vegetariana"
   },
   {
    "word": "italiano",
@@ -6989,7 +7403,10 @@
    "note": "italiano / italiana",
    "uk": "італійський",
    "exuk": "Ми ходили в італійський ресторан.",
-   "noteuk": "italiano / italiana"
+   "noteuk": "italiano / italiana",
+   "en": "Italian",
+   "exen": "We went to an Italian restaurant.",
+   "noteen": "italiano / italiana"
   },
   {
    "word": "indiano",
@@ -7000,7 +7417,10 @@
    "note": "indiano / indiana",
    "uk": "індійський",
    "exuk": "Індійська їжа гостра.",
-   "noteuk": "indiano / indiana"
+   "noteuk": "indiano / indiana",
+   "en": "Indian",
+   "exen": "Indian food is spicy.",
+   "noteen": "indiano / indiana"
   },
   {
    "word": "a comida chinesa",
@@ -7011,7 +7431,10 @@
    "note": "ж. р.",
    "uk": "китайська їжа",
    "exuk": "По неділях ми замовляємо китайську їжу.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "Chinese food",
+   "exen": "On Sundays we order Chinese food.",
+   "noteen": "feminine"
   },
   {
    "word": "o mililitro",
@@ -7022,7 +7445,10 @@
    "note": "Сокращение: ml",
    "uk": "мілілітр",
    "exuk": "Додай сто мілілітрів води.",
-   "noteuk": "Скорочення: ml"
+   "noteuk": "Скорочення: ml",
+   "en": "millilitre",
+   "exen": "Add a hundred millilitres of water.",
+   "noteen": "Abbreviated ml"
   },
   {
    "word": "divertir-se",
@@ -7033,7 +7459,10 @@
    "note": "divirto-me, divertes-te",
    "uk": "розважатися, веселитися",
    "exuk": "Ми чудово повеселилися на святі.",
-   "noteuk": "divirto-me, divertes-te"
+   "noteuk": "divirto-me, divertes-te",
+   "en": "to enjoy yourself, to have fun",
+   "exen": "We had great fun at the party.",
+   "noteen": "divirto-me, divertes-te"
   },
   {
    "word": "dar uma festa",
@@ -7044,7 +7473,10 @@
    "note": "a festa — праздник, вечеринка",
    "uk": "влаштовувати вечірку",
    "exuk": "У суботу я влаштовую вечірку вдома.",
-   "noteuk": "a festa — свято, вечірка"
+   "noteuk": "a festa — свято, вечірка",
+   "en": "to throw a party",
+   "exen": "I'm throwing a party at home on Saturday.",
+   "noteen": "a festa — party, celebration"
   },
   {
    "word": "estar livre",
@@ -7055,7 +7487,10 @@
    "note": "",
    "uk": "бути вільним (про час)",
    "exuk": "Ти вільний у п’ятницю ввечері?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to be free (of time)",
+   "exen": "Are you free on Friday evening?",
+   "noteen": ""
   },
   {
    "word": "desocupado",
@@ -7066,7 +7501,10 @@
    "note": "desocupado / desocupada",
    "uk": "незайнятий, порожній",
    "exuk": "Сусіднє місце вільне.",
-   "noteuk": "desocupado / desocupada"
+   "noteuk": "desocupado / desocupada",
+   "en": "unoccupied, vacant",
+   "exen": "The seat next to me is free.",
+   "noteen": "desocupado / desocupada"
   },
   {
    "word": "estar de férias",
@@ -7077,7 +7515,10 @@
    "note": "ir de férias — уйти в отпуск",
    "uk": "бути у відпустці",
    "exuk": "Я у відпустці до п’ятнадцятого.",
-   "noteuk": "ir de férias — піти у відпустку"
+   "noteuk": "ir de férias — піти у відпустку",
+   "en": "to be on holiday",
+   "exen": "I'm on holiday until the fifteenth.",
+   "noteen": "ir de férias — to go on holiday"
   },
   {
    "word": "fazer um curso",
@@ -7088,7 +7529,10 @@
    "note": "Синоним tirar um curso",
    "uk": "проходити курс",
    "exuk": "Я ходив на вечірні курси фотографії.",
-   "noteuk": "Синонім tirar um curso"
+   "noteuk": "Синонім tirar um curso",
+   "en": "to take a course",
+   "exen": "I took a photography course in the evenings.",
+   "noteen": "Synonym tirar um curso"
   },
   {
    "word": "a duração",
@@ -7099,7 +7543,10 @@
    "note": "Мн. ч.: as durações",
    "uk": "тривалість",
    "exuk": "Яка тривалість фільму?",
-   "noteuk": "Множина: as durações"
+   "noteuk": "Множина: as durações",
+   "en": "length, duration",
+   "exen": "How long is the film?",
+   "noteen": "Plural: as durações"
   },
   {
    "word": "o cinema",
@@ -7110,7 +7557,10 @@
    "note": "м. р.",
    "uk": "кіно; кінотеатр",
    "exuk": "Кінотеатр розташований у торговому центрі.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "cinema",
+   "exen": "The cinema is in the shopping centre.",
+   "noteen": "masculine"
   },
   {
    "word": "o bilhete",
@@ -7121,7 +7571,10 @@
    "note": "м. р.",
    "uk": "квиток",
    "exuk": "Квитки вчора закінчилися.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "ticket",
+   "exen": "The tickets sold out yesterday.",
+   "noteen": "masculine"
   },
   {
    "word": "reservar um bilhete",
@@ -7132,7 +7585,10 @@
    "note": "",
    "uk": "забронювати квиток",
    "exuk": "Я забронював два квитки онлайн.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to book a ticket",
+   "exen": "I booked two tickets online.",
+   "noteen": ""
   },
   {
    "word": "o concerto",
@@ -7143,7 +7599,10 @@
    "note": "м. р.",
    "uk": "концерт",
    "exuk": "Концерт починається о пів на десяту.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "concert",
+   "exen": "The concert starts at half past nine.",
+   "noteen": "masculine"
   },
   {
    "word": "o bailarino",
@@ -7154,7 +7613,10 @@
    "note": "Ж. р.: a bailarina",
    "uk": "танцівник, балерина",
    "exuk": "Танцівник тренується по шість годин на день.",
-   "noteuk": "Ж. р.: a bailarina"
+   "noteuk": "Ж. р.: a bailarina",
+   "en": "dancer",
+   "exen": "The dancer trains six hours a day.",
+   "noteen": "fem.: a bailarina"
   },
   {
    "word": "a dança",
@@ -7165,7 +7627,10 @@
    "note": "ж. р.",
    "uk": "танець",
    "exuk": "Традиційний танець називається віра.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "dance, dancing",
+   "exen": "The traditional dance is called the vira.",
+   "noteen": "feminine"
   },
   {
    "word": "a exposição",
@@ -7176,7 +7641,10 @@
    "note": "Мн. ч.: as exposições",
    "uk": "виставка",
    "exuk": "Виставка відкрита до неділі.",
-   "noteuk": "Множина: as exposições"
+   "noteuk": "Множина: as exposições",
+   "en": "exhibition",
+   "exen": "The exhibition is open until Sunday.",
+   "noteen": "Plural: as exposições"
   },
   {
    "word": "a obra de teatro",
@@ -7187,7 +7655,10 @@
    "note": "Синоним: a peça",
    "uk": "театральна вистава",
    "exuk": "Вистава триває дві години.",
-   "noteuk": "Синонім: a peça"
+   "noteuk": "Синонім: a peça",
+   "en": "theatre production",
+   "exen": "The play lasts two hours.",
+   "noteen": "Synonym: a peça"
   },
   {
    "word": "a peça",
@@ -7198,7 +7669,10 @@
    "note": "Также «деталь, предмет»",
    "uk": "п’єса, вистава; деталь",
    "exuk": "Вистава мала великий успіх.",
-   "noteuk": "Також «деталь, річ»"
+   "noteuk": "Також «деталь, річ»",
+   "en": "play; part, component",
+   "exen": "The play was a great success.",
+   "noteen": "Also a part or an item"
   },
   {
    "word": "o público",
@@ -7209,7 +7683,10 @@
    "note": "м. р.",
    "uk": "публіка, глядачі",
    "exuk": "Публіці сподобалася вистава.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "audience, the public",
+   "exen": "The audience enjoyed the show.",
+   "noteen": "masculine"
   },
   {
    "word": "o ator",
@@ -7220,7 +7697,10 @@
    "note": "Пишется без c: ator",
    "uk": "актор",
    "exuk": "Головний актор — португалець.",
-   "noteuk": "Пишеться без c: ator"
+   "noteuk": "Пишеться без c: ator",
+   "en": "actor",
+   "exen": "The leading actor is Portuguese.",
+   "noteen": "Spelt without the c: ator"
   },
   {
    "word": "a atriz",
@@ -7231,7 +7711,10 @@
    "note": "Мн. ч.: as atrizes",
    "uk": "акторка",
    "exuk": "Акторка отримала премію.",
-   "noteuk": "Множина: as atrizes"
+   "noteuk": "Множина: as atrizes",
+   "en": "actress",
+   "exen": "The actress won an award.",
+   "noteen": "Plural: as atrizes"
   },
   {
    "word": "atuar",
@@ -7242,7 +7725,10 @@
    "note": "Пишется без c: atuar",
    "uk": "виступати; діяти",
    "exuk": "Гурт виступає о десятій вечора.",
-   "noteuk": "Пишеться без c: atuar"
+   "noteuk": "Пишеться без c: atuar",
+   "en": "to perform; to act, to take action",
+   "exen": "The band is on at ten in the evening.",
+   "noteen": "Spelt without the c: atuar"
   },
   {
    "word": "a banda",
@@ -7253,7 +7739,10 @@
    "note": "ж. р.",
    "uk": "гурт (музичний)",
    "exuk": "Гурт грає традиційну музику.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "band",
+   "exen": "The band plays traditional music.",
+   "noteen": "feminine"
   },
   {
    "word": "o cantor",
@@ -7264,7 +7753,10 @@
    "note": "Ж. р.: a cantora",
    "uk": "співак",
    "exuk": "Співак відомий на всю країну.",
-   "noteuk": "Ж. р.: a cantora"
+   "noteuk": "Ж. р.: a cantora",
+   "en": "singer",
+   "exen": "The singer is known all over the country.",
+   "noteen": "fem.: a cantora"
   },
   {
    "word": "a canção",
@@ -7275,7 +7767,10 @@
    "note": "Мн. ч.: as canções",
    "uk": "пісня",
    "exuk": "Ця пісня з вісімдесятих.",
-   "noteuk": "Множина: as canções"
+   "noteuk": "Множина: as canções",
+   "en": "song",
+   "exen": "This song is from the eighties.",
+   "noteen": "Plural: as canções"
   },
   {
    "word": "a guitarra",
@@ -7286,7 +7781,10 @@
    "note": "guitarra portuguesa — особый инструмент",
    "uk": "гітара",
    "exuk": "На португальській гітарі грають фаду.",
-   "noteuk": "guitarra portuguesa — особливий інструмент"
+   "noteuk": "guitarra portuguesa — особливий інструмент",
+   "en": "guitar",
+   "exen": "The Portuguese guitar is the instrument of fado.",
+   "noteen": "The guitarra portuguesa is a special instrument"
   },
   {
    "word": "o guitarrista",
@@ -7297,7 +7795,10 @@
    "note": "Одна форма: o/a guitarrista",
    "uk": "гітарист",
    "exuk": "Гітарист акомпанує співачці фаду.",
-   "noteuk": "Одна форма: o/a guitarrista"
+   "noteuk": "Одна форма: o/a guitarrista",
+   "en": "guitarist",
+   "exen": "The guitarist accompanies the fado singer.",
+   "noteen": "One form: o/a guitarrista"
   },
   {
    "word": "o piano",
@@ -7308,7 +7809,10 @@
    "note": "tocar piano",
    "uk": "піаніно, рояль",
    "exuk": "Я вчився грати на піаніно в дитинстві.",
-   "noteuk": "tocar piano"
+   "noteuk": "tocar piano",
+   "en": "piano",
+   "exen": "I learned the piano as a child.",
+   "noteen": "tocar piano"
   },
   {
    "word": "o podcast",
@@ -7319,7 +7823,10 @@
    "note": "м. р.",
    "uk": "подкаст",
    "exuk": "Я слухаю подкаст португальською в машині.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "podcast",
+   "exen": "I listen to a Portuguese podcast in the car.",
+   "noteen": "masculine"
   },
   {
    "word": "o youtube",
@@ -7330,7 +7837,10 @@
    "note": "Пишется с большой буквы",
    "uk": "ютуб",
    "exuk": "Я подивився відео на ютубі.",
-   "noteuk": "Пишеться з великої літери"
+   "noteuk": "Пишеться з великої літери",
+   "en": "YouTube",
+   "exen": "I watched the video on YouTube.",
+   "noteen": "Written with a capital letter"
   },
   {
    "word": "o escritor",
@@ -7341,7 +7851,10 @@
    "note": "Ж. р.: a escritora",
    "uk": "письменник",
    "exuk": "Письменник представив нову книжку.",
-   "noteuk": "Ж. р.: a escritora"
+   "noteuk": "Ж. р.: a escritora",
+   "en": "writer",
+   "exen": "The writer presented his new book.",
+   "noteen": "fem.: a escritora"
   },
   {
    "word": "o autor",
@@ -7352,7 +7865,10 @@
    "note": "Ж. р.: a autora",
    "uk": "автор",
    "exuk": "Хто автор цього оповідання?",
-   "noteuk": "Ж. р.: a autora"
+   "noteuk": "Ж. р.: a autora",
+   "en": "author",
+   "exen": "Who is the author of this story?",
+   "noteen": "fem.: a autora"
   },
   {
    "word": "a literatura",
@@ -7363,7 +7879,10 @@
    "note": "ж. р.",
    "uk": "література",
    "exuk": "Він вивчає португальську літературу.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "literature",
+   "exen": "He studies Portuguese literature.",
+   "noteen": "feminine"
   },
   {
    "word": "a leitura",
@@ -7374,7 +7893,10 @@
    "note": "ж. р.",
    "uk": "читання",
    "exuk": "Читання перед сном мені допомагає.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "reading",
+   "exen": "Reading before bed helps me.",
+   "noteen": "feminine"
   },
   {
    "word": "o conto",
@@ -7385,7 +7907,10 @@
    "note": "м. р.",
    "uk": "оповідання",
    "exuk": "Я прочитав дуже коротке оповідання.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "short story",
+   "exen": "I read a very short story.",
+   "noteen": "masculine"
   },
   {
    "word": "a ficção",
@@ -7396,7 +7921,10 @@
    "note": "ж. р.",
    "uk": "художня література, вигадка",
    "exuk": "Я віддаю перевагу художній літературі перед біографіями.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "fiction",
+   "exen": "I prefer fiction to biographies.",
+   "noteen": "feminine"
   },
   {
    "word": "a poesia",
@@ -7407,7 +7935,10 @@
    "note": "ж. р.",
    "uk": "поезія",
    "exuk": "Поезія Пессоа складна.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "poetry",
+   "exen": "Pessoa's poetry is difficult.",
+   "noteen": "feminine"
   },
   {
    "word": "a livraria",
@@ -7418,7 +7949,10 @@
    "note": "Библиотека — a biblioteca",
    "uk": "книгарня",
    "exuk": "Книгарня «Лелло» розташована в Порту.",
-   "noteuk": "Бібліотека — a biblioteca"
+   "noteuk": "Бібліотека — a biblioteca",
+   "en": "bookshop",
+   "exen": "The Lello bookshop is in Porto.",
+   "noteen": "A library is a biblioteca"
   },
   {
    "word": "a feira do livro",
@@ -7429,7 +7963,10 @@
    "note": "ж. р.",
    "uk": "книжковий ярмарок",
    "exuk": "Книжковий ярмарок відбувається у травні.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "book fair",
+   "exen": "The book fair is in May.",
+   "noteen": "feminine"
   },
   {
    "word": "a capa",
@@ -7440,7 +7977,10 @@
    "note": "Также плащ",
    "uk": "обкладинка",
    "exuk": "Обкладинка книжки синя.",
-   "noteuk": "Також плащ"
+   "noteuk": "Також плащ",
+   "en": "cover; cloak",
+   "exen": "The cover of the book is blue.",
+   "noteen": "Also a cape or cloak"
   },
   {
    "word": "o título",
@@ -7451,7 +7991,10 @@
    "note": "м. р.",
    "uk": "назва, заголовок",
    "exuk": "Я не пам’ятаю назви фільму.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "title, heading",
+   "exen": "I can't remember the title of the film.",
+   "noteen": "masculine"
   },
   {
    "word": "o artigo",
@@ -7462,7 +8005,10 @@
    "note": "Все три значения частотны",
    "uk": "стаття; артикль; товар",
    "exuk": "Я прочитав цікаву статтю в газеті.",
-   "noteuk": "Усі три значення частотні"
+   "noteuk": "Усі три значення частотні",
+   "en": "article; grammatical article; item",
+   "exen": "I read an interesting article in the paper.",
+   "noteen": "All three senses are common"
   },
   {
    "word": "a linha",
@@ -7473,7 +8019,10 @@
    "note": "ж. р.",
    "uk": "рядок; лінія; нитка",
    "exuk": "Читайте з третього рядка.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "line of text; line; thread",
+   "exen": "Read from the third line onwards.",
+   "noteen": "feminine"
   },
   {
    "word": "as notícias",
@@ -7484,7 +8033,10 @@
    "note": "a notícia — новость",
    "uk": "новини",
    "exuk": "Я дивлюся новини о восьмій.",
-   "noteuk": "a notícia — новина"
+   "noteuk": "a notícia — новина",
+   "en": "the news",
+   "exen": "I watch the news at eight.",
+   "noteen": "a notícia — a news item"
   },
   {
    "word": "o telejornal",
@@ -7495,7 +8047,10 @@
    "note": "м. р.",
    "uk": "випуск новин (ТБ)",
    "exuk": "Вечірній випуск новин триває годину.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "television news bulletin",
+   "exen": "The evening news bulletin lasts an hour.",
+   "noteen": "masculine"
   },
   {
    "word": "o jornal diário",
@@ -7506,7 +8061,10 @@
    "note": "м. р.",
    "uk": "щоденна газета",
    "exuk": "Я купую щоденну газету в кіоску.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "daily newspaper",
+   "exen": "I buy the daily paper at the kiosk.",
+   "noteen": "masculine"
   },
   {
    "word": "o jornalista",
@@ -7517,7 +8075,10 @@
    "note": "Одна форма: o/a jornalista",
    "uk": "журналіст",
    "exuk": "Журналістка взяла інтерв’ю в міністра.",
-   "noteuk": "Одна форма: o/a jornalista"
+   "noteuk": "Одна форма: o/a jornalista",
+   "en": "journalist",
+   "exen": "The journalist interviewed the minister.",
+   "noteen": "One form: o/a jornalista"
   },
   {
    "word": "o canal de televisão",
@@ -7528,7 +8089,10 @@
    "note": "м. р.",
    "uk": "телеканал",
    "exuk": "Який телеканал ти дивишся?",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "television channel",
+   "exen": "Which channel are you watching?",
+   "noteen": "masculine"
   },
   {
    "word": "o programa de televisão",
@@ -7539,7 +8103,10 @@
    "note": "м. р.",
    "uk": "телепередача",
    "exuk": "Це моя улюблена телепередача.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "television programme",
+   "exen": "It's my favourite television programme.",
+   "noteen": "masculine"
   },
   {
    "word": "a conferência",
@@ -7550,7 +8117,10 @@
    "note": "ж. р.",
    "uk": "конференція; лекція",
    "exuk": "Я йду на конференцію з освіти.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "conference; lecture",
+   "exen": "I'm going to a conference on education.",
+   "noteen": "feminine"
   },
   {
    "word": "o debate",
@@ -7561,7 +8131,10 @@
    "note": "м. р.",
    "uk": "дебати, обговорення",
    "exuk": "Дебати транслювали у прямому ефірі.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "debate, discussion",
+   "exen": "The debate was broadcast live.",
+   "noteen": "masculine"
   },
   {
    "word": "debater",
@@ -7572,7 +8145,10 @@
    "note": "",
    "uk": "обговорювати, дискутувати",
    "exuk": "Ми обговорювали питання цілу годину.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to debate, to argue over",
+   "exen": "We discussed the matter for a whole hour.",
+   "noteen": ""
   },
   {
    "word": "a fotografia",
@@ -7583,7 +8159,10 @@
    "note": "tirar fotografias — фотографировать",
    "uk": "фотографія; фотосправа",
    "exuk": "Я зробив багато фотографій у подорожі.",
-   "noteuk": "tirar fotografias — фотографувати"
+   "noteuk": "tirar fotografias — фотографувати",
+   "en": "photograph; photography",
+   "exen": "I took a lot of photographs on the trip.",
+   "noteen": "tirar fotografias — to take photos"
   },
   {
    "word": "desenhar",
@@ -7594,7 +8173,10 @@
    "note": "Красками — pintar",
    "uk": "малювати (олівцем)",
    "exuk": "Вона дуже добре малює.",
-   "noteuk": "Фарбами — pintar"
+   "noteuk": "Фарбами — pintar",
+   "en": "to draw",
+   "exen": "She draws very well.",
+   "noteen": "To paint is pintar"
   },
   {
    "word": "o desenho",
@@ -7605,7 +8187,10 @@
    "note": "м. р.",
    "uk": "малюнок",
    "exuk": "Малюнок висить на стіні.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "drawing",
+   "exen": "The drawing is hanging on the wall.",
+   "noteen": "masculine"
   },
   {
    "word": "colorir",
@@ -7616,7 +8201,10 @@
    "note": "",
    "uk": "розфарбовувати",
    "exuk": "Діти розфарбовують малюнки.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to colour in",
+   "exen": "The children are colouring in the drawings.",
+   "noteen": ""
   },
   {
    "word": "a pintura",
@@ -7627,7 +8215,10 @@
    "note": "ж. р.",
    "uk": "живопис, картина",
    "exuk": "Картина вісімнадцятого століття.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "painting (art form or picture)",
+   "exen": "The painting is from the eighteenth century.",
+   "noteen": "feminine"
   },
   {
    "word": "o artista plástico",
@@ -7638,7 +8229,10 @@
    "note": "Ж. р.: a artista plástica",
    "uk": "художник (образотворче мистецтво)",
    "exuk": "Художник виставляється в Лісабоні.",
-   "noteuk": "Ж. р.: a artista plástica"
+   "noteuk": "Ж. р.: a artista plástica",
+   "en": "visual artist",
+   "exen": "The artist is exhibiting in Lisbon.",
+   "noteen": "fem.: a artista plástica"
   },
   {
    "word": "praticar desporto",
@@ -7649,7 +8243,10 @@
    "note": "Синоним fazer desporto",
    "uk": "займатися спортом",
    "exuk": "Я займаюся спортом три рази на тиждень.",
-   "noteuk": "Синонім fazer desporto"
+   "noteuk": "Синонім fazer desporto",
+   "en": "to do sport, to play sports",
+   "exen": "I take part in sport three times a week.",
+   "noteen": "Synonym fazer desporto"
   },
   {
    "word": "o desportista",
@@ -7660,7 +8257,10 @@
    "note": "Одна форма: o/a desportista",
    "uk": "спортсмен",
    "exuk": "Він професійний спортсмен.",
-   "noteuk": "Одна форма: o/a desportista"
+   "noteuk": "Одна форма: o/a desportista",
+   "en": "sportsperson, athlete",
+   "exen": "He is a professional sportsman.",
+   "noteen": "One form: o/a desportista"
   },
   {
    "word": "o ginásio",
@@ -7671,7 +8271,10 @@
    "note": "м. р.",
    "uk": "спортзал",
    "exuk": "Я ходжу в спортзал після роботи.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "gym",
+   "exen": "I go to the gym after work.",
+   "noteen": "masculine"
   },
   {
    "word": "a ginástica",
@@ -7682,7 +8285,10 @@
    "note": "ж. р.",
    "uk": "гімнастика, зарядка",
    "exuk": "Я роблю зарядку вранці.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "gymnastics, keep-fit",
+   "exen": "I do my exercises in the morning.",
+   "noteen": "feminine"
   },
   {
    "word": "a piscina",
@@ -7693,7 +8299,10 @@
    "note": "ж. р.",
    "uk": "басейн",
    "exuk": "Міський басейн дешевий.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "swimming pool",
+   "exen": "The municipal pool is cheap.",
+   "noteen": "feminine"
   },
   {
    "word": "andar de bicicleta",
@@ -7704,7 +8313,10 @@
    "note": "andar de + транспорт",
    "uk": "їздити на велосипеді",
    "exuk": "На вихідних я їжджу на велосипеді.",
-   "noteuk": "andar de + транспорт"
+   "noteuk": "andar de + транспорт",
+   "en": "to ride a bike",
+   "exen": "I ride my bike at the weekend.",
+   "noteen": "andar de + means of transport"
   },
   {
    "word": "o surf",
@@ -7715,7 +8327,10 @@
    "note": "fazer surf — сёрфить",
    "uk": "серфінг",
    "exuk": "Він займається серфінгом в Ерісейрі.",
-   "noteuk": "fazer surf — серфити"
+   "noteuk": "fazer surf — серфити",
+   "en": "surfing",
+   "exen": "He surfs at Ericeira.",
+   "noteen": "fazer surf — to go surfing"
   },
   {
    "word": "o ténis",
@@ -7726,7 +8341,10 @@
    "note": "os ténis — кроссовки",
    "uk": "теніс; кросівки",
    "exuk": "Я граю в теніс у суботу вранці.",
-   "noteuk": "os ténis — кросівки"
+   "noteuk": "os ténis — кросівки",
+   "en": "tennis; trainers",
+   "exen": "I play tennis on Saturday mornings.",
+   "noteen": "os ténis — trainers"
   },
   {
    "word": "a partida de ténis",
@@ -7737,7 +8355,10 @@
    "note": "a partida — партия, матч",
    "uk": "тенісний матч",
    "exuk": "Тенісний матч тривав три години.",
-   "noteuk": "a partida — партія, матч"
+   "noteuk": "a partida — партія, матч",
+   "en": "tennis match",
+   "exen": "The tennis match lasted three hours.",
+   "noteen": "a partida — a match, a game"
   },
   {
    "word": "o basquetebol",
@@ -7748,7 +8369,10 @@
    "note": "Разг.: basquete",
    "uk": "баскетбол",
    "exuk": "Він грає в баскетбол за шкільну команду.",
-   "noteuk": "Розм.: basquete"
+   "noteuk": "Розм.: basquete",
+   "en": "basketball",
+   "exen": "He plays basketball for the school team.",
+   "noteen": "Colloquially basquete"
   },
   {
    "word": "o voleibol",
@@ -7759,7 +8383,10 @@
    "note": "Разг.: vólei",
    "uk": "волейбол",
    "exuk": "Ми граємо у волейбол на пляжі.",
-   "noteuk": "Розм.: vólei"
+   "noteuk": "Розм.: vólei",
+   "en": "volleyball",
+   "exen": "We play volleyball on the beach.",
+   "noteen": "Colloquially vólei"
   },
   {
    "word": "o jogador",
@@ -7770,7 +8397,10 @@
    "note": "Ж. р.: a jogadora",
    "uk": "гравець",
    "exuk": "Гравець забив два голи.",
-   "noteuk": "Ж. р.: a jogadora"
+   "noteuk": "Ж. р.: a jogadora",
+   "en": "player",
+   "exen": "The player scored two goals.",
+   "noteen": "fem.: a jogadora"
   },
   {
    "word": "jogar contra",
@@ -7781,7 +8411,10 @@
    "note": "",
    "uk": "грати проти",
    "exuk": "Завтра ми граємо проти лідерів таблиці.",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to play against",
+   "exen": "Tomorrow we play against the top of the table.",
+   "noteen": ""
   },
   {
    "word": "empatar",
@@ -7792,7 +8425,10 @@
    "note": "o empate — ничья",
    "uk": "зіграти внічию",
    "exuk": "Ми зіграли внічию два-два.",
-   "noteuk": "o empate — нічия"
+   "noteuk": "o empate — нічия",
+   "en": "to draw, to tie",
+   "exen": "We drew two all.",
+   "noteen": "o empate — a draw"
   },
   {
    "word": "o ponto",
@@ -7803,7 +8439,10 @@
    "note": "м. р.",
    "uk": "очко; крапка",
    "exuk": "Ми виграли на два очки.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "point, score; full stop",
+   "exen": "We won by two points.",
+   "noteen": "masculine"
   },
   {
    "word": "o fã",
@@ -7814,7 +8453,10 @@
    "note": "Мн. ч.: os fãs; ж. р.: a fã",
    "uk": "фанат, шанувальник",
    "exuk": "Фанати чекали біля входу.",
-   "noteuk": "Множина: os fãs; ж. р.: a fã"
+   "noteuk": "Множина: os fãs; ж. р.: a fã",
+   "en": "fan, admirer",
+   "exen": "The fans waited at the door.",
+   "noteen": "Plural: os fãs; fem.: a fã"
   },
   {
    "word": "ser fã",
@@ -7825,7 +8467,10 @@
    "note": "ser fã de alguém",
    "uk": "бути фанатом",
    "exuk": "Я фанат цього письменника зі школи.",
-   "noteuk": "ser fã de alguém"
+   "noteuk": "ser fã de alguém",
+   "en": "to be a fan",
+   "exen": "I've been a fan of this writer since school.",
+   "noteen": "ser fã de alguém"
   },
   {
    "word": "o xadrez",
@@ -7836,7 +8481,10 @@
    "note": "jogar xadrez",
    "uk": "шахи",
    "exuk": "Грати в шахи мене навчив дід.",
-   "noteuk": "jogar xadrez"
+   "noteuk": "jogar xadrez",
+   "en": "chess",
+   "exen": "My grandfather taught me to play chess.",
+   "noteen": "jogar xadrez"
   },
   {
    "word": "as cartas",
@@ -7847,7 +8495,10 @@
    "note": "jogar às cartas",
    "uk": "гральні карти",
    "exuk": "Увечері ми граємо в карти.",
-   "noteuk": "jogar às cartas"
+   "noteuk": "jogar às cartas",
+   "en": "playing cards",
+   "exen": "We play cards in the evening.",
+   "noteen": "jogar às cartas"
   },
   {
    "word": "o jogo do galo",
@@ -7858,7 +8509,10 @@
    "note": "м. р.",
    "uk": "хрестики-нулики",
    "exuk": "Діти грають у хрестики-нулики.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "noughts and crosses",
+   "exen": "The children are playing noughts and crosses.",
+   "noteen": "masculine"
   },
   {
    "word": "o jogo de computador",
@@ -7869,7 +8523,10 @@
    "note": "м. р.",
    "uk": "комп’ютерна гра",
    "exuk": "Він годинами грає в комп’ютерні ігри.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "computer game",
+   "exen": "He spends hours on computer games.",
+   "noteen": "masculine"
   },
   {
    "word": "o portátil",
@@ -7880,7 +8537,10 @@
    "note": "Мн. ч.: os portáteis",
    "uk": "ноутбук",
    "exuk": "Я беру ноутбук у кафе.",
-   "noteuk": "Множина: os portáteis"
+   "noteuk": "Множина: os portáteis",
+   "en": "laptop",
+   "exen": "I take the laptop to the café.",
+   "noteen": "Plural: os portáteis"
   },
   {
    "word": "o brinquedo",
@@ -7891,7 +8551,10 @@
    "note": "м. р.",
    "uk": "іграшка",
    "exuk": "Прибери іграшки, будь ласка.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "toy",
+   "exen": "Put your toys away, please.",
+   "noteen": "masculine"
   },
   {
    "word": "a boneca",
@@ -7902,7 +8565,10 @@
    "note": "ж. р.",
    "uk": "лялька",
    "exuk": "Дівчинка не розлучається з лялькою.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "doll",
+   "exen": "The little girl won't put the doll down.",
+   "noteen": "feminine"
   },
   {
    "word": "o carrinho",
@@ -7913,7 +8579,10 @@
    "note": "Также детская коляска",
    "uk": "машинка; візок",
    "exuk": "Візок із покупками повний.",
-   "noteuk": "Також дитячий візочок"
+   "noteuk": "Також дитячий візочок",
+   "en": "toy car; trolley",
+   "exen": "The shopping trolley is full.",
+   "noteen": "Also a pram"
   },
   {
    "word": "a roupa",
@@ -7924,7 +8593,10 @@
    "note": "ж. р., собирательное",
    "uk": "одяг",
    "exuk": "Мені треба купити зимовий одяг.",
-   "noteuk": "ж. р., збірне"
+   "noteuk": "ж. р., збірне",
+   "en": "clothes, clothing",
+   "exen": "I need to buy some winter clothes.",
+   "noteen": "feminine, uncountable"
   },
   {
    "word": "a loja de roupa",
@@ -7935,7 +8607,10 @@
    "note": "ж. р.",
    "uk": "магазин одягу",
    "exuk": "На другому поверсі є магазин одягу.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "clothes shop",
+   "exen": "There's a clothes shop on the first floor.",
+   "noteen": "feminine"
   },
   {
    "word": "a sapataria",
@@ -7946,7 +8621,10 @@
    "note": "ж. р.",
    "uk": "взуттєвий магазин",
    "exuk": "Я купив черевики у взуттєвому.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "shoe shop",
+   "exen": "I bought the boots at a shoe shop.",
+   "noteen": "feminine"
   },
   {
    "word": "a papelaria",
@@ -7957,7 +8635,10 @@
    "note": "ж. р.",
    "uk": "магазин канцтоварів",
    "exuk": "Зошити я купую в канцелярському магазині.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "stationery shop",
+   "exen": "I buy my notebooks at the stationery shop.",
+   "noteen": "feminine"
   },
   {
    "word": "a secção de homem",
@@ -7968,7 +8649,10 @@
    "note": "Пишется без c: secção",
    "uk": "чоловічий відділ",
    "exuk": "Чоловічий відділ на третьому поверсі.",
-   "noteuk": "Пишеться без c: secção"
+   "noteuk": "Пишеться без c: secção",
+   "en": "menswear department",
+   "exen": "The menswear department is on the second floor.",
+   "noteen": "Spelt without the c: secção"
   },
   {
    "word": "o balcão",
@@ -7979,7 +8663,10 @@
    "note": "Мн. ч.: os balcões",
    "uk": "прилавок, стійка",
    "exuk": "Заплатіть на касі біля стійки.",
-   "noteuk": "Множина: os balcões"
+   "noteuk": "Множина: os balcões",
+   "en": "counter, service desk",
+   "exen": "Pay at the counter, please.",
+   "noteen": "Plural: os balcões"
   },
   {
    "word": "o provador",
@@ -7990,7 +8677,10 @@
    "note": "м. р.",
    "uk": "примірочна",
    "exuk": "Де примірочна?",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "fitting room",
+   "exen": "Where is the fitting room?",
+   "noteen": "masculine"
   },
   {
    "word": "experimentar",
@@ -8001,7 +8691,10 @@
    "note": "И об одежде, и о еде",
    "uk": "приміряти; куштувати",
    "exuk": "Чи можу я приміряти цю куртку?",
-   "noteuk": "І про одяг, і про їжу"
+   "noteuk": "І про одяг, і про їжу",
+   "en": "to try on; to try, to taste",
+   "exen": "Can I try this jacket on?",
+   "noteen": "Used for clothes and for food"
   },
   {
    "word": "vestir",
@@ -8012,7 +8705,10 @@
    "note": "Обувь — calçar",
    "uk": "вдягати, носити",
    "exuk": "Вдягни куртку, холодно.",
-   "noteuk": "Взуття — calçar"
+   "noteuk": "Взуття — calçar",
+   "en": "to put on, to wear",
+   "exen": "Put your jacket on, it's cold.",
+   "noteen": "For footwear you use calçar"
   },
   {
    "word": "despir",
@@ -8023,7 +8719,10 @@
    "note": "despir-se — раздеваться",
    "uk": "знімати (одяг)",
    "exuk": "Зніми куртку, тут спекотно.",
-   "noteuk": "despir-se — роздягатися"
+   "noteuk": "despir-se — роздягатися",
+   "en": "to take off (clothes)",
+   "exen": "Take your jacket off, it's warm in here.",
+   "noteen": "despir-se — to get undressed"
   },
   {
    "word": "mostrar",
@@ -8034,7 +8733,10 @@
    "note": "",
    "uk": "показувати",
    "exuk": "Можете показати мені іншу модель?",
-   "noteuk": ""
+   "noteuk": "",
+   "en": "to show",
+   "exen": "Could you show me another model?",
+   "noteen": ""
   },
   {
    "word": "atender",
@@ -8045,7 +8747,10 @@
    "note": "Частый вопрос в магазине",
    "uk": "обслуговувати; відповідати (на дзвінок)",
    "exuk": "Вас уже обслужено?",
-   "noteuk": "Часте питання в магазині"
+   "noteuk": "Часте питання в магазині",
+   "en": "to serve a customer; to answer the phone",
+   "exen": "Have you been served yet?",
+   "noteen": "A common question in shops"
   },
   {
    "word": "os saldos",
@@ -8056,7 +8761,10 @@
    "note": "Всегда мн. ч.",
    "uk": "розпродаж",
    "exuk": "Я все купив на січневому розпродажі.",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "the sales",
+   "exen": "I bought it all in the January sales.",
+   "noteen": "Always plural"
   },
   {
    "word": "o pagamento",
@@ -8067,7 +8775,10 @@
    "note": "м. р.",
    "uk": "оплата, платіж",
    "exuk": "Оплата можлива на виплат.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "payment",
+   "exen": "Payment can be made in instalments.",
+   "noteen": "masculine"
   },
   {
    "word": "a quantia",
@@ -8078,7 +8789,10 @@
    "note": "ж. р.",
    "uk": "сума (грошей)",
    "exuk": "Для мене це велика сума.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "sum of money, amount",
+   "exen": "That's a large sum for me.",
+   "noteen": "feminine"
   },
   {
    "word": "o porta-moedas",
@@ -8089,7 +8803,10 @@
    "note": "м. р., не изменяется",
    "uk": "гаманець для монет",
    "exuk": "У мене гаманець повний дрібняків.",
-   "noteuk": "ч. р., не змінюється"
+   "noteuk": "ч. р., не змінюється",
+   "en": "coin purse",
+   "exen": "My purse is full of small change.",
+   "noteen": "masculine, invariable"
   },
   {
    "word": "a unidade",
@@ -8100,7 +8817,10 @@
    "note": "ж. р.",
    "uk": "штука, одиниця",
    "exuk": "Коштує два євро за штуку.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "unit, each one",
+   "exen": "It costs two euros each.",
+   "noteen": "feminine"
   },
   {
    "word": "a camisola",
@@ -8111,7 +8831,10 @@
    "note": "ж. р.",
    "uk": "светр, кофта",
    "exuk": "Візьми светр, увечері холоднішає.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "jumper, sweater",
+   "exen": "Take a jumper, it gets cold at night.",
+   "noteen": "feminine"
   },
   {
    "word": "a blusa",
@@ -8122,7 +8845,10 @@
    "note": "ж. р.",
    "uk": "блузка",
    "exuk": "Вона купила шовкову блузку.",
-   "noteuk": "ж. р."
+   "noteuk": "ж. р.",
+   "en": "blouse",
+   "exen": "She bought a silk blouse.",
+   "noteen": "feminine"
   },
   {
    "word": "o blusão",
@@ -8133,7 +8859,10 @@
    "note": "Мн. ч.: os blusões",
    "uk": "куртка (коротка)",
    "exuk": "Куртка непромокальна.",
-   "noteuk": "Множина: os blusões"
+   "noteuk": "Множина: os blusões",
+   "en": "short jacket, bomber jacket",
+   "exen": "The jacket is waterproof.",
+   "noteen": "Plural: os blusões"
   },
   {
    "word": "o fato",
@@ -8144,7 +8873,10 @@
    "note": "Ложный друг: не «факт»",
    "uk": "костюм",
    "exuk": "На весілля я йду в костюмі з краваткою.",
-   "noteuk": "Хибний друг: не «факт»"
+   "noteuk": "Хибний друг: не «факт»",
+   "en": "suit",
+   "exen": "I'm going to the wedding in a suit and tie.",
+   "noteen": "False friend: it doesn't mean fact"
   },
   {
    "word": "o fato de banho",
@@ -8155,7 +8887,10 @@
    "note": "м. р.",
    "uk": "купальник, плавки",
    "exuk": "Не забудь купальник.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "swimming costume",
+   "exen": "Don't forget your swimming costume.",
+   "noteen": "masculine"
   },
   {
    "word": "o biquíni",
@@ -8166,7 +8901,10 @@
    "note": "м. р.",
    "uk": "бікіні",
    "exuk": "Я купила нове бікіні на літо.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "bikini",
+   "exen": "I bought a new bikini for the summer.",
+   "noteen": "masculine"
   },
   {
    "word": "os calções de banho",
@@ -8177,7 +8915,10 @@
    "note": "Всегда мн. ч.",
    "uk": "плавальні шорти",
    "exuk": "Він ходить пляжем у плавальних шортах.",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "swimming shorts",
+   "exen": "He walks around the beach in swimming shorts.",
+   "noteen": "Always plural"
   },
   {
    "word": "o pijama",
@@ -8188,7 +8929,10 @@
    "note": "м. р., несмотря на -a",
    "uk": "піжама",
    "exuk": "По неділях я до обіду в піжамі.",
-   "noteuk": "ч. р., попри -a"
+   "noteuk": "ч. р., попри -a",
+   "en": "pyjamas",
+   "exen": "On Sundays I stay in my pyjamas until late.",
+   "noteen": "masculine, despite the -a"
   },
   {
    "word": "as cuecas",
@@ -8199,7 +8943,10 @@
    "note": "Всегда мн. ч.",
    "uk": "труси",
    "exuk": "Я купив бавовняні труси.",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "underpants, knickers",
+   "exen": "I bought some cotton underwear.",
+   "noteen": "Always plural"
   },
   {
    "word": "os bóxeres",
@@ -8210,7 +8957,10 @@
    "note": "Всегда мн. ч.",
    "uk": "боксери (труси)",
    "exuk": "Я віддаю перевагу боксерам перед звичайними трусами.",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "boxer shorts",
+   "exen": "I prefer boxer shorts to briefs.",
+   "noteen": "Always plural"
   },
   {
    "word": "o soutiã",
@@ -8221,7 +8971,10 @@
    "note": "м. р.",
    "uk": "бюстгальтер",
    "exuk": "Бюстгальтер у кошику для білизни.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "bra",
+   "exen": "The bra is in the laundry basket.",
+   "noteen": "masculine"
   },
   {
    "word": "as meias",
@@ -8232,7 +8985,10 @@
    "note": "Обычно мн. ч.",
    "uk": "шкарпетки; панчохи",
    "exuk": "Ці шкарпетки вовняні.",
-   "noteuk": "Зазвичай у множині"
+   "noteuk": "Зазвичай у множині",
+   "en": "socks; stockings",
+   "exen": "These socks are wool.",
+   "noteen": "Usually plural"
   },
   {
    "word": "as botas",
@@ -8243,7 +8999,10 @@
    "note": "Обычно мн. ч.",
    "uk": "чоботи, черевики",
    "exuk": "Узимку я ношу чоботи.",
-   "noteuk": "Зазвичай у множині"
+   "noteuk": "Зазвичай у множині",
+   "en": "boots",
+   "exen": "In winter I wear boots.",
+   "noteen": "Usually plural"
   },
   {
    "word": "o gorro",
@@ -8254,7 +9013,10 @@
    "note": "м. р.",
    "uk": "шапка (в’язана)",
    "exuk": "Надінь шапку, вітряно.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "woolly hat, beanie",
+   "exen": "Put your hat on, it's windy.",
+   "noteen": "masculine"
   },
   {
    "word": "o lenço",
@@ -8265,7 +9027,10 @@
    "note": "м. р.",
    "uk": "хустинка; паперова серветка",
    "exuk": "У тебе є паперова хустинка?",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "handkerchief; tissue",
+   "exen": "Have you got a paper tissue?",
+   "noteen": "masculine"
   },
   {
    "word": "os óculos de sol",
@@ -8276,7 +9041,10 @@
    "note": "Всегда мн. ч.",
    "uk": "сонцезахисні окуляри",
    "exuk": "Я забув сонцезахисні окуляри в машині.",
-   "noteuk": "Завжди у множині"
+   "noteuk": "Завжди у множині",
+   "en": "sunglasses",
+   "exen": "I left my sunglasses in the car.",
+   "noteen": "Always plural"
   },
   {
    "word": "o anel",
@@ -8287,7 +9055,10 @@
    "note": "Мн. ч.: os anéis",
    "uk": "каблучка",
    "exuk": "Він загубив обручку.",
-   "noteuk": "Множина: os anéis"
+   "noteuk": "Множина: os anéis",
+   "en": "ring",
+   "exen": "He lost his wedding ring.",
+   "noteen": "Plural: os anéis"
   },
   {
    "word": "os brincos",
@@ -8298,7 +9069,10 @@
    "note": "Обычно мн. ч.",
    "uk": "сережки",
    "exuk": "Прості срібні сережки.",
-   "noteuk": "Зазвичай у множині"
+   "noteuk": "Зазвичай у множині",
+   "en": "earrings",
+   "exen": "A pair of plain silver earrings.",
+   "noteen": "Usually plural"
   },
   {
    "word": "o colar",
@@ -8309,7 +9083,10 @@
    "note": "м. р.",
    "uk": "намисто, ланцюжок",
    "exuk": "Їй подарували перлове намисто.",
-   "noteuk": "ч. р."
+   "noteuk": "ч. р.",
+   "en": "necklace",
+   "exen": "They gave her a pearl necklace.",
+   "noteen": "masculine"
   },
   {
    "word": "o nylon",
@@ -8320,7 +9097,10 @@
    "note": "Читается «найлон»",
    "uk": "нейлон",
    "exuk": "Рюкзак нейлоновий.",
-   "noteuk": "Читається «найлон»"
+   "noteuk": "Читається «найлон»",
+   "en": "nylon",
+   "exen": "The rucksack is made of nylon.",
+   "noteen": "Pronounced the English way"
   },
   {
    "word": "o alimento",
