@@ -1082,6 +1082,7 @@ const UK={
 'Показать пример':'Показати приклад',
 'Не помню':'Не пам’ятаю',
 'заново':'знову',
+'10 мин':'10 хв',
 'Трудно':'Важко',
 'Знаю':'Знаю',
 'Легко':'Легко',
@@ -1359,6 +1360,7 @@ const EN={
 'Показать пример':'Show the example',
 'Не помню':'Forgot',
 'заново':'again',
+'10 мин':'10 min',
 'Трудно':'Hard',
 'Знаю':'Good',
 'Легко':'Easy',
@@ -2329,8 +2331,8 @@ function renderStudy(){
     (shown?
       '<div class="grades">'+
         '<button class="btn g0" data-g="0">'+T('Не помню')+'<small>'+T('заново')+'</small></button>'+
-        '<button class="btn g1" data-g="1">'+T('Трудно')+'<small>'+days(hardStep(c.interval))+'</small></button>'+
-        '<button class="btn g2" data-g="2">'+T('Знаю')+'<small>'+days(nextStep(c.interval))+'</small></button>'+
+        '<button class="btn g1" data-g="1">'+T('Трудно')+'<small>'+stepLabel(c,1)+'</small></button>'+
+        '<button class="btn g2" data-g="2">'+T('Знаю')+'<small>'+stepLabel(c,2)+'</small></button>'+
         '<button class="btn g3" data-g="3">'+T('Легко')+'<small>'+T('выучено')+'</small></button>'+
       '</div>'
       :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">'+
@@ -2360,6 +2362,17 @@ const STEPS=[1,3,7,14,30,60];
 const nextStep=ivl=>STEPS.find(s=>s>(ivl||0))||Math.min(365,Math.round(ivl*2));
 const hardStep=ivl=>Math.max(1,Math.floor((ivl||0)/2));
 const days=n=>n+' '+pWord(n,'день');
+/* Фаза заучивания. Новое слово (reps === 0) после первого правильного ответа не уезжает
+   на день, а возвращается через несколько карточек: первый день оно получает только
+   вторым правильным ответом в той же сессии. Одно предъявление — самое слабое место
+   любой лестницы, назавтра половина таких слов забыта. Слово после «Не помню» второго
+   ответа не требует: оно уже было в работе, ему хватает одного. */
+const learning=c=>!(c.reps>0);
+const stepLabel=(c,g)=>learning(c)?T('10 мин'):days(g===1?hardStep(c.interval):nextStep(c.interval));
+/* Возврат в сессию — через 5–8 карточек, не в конец очереди: в конце при тридцати новых
+   и долге это «через сорок карточек», а не «через десять минут». */
+const REINSERT=5;
+const reinsert=c=>queue.splice(Math.min(queue.length,REINSERT+Math.floor(Math.random()*4)),0,c);
 function grade(g){
   const c=current.card;
   if(!(c.reps>0)) bumpCounter('opened');   // первая оценка — слово открыто, считаем в лимит
@@ -2370,7 +2383,9 @@ function grade(g){
     touch(c); persist(); sessionDone++; nextCard(); return;
   }
   if(g===0){
-    c.lapses=(c.lapses||0)+1; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
+    c.lapses=(c.lapses||0)+1; c.interval=0; c.due=Date.now()+6e5; reinsert(c);
+  }else if(learning(c)){
+    c.interval=0; c.due=Date.now()+6e5; reinsert(c);
   }else{
     c.interval=g===1?hardStep(c.interval):nextStep(c.interval);
     c.due=Date.now()+c.interval*DAY;
