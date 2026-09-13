@@ -700,6 +700,19 @@
     </div>
 
     <div class="sec">
+      <span class="lbl" data-tr>Новых слов в день</span>
+      <div class="stepper">
+        <button id="freshMinus" type="button" aria-label="Меньше" data-tr-aria>−</button>
+        <span class="val">
+          <input id="fresh" type="number" min="0" max="99" step="1" inputmode="numeric" aria-label="Новых слов в день" data-tr-aria>
+          <span class="u" id="freshWord">слов</span>
+        </span>
+        <button id="freshPlus" type="button" aria-label="Больше" data-tr-aria>+</button>
+      </div>
+      <div class="hint" data-tr>Повторения приходят все, новые — не больше этого числа. Ноль — только вручную.</div>
+    </div>
+
+    <div class="sec">
       <span class="lbl" data-tr>Язык</span>
       <div class="langs" id="langList"></div>
     </div>
@@ -1129,6 +1142,11 @@ const UK={
 'Больше':'Більше',
 'Слов в день':'Слів на день',
 'От 5 до 99. Можно вписать своё число.':'Від 5 до 99. Можна вписати своє число.',
+'Новых слов в день':'Нових слів на день',
+'Повторения приходят все, новые — не больше этого числа. Ноль — только вручную.':
+  'Повторення приходять усі, нові — не більше цього числа. Нуль — лише вручну.',
+'Новых слов сегодня: {n} из {m}':'Нових слів сьогодні: {n} з {m}',
+'Взять ещё {n} {w}':'Взяти ще {n} {w}',
 'Язык':'Мова',
 'Аккаунт':'Акаунт',
 'Выйти':'Вийти',
@@ -1402,6 +1420,11 @@ const EN={
 'Больше':'More',
 'Слов в день':'Words a day',
 'От 5 до 99. Можно вписать своё число.':'From 5 to 99. You can type your own number.',
+'Новых слов в день':'New words a day',
+'Повторения приходят все, новые — не больше этого числа. Ноль — только вручную.':
+  'Reviews always come; new words are capped at this number. Zero means by hand only.',
+'Новых слов сегодня: {n} из {m}':'New words today: {n} of {m}',
+'Взять ещё {n} {w}':'Take {n} more {w}',
 'Язык':'Language',
 'Аккаунт':'Account',
 'Выйти':'Sign out',
@@ -1509,7 +1532,7 @@ function renderLangs(){
 // он меняет каждую подпись сразу.
 function applyLang(){
   document.documentElement.lang=uiLang;
-  paintStatic(); renderLangs(); paintDir(); paintGoal();
+  paintStatic(); renderLangs(); paintDir(); paintGoal(); paintFresh();
   rebuild();          // оборот карточки зависит от языка, значит пересобираем колоду
   renderAttach(); renderPreview(); updateSelCount();
   renderStats(); renderCards(); renderDecks();
@@ -2220,14 +2243,20 @@ $('#temaBar').onclick=e=>{
   if(on) on.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
 };
 
-function buildQueue(){
+/* Очередь: сначала весь долг по повторениям, потом новые — не больше, чем осталось
+   от дневного лимита. Повторения не режутся никогда: это слова, которые уже открыты,
+   и откладывать их — значит забывать. Новые режутся, потому что тысяча открытых
+   слов вперемешку не запоминается. `extra` — «взять ещё» сверх лимита, осознанно. */
+function buildQueue(extra){
   const now=Date.now();
   const pool=active().filter(inTema);
-  const due=pool.filter(c=>c.reps>0&&c.due<=now);
-  const fresh=shuffle(pool.filter(c=>c.reps===0));   // без дневного лимита — вся тема сразу
-  queue=shuffle(due.concat(fresh));      // карточки идут вперемешку, а не по порядку колоды
+  const due=shuffle(pool.filter(c=>c.reps>0&&c.due<=now));
+  const room=extra!=null?extra:Math.max(0,freshOf()-openedToday());
+  const fresh=shuffle(pool.filter(c=>c.reps===0)).slice(0,room);
+  queue=due.concat(fresh);
   sessionTotal=queue.length; sessionDone=0;
 }
+const FRESH_MORE=10;                     // сколько новых даёт одно нажатие «Взять ещё»
 const dirFor=()=> settings.dir==='mix' ? (Math.random()<.5?'pt':'ru') : settings.dir;
 
 function renderStudy(){
@@ -2238,6 +2267,7 @@ function renderStudy(){
       $('#prog').style.width='100%';
       const pool=active().filter(inTema);
       const next=pool.filter(c=>c.due>Date.now()).sort((a,b)=>a.due-b.due)[0];
+      const left=pool.filter(c=>c.reps===0).length, more=Math.min(FRESH_MORE,left);
       const где=studyFav?T(' в избранном')
               :studyVerbs?T(' среди глаголов')
               :studyLevel?T(' на уровне {l}',{l:esc(studyLevel)})
@@ -2251,8 +2281,13 @@ function renderStudy(){
                      :T('В этой теме пока нет карточек'))+'</div>')+
         (next?'<div class="sub">'+T('Следующее повторение: {d}',
               {d:new Date(next.due).toLocaleDateString(LOC(),{day:'numeric',month:'long'})})+'</div>':'')+
-        (pool.length?'<div style="margin-top:20px"><button class="btn" id="againAll">'+
+        (left?'<div class="sub">'+T('Новых слов сегодня: {n} из {m}',{n:openedToday(),m:freshOf()})+'</div>':'')+
+        (more?'<div style="margin-top:20px"><button class="btn primary" id="moreFresh">'+
+              T('Взять ещё {n} {w}',{n:more,w:pWord(more,'слово')})+'</button></div>':'')+
+        (pool.length?'<div style="margin-top:'+(more?10:20)+'px"><button class="btn" id="againAll">'+
               T('Повторить всё заново')+'</button></div>':'')+'</div>';
+      const m=$('#moreFresh');
+      if(m) m.onclick=()=>{buildQueue(more);nextCard()};
       const b=$('#againAll');
       if(b) b.onclick=()=>{queue=shuffle(active().filter(inTema));sessionTotal=queue.length;sessionDone=0;nextCard()};
       return;
@@ -2304,6 +2339,7 @@ function renderStudy(){
 const INTERVALS={0:0,1:1,2:14};     // не помню — заново, трудно — 1 день, знаю — 14 дней
 function grade(g){
   const c=current.card;
+  if(!(c.reps>0)) bumpCounter('opened');   // первая оценка — слово открыто, считаем в лимит
   if(g===3){                        // легко — выучено, из показа убираем, слово сохраняем
     if(!c.archived) bumpDay();      // засчитываем в дневную цель
     c.archived=true; c.archivedAt=Date.now(); c.reps=(c.reps||0)+1;
@@ -2337,14 +2373,21 @@ const startOfDay=()=>{ const d=new Date(); d.setHours(0,0,0,0); return d.getTime
 const clampGoal=n=>Math.min(99,Math.max(5,Math.round(+n)||15));
 const goalOf=()=>clampGoal(settings.goal);
 
-function bumpDay(n){
+// Два счётчика одного вида: `learned` — выучено за день, `opened` — открыто новых.
+// Оба живут в настройках и сливаются между устройствами по максимуму.
+const DAY_COUNTERS=['learned','opened'];
+function bumpCounter(f,n){
   const k=dayKey();
-  settings.learned=settings.learned||{};
-  settings.learned[k]=Math.max(0,(settings.learned[k]||0)+(n||1));
-  const keys=Object.keys(settings.learned).sort();
-  if(keys.length>120) keys.slice(0,keys.length-120).forEach(x=>delete settings.learned[x]);
+  settings[f]=settings[f]||{};
+  settings[f][k]=Math.max(0,(settings[f][k]||0)+(n||1));
+  const keys=Object.keys(settings[f]).sort();
+  if(keys.length>120) keys.slice(0,keys.length-120).forEach(x=>delete settings[f][x]);
   persistSet();
 }
+const bumpDay=n=>bumpCounter('learned',n);
+const openedToday=()=>(settings.opened||{})[dayKey()]||0;
+const clampFresh=n=>{ n=Math.round(+n); return isNaN(n)?30:Math.min(99,Math.max(0,n)) };
+const freshOf=()=>settings.fresh==null?30:clampFresh(settings.fresh);
 // Счётчика за сегодня может ещё не быть — восстанавливаем его из карточек,
 // помеченных «выучено» сегодня. Иначе блок показал бы ноль после занятий.
 function seedToday(){
@@ -2838,6 +2881,25 @@ function setGoal(n){
   else settings.goal=g;
   paintGoal(); renderGoal();
 }
+function paintFresh(){
+  const g=freshOf();
+  const inp=$('#fresh'); if(!inp) return;
+  if(document.activeElement!==inp) inp.value=g;
+  $('#freshWord').textContent=pWord(g,'слово');
+  $('#freshMinus').disabled=g<=0;
+  $('#freshPlus').disabled=g>=99;
+}
+function setFresh(n){
+  const g=clampFresh(n);
+  if(g!==freshOf()){ settings.fresh=g; persistSet() }
+  else settings.fresh=g;
+  paintFresh();
+}
+$('#freshMinus').onclick=()=>setFresh(freshOf()-1);
+$('#freshPlus').onclick=()=>setFresh(freshOf()+1);
+$('#fresh').onchange=e=>setFresh(e.target.value);
+$('#fresh').onblur=e=>{ setFresh(e.target.value); e.target.value=freshOf() };
+$('#fresh').addEventListener('keydown',e=>{ if(e.key==='Enter') e.target.blur() });
 $('#goalMinus').onclick=()=>setGoal(goalOf()-1);
 $('#goalPlus').onclick=()=>setGoal(goalOf()+1);
 $('#goal').onchange=e=>setGoal(e.target.value);
@@ -3122,11 +3184,17 @@ async function pullSettings(){
   const rs=blob&&blob.settings;
   if(rs){
     // счётчики дней сливаем по максимуму: два устройства не должны затирать друг друга
-    const learned=Object.assign({},rs.learned||{});
-    Object.entries(settings.learned||{}).forEach(([k,v])=>{ if((learned[k]||0)<v) learned[k]=v });
+    const merged={};
+    DAY_COUNTERS.forEach(f=>{
+      const m=Object.assign({},rs[f]||{});
+      Object.entries(settings[f]||{}).forEach(([k,v])=>{ if((m[k]||0)<v) m[k]=v });
+      merged[f]=m;
+    });
     if((rs.at||0)>(settings.at||0)){ Object.assign(settings,rs); setDirty=false }
-    if(JSON.stringify(settings.learned||{})!==JSON.stringify(learned)) setDirty=true;
-    settings.learned=learned;
+    DAY_COUNTERS.forEach(f=>{
+      if(JSON.stringify(settings[f]||{})!==JSON.stringify(merged[f])) setDirty=true;
+      settings[f]=merged[f];
+    });
     applySettings();
   }
   return blob;
