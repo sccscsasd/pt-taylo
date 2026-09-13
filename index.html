@@ -2263,10 +2263,15 @@ function buildQueue(extra){
   const pool=active().filter(inTema);
   const due=shuffle(pool.filter(c=>c.reps>0&&c.due<=now));
   const room=extra!=null?extra:Math.max(0,freshOf()-openedToday());
-  const fresh=shuffle(pool.filter(c=>c.reps===0)).slice(0,room);
+  // новые — по порядку колод и слов в них, а не случайно: при нескольких включённых
+  // колодах слово C1 иначе приходило бы раньше слова A1. Взятая порция перемешивается,
+  // чтобы внутри сессии порядок темы не подсказывал ответ.
+  const fresh=shuffle(pool.filter(c=>c.reps===0).sort(deckOrder).slice(0,room));
   queue=due.concat(fresh);
   sessionTotal=queue.length; sessionDone=0;
 }
+const deckRank=id=>{ const d=decks.find(x=>x.id===id); return d?+d.sort||0:1e9 };   // свои слова — последними
+const deckOrder=(a,b)=>deckRank(a.deck)-deckRank(b.deck)||(a.sort||0)-(b.sort||0)||(a.created||0)-(b.created||0);
 const FRESH_MORE=10;                     // сколько новых даёт одно нажатие «Взять ещё»
 const dirFor=()=> settings.dir==='mix' ? (Math.random()<.5?'pt':'ru') : settings.dir;
 // Строка примера: прячется та, что на языке ответа — португальская в RU → PT,
