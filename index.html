@@ -1071,9 +1071,7 @@ const UK={
 'Не помню':'Не пам’ятаю',
 'заново':'знову',
 'Трудно':'Важко',
-'1 день':'1 день',
 'Знаю':'Знаю',
-'14 дней':'14 днів',
 'Легко':'Легко',
 'осталось {n}':'лишилося {n}',
 
@@ -1349,9 +1347,7 @@ const EN={
 'Не помню':'Forgot',
 'заново':'again',
 'Трудно':'Hard',
-'1 день':'1 day',
 'Знаю':'Good',
-'14 дней':'14 days',
 'Легко':'Easy',
 'осталось {n}':'{n} left',
 
@@ -2315,8 +2311,8 @@ function renderStudy(){
     (shown?
       '<div class="grades">'+
         '<button class="btn g0" data-g="0">'+T('Не помню')+'<small>'+T('заново')+'</small></button>'+
-        '<button class="btn g1" data-g="1">'+T('Трудно')+'<small>'+T('1 день')+'</small></button>'+
-        '<button class="btn g2" data-g="2">'+T('Знаю')+'<small>'+T('14 дней')+'</small></button>'+
+        '<button class="btn g1" data-g="1">'+T('Трудно')+'<small>'+days(hardStep(c.interval))+'</small></button>'+
+        '<button class="btn g2" data-g="2">'+T('Знаю')+'<small>'+days(nextStep(c.interval))+'</small></button>'+
         '<button class="btn g3" data-g="3">'+T('Легко')+'<small>'+T('выучено')+'</small></button>'+
       '</div>'
       :'<button class="btn primary wide" id="reveal" style="margin-top:14px;min-height:52px">'+
@@ -2336,7 +2332,14 @@ function renderStudy(){
     $('#studyCard').onclick=reveal;
   }
 }
-const INTERVALS={0:0,1:1,2:14};     // не помню — заново, трудно — 1 день, знаю — 14 дней
+/* Лестница интервалов. «Знаю» поднимает карточку на следующую ступень над текущим
+   интервалом, и каждая ступень берётся только после успешного повторения: новое слово
+   уезжает на день, не на две недели. Выше лестницы — удвоение, до года. «Трудно» —
+   половина текущего, но не меньше дня. Коэффициентов лёгкости нет намеренно. */
+const STEPS=[1,3,7,14,30,60];
+const nextStep=ivl=>STEPS.find(s=>s>(ivl||0))||Math.min(365,Math.round(ivl*2));
+const hardStep=ivl=>Math.max(1,Math.floor((ivl||0)/2));
+const days=n=>n+' '+pWord(n,'день');
 function grade(g){
   const c=current.card;
   if(!(c.reps>0)) bumpCounter('opened');   // первая оценка — слово открыто, считаем в лимит
@@ -2349,7 +2352,8 @@ function grade(g){
   if(g===0){
     c.lapses=(c.lapses||0)+1; c.interval=0; c.due=Date.now()+6e5; queue.push(c);
   }else{
-    c.interval=INTERVALS[g]; c.due=Date.now()+c.interval*DAY;
+    c.interval=g===1?hardStep(c.interval):nextStep(c.interval);
+    c.due=Date.now()+c.interval*DAY;
   }
   c.reps=(c.reps||0)+1; touch(c);
   persist(); sessionDone++; nextCard();
