@@ -502,6 +502,15 @@
     margin-top:20px;padding-top:16px;border-top:.5px solid var(--sep);
     font-size:16px;line-height:1.45;width:100%;
   }
+  /* Португальский пример размыт, пока по нему не нажали: сначала перевести предложение
+     самому по русской строке ниже, потом сверить. Кнопка, а не div — чтобы работала
+     с клавиатуры; размытие снимает класс .on, перерисовки не нужно. */
+  #studyCard .expt{
+    display:block;width:100%;background:none;border:0;padding:0;margin:0;
+    font:inherit;color:inherit;text-align:center;cursor:pointer;
+    filter:blur(5px);user-select:none;transition:filter .25s;
+  }
+  #studyCard .expt.on{filter:none;user-select:text;cursor:default}
   #studyCard .exru{margin-top:5px;font-size:14px;color:var(--label2)}
   #studyCard .nt{margin-top:14px;font-size:13px;color:var(--orange)}
   .tapHint{text-align:center;font-size:13px;color:var(--label3);margin-top:12px}
@@ -1068,6 +1077,7 @@ const UK={
 'Следующее повторение: {d}':'Наступне повторення: {d}',
 'Повторить всё заново':'Повторити все знову',
 'Показать ответ':'Показати відповідь',
+'Показать пример':'Показати приклад',
 'Не помню':'Не пам’ятаю',
 'заново':'знову',
 'Трудно':'Важко',
@@ -1344,6 +1354,7 @@ const EN={
 'Следующее повторение: {d}':'Next review: {d}',
 'Повторить всё заново':'Go through it all again',
 'Показать ответ':'Show answer',
+'Показать пример':'Show the example',
 'Не помню':'Forgot',
 'заново':'again',
 'Трудно':'Hard',
@@ -2161,7 +2172,7 @@ function renameCard(c,word){
 }
 
 /* ---------------- STUDY ---------------- */
-let queue=[], current=null, shown=false, sessionTotal=0, sessionDone=0;
+let queue=[], current=null, shown=false, exOpen=false, sessionTotal=0, sessionDone=0;
 
 
 const active=()=>cards.filter(c=>!c.archived);
@@ -2305,7 +2316,8 @@ function renderStudy(){
       '<div class="tag">'+dirLabel(d)+'</div>'+
       '<div class="q'+(d==='pt'?'':' ru')+'">'+esc(q)+'</div>'+
       (shown?'<div class="a">'+esc(a)+'</div>':'<div class="dots">•••</div>')+
-      (shown&&c.ex?'<div class="ex">'+esc(c.ex)+'<div class="exru">'+esc(c.exru)+'</div></div>':'')+
+      (shown&&c.ex?'<div class="ex"><button class="expt'+(exOpen?' on':'')+'" id="exPt" type="button" title="'+
+        T('Показать пример')+'">'+esc(c.ex)+'</button><div class="exru">'+esc(c.exru)+'</div></div>':'')+
       (shown&&c.note?'<div class="nt">'+esc(c.note)+'</div>':'')+
     '</div>'+
     (shown?
@@ -2326,6 +2338,8 @@ function renderStudy(){
   };
   if(shown){
     $$('.grades .btn').forEach(b=>b.onclick=()=>grade(+b.dataset.g));
+    const ex=$('#exPt');
+    if(ex) ex.onclick=()=>{ exOpen=!exOpen; ex.classList.toggle('on',exOpen) };
   }else{
     const reveal=()=>{shown=true;renderStudy()};
     $('#reveal').onclick=reveal;
@@ -2361,7 +2375,7 @@ function grade(g){
 function nextCard(){
   const c=queue.shift();
   current = c?{card:c,dir:dirFor()}:null;
-  shown=false;
+  shown=false; exOpen=false;
   renderStudy();
 }
 
