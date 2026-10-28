@@ -1000,6 +1000,8 @@ const UK={
 'Это не копия прогресса':'Це не копія прогресу',
 'Забрать из старого кеша: {n}':'Забрати зі старого кешу: {n}',
 'Отправить всё на сервер':'Надіслати все на сервер',
+'Кеш не подписан почтой — он остался от прежней версии. Если этим устройством пользуется кто-то ещё, его прогресс тоже попадёт к вам. Забрать {n} карточек?':
+  'Кеш не підписаний поштою — він лишився від попередньої версії. Якщо цим пристроєм користується ще хтось, його прогрес теж потрапить до вас. Забрати {n} карток?',
 'В очередь поставлено: {n}':'У чергу поставлено: {n}',
 'Показать, как идут дела':'Показати, як ідуть справи',
 'Выучено сегодня':'Вивчено сьогодні',
@@ -1289,6 +1291,8 @@ const EN={
 'Это не копия прогресса':'This is not a progress backup',
 'Забрать из старого кеша: {n}':'Take from the old cache: {n}',
 'Отправить всё на сервер':'Send everything to the server',
+'Кеш не подписан почтой — он остался от прежней версии. Если этим устройством пользуется кто-то ещё, его прогресс тоже попадёт к вам. Забрать {n} карточек?':
+  'This cache is not signed with an email — it is left over from an older version. If someone else uses this device, their progress will come to you as well. Take {n} cards?',
 'В очередь поставлено: {n}':'Queued: {n}',
 'Показать, как идут дела':'Show how it is going',
 'Выучено сегодня':'Learnt today',
@@ -3032,14 +3036,18 @@ function absorb(rows,st,decksOf){
    Так чуть не пропали 304 правки 28.10.2026: клиент не смог обновить токен мёртвого
    проекта, сам вышел, и «Сохранить копию» сохранила бы пустоту. */
 function oldCaches(){
-  const свой=authed()?cacheKey():'';
+  const свой=authed()?cacheKey():'', почта=authed()?(auth.user.email||''):'';
   const out=[];
   for(let i=0;i<localStorage.length;i++){
     const k=localStorage.key(i);
     if(!/^pt\.cache\.v[23]\./.test(k)||k===свой) continue;
     const c=load(k,null)||{};
+    // кеш, подписанный чужой почтой, не трогаем вовсе: на общем устройстве
+    // прогресс двух людей смешивать нельзя. Неподписанный — наследство старых
+    // версий, его берём только с подтверждения.
+    if(c.email&&почта&&c.email!==почта) continue;
     const rows=(Array.isArray(c.prog)?c.prog:(Array.isArray(c.cards)?c.cards:[])).filter(канон);
-    if(rows.length) out.push({k:k,rows:rows,settings:c.settings,myDecks:c.myDecks});
+    if(rows.length) out.push({k:k,rows:rows,settings:c.settings,myDecks:c.myDecks,email:c.email||''});
   }
   return out;
 }
@@ -3051,8 +3059,11 @@ function paintBackup(){
   if(n) b.textContent=T('Забрать из старого кеша: {n}',{n:n});
 }
 $('#bkOld').onclick=()=>{
+  const old=oldCaches();
+  const ничей=old.filter(o=>!o.email).reduce((a,o)=>a+o.rows.length,0);
+  if(ничей&&!confirm(T('Кеш не подписан почтой — он остался от прежней версии. Если этим устройством пользуется кто-то ещё, его прогресс тоже попадёт к вам. Забрать {n} карточек?',{n:ничей}))) return;
   let n=0;
-  oldCaches().forEach(o=>{ n+=absorb(o.rows,o.settings,o.myDecks) });
+  old.forEach(o=>{ n+=absorb(o.rows,o.settings,o.myDecks) });
   toast(n?T('Восстановлено карточек: {n}',{n:n}):T('Копия свежее не нашлась'));
 };
 /* Клиент настаивает на своём состоянии. Нужна после восстановления: строки приходят
@@ -3212,8 +3223,10 @@ const DECK_CACHE='pt.deck.v1';
 
 function saveCache(){
   if(!authed()) return;
+  // почта пишется затем, чтобы чужой кеш на общем устройстве не попал в чужой прогресс
   save(cacheKey(),{prog:[...prog.values()],settings:settings,dirty:[...dirty],
-                   syncedAt:syncedAt,setDirty:setDirty,myDecks:[...myDecks]});
+                   syncedAt:syncedAt,setDirty:setDirty,myDecks:[...myDecks],
+                   email:(auth.user.email||'')});
 }
 function loadCache(){
   const c=load(cacheKey(),null)||{};
