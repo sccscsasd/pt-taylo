@@ -3281,19 +3281,36 @@ async function pullPages(table,since,apply){
   return {mark:mark, n:n};
 }
 
+/* Отправка пачками. Два правила, оба куплены кровью:
+
+   1. Внутри пачки у всех строк должен быть один набор ключей — PostgREST иначе
+      отвечает «All object keys must match» и отвергает её целиком. У своего слова
+      в строке есть содержимое, у слова колоды его нет, поэтому сначала группируем
+      по форме строки, а уже потом режем на пачки.
+   2. Отправленную пачку вычёркиваем из очереди сразу, а не в конце: иначе одна
+      неудачная пачка отменяет весь проход, и очередь вечно шлёт всё заново.
+      Так 28.10.2026 встало восстановление 1925 строк: первые 300 уходили, вторая
+      пачка со своим словом падала, и по кругу каждые 30 секунд. */
 async function flushCards(){
   [...dirty].forEach(id=>{ if(!prog.has(id)) dirty.delete(id) });   // хвост от исчезнувшей строки
   if(!dirty.size) return;
-  const live=[...dirty].map(id=>prog.get(id));
-  const sent=live.map(p=>({id:p.id,rev:p.rev}));
-  const rows=live.map(toRow);
-  for(let i=0;i<rows.length;i+=PUSH)
-    await send('/rest/v1/pt_cards?on_conflict=user_id,id',rows.slice(i,i+PUSH));
-  sent.forEach(x=>{
-    const p=prog.get(x.id);
-    if(!p||p.rev===x.rev) dirty.delete(x.id);   // пока отправляли, строку могли изменить снова
+  const формы=new Map();
+  [...dirty].forEach(id=>{
+    const p=prog.get(id), row=toRow(p), k=Object.keys(row).sort().join(',');
+    if(!формы.has(k)) формы.set(k,[]);
+    формы.get(k).push({id:p.id, rev:p.rev, row:row});
   });
-  saveCache();
+  for(const группа of формы.values())
+    for(let i=0;i<группа.length;i+=PUSH){
+      const часть=группа.slice(i,i+PUSH);
+      await send('/rest/v1/pt_cards?on_conflict=user_id,id',часть.map(x=>x.row));
+      часть.forEach(x=>{
+        const p=prog.get(x.id);
+        if(!p||p.rev===x.rev) dirty.delete(x.id);   // пока отправляли, строку могли изменить снова
+      });
+      saveCache();
+      renderSyncState();                            // счётчик в настройках тает на глазах
+    }
 }
 
 function applyRow(row){
