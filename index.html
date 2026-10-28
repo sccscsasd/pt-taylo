@@ -736,6 +736,16 @@
       </div>
     </div>
 
+    <div class="sec">
+      <span class="lbl" data-tr>Резервная копия</span>
+      <div class="row">
+        <button class="btn" id="bkSave" type="button" data-tr>Сохранить копию</button>
+        <button class="btn" id="bkLoad" type="button" data-tr>Восстановить</button>
+      </div>
+      <input id="bkFile" type="file" accept="application/json,.json" hidden>
+      <div class="hint" data-tr>Файл с прогрессом и настройками. Колода в него не входит: она общая и приезжает с сервера.</div>
+    </div>
+
   </section>
 </main>
 
@@ -976,6 +986,16 @@ const UK={
 
 /* цель на день */
 'Цель на день':'Мета на день',
+'Резервная копия':'Резервна копія',
+'Сохранить копию':'Зберегти копію',
+'Восстановить':'Відновити',
+'Файл с прогрессом и настройками. Колода в него не входит: она общая и приезжает с сервера.':
+  'Файл із прогресом і налаштуваннями. Колода до нього не входить: вона спільна і приїздить із сервера.',
+'Сохранено карточек: {n}':'Збережено карток: {n}',
+'Восстановлено карточек: {n}':'Відновлено карток: {n}',
+'Копия свежее не нашлась':'Свіжішої копії не знайшлося',
+'Файл не читается':'Файл не читається',
+'Это не копия прогресса':'Це не копія прогресу',
 'Показать, как идут дела':'Показати, як ідуть справи',
 'Выучено сегодня':'Вивчено сьогодні',
 'из {n} {w} в день':'з {n} {w} на день',
@@ -1252,6 +1272,16 @@ const EN={
 
 /* цель на день */
 'Цель на день':'Daily goal',
+'Резервная копия':'Backup',
+'Сохранить копию':'Save a copy',
+'Восстановить':'Restore',
+'Файл с прогрессом и настройками. Колода в него не входит: она общая и приезжает с сервера.':
+  'A file with your progress and settings. The deck is not in it: the deck is shared and comes from the server.',
+'Сохранено карточек: {n}':'Saved cards: {n}',
+'Восстановлено карточек: {n}':'Restored cards: {n}',
+'Копия свежее не нашлась':'Nothing in the file was newer',
+'Файл не читается':'The file cannot be read',
+'Это не копия прогресса':'This is not a progress backup',
 'Показать, как идут дела':'Show how it is going',
 'Выучено сегодня':'Learnt today',
 'из {n} {w} в день':'of {n} {w} a day',
@@ -2944,6 +2974,52 @@ $('#freshPlus').onclick=()=>setFresh(freshOf()+1);
 $('#fresh').onchange=e=>setFresh(e.target.value);
 $('#fresh').onblur=e=>{ setFresh(e.target.value); e.target.value=freshOf() };
 $('#fresh').addEventListener('keydown',e=>{ if(e.key==='Enter') e.target.blur() });
+/* Резервная копия — весь личный слой одним файлом, без сервера. Колода в неё не входит:
+   она общая, лежит в репозитории и восстанавливается миграцией, а прогресс есть только
+   здесь. Восстановление сводит строки по `rev`, как это делает сервер, и метит взятое
+   грязным — чтобы при живом сервере копия уехала туда сама. */
+const BK_V=1;
+$('#bkSave').onclick=()=>{
+  const data={v:BK_V, at:new Date().toISOString(), user:(auth&&auth.user&&auth.user.email)||'',
+              prog:[...prog.values()], settings:settings, myDecks:[...myDecks]};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
+  const a=document.createElement('a');
+  a.href=url; a.download='pt-backup-'+dayKey()+'.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1e4);
+  toast(T('Сохранено карточек: {n}',{n:data.prog.length}));
+};
+$('#bkLoad').onclick=()=>$('#bkFile').click();
+$('#bkFile').onchange=async e=>{
+  const f=e.target.files&&e.target.files[0]; e.target.value='';
+  if(!f) return;
+  let d;
+  try{ d=JSON.parse(await f.text()) }catch(err){ toast(T('Файл не читается')); return }
+  if(!d||!Array.isArray(d.prog)){ toast(T('Это не копия прогресса')); return }
+  let n=0;
+  d.prog.forEach(r=>{
+    if(!r||!r.id) return;
+    const cur=prog.get(r.id);
+    if(cur&&(cur.rev||0)>=(r.rev||0)) return;   // своё свежее — не трогаем
+    prog.set(r.id,r); dirty.add(r.id); n++;
+  });
+  if(d.settings){
+    // счётчики дней — по максимуму, как при слиянии устройств; остальное по метке
+    const merged={};
+    DAY_COUNTERS.forEach(k=>{
+      const m=Object.assign({},d.settings[k]||{});
+      Object.entries(settings[k]||{}).forEach(([day,v])=>{ if((m[day]||0)<v) m[day]=v });
+      merged[k]=m;
+    });
+    if((d.settings.at||0)>(settings.at||0)) Object.assign(settings,d.settings);
+    DAY_COUNTERS.forEach(k=>{ settings[k]=merged[k] });
+    setDirty=true;
+  }
+  // подписки берём, только если своих ещё нет: иначе спорили бы с pt_user_decks
+  if(!myDecks.size&&Array.isArray(d.myDecks)&&d.myDecks.length) myDecks=new Set(d.myDecks);
+  rebuild(); persist(); applySettings(); renderDecks(); renderCards(); renderStats(); renderGoal();
+  toast(n?T('Восстановлено карточек: {n}',{n:n}):T('Копия свежее не нашлась'));
+};
 $('#goalMinus').onclick=()=>setGoal(goalOf()-1);
 $('#goalPlus').onclick=()=>setGoal(goalOf()+1);
 $('#goal').onchange=e=>setGoal(e.target.value);
