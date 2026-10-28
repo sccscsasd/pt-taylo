@@ -743,6 +743,7 @@
         <button class="btn" id="bkLoad" type="button" data-tr>Восстановить</button>
       </div>
       <button class="btn" id="bkOld" type="button" style="margin-top:8px" hidden></button>
+      <button class="btn" id="bkPush" type="button" style="margin-top:8px" data-tr>Отправить всё на сервер</button>
       <input id="bkFile" type="file" accept="application/json,.json" hidden>
       <div class="hint" data-tr>Файл с прогрессом и настройками. Колода в него не входит: она общая и приезжает с сервера.</div>
     </div>
@@ -998,6 +999,8 @@ const UK={
 'Файл не читается':'Файл не читається',
 'Это не копия прогресса':'Це не копія прогресу',
 'Забрать из старого кеша: {n}':'Забрати зі старого кешу: {n}',
+'Отправить всё на сервер':'Надіслати все на сервер',
+'В очередь поставлено: {n}':'У чергу поставлено: {n}',
 'Показать, как идут дела':'Показати, як ідуть справи',
 'Выучено сегодня':'Вивчено сьогодні',
 'из {n} {w} в день':'з {n} {w} на день',
@@ -1285,6 +1288,8 @@ const EN={
 'Файл не читается':'The file cannot be read',
 'Это не копия прогресса':'This is not a progress backup',
 'Забрать из старого кеша: {n}':'Take from the old cache: {n}',
+'Отправить всё на сервер':'Send everything to the server',
+'В очередь поставлено: {n}':'Queued: {n}',
 'Показать, как идут дела':'Show how it is going',
 'Выучено сегодня':'Learnt today',
 'из {n} {w} в день':'of {n} {w} a day',
@@ -2994,10 +2999,14 @@ $('#bkSave').onclick=()=>{
 };
 /* Слияние — одно на обе дороги: файл и кеш от прежнего входа. Правило как у сервера:
    старую версию строки не берём, взятое метим грязным. */
+/* id выводится из слова (`wordId`), и строка, у которой он другой, — наследство эпохи
+   случайных идентификаторов: на то же слово заведётся вторая строка, сервер отвергнет
+   её по уникальному индексу, а очередь встанет. Такие строки не берём и вычищаем. */
+const канон=r=>!!r && !!r.id && !!r.word && r.id===wordId(r.word);
 function absorb(rows,st,decksOf){
   let n=0;
   (rows||[]).forEach(r=>{
-    if(!r||!r.id) return;
+    if(!канон(r)) return;
     const cur=prog.get(r.id);
     if(cur&&(cur.rev||0)>=(r.rev||0)) return;
     prog.set(r.id,r); dirty.add(r.id); n++;
@@ -3029,7 +3038,7 @@ function oldCaches(){
     const k=localStorage.key(i);
     if(!/^pt\.cache\.v[23]\./.test(k)||k===свой) continue;
     const c=load(k,null)||{};
-    const rows=Array.isArray(c.prog)?c.prog:(Array.isArray(c.cards)?c.cards:[]);
+    const rows=(Array.isArray(c.prog)?c.prog:(Array.isArray(c.cards)?c.cards:[])).filter(канон);
     if(rows.length) out.push({k:k,rows:rows,settings:c.settings,myDecks:c.myDecks});
   }
   return out;
@@ -3045,6 +3054,16 @@ $('#bkOld').onclick=()=>{
   let n=0;
   oldCaches().forEach(o=>{ n+=absorb(o.rows,o.settings,o.myDecks) });
   toast(n?T('Восстановлено карточек: {n}',{n:n}):T('Копия свежее не нашлась'));
+};
+/* Клиент настаивает на своём состоянии. Нужна после восстановления: строки приходят
+   со старым `rev`, сервер их уже видел и сам ничего не спросит, а разойтись устройства
+   могли. Снять «выучено» это не может — правило слияния на сервере принимает пометку,
+   но отменяет её только осознанный возврат в изучение со свежим archived_at. */
+$('#bkPush').onclick=()=>{
+  prog.forEach((p,id)=>{ if(канон(p)) dirty.add(id) });
+  setDirty=true; persist(); renderSyncState();
+  toast(T('В очередь поставлено: {n}',{n:dirty.size}));
+  syncPush();
 };
 $('#bkLoad').onclick=()=>$('#bkFile').click();
 $('#bkFile').onchange=async e=>{
@@ -3198,9 +3217,10 @@ function saveCache(){
 }
 function loadCache(){
   const c=load(cacheKey(),null)||{};
-  prog=new Map((Array.isArray(c.prog)?c.prog:[]).map(x=>[x.id,x]));
+  // строки с чужим id в кеш попасть уже не могут, но могли попасть раньше — вычищаем
+  prog=new Map((Array.isArray(c.prog)?c.prog:[]).filter(канон).map(x=>[x.id,x]));
   settings=Object.assign({dir:'pt'},c.settings||{});
-  dirty=new Set(Array.isArray(c.dirty)?c.dirty:[]);
+  dirty=new Set((Array.isArray(c.dirty)?c.dirty:[]).filter(id=>prog.has(id)));   // без призраков
   syncedAt=c.syncedAt||'';
   setDirty=!!c.setDirty;
   myDecks=new Set(Array.isArray(c.myDecks)?c.myDecks:[]);
