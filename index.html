@@ -742,6 +742,7 @@
         <button class="btn" id="bkSave" type="button" data-tr>Сохранить копию</button>
         <button class="btn" id="bkLoad" type="button" data-tr>Восстановить</button>
       </div>
+      <button class="btn" id="bkOld" type="button" style="margin-top:8px" hidden></button>
       <input id="bkFile" type="file" accept="application/json,.json" hidden>
       <div class="hint" data-tr>Файл с прогрессом и настройками. Колода в него не входит: она общая и приезжает с сервера.</div>
     </div>
@@ -996,6 +997,7 @@ const UK={
 'Копия свежее не нашлась':'Свіжішої копії не знайшлося',
 'Файл не читается':'Файл не читається',
 'Это не копия прогресса':'Це не копія прогресу',
+'Забрать из старого кеша: {n}':'Забрати зі старого кешу: {n}',
 'Показать, как идут дела':'Показати, як ідуть справи',
 'Выучено сегодня':'Вивчено сьогодні',
 'из {n} {w} в день':'з {n} {w} на день',
@@ -1282,6 +1284,7 @@ const EN={
 'Копия свежее не нашлась':'Nothing in the file was newer',
 'Файл не читается':'The file cannot be read',
 'Это не копия прогресса':'This is not a progress backup',
+'Забрать из старого кеша: {n}':'Take from the old cache: {n}',
 'Показать, как идут дела':'Show how it is going',
 'Выучено сегодня':'Learnt today',
 'из {n} {w} в день':'of {n} {w} a day',
@@ -1573,7 +1576,7 @@ function renderLangs(){
 // он меняет каждую подпись сразу.
 function applyLang(){
   document.documentElement.lang=uiLang;
-  paintStatic(); renderLangs(); paintDir(); paintGoal(); paintFresh();
+  paintStatic(); renderLangs(); paintDir(); paintGoal(); paintFresh(); paintBackup();
   rebuild();          // оборот карточки зависит от языка, значит пересобираем колоду
   renderAttach(); renderPreview(); updateSelCount();
   renderStats(); renderCards(); renderDecks();
@@ -2989,6 +2992,60 @@ $('#bkSave').onclick=()=>{
   setTimeout(()=>URL.revokeObjectURL(url),1e4);
   toast(T('Сохранено карточек: {n}',{n:data.prog.length}));
 };
+/* Слияние — одно на обе дороги: файл и кеш от прежнего входа. Правило как у сервера:
+   старую версию строки не берём, взятое метим грязным. */
+function absorb(rows,st,decksOf){
+  let n=0;
+  (rows||[]).forEach(r=>{
+    if(!r||!r.id) return;
+    const cur=prog.get(r.id);
+    if(cur&&(cur.rev||0)>=(r.rev||0)) return;
+    prog.set(r.id,r); dirty.add(r.id); n++;
+  });
+  if(st){
+    const merged={};
+    DAY_COUNTERS.forEach(k=>{
+      const m=Object.assign({},st[k]||{});
+      Object.entries(settings[k]||{}).forEach(([day,v])=>{ if((m[day]||0)<v) m[day]=v });
+      merged[k]=m;
+    });
+    if((st.at||0)>(settings.at||0)) Object.assign(settings,st);
+    DAY_COUNTERS.forEach(k=>{ settings[k]=merged[k] });
+    setDirty=true;
+  }
+  if(!myDecks.size&&Array.isArray(decksOf)&&decksOf.length) myDecks=new Set(decksOf);
+  if(n||st){ rebuild(); persist(); applySettings(); renderDecks(); renderCards(); renderStats(); renderGoal(); paintBackup() }
+  return n;
+}
+
+/* Кеш прежнего входа. Ключ привязан к user_id, и после смены проекта или аккаунта
+   прогресс остаётся на диске под чужим ключом — через интерфейс до него не добраться.
+   Так чуть не пропали 304 правки 28.10.2026: клиент не смог обновить токен мёртвого
+   проекта, сам вышел, и «Сохранить копию» сохранила бы пустоту. */
+function oldCaches(){
+  const свой=authed()?cacheKey():'';
+  const out=[];
+  for(let i=0;i<localStorage.length;i++){
+    const k=localStorage.key(i);
+    if(!/^pt\.cache\.v[23]\./.test(k)||k===свой) continue;
+    const c=load(k,null)||{};
+    const rows=Array.isArray(c.prog)?c.prog:(Array.isArray(c.cards)?c.cards:[]);
+    if(rows.length) out.push({k:k,rows:rows,settings:c.settings,myDecks:c.myDecks});
+  }
+  return out;
+}
+function paintBackup(){
+  const b=$('#bkOld'); if(!b) return;
+  const old=oldCaches();
+  const n=old.reduce((a,x)=>a+x.rows.length,0);
+  b.hidden=!n;
+  if(n) b.textContent=T('Забрать из старого кеша: {n}',{n:n});
+}
+$('#bkOld').onclick=()=>{
+  let n=0;
+  oldCaches().forEach(o=>{ n+=absorb(o.rows,o.settings,o.myDecks) });
+  toast(n?T('Восстановлено карточек: {n}',{n:n}):T('Копия свежее не нашлась'));
+};
 $('#bkLoad').onclick=()=>$('#bkFile').click();
 $('#bkFile').onchange=async e=>{
   const f=e.target.files&&e.target.files[0]; e.target.value='';
@@ -2996,28 +3053,7 @@ $('#bkFile').onchange=async e=>{
   let d;
   try{ d=JSON.parse(await f.text()) }catch(err){ toast(T('Файл не читается')); return }
   if(!d||!Array.isArray(d.prog)){ toast(T('Это не копия прогресса')); return }
-  let n=0;
-  d.prog.forEach(r=>{
-    if(!r||!r.id) return;
-    const cur=prog.get(r.id);
-    if(cur&&(cur.rev||0)>=(r.rev||0)) return;   // своё свежее — не трогаем
-    prog.set(r.id,r); dirty.add(r.id); n++;
-  });
-  if(d.settings){
-    // счётчики дней — по максимуму, как при слиянии устройств; остальное по метке
-    const merged={};
-    DAY_COUNTERS.forEach(k=>{
-      const m=Object.assign({},d.settings[k]||{});
-      Object.entries(settings[k]||{}).forEach(([day,v])=>{ if((m[day]||0)<v) m[day]=v });
-      merged[k]=m;
-    });
-    if((d.settings.at||0)>(settings.at||0)) Object.assign(settings,d.settings);
-    DAY_COUNTERS.forEach(k=>{ settings[k]=merged[k] });
-    setDirty=true;
-  }
-  // подписки берём, только если своих ещё нет: иначе спорили бы с pt_user_decks
-  if(!myDecks.size&&Array.isArray(d.myDecks)&&d.myDecks.length) myDecks=new Set(d.myDecks);
-  rebuild(); persist(); applySettings(); renderDecks(); renderCards(); renderStats(); renderGoal();
+  const n=absorb(d.prog,d.settings,d.myDecks);
   toast(n?T('Восстановлено карточек: {n}',{n:n}):T('Копия свежее не нашлась'));
 };
 $('#goalMinus').onclick=()=>setGoal(goalOf()-1);
